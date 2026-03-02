@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b1-scrum_1",
+    "topicId": "b1-scrum",
+    "front": "No Scrum, o que define uma Sprint?",
+    "back": "É um evento de tempo fixo (timebox) de um mês ou menos, onde um incremento de produto 'Pronto' e utilizável é criado.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-scrum_2",
+    "topicId": "b1-scrum",
+    "front": "Qual papel do Scrum é responsável por maximizar o valor do produto resultante do trabalho do Time de Scrum?",
+    "back": "Product Owner (PO).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-scrum_3",
+    "topicId": "b1-scrum",
+    "front": "Quais são os 3 artefatos oficiais definidos no Scrum Guide?",
+    "back": "1. Product Backlog;\n2. Sprint Backlog;\n3. Incremento.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-scrum_4",
+    "topicId": "b1-scrum",
+    "front": "Qual é a duração máxima (timebox) recomendada para a Daily Scrum?",
+    "back": "15 minutos.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-scrum_5",
+    "topicId": "b1-scrum",
+    "front": "Qual a diferença de foco entre a Sprint Review e a Sprint Retrospective?",
+    "back": "• Sprint Review: Foca no Produto (inspecionar o incremento e adaptar o Product Backlog).\n• Sprint Retrospective: Foca no Processo (inspecionar o time, pessoas, ferramentas e relações para melhoria contínua).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-scrum_6",
+    "topicId": "b1-scrum",
+    "front": "Quais são as duas principais características do Product Backlog em relação à sua ordem e continuidade?",
+    "back": "É uma lista ordenada e emergente (nunca está completa, evolui conforme o produto e o ambiente mudam).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-scrum_7",
+    "topicId": "b1-scrum",
+    "front": "Como o Scrum Master serve ao Time de Desenvolvimento (Developers) no dia a dia?",
+    "back": "Atuando como um líder que serve, removendo impedimentos, facilitando eventos (quando solicitado) e treinando o time em autogestão e cross-funcionalidade.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-scrum_8",
+    "topicId": "b1-scrum",
+    "front": "V ou F: O Sprint Backlog é imutável após o encerramento da Sprint Planning.",
+    "back": "Falso. O Sprint Backlog é atualizado ao longo da Sprint pelos Developers conforme eles trabalham e aprendem mais sobre o que é necessário para atingir o Sprint Goal.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-scrum_9",
+    "topicId": "b1-scrum",
+    "front": "Se a organização não possui um padrão de 'Definition of Done' (DoD) estabelecido, de quem é a responsabilidade de criá-la?",
+    "back": "Do Time de Scrum (Scrum Team).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-scrum_10",
+    "topicId": "b1-scrum",
+    "front": "Quem tem autoridade exclusiva para cancelar uma Sprint e sob qual condição específica?",
+    "back": "Apenas o Product Owner tem essa autoridade, e isso ocorre somente se o Objetivo da Sprint (Sprint Goal) se tornar obsoleto.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

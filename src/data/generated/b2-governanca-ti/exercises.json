@@ -1,0 +1,242 @@
+[
+  {
+    "id": "ex_b2-governanca-ti_1",
+    "topicId": "b2-governanca-ti",
+    "blocoId": "bloco-2",
+    "question": "No contexto da Governança Corporativa de TI e seguindo rigorosamente o framework COBIT 2019, existe uma distinção fundamental entre os conceitos de Governança e Gestão. Uma grande empresa do setor de energia está revisando seus processos internos para garantir que as necessidades das partes interessadas sejam avaliadas para definir objetivos corporativos equilibrados e acordados. De acordo com o COBIT 2019, a responsabilidade principal de 'Avaliar, Direcionar e Monitorar' (EDM) pertence à:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gestão de TI, que deve planejar as atividades em consonância com as metas de curto prazo.",
+        "isCorrect": false,
+        "explanation": "A gestão foca em Planejar, Construir, Executar e Monitorar (PBRM), não no direcionamento estratégico de alto nível."
+      },
+      {
+        "letter": "B",
+        "text": "Governança de TI, geralmente representada pelo conselho de administração sob a liderança do presidente.",
+        "isCorrect": true,
+        "explanation": "A governança é responsável por avaliar as necessidades, dar direção através de prioridades e monitorar o desempenho (EDM)."
+      },
+      {
+        "letter": "C",
+        "text": "Operação de TI, encarregada de garantir que os serviços sejam entregues conforme os acordos de nível de serviço.",
+        "isCorrect": false,
+        "explanation": "A operação faz parte da gestão (domínio DSS do COBIT) e não da governança."
+      },
+      {
+        "letter": "D",
+        "text": "Auditoria Interna, que detém a autoridade para definir as diretrizes estratégicas da organização.",
+        "isCorrect": false,
+        "explanation": "A auditoria monitora e assegura, mas não direciona nem define a estratégia corporativa."
+      },
+      {
+        "letter": "E",
+        "text": "Gerência de Projetos, que deve monitorar os riscos técnicos e financeiros de cada iniciativa de TI.",
+        "isCorrect": false,
+        "explanation": "Gerência de projetos é uma atividade de gestão focada em entregas específicas, não na governança global."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda a distinção fundamental proposta pelo COBIT 2019 entre Governança e Gestão. De acordo com o framework, a Governança garante que as necessidades, condições e opções das partes interessadas sejam avaliadas para determinar objetivos corporativos equilibrados e acordados; define a direção por meio de priorização e tomada de decisão; e monitora o desempenho e a conformidade em relação à direção e aos objetivos acordados. Essas atividades são resumidas pela sigla EDM (Evaluate, Direct, Monitor). Na maioria das empresas, a governança é de responsabilidade do conselho de administração (Board of Directors). Por outro lado, a Gestão planeja, constrói, executa e monitora (PBRM - Plan, Build, Run, Monitor) as atividades em conformidade com a direção definida pela governança para atingir os objetivos corporativos. A alternativa B está correta pois identifica corretamente o papel da governança e seus responsáveis típicos. As demais alternativas confundem papéis operacionais ou de suporte (como auditoria e gerência de projetos) com o nível estratégico da governança.",
+    "technicalJustification": "COBIT 2019 Framework: Introduction and Methodology, Capítulo 1.3 (Governance and Management).",
+    "relatedConcepts": [
+      "COBIT 2019",
+      "EDM vs PBRM",
+      "Stakeholder Needs"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b2-governanca-ti_2",
+    "topicId": "b2-governanca-ti",
+    "blocoId": "bloco-2",
+    "question": "O ITIL 4 introduziu o conceito do Sistema de Valor de Serviço (SVS), que descreve como todos os componentes e atividades de uma organização trabalham juntos como um sistema para facilitar a criação de valor. Um dos componentes centrais do SVS é a Cadeia de Valor de Serviço (Service Value Chain). Considere uma situação em que a equipe de TI da Petrobras precisa entender as necessidades dos usuários finais antes de projetar uma nova solução de análise de dados para refinarias. Qual atividade da Cadeia de Valor de Serviço do ITIL 4 é primordialmente responsável por fornecer uma compreensão compartilhada das necessidades das partes interessadas?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Planejar (Plan)",
+        "isCorrect": false,
+        "explanation": "O planejamento foca na visão compartilhada e diretrizes para os quatro dimensões, não na interação direta para coleta de requisitos."
+      },
+      {
+        "letter": "B",
+        "text": "Melhorar (Improve)",
+        "isCorrect": false,
+        "explanation": "Foca na melhoria contínua de produtos e serviços em todos os níveis."
+      },
+      {
+        "letter": "C",
+        "text": "Engajar (Engage)",
+        "isCorrect": true,
+        "explanation": "Esta atividade foca em entender as necessidades das partes interessadas e promover a transparência e bons relacionamentos."
+      },
+      {
+        "letter": "D",
+        "text": "Desenho e Transição (Design and Transition)",
+        "isCorrect": false,
+        "explanation": "Foca em garantir que os serviços atendam às expectativas de custo, qualidade e tempo para o mercado."
+      },
+      {
+        "letter": "E",
+        "text": "Obter/Construir (Obtain/Build)",
+        "isCorrect": false,
+        "explanation": "Foca em garantir que os componentes do serviço estejam disponíveis quando e onde forem necessários."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "No ITIL 4, a Cadeia de Valor de Serviço (Service Value Chain - SVC) consiste em seis atividades principais que podem ser combinadas de várias formas (fluxos de valor). A atividade 'Engajar' (Engage) tem como propósito fornecer uma boa compreensão das necessidades das partes interessadas, promover a transparência e garantir o bom relacionamento com todos os stakeholders. No cenário descrito, onde a equipe de TI busca entender as necessidades dos usuários finais de refinarias antes de qualquer desenvolvimento, a atividade de 'Engajar' é a que melhor descreve essa interação inicial e contínua. As outras atividades possuem focos distintos: 'Planejar' foca na visão e planos; 'Melhorar' na evolução constante; 'Desenho e Transição' na especificação e mudança; e 'Obter/Construir' na aquisição ou criação de componentes. A CESGRANRIO costuma cobrar a finalidade específica de cada atividade da SVC, exigindo que o candidato saiba distinguir o 'Engajar' (comunicação/requisitos) do 'Desenho' (especificação técnica).",
+    "technicalJustification": "ITIL 4 Foundation, Capítulo 4.5 (The Service Value Chain).",
+    "relatedConcepts": [
+      "ITIL 4 SVS",
+      "Service Value Chain",
+      "Engage Activity"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b2-governanca-ti_3",
+    "topicId": "b2-governanca-ti",
+    "blocoId": "bloco-2",
+    "question": "A implementação de um sistema de governança de TI eficaz não é uma solução única para todos; ela deve ser adaptada às necessidades específicas da organização. O COBIT 2019 utiliza 'Fatores de Design' (Design Factors) para ajudar as organizações a personalizar seu sistema de governança. Suponha que a Petrobras decida priorizar a transformação digital e a inovação tecnológica rápida para se manter competitiva na transição energética. De acordo com o COBIT 2019, como o fator de design 'Estratégia Corporativa' influenciaria os objetivos de governança e gestão?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A estratégia corporativa é irrelevante para a seleção de objetivos de TI, pois a TI deve seguir padrões técnicos universais.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A TI deve estar alinhada à estratégia corporativa para gerar valor."
+      },
+      {
+        "letter": "B",
+        "text": "Se a estratégia é de 'Inovação e Diferenciação', haverá uma priorização maior de objetivos relacionados à agilidade e criatividade, em detrimento da otimização estrita de custos.",
+        "isCorrect": true,
+        "explanation": "O COBIT 2019 mapeia diferentes estratégias para diferentes prioridades de objetivos de TI (IT-related goals)."
+      },
+      {
+        "letter": "C",
+        "text": "A estratégia corporativa define apenas o orçamento de TI, sem impactar a importância relativa dos processos de governança.",
+        "isCorrect": false,
+        "explanation": "O COBIT 2019 demonstra que a estratégia altera a relevância de quase todos os componentes do sistema de governança."
+      },
+      {
+        "letter": "D",
+        "text": "O fator de design 'Estratégia Corporativa' substitui a necessidade de avaliar o 'Perfil de Risco' da organização.",
+        "isCorrect": false,
+        "explanation": "Estratégia e Perfil de Risco são fatores de design distintos que devem ser analisados em conjunto."
+      },
+      {
+        "letter": "E",
+        "text": "Estratégias baseadas em 'Liderança em Custo' exigem a eliminação total dos processos de monitoramento para reduzir despesas operacionais.",
+        "isCorrect": false,
+        "explanation": "Liderança em custo foca em eficiência, não na eliminação de controles essenciais de monitoramento."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "O COBIT 2019 introduziu o conceito de Fatores de Design para permitir que as organizações customizem seu sistema de governança. O primeiro fator de design é a 'Estratégia Corporativa', que pode ser classificada em quatro categorias: Crescimento/Aquisição, Inovação/Diferenciação, Liderança em Custo e Serviço ao Cliente/Estabilidade. Cada uma dessas estratégias exerce uma influência diferente na priorização dos Objetivos de Governança e Gestão (os 40 processos do COBIT). Por exemplo, uma organização que foca em 'Inovação e Diferenciação' (como sugerido no cenário da Petrobras buscando inovação rápida) dará muito mais peso a objetivos que suportam a agilidade, a introdução de novos serviços e a exploração de dados, enquanto uma empresa focada em 'Liderança em Custo' priorizará a eficiência operacional e a otimização de ativos. A alternativa B reflete corretamente essa lógica de alinhamento estratégico, onde o sistema de governança é 'calibrado' para suportar o direcionamento de negócio escolhido pela alta administração.",
+    "technicalJustification": "COBIT 2019 Design Guide: Designing an Information and Technology Governance Solution, Capítulo 2 (Design Factors).",
+    "relatedConcepts": [
+      "Design Factors",
+      "Strategic Alignment",
+      "COBIT 2019 Implementation"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b2-governanca-ti_4",
+    "topicId": "b2-governanca-ti",
+    "blocoId": "bloco-2",
+    "question": "A biblioteca ITIL 4 propõe que a gestão de serviços deve ser encarada de forma holística, considerando as 'Quatro Dimensões da Gestão de Serviço'. Uma organização de grande porte percebe que, apesar de ter investido massivamente em ferramentas de automação e softwares de última geração, seus serviços de TI continuam apresentando falhas de comunicação e silos de informação entre as equipes. Ao analisar essa falha sob a ótica do ITIL 4, conclui-se que a organização negligenciou a dimensão de:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Parceiros e Fornecedores, pois a automação deveria ter sido terceirizada para especialistas.",
+        "isCorrect": false,
+        "explanation": "O problema descrito é interno (comunicação e silos), não necessariamente ligado a fornecedores externos."
+      },
+      {
+        "letter": "B",
+        "text": "Fluxos de Valor e Processos, já que a automação por si só garante a eficiência dos processos.",
+        "isCorrect": false,
+        "explanation": "A automação de um processo ruim apenas acelera a produção de erros; no entanto, o foco da falha descrita é humano/estrutural."
+      },
+      {
+        "letter": "C",
+        "text": "Organizações e Pessoas, que abrange a cultura, papéis, responsabilidades e sistemas de comunicação.",
+        "isCorrect": true,
+        "explanation": "Esta dimensão trata especificamente da estrutura organizacional, cultura e comunicação entre as pessoas."
+      },
+      {
+        "letter": "D",
+        "text": "Informação e Tecnologia, uma vez que a escolha da ferramenta de automação foi inadequada para o negócio.",
+        "isCorrect": false,
+        "explanation": "A organização investiu nesta dimensão, mas o problema reside no fato de ter focado APENAS nela."
+      },
+      {
+        "letter": "E",
+        "text": "Governança Corporativa, que não foi incluída como uma das quatro dimensões do ITIL 4.",
+        "isCorrect": false,
+        "explanation": "A governança é parte do SVS, mas não é uma das 'Quatro Dimensões' especificadas pelo ITIL 4."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "O ITIL 4 enfatiza que, para que a gestão de serviços seja eficaz, as organizações devem manter um equilíbrio entre as Quatro Dimensões: 1. Organizações e Pessoas; 2. Informação e Tecnologia; 3. Parceiros e Fornecedores; 4. Fluxos de Valor e Processos. O cenário descrito é um erro clássico em grandes corporações: acreditar que a tecnologia (ferramentas de automação) resolverá problemas que são, na verdade, de natureza cultural ou estrutural. Quando existem 'silos de informação' e 'falhas de comunicação', a dimensão afetada é a de 'Organizações e Pessoas'. Esta dimensão inclui a cultura organizacional, a estrutura de equipes, as competências individuais e os sistemas de comunicação. Negligenciar esta dimensão ao focar excessivamente em 'Informação e Tecnologia' leva ao fracasso da entrega de valor. A alternativa C é a correta pois identifica precisamente a dimensão que trata dos aspectos humanos e organizacionais que causam os problemas relatados no enunciado.",
+    "technicalJustification": "ITIL 4 Foundation, Capítulo 3 (The Four Dimensions of Service Management).",
+    "relatedConcepts": [
+      "Four Dimensions",
+      "Organizations and People",
+      "Holistic Approach"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b2-governanca-ti_5",
+    "topicId": "b2-governanca-ti",
+    "blocoId": "bloco-2",
+    "question": "O COBIT 2019 estabelece uma diferença clara entre os 'Princípios para um Sistema de Governança' e os 'Princípios para um Framework de Governança'. Uma equipe de conformidade da Petrobras está desenvolvendo um novo modelo de governança de TI e deseja garantir que o framework utilizado seja baseado em um modelo conceitual sólido. De acordo com o COBIT 2019, qual das seguintes características é um dos três princípios fundamentais para um FRAMEWORK de governança?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Prover valor para as partes interessadas (Stakeholder Value).",
+        "isCorrect": false,
+        "explanation": "Este é um princípio do Sistema de Governança, não do Framework."
+      },
+      {
+        "letter": "B",
+        "text": "Ser baseado em um modelo conceitual (Based on a Conceptual Model).",
+        "isCorrect": true,
+        "explanation": "O COBIT 2019 define que o framework deve ser baseado em um modelo conceitual para garantir consistência."
+      },
+      {
+        "letter": "C",
+        "text": "Abordagem fim-a-fim (End-to-end Governance System).",
+        "isCorrect": false,
+        "explanation": "Este é um princípio do Sistema de Governança."
+      },
+      {
+        "letter": "D",
+        "text": "Sistema de governança dinâmico (Dynamic Governance System).",
+        "isCorrect": false,
+        "explanation": "Este é um princípio do Sistema de Governança."
+      },
+      {
+        "letter": "E",
+        "text": "Distinguir governança de gestão (Governance Distinct from Management).",
+        "isCorrect": false,
+        "explanation": "Este é um princípio do Sistema de Governança."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão exige um conhecimento profundo e detalhado do COBIT 2019, especificamente a distinção entre os dois conjuntos de princípios introduzidos nesta versão. O COBIT 2019 define seis princípios para um 'Sistema de Governança' (Stakeholder Value, Holistic Approach, Dynamic Governance System, Governance Distinct from Management, Tailored to Enterprise Needs, e End-to-End Governance System) e três princípios para um 'Framework de Governança'. Os princípios do Framework são: 1. Baseado em um modelo conceitual (Based on a conceptual model) - para identificar os componentes principais e seus relacionamentos; 2. Aberto e flexível (Open and flexible) - para permitir a adição de novos conteúdos e recursos; 3. Alinhado aos principais padrões (Aligned to major standards) - como ITIL, ISO, etc. A alternativa B é a única que apresenta um princípio pertencente ao conjunto do 'Framework'. Esta é uma 'pegadinha' clássica da CESGRANRIO, que troca os nomes dos conjuntos de princípios para confundir o candidato que memorizou apenas as palavras-chave sem entender a qual categoria elas pertencem.",
+    "technicalJustification": "COBIT 2019 Framework: Introduction and Methodology, Capítulo 3 (Governance System and Framework Principles).",
+    "relatedConcepts": [
+      "Governance Framework Principles",
+      "Governance System Principles",
+      "Conceptual Model"
+    ],
+    "order": 5
+  }
+]

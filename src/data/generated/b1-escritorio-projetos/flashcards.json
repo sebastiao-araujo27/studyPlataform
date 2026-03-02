@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b1-escritorio-projetos_1",
+    "topicId": "b1-escritorio-projetos",
+    "front": "Qual a definição básica de Escritório de Projetos (PMO)?",
+    "back": "É uma estrutura organizacional que padroniza os processos de governança relacionados a projetos e facilita o compartilhamento de recursos, metodologias, ferramentas e técnicas.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-escritorio-projetos_2",
+    "topicId": "b1-escritorio-projetos",
+    "front": "Quais são os três tipos de PMO definidos pelo Guia PMBOK, baseados no seu nível de influência e controle?",
+    "back": "1. Suporte (baixo controle);\n2. Controle (controle moderado);\n3. Diretivo (alto controle).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-escritorio-projetos_3",
+    "topicId": "b1-escritorio-projetos",
+    "front": "O que caracteriza um \"Programa\" na gestão de projetos?",
+    "back": "Um grupo de projetos relacionados, subprogramas e atividades gerenciados de forma coordenada para obter benefícios que não seriam alcançados se gerenciados individualmente.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-escritorio-projetos_4",
+    "topicId": "b1-escritorio-projetos",
+    "front": "O que é um \"Portfólio\" de projetos?",
+    "back": "Um conjunto de projetos, programas e operações gerenciados em grupo para alcançar objetivos estratégicos de negócio.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-escritorio-projetos_5",
+    "topicId": "b1-escritorio-projetos",
+    "front": "Qual a principal diferença operacional entre um PMO de Suporte e um PMO Diretivo?",
+    "back": "O PMO de Suporte é consultivo (fornece modelos e lições aprendidas), enquanto o PMO Diretivo assume o controle e gerencia diretamente os projetos, designando os gerentes.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-escritorio-projetos_6",
+    "topicId": "b1-escritorio-projetos",
+    "front": "No PMO do tipo \"Controle\", quais são as exigências típicas feitas aos projetos?",
+    "back": "- Adoção de metodologias de gerenciamento de projetos;\n- Uso de modelos e ferramentas específicas;\n- Conformidade com as estruturas de governança.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-escritorio-projetos_7",
+    "topicId": "b1-escritorio-projetos",
+    "front": "Qual o objetivo principal de modelos de maturidade (ex: OPM3 ou PMMM) em gestão de projetos?",
+    "back": "Avaliar a capacidade de uma organização em entregar projetos de forma consistente e identificar oportunidades de melhoria contínua nos processos.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-escritorio-projetos_8",
+    "topicId": "b1-escritorio-projetos",
+    "front": "V ou F: O PMO pode ter autoridade para encerrar projetos para garantir o alinhamento estratégico.",
+    "back": "Verdadeiro. Em níveis de maturidade e controle elevados (Diretivo/Estratégico), o PMO pode recomendar ou decidir pelo encerramento de projetos que não entregam mais valor.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-escritorio-projetos_9",
+    "topicId": "b1-escritorio-projetos",
+    "front": "Diferencie o foco do gerenciamento de Programas versus o gerenciamento de Portfólios.",
+    "back": "- Programas: Focam nas interdependências entre projetos para otimizar custos e recursos.\n- Portfólios: Focam na seleção, priorização e alinhamento estratégico dos componentes.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-escritorio-projetos_10",
+    "topicId": "b1-escritorio-projetos",
+    "front": "Como se diferenciam os objetivos de um Gerente de Projetos e de um PMO em relação ao escopo?",
+    "back": "- Gerente de Projetos: Foca nos objetivos específicos do projeto (escopo do produto/projeto).\n- PMO: Foca em mudanças no escopo organizacional e na otimização da metodologia global.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b3-logica_1",
+    "topicId": "b3-logica",
+    "front": "O que é uma proposição lógica?",
+    "back": "Uma frase declarativa que pode ser classificada unicamente como verdadeira (V) ou falsa (F), mas nunca ambas. Não são proposições: perguntas, exclamações, ordens, frases sem verbo ou com ambiguidade.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-logica_2",
+    "topicId": "b3-logica",
+    "front": "Quais são os principais conectivos lógicos e seus símbolos?",
+    "back": "Os principais conectivos lógicos e seus símbolos são:\n- Conjunção (E): ∧\n- Disjunção (OU): ∨\n- Condicional (SE... ENTÃO...): →\n- Bicondicional (...SE E SOMENTE SE...): ↔\n- Negação (NÃO): ¬",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-logica_3",
+    "topicId": "b3-logica",
+    "front": "Para que serve uma tabela verdade?",
+    "back": "É uma ferramenta utilizada para determinar o valor lógico de uma proposição composta a partir dos valores lógicos de suas proposições simples e dos conectivos que as ligam.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-logica_4",
+    "topicId": "b3-logica",
+    "front": "O que é uma tautologia?",
+    "back": "Uma proposição composta que é sempre verdadeira, independentemente dos valores lógicos das proposições simples que a compõem. Sua última coluna na tabela verdade contém apenas 'V'.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-logica_5",
+    "topicId": "b3-logica",
+    "front": "Qual a diferença fundamental entre uma proposição simples e uma proposição composta?",
+    "back": "- **Proposição Simples (ou atômica):** Expressa uma única ideia, sem conectivos lógicos. Ex: \"O sol é uma estrela.\"\n- **Proposição Composta (ou molecular):** Formada por duas ou mais proposições simples ligadas por conectivos lógicos. Ex: \"O sol é uma estrela E a Terra é um planeta.\"",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-logica_6",
+    "topicId": "b3-logica",
+    "front": "Como se determina o valor lógico de uma conjunção (P ∧ Q)?",
+    "back": "Uma conjunção (P ∧ Q) será verdadeira (V) **somente se ambas as proposições (P e Q) forem verdadeiras**. Em qualquer outro caso (se P for falsa, ou Q for falsa, ou ambas forem falsas), a conjunção será falsa (F).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-logica_7",
+    "topicId": "b3-logica",
+    "front": "Quais são as três principais propriedades da relação de equivalência lógica?",
+    "back": "As três principais propriedades são:\n- **Reflexiva:** Toda proposição é equivalente a si mesma (P ↔ P).\n- **Simétrica:** Se P é equivalente a Q, então Q é equivalente a P (P ↔ Q implica Q ↔ P).\n- **Transitiva:** Se P é equivalente a Q e Q é equivalente a R, então P é equivalente a R ((P ↔ Q) ∧ (Q ↔ R) implica (P ↔ R)).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-logica_8",
+    "topicId": "b3-logica",
+    "front": "Qual é a única situação em que uma proposição condicional (P → Q) é falsa?",
+    "back": "A proposição condicional (P → Q) é falsa **apenas quando a primeira parte (antecedente P) é verdadeira e a segunda parte (consequente Q) é falsa**. Em todos os outros casos (V→V, F→V, F→F), a condicional é verdadeira.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-logica_9",
+    "topicId": "b3-logica",
+    "front": "Qual a relação entre a equivalência lógica de duas proposições (P ↔ Q) e a tabela verdade da bicondicional (P ↔ Q)?",
+    "back": "Duas proposições P e Q são logicamente equivalentes (P ↔ Q) **se e somente se a bicondicional (P ↔ Q) for uma tautologia**. Isso significa que a coluna final da tabela verdade para (P ↔ Q) deve conter apenas valores \"V\".",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-logica_10",
+    "topicId": "b3-logica",
+    "front": "Qual a negação da proposição \"Todos os alunos são estudiosos\"?",
+    "back": "A negação é \"Existe pelo menos um aluno que NÃO é estudioso\" (ou \"Algum aluno não é estudioso\").\n**Regra geral:** ¬(∀x P(x)) ≡ ∃x ¬P(x).\nA negação de \"todo\" não é \"nenhum\", mas sim \"existe pelo menos um que não\".",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

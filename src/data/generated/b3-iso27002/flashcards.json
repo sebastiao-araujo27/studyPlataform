@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b3-iso27002_1",
+    "topicId": "b3-iso27002",
+    "front": "Quais são os 4 temas de controles da ISO/IEC 27002:2022 e quantos controles cada um possui?",
+    "back": "1. Controles Organizacionais (Cláusula 5) — 37 controles\n2. Controles de Pessoas (Cláusula 6) — 8 controles\n3. Controles Físicos (Cláusula 7) — 14 controles\n4. Controles Tecnológicos (Cláusula 8) — 34 controles\nTotal: 93 controles\nMnemônico: OPFT-93 (37-8-14-34)",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso27002_2",
+    "topicId": "b3-iso27002",
+    "front": "Qual a diferença fundamental entre a ISO 27001 e a ISO 27002?",
+    "back": "ISO 27001: Norma de REQUISITOS para o SGSI. É CERTIFICÁVEL. Usa 'deve' (shall).\nISO 27002: Norma de ORIENTAÇÃO/boas práticas para implementação de controles. NÃO é certificável. Usa 'convém' (should).\n\nAnalogia: 27001 = 'A Lei' (define o que é obrigatório) / 27002 = 'O Manual' (explica como cumprir).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso27002_3",
+    "topicId": "b3-iso27002",
+    "front": "Quais são os 5 tipos de atributos dos controles introduzidos pela ISO 27002:2022?",
+    "back": "1. Tipo de controle: Preventivo, Detectivo, Corretivo\n2. Propriedades de segurança da informação: Confidencialidade, Integridade, Disponibilidade (CID)\n3. Conceitos de segurança cibernética (NIST CSF): Identificar, Proteger, Detectar, Responder, Recuperar\n4. Capacidades operacionais: 15 categorias (Governança, Gestão de ativos, Proteção da informação, etc.)\n5. Domínios de segurança: Governança e ecossistema, Proteção, Defesa, Resiliência",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso27002_4",
+    "topicId": "b3-iso27002",
+    "front": "Quais são os 11 novos controles introduzidos na versão 2022 da ISO 27002?",
+    "back": "Organizacionais (3): 5.7 Inteligência de ameaças, 5.23 Segurança em nuvem, 5.30 Prontidão TIC para continuidade\nFísico (1): 7.4 Monitoramento de segurança física\nTecnológicos (7): 8.9 Gestão de configuração, 8.10 Exclusão de informações, 8.11 Mascaramento de dados, 8.12 Prevenção de vazamento (DLP), 8.16 Atividades de monitoramento, 8.23 Filtragem web, 8.28 Codificação segura\n\nDica: A maioria dos novos controles é tecnológica (7 de 11).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso27002_5",
+    "topicId": "b3-iso27002",
+    "front": "O que mudou na estrutura da ISO 27002 da versão 2013 para a versão 2022?",
+    "back": "Versão 2013: 14 domínios, 114 controles, sem atributos\nVersão 2022: 4 temas, 93 controles, 5 tipos de atributos\n\nMudanças: Controles foram reorganizados e mesclados (nenhum removido), 11 novos foram adicionados, e cada controle recebeu atributos para facilitar filtragem e categorização.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso27002_6",
+    "topicId": "b3-iso27002",
+    "front": "Qual a diferença entre controles Preventivos, Detectivos e Corretivos na ISO 27002:2022?",
+    "back": "Preventivo: Atua ANTES do incidente — visa EVITAR que ocorra. Ex.: firewall, política de senhas, treinamento.\nDetectivo: Atua DURANTE o incidente — visa IDENTIFICAR e alertar. Ex.: monitoramento de logs, IDS, auditoria.\nCorretivo: Atua APÓS o incidente — visa REMEDIAR e restaurar. Ex.: plano de resposta, backup/restauração, patches.\n\nMnemônico: PrDeCo (Preventivo-Detectivo-Corretivo)",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso27002_7",
+    "topicId": "b3-iso27002",
+    "front": "O que é a Declaração de Aplicabilidade (SoA) e a qual norma ela pertence?",
+    "back": "A Declaração de Aplicabilidade (Statement of Applicability - SoA) é um documento OBRIGATÓRIO da ISO 27001 (cláusula 6.1.3 d), NÃO da ISO 27002.\n\nConteúdo: Lista todos os controles do Anexo A da 27001 e indica:\n- Quais são aplicáveis (com justificativa de inclusão)\n- Quais não são aplicáveis (com justificativa de exclusão)\n- Se estão implementados ou não\n\nA seleção é baseada em análise de riscos.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso27002_8",
+    "topicId": "b3-iso27002",
+    "front": "Como a ISO 27002:2022 trata o controle de acesso? Em quais temas ele aparece?",
+    "back": "Controle de acesso é TRANSVERSAL na ISO 27002:2022:\n\nOrganizacional: 5.15 (Política de controle de acesso), 5.16 (Gestão de identidade), 5.17 (Informações de autenticação), 5.18 (Direitos de acesso)\nFísico: 7.2 (Entrada física)\nTecnológico: 8.2 (Direitos de acesso privilegiado), 8.3 (Restrição de acesso a informações), 8.5 (Autenticação segura)\n\nNão é exclusivamente tecnológico!",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso27002_9",
+    "topicId": "b3-iso27002",
+    "front": "Como a ISO 27002:2022 aborda criptografia e qual a relação com certificação/assinatura digital?",
+    "back": "Controle 8.24 (Uso de criptografia) — Tema Tecnológico:\n- Define regras para uso efetivo de criptografia\n- Inclui gestão de chaves criptográficas (geração, distribuição, armazenamento, rotação, revogação)\n- Cobre criptografia de dados em repouso e em trânsito (TLS/SSL)\n\nNota: A ISO 27002 REFERENCIA o uso de criptografia como controle, mas o aprofundamento em algoritmos, certificação digital e assinatura digital são tratados em tópico específico do edital.\n\nNa versão 2013, Criptografia era um domínio separado (Domínio 10). Na 2022, é um controle dentro do tema Tecnológico.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso27002_10",
+    "topicId": "b3-iso27002",
+    "front": "Quais são os 4 domínios de segurança (atributo) definidos pela ISO 27002:2022?",
+    "back": "1. Governança e ecossistema — Gestão da segurança da informação e gestão de riscos do ecossistema\n2. Proteção — Arquitetura de segurança de TI, administração de segurança, gestão de identidade e acesso, manutenção\n3. Defesa — Detecção e gestão de eventos e incidentes de segurança\n4. Resiliência — Gestão de continuidade de operações\n\nEsses domínios permitem uma visão orientada a processos de segurança, complementando a visão por temas (Organizacional, Pessoas, Físico, Tecnológico).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

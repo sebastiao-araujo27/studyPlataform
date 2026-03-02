@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b3-iso31000_1",
+    "topicId": "b3-iso31000",
+    "front": "Qual é a definição de RISCO segundo a ISO 31000:2018?",
+    "back": "Risco é o \"efeito da incerteza nos objetivos\". O efeito pode ser positivo (oportunidade), negativo (ameaça) ou ambos. O risco está sempre associado a objetivos organizacionais e é frequentemente expresso em termos de fontes de risco, eventos potenciais, suas consequências e probabilidades.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso31000_2",
+    "topicId": "b3-iso31000",
+    "front": "Quais são os 8 princípios da gestão de riscos segundo a ISO 31000:2018?",
+    "back": "1. Integrada\n2. Estruturada e abrangente\n3. Personalizada\n4. Inclusiva\n5. Dinâmica\n6. Melhor informação disponível\n7. Fatores humanos e culturais\n8. Melhoria contínua\n\nO propósito central é CRIAR E PROTEGER VALOR.\nMnemônico: I-E-P-I-D-M-F-M",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso31000_3",
+    "topicId": "b3-iso31000",
+    "front": "Quais são os componentes do FRAMEWORK (estrutura) de gestão de riscos da ISO 31000:2018?",
+    "back": "1. Liderança e comprometimento (centro/núcleo)\n2. Integração\n3. Concepção (design)\n4. Implementação\n5. Avaliação\n6. Melhoria\n\nO framework segue um ciclo similar ao PDCA e fornece os alicerces organizacionais para a gestão de riscos.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso31000_4",
+    "topicId": "b3-iso31000",
+    "front": "Quais são as etapas do PROCESSO de gestão de riscos da ISO 31000:2018?",
+    "back": "1. Comunicação e consulta (transversal a todas as etapas)\n2. Escopo, contexto e critérios\n3. Processo de avaliação de riscos (risk assessment):\n   - 3.1 Identificação de riscos\n   - 3.2 Análise de riscos\n   - 3.3 Avaliação de riscos (risk evaluation)\n4. Tratamento de riscos\n5. Monitoramento e análise crítica (transversal)\n6. Registro e relato",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso31000_5",
+    "topicId": "b3-iso31000",
+    "front": "Qual a diferença entre 'processo de avaliação de riscos' (risk assessment) e 'avaliação de riscos' (risk evaluation)?",
+    "back": "RISK ASSESSMENT (processo de avaliação de riscos) = processo global que engloba 3 subetapas: identificação + análise + avaliação de riscos.\n\nRISK EVALUATION (avaliação de riscos) = apenas a 3ª subetapa, que consiste em comparar os resultados da análise de riscos com os critérios de risco para apoiar a tomada de decisão.\n\nPegadinha clássica de prova: as bancas usam esses termos de forma ambígua para confundir!",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso31000_6",
+    "topicId": "b3-iso31000",
+    "front": "Quais são as opções de TRATAMENTO de riscos segundo a ISO 31000:2018?",
+    "back": "• EVITAR o risco — não iniciar ou descontinuar a atividade\n• ACEITAR ou aumentar o risco — para buscar uma oportunidade\n• REMOVER a fonte de risco\n• ALTERAR a probabilidade\n• ALTERAR as consequências\n• COMPARTILHAR o risco — contratos, seguros, parcerias\n• RETER o risco — por decisão informada e consciente\n\nImportante: tratamento pode gerar NOVOS riscos (riscos secundários). Aceitar ≠ ignorar.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso31000_7",
+    "topicId": "b3-iso31000",
+    "front": "A ISO 31000 é uma norma CERTIFICÁVEL?",
+    "back": "NÃO! A ISO 31000:2018 é uma norma de DIRETRIZES (guidance standard), não de requisitos. Não existe certificação ISO 31000.\n\nDiferente de normas certificáveis como:\n• ISO 27001 (Segurança da Informação)\n• ISO 9001 (Qualidade)\n• ISO 22301 (Continuidade de Negócios)\n\nEssa é uma pegadinha clássica em provas CESGRANRIO!",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso31000_8",
+    "topicId": "b3-iso31000",
+    "front": "Compare ISO 31000 vs COSO ERM vs ISO 27005 vs PMBOK (gestão de riscos).",
+    "back": "• ISO 31000 → Framework GENÉRICO de gestão de riscos (qualquer contexto, qualquer organização)\n• COSO ERM → Gestão de riscos CORPORATIVOS/EMPRESARIAIS (foco em estratégia + governança)\n• ISO 27005 → Gestão de riscos de SEGURANÇA DA INFORMAÇÃO (alinhada à ISO 31000, suporta ISO 27001)\n• PMBOK → Gestão de riscos em PROJETOS (separa ameaças de oportunidades)\n\nA ISO 27005 é a 'filha' da ISO 31000 aplicada à segurança da informação.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso31000_9",
+    "topicId": "b3-iso31000",
+    "front": "Quais atividades do processo de gestão de riscos da ISO 31000 são TRANSVERSAIS (ocorrem em todas as etapas)?",
+    "back": "Duas atividades são transversais/contínuas:\n\n1. COMUNICAÇÃO E CONSULTA — reunir diferentes áreas de especialização, assegurar que diferentes pontos de vista sejam considerados\n\n2. MONITORAMENTO E ANÁLISE CRÍTICA — verificar a eficácia dos controles, detectar mudanças, assegurar a qualidade do processo\n\nAmbas NÃO são etapas sequenciais — permeiam TODO o processo do início ao fim.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso31000_10",
+    "topicId": "b3-iso31000",
+    "front": "Quais as principais mudanças da ISO 31000:2018 em relação à versão 2009?",
+    "back": "Principais mudanças da revisão 2018:\n\n• Redução dos princípios de 11 para 8\n• Maior ênfase na LIDERANÇA DA ALTA DIREÇÃO\n• Substituição de 'mandato e comprometimento' por 'liderança e comprometimento'\n• Simplificação da linguagem\n• Maior ênfase na NATUREZA ITERATIVA da gestão de riscos\n• Reforço do conceito de gestão de riscos como CRIAÇÃO E PROTEÇÃO DE VALOR\n• Maior integração com processos organizacionais (não ser atividade isolada)",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

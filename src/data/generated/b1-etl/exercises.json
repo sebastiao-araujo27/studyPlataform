@@ -1,0 +1,244 @@
+[
+  {
+    "id": "ex_b1-etl_1",
+    "topicId": "b1-etl",
+    "blocoId": "bloco-1",
+    "question": "No contexto de arquitetura de Data Warehousing, o processo de ETL (Extract, Transform, Load) desempenha um papel fundamental na integração de dados provenientes de fontes heterogêneas. Uma das etapas críticas desse processo envolve o armazenamento temporário de dados antes que eles sejam carregados no repositório final. De acordo com os conceitos de Ralph Kimball, essa área de trabalho intermediária, onde ocorrem as atividades de limpeza e padronização, é denominada:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Data Mart Independente",
+        "isCorrect": false,
+        "explanation": "Data Marts são subconjuntos de dados focados em áreas de negócio, não áreas temporárias de processamento."
+      },
+      {
+        "letter": "B",
+        "text": "Staging Area",
+        "isCorrect": true,
+        "explanation": "A Staging Area é a zona de pouso e processamento onde os dados são preparados antes da carga final no DW."
+      },
+      {
+        "letter": "C",
+        "text": "Operational Data Store (ODS)",
+        "isCorrect": false,
+        "explanation": "O ODS é um banco de dados integrado para consultas operacionais em tempo real, não uma área de staging volátil."
+      },
+      {
+        "letter": "D",
+        "text": "Metadata Repository",
+        "isCorrect": false,
+        "explanation": "O repositório de metadados armazena definições sobre os dados, não os dados brutos ou transformados em si."
+      },
+      {
+        "letter": "E",
+        "text": "Enterprise Service Bus (ESB)",
+        "isCorrect": false,
+        "explanation": "O ESB é um componente de arquitetura de integração de sistemas (SOA), não uma estrutura de armazenamento de ETL."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda o conceito fundamental da Staging Area dentro do fluxo de ETL. Segundo Ralph Kimball, em sua obra clássica 'The Data Warehouse Toolkit', a Staging Area (Área de Preparação) é uma zona de armazenamento intermediária situada entre as fontes de dados operacionais e o Data Warehouse. Sua principal função é servir de 'buffer' para que as transformações pesadas, como limpeza de dados (data cleansing), deduplicação, padronização de formatos e verificações de integridade referencial, ocorram sem impactar o desempenho dos sistemas de origem (OLTP). A alternativa B está correta pois identifica precisamente esse componente. A alternativa A está incorreta porque Data Marts são destinos finais ou intermediários para consumo, não áreas de processamento técnico. A alternativa C (ODS) descreve um repositório para dados operacionais integrados, que possui persistência e é acessível por usuários, ao contrário da Staging que é tipicamente restrita ao processo de ETL. A alternativa D foca em metadados (dados sobre dados), e a E trata de barramentos de serviços para integração de aplicações, fugindo do escopo de armazenamento de dados analíticos.",
+    "technicalJustification": "Kimball, R.; Ross, M. 'The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling'. Wiley, 2013. O autor define a staging area como o local onde o processamento de 'backroom' ocorre.",
+    "relatedConcepts": [
+      "Staging Area",
+      "Data Cleansing",
+      "Arquitetura de DW"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b1-etl_2",
+    "topicId": "b1-etl",
+    "blocoId": "bloco-1",
+    "question": "Uma grande empresa do setor de energia está modernizando seu pipeline de dados para lidar com grandes volumes de registros provenientes de sensores em plataformas de extração. A equipe técnica decidiu adotar a abordagem ELT (Extract, Load, Transform) em vez do tradicional ETL. Ao optar pelo ELT em um ambiente de Data Warehouse moderno baseado em nuvem, a principal justificativa técnica para essa escolha é:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Garantir que a transformação ocorra antes da carga para economizar espaço de armazenamento no destino.",
+        "isCorrect": false,
+        "explanation": "Isso descreve o ETL tradicional, onde a transformação ocorre fora do banco de destino."
+      },
+      {
+        "letter": "B",
+        "text": "Eliminar a necessidade de qualquer processo de limpeza de dados, uma vez que os dados são carregados 'as-is'.",
+        "isCorrect": false,
+        "explanation": "A limpeza ainda é necessária no ELT, mas ocorre após a carga no repositório de destino."
+      },
+      {
+        "letter": "C",
+        "text": "Aproveitar o poder de processamento massivamente paralelo (MPP) e a escalabilidade do sistema de destino para realizar as transformações.",
+        "isCorrect": true,
+        "explanation": "O ELT utiliza o poder computacional do próprio Data Warehouse (como Snowflake ou BigQuery) para transformar os dados."
+      },
+      {
+        "letter": "D",
+        "text": "Reduzir o tráfego de rede, pois os dados transformados são menores que os dados extraídos originalmente.",
+        "isCorrect": false,
+        "explanation": "O ELT pode aumentar o tráfego de rede inicial, pois envia dados brutos (geralmente maiores) para o destino."
+      },
+      {
+        "letter": "E",
+        "text": "Simplificar a governança de dados, pois dispensa o uso de ferramentas de orquestração de pipeline.",
+        "isCorrect": false,
+        "explanation": "Ferramentas de orquestração continuam sendo fundamentais tanto no ETL quanto no ELT."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A mudança de paradigma do ETL para o ELT reflete a evolução das tecnologias de banco de dados. No ETL tradicional, as transformações ocorrem em um servidor intermediário (engine de ETL) antes de os dados chegarem ao DW, visando não sobrecarregar o banco de dados de destino. No entanto, com o advento de bancos de dados em nuvem e arquiteturas MPP (Massively Parallel Processing), o destino tornou-se muito mais potente que o servidor de ETL intermediário. Portanto, no ELT, os dados brutos são extraídos e carregados diretamente no destino (Load) para somente então serem transformados (Transform) usando SQL ou linguagens nativas do banco. A alternativa C captura essa essência: a escalabilidade da nuvem permite que transformações complexas sejam executadas de forma muito mais rápida dentro do próprio DW. A alternativa A descreve o ETL. A B é um erro comum: ELT não ignora a limpeza, apenas muda o momento em que ela ocorre. A D é incorreta porque dados brutos costumam ser mais volumosos que dados agregados, aumentando o tráfego inicial. A E é falsa pois a orquestração (Airflow, dbt) é vital para gerenciar as dependências do ELT.",
+    "technicalJustification": "Inmon, W. H. 'Building the Data Warehouse'. Wiley. O autor discute a evolução da integração de dados e como a capacidade de processamento do servidor de destino influencia a arquitetura do pipeline.",
+    "relatedConcepts": [
+      "ELT",
+      "MPP",
+      "Cloud Data Warehouse",
+      "Escalabilidade"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b1-etl_3",
+    "topicId": "b1-etl",
+    "blocoId": "bloco-1",
+    "question": "Durante a fase de transformação de um processo de ETL, uma das tarefas críticas é garantir a 'Qualidade dos Dados' (Data Quality). Um analista de processos de negócio da Petrobras observa que os dados de endereços dos fornecedores vindos de diferentes sistemas ERP apresentam inconsistências: alguns usam 'Av.', outros 'Avenida' e outros 'AV'. Para padronizar esses dados de acordo com uma regra de negócio pré-definida, o analista deve aplicar uma técnica de:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Data Profiling",
+        "isCorrect": false,
+        "explanation": "Profiling é a análise estatística para descobrir anomalias, não a correção ou padronização em si."
+      },
+      {
+        "letter": "B",
+        "text": "Data Enrichment",
+        "isCorrect": false,
+        "explanation": "Enriquecimento envolve adicionar novos dados de fontes externas, não padronizar os existentes."
+      },
+      {
+        "letter": "C",
+        "text": "Data Cleansing (ou Scrubbing)",
+        "isCorrect": true,
+        "explanation": "Cleansing envolve corrigir, padronizar e remover inconsistências dos dados transformando-os para um formato comum."
+      },
+      {
+        "letter": "D",
+        "text": "Change Data Capture (CDC)",
+        "isCorrect": false,
+        "explanation": "CDC é uma técnica de extração incremental baseada em mudanças, não uma técnica de transformação."
+      },
+      {
+        "letter": "E",
+        "text": "Data Masking",
+        "isCorrect": false,
+        "explanation": "Masking é a ocultação de dados sensíveis para conformidade e segurança, não padronização de endereços."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "O cenário descrito apresenta um problema clássico de inconsistência de formato, comum em processos de integração de dados. A técnica correta para resolver isso é o Data Cleansing (Limpeza de Dados). O Data Cleansing busca identificar e corrigir erros, inconsistências e redundâncias para melhorar a qualidade da informação. No exemplo, a padronização de 'Av.', 'Avenida' e 'AV' para um único formato padrão é uma atividade típica de limpeza e conformidade. A alternativa C é a correta. A alternativa A (Data Profiling) é o passo anterior, onde se descobre que o problema existe através de estatísticas. A alternativa B (Enrichment) seria, por exemplo, usar o CEP para buscar o nome da rua em uma base dos Correios e adicionar essa informação. A D (CDC) refere-se ao método de captura de dados na origem. A E (Masking) refere-se à proteção de dados (como LGPD), substituindo valores reais por fictícios para fins de teste ou privacidade.",
+    "technicalJustification": "Kimball, R.; Caserta, J. 'The Data Warehouse ETL Toolkit'. Wiley. Os autores detalham o subsistema de limpeza e conformidade como um dos pilares do processo de transformação.",
+    "relatedConcepts": [
+      "Data Quality",
+      "Standardization",
+      "Data Cleansing"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b1-etl_4",
+    "topicId": "b1-etl",
+    "blocoId": "bloco-1",
+    "question": "Considere o desafio de implementar um processo de carga incremental em um Data Warehouse de grande porte, onde a janela de manutenção é restrita e o volume de transações diárias é extremamente alto. Para identificar quais registros foram alterados no sistema de origem desde a última execução do ETL, sem sobrecarregar o banco de dados operacional com consultas exaustivas, a técnica de extração mais eficiente e recomendada é o:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Full Extract (Carga Total)",
+        "isCorrect": false,
+        "explanation": "A carga total extrai tudo sempre, o que é ineficiente para grandes volumes e janelas curtas."
+      },
+      {
+        "letter": "B",
+        "text": "Log-based Change Data Capture (CDC)",
+        "isCorrect": true,
+        "explanation": "O CDC baseado em log lê os logs de transação do banco sem impactar a performance das consultas operacionais."
+      },
+      {
+        "letter": "C",
+        "text": "Timestamp-based Extraction",
+        "isCorrect": false,
+        "explanation": "Embora incremental, exige que o banco de origem tenha colunas de data de modificação e requer consultas SQL que podem ser pesadas."
+      },
+      {
+        "letter": "D",
+        "text": "Trigger-based Capture",
+        "isCorrect": false,
+        "explanation": "Gera overhead significativo nas transações de escrita no sistema de origem, reduzindo a performance operacional."
+      },
+      {
+        "letter": "E",
+        "text": "File Comparison (Diff)",
+        "isCorrect": false,
+        "explanation": "Comparar arquivos inteiros é extremamente lento e ineficiente para o cenário de alto volume descrito."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "Em cenários de alta performance e janelas de tempo curtas, a extração incremental é obrigatória. O desafio é como identificar o que mudou (delta). O CDC (Change Data Capture) baseado em logs de transação é a técnica 'padrão ouro' para isso. Os bancos de dados relacionais mantêm logs de transação (como o Redo Log no Oracle ou Transaction Log no SQL Server) para recuperação de desastres. O CDC baseado em log lê esses arquivos diretamente no sistema de arquivos ou via API, identificando INSERTS, UPDATES e DELETES sem executar comandos 'SELECT' na base de dados, o que minimiza o impacto no ambiente de produção. A alternativa B está correta. A alternativa C (Timestamp) é comum, mas falha em detectar deleções e exige que os desenvolvedores da origem mantenham campos de data corretamente. A alternativa D (Triggers) impacta a performance de cada transação de escrita na origem, o que é indesejado em sistemas críticos. A alternativa A é inviável pelo volume de dados citado.",
+    "technicalJustification": "Referência: 'The Data Warehouse ETL Toolkit' (Kimball). O autor descreve o CDC baseado em log como a abordagem menos intrusiva e mais robusta para captura de mudanças.",
+    "relatedConcepts": [
+      "CDC",
+      "Incremental Load",
+      "Log-based extraction"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b1-etl_5",
+    "topicId": "b1-etl",
+    "blocoId": "bloco-1",
+    "question": "Na arquitetura de um pipeline de dados robusto, o conceito de 'Data Lineage' (Linhagem de Dados) é frequentemente integrado às ferramentas de ETL para garantir a governança. Em um cenário onde um relatório financeiro apresenta valores divergentes, a linhagem de dados permite que o Analista de Sistemas realize o 'impact analysis' e o 'root cause analysis'. De acordo com as melhores práticas de gerenciamento de metadados em ETL, a linhagem de dados é definida como:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A técnica de criptografia de dados durante o transporte entre a staging area e o Data Mart.",
+        "isCorrect": false,
+        "explanation": "Isso refere-se à segurança de dados em trânsito, não à linhagem."
+      },
+      {
+        "letter": "B",
+        "text": "O histórico de versões do código-fonte das ferramentas de ETL armazenado em repositórios Git.",
+        "isCorrect": false,
+        "explanation": "Isso é controle de versão (versioning), uma parte da gerência de configuração, não linhagem de dados."
+      },
+      {
+        "letter": "C",
+        "text": "O mapeamento do ciclo de vida do dado, descrevendo sua origem, as transformações sofridas e seu destino final nos relatórios.",
+        "isCorrect": true,
+        "explanation": "Linhagem de dados rastreia o caminho e as mutações do dado desde a fonte até o consumo."
+      },
+      {
+        "letter": "D",
+        "text": "A estratégia de particionamento de tabelas fato para otimizar a carga de dados histórica.",
+        "isCorrect": false,
+        "explanation": "Particionamento é uma técnica de otimização física de banco de dados."
+      },
+      {
+        "letter": "E",
+        "text": "O processo de verificação de integridade referencial entre as tabelas de dimensões e fatos.",
+        "isCorrect": false,
+        "explanation": "Isso faz parte da garantia de integridade e qualidade, não da linhagem propriamente dita."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "A Linhagem de Dados (Data Lineage) é um componente avançado da governança de dados e do gerenciamento de metadados. Ela fornece um rastro visual ou documental que mostra de onde o dado veio (upstream), por quais processos de transformação ele passou (como filtros, agregações e cálculos) e onde ele está sendo utilizado (downstream). Em um ambiente complexo como o da Petrobras, onde um dado pode passar por múltiplas camadas (Bronze, Silver, Gold ou Staging, DW, Data Mart), saber exatamente qual regra de negócio transformou um 'valor bruto' em um 'indicador líquido' é vital para auditoria e correção de erros. A alternativa C define corretamente o conceito. As outras alternativas tratam de temas correlatos mas distintos: segurança (A), controle de versão de software (B), performance física (D) e regras de validação (E). A dificuldade da questão reside em diferenciar a linhagem (o caminho do dado) dos processos que garantem a qualidade ou a segurança desse dado.",
+    "technicalJustification": "DAMA-DMBOK (Data Management Body of Knowledge). O guia define Data Lineage como a trilha que documenta a origem dos dados e os passos pelos quais eles passaram ao longo do tempo.",
+    "relatedConcepts": [
+      "Data Lineage",
+      "Metadata Management",
+      "Data Governance",
+      "Impact Analysis"
+    ],
+    "order": 5
+  }
+]

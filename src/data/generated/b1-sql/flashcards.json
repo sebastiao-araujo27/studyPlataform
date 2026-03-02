@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b1-sql_1",
+    "topicId": "b1-sql",
+    "front": "Qual a principal diferença entre DDL (Data Definition Language) e DML (Data Manipulation Language) em SQL?",
+    "back": "DDL: Usada para definir e gerenciar a estrutura do banco de dados (CREATE, ALTER, DROP). DML: Usada para manipular os dados dentro das tabelas (SELECT, INSERT, UPDATE, DELETE).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-sql_2",
+    "topicId": "b1-sql",
+    "front": "O que faz o comando SQL `CREATE TABLE`?",
+    "back": "O comando `CREATE TABLE` é usado para criar uma nova tabela em um banco de dados. Ele especifica o nome da tabela e as colunas que ela conterá, incluindo seus tipos de dados e restrições.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-sql_3",
+    "topicId": "b1-sql",
+    "front": "Qual a finalidade do comando `INSERT INTO` em SQL?",
+    "back": "O comando `INSERT INTO` é utilizado para adicionar novas linhas (registros) a uma tabela existente em um banco de dados.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-sql_4",
+    "topicId": "b1-sql",
+    "front": "Explique a diferença entre `DELETE` e `TRUNCATE TABLE` em SQL.",
+    "back": "DELETE: Remove linhas específicas ou todas as linhas de uma tabela, podendo ser desfeito (ROLLBACK) e aciona gatilhos (triggers). TRUNCATE TABLE: Remove todas as linhas de uma tabela de forma mais rápida, não pode ser desfeito e geralmente não aciona gatilhos.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-sql_5",
+    "topicId": "b1-sql",
+    "front": "Em que situação o uso de `JOIN` é fundamental em consultas SQL?",
+    "back": "O `JOIN` é fundamental quando é necessário combinar linhas de duas ou mais tabelas com base em uma coluna relacionada entre elas, permitindo recuperar dados de múltiplas fontes em uma única consulta.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-sql_6",
+    "topicId": "b1-sql",
+    "front": "O que é uma subconsulta (subquery) em SQL e quando ela é útil?",
+    "back": "Uma subconsulta é uma consulta SQL aninhada dentro de outra consulta. É útil para realizar operações complexas, como filtrar dados com base em resultados de outra consulta ou como parte de uma expressão.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-sql_7",
+    "topicId": "b1-sql",
+    "front": "Quais são os tipos comuns de `JOIN` em SQL?",
+    "back": "Os tipos comuns de `JOIN` são:\n- INNER JOIN: Retorna apenas as linhas onde há correspondência em ambas as tabelas.\n- LEFT JOIN (ou LEFT OUTER JOIN): Retorna todas as linhas da tabela da esquerda e as linhas correspondentes da tabela da direita. Se não houver correspondência, o resultado será NULL.\n- RIGHT JOIN (ou RIGHT OUTER JOIN): Retorna todas as linhas da tabela da direita e as linhas correspondentes da tabela da esquerda. Se não houver correspondência, o resultado será NULL.\n- FULL JOIN (ou FULL OUTER JOIN): Retorna todas as linhas quando há uma correspondência em uma das tabelas.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-sql_8",
+    "topicId": "b1-sql",
+    "front": "O que são funções de agregação em SQL e cite três exemplos.",
+    "back": "Funções de agregação realizam um cálculo em um conjunto de valores e retornam um único valor. Exemplos:\n- COUNT(): Conta o número de linhas.\n- SUM(): Calcula a soma dos valores.\n- AVG(): Calcula a média dos valores.\n- MIN(): Retorna o valor mínimo.\n- MAX(): Retorna o valor máximo.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-sql_9",
+    "topicId": "b1-sql",
+    "front": "Qual a finalidade de uma `VIEW` em SQL e qual a sua principal característica em relação a uma tabela física?",
+    "back": "Uma `VIEW` é uma tabela virtual baseada no resultado de uma consulta SQL. Sua principal característica é que ela não armazena dados fisicamente (na maioria das implementações), mas sim a definição da consulta. Ela simplifica consultas complexas e pode ser usada para restringir o acesso a dados.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-sql_10",
+    "topicId": "b1-sql",
+    "front": "Verdadeiro ou Falso: Uma `STORED PROCEDURE` pode conter lógica de controle de fluxo (como IF/ELSE) e retornar múltiplos conjuntos de resultados, diferentemente de uma `VIEW`.",
+    "back": "Verdadeiro. Stored procedures são blocos de código SQL que podem conter lógica de programação, variáveis, controle de fluxo e retornar um ou mais conjuntos de resultados, enquanto views são essencialmente consultas SQL armazenadas.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

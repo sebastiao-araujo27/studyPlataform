@@ -1,0 +1,247 @@
+[
+  {
+    "id": "ex_b1-bigdata_1",
+    "topicId": "b1-bigdata",
+    "blocoId": "bloco-1",
+    "question": "No contexto de uma grande empresa do setor de energia como a Petrobras, o volume de dados gerados por sensores em plataformas offshore e refinarias cresce exponencialmente. Ao implementar uma estratégia de Big Data, os arquitetos de dados devem lidar com os chamados '5Vs'. Considere um cenário onde a principal preocupação da equipe técnica é garantir que os dados provenientes de sensores de pressão e temperatura sejam fidedignos e representem a realidade operacional, eliminando ruídos e inconsistências antes que estes alimentem modelos de manutenção preditiva. De acordo com as definições clássicas de Big Data, essa dimensão específica que foca na qualidade, confiabilidade e integridade dos dados é denominada:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Velocidade",
+        "isCorrect": false,
+        "explanation": "Refere-se à taxa de geração e processamento de dados em tempo real, não especificamente à sua qualidade."
+      },
+      {
+        "letter": "B",
+        "text": "Veracidade",
+        "isCorrect": true,
+        "explanation": "A Veracidade trata da confiabilidade, autenticidade e qualidade dos dados, garantindo que a análise seja baseada em fatos reais."
+      },
+      {
+        "letter": "C",
+        "text": "Variedade",
+        "isCorrect": false,
+        "explanation": "Diz respeito aos diferentes formatos de dados (estruturados, semiestruturados e não estruturados)."
+      },
+      {
+        "letter": "D",
+        "text": "Valor",
+        "isCorrect": false,
+        "explanation": "Refere-se à utilidade do dado para o negócio, ou seja, o retorno sobre o investimento na análise."
+      },
+      {
+        "letter": "E",
+        "text": "Volume",
+        "isCorrect": false,
+        "explanation": "Refere-se à quantidade massiva de dados gerados, geralmente na escala de Terabytes ou Petabytes."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda os fundamentos do Big Data através dos '5Vs' (Volume, Velocidade, Variedade, Veracidade e Valor). No cenário proposto para a Petrobras, o foco está na eliminação de 'ruídos e inconsistências' e na garantia de que os dados sejam 'fidedignos'. Essas características são o cerne do conceito de Veracidade. Enquanto o Volume foca na escala e a Variedade na diversidade de fontes (sensores, logs, vídeos), a Veracidade é o desafio de lidar com dados incertos ou imprecisos. Em ambientes industriais, sensores podem falhar ou apresentar deriva (drift), tornando a etapa de limpeza e validação crucial para que as decisões automatizadas não sejam baseadas em informações falsas. A bibliografia de referência (como Doug Laney e IBM) destaca que sem veracidade, o 'Valor' (o quinto V) é comprometido, pois decisões erradas seriam tomadas com base em dados corrompidos.",
+    "technicalJustification": "A Veracidade foi adicionada aos 3Vs originais para endereçar a incerteza dos dados. Referência: IBM Big Data Hub; White, T. (2015) - Hadoop: The Definitive Guide.",
+    "relatedConcepts": [
+      "5Vs do Big Data",
+      "Qualidade de Dados",
+      "Data Cleaning"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b1-bigdata_2",
+    "topicId": "b1-bigdata",
+    "blocoId": "bloco-1",
+    "question": "O ecossistema Apache Hadoop é fundamental para o armazenamento e processamento distribuído de grandes conjuntos de dados. Sua arquitetura de armazenamento, o HDFS (Hadoop Distributed File System), baseia-se em um modelo mestre-escravo. Em uma configuração padrão do HDFS, quando um cliente deseja realizar a leitura de um arquivo, o processo envolve a interação com diferentes componentes. Sobre o funcionamento do HDFS, afirma-se que o:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "DataNode é responsável por gerenciar o namespace do sistema de arquivos e manter a árvore de diretórios.",
+        "isCorrect": false,
+        "explanation": "Esta é a função do NameNode, o nó mestre do sistema."
+      },
+      {
+        "letter": "B",
+        "text": "Secondary NameNode atua como um nó de 'hot standby', assumindo o processamento imediatamente se o NameNode principal falhar.",
+        "isCorrect": false,
+        "explanation": "O Secondary NameNode realiza apenas o checkpoint do EditLog e FsImage; para alta disponibilidade (hot standby), utiliza-se o HA NameNode com quorum."
+      },
+      {
+        "letter": "C",
+        "text": "NameNode armazena os metadados em memória RAM para permitir acesso rápido às localizações dos blocos de dados.",
+        "isCorrect": true,
+        "explanation": "O NameNode mantém todo o mapeamento de blocos e metadados em memória para eficiência, embora os persista em disco (FsImage/EditLogs)."
+      },
+      {
+        "letter": "D",
+        "text": "HDFS divide os arquivos em blocos de tamanho fixo, sendo que o padrão em versões modernas é de 4 KB para otimizar o espaço em disco.",
+        "isCorrect": false,
+        "explanation": "O tamanho padrão de bloco no HDFS é muito maior (geralmente 128 MB ou 256 MB) para reduzir a sobrecarga de metadados no NameNode."
+      },
+      {
+        "letter": "E",
+        "text": "DataNode envia periodicamente um 'Block Report' ao Secondary NameNode para validar a integridade dos dados armazenados.",
+        "isCorrect": false,
+        "explanation": "Os Block Reports são enviados diretamente ao NameNode ativo, não ao Secondary NameNode."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "O HDFS é projetado para armazenar arquivos muito grandes através de clusters de hardware comum. A arquitetura centraliza o controle no NameNode, que gerencia os metadados (quem é o dono do arquivo, permissões e, crucialmente, em quais DataNodes cada bloco do arquivo está localizado). Para garantir performance, o NameNode mantém esses metadados em memória RAM. Se o NameNode ficasse sem memória, ele não conseguiria gerenciar mais arquivos, limitando a escalabilidade do cluster. Um erro comum de candidatos é confundir o papel do Secondary NameNode; ele não é um servidor de backup em tempo real (failover), mas sim um auxiliar que realiza o 'merge' dos logs de transações (EditLogs) com a imagem do sistema (FsImage) para evitar que o reinício do NameNode demore demais. Outro ponto técnico relevante é o tamanho do bloco: diferentemente de sistemas de arquivos de SO (como NTFS ou EXT4 que usam 4KB), o HDFS usa blocos grandes (128MB+) para minimizar o custo de busca (seek time) em disco e reduzir a quantidade de entradas na memória do NameNode.",
+    "technicalJustification": "Conforme Tom White em 'Hadoop: The Definitive Guide', o NameNode mantém a árvore do sistema de arquivos e o mapeamento de blocos em memória. O tamanho do bloco é otimizado para transferências de streaming.",
+    "relatedConcepts": [
+      "HDFS Architecture",
+      "NameNode",
+      "DataNode",
+      "Metadata Management"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b1-bigdata_3",
+    "topicId": "b1-bigdata",
+    "blocoId": "bloco-1",
+    "question": "Uma equipe de engenharia de dados da Petrobras está migrando seus processos de ETL (Extract, Transform, Load) e algoritmos de Machine Learning que antes rodavam em MapReduce para o Apache Spark. A principal motivação técnica para essa mudança é a necessidade de reduzir o tempo de execução de algoritmos iterativos, comuns em análises geofísicas. Qual característica arquitetural do Apache Spark o torna significativamente mais rápido que o MapReduce tradicional para esse tipo de carga de trabalho?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A utilização de um modelo de execução baseado em grafos acíclicos dirigidos (DAG) e o processamento de dados primariamente em memória (in-memory).",
+        "isCorrect": true,
+        "explanation": "O Spark evita a escrita de dados intermediários em disco entre as etapas (stages), ao contrário do MapReduce."
+      },
+      {
+        "letter": "B",
+        "text": "A substituição do sistema de arquivos HDFS por um sistema de arquivos proprietário do Spark que elimina a latência de rede.",
+        "isCorrect": false,
+        "explanation": "O Spark geralmente roda sobre o HDFS ou S3; ele não possui um sistema de arquivos próprio que substitua o armazenamento distribuído."
+      },
+      {
+        "letter": "C",
+        "text": "A capacidade do Spark de executar apenas tarefas do tipo 'Map', eliminando completamente a fase 'Reduce', que é o gargalo do Hadoop.",
+        "isCorrect": false,
+        "explanation": "O Spark ainda realiza operações de redução e shuffle; a diferença está em como ele gerencia o estado e a memória."
+      },
+      {
+        "letter": "D",
+        "text": "O uso obrigatório de linguagens de baixo nível como C++ para a escrita de jobs, enquanto o MapReduce limita-se ao Java.",
+        "isCorrect": false,
+        "explanation": "O Spark é escrito em Scala e suporta Java, Python, R e SQL; ele não exige C++."
+      },
+      {
+        "letter": "E",
+        "text": "A descentralização total do gerenciamento de recursos, dispensando o uso de gerenciadores como YARN ou Mesos.",
+        "isCorrect": false,
+        "explanation": "O Spark pode rodar em modo 'Standalone', mas frequentemente utiliza YARN, Mesos ou Kubernetes para gerenciamento de recursos."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "O Apache Spark revolucionou o processamento de Big Data ao introduzir o conceito de RDDs (Resilient Distributed Datasets) e o processamento em memória. No modelo MapReduce do Hadoop, cada par de Map e Reduce é uma unidade isolada. Se você tem um algoritmo iterativo (como o K-Means ou PageRank), o MapReduce deve gravar os resultados intermediários no HDFS ao final de cada iteração. Isso gera um overhead massivo de I/O de disco e serialização de dados. O Spark, por outro lado, constrói um Grafo Acíclico Dirigido (DAG) de transformações e mantém os dados em memória (RAM) sempre que possível. Isso permite que múltiplas transformações sejam encadeadas e executadas sem a necessidade de 'tocar' o disco. Para algoritmos iterativos, o Spark pode ser até 100 vezes mais rápido que o MapReduce. Além disso, a avaliação preguiçosa (lazy evaluation) do Spark permite que o otimizador planeje a execução de forma eficiente antes de iniciar o processamento real.",
+    "technicalJustification": "Zaharia et al. (2012) descrevem o Spark como um framework que permite aplicações multi-pass em memória, superando a barreira de I/O do MapReduce.",
+    "relatedConcepts": [
+      "Apache Spark",
+      "RDD",
+      "DAG",
+      "In-memory processing",
+      "MapReduce"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b1-bigdata_4",
+    "topicId": "b1-bigdata",
+    "blocoId": "bloco-1",
+    "question": "No projeto de arquiteturas para processamento de Big Data, dois modelos ganharam destaque para lidar com o desafio de integrar dados históricos (batch) e dados em tempo real (streaming): a Arquitetura Lambda e a Arquitetura Kappa. Considere uma aplicação de monitoramento de integridade estrutural de dutos que precisa exibir alertas imediatos em um dashboard e, simultaneamente, realizar análises complexas mensais para relatórios regulatórios. Sobre essas arquiteturas, é correto afirmar que a:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Arquitetura Lambda resolve o problema da latência ao processar todos os dados exclusivamente em uma camada de 'Speed Layer', eliminando a necessidade de reprocessamento.",
+        "isCorrect": false,
+        "explanation": "A Lambda possui três camadas: Batch, Speed e Serving. Ela não elimina o reprocessamento; ela o faz na Batch Layer para garantir precisão."
+      },
+      {
+        "letter": "B",
+        "text": "Arquitetura Kappa propõe a simplificação do sistema ao tratar todo o processamento como um fluxo (stream), eliminando a camada de processamento em lote (batch layer).",
+        "isCorrect": true,
+        "explanation": "A arquitetura Kappa utiliza um único motor de stream para processar tanto dados novos quanto dados históricos (reprocessando o log de eventos)."
+      },
+      {
+        "letter": "C",
+        "text": "Camada 'Batch Layer' da Arquitetura Lambda é responsável apenas por armazenar os dados crus, enquanto a 'Serving Layer' executa os cálculos matemáticos complexos.",
+        "isCorrect": false,
+        "explanation": "A Batch Layer executa os cálculos sobre o dataset completo; a Serving Layer apenas disponibiliza as visões pré-calculadas para consulta."
+      },
+      {
+        "letter": "D",
+        "text": "Arquitetura Kappa exige que os dados sejam armazenados em bancos de dados relacionais (RDBMS) para que o reprocessamento seja possível via SQL.",
+        "isCorrect": false,
+        "explanation": "A Kappa baseia-se em logs de eventos imutáveis (como Apache Kafka), não necessariamente em RDBMS."
+      },
+      {
+        "letter": "E",
+        "text": "Principal desvantagem da Arquitetura Kappa em relação à Lambda é a necessidade de manter dois códigos-fonte diferentes para a lógica de processamento.",
+        "isCorrect": false,
+        "explanation": "Essa é a desvantagem da Lambda. A Kappa resolve justamente isso ao usar o mesmo código para tempo real e histórico."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A Arquitetura Lambda, proposta por Nathan Marz, foi criada para balancear latência, throughput e tolerância a falhas. Ela utiliza a 'Batch Layer' para processar o dataset mestre (preciso, mas lento) e a 'Speed Layer' para processar dados recentes (rápido, mas potencialmente impreciso). O maior problema da Lambda é a complexidade operacional de manter duas bases de código diferentes (ex: uma em Spark Batch e outra em Storm/Flink). A Arquitetura Kappa, proposta por Jay Kreps, surge como uma alternativa que simplifica esse cenário. Na Kappa, não há camada batch separada. Se você precisa reprocessar dados históricos, você simplesmente 'rebobina' o stream (geralmente um log no Kafka) e processa os dados novamente usando o mesmo motor de streaming. Isso garante que a lógica de negócio seja única. No cenário da Petrobras descrito, a Kappa seria ideal se a equipe quisesse evitar a duplicidade de código, enquanto a Lambda seria escolhida se houvesse uma necessidade extrema de usar ferramentas de batch específicas para os relatórios mensais complexos.",
+    "technicalJustification": "Marz, N. (2015) em 'Big Data' define a Lambda. Kreps, J. (2014) propôs a Kappa como uma evolução para simplificar a manutenção de sistemas de stream.",
+    "relatedConcepts": [
+      "Lambda Architecture",
+      "Kappa Architecture",
+      "Stream Processing",
+      "Batch Processing"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b1-bigdata_5",
+    "topicId": "b1-bigdata",
+    "blocoId": "bloco-1",
+    "question": "Um Engenheiro de Dados está configurando um job no Apache Spark para processar um grande volume de logs de transações financeiras armazenados no HDFS. O script realiza uma série de operações: carrega os dados (textFile), filtra registros inválidos (filter), converte tipos de dados (map), agrupa por ID de cliente (groupByKey) e, por fim, salva o resultado de volta no HDFS (saveAsTextFile). Durante a monitoração, observa-se que o processamento só inicia efetivamente quando o método 'saveAsTextFile' é chamado. Esse comportamento é uma característica fundamental do Spark conhecida como:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Persistência em Disco (Disk Persistence), que força a gravação de cada etapa para evitar perda de dados em caso de falha de um worker.",
+        "isCorrect": false,
+        "explanation": "O Spark tenta evitar a gravação em disco entre transformações; o comportamento descrito é sobre o planejamento da execução."
+      },
+      {
+        "letter": "B",
+        "text": "Avaliação Preguiçosa (Lazy Evaluation), onde as transformações não são executadas imediatamente, mas compiladas em um plano de execução acionado apenas por uma ação.",
+        "isCorrect": true,
+        "explanation": "Transformações (map, filter) são registradas no DAG, mas a execução só ocorre quando uma 'Action' (como saveAsTextFile ou collect) é invocada."
+      },
+      {
+        "letter": "C",
+        "text": "Particionamento Dinâmico (Dynamic Partitioning), que redistribui os dados entre os nós do cluster com base na carga da CPU no momento da leitura.",
+        "isCorrect": false,
+        "explanation": "O particionamento é geralmente definido pela fonte de dados ou por transformações de shuffle, não é o que define o atraso na execução."
+      },
+      {
+        "letter": "D",
+        "text": "Isolamento de Snapshot (Snapshot Isolation), garantindo que os dados lidos não sejam alterados por outros processos durante a execução do job.",
+        "isCorrect": false,
+        "explanation": "Este é um conceito de bancos de dados ACID, não é a característica central do modelo de execução do Spark."
+      },
+      {
+        "letter": "E",
+        "text": "Shuffle de Dados (Data Shuffling), que é o processo obrigatório de mover dados entre partições antes de qualquer operação de filtragem.",
+        "isCorrect": false,
+        "explanation": "O shuffle ocorre em operações como groupByKey, mas o filtro (filter) é uma operação 'narrow' que não exige shuffle."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "O Apache Spark distingue suas operações em duas categorias: Transformações e Ações. Transformações (como map, filter, flatMap, join, groupByKey) criam um novo dataset a partir de um existente, mas são 'lazy'. Isso significa que o Spark não executa a computação imediatamente; ele apenas anota a linhagem (lineage) da operação em um Grafo Acíclico Dirigido (DAG). A execução real só é desencadeada quando uma Ação (como collect, count, saveAsTextFile, take) é chamada. Essa estratégia de Avaliação Preguiçosa (Lazy Evaluation) permite que o Spark otimize o plano de execução global. Por exemplo, se você aplicar um filtro e depois um map, o Spark pode otimizar o pipeline para processar ambos em uma única passagem pelos dados, ou até mesmo realizar o 'predicate pushdown' (filtrar os dados na origem). No caso descrito, 'textFile', 'filter', 'map' e 'groupByKey' são transformações. O job parece estar 'parado' até que 'saveAsTextFile' (uma Ação) seja invocado, momento em que o DAG é submetido ao agendador (scheduler) e as tarefas são distribuídas aos executores. Compreender essa distinção é vital para depuração e otimização de performance em Big Data.",
+    "technicalJustification": "Referência: Karau, H. et al. (2015) - Learning Spark. A avaliação preguiçosa permite a otimização do plano de consulta (Catalyst Optimizer) e a recuperação de falhas via linhagem de RDDs.",
+    "relatedConcepts": [
+      "Lazy Evaluation",
+      "Transformations vs Actions",
+      "RDD Lineage",
+      "DAG Scheduler"
+    ],
+    "order": 5
+  }
+]

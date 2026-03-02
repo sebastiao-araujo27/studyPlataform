@@ -1,0 +1,253 @@
+[
+  {
+    "id": "ex_b2-prototipacao_1",
+    "topicId": "b2-prototipacao",
+    "blocoId": "bloco-2",
+    "question": "Em projetos de desenvolvimento de software, especialmente aqueles que envolvem interfaces de usuário, a prototipagem é uma etapa crucial para validar ideias e funcionalidades antes da implementação completa. Um protótipo é uma versão simulada ou incompleta de um produto, utilizada para coletar feedback. Com relação aos tipos de protótipos, qual das alternativas abaixo descreve corretamente um protótipo de baixa fidelidade?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Um protótipo de baixa fidelidade é um modelo interativo e visualmente detalhado, que simula a aparência final e a navegação complexa do sistema, utilizando ferramentas de design avançadas como o Figma.",
+        "isCorrect": false,
+        "explanation": "Esta descrição corresponde a um protótipo de alta fidelidade, não de baixa fidelidade."
+      },
+      {
+        "letter": "B",
+        "text": "Refere-se a um modelo interativo que apresenta um alto grau de realismo visual e funcional, permitindo testes de usabilidade aprofundados com usuários finais.",
+        "isCorrect": false,
+        "explanation": "Esta alternativa descreve um protótipo de alta fidelidade, focado em detalhamento e realismo."
+      },
+      {
+        "letter": "C",
+        "text": "É uma representação estática e simplificada da interface, focada na estrutura, layout e fluxo de navegação, geralmente criada com papel e lápis ou ferramentas de wireframing básicas, sem ênfase em detalhes visuais ou interatividade complexa.",
+        "isCorrect": true,
+        "explanation": "Esta é a definição correta de um protótipo de baixa fidelidade, que prioriza a estrutura e o fluxo sobre o apelo visual."
+      },
+      {
+        "letter": "D",
+        "text": "Um protótipo de baixa fidelidade é um produto funcional e totalmente desenvolvido, que serve como demonstração da solução final para stakeholders.",
+        "isCorrect": false,
+        "explanation": "Um protótipo de baixa fidelidade não é um produto funcional e completo; seu objetivo é a validação precoce com baixo custo."
+      },
+      {
+        "letter": "E",
+        "text": "Consiste em um modelo 3D detalhado do produto físico, utilizado principalmente em engenharia mecânica para testes de desempenho e ergonomia.",
+        "isCorrect": false,
+        "explanation": "Protótipos de baixa fidelidade no contexto de software focam em interfaces digitais, não em modelos 3D de produtos físicos."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda a definição de protótipo de baixa fidelidade. Protótipos de baixa fidelidade são caracterizados por sua simplicidade e foco nos aspectos estruturais e de fluxo de um sistema. Eles são frequentemente criados rapidamente, utilizando materiais como papel e caneta (paper prototypes) ou ferramentas digitais básicas que geram wireframes. O principal objetivo é explorar a arquitetura da informação, o layout das telas e a navegação, sem se preocupar com cores, tipografia ou interações complexas. A alternativa C descreve precisamente essas características: representação estática, simplificada, focada em estrutura e layout, e criada com ferramentas básicas. As demais alternativas descrevem características de protótipos de alta fidelidade (A e B), produtos funcionais (D) ou protótipos de outras áreas (E), não se alinhando com o conceito de protótipo de baixa fidelidade em desenvolvimento de software.",
+    "technicalJustification": "Protótipos de baixa fidelidade são importantes na fase inicial do design de interação para validação rápida de conceitos e arquitetura. Eles minimizam o esforço de desenvolvimento e permitem iterações ágeis. (Preece, J., Rogers, Y., & Sharp, H. (2015). Interaction Design: Beyond Human-Computer Interaction. John Wiley & Sons.)",
+    "relatedConcepts": [
+      "protótipo de baixa fidelidade",
+      "wireframe",
+      "paper prototype",
+      "design de interação"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b2-prototipacao_2",
+    "topicId": "b2-prototipacao",
+    "blocoId": "bloco-2",
+    "question": "Uma equipe de desenvolvimento de um novo sistema de gestão de produção para uma refinaria de petróleo está na fase de concepção da interface do usuário. Para garantir que o fluxo de trabalho e a organização das informações atendam às necessidades dos operadores de planta, eles decidiram criar representações visuais iniciais. Petrobras utiliza o Figma como ferramenta principal para design e prototipagem. Considerando o objetivo de validar rapidamente a estrutura e a navegação principal do sistema com os stakeholders antes de investir em detalhes visuais, qual tipo de artefato seria mais apropriado produzir utilizando o Figma nesta fase?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Um mockup interativo detalhado, com todos os elementos visuais finalizados, incluindo cores, tipografia e ícones, para apresentar a experiência de usuário completa.",
+        "isCorrect": false,
+        "explanation": "Mockups detalhados são de alta fidelidade e não são o mais apropriado para uma validação inicial de estrutura e fluxo, pois exigem mais tempo e esforço."
+      },
+      {
+        "letter": "B",
+        "text": "Um protótipo navegável de alta fidelidade, com animações complexas e simulação precisa de interações, visando testar a performance do sistema em condições reais de rede.",
+        "isCorrect": false,
+        "explanation": "Protótipos de alta fidelidade são desenvolvidos após a validação da estrutura e navegação, e não focam em testes de performance de rede."
+      },
+      {
+        "letter": "C",
+        "text": "Wireframes interativos, focando na disposição dos elementos, hierarquia da informação e fluxo de navegação, sem a aplicação de estilos visuais finais.",
+        "isCorrect": true,
+        "explanation": "Wireframes interativos são ideais para validar estrutura e fluxo com baixo custo, e o Figma é uma ferramenta capaz de criá-los."
+      },
+      {
+        "letter": "D",
+        "text": "Um storyboard visual, apresentando cenas estáticas que descrevem a jornada do usuário através do sistema, sem nenhuma interatividade.",
+        "isCorrect": false,
+        "explanation": "Storyboards são úteis para narrativas, mas para validar estrutura e navegação de um sistema interativo, wireframes são mais diretos."
+      },
+      {
+        "letter": "E",
+        "text": "Um produto mínimo viável (MVP) funcional, que já contém todas as funcionalidades principais implementadas, para ser apresentado aos operadores.",
+        "isCorrect": false,
+        "explanation": "Um MVP é um produto real e funcional, o que vai além da fase de prototipagem para validação de estrutura e navegação."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A situação descrita envolve a necessidade de validar a estrutura e a navegação de um novo sistema para uma refinaria, utilizando o Figma, e o objetivo é fazer isso rapidamente antes de detalhar o design visual. A alternativa C propõe a criação de wireframes interativos. Wireframes são representações esquemáticas da interface, focadas na disposição dos elementos, no conteúdo e na funcionalidade, sem cores ou estilos visuais. A interatividade permite simular o fluxo de navegação entre as telas, o que é essencial para o feedback dos stakeholders sobre a organização das informações e a usabilidade. O Figma é uma ferramenta poderosa que permite não apenas criar wireframes estáticos, mas também adicionar interatividade para transformá-los em protótipos clicáveis, alinhando-se perfeitamente com o requisito de validar a estrutura e o fluxo. As outras opções são inadequadas: A e B descrevem protótipos de alta fidelidade, que são criados em fases posteriores; D, embora visual, carece da interatividade necessária para validar fluxos de navegação; E descreve um produto funcional (MVP), que é uma etapa de desenvolvimento, não de prototipagem conceitual.",
+    "technicalJustification": "Wireframes são um componente fundamental na fase de design de interação, permitindo a exploração e validação da arquitetura da informação e do fluxo de usuário com baixo custo e rapidez. Ferramentas como Figma suportam a criação de wireframes interativos, facilitando a comunicação e o feedback. (Shneiderman, B., & Plaisant, C. (2010). Designing the User Interface: Strategies for Effective Human-Computer Interaction. Addison-Wesley.)",
+    "relatedConcepts": [
+      "wireframe",
+      "protótipo interativo",
+      "Figma",
+      "fluxo de navegação",
+      "arquitetura da informação"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b2-prototipacao_3",
+    "topicId": "b2-prototipacao",
+    "blocoId": "bloco-2",
+    "question": "Uma startup do setor de energia renovável está desenvolvendo um aplicativo mobile para monitoramento de consumo e geração de energia solar residencial. A equipe de produto, após realizar pesquisas com usuários, identificou a necessidade de refinar a experiência de interação com os gráficos de desempenho e os controles de agendamento de manutenção. Para isso, eles decidiram criar dois tipos de protótipos: um para explorar a disposição geral dos elementos e o fluxo de navegação entre as seções do aplicativo, e outro para testar a interatividade e o feedback visual dos gráficos e dos formulários de agendamento. Considerando a descrição, quais tipos de protótipo foram criados pela startup, respectivamente?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Protótipo de alta fidelidade e protótipo de baixa fidelidade.",
+        "isCorrect": false,
+        "explanation": "A ordem está invertida; o primeiro protótipo descrito é de baixa fidelidade e o segundo, de alta fidelidade."
+      },
+      {
+        "letter": "B",
+        "text": "Wireframe e Mockup.",
+        "isCorrect": false,
+        "explanation": "Embora wireframes e mockups sejam artefatos de prototipagem, a descrição foca mais nas fidelidades (baixa e alta) e na interatividade/visualização."
+      },
+      {
+        "letter": "C",
+        "text": "Protótipo de baixa fidelidade e protótipo de alta fidelidade.",
+        "isCorrect": true,
+        "explanation": "O primeiro protótipo foca em estrutura e navegação (baixa fidelidade), e o segundo em interatividade e feedback visual (alta fidelidade)."
+      },
+      {
+        "letter": "D",
+        "text": "Protótipo de papel e Protótipo de código.",
+        "isCorrect": false,
+        "explanation": "A descrição não especifica o meio de criação (papel ou código), mas sim o nível de detalhe e fidelidade."
+      },
+      {
+        "letter": "E",
+        "text": "Mockup e Protótipo de papel.",
+        "isCorrect": false,
+        "explanation": "A descrição do primeiro protótipo não se limita a um mockup estático, e o segundo protótipo é mais detalhado que um protótipo de papel."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão pede para identificar os tipos de protótipo com base em suas finalidades descritas. O primeiro protótipo tem como objetivo 'explorar a disposição geral dos elementos e o fluxo de navegação'. Esta é a função primária de um protótipo de baixa fidelidade, que se concentra na estrutura e na navegação, sem se preocupar com detalhes visuais. O segundo protótipo visa 'testar a interatividade e o feedback visual dos gráficos e dos formulários'. Isso indica um nível de detalhamento e realismo maior, onde a aparência e o comportamento simulado são importantes, caracterizando um protótipo de alta fidelidade. Portanto, a sequência correta é protótipo de baixa fidelidade e protótipo de alta fidelidade. A alternativa C reflete essa correspondência. As demais alternativas apresentam combinações incorretas ou artefatos que não descrevem completamente o que foi proposto na questão.",
+    "technicalJustification": "A distinção entre protótipos de baixa e alta fidelidade reside no nível de detalhe visual e funcional. Protótipos de baixa fidelidade são ideais para testar conceitos e fluxos iniciais, enquanto protótipos de alta fidelidade são usados para validar a interação detalhada e a experiência do usuário em um estágio mais avançado. (Cooper, A., Reimann, R., & Cronin, D. (2014). About Face: The Essentials of Interaction Design. John Wiley & Sons.)",
+    "relatedConcepts": [
+      "protótipo de baixa fidelidade",
+      "protótipo de alta fidelidade",
+      "wireframe",
+      "mockup",
+      "design de interface"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b2-prototipacao_4",
+    "topicId": "b2-prototipacao",
+    "blocoId": "bloco-2",
+    "question": "Está correto o que se afirma em:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I, apenas.",
+        "isCorrect": false,
+        "explanation": "A afirmativa II também está correta, pois descreve adequadamente um protótipo de alta fidelidade."
+      },
+      {
+        "letter": "B",
+        "text": "II, apenas.",
+        "isCorrect": false,
+        "explanation": "A afirmativa I também está correta, pois wireframes são exemplos de protótipos de baixa fidelidade."
+      },
+      {
+        "letter": "C",
+        "text": "I e II, apenas.",
+        "isCorrect": true,
+        "explanation": "Ambas as afirmativas I e II descrevem corretamente os artefatos de prototipagem mencionados no cenário."
+      },
+      {
+        "letter": "D",
+        "text": "II e III, apenas.",
+        "isCorrect": false,
+        "explanation": "A afirmativa III está incorreta, pois um protótipo de alta fidelidade é necessário para testar interações complexas como visualização 3D e respostas a alertas."
+      },
+      {
+        "letter": "E",
+        "text": "I, II e III.",
+        "isCorrect": false,
+        "explanation": "A afirmativa III está incorreta, pois um protótipo de alta fidelidade é crucial para testar interações complexas e feedback visual/comportamental."
+      }
+    ],
+    "difficulty": "medio-difícil",
+    "source": "autoral",
+    "detailedExplanation": "A questão apresenta um cenário de prototipagem em uma empresa do setor de óleo e gás, utilizando Adobe XD, e pede para avaliar três afirmativas. Vamos analisar cada uma: \n\nAfirmativa I: 'Os wireframes iniciais, focados na estrutura e layout, representam um protótipo de baixa fidelidade.' Esta afirmativa está CORRETA. Wireframes são, por definição, representações esquemáticas que priorizam a estrutura, o layout e a hierarquia da informação, sendo característicos de protótipos de baixa fidelidade. \n\nAfirmativa II: 'O protótipo a ser criado com Adobe XD, focado em simular comportamento realista, controles 3D e resposta a alertas, é um protótipo de alta fidelidade.' Esta afirmativa está CORRETA. A descrição de 'simular comportamento realista', a complexidade de 'controles 3D' e a necessidade de testar 'resposta a alertas críticos' indicam que o protótipo terá um alto grau de detalhe visual e funcional, características de um protótipo de alta fidelidade. Adobe XD é uma ferramenta adequada para criar tais protótipos. \n\nAfirmativa III: 'Para testar a usabilidade dos controles de visualização 3D e a resposta a alertas, um protótipo de alta fidelidade é desnecessário; um wireframe interativo seria suficiente.' Esta afirmativa está INCORRETA. Testar a usabilidade de controles complexos como visualização 3D, bem como a eficácia e clareza das respostas a alertas críticos, requer um protótipo que simule o comportamento e a aparência o mais próximo possível do produto final. Um wireframe interativo, por ser estático e carecer de detalhes visuais e interações complexas, não seria adequado para essa finalidade. Seria necessário um protótipo de alta fidelidade para obter feedback significativo sobre esses aspectos. \n\nPortanto, apenas as afirmativas I e II estão corretas. A alternativa C é a que contempla essa combinação.",
+    "technicalJustification": "Protótipos de baixa fidelidade (como wireframes) são úteis para validar a arquitetura e o fluxo inicial. Protótipos de alta fidelidade, criados com ferramentas como Adobe XD, são essenciais para testar interações complexas, feedback visual e comportamental, aproximando-se da experiência do usuário final. (Buxton, W. (2007). Sketching User Experiences: The Workbook. Morgan Kaufmann.)",
+    "relatedConcepts": [
+      "wireframe",
+      "protótipo de baixa fidelidade",
+      "protótipo de alta fidelidade",
+      "Adobe XD",
+      "usabilidade",
+      "desenvolvimento ágil"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b2-prototipacao_5",
+    "topicId": "b2-prototipacao",
+    "blocoId": "bloco-2",
+    "question": "Uma equipe de desenvolvimento de software, responsável pela criação de um novo portal de serviços online para a Petrobras, está em busca da melhor abordagem para coletar feedback sobre a interface e a experiência do usuário antes de iniciar a codificação completa. Eles consideram a utilização de protótipos, mas estão em dúvida sobre qual estratégia adotar para otimizar o processo de validação e iteração. A equipe já compreende a diferença entre wireframes (representações esquemáticas) e mockups (representações visuais detalhadas). Para maximizar a eficiência na identificação de problemas de usabilidade e fluxos de navegação incorretos, qual das seguintes abordagens de prototipagem seria a mais recomendada para esta fase inicial de validação?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Desenvolver um protótipo totalmente funcional e interativo em código, utilizando as tecnologias finais do projeto, para que os usuários possam experimentar o sistema como ele será entregue.",
+        "isCorrect": false,
+        "explanation": "Criar um protótipo em código final é dispendioso e demorado, indo contra o princípio de validação precoce e barata da prototipagem."
+      },
+      {
+        "letter": "B",
+        "text": "Criar apenas mockups estáticos e detalhados, focando na estética e no design visual, sem adicionar interatividade, pois isso pode confundir os usuários sobre o estado final do produto.",
+        "isCorrect": false,
+        "explanation": "Mockups estáticos não permitem testar fluxos de navegação e interações, limitando a identificação de problemas de usabilidade."
+      },
+      {
+        "letter": "C",
+        "text": "Utilizar protótipos de baixa fidelidade, como wireframes clicáveis, permitindo que os usuários naveguem entre as telas e testem os fluxos principais, com foco na estrutura e organização da informação.",
+        "isCorrect": true,
+        "explanation": "Protótipos de baixa fidelidade clicáveis são ideais para validar estrutura e fluxo com baixo custo e alta capacidade de iteração nesta fase inicial."
+      },
+      {
+        "letter": "D",
+        "text": "Concentrar-se exclusivamente em testes de usabilidade com protótipos de papel, descartando ferramentas digitais, pois estes são mais rápidos e baratos de produzir e iterar.",
+        "isCorrect": false,
+        "explanation": "Embora protótipos de papel sejam úteis, descartar ferramentas digitais que permitem interatividade e simulação mais próximas do real pode ser limitante."
+      },
+      {
+        "letter": "E",
+        "text": "Desenvolver protótipos de alta fidelidade com todas as animações e microinterações planejadas, para garantir que a experiência do usuário seja o mais próxima possível da realidade desde o início.",
+        "isCorrect": false,
+        "explanation": "Protótipos de alta fidelidade são mais adequados para fases posteriores de validação, após a estrutura e o fluxo terem sido aprovados, devido ao maior custo de produção."
+      }
+    ],
+    "difficulty": "difícil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda a escolha da abordagem de prototipagem mais eficiente para uma fase inicial de validação de um portal de serviços da Petrobras, com o objetivo de identificar problemas de usabilidade e fluxos de navegação. A chave aqui é 'fase inicial de validação' e 'otimizar o processo de validação e iteração'. Protótipos de baixa fidelidade, como wireframes clicáveis (ou interativos), são a escolha ideal para este cenário. Eles permitem que os usuários naveguem através das telas simulando o fluxo principal do sistema, testando a arquitetura da informação, a disposição dos elementos e a lógica de navegação. Sua principal vantagem é o baixo custo de produção e a facilidade de iteração; se um problema for encontrado, a alteração é rápida e barata. O Figma, Adobe XD ou até mesmo ferramentas mais simples podem ser usados para criar esses protótipos clicáveis. A alternativa C descreve precisamente essa abordagem. As outras alternativas são menos adequadas para a fase inicial: A e E descrevem protótipos de alta fidelidade ou funcionais, que são mais caros e demorados para produzir e iterar, sendo mais apropriados para fases posteriores de validação; B foca em mockups estáticos, que não permitem testar a navegação e a interatividade; D, embora valorize a rapidez dos protótipos de papel, pode ser limitante ao descartar ferramentas digitais que oferecem mais fidelidade interativa sem um custo proibitivo.",
+    "technicalJustification": "Na fase inicial de design de interação, protótipos de baixa fidelidade clicáveis (como wireframes interativos) oferecem o melhor equilíbrio entre o custo de desenvolvimento e o valor do feedback obtido, permitindo a validação rápida de conceitos, fluxos e arquitetura da informação. (Nielsen, J. (1993). Usability Engineering. Morgan Kaufmann.)",
+    "relatedConcepts": [
+      "prototipagem",
+      "wireframe interativo",
+      "baixa fidelidade",
+      "validação de usabilidade",
+      "iteração de design",
+      "portal de serviços"
+    ],
+    "order": 5
+  }
+]

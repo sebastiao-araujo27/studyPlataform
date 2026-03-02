@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b3-olap_1",
+    "topicId": "b3-olap",
+    "front": "O que significa a sigla OLAP e qual seu propósito principal?",
+    "back": "OLAP significa **Online Analytical Processing**. Seu propósito principal é permitir a análise rápida e interativa de dados multidimensionais, suportando a tomada de decisões de negócios.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-olap_2",
+    "topicId": "b3-olap",
+    "front": "Em modelagem dimensional, o que caracteriza uma \"tabela de Fato\"?",
+    "back": "Uma tabela de Fato armazena as **medidas** (métricas numéricas quantificáveis, ex: vendas, lucro) de um processo de negócio e possui chaves estrangeiras para as tabelas de Dimensão às quais está relacionada.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-olap_3",
+    "topicId": "b3-olap",
+    "front": "Em modelagem dimensional, o que caracteriza uma \"tabela de Dimensão\"?",
+    "back": "Uma tabela de Dimensão armazena os **atributos descritivos** e contextuais (ex: tempo, produto, cliente, localização) que permitem analisar, filtrar e agrupar os dados contidos nas tabelas de Fato.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-olap_4",
+    "topicId": "b3-olap",
+    "front": "Descreva brevemente as quatro operações básicas do OLAP: Drill-down, Roll-up, Slice e Dice.",
+    "back": "<ul><li>**Drill-down:** Navegar para um nível de maior detalhe nos dados.</li><li>**Roll-up:** Navegar para um nível de maior sumarização/agregação nos dados.</li><li>**Slice:** Selecionar uma fatia específica de um cubo, fixando um ou mais valores em uma dimensão.</li><li>**Dice:** Selecionar um subcubo, definindo intervalos em duas ou mais dimensões.</li></ul>",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-olap_5",
+    "topicId": "b3-olap",
+    "front": "Qual a principal diferença arquitetural entre MOLAP e ROLAP em termos de armazenamento de dados?",
+    "back": "<ul><li>**MOLAP (Multidimensional OLAP):** Armazena os dados (incluindo agregações pré-calculadas) em uma estrutura multidimensional proprietária (cubo) otimizada para consulta.</li><li>**ROLAP (Relational OLAP):** Armazena os dados em um banco de dados relacional e executa consultas SQL dinâmicas sobre essas tabelas para cada solicitação de análise.</li></ul>",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-olap_6",
+    "topicId": "b3-olap",
+    "front": "Em um cubo OLAP, qual é a função das \"Medidas\" e como elas se relacionam com as \"Dimensões\"?",
+    "back": "As **Medidas** são os valores numéricos que estão sendo analisados (ex: quantidade vendida, receita). Elas são qualificadas e contextualizadas pelas **Dimensões**, que fornecem as perspectivas de análise (ex: quantidade vendida <em>por produto</em>, <em>por região</em>, <em>por tempo</em>).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-olap_7",
+    "topicId": "b3-olap",
+    "front": "Quais são as principais características de um Star Schema (esquema estrela) em modelagem dimensional?",
+    "back": "<ul><li>Uma tabela de Fato central.</li><li>Múltiplas tabelas de Dimensão diretamente conectadas à tabela de Fato.</li><li>Tabelas de Dimensão geralmente **desnormalizadas** (menos joins para consultas).</li><li>Simplicidade e performance de consulta são seus maiores benefícios.</li></ul>",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-olap_8",
+    "topicId": "b3-olap",
+    "front": "V ou F: O Snowflake Schema é geralmente preferível ao Star Schema para cenários que exigem alta performance de consulta e menor complexidade na escrita de SQL para análise. Justifique.",
+    "back": "**FALSO.** O Star Schema é que é geralmente preferível para alta performance de consulta e simplicidade de SQL, pois suas tabelas de dimensão desnormalizadas reduzem o número de joins necessários. O Snowflake, por ser mais normalizado, exige mais joins, o que pode impactar a performance e aumentar a complexidade das consultas.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-olap_9",
+    "topicId": "b3-olap",
+    "front": "Quais são as principais vantagens e desvantagens da arquitetura HOLAP (Hybrid OLAP)?",
+    "back": "<ul><li>**Vantagens:**<ul><li>**Performance:** Combina a velocidade do MOLAP para agregações frequentes.</li><li>**Escalabilidade:** Utiliza a capacidade do ROLAP para armazenar grandes volumes de dados detalhados.</li><li>**Flexibilidade:** Permite otimizar o armazenamento conforme a criticidade e frequência de acesso aos dados.</li></ul></li><li>**Desvantagens:**<ul><li>**Complexidade:** Maior complexidade de implementação e gerenciamento.</li><li>**Custo:** Pode exigir mais recursos de hardware e software.</li></ul></li></ul>",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-olap_10",
+    "topicId": "b3-olap",
+    "front": "Em quais situações ou para quais propósitos o Snowflake Schema pode ser mais vantajoso que o Star Schema?",
+    "back": "O Snowflake Schema pode ser mais vantajoso quando:<ul><li>A **integridade dos dados** e a **redução da redundância** nas dimensões são prioridades.</li><li>As dimensões possuem **hierarquias complexas e profundas** que se beneficiam da normalização.</li><li>Há necessidade de **reutilizar dimensões** entre múltiplos data marts, facilitando a manutenção e a consistência.</li><li>A dimensão tem um **volume de dados muito grande**, e a normalização pode economizar espaço de armazenamento.</li></ul>",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

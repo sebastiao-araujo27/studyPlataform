@@ -1,0 +1,254 @@
+[
+  {
+    "id": "ex_b3-iso27002_1",
+    "topicId": "b3-iso27002",
+    "blocoId": "bloco-3",
+    "question": "A norma ABNT NBR ISO/IEC 27002:2022 é uma referência amplamente utilizada por organizações que buscam implementar controles de segurança da informação. Sobre essa norma, é correto afirmar que ela",
+    "options": [
+      {
+        "letter": "A",
+        "text": "define os requisitos obrigatórios para a certificação de um Sistema de Gestão de Segurança da Informação (SGSI).",
+        "isCorrect": false,
+        "explanation": "Incorreto. Quem define os requisitos obrigatórios para certificação do SGSI é a ISO/IEC 27001. A ISO 27002 fornece orientações e boas práticas, não sendo norma certificável."
+      },
+      {
+        "letter": "B",
+        "text": "organiza seus controles em 14 domínios de segurança, totalizando 114 controles de referência.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Essa era a estrutura da versão 2013. A versão 2022 reorganizou os controles em 4 temas (Organizacionais, Pessoas, Físicos e Tecnológicos) com 93 controles."
+      },
+      {
+        "letter": "C",
+        "text": "fornece orientações para a seleção, implementação e gerenciamento de controles de segurança da informação, organizados em quatro temas.",
+        "isCorrect": true,
+        "explanation": "Correto. A ISO 27002:2022 é uma norma de orientação (não de certificação) que fornece diretrizes para implementação de controles, organizados em 4 temas: Organizacionais (37), Pessoas (8), Físicos (14) e Tecnológicos (34), totalizando 93 controles."
+      },
+      {
+        "letter": "D",
+        "text": "estabelece que todos os 93 controles listados devem ser obrigatoriamente implementados por qualquer organização que adote a norma.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A seleção de controles é baseada em análise de riscos. A organização escolhe quais controles são aplicáveis ao seu contexto e justifica as exclusões na Declaração de Aplicabilidade (SoA), que é um requisito da ISO 27001."
+      },
+      {
+        "letter": "E",
+        "text": "substituiu integralmente a ISO 27001, tornando-se a única norma de referência para segurança da informação na família ISO 27000.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A ISO 27002 não substituiu a ISO 27001. São normas complementares: a 27001 define requisitos do SGSI e a 27002 fornece orientações para implementar os controles listados no Anexo A da 27001."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A ISO/IEC 27002:2022 é uma norma de orientação (código de boas práticas) que fornece diretrizes para a seleção, implementação e gestão de controles de segurança da informação. Diferentemente da ISO 27001, ela NÃO é uma norma de certificação e NÃO define requisitos obrigatórios — utiliza o termo 'convém' (should) em vez de 'deve' (shall). Na versão 2022, a norma reorganizou seus controles em 4 temas: Organizacionais (37 controles), Pessoas (8 controles), Físicos (14 controles) e Tecnológicos (34 controles), totalizando 93 controles. A versão anterior (2013) possuía 14 domínios e 114 controles. A seleção de quais controles implementar deve ser baseada em análise de riscos, conforme orientado pela ISO 27001 e pela ISO 31000.",
+    "technicalJustification": "Conforme a ABNT NBR ISO/IEC 27002:2022, seção 1 (Escopo): 'Este documento fornece um conjunto de controles genéricos de segurança da informação incluindo orientação de implementação'. A norma é estruturada em quatro temas de controles nas cláusulas 5 a 8. A relação com a ISO 27001 é explicitada no fato de que os controles da 27002 correspondem aos controles listados no Anexo A da 27001, servindo como guia detalhado de implementação.",
+    "relatedConcepts": [
+      "ISO 27002:2022",
+      "ISO 27001",
+      "SGSI",
+      "Controles de segurança da informação",
+      "Temas de controles"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b3-iso27002_2",
+    "topicId": "b3-iso27002",
+    "blocoId": "bloco-3",
+    "question": "uma empresa do setor de energia está implementando um Sistema de Gestão de Segurança da Informação (SGSI) e utiliza a ABNT NBR ISO/IEC 27002:2022 como referência para a implementação de controles. O gestor de segurança precisa classificar os controles que estão sendo implementados segundo os atributos definidos pela norma. Considerando os atributos dos controles na versão 2022, qual das seguintes opções representa corretamente um dos cinco tipos de atributos previstos na norma?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Custo de implementação: baixo, médio, alto",
+        "isCorrect": false,
+        "explanation": "Incorreto. 'Custo de implementação' não é um dos atributos definidos pela ISO 27002:2022. Os custos são considerações práticas, mas não fazem parte da taxonomia de atributos da norma."
+      },
+      {
+        "letter": "B",
+        "text": "Conceitos de segurança cibernética: Identificar, Proteger, Detectar, Responder, Recuperar",
+        "isCorrect": true,
+        "explanation": "Correto. Os 'Conceitos de segurança cibernética' são um dos 5 atributos dos controles na versão 2022, alinhados ao NIST Cybersecurity Framework (CSF), com os valores: Identificar, Proteger, Detectar, Responder e Recuperar."
+      },
+      {
+        "letter": "C",
+        "text": "Nível de maturidade: inicial, repetível, definido, gerenciado, otimizado",
+        "isCorrect": false,
+        "explanation": "Incorreto. Níveis de maturidade (como os do CMMI) não fazem parte dos atributos da ISO 27002:2022. Esse conceito pertence a outros frameworks como CMMI ou COBIT."
+      },
+      {
+        "letter": "D",
+        "text": "Complexidade técnica: simples, moderada, complexa",
+        "isCorrect": false,
+        "explanation": "Incorreto. 'Complexidade técnica' não é um dos atributos previstos na ISO 27002:2022. Não existe essa categorização na norma."
+      },
+      {
+        "letter": "E",
+        "text": "Prioridade de implementação: obrigatório, recomendado, opcional",
+        "isCorrect": false,
+        "explanation": "Incorreto. A ISO 27002 não define prioridades de implementação como atributo dos controles. A priorização depende da análise de riscos da organização, não sendo um atributo intrínseco do controle."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A ISO/IEC 27002:2022 introduziu um sistema de atributos para cada controle, permitindo diferentes visões e formas de agrupamento. São 5 tipos de atributos: (1) Tipo de controle — Preventivo, Detectivo, Corretivo; (2) Propriedades de segurança da informação — Confidencialidade, Integridade, Disponibilidade; (3) Conceitos de segurança cibernética — Identificar, Proteger, Detectar, Responder, Recuperar (alinhados ao NIST CSF); (4) Capacidades operacionais — Governança, Gestão de ativos, Proteção da informação, etc. (15 categorias); (5) Domínios de segurança — Governança e ecossistema, Proteção, Defesa, Resiliência. A alternativa B corresponde ao atributo 'Conceitos de segurança cibernética'. Itens como custo, complexidade, prioridade e maturidade não são atributos definidos pela norma.",
+    "technicalJustification": "A ABNT NBR ISO/IEC 27002:2022 define na seção 4.2 (Temas e atributos) que cada controle é associado a cinco atributos: tipo de controle, propriedades de segurança da informação, conceitos de segurança cibernética, capacidades operacionais e domínios de segurança. Os conceitos de segurança cibernética são explicitamente alinhados ao NIST Cybersecurity Framework.",
+    "relatedConcepts": [
+      "Atributos de controles",
+      "NIST CSF",
+      "ISO 27002:2022",
+      "Conceitos de segurança cibernética",
+      "Classificação de controles"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b3-iso27002_3",
+    "topicId": "b3-iso27002",
+    "blocoId": "bloco-3",
+    "question": "A versão 2022 da norma ABNT NBR ISO/IEC 27002 trouxe mudanças significativas em relação à versão de 2013. Dentre as alterações realizadas, 11 novos controles foram introduzidos para endereçar desafios contemporâneos de segurança da informação. Qual dos seguintes controles foi introduzido como novidade na versão 2022 da norma?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Política de segurança da informação",
+        "isCorrect": false,
+        "explanation": "Incorreto. Políticas de segurança da informação já existiam como controle na versão 2013 (A.5.1). Na versão 2022, corresponde ao controle 5.1, mas não é uma novidade."
+      },
+      {
+        "letter": "B",
+        "text": "Proteção contra malware",
+        "isCorrect": false,
+        "explanation": "Incorreto. Proteção contra malware já existia na versão 2013 (A.12.2.1). Na versão 2022 corresponde ao controle 8.7, mantendo-se como controle existente."
+      },
+      {
+        "letter": "C",
+        "text": "Inteligência de ameaças (Threat intelligence)",
+        "isCorrect": true,
+        "explanation": "Correto. O controle 5.7 — Inteligência de ameaças (Threat intelligence) é um dos 11 novos controles introduzidos na versão 2022, refletindo a importância crescente de coletar e analisar informações sobre ameaças cibernéticas."
+      },
+      {
+        "letter": "D",
+        "text": "Classificação da informação",
+        "isCorrect": false,
+        "explanation": "Incorreto. Classificação da informação já existia na versão 2013 (A.8.2.1). Na versão 2022, corresponde ao controle 5.12, sendo um controle preexistente."
+      },
+      {
+        "letter": "E",
+        "text": "Gestão de incidentes de segurança da informação",
+        "isCorrect": false,
+        "explanation": "Incorreto. A gestão de incidentes já era contemplada na versão 2013 como um domínio inteiro (seção A.16). Na versão 2022, os controles de gestão de incidentes estão em 5.24 a 5.28."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A versão 2022 da ISO 27002 introduziu 11 novos controles que não existiam na versão 2013. São eles: 5.7 (Inteligência de ameaças), 5.23 (Segurança da informação para uso de serviços em nuvem), 5.30 (Prontidão de TIC para continuidade de negócios), 7.4 (Monitoramento de segurança física), 8.9 (Gestão de configuração), 8.10 (Exclusão de informações), 8.11 (Mascaramento de dados), 8.12 (Prevenção de vazamento de dados – DLP), 8.16 (Atividades de monitoramento), 8.23 (Filtragem web) e 8.28 (Codificação segura). As demais alternativas (Política de segurança, Proteção contra malware, Classificação da informação e Gestão de incidentes) já existiam na versão 2013 e foram mantidas (com possível renomeação ou reorganização) na versão 2022. A inteligência de ameaças (5.7) é uma novidade que reflete a evolução do cenário de ameaças cibernéticas.",
+    "technicalJustification": "A ABNT NBR ISO/IEC 27002:2022 incluiu o controle 5.7 'Inteligência de ameaças' como um controle organizacional novo, que estabelece que convém que informações relativas a ameaças de segurança da informação sejam coletadas e analisadas para gerar inteligência de ameaças. Este controle não tinha equivalente na versão 2013 da norma.",
+    "relatedConcepts": [
+      "ISO 27002:2022",
+      "Novos controles",
+      "Inteligência de ameaças",
+      "Threat intelligence",
+      "Evolução da norma"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b3-iso27002_4",
+    "topicId": "b3-iso27002",
+    "blocoId": "bloco-3",
+    "question": "Uma organização do setor de óleo e gás está realizando a implementação de controles de segurança da informação com base na ABNT NBR ISO/IEC 27002:2022. Durante a análise, o gestor de segurança identificou a necessidade de implementar controles para: (I) definir políticas de uso aceitável de ativos; (II) realizar treinamentos de conscientização em segurança para colaboradores; (III) instalar câmeras de videomonitoramento em áreas sensíveis; e (IV) implementar autenticação multifator para acesso a sistemas críticos.\n\nAssocie corretamente cada controle ao seu respectivo tema conforme a ISO 27002:2022:\n\n(I) Políticas de uso aceitável de ativos\n(II) Treinamentos de conscientização\n(III) Câmeras de videomonitoramento\n(IV) Autenticação multifator",
+    "options": [
+      {
+        "letter": "A",
+        "text": "(I) Organizacional, (II) Pessoas, (III) Físico, (IV) Tecnológico",
+        "isCorrect": true,
+        "explanation": "Correto. (I) Políticas de uso aceitável (controle 5.10) é Organizacional. (II) Conscientização e treinamento (controle 6.3) é Pessoas. (III) Monitoramento de segurança física/câmeras (controle 7.4) é Físico. (IV) Autenticação segura/MFA (controle 8.5) é Tecnológico."
+      },
+      {
+        "letter": "B",
+        "text": "(I) Tecnológico, (II) Organizacional, (III) Físico, (IV) Tecnológico",
+        "isCorrect": false,
+        "explanation": "Incorreto. Políticas de uso aceitável são controles organizacionais (processos de gestão), não tecnológicos. Treinamentos são controles de pessoas, não organizacionais."
+      },
+      {
+        "letter": "C",
+        "text": "(I) Organizacional, (II) Organizacional, (III) Tecnológico, (IV) Tecnológico",
+        "isCorrect": false,
+        "explanation": "Incorreto. Treinamento de conscientização é controle de Pessoas (6.3), não Organizacional. Câmeras de videomonitoramento são controle Físico (7.4), não Tecnológico, pois visam proteger o ambiente físico."
+      },
+      {
+        "letter": "D",
+        "text": "(I) Pessoas, (II) Pessoas, (III) Físico, (IV) Organizacional",
+        "isCorrect": false,
+        "explanation": "Incorreto. Políticas de uso aceitável são controles organizacionais (5.10), não de pessoas. Autenticação multifator é controle tecnológico (8.5), não organizacional."
+      },
+      {
+        "letter": "E",
+        "text": "(I) Organizacional, (II) Pessoas, (III) Tecnológico, (IV) Físico",
+        "isCorrect": false,
+        "explanation": "Incorreto. Câmeras/videomonitoramento (7.4) pertencem ao tema Físico, não Tecnológico. Autenticação multifator (8.5) pertence ao tema Tecnológico, não Físico."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "A questão exige que o candidato saiba classificar controles nos quatro temas da ISO 27002:2022. A lógica é: (I) Políticas de uso aceitável de ativos (controle 5.10) é um controle ORGANIZACIONAL porque envolve definição de regras e processos de gestão. (II) Treinamentos de conscientização em segurança (controle 6.3) é um controle de PESSOAS porque lida diretamente com o fator humano — educação e preparação dos colaboradores. (III) Câmeras de videomonitoramento (controle 7.4 — monitoramento de segurança física) é um controle FÍSICO porque visa proteger o ambiente físico, mesmo usando tecnologia. O critério é o propósito do controle, não o meio utilizado. (IV) Autenticação multifator (controle 8.5 — autenticação segura) é um controle TECNOLÓGICO porque se refere a mecanismos de TI para autenticação de acesso a sistemas. É importante notar que câmeras, apesar de serem dispositivos tecnológicos, são classificadas como controle físico na ISO 27002:2022 por terem o propósito de monitorar a segurança física das instalações.",
+    "technicalJustification": "Na ABNT NBR ISO/IEC 27002:2022: Controle 5.10 (Uso aceitável de informações e outros ativos associados) está na Cláusula 5 — Controles organizacionais. Controle 6.3 (Conscientização, educação e treinamento em segurança da informação) está na Cláusula 6 — Controles de pessoas. Controle 7.4 (Monitoramento de segurança física) está na Cláusula 7 — Controles físicos. Controle 8.5 (Autenticação segura) está na Cláusula 8 — Controles tecnológicos.",
+    "relatedConcepts": [
+      "Temas de controles",
+      "Classificação de controles",
+      "ISO 27002:2022",
+      "Controles organizacionais",
+      "Controles de pessoas",
+      "Controles físicos",
+      "Controles tecnológicos"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b3-iso27002_5",
+    "topicId": "b3-iso27002",
+    "blocoId": "bloco-3",
+    "question": "No contexto da família de normas ISO/IEC 27000 para segurança da informação, a relação entre a ISO 27001 e a ISO 27002 é fundamental para a implementação eficaz de um SGSI. Considere as seguintes afirmativas:\n\nI. A ISO 27001 define os requisitos para um SGSI e é uma norma certificável, enquanto a ISO 27002 fornece orientações de implementação e NÃO é norma certificável.\nII. A Declaração de Aplicabilidade (Statement of Applicability — SoA) é um requisito da ISO 27002 e lista todos os controles que devem ser obrigatoriamente implementados.\nIII. Na transição da versão 2013 para a versão 2022 da ISO 27002, alguns controles foram mesclados e 11 novos foram adicionados, mas nenhum controle foi removido.\nIV. A ISO 27002:2022 utiliza o verbo \"deve\" (shall) para indicar que todos os controles são requisitos mandatórios.\n\nEstão corretas APENAS as afirmativas",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I e II",
+        "isCorrect": false,
+        "explanation": "Incorreto. A afirmativa II é falsa: a SoA é um requisito da ISO 27001 (não da 27002) e ela documenta quais controles são aplicáveis ou não (com justificativa), não listando controles obrigatórios."
+      },
+      {
+        "letter": "B",
+        "text": "I e III",
+        "isCorrect": true,
+        "explanation": "Correto. A afirmativa I é verdadeira: a 27001 é certificável e define requisitos, enquanto a 27002 fornece orientações e não é certificável. A afirmativa III é verdadeira: na versão 2022, controles foram mesclados e 11 novos foram adicionados, sem remoção de controles."
+      },
+      {
+        "letter": "C",
+        "text": "II e IV",
+        "isCorrect": false,
+        "explanation": "Incorreto. Ambas são falsas. A SoA é requisito da ISO 27001, não da 27002 (II). A ISO 27002 utiliza 'convém' (should), não 'deve' (shall), pois não define requisitos mandatórios (IV)."
+      },
+      {
+        "letter": "D",
+        "text": "I, III e IV",
+        "isCorrect": false,
+        "explanation": "Incorreto. A afirmativa IV é falsa: a ISO 27002 utiliza 'convém' (should) — linguagem de recomendação — e não 'deve' (shall). Apenas a ISO 27001 utiliza 'deve' como linguagem de requisito."
+      },
+      {
+        "letter": "E",
+        "text": "I, II e III",
+        "isCorrect": false,
+        "explanation": "Incorreto. A afirmativa II é falsa: a SoA é um requisito da ISO 27001 (cláusula 6.1.3 d), não da ISO 27002. Além disso, a SoA não lista controles obrigatórios — ela documenta quais controles são aplicáveis e quais não são, com justificativas."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão avalia o conhecimento detalhado sobre a relação entre ISO 27001 e ISO 27002 e as características da versão 2022.\n\nAnálise de cada afirmativa:\n\n(I) VERDADEIRA — A ISO 27001 é a norma que define os requisitos para estabelecer, implementar, manter e melhorar um SGSI, sendo passível de certificação por organismos acreditados. A ISO 27002 é uma norma de orientação que fornece diretrizes para implementação dos controles, não sendo certificável.\n\n(II) FALSA — A Declaração de Aplicabilidade (SoA) é um requisito da ISO 27001, especificamente na cláusula 6.1.3 d, e não da ISO 27002. A SoA lista os controles do Anexo A da 27001, indicando quais são aplicáveis (com justificativa para inclusão) e quais não são aplicáveis (com justificativa para exclusão). Ela não torna controles 'obrigatórios' — documenta a decisão baseada na análise de riscos.\n\n(III) VERDADEIRA — Na transição de 2013 para 2022, os 114 controles originais foram reorganizados: muitos foram mantidos individualmente, vários foram mesclados/consolidados (explicando a redução numérica), e 11 novos controles foram adicionados, resultando em 93 controles. Nenhum controle foi removido — todos os conceitos da versão anterior foram preservados.\n\n(IV) FALSA — A ISO 27002 utiliza o verbo 'convém' (should em inglês), que expressa recomendação, não obrigação. Apenas a ISO 27001 utiliza 'deve' (shall) para seus requisitos mandatórios. Essa distinção linguística é fundamental para entender a natureza de cada norma.",
+    "technicalJustification": "A ISO 27001:2022 cláusula 6.1.3 d) exige que a organização produza uma Declaração de Aplicabilidade que contenha os controles necessários e a justificação para inclusões e exclusões. A ISO 27002:2022 utiliza consistentemente a linguagem 'convém que' (it is recommended that / should) ao descrever orientações de implementação dos controles, diferenciando-se do caráter mandatório ('deve' / shall) da ISO 27001.",
+    "relatedConcepts": [
+      "ISO 27001 vs ISO 27002",
+      "Declaração de Aplicabilidade (SoA)",
+      "Versão 2013 vs 2022",
+      "Linguagem normativa (deve vs convém)",
+      "Certificação SGSI"
+    ],
+    "order": 5
+  }
+]

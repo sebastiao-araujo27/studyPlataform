@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b2-testes_1",
+    "topicId": "b2-testes",
+    "front": "O que é um teste unitário no contexto de desenvolvimento de software?",
+    "back": "É um teste que verifica a menor parte testável de um software, geralmente uma função, método ou classe, de forma isolada de outras partes do sistema.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-testes_2",
+    "topicId": "b2-testes",
+    "front": "Qual a principal diferença entre testes de caixa branca e testes de caixa preta?",
+    "back": "Testes de caixa branca examinam a estrutura interna e o código do software, enquanto testes de caixa preta focam no comportamento externo e nas funcionalidades, sem conhecer a implementação interna.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-testes_3",
+    "topicId": "b2-testes",
+    "front": "O que significa TDD (Test-Driven Development)?",
+    "back": "É uma prática de desenvolvimento onde os testes são escritos ANTES do código de produção. O ciclo é: escrever um teste falho, escrever o código para passar no teste, refatorar o código.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-testes_4",
+    "topicId": "b2-testes",
+    "front": "O que é um teste de integração?",
+    "back": "É o processo de testar a interação entre diferentes módulos ou componentes de um software para garantir que eles funcionem juntos corretamente.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-testes_5",
+    "topicId": "b2-testes",
+    "front": "Quando é mais apropriado realizar testes de aceitação?",
+    "back": "Testes de aceitação são realizados quando o software está pronto ou próximo de ser entregue, com o objetivo de verificar se ele atende aos requisitos do negócio e às expectativas do usuário/cliente.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-testes_6",
+    "topicId": "b2-testes",
+    "front": "Qual a relação entre automação de testes e os diferentes níveis de teste (unitário, integração, sistema)?",
+    "back": "A automação de testes pode ser aplicada em todos os níveis. Testes unitários e de integração são frequentemente automatizados para garantir feedback rápido. Testes de sistema e de aceitação também podem ser automatizados, especialmente em cenários de regressão.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-testes_7",
+    "topicId": "b2-testes",
+    "front": "Descreva o propósito principal do BDD (Behavior-Driven Development).",
+    "back": "O BDD visa melhorar a colaboração entre desenvolvedores, QAs e stakeholders (negócios) através da escrita de testes em uma linguagem natural e compreensível (ex: Gherkin), descrevendo o comportamento esperado do sistema.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-testes_8",
+    "topicId": "b2-testes",
+    "front": "V ou F: Testes de sistema verificam a funcionalidade de componentes individuais de forma isolada.",
+    "back": "Falso. Testes de sistema verificam o sistema como um todo, integrando todos os componentes e testando o fluxo completo das funcionalidades. A verificação de componentes isolados é característica de testes unitários.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-testes_9",
+    "topicId": "b2-testes",
+    "front": "Qual a principal vantagem de aplicar TDD em um projeto de software?",
+    "back": "A principal vantagem é a melhoria da qualidade do código, a redução de defeitos, a facilidade de refatoração e a criação de um design mais modular e testável, além de servir como documentação viva do comportamento esperado.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-testes_10",
+    "topicId": "b2-testes",
+    "front": "Em qual cenário a automação de testes de regressão é mais crucial?",
+    "back": "A automação de testes de regressão é mais crucial quando há mudanças frequentes no código ou novas funcionalidades são adicionadas, para garantir que as funcionalidades existentes não foram quebradas pelas modificações.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

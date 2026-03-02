@@ -1,0 +1,260 @@
+[
+  {
+    "id": "ex_b1-integridade-referencial_1",
+    "topicId": "b1-integridade-referencial",
+    "blocoId": "bloco-1",
+    "question": "Em um sistema de gerenciamento de banco de dados relacional, a garantia da consistência e da integridade dos dados é fundamental para o sucesso das operações. Uma das restrições mais importantes para assegurar que cada registro em uma tabela seja unicamente identificável é a definição de uma chave primária. Sobre este conceito, é correto afirmar que:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A chave primária pode conter valores nulos, pois sua principal função é definir um identificador único para o registro.",
+        "isCorrect": false,
+        "explanation": "A chave primária não pode conter valores nulos, pois isso violaria a integridade de entidade."
+      },
+      {
+        "letter": "B",
+        "text": "Uma tabela pode possuir múltiplas chaves primárias, desde que cada uma delas identifique unicamente os registros.",
+        "isCorrect": false,
+        "explanation": "Uma tabela só pode ter uma única chave primária definida."
+      },
+      {
+        "letter": "C",
+        "text": "A chave primária é um conjunto de um ou mais atributos que identificam unicamente cada tupla na relação e não pode conter valores nulos.",
+        "isCorrect": true,
+        "explanation": "Esta alternativa descreve corretamente a definição e as propriedades essenciais de uma chave primária."
+      },
+      {
+        "letter": "D",
+        "text": "A chave primária é utilizada exclusivamente para estabelecer relacionamentos entre tabelas, sendo sinônimo de chave estrangeira.",
+        "isCorrect": false,
+        "explanation": "A chave primária identifica unicamente registros dentro de sua própria tabela; a chave estrangeira é usada para relacionamentos."
+      },
+      {
+        "letter": "E",
+        "text": "A integridade referencial é garantida automaticamente pela definição de uma chave primária, independentemente da existência de chaves estrangeiras.",
+        "isCorrect": false,
+        "explanation": "A integridade referencial é garantida pela relação entre chave primária e chave estrangeira, não apenas pela chave primária isoladamente."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda o conceito fundamental de chave primária em bancos de dados relacionais. A alternativa C está correta porque define a chave primária como um atributo ou conjunto de atributos que identifica unicamente cada tupla (registro) em uma relação (tabela) e que, por definição, não pode conter valores nulos. Essa propriedade é crucial para garantir a integridade de entidade, assegurando que cada linha seja distinta e identificável. As demais alternativas apresentam equívocos comuns: A ignora a restrição de nulidade da chave primária; B contraria a regra de que uma tabela possui apenas uma chave primária; D confunde chave primária com chave estrangeira, que é usada para vincular tabelas; e E, embora mencione integridade referencial, falha ao desconsiderar o papel da chave estrangeira na sua aplicação prática. Portanto, a alternativa C é a única que descreve precisamente o conceito de chave primária.",
+    "technicalJustification": "Conforme Silberschatz, Galvin, & Gagne (2013), em 'Database System Concepts', uma chave primária é um atributo ou conjunto de atributos que identifica unicamente cada tupla em uma relação. A integridade de entidade exige que os valores da chave primária não sejam nulos.",
+    "relatedConcepts": [
+      "Chave Primária",
+      "Integridade de Entidade",
+      "Banco de Dados Relacional",
+      "Tupla",
+      "Atributo"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b1-integridade-referencial_2",
+    "topicId": "b1-integridade-referencial",
+    "blocoId": "bloco-1",
+    "question": "Uma grande refinaria de petróleo está implementando um novo sistema de gestão de produção para otimizar o controle de insumos e produtos. O banco de dados relacional que suporta este sistema possui tabelas como 'Tanques' (com atributos como 'ID_Tanque', 'Capacidade', 'Tipo_Produto') e 'Lotes' (com atributos como 'ID_Lote', 'ID_Tanque_Armazenamento', 'Data_Producao', 'Quantidade'). Para garantir que cada lote seja sempre associado a um tanque existente e que um tanque não possa ser removido se ainda contiver lotes associados, quais restrições de integridade devem ser aplicadas?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Uma constraint NOT NULL na coluna 'ID_Tanque' da tabela 'Lotes' e uma constraint UNIQUE na coluna 'ID_Tanque' da tabela 'Tanques'.",
+        "isCorrect": false,
+        "explanation": "NOT NULL garante que o ID do tanque não seja vazio, mas não assegura que ele exista na tabela 'Tanques'. UNIQUE na tabela 'Tanques' não é o papel primário de um ID de tanque, que geralmente é a chave primária."
+      },
+      {
+        "letter": "B",
+        "text": "Uma constraint de chave primária na coluna 'ID_Tanque' da tabela 'Tanques' e uma constraint de chave estrangeira na coluna 'ID_Tanque_Armazenamento' da tabela 'Lotes' referenciando 'ID_Tanque' da tabela 'Tanques', com ação ON DELETE RESTRICT.",
+        "isCorrect": true,
+        "explanation": "Esta combinação garante que cada lote aponte para um tanque existente (chave estrangeira) e impede a exclusão de um tanque se ele ainda estiver referenciado por lotes (ON DELETE RESTRICT)."
+      },
+      {
+        "letter": "C",
+        "text": "Uma constraint de chave estrangeira na coluna 'ID_Tanque' da tabela 'Tanques' referenciando 'ID_Tanque_Armazenamento' da tabela 'Lotes', e uma constraint CHECK na coluna 'Capacidade' da tabela 'Tanques'.",
+        "isCorrect": false,
+        "explanation": "A direção da chave estrangeira está invertida; ela deve referenciar a tabela principal ('Tanques') a partir da tabela dependente ('Lotes'). A constraint CHECK é para validação de valores, não para relacionamentos."
+      },
+      {
+        "letter": "D",
+        "text": "Duas constraints de chave estrangeira: uma em 'ID_Tanque' na tabela 'Tanques' referenciando 'ID_Lote' na tabela 'Lotes', e outra em 'ID_Lote' na tabela 'Lotes' referenciando 'ID_Tanque' na tabela 'Tanques'.",
+        "isCorrect": false,
+        "explanation": "Esta configuração cria um ciclo de dependência incorreto e não estabelece a relação hierárquica esperada entre tanques e lotes."
+      },
+      {
+        "letter": "E",
+        "text": "Uma constraint de chave primária na coluna 'ID_Lote' da tabela 'Lotes' e uma constraint de chave estrangeira na coluna 'ID_Tanque' da tabela 'Tanques' referenciando 'ID_Lote' da tabela 'Lotes', com ação ON DELETE CASCADE.",
+        "isCorrect": false,
+        "explanation": "A chave estrangeira está invertida e ON DELETE CASCADE removeria os tanques se os lotes fossem removidos, o que é o oposto do requisito de impedir a remoção de tanques com lotes associados."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão descreve um cenário típico de banco de dados relacional onde é necessário garantir a integridade referencial entre duas tabelas: 'Tanques' e 'Lotes'. O requisito de que 'cada lote seja sempre associado a um tanque existente' é atendido por uma chave estrangeira na tabela 'Lotes' (que contém os lotes) que referencia a chave primária da tabela 'Tanques' (que contém os tanques). Especificamente, a coluna 'ID_Tanque_Armazenamento' na tabela 'Lotes' deve ser uma chave estrangeira que aponta para a coluna 'ID_Tanque' na tabela 'Tanques'. Para que a chave estrangeira funcione corretamente, a coluna 'ID_Tanque' na tabela 'Tanques' deve ser a chave primária desta tabela, garantindo a unicidade de cada tanque. O segundo requisito, 'um tanque não possa ser removido se ainda contiver lotes associados', é implementado através da especificação da ação de exclusão (ON DELETE) na constraint de chave estrangeira. A ação 'RESTRICT' (ou 'NO ACTION', dependendo do SGBD) impede que a linha pai (o tanque) seja excluída se existirem linhas filhas (lotes) que a referenciem. A alternativa B combina corretamente esses elementos: chave primária em 'Tanques.ID_Tanque', chave estrangeira em 'Lotes.ID_Tanque_Armazenamento' referenciando 'Tanques.ID_Tanque', e a ação ON DELETE RESTRICT para impedir a exclusão de tanques com lotes associados. As outras alternativas falham ao inverter a relação de chave estrangeira, não definir corretamente as chaves primárias, ou usar ações de exclusão inadequadas.",
+    "technicalJustification": "A integridade referencial é um pilar dos SGBDs relacionais, garantida por meio de chaves estrangeiras. Conforme Navathe & Elmasri (2011), em 'Fundamentals of Database Systems', uma chave estrangeira em uma relação R2 é um atributo (ou conjunto de atributos) em R2 cujos valores devem corresponder aos valores da chave primária de alguma relação R1, ou ser nulos. A ação ON DELETE RESTRICT impede a exclusão de uma tupla na relação pai se houver tuplas filhas que a referenciem.",
+    "relatedConcepts": [
+      "Integridade Referencial",
+      "Chave Estrangeira",
+      "Chave Primária",
+      "Constraint",
+      "ON DELETE RESTRICT",
+      "Banco de Dados Relacional"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b1-integridade-referencial_3",
+    "topicId": "b1-integridade-referencial",
+    "blocoId": "bloco-1",
+    "question": "Uma equipe de desenvolvimento de software, responsável por um sistema de controle de estoque para uma grande rede de supermercados, está projetando o esquema do banco de dados. Eles precisam garantir que os dados de produtos sejam consistentes e que certas regras de negócio sejam aplicadas automaticamente. Considere as seguintes afirmativas sobre as ferramentas e conceitos utilizados para impor essas regras:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I e II, apenas.",
+        "isCorrect": false,
+        "explanation": "A afirmativa III também descreve corretamente o uso de triggers."
+      },
+      {
+        "letter": "B",
+        "text": "I e III, apenas.",
+        "isCorrect": false,
+        "explanation": "A afirmativa II descreve corretamente o uso de constraints CHECK."
+      },
+      {
+        "letter": "C",
+        "text": "II e III, apenas.",
+        "isCorrect": false,
+        "explanation": "A afirmativa I descreve corretamente o uso de chaves primárias e estrangeiras."
+      },
+      {
+        "letter": "D",
+        "text": "I, II e III.",
+        "isCorrect": true,
+        "explanation": "Todas as afirmativas descrevem corretamente mecanismos para impor integridade e regras de negócio em um banco de dados relacional."
+      },
+      {
+        "letter": "E",
+        "text": "Nenhuma das afirmativas.",
+        "isCorrect": false,
+        "explanation": "Todas as afirmativas descrevem corretamente mecanismos para impor integridade e regras de negócio em um banco de dados relacional."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão avalia a compreensão de diferentes mecanismos de imposição de integridade e regras de negócio em um banco de dados relacional. Vamos analisar cada afirmativa:\n\nI. 'Chaves primárias e estrangeiras são utilizadas para garantir a integridade de entidade e referencial, respectivamente. A chave primária assegura que cada registro de produto seja único, enquanto a chave estrangeira garante que um produto só possa ser associado a um fornecedor existente.' Esta afirmativa está correta. A chave primária (PK) garante a unicidade e a não nulidade dos identificadores de cada tupla (integridade de entidade). A chave estrangeira (FK) estabelece um vínculo entre tabelas, garantindo que um valor em uma coluna (ou conjunto de colunas) em uma tabela referencie um valor existente na chave primária de outra tabela (integridade referencial).\n\nII. 'Constraints CHECK podem ser empregadas para validar se o valor de um atributo, como o preço de um produto, está dentro de um intervalo permitido (por exemplo, maior que zero e menor que um milhão de reais), impedindo a inserção ou atualização de dados inválidos.' Esta afirmativa está correta. Constraints CHECK são usadas para definir regras de validação sobre os valores permitidos em uma coluna, assegurando que os dados inseridos ou atualizados atendam a condições específicas de negócio.\n\nIII. 'Triggers podem ser definidos para executar automaticamente um conjunto de ações (como atualizar o estoque de um produto sempre que uma nova venda é registrada ou enviar um alerta se o nível de estoque ficar abaixo do mínimo) em resposta a determinados eventos (INSERT, UPDATE, DELETE) em uma tabela.' Esta afirmativa está correta. Triggers são blocos de código procedural associados a uma tabela que são ativados automaticamente quando um evento específico ocorre nessa tabela. Eles são poderosas ferramentas para implementar lógica de negócio complexa e manter a consistência dos dados de forma reativa.\n\nComo todas as três afirmativas descrevem corretamente o uso e a finalidade desses mecanismos de integridade e regras de negócio, a alternativa D, que inclui I, II e III, é a correta.",
+    "technicalJustification": "As restrições de integridade (constraints) como PRIMARY KEY, FOREIGN KEY e CHECK são mecanismos declarativos para impor regras sobre os dados. Triggers, por outro lado, são mecanismos procedurais que permitem a execução de código em resposta a eventos do banco de dados. Navathe & Elmasri (2011) descrevem PKs e FKs para integridade de entidade e referencial, CHECK constraints para validação de domínio, e triggers como mecanismos para implementar lógica de negócio complexa e regras de auditoria.",
+    "relatedConcepts": [
+      "Integridade de Entidade",
+      "Integridade Referencial",
+      "Chave Primária",
+      "Chave Estrangeira",
+      "Constraint CHECK",
+      "Trigger",
+      "Regras de Negócio"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b1-integridade-referencial_4",
+    "topicId": "b1-integridade-referencial",
+    "blocoId": "bloco-1",
+    "question": "Em um sistema de gestão de ativos para uma plataforma de exploração de petróleo offshore, é essencial manter a rastreabilidade e a integridade dos dados relacionados a equipamentos e suas manutenções. Considere um cenário onde temos as tabelas 'Equipamentos' (com 'ID_Equipamento' como chave primária) e 'Manutencoes' (com 'ID_Manutencao' como chave primária e 'ID_Equipamento' como chave estrangeira referenciando 'Equipamentos'). O gerente de operações deseja impedir a exclusão de um registro de equipamento da tabela 'Equipamentos' se ele possuir registros de manutenção associados na tabela 'Manutencoes'. Adicionalmente, se um registro de manutenção for atualizado com uma nova data, o sistema deve registrar essa alteração em uma tabela de auditoria chamada 'Log_Manutencao', que contém 'ID_Log', 'ID_Manutencao_Original', 'Data_Alteracao' e 'Descricao_Alteracao'. Qual a combinação de mecanismos de banco de dados mais adequada para atender a esses dois requisitos distintos?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Utilizar uma constraint FOREIGN KEY com ON DELETE SET NULL na relação entre 'Manutencoes.ID_Equipamento' e 'Equipamentos.ID_Equipamento', e uma constraint CHECK na tabela 'Manutencoes' para validar a data da manutenção.",
+        "isCorrect": false,
+        "explanation": "ON DELETE SET NULL não impede a exclusão do equipamento e a constraint CHECK não atende ao requisito de auditoria."
+      },
+      {
+        "letter": "B",
+        "text": "Utilizar uma constraint FOREIGN KEY com ON DELETE RESTRICT na relação entre 'Manutencoes.ID_Equipamento' e 'Equipamentos.ID_Equipamento', e um trigger AFTER UPDATE na tabela 'Manutencoes' para inserir registros na tabela 'Log_Manutencao'.",
+        "isCorrect": true,
+        "explanation": "Esta combinação atende a ambos os requisitos: ON DELETE RESTRICT impede a exclusão de equipamentos com manutenções associadas, e o trigger AFTER UPDATE automatiza o registro de auditoria."
+      },
+      {
+        "letter": "C",
+        "text": "Utilizar uma constraint FOREIGN KEY com ON DELETE CASCADE na relação entre 'Manutencoes.ID_Equipamento' e 'Equipamentos.ID_Equipamento', e uma constraint UNIQUE na tabela 'Log_Manutencao'.",
+        "isCorrect": false,
+        "explanation": "ON DELETE CASCADE removeria as manutenções ao excluir o equipamento, o oposto do desejado. A constraint UNIQUE em 'Log_Manutencao' não resolve o problema de auditoria."
+      },
+      {
+        "letter": "D",
+        "text": "Utilizar um trigger BEFORE DELETE na tabela 'Equipamentos' para verificar a existência de manutenções, e uma constraint FOREIGN KEY com ON UPDATE NO ACTION na relação entre 'Manutencoes.ID_Equipamento' e 'Equipamentos.ID_Equipamento'.",
+        "isCorrect": false,
+        "explanation": "O trigger BEFORE DELETE é uma alternativa válida, mas a opção ON UPDATE NO ACTION não atende ao requisito de auditoria de atualizações."
+      },
+      {
+        "letter": "E",
+        "text": "Utilizar uma constraint PRIMARY KEY em 'Manutencoes.ID_Equipamento' e um trigger BEFORE INSERT na tabela 'Equipamentos' para verificar a data de registro.",
+        "isCorrect": false,
+        "explanation": "A chave primária de 'Manutencoes' é 'ID_Manutencao', não 'ID_Equipamento'. A verificação de data em 'Equipamentos' não atende aos requisitos especificados."
+      }
+    ],
+    "difficulty": "difícil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão exige a integração de múltiplos conceitos de integridade e automação de banco de dados para atender a dois requisitos distintos em um cenário complexo. O primeiro requisito é impedir a exclusão de um equipamento se ele tiver manutenções associadas. A maneira mais direta e padrão de implementar isso em um modelo relacional é através de uma constraint de chave estrangeira (FOREIGN KEY) na tabela 'Manutencoes' que referencia a chave primária da tabela 'Equipamentos'. Especificamente, a coluna 'Manutencoes.ID_Equipamento' deve ser configurada com a ação de exclusão 'RESTRICT' (ou 'NO ACTION'). Esta configuração garante que o SGBD automaticamente impedirá a operação DELETE na tabela 'Equipamentos' se houver qualquer linha na tabela 'Manutencoes' que referencie o 'ID_Equipamento' a ser excluído. A alternativa B propõe exatamente isso (ON DELETE RESTRICT). O segundo requisito é registrar automaticamente alterações (atualizações) nas manutenções em uma tabela de auditoria ('Log_Manutencao'). Este tipo de ação reativa a eventos de modificação de dados é a função principal dos triggers. Um trigger 'AFTER UPDATE' na tabela 'Manutencoes' pode ser programado para, após uma atualização bem-sucedida de um registro de manutenção, capturar os dados relevantes (como o ID da manutenção e a data da alteração) e inseri-los na tabela 'Log_Manutencao'. A alternativa B também propõe esta solução (trigger AFTER UPDATE na 'Manutencoes' para inserir em 'Log_Manutencao'). As outras alternativas falham em um ou ambos os requisitos: usam ações de FK inadequadas (SET NULL, CASCADE), definem constraints incorretas (CHECK, UNIQUE, PK errada), usam triggers em momentos errados (BEFORE INSERT, BEFORE DELETE sem a devida verificação de FK) ou não abordam o requisito de auditoria de forma eficaz.",
+    "technicalJustification": "A integridade referencial, conforme definida por Codd e detalhada por Silberschatz et al. (2013), é mantida por chaves estrangeiras. A ação ON DELETE RESTRICT (ou NO ACTION) é um dos comportamentos possíveis para chaves estrangeiras que impede a exclusão de uma tupla pai se houver tuplas filhas referenciando-a. Triggers, descritos por Navathe & Elmasri (2011), são mecanismos de controle de fluxo que executam um bloco de código em resposta a eventos de DML (INSERT, UPDATE, DELETE) ou DDL, sendo ideais para implementar auditoria e lógica de negócio complexa.",
+    "relatedConcepts": [
+      "Integridade Referencial",
+      "Chave Estrangeira",
+      "ON DELETE RESTRICT",
+      "Trigger",
+      "Auditoria de Banco de Dados",
+      "AFTER UPDATE Trigger",
+      "Banco de Dados Relacional"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b1-integridade-referencial_5",
+    "topicId": "b1-integridade-referencial",
+    "blocoId": "bloco-1",
+    "question": "uma empresa de logística, operando em escala global, utiliza um sistema de banco de dados para gerenciar suas frotas de veículos, entregas e clientes. A integridade dos dados é crítica para a eficiência operacional e a satisfação do cliente. Analise as seguintes afirmações sobre a aplicação de restrições e gatilhos neste contexto:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Apenas I e II.",
+        "isCorrect": false,
+        "explanation": "A afirmação III descreve corretamente o uso de triggers para validação de regras complexas de negócio."
+      },
+      {
+        "letter": "B",
+        "text": "Apenas I e III.",
+        "isCorrect": false,
+        "explanation": "A afirmação II descreve corretamente o uso de constraints CHECK para validação de valores."
+      },
+      {
+        "letter": "C",
+        "text": "Apenas II e III.",
+        "isCorrect": false,
+        "explanation": "A afirmação I descreve corretamente a função fundamental das chaves primárias e estrangeiras na integridade referencial."
+      },
+      {
+        "letter": "D",
+        "text": "Apenas I.",
+        "isCorrect": false,
+        "explanation": "As afirmações II e III também descrevem corretamente mecanismos de integridade e regras de negócio."
+      },
+      {
+        "letter": "E",
+        "text": "I, II e III.",
+        "isCorrect": true,
+        "explanation": "Todas as afirmações descrevem corretamente a aplicação de chaves primárias/estrangeiras, constraints CHECK e triggers para garantir a integridade e as regras de negócio."
+      }
+    ],
+    "difficulty": "difícil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão testa a capacidade do candidato de discernir a aplicação correta de diferentes mecanismos de imposição de integridade e regras de negócio em um contexto empresarial. Vamos analisar cada afirmação:\n\nI. 'A definição de uma chave primária na tabela 'Clientes' (por exemplo, 'ID_Cliente') garante a unicidade de cada cliente, enquanto a criação de uma chave estrangeira na tabela 'Entregas' referenciando 'Clientes.ID_Cliente' assegura que cada entrega esteja vinculada a um cliente válido e existente no sistema.' Esta afirmação está correta. A chave primária (PK) é essencial para a integridade de entidade, garantindo que cada cliente seja identificado de forma única. A chave estrangeira (FK) na tabela 'Entregas' que referencia a PK de 'Clientes' garante a integridade referencial, assegurando que não existam entregas órfãs, ou seja, entregas associadas a clientes que não estão cadastrados.\n\nII. 'Constraints CHECK podem ser utilizadas para impor que a data de uma entrega registrada na tabela 'Entregas' seja sempre posterior à data de cadastro do cliente na tabela 'Clientes', ou que a capacidade de um veículo registrado na tabela 'Veiculos' seja um valor positivo.' Esta afirmação está correta. As constraints CHECK são ideais para validar valores de colunas com base em condições lógicas ou intervalos. No primeiro exemplo, a data da entrega deve ser maior que a data de cadastro do cliente (exigindo possivelmente acesso a outra tabela, o que pode ser limitado em CHECK simples, mas a ideia geral de validação de valor é correta). No segundo exemplo, a capacidade do veículo deve ser positiva, o que é uma validação de domínio perfeitamente aplicável com CHECK.\n\nIII. 'Triggers podem ser implementados para, automaticamente, recalcular a quilometragem total percorrida por um veículo toda vez que uma nova entrega é concluída e associada a ele, ou para notificar o departamento de faturamento se o valor total de uma entrega exceder um limite predefinido de risco.' Esta afirmação está correta. Triggers são a ferramenta adequada para executar lógica de negócio complexa que envolve múltiplas tabelas ou cálculos baseados em eventos. O recálculo de quilometragem após uma entrega é um exemplo clássico de atualização de dados em uma tabela com base em uma ação em outra (o registro de uma entrega). A notificação de risco baseada em um limite também é uma aplicação comum de triggers para automação de processos de negócio.\n\nDado que todas as três afirmações descrevem com precisão a aplicação e a finalidade de chaves primárias/estrangeiras, constraints CHECK e triggers, a alternativa E é a correta.",
+    "technicalJustification": "A manutenção da integridade dos dados em sistemas complexos como o de logística requer uma combinação de mecanismos. Silberschatz et al. (2013) destacam que chaves primárias e estrangeiras formam a base da integridade relacional. Navathe & Elmasri (2011) enfatizam o uso de constraints CHECK para validação de domínio e triggers para implementação de regras de negócio mais sofisticadas e procedimentos de auditoria, que vão além das capacidades das constraints declarativas.",
+    "relatedConcepts": [
+      "Integridade Referencial",
+      "Chave Primária",
+      "Chave Estrangeira",
+      "Constraint CHECK",
+      "Trigger",
+      "Regras de Negócio",
+      "Banco de Dados Relacional",
+      "Logística"
+    ],
+    "order": 5
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "fc_b3-dashboards_1",
+    "topicId": "b3-dashboards",
+    "front": "O que é um dashboard no contexto de análise de dados?",
+    "back": "É uma interface visual que apresenta informações-chave (métricas, KPIs) de forma concisa e organizada, permitindo o monitoramento do desempenho e a tomada de decisões rápidas e informadas.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-dashboards_2",
+    "topicId": "b3-dashboards",
+    "front": "Explique o conceito de KPI (Key Performance Indicator).",
+    "back": "KPIs são indicadores-chave de desempenho que medem o progresso em relação a um objetivo de negócio específico. São métricas cruciais para avaliar o sucesso de uma iniciativa ou processo.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-dashboards_3",
+    "topicId": "b3-dashboards",
+    "front": "Qual o objetivo primordial da visualização de dados em um dashboard?",
+    "back": "Facilitar a compreensão de grandes volumes de dados, identificar padrões, tendências e anomalias, e comunicar insights de forma eficaz para apoiar a tomada de decisões estratégicas e operacionais.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-dashboards_4",
+    "topicId": "b3-dashboards",
+    "front": "Cite duas ferramentas de Business Intelligence (BI) amplamente utilizadas para a criação de dashboards e visualização de dados.",
+    "back": [
+      "Power BI (Microsoft)",
+      "Tableau (Salesforce)"
+    ],
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-dashboards_5",
+    "topicId": "b3-dashboards",
+    "front": "Qual a principal diferença entre uma 'métrica' e um 'KPI' (Key Performance Indicator)?",
+    "back": "Uma **métrica** é uma medida quantitativa de qualquer dado (ex: número de acessos). Um **KPI** é uma métrica específica que é crítica para o sucesso de um objetivo de negócio e é ativamente monitorada para avaliar o progresso (ex: taxa de conversão de acessos em vendas).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-dashboards_6",
+    "topicId": "b3-dashboards",
+    "front": "Cite três princípios fundamentais para o design de um dashboard eficaz.",
+    "back": [
+      "**Clareza:** As informações devem ser fáceis de entender, sem ambiguidades.",
+      "**Relevância:** Apenas os dados e métricas essenciais para o objetivo do usuário devem ser apresentados.",
+      "**Simplicidade:** Evitar sobrecarga de informações, focando na mensagem principal."
+    ],
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-dashboards_7",
+    "topicId": "b3-dashboards",
+    "front": "Em dashboards, quando se deve preferir um gráfico de barras em vez de um gráfico de linhas?",
+    "back": [
+      "**Gráfico de Barras:** É ideal para comparar valores entre diferentes categorias discretas ou mostrar a distribuição de um item em um ponto específico no tempo.",
+      "**Gráfico de Linhas:** É mais adequado para visualizar tendências de dados ao longo do tempo ou sequências contínuas."
+    ],
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-dashboards_8",
+    "topicId": "b3-dashboards",
+    "front": "V ou F: 'Um dashboard eficaz deve sempre incluir o máximo de informações possível para garantir que todos os detalhes estejam disponíveis ao usuário, promovendo uma análise exaustiva.'",
+    "back": "Falso. Um dashboard eficaz deve ser conciso e focado nas informações mais relevantes para o objetivo. A sobrecarga de informações (infoxicação) prejudica a clareza, a legibilidade e a tomada de decisão rápida. Detalhes mais aprofundados devem ser acessíveis via drill-down ou relatórios complementares.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-dashboards_9",
+    "topicId": "b3-dashboards",
+    "front": "Qual a importância da escolha de cores em um dashboard e quais armadilhas devem ser evitadas no uso de cores?",
+    "back": "A escolha de cores é crucial para a legibilidade, interpretação rápida e destaque de informações. Armadilhas a evitar incluem:\n- **Excesso de cores:** Dificulta a distinção de elementos importantes.\n- **Cores inadequadas para daltônicos:** Garanta contraste e padrões alternativos.\n- **Uso inconsistente:** Cores com significados diferentes em gráficos distintos.\n- **Cores puramente estéticas:** Devem ter um propósito funcional para guiar o olhar ou indicar status.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-dashboards_10",
+    "topicId": "b3-dashboards",
+    "front": "Como a metodologia SMART se aplica à definição de KPIs eficazes que serão exibidos em dashboards?",
+    "back": "A metodologia SMART garante que os KPIs sejam bem formulados e úteis:\n- **S**pecific (Específicos): Claros e bem definidos.\n- **M**easurable (Mensuráveis): Quantificáveis para acompanhamento do progresso.\n- **A**chievable (Atingíveis): Realistas e alcançáveis.\n- **R**elevant (Relevantes): Alinhados aos objetivos estratégicos.\n- **T**ime-bound (Temporizáveis): Com prazo definido para avaliação.\nEssa abordagem assegura que os KPIs nos dashboards sejam acionáveis e forneçam insights significativos.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

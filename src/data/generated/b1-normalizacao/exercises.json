@@ -1,0 +1,259 @@
+[
+  {
+    "id": "ex_b1-normalizacao_1",
+    "topicId": "b1-normalizacao",
+    "blocoId": "bloco-1",
+    "question": "Em um sistema de banco de dados relacional, a normalização é um processo fundamental para organizar os dados de forma eficiente, minimizando a redundância e evitando anomalias. Em relação aos princípios da normalização, a Primeira Forma Normal (1FN) estabelece um requisito básico para que uma relação seja considerada normalizada. Qual das seguintes alternativas descreve CORRETAMENTE o principal requisito da 1FN?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Eliminar todas as dependências transitivas, garantindo que todos os atributos não chave dependam diretamente da chave primária.",
+        "isCorrect": false,
+        "explanation": "Esta descrição se refere à Terceira Forma Normal (3FN), não à Primeira Forma Normal (1FN)."
+      },
+      {
+        "letter": "B",
+        "text": "Garantir que todos os atributos não chave sejam completamente dependentes da chave primária, eliminando dependências parciais.",
+        "isCorrect": false,
+        "explanation": "A eliminação de dependências parciais é característica da Segunda Forma Normal (2FN), não da 1FN."
+      },
+      {
+        "letter": "C",
+        "text": "Exigir que todos os atributos sejam atômicos, ou seja, indivisíveis, e que não haja grupos repetitivos dentro de uma tupla.",
+        "isCorrect": true,
+        "explanation": "A 1FN exige que todos os atributos sejam atômicos e que não haja grupos repetitivos, assegurando que cada célula contenha um único valor e que cada tupla seja única."
+      },
+      {
+        "letter": "D",
+        "text": "Assegurar que não existam dependências funcionais parciais ou transitivas em relação a nenhuma chave candidata.",
+        "isCorrect": false,
+        "explanation": "Esta descrição abrange requisitos da 2FN e 3FN, mas não é o requisito primordial da 1FN."
+      },
+      {
+        "letter": "E",
+        "text": "Garantir que cada atributo não chave dependa de toda a chave primária, eliminando dependências parciais em chaves compostas.",
+        "isCorrect": false,
+        "explanation": "A eliminação de dependências parciais, especialmente em chaves compostas, é um requisito da Segunda Forma Normal (2FN), não da 1FN."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A Primeira Forma Normal (1FN) é o ponto de partida para o processo de normalização. Seu principal objetivo é garantir que a relação (tabela) esteja estruturada de maneira a evitar a complexidade associada a dados não atômicos e grupos repetitivos. A atomicidade significa que cada atributo (coluna) em uma tupla (linha) deve conter um único valor, indivisível para fins de representação de dados. Grupos repetitivos ocorrem quando uma única célula contém múltiplos valores ou quando uma linha pode conter um conjunto de colunas que se repetem. Por exemplo, em uma tabela de pedidos, ter uma coluna 'Itens' que contém uma lista de produtos e suas quantidades violaria a 1FN. A solução seria criar linhas separadas para cada item do pedido. A alternativa C define corretamente esses dois requisitos essenciais da 1FN. As outras alternativas descrevem requisitos de formas normais superiores: B e E se referem à 2FN (eliminação de dependências parciais) e A e D se referem à 3FN (eliminação de dependências transitivas).",
+    "technicalJustification": "According to Elmasri & Navathe, 'A relation is in first normal form (1NF) if and only if the domain of each attribute contains only atomic (single) values, and there are no repeating groups.' (Elmasri, R., & Navathe, S. B. (2015). Fundamentals of Database Systems, 7th Edition. Pearson.)",
+    "relatedConcepts": [
+      "Primeira Forma Normal (1FN)",
+      "Atomicidade",
+      "Grupos Repetitivos",
+      "Dependência Funcional",
+      "Estrutura de Tabelas Relacionais"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b1-normalizacao_2",
+    "topicId": "b1-normalizacao",
+    "blocoId": "bloco-1",
+    "question": "Uma equipe de desenvolvimento de sistemas para a área de exploração e produção de petróleo está modelando os dados de poços e suas características. Atualmente, a tabela 'POCOS' contém as seguintes colunas: 'ID_Poço' (chave primária), 'Nome_Poço', 'ID_Plataforma', 'Nome_Plataforma', 'Localizacao_Plataforma', 'Profundidade_Poço', 'Producao_Diaria', 'Tipo_Fluido'. Foi identificado que 'Nome_Plataforma', 'Localizacao_Plataforma' dependem diretamente de 'ID_Plataforma', e 'ID_Plataforma' por sua vez está associado a um 'ID_Poço'. Além disso, 'Profundidade_Poço', 'Producao_Diaria' e 'Tipo_Fluido' dependem diretamente do 'ID_Poço'. Qual seria a principal anomalia de atualização que essa estrutura de tabela pode causar?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Anomalia de Inserção, pois pode ser impossível registrar um novo poço se a plataforma ainda não estiver cadastrada.",
+        "isCorrect": false,
+        "explanation": "Embora possa haver anomalias de inserção, a descrição foca na redundância de informações da plataforma associadas ao poço."
+      },
+      {
+        "letter": "B",
+        "text": "Anomalia de Exclusão, pois ao remover um poço, informações sobre a plataforma podem ser perdidas indevidamente.",
+        "isCorrect": false,
+        "explanation": "A anomalia de exclusão ocorreria se remover um poço também removesse a única referência à plataforma."
+      },
+      {
+        "letter": "C",
+        "text": "Anomalia de Atualização, pois a alteração do nome ou localização de uma plataforma exigiria a atualização em múltiplos registros de poços, aumentando o risco de inconsistência.",
+        "isCorrect": true,
+        "explanation": "A redundância de dados da plataforma em cada registro de poço associado gera anomalias de atualização, pois a mesma informação precisa ser alterada em vários locais."
+      },
+      {
+        "letter": "D",
+        "text": "Anomalia de Integridade Referencial, pois os dados da plataforma podem não corresponder aos dados dos poços.",
+        "isCorrect": false,
+        "explanation": "A integridade referencial é um conceito diferente, relacionado à consistência entre chaves estrangeiras e primárias, não diretamente à redundância descrita."
+      },
+      {
+        "letter": "E",
+        "text": "Anomalia de Dependência Transitiva, que impede a correta associação entre poços e suas produções.",
+        "isCorrect": false,
+        "explanation": "A dependência transitiva é um conceito de normalização que leva à 3FN, mas a anomalia primária aqui é a redundância e suas consequências."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A tabela descrita apresenta uma violação da Terceira Forma Normal (3FN) e possivelmente da Segunda Forma Normal (2FN) se 'ID_Poço' for uma chave composta. A principal questão é a dependência de atributos não chave ('Nome_Plataforma', 'Localizacao_Plataforma') de outros atributos não chave ('ID_Plataforma'), que por sua vez dependem da chave primária ('ID_Poço'). Isso resulta em redundância: as informações de uma plataforma são repetidas para cada poço associado a ela. Essa redundância leva diretamente à Anomalia de Atualização. Se a localização de uma plataforma mudar, ou seu nome for alterado, essa modificação precisará ser feita em todos os registros de poços pertencentes a essa plataforma. Se uma atualização for realizada em alguns registros, mas não em outros, os dados se tornarão inconsistentes. Por exemplo, um mesmo 'ID_Poço' pode ser associado a diferentes 'Nome_Plataforma' ou 'Localizacao_Plataforma' dependendo do registro consultado. As outras anomalias são menos prováveis de serem o problema central aqui: Inserção (poderia existir se 'ID_Poço' não fosse chave primária ou se houvesse restrições de FK) e Exclusão (se remover um poço fosse a única forma de remover uma plataforma, o que não é o caso aqui, pois 'ID_Plataforma' não é chave primária). A dependência transitiva é a *causa* da anomalia, mas a anomalia em si é a de atualização.",
+    "technicalJustification": "The described table structure violates 3NF because non-key attributes ('Nome_Plataforma', 'Localizacao_Plataforma') are transitively dependent on the primary key ('ID_Poço') through 'ID_Plataforma'. This redundancy leads to update anomalies, as stated by C. J. Date: 'A relation is in 3NF if it is in 2NF and every non-prime attribute is non-transitively dependent on every candidate key.' (Date, C. J. (2012). An Introduction to Database Systems, 8th Edition. Addison-Wesley.) Update anomalies arise when redundant data is inconsistently updated.",
+    "relatedConcepts": [
+      "Terceira Forma Normal (3FN)",
+      "Dependência Transitiva",
+      "Dependência Parcial",
+      "Anomalias de Banco de Dados",
+      "Redundância de Dados",
+      "Modelagem de Dados"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b1-normalizacao_3",
+    "topicId": "b1-normalizacao",
+    "blocoId": "bloco-1",
+    "question": "uma empresa de logística, que gerencia o transporte de contêineres marítimos, possui um banco de dados onde a tabela 'CONTÊINERES' armazena informações sobre cada unidade. Um requisito específico é que um mesmo contêiner pode estar associado a múltiplos tipos de carga ao longo de sua vida útil, e para cada tipo de carga, pode haver várias datas de registro. A estrutura atual da tabela 'CONTÊINERES' inclui colunas como 'ID_Contêiner' (chave primária), 'Número_Série', 'Capacidade', 'Tipo_Carga', 'Data_Registro_Carga'. Analisando as formas normais, qual seria a principal irregularidade desta tabela em relação à Segunda Forma Normal (2FN)?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A presença de atributos não atômicos, como a coluna 'Tipo_Carga' que pode conter múltiplos valores.",
+        "isCorrect": false,
+        "explanation": "Atributos não atômicos violam a Primeira Forma Normal (1FN), não a Segunda Forma Normal (2FN)."
+      },
+      {
+        "letter": "B",
+        "text": "A existência de dependências transitivas, onde atributos não chave dependem de outros atributos não chave.",
+        "isCorrect": false,
+        "explanation": "Dependências transitivas são o foco da Terceira Forma Normal (3FN), não da Segunda Forma Normal (2FN)."
+      },
+      {
+        "letter": "C",
+        "text": "A existência de dependências parciais, pois atributos não chave podem depender apenas de parte da chave primária, caso esta seja composta.",
+        "isCorrect": true,
+        "explanation": "A 2FN exige que todos os atributos não chave dependam integralmente da chave primária. Se a chave primária for composta e houver dependência parcial, a 2FN é violada."
+      },
+      {
+        "letter": "D",
+        "text": "A violação da Terceira Forma Normal (3FN), pois há redundância de dados sobre os tipos de carga.",
+        "isCorrect": false,
+        "explanation": "Embora possa haver redundância, a questão pergunta especificamente sobre a 2FN. A redundância de tipos de carga pode ser um sintoma de violação da 3FN ou até mesmo da 1FN/2FN."
+      },
+      {
+        "letter": "E",
+        "text": "A ausência de uma chave primária única e bem definida para a tabela.",
+        "isCorrect": false,
+        "explanation": "A questão afirma que 'ID_Contêiner' é a chave primária, portanto, este não é o problema."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A Segunda Forma Normal (2FN) se aplica a relações que já estão em Primeira Forma Normal (1FN) e aborda o problema de dependências parciais. Uma dependência parcial ocorre quando um atributo não chave depende de apenas uma parte de uma chave primária composta. A descrição do problema menciona que 'um mesmo contêiner pode estar associado a múltiplos tipos de carga' e que para cada tipo de carga, 'pode haver várias datas de registro'. Isso sugere que a chave primária da tabela 'CONTÊINERES' não pode ser apenas 'ID_Contêiner', pois isso implicaria que cada contêiner tem apenas um tipo de carga e uma data de registro associada, o que contradiz o cenário. Para modelar corretamente essa relação muitos-para-muitos (contêiner para tipo de carga, com um atributo adicional 'Data_Registro_Carga'), seria necessária uma chave primária composta, possivelmente ('ID_Contêiner', 'Tipo_Carga', 'Data_Registro_Carga') ou uma chave substituta com uma tabela de associação. Se assumirmos uma chave primária composta (por exemplo, ('ID_Contêiner', 'ID_Tipo_Carga')), e que 'Data_Registro_Carga' depende apenas de 'ID_Contêiner' e 'ID_Tipo_Carga', então a 2FN seria violada se houvesse outros atributos que dependessem apenas de 'ID_Contêiner' ou apenas de 'ID_Tipo_Carga'. No entanto, a descrição mais direta de violação da 2FN, dada a estrutura e o problema, é a existência de dependências parciais em relação a uma chave primária composta que seria necessária para modelar a relação muitos-para-muitos.",
+    "technicalJustification": "The problem implies a need for a composite primary key to represent the many-to-many relationship between containers and cargo types, along with the registration date. If the primary key were, for example, ('ID_Contêiner', 'ID_Tipo_Carga'), and an attribute like 'Capacidade' (container capacity) were still in this table, it would depend only on 'ID_Contêiner', thus violating 2NF due to partial dependency. The core principle of 2NF is eliminating partial dependencies. 'A relation is in 2NF if it is in 1NF and every non-prime attribute of R is fully functionally dependent on every candidate key of R.' (Navathe, S. B. (2012). Fundamentals of Database Systems, 6th Edition. Pearson.)",
+    "relatedConcepts": [
+      "Segunda Forma Normal (2FN)",
+      "Dependência Parcial",
+      "Chave Primária Composta",
+      "Relação Muitos-para-Muitos",
+      "Normalização de Banco de Dados",
+      "Atomicidade"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b1-normalizacao_4",
+    "topicId": "b1-normalizacao",
+    "blocoId": "bloco-1",
+    "question": "Em uma refinaria de petróleo, o sistema de gerenciamento de inventário de produtos químicos precisa garantir a integridade e a eficiência dos dados. Uma tabela chamada 'PRODUTOS_QUIMICOS' armazena informações sobre cada substância, incluindo: 'ID_Produto' (chave primária), 'Nome_Produto', 'Fórmula_Química', 'Fornecedor_Principal', 'Nome_Fornecedor', 'Cidade_Fornecedor'. Foi identificado que 'Nome_Fornecedor' e 'Cidade_Fornecedor' dependem de 'Fornecedor_Principal', e 'Fornecedor_Principal' depende de 'ID_Produto'. Além disso, 'Fórmula_Química' depende diretamente de 'ID_Produto'. Considerando as formas normais, qual seria a forma normal mais alta que essa tabela atinge antes de qualquer desnormalização ou refatoração, e qual seria a principal consequência dessa condição?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A tabela está na 3FN, e a consequência é a redundância de informações sobre os fornecedores.",
+        "isCorrect": false,
+        "explanation": "A tabela não está na 3FN devido à dependência transitiva de 'Nome_Fornecedor' e 'Cidade_Fornecedor' em relação a 'ID_Produto' através de 'Fornecedor_Principal'."
+      },
+      {
+        "letter": "B",
+        "text": "A tabela está na 2FN, mas não na 3FN. A consequência é a possibilidade de anomalias de atualização relacionadas aos dados do fornecedor.",
+        "isCorrect": true,
+        "explanation": "A tabela está na 2FN pois não há dependências parciais (assumindo chave primária simples 'ID_Produto'). No entanto, viola a 3FN devido à dependência transitiva, gerando anomalias de atualização."
+      },
+      {
+        "letter": "C",
+        "text": "A tabela está na 1FN, mas não na 2FN. A consequência é a dificuldade em consultar fórmulas químicas.",
+        "isCorrect": false,
+        "explanation": "A tabela está pelo menos na 2FN, pois não há indicação de dependências parciais em uma chave primária simples."
+      },
+      {
+        "letter": "D",
+        "text": "A tabela está na BCNF, pois todas as dependências funcionais são em relação a chaves candidatas.",
+        "isCorrect": false,
+        "explanation": "A tabela viola a BCNF devido à dependência transitiva onde o determinante ('Fornecedor_Principal') não é uma superchave."
+      },
+      {
+        "letter": "E",
+        "text": "A tabela está na 3FN, e a consequência é a possibilidade de anomalias de inserção e exclusão.",
+        "isCorrect": false,
+        "explanation": "A tabela não está na 3FN, e as anomalias de inserção/exclusão não são a consequência direta principal da dependência transitiva."
+      }
+    ],
+    "difficulty": "medio-difícil",
+    "source": "autoral",
+    "detailedExplanation": "A tabela 'PRODUTOS_QUIMICOS' possui 'ID_Produto' como chave primária. Os atributos 'Nome_Produto' e 'Fórmula_Química' dependem diretamente de 'ID_Produto'. No entanto, 'Nome_Fornecedor' e 'Cidade_Fornecedor' dependem de 'Fornecedor_Principal', que por sua vez depende de 'ID_Produto'. Essa cadeia ('ID_Produto' -> 'Fornecedor_Principal' -> 'Nome_Fornecedor', 'Cidade_Fornecedor') representa uma dependência transitiva. Uma tabela está na 2FN se estiver em 1FN e todos os atributos não chave dependerem funcionalmente da chave primária inteira. Como 'ID_Produto' é uma chave simples, a 2FN é satisfeita, pois não há dependências parciais. Uma tabela está na 3FN se estiver em 2FN e nenhum atributo não chave depender transitivamente da chave primária. Como existe a dependência transitiva descrita, a tabela viola a 3FN. A Boyce-Codd Normal Form (BCNF) é uma versão mais rigorosa da 3FN. Para estar em BCNF, para cada dependência funcional X -> Y, X deve ser uma superchave. Em nosso caso, 'Fornecedor_Principal' é um determinante, mas não é uma superchave de 'ID_Produto', violando a BCNF. Portanto, a forma normal mais alta que a tabela atinge é a 2FN. A principal consequência da violação da 3FN (e BCNF) é a redundância de dados sobre os fornecedores, o que leva a anomalias de atualização. Por exemplo, se um fornecedor mudar de cidade, essa informação precisará ser atualizada em todos os registros de produtos químicos fornecidos por ele, o que aumenta o risco de inconsistência.",
+    "technicalJustification": "The table is in 2NF because the primary key ('ID_Produto') is simple, thus precluding partial dependencies. However, it violates 3NF and BCNF because of the transitive dependency ('ID_Produto' -> 'Fornecedor_Principal' -> 'Nome_Fornecedor', 'Cidade_Fornecedor'). 'Fornecedor_Principal' is a determinant but not a superkey. As per Date, 'A relation is in 3NF if it is in 2NF and no non-prime attribute is transitively dependent on any candidate key.' (Date, C. J. (2012). An Introduction to Database Systems, 8th Edition. Addison-Wesley.) Update anomalies are the direct consequence.",
+    "relatedConcepts": [
+      "Segunda Forma Normal (2FN)",
+      "Terceira Forma Normal (3FN)",
+      "Boyce-Codd Normal Form (BCNF)",
+      "Dependência Transitiva",
+      "Dependência Funcional",
+      "Anomalias de Atualização",
+      "Chave Primária"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b1-normalizacao_5",
+    "topicId": "b1-normalizacao",
+    "blocoId": "bloco-1",
+    "question": "Uma grande operadora de serviços de telecomunicações está revisando seu modelo de dados para gerenciar contratos de clientes. Um dos desafios é modelar a informação de que um cliente pode possuir múltiplos números de telefone, e cada número de telefone pode estar associado a múltiplos serviços (como internet, TV a cabo) e a um plano específico. A estrutura atual da tabela 'CLIENTES' contém 'ID_Cliente' (chave primária), 'Nome_Cliente', 'Endereço_Cliente', 'Telefone_Cliente', 'Servico_Associado', 'Plano_Contratado'. Ao analisar as dependências funcionais e multivaloradas, qual seria a abordagem mais adequada para normalizar essa estrutura, visando evitar anomalias e garantir a flexibilidade, considerando as formas normais superiores?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Criar uma tabela 'TELEFONES' com 'ID_Cliente' como chave primária e 'Telefone_Cliente' como atributo, e incluir 'Servico_Associado' e 'Plano_Contratado' diretamente em 'CLIENTES'.",
+        "isCorrect": false,
+        "explanation": "Isso não resolve a relação muitos-para-muitos entre telefones e serviços, e viola a 1FN se 'Telefone_Cliente' contiver múltiplos números."
+      },
+      {
+        "letter": "B",
+        "text": "Manter a tabela 'CLIENTES' e, para cada cliente, ter múltiplas linhas para cada combinação de telefone, serviço e plano, garantindo a atomicidade dos atributos.",
+        "isCorrect": false,
+        "explanation": "Esta abordagem levaria a uma grande redundância e violação da 3FN/BCNF, pois informações do cliente e do plano seriam repetidas."
+      },
+      {
+        "letter": "C",
+        "text": "Criar tabelas separadas: 'CLIENTES' (com ID_Cliente, Nome_Cliente, Endereço_Cliente), 'TELEFONES' (com ID_Telefone, ID_Cliente, Número_Telefone), 'SERVICOS' (com ID_Servico, Nome_Servico) e uma tabela de associação 'CONTRATOS' (com ID_Cliente, ID_Telefone, ID_Servico, Plano_Contratado).",
+        "isCorrect": false,
+        "explanation": "Esta estrutura pode ser excessivamente complexa e não modela diretamente a relação entre um número de telefone e um plano específico de forma eficiente."
+      },
+      {
+        "letter": "D",
+        "text": "Desmembrar a tabela 'CLIENTES' em 'CLIENTES' (ID_Cliente, Nome_Cliente, Endereço_Cliente), 'TELEFONES' (ID_Telefone, ID_Cliente, Número_Telefone) e 'CLIENTE_SERVICOS' (ID_Cliente, ID_Servico, ID_Telefone, Plano_Contratado).",
+        "isCorrect": true,
+        "explanation": "Esta abordagem separa corretamente as entidades e suas relações, permitindo modelar um cliente com múltiplos telefones, e cada telefone associado a múltiplos serviços e um plano específico, alcançando formas normais superiores."
+      },
+      {
+        "letter": "E",
+        "text": "Utilizar a Quarta Forma Normal (4FN) para lidar com dependências multivaloradas, criando uma tabela 'CLIENTE_TELEFONES' e outra 'CLIENTE_SERVICOS', ambas ligadas a 'CLIENTES'.",
+        "isCorrect": false,
+        "explanation": "A 4FN é relevante, mas a estrutura proposta na alternativa D, ao criar tabelas de associação adequadas, implicitamente atende aos requisitos de normalização, incluindo a 4FN, e de forma mais prática para este cenário."
+      }
+    ],
+    "difficulty": "difícil",
+    "source": "autoral",
+    "detailedExplanation": "O cenário descreve uma relação complexa: um cliente pode ter múltiplos telefones (relação 1:N entre Cliente e Telefone, ou N:M se um telefone puder pertencer a múltiplos clientes, o que não parece ser o caso principal aqui). Cada número de telefone pode estar associado a múltiplos serviços (relação N:M entre Telefone e Serviço). Além disso, cada associação Telefone-Serviço tem um 'Plano_Contratado' específico. A estrutura inicial viola a 1FN se 'Telefone_Cliente' contiver múltiplos números, e a 3FN/BCNF devido à redundância de dados do cliente e possivelmente do plano em cada linha de serviço associada a um telefone. A alternativa D propõe uma solução que normaliza adequadamente essas relações. A tabela 'CLIENTES' armazena informações do cliente. A tabela 'TELEFONES' associa um número de telefone a um cliente (resolvendo a relação 1:N ou N:1 de Telefone para Cliente). A tabela 'CLIENTE_SERVICOS' (ou similar) atua como uma tabela de associação para a relação N:M entre telefones e serviços, e também armazena o 'Plano_Contratado' específico para essa combinação. Esta estrutura permite que um cliente tenha vários telefones, um telefone esteja associado a vários serviços, e cada par telefone-serviço tenha um plano. Isso garante atomicidade, elimina dependências parciais e transitivas, e lida com dependências multivaloradas implicitamente através da decomposição em tabelas de associação, alcançando formas normais elevadas como 3FN e BCNF. A alternativa E menciona 4FN, que trata especificamente de dependências multivaloradas independentes. Embora a situação possa envolver dependências multivaloradas, a decomposição proposta em D é uma forma padrão e eficaz de modelar essas relações, frequentemente levando a estruturas que satisfazem 3FN/BCNF e, por consequência, lidam bem com dependências multivaloradas.",
+    "technicalJustification": "The scenario describes a customer having multiple phone numbers, and each phone number being associated with multiple services and a specific plan. This requires careful decomposition to achieve higher normal forms. The structure in option D separates concerns: 'CLIENTES' for customer data, 'TELEFONES' for phone number details linked to a customer, and 'CLIENTE_SERVICOS' as a junction table for the many-to-many relationship between phone numbers and services, storing the specific plan for each association. This decomposition ensures that each fact is stored in exactly one place, minimizing redundancy and anomalies, and typically leads to 3NF and BCNF. 'A relation is in 4NF if it has no non-trivial multi-valued dependencies.' (Navathe, S. B. (2012). Fundamentals of Database Systems, 6th Edition. Pearson.) The decomposition in D effectively addresses the multi-valued nature of phone numbers and services associated with a customer.",
+    "relatedConcepts": [
+      "Normalização de Dados",
+      "Quarta Forma Normal (4FN)",
+      "Quinta Forma Normal (5FN)",
+      "Dependência Funcional",
+      "Dependência Multivalorada",
+      "Tabela de Associação",
+      "Modelagem de Banco de Dados Relacional",
+      "Anomalias de Banco de Dados"
+    ],
+    "order": 5
+  }
+]

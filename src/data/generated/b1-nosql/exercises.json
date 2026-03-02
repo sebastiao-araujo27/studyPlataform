@@ -1,0 +1,259 @@
+[
+  {
+    "id": "ex_b1-nosql_1",
+    "topicId": "b1-nosql",
+    "blocoId": "bloco-1",
+    "question": "Em um cenário de modernização de sistemas legados na Petrobras, a equipe de arquitetura de dados avalia a adoção de bancos de dados NoSQL para otimizar o processamento de grandes volumes de dados de sensores de plataformas de exploração. Um dos requisitos fundamentais é garantir que os dados estejam disponíveis em múltiplos nós, mesmo em caso de falhas parciais. A equipe discute os princípios que regem a consistência e disponibilidade em sistemas distribuídos. Qual dos modelos de consistência abaixo é frequentemente associado a bancos de dados NoSQL que priorizam a disponibilidade e tolerância a partições em detrimento da consistência imediata?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Consistência Forte (Strong Consistency)",
+        "isCorrect": false,
+        "explanation": "Consistência Forte exige que todas as leituras recebam o dado mais recente, o que pode comprometer a disponibilidade em sistemas distribuídos. É mais comum em bancos relacionais tradicionais ou em configurações específicas de NoSQL."
+      },
+      {
+        "letter": "B",
+        "text": "Consistência Eventual (Eventual Consistency)",
+        "isCorrect": true,
+        "explanation": "Consistência Eventual é um pilar do modelo BASE, frequentemente adotado por bancos NoSQL, onde, na ausência de novas atualizações, todas as réplicas eventualmente convergem para o mesmo estado."
+      },
+      {
+        "letter": "C",
+        "text": "Consistência Causal (Causal Consistency)",
+        "isCorrect": false,
+        "explanation": "Consistência Causal garante que operações relacionadas causalmente sejam vistas na mesma ordem por todos os nós, mas não garante que todas as réplicas estejam sempre sincronizadas imediatamente."
+      },
+      {
+        "letter": "D",
+        "text": "Consistência Sequencial (Sequential Consistency)",
+        "isCorrect": false,
+        "explanation": "Consistência Sequencial é um modelo forte que garante que todas as operações pareçam ter sido executadas em alguma ordem sequencial única, o que também pode impactar a disponibilidade."
+      },
+      {
+        "letter": "E",
+        "text": "Consistência de Leitura-Após-Escrita (Read-Your-Writes Consistency)",
+        "isCorrect": false,
+        "explanation": "Read-Your-Writes garante que uma vez que um usuário escreve um dado, qualquer leitura subsequente feita por ele verá essa escrita. É uma forma de consistência, mas não é o modelo primário que descreve a disponibilidade em face de falhas."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda os modelos de consistência em bancos de dados distribuídos, um conceito chave em NoSQL. Sistemas NoSQL frequentemente priorizam alta disponibilidade e tolerância a falhas de rede (partições) em detrimento da consistência imediata de todos os dados em todas as réplicas. O modelo BASE (Basically Available, Soft state, Eventual consistency) descreve essa abordagem. A Consistência Eventual (Eventual Consistency) é o componente do modelo BASE que afirma que, se nenhum novo dado for escrito em um item específico, eventualmente todas as leituras desse item retornarão o último valor atualizado. Isso contrasta com a Consistência Forte (Strong Consistency), onde qualquer leitura sempre retorna o dado mais recente, o que pode exigir que um sistema aguarde a sincronização entre réplicas, potencialmente tornando-o indisponível durante uma falha de rede. Consistência Causal e Sequencial são outros modelos de consistência, mas a Consistência Eventual é a que melhor se alinha com a descrição de priorizar disponibilidade e tolerância a partições, características de muitos bancos NoSQL. Read-Your-Writes é uma garantia específica, mas não o modelo geral de consistência em cenários de falha.",
+    "technicalJustification": "O modelo BASE, com sua ênfase em 'Eventual Consistency', é um paradigma central para muitos bancos de dados NoSQL, como Cassandra e DynamoDB, que visam alta disponibilidade e escalabilidade. (Sadalage & Fowler, 2013).",
+    "relatedConcepts": [
+      "NoSQL",
+      "BASE",
+      "Teorema CAP",
+      "Consistência Eventual",
+      "Sistemas Distribuídos"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b1-nosql_2",
+    "topicId": "b1-nosql",
+    "blocoId": "bloco-1",
+    "question": "Uma startup de tecnologia que gerencia um grande volume de dados de perfis de usuários para uma rede social está considerando a migração de seu banco de dados relacional atual para uma solução NoSQL. Eles precisam de um modelo que permita flexibilidade no esquema de dados, pois os atributos dos usuários podem variar significativamente e novos campos são adicionados com frequência. Além disso, a performance de leitura e escrita para operações baseadas em identificadores únicos de usuário é crítica. Dado o cenário, qual tipo de banco de dados NoSQL seria mais adequado para essa aplicação?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Banco de Dados de Grafo",
+        "isCorrect": false,
+        "explanation": "Bancos de dados de grafo são ideais para gerenciar e consultar relacionamentos complexos entre entidades, como redes sociais em si, mas não são a melhor escolha para armazenar perfis de usuários com esquemas flexíveis e acesso por ID."
+      },
+      {
+        "letter": "B",
+        "text": "Banco de Dados Chave-Valor",
+        "isCorrect": true,
+        "explanation": "Bancos de dados Chave-Valor oferecem alta performance para operações de leitura/escrita baseadas em chaves únicas e simplicidade, sendo uma boa opção para armazenar dados de perfil onde cada perfil é acessado por um ID único (a chave)."
+      },
+      {
+        "letter": "C",
+        "text": "Banco de Dados Colunar",
+        "isCorrect": false,
+        "explanation": "Bancos de dados colunares são otimizados para consultas analíticas sobre grandes volumes de dados, agregando valores de colunas específicas. Não são ideais para operações transacionais de leitura/escrita de registros individuais como perfis de usuário."
+      },
+      {
+        "letter": "D",
+        "text": "Banco de Dados de Documento",
+        "isCorrect": false,
+        "explanation": "Embora bancos de dados de documento (como MongoDB) ofereçam flexibilidade de esquema e sejam adequados para perfis, a descrição enfatiza alta performance para acesso por ID único, onde um banco chave-valor pode ser ainda mais performático para essa operação específica."
+      },
+      {
+        "letter": "E",
+        "text": "Banco de Dados Relacional com extensões NoSQL",
+        "isCorrect": false,
+        "explanation": "A questão pede explicitamente a adoção de uma solução NoSQL. Embora existam soluções híbridas, a pergunta foca nos tipos fundamentais de NoSQL para escolher o mais adequado."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão descreve um caso de uso onde a flexibilidade do esquema e a performance de leitura/escrita por identificador único são primordiais. Bancos de dados Chave-Valor, como Redis ou Memcached (em seus usos mais básicos), são projetados para armazenar dados como um dicionário ou mapa, onde cada item é acessado por uma chave única. Essa arquitetura resulta em operações de GET e PUT extremamente rápidas, ideal para buscar perfis de usuário rapidamente usando seu ID. Bancos de dados de Documento, como MongoDB, também oferecem flexibilidade de esquema e podem ser usados para perfis de usuário, mas a primazia da performance por ID único e a simplicidade do modelo de dados favorecem o modelo Chave-Valor como a escolha mais direta e potencialmente mais performática para essa necessidade específica. Bancos de dados de Grafo são para relacionamentos, e bancos colunares são para análises agregadas, portanto, inadequados aqui. A opção de banco relacional com extensões NoSQL foge do escopo de escolher um tipo de banco NoSQL nativo.",
+    "technicalJustification": "Bancos de dados Chave-Valor são otimizados para acesso direto a dados através de uma chave, oferecendo latência muito baixa para operações de leitura e escrita, sendo ideais para cenários como gerenciamento de sessões, caches e perfis de usuário. (Sadalage & Fowler, 2013).",
+    "relatedConcepts": [
+      "NoSQL",
+      "Chave-Valor",
+      "Flexibilidade de Esquema",
+      "Performance de Leitura/Escrita",
+      "Modelos de Banco de Dados"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b1-nosql_3",
+    "topicId": "b1-nosql",
+    "blocoId": "bloco-1",
+    "question": "A gerência de uma refinaria da Petrobras está preocupada com a integridade e a consistência dos dados coletados em tempo real de diversos processos industriais. Para garantir que as informações de produção, qualidade e segurança estejam sempre precisas, mesmo diante de falhas de rede entre os data centers regionais e a central, eles estão avaliando sistemas de banco de dados distribuídos. Um dos pontos de discussão é o Teorema CAP, que estabelece um trade-off fundamental em sistemas distribuídos. Considerando um sistema que precisa garantir alta disponibilidade e tolerância a partições de rede, qual das seguintes afirmações descreve corretamente a implicação do Teorema CAP nesse contexto?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "O sistema pode garantir Consistência Forte (C) e Disponibilidade (A) simultaneamente, mas terá que sacrificar a Tolerância a Partições (P).",
+        "isCorrect": false,
+        "explanation": "O Teorema CAP afirma que em um sistema distribuído, é impossível garantir simultaneamente as três propriedades (Consistência, Disponibilidade e Tolerância a Partições) em face de uma partição de rede. Sacrificar P é uma escolha, mas não permite C e A juntas."
+      },
+      {
+        "letter": "B",
+        "text": "O sistema deve escolher entre Consistência (C) e Disponibilidade (A) quando uma Partição (P) ocorrer, pois ambas não podem ser garantidas juntas na presença de falhas de rede.",
+        "isCorrect": true,
+        "explanation": "Quando uma partição de rede ocorre (P), o sistema deve escolher entre manter a Consistência dos dados (C) ou a Disponibilidade do serviço (A). Não é possível ter ambas simultaneamente em toda a rede."
+      },
+      {
+        "letter": "C",
+        "text": "A tolerância a Partições (P) é uma propriedade que todos os sistemas distribuídos possuem por padrão, e o trade-off é apenas entre Consistência (C) e Disponibilidade (A) em condições normais.",
+        "isCorrect": false,
+        "explanation": "A Tolerância a Partições (P) é uma das propriedades em trade-off. Sistemas distribuídos podem falhar em ser tolerantes a partições, e a questão é como lidar com elas quando ocorrem."
+      },
+      {
+        "letter": "D",
+        "text": "O Teorema CAP se aplica apenas a bancos de dados relacionais e não a sistemas NoSQL, que foram projetados para contornar essas limitações.",
+        "isCorrect": false,
+        "explanation": "O Teorema CAP é fundamental para entender as características e limitações de TODOS os sistemas distribuídos, incluindo bancos de dados NoSQL."
+      },
+      {
+        "letter": "E",
+        "text": "Ao priorizar a Disponibilidade (A) e a Tolerância a Partições (P), o sistema inevitavelmente adotará um modelo de Consistência Forte (C) para compensar.",
+        "isCorrect": false,
+        "explanation": "Priorizar A e P geralmente leva a modelos de consistência mais fracos, como a consistência eventual, e não a uma consistência forte."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "O Teorema CAP, também conhecido como Teorema de Brewer, é um princípio fundamental em sistemas distribuídos que afirma que um sistema distribuído de dados não pode, simultaneamente, oferecer mais do que duas das seguintes três garantias: Consistência (C), Disponibilidade (A) e Tolerância a Partições (P). Quando ocorre uma partição de rede (P), o sistema é forçado a escolher entre manter a Consistência (garantindo que todas as leituras recebam o dado mais recente, o que pode exigir que um nó indisponível seja bloqueado ou que operações sejam rejeitadas) ou a Disponibilidade (garantindo que cada requisição receba uma resposta, mesmo que não seja o dado mais atualizado). Portanto, em face de uma partição, o sistema deve escolher entre C e A. A opção B descreve corretamente esse trade-off. A opção A está incorreta porque o Teorema CAP implica que não se pode ter C e A juntas na presença de P. A opção C é incorreta pois P é uma das propriedades em trade-off. A opção D é incorreta, o Teorema CAP aplica-se a todos os sistemas distribuídos. A opção E está incorreta, pois a escolha de A e P geralmente leva à consistência eventual, não forte.",
+    "technicalJustification": "O Teorema CAP postula que qualquer sistema de dados distribuído em um ambiente de rede não confiável (sujeito a partições) deve escolher entre consistência e disponibilidade. (Brewer, 2000; Gilbert & Lynch, 2002).",
+    "relatedConcepts": [
+      "Teorema CAP",
+      "Consistência",
+      "Disponibilidade",
+      "Tolerância a Partições",
+      "Sistemas Distribuídos",
+      "NoSQL"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b1-nosql_4",
+    "topicId": "b1-nosql",
+    "blocoId": "bloco-1",
+    "question": "uma empresa de logística, operando com uma frota global, utiliza um banco de dados de grafo, como o Neo4j, para otimizar o planejamento de rotas e a análise de cadeias de suprimentos. Recentemente, a equipe de desenvolvimento decidiu implementar um sistema de cache em memória para acelerar o acesso a informações frequentemente consultadas sobre os nós e relacionamentos mais acessados. Para essa finalidade, eles escolheram o Redis. Considere as características de ambos os sistemas e a necessidade de manter a consistência entre o cache e o banco de dados principal. Qual das seguintes abordagens seria a mais adequada para gerenciar a consistência de dados entre o Neo4j e o Redis neste cenário?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Utilizar uma estratégia de 'Write-Through' no Redis, onde cada escrita no Neo4j também é imediatamente escrita no Redis, garantindo consistência forte.",
+        "isCorrect": false,
+        "explanation": "Uma estratégia 'Write-Through' no Redis, se usada para sincronizar com o Neo4j, exigiria que a escrita no Neo4j também fosse escrita no Redis antes de confirmar a operação. Isso pode introduzir latência no Neo4j e não é trivial de implementar de forma confiável em um sistema de grafo complexo."
+      },
+      {
+        "letter": "B",
+        "text": "Implementar uma política de 'Cache-Aside' (ou Lazy Loading), onde os dados são lidos primeiro do Redis; se não estiverem presentes, são buscados no Neo4j e então populados no Redis.",
+        "isCorrect": true,
+        "explanation": "A estratégia 'Cache-Aside' é comum: primeiro consulta-se o cache (Redis). Se o dado não estiver lá (cache miss), busca-se no banco de dados principal (Neo4j) e o armazena no cache para futuras consultas. A invalidação do cache em caso de atualizações no Neo4j é o ponto crítico."
+      },
+      {
+        "letter": "C",
+        "text": "Adotar uma estratégia de 'Write-Behind' (ou Write-Back) no Neo4j, onde as escritas são feitas primeiro no Redis e assincronamente propagadas para o Neo4j.",
+        "isCorrect": false,
+        "explanation": "'Write-Behind' é uma estratégia de escrita no cache, onde a escrita é confirmada no cache (Redis) e depois propagada para o banco principal (Neo4j) de forma assíncrona. Isso pode levar a inconsistências temporárias e perda de dados se o Neo4j falhar antes de receber a atualização."
+      },
+      {
+        "letter": "D",
+        "text": "Confiar apenas na persistência nativa do Redis como um banco de dados primário para os dados mais importantes, dispensando o Neo4j para essas informações.",
+        "isCorrect": false,
+        "explanation": "O Redis é primariamente um cache em memória ou banco chave-valor rápido, não sendo ideal como banco de dados primário para dados complexos e relacionais como os gerenciados por um banco de grafo como o Neo4j."
+      },
+      {
+        "letter": "E",
+        "text": "Ignorar a consistência entre Neo4j e Redis, pois ambos são sistemas NoSQL e operam com consistência eventual por natureza.",
+        "isCorrect": false,
+        "explanation": "Embora muitos sistemas NoSQL operem com consistência eventual, a necessidade de manter o cache (Redis) sincronizado com o banco de dados primário (Neo4j) é um requisito comum para garantir a precisão dos dados em aplicações críticas."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão descreve um cenário onde um banco de dados de grafo (Neo4j) é usado como fonte primária de dados e um cache em memória (Redis) é utilizado para otimizar performance. O principal desafio é manter a consistência entre essas duas bases. A estratégia 'Cache-Aside' (também conhecida como Lazy Loading ou Read-Through) é a mais adequada. Nessa abordagem, a aplicação primeiro tenta ler os dados do cache (Redis). Se os dados não forem encontrados (cache miss), a aplicação busca os dados no banco de dados primário (Neo4j), retorna esses dados à aplicação e, crucialmente, armazena uma cópia desses dados no cache (Redis) para futuras requisições. O ponto mais delicado desta estratégia é a invalidação do cache quando os dados no Neo4j são atualizados (escritas, atualizações, deleções). Uma política de invalidação eficaz (por exemplo, invalidar o item do cache quando o dado correspondente no Neo4j é modificado) é essencial para evitar que o cache sirva dados desatualizados. A estratégia 'Write-Through' (opção A) seria mais consistente, mas impõe uma sobrecarga de escrita tanto no cache quanto no banco principal, o que pode não ser ideal para um banco de grafo complexo. 'Write-Behind' (opção C) introduz risco de perda de dados. Usar Redis como primário (opção D) é inadequado para o caso de uso de grafo. Ignorar a consistência (opção E) é impraticável em muitos cenários empresariais.",
+    "technicalJustification": "A estratégia 'Cache-Aside' (ou Lazy Loading) é um padrão de cache onde a aplicação primeiro consulta o cache; se o dado não estiver presente, consulta a fonte de dados primária e então o armazena no cache. A invalidação do cache é um aspecto crítico para manter a consistência. (Redmond & Wilson, 2012).",
+    "relatedConcepts": [
+      "NoSQL",
+      "Neo4j",
+      "Redis",
+      "Cache",
+      "Consistência",
+      "Cache-Aside",
+      "Estratégias de Cache",
+      "Banco de Grafo"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b1-nosql_5",
+    "topicId": "b1-nosql",
+    "blocoId": "bloco-1",
+    "question": "Uma equipe de engenharia de dados está projetando uma nova plataforma de análise de dados para a Petrobras, que deve processar terabytes de logs de eventos gerados por sistemas de controle de infraestrutura. A plataforma precisa ser altamente escalável, tolerante a falhas e capaz de lidar com um grande volume de escritas concorrentes, além de permitir consultas analíticas eficientes sobre os dados. Eles estão considerando bancos de dados NoSQL colunares como o Cassandra. Com base nos princípios de design desses bancos de dados e no modelo BASE, analise as seguintes afirmativas:\n\nI. Bancos de dados colunares são otimizados para leituras que acessam um grande número de colunas para um pequeno número de linhas, sendo ideais para consultas analíticas agregadas.\n\nII. A arquitetura de colunas permite que dados relacionados sejam armazenados em conjuntos de colunas separados, possibilitando que diferentes partes de um registro sejam atualizadas independentemente, o que se alinha com a flexibilidade de esquema.\n\nIII. O modelo BASE, frequentemente adotado por bancos colunares como o Cassandra, prioriza a consistência forte e a baixa latência em todas as operações, mesmo sob condições de alta carga e falhas.\n\nIV. A escalabilidade horizontal é uma característica inerente aos bancos de dados colunares, permitindo adicionar mais nós para aumentar a capacidade de armazenamento e processamento sem interrupções significativas.\n\nEstão corretas apenas as afirmativas:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I e II.",
+        "isCorrect": false,
+        "explanation": "As afirmativas I e II estão corretas, mas a afirmativa III está incorreta, pois o modelo BASE prioriza disponibilidade e tolerância a partições, e não necessariamente consistência forte. A afirmativa IV está correta."
+      },
+      {
+        "letter": "B",
+        "text": "I, II e IV.",
+        "isCorrect": true,
+        "explanation": "As afirmativas I, II e IV descrevem corretamente características de bancos de dados colunares e sua escalabilidade. A afirmativa III está incorreta ao associar o modelo BASE à consistência forte."
+      },
+      {
+        "letter": "C",
+        "text": "II e III.",
+        "isCorrect": false,
+        "explanation": "A afirmativa II está correta, mas a III está incorreta. A afirmativa I também está correta, e a IV também está correta, tornando esta opção incompleta."
+      },
+      {
+        "letter": "D",
+        "text": "III e IV.",
+        "isCorrect": false,
+        "explanation": "A afirmativa IV está correta, mas a III está incorreta. A afirmativa I e II também estão corretas."
+      },
+      {
+        "letter": "E",
+        "text": "I, II, III e IV.",
+        "isCorrect": false,
+        "explanation": "A afirmativa III está incorreta. Bancos de dados colunares que seguem o modelo BASE priorizam disponibilidade e tolerância a partições sobre consistência forte."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Vamos analisar cada afirmativa: \n\nI. Bancos de dados colunares são otimizados para leituras que acessam um grande número de colunas para um pequeno número de linhas, sendo ideais para consultas analíticas agregadas. Esta afirmativa está **correta**. Bancos colunares (como Cassandra, HBase) armazenam dados por colunas, não por linhas. Isso significa que, ao consultar dados, o sistema precisa ler apenas as colunas relevantes, o que é extremamente eficiente para consultas analíticas que agregam ou processam dados de um subconjunto de colunas em muitas linhas. A descrição clássica é que eles são bons para 'consultar muitas linhas, poucas colunas'. Consultas analíticas frequentemente se encaixam nesse padrão.\n\nII. A arquitetura de colunas permite que dados relacionados sejam armazenados em conjuntos de colunas separados, possibilitando que diferentes partes de um registro sejam atualizadas independentemente, o que se alinha com a flexibilidade de esquema. Esta afirmativa está **correta**. A natureza colunar permite esquemas flexíveis, onde cada 'linha' (ou 'row' em terminologia de Cassandra) pode ter um conjunto diferente de colunas. Essa capacidade de adicionar/remover colunas dinamicamente e atualizar partes de um registro independentemente contribui para a flexibilidade.\n\nIII. O modelo BASE, frequentemente adotado por bancos colunares como o Cassandra, prioriza a consistência forte e a baixa latência em todas as operações, mesmo sob condições de alta carga e falhas. Esta afirmativa está **incorreta**. O modelo BASE (Basically Available, Soft state, Eventual consistency) prioriza a Disponibilidade (Basically Available) e a tolerância a partições (implícito no 'soft state' e na consistência eventual), em detrimento da Consistência Forte. A baixa latência é um objetivo, mas não à custa da consistência forte em todos os cenários. Bancos como Cassandra oferecem consistência configurável, mas a consistência eventual é comum para maximizar a disponibilidade e performance.\n\nIV. A escalabilidade horizontal é uma característica inerente aos bancos de dados colunares, permitindo adicionar mais nós para aumentar a capacidade de armazenamento e processamento sem interrupções significativas. Esta afirmativa está **correta**. Bancos de dados colunares são projetados desde o início para escalabilidade horizontal, distribuindo dados e carga de trabalho por múltiplos nós. Adicionar novos nós é um processo relativamente simples que aumenta a capacidade do cluster.\n\nPortanto, as afirmativas corretas são I, II e IV. ",
+    "technicalJustification": "Bancos de dados colunares são projetados para cargas de trabalho de escrita intensiva e consultas analíticas em grandes volumes de dados, com escalabilidade horizontal e flexibilidade de esquema. Eles tipicamente seguem o modelo BASE, favorecendo disponibilidade e consistência eventual sobre consistência forte. (Sadalage & Fowler, 2013; Lakshman & Malik, 2010 - sobre Cassandra).",
+    "relatedConcepts": [
+      "NoSQL",
+      "Colunar",
+      "Cassandra",
+      "BASE",
+      "Escalabilidade Horizontal",
+      "Consultas Analíticas",
+      "Flexibilidade de Esquema",
+      "Teorema CAP"
+    ],
+    "order": 5
+  }
+]

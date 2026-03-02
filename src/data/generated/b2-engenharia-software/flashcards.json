@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b2-engenharia-software_1",
+    "topicId": "b2-engenharia-software",
+    "front": "O que é Engenharia de Software?",
+    "back": "Aplicação de princípios de engenharia ao desenvolvimento de software, abrangendo desde a concepção e especificação até a manutenção, com foco em qualidade, custo e prazo.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-engenharia-software_2",
+    "topicId": "b2-engenharia-software",
+    "front": "Quais são as principais fases do ciclo de vida do desenvolvimento de software?",
+    "back": "As principais fases são: 1. Planejamento/Requisitos, 2. Análise, 3. Projeto (Design), 4. Implementação (Codificação), 5. Testes, 6. Implantação e 7. Manutenção.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-engenharia-software_3",
+    "topicId": "b2-engenharia-software",
+    "front": "Defina Requisitos de Software.",
+    "back": "Descrevem o que o sistema de software deve fazer (requisitos funcionais) e as restrições sob as quais deve operar (requisitos não funcionais). São a base para o desenvolvimento.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-engenharia-software_4",
+    "topicId": "b2-engenharia-software",
+    "front": "Qual a diferença fundamental entre Requisitos Funcionais e Não Funcionais?",
+    "back": "Requisitos Funcionais definem as *funções* que o sistema deve executar (ex: calcular imposto). Requisitos Não Funcionais definem as *características* do sistema (ex: desempenho, segurança, usabilidade).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-engenharia-software_5",
+    "topicId": "b2-engenharia-software",
+    "front": "Explique o modelo de processo de software em cascata (Waterfall).",
+    "back": "Um modelo sequencial onde cada fase (requisitos, projeto, implementação, verificação, manutenção) deve ser completamente concluída antes que a próxima comece. Pouca flexibilidade para mudanças.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-engenharia-software_6",
+    "topicId": "b2-engenharia-software",
+    "front": "Para que serve a fase de Análise no desenvolvimento de software?",
+    "back": "Visa entender e documentar detalhadamente os requisitos do sistema, transformando as necessidades do cliente em especificações claras e compreensíveis para a equipe de projeto.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-engenharia-software_7",
+    "topicId": "b2-engenharia-software",
+    "front": "Qual a principal crítica ao modelo em cascata em projetos de software modernos?",
+    "back": "Sua rigidez e falta de flexibilidade para acomodar mudanças nos requisitos após o início do desenvolvimento, o que é comum em projetos reais.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-engenharia-software_8",
+    "topicId": "b2-engenharia-software",
+    "front": "V ou F: A fase de Projeto (Design) em Engenharia de Software foca exclusivamente na arquitetura de hardware.",
+    "back": "Falso. A fase de Projeto foca na arquitetura de software, design de interfaces, estruturas de dados e algoritmos, e não no hardware.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-engenharia-software_9",
+    "topicId": "b2-engenharia-software",
+    "front": "Qual a importância da fase de Testes no processo de desenvolvimento de software?",
+    "back": "Garante que o software atenda aos requisitos especificados, identifica e corrige defeitos (bugs), assegurando a qualidade e a confiabilidade do produto final antes da implantação.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-engenharia-software_10",
+    "topicId": "b2-engenharia-software",
+    "front": "Descreva a principal característica do modelo de processo ágil (Agile) em comparação com modelos tradicionais.",
+    "back": "Iterativo e incremental, com foco em entregas frequentes de software funcional, colaboração intensa com o cliente e adaptação rápida a mudanças, em contraste com a abordagem sequencial e mais rígida dos modelos tradicionais.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

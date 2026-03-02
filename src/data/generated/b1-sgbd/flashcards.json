@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b1-sgbd_1",
+    "topicId": "b1-sgbd",
+    "front": "Qual o nome do modelo arquitetural padrão para SGBDs que descreve três níveis de abstração e suas interfaces?",
+    "back": "Modelo Arquitetural ANSI/SPARC. Descreve 3 níveis: Externo (visões do usuário), Conceitual (estrutura global do BD) e Interno (armazenamento físico).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-sgbd_2",
+    "topicId": "b1-sgbd",
+    "front": "No contexto do modelo ANSI/SPARC, o que representa o Esquema Conceitual?",
+    "back": "O Esquema Conceitual descreve a estrutura global do banco de dados para a comunidade de usuários. Ele define as entidades, atributos, relacionamentos e restrições.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-sgbd_3",
+    "topicId": "b1-sgbd",
+    "front": "Quais são as três principais linguagens de um SGBD, segundo o modelo de três esquemas?",
+    "back": "1. Linguagem de Definição de Dados (DDL): Define a estrutura do BD (esquemas). Ex: CREATE TABLE.\n2. Linguagem de Manipulação de Dados (DML): Permite inserir, consultar, atualizar e deletar dados. Ex: SELECT, INSERT.\n3. Linguagem de Controle de Dados (DCL): Gerencia permissões e segurança. Ex: GRANT, REVOKE.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-sgbd_4",
+    "topicId": "b1-sgbd",
+    "front": "O que é um 'catálogo' em um SGBD e qual sua importância?",
+    "back": "O catálogo (ou dicionário de dados) armazena metadados sobre o banco de dados, como definições de tabelas, índices, usuários, permissões e estatísticas. É consultado pelo otimizador de consultas e pelo SGBD para gerenciar o BD.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-sgbd_5",
+    "topicId": "b1-sgbd",
+    "front": "Qual a principal função da camada de abstração de dados no modelo ANSI/SPARC?",
+    "back": "Isolar os usuários e aplicações das complexidades do armazenamento físico e da estrutura interna do banco de dados, permitindo que diferentes visões externas e esquemas conceituais coexistam.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-sgbd_6",
+    "topicId": "b1-sgbd",
+    "front": "Explique a relação entre Otimização de Consultas e Plano de Execução em um SGBD.",
+    "back": "O Otimizador de Consultas analisa uma consulta (DML) e gera um Plano de Execução, que é a sequência de passos mais eficiente (em termos de tempo e recursos) para recuperar ou modificar os dados solicitados. O SGBD executa esse plano.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-sgbd_7",
+    "topicId": "b1-sgbd",
+    "front": "Em qual nível do modelo ANSI/SPARC a tradução de dados ocorre para mapear o esquema conceitual para o esquema interno?",
+    "back": "No nível de mapeamento entre o Esquema Conceitual e o Esquema Interno. Esse mapeamento é realizado pelo SGBD para que as operações no esquema conceitual sejam traduzidas em operações no esquema interno.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-sgbd_8",
+    "topicId": "b1-sgbd",
+    "front": "V ou F: A otimização de consultas em um SGBD sempre busca o menor número de operações de I/O, independentemente do custo computacional.",
+    "back": "Falso. A otimização busca o plano de execução com o menor custo total estimado, que é uma combinação de custos de I/O, processamento (CPU) e, às vezes, outros fatores como uso de memória.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-sgbd_9",
+    "topicId": "b1-sgbd",
+    "front": "Qual a principal diferença entre o Esquema Conceitual e o Esquema Interno no modelo ANSI/SPARC?",
+    "back": "O Esquema Conceitual descreve a estrutura lógica global do banco de dados, independente de como os dados são fisicamente armazenados. O Esquema Interno descreve a estrutura física de armazenamento dos dados no disco (ex: organização de arquivos, índices).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-sgbd_10",
+    "topicId": "b1-sgbd",
+    "front": "Um usuário final interage diretamente com o Esquema Interno do SGBD?",
+    "back": "Não. Usuários finais e aplicações interagem com o Esquema Externo (visões) ou, em alguns casos, diretamente com o Esquema Conceitual. O SGBD gerencia a interação com o Esquema Interno.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

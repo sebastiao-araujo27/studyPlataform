@@ -1,0 +1,243 @@
+[
+  {
+    "id": "ex_b1-pmbok_1",
+    "topicId": "b1-pmbok",
+    "blocoId": "bloco-1",
+    "question": "No contexto de gerenciamento de projetos fundamentado no PMBOK 6ª Edição, uma equipe de analistas da Petrobras está trabalhando na fase de planejamento de um novo sistema de monitoramento de dutos. Para garantir que todo o trabalho necessário, e apenas o trabalho necessário, seja realizado, o gerente de projetos inicia a decomposição hierárquica do escopo total a ser executado pela equipe. Esse processo resulta em um componente fundamental que organiza e define a estrutura do projeto, subdividindo as entregas em partes menores e mais fáceis de gerenciar. De acordo com as definições do Guia PMBOK, essa representação estruturada é denominada:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Dicionário da EAP",
+        "isCorrect": false,
+        "explanation": "O dicionário fornece informações detalhadas sobre as entregas, mas não é a decomposição hierárquica em si."
+      },
+      {
+        "letter": "B",
+        "text": "Estrutura Analítica do Projeto (EAP)",
+        "isCorrect": true,
+        "explanation": "A EAP é a decomposição hierárquica do escopo total do trabalho a ser executado pela equipe do projeto."
+      },
+      {
+        "letter": "C",
+        "text": "Estrutura Analítica dos Riscos (EAR)",
+        "isCorrect": false,
+        "explanation": "A EAR organiza categorias de riscos, não o escopo das entregas do projeto."
+      },
+      {
+        "letter": "D",
+        "text": "Cronograma do Projeto",
+        "isCorrect": false,
+        "explanation": "O cronograma define quando as atividades ocorrerão, enquanto a EAP define o que será entregue."
+      },
+      {
+        "letter": "E",
+        "text": "Plano de Gerenciamento do Escopo",
+        "isCorrect": false,
+        "explanation": "Este é um plano subsidiário que descreve como o escopo será definido e controlado, mas não é a decomposição das entregas."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda um conceito fundamental da Área de Conhecimento de Gerenciamento do Escopo do Guia PMBOK 6ª Edição. O processo 'Criar a EAP' consiste na subdivisão das entregas e do trabalho do projeto em componentes menores e mais facilmente gerenciáveis. A Estrutura Analítica do Projeto (EAP) é uma decomposição hierárquica orientada a entregas. A alternativa A está incorreta porque o Dicionário da EAP é um documento de apoio que detalha os componentes da EAP (como descrição do trabalho e responsáveis), mas não é a estrutura em si. A alternativa C (EAR) refere-se ao gerenciamento de riscos. A alternativa D (Cronograma) foca na dimensão temporal, sendo construída após a definição das atividades derivadas da EAP. A alternativa E é o documento que rege os processos de escopo, mas não contém a decomposição das entregas. Portanto, a definição clássica de decomposição hierárquica do escopo total corresponde exatamente à EAP, que serve como base para o planejamento de custos, cronograma e recursos.",
+    "technicalJustification": "Conforme o Guia PMBOK 6ª Edição, Seção 5.4, a Estrutura Analítica do Projeto (EAP) é a decomposição hierárquica do escopo total do trabalho a ser executado pela equipe do projeto para atingir os objetivos do projeto e criar as entregas requisitadas.",
+    "relatedConcepts": [
+      "Escopo",
+      "Decomposição",
+      "Pacote de Trabalho"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b1-pmbok_2",
+    "topicId": "b1-pmbok",
+    "blocoId": "bloco-1",
+    "question": "Durante o processo de Identificação de Partes Interessadas em um projeto de modernização de processos de negócio na área de Exploração e Produção (E&P), o Analista de Sistemas percebe que há um grupo de diretores com alto poder de influência sobre os recursos financeiros, mas que demonstram baixo interesse nos detalhes técnicos da implementação. Segundo a Matriz de Poder/Interesse, ferramenta clássica recomendada pelo PMBOK 6ª Edição para o gerenciamento de stakeholders, qual deve ser a estratégia prioritária para lidar com esse grupo específico?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Monitorar (esforço mínimo)",
+        "isCorrect": false,
+        "explanation": "Esta estratégia é voltada para stakeholders com baixo poder e baixo interesse."
+      },
+      {
+        "letter": "B",
+        "text": "Manter Informados",
+        "isCorrect": false,
+        "explanation": "Esta estratégia é aplicada a stakeholders com alto interesse, mas baixo poder."
+      },
+      {
+        "letter": "C",
+        "text": "Gerenciar de Perto",
+        "isCorrect": false,
+        "explanation": "Esta estratégia é reservada para stakeholders com alto poder e alto interesse."
+      },
+      {
+        "letter": "D",
+        "text": "Manter Satisfeitos",
+        "isCorrect": true,
+        "explanation": "Stakeholders com alto poder e baixo interesse devem ser mantidos satisfeitos para evitar resistências."
+      },
+      {
+        "letter": "E",
+        "text": "Ignorar até o encerramento do projeto",
+        "isCorrect": false,
+        "explanation": "Nenhuma parte interessada identificada deve ser totalmente ignorada no gerenciamento de projetos."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "O gerenciamento das partes interessadas (stakeholders) é vital para o sucesso do projeto. O PMBOK 6ª Edição sugere o uso de ferramentas de classificação, como a Matriz de Poder/Interesse. Esta matriz divide os stakeholders em quatro quadrantes. 1) Baixo Poder / Baixo Interesse: Devem ser apenas monitorados com esforço mínimo. 2) Baixo Poder / Alto Interesse: Devem ser mantidos informados para garantir que não surjam problemas por falta de comunicação. 3) Alto Poder / Alto Interesse: São os stakeholders 'chave' e devem ser gerenciados de perto. 4) Alto Poder / Baixo Interesse: É o caso descrito no enunciado (diretores com influência financeira mas pouco interesse técnico). Para este grupo, a estratégia correta é 'Manter Satisfeitos'. Isso ocorre porque, embora não queiram detalhes técnicos, eles possuem poder suficiente para interromper ou desviar o projeto caso se sintam insatisfeitos com os resultados macro ou com a utilização dos recursos. A alternativa E é um distrator absurdo, pois o PMBOK nunca recomenda ignorar stakeholders.",
+    "technicalJustification": "O Guia PMBOK 6ª Edição, na seção 13.1.2.4 (Representação de Dados), descreve a Matriz de Poder/Interesse como uma forma de agrupar partes interessadas de acordo com seu nível de autoridade e nível de preocupação em relação aos resultados do projeto.",
+    "relatedConcepts": [
+      "Engajamento",
+      "Matriz de Poder/Interesse",
+      "Comunicação"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b1-pmbok_3",
+    "topicId": "b1-pmbok",
+    "blocoId": "bloco-1",
+    "question": "Considere que uma empresa de logística petrolífera está implementando um novo sistema de ERP. Durante o planejamento dos riscos, a equipe identifica que há uma alta probabilidade de instabilidade nos servidores internos durante a migração de dados, o que poderia paralisar as operações. Para mitigar esse risco, a gerência decide contratar uma empresa de cloud computing especializada, transferindo a responsabilidade pela infraestrutura e garantindo em contrato níveis de serviço (SLA) rigorosos. De acordo com o PMBOK 6ª Edição, essa resposta ao risco é classificada como:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Prevenir (Avoid)",
+        "isCorrect": false,
+        "explanation": "Prevenir envolve eliminar a ameaça ou proteger o projeto do seu impacto, mudando o plano."
+      },
+      {
+        "letter": "B",
+        "text": "Mitigar (Mitigate)",
+        "isCorrect": false,
+        "explanation": "Mitigar foca em reduzir a probabilidade ou o impacto, mas a responsabilidade permanece com a equipe."
+      },
+      {
+        "letter": "C",
+        "text": "Transferir (Transfer)",
+        "isCorrect": true,
+        "explanation": "Transferir envolve passar a responsabilidade e o impacto da ameaça para um terceiro."
+      },
+      {
+        "letter": "D",
+        "text": "Aceitar (Accept)",
+        "isCorrect": false,
+        "explanation": "Aceitar significa reconhecer o risco e não tomar nenhuma ação proativa, agindo apenas se ele ocorrer."
+      },
+      {
+        "letter": "E",
+        "text": "Explorar (Exploit)",
+        "isCorrect": false,
+        "explanation": "Explorar é uma estratégia para riscos positivos (oportunidades), não para ameaças."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "No Gerenciamento dos Riscos do Projeto (Capítulo 11 do PMBOK 6ª Edição), o processo 'Planejar as Respostas aos Riscos' define estratégias para lidar com ameaças e oportunidades. Para ameaças, as estratégias principais são: Escalar, Prevenir (Evitar), Transferir, Mitigar e Aceitar. A questão descreve a contratação de um terceiro (empresa de cloud) e o uso de um contrato (SLA) para lidar com o risco. Esta é a definição clássica de 'Transferir'. A transferência de risco envolve repassar a propriedade da resposta para uma terceira parte que terá a responsabilidade de gerenciar o risco e arcar com o impacto se ele ocorrer. Geralmente envolve o pagamento de um prêmio de risco (neste caso, o custo do serviço de nuvem). É diferente de 'Mitigar', onde a equipe do projeto agiria para reduzir a chance de falha dos servidores internos, mas manteria a responsabilidade. É diferente de 'Prevenir', que exigiria mudar o plano do projeto para que a migração não fosse necessária ou fosse feita de forma que o risco fosse zero.",
+    "technicalJustification": "Guia PMBOK 6ª Edição, Seção 11.5.2.4. A transferência envolve a passagem da responsabilidade pelo gerenciamento e impacto de uma ameaça para um terceiro, frequentemente através de seguros, garantias ou contratos.",
+    "relatedConcepts": [
+      "Resposta a Riscos",
+      "SLA",
+      "Ameaças"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b1-pmbok_4",
+    "topicId": "b1-pmbok",
+    "blocoId": "bloco-1",
+    "question": "Um Analista de Sistemas da Petrobras está realizando o controle de desempenho de um projeto de integração de dados entre refinarias utilizando a técnica de Gerenciamento do Valor Agregado (GVA/EVM). Ao final do sexto mês, ele obtém os seguintes indicadores:\n\n- Valor Agregado (VA / EV) = R$ 450.000,00\n- Valor Planejado (VP / PV) = R$ 500.000,00\n- Custo Real (CR / AC) = R$ 400.000,00\n\nCom base nesses dados, qual é a análise correta sobre a saúde do projeto em termos de custo e cronograma, respectivamente?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "O projeto está abaixo do orçamento e adiantado em relação ao cronograma.",
+        "isCorrect": false,
+        "explanation": "O projeto está abaixo do orçamento (IDC > 1), mas está atrasado (IDP < 1)."
+      },
+      {
+        "letter": "B",
+        "text": "O projeto está acima do orçamento e atrasado em relação ao cronograma.",
+        "isCorrect": false,
+        "explanation": "O projeto está abaixo do orçamento, pois o VA é maior que o CR."
+      },
+      {
+        "letter": "C",
+        "text": "O projeto está abaixo do orçamento e atrasado em relação ao cronograma.",
+        "isCorrect": true,
+        "explanation": "IDC = 450/400 = 1,125 (Bom/Abaixo do custo); IDP = 450/500 = 0,9 (Ruim/Atrasado)."
+      },
+      {
+        "letter": "D",
+        "text": "O projeto está acima do orçamento e adiantado em relação ao cronograma.",
+        "isCorrect": false,
+        "explanation": "Os índices IDC e IDP mostram o oposto: eficiência em custo e atraso em cronograma."
+      },
+      {
+        "letter": "E",
+        "text": "O projeto apresenta desempenho exatamente conforme o planejado em ambos os indicadores.",
+        "isCorrect": false,
+        "explanation": "Para isso ocorrer, VA, VP e CR deveriam ser iguais, resultando em índices iguais a 1,0."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A análise de Gerenciamento do Valor Agregado (EVM) utiliza três métricas fundamentais para calcular a eficiência: Valor Planejado (VP), Valor Agregado (VA) e Custo Real (CR). \n1) Índice de Desempenho de Custos (IDC): VA / CR. No caso: 450.000 / 400.000 = 1,125. Como o IDC é maior que 1,0, o projeto está sendo executado com eficiência de custos, ou seja, 'abaixo do orçamento'.\n2) Índice de Desempenho do Cronograma (IDP): VA / VP. No caso: 450.000 / 500.000 = 0,9. Como o IDP é menor que 1,0, o projeto entregou menos trabalho do que o planejado para aquela data, ou seja, está 'atrasado'.\nEste é um cenário comum em provas da CESGRANRIO, onde o candidato deve realizar cálculos simples de divisão e interpretar os resultados. Valores acima de 1,0 são favoráveis (exceto para variações de custo/prazo onde o valor positivo é que é bom). A alternativa C reflete exatamente essa combinação: eficiência financeira (gasto menor que o valor do trabalho entregue) e ineficiência temporal (entrega menor que o planejado).",
+    "technicalJustification": "Guia PMBOK 6ª Edição, Seção 7.4.2.2. O IDC (CPI) mede a eficiência de custos e o IDP (SPI) mede a eficiência do cronograma.",
+    "relatedConcepts": [
+      "EVM",
+      "IDC",
+      "IDP",
+      "Variação de Custo"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b1-pmbok_5",
+    "topicId": "b1-pmbok",
+    "blocoId": "bloco-1",
+    "question": "Um projeto complexo de desenvolvimento de software para automação de plataformas offshore está na fase de execução. Durante uma auditoria de qualidade, identifica-se que um módulo crítico não atende aos requisitos de segurança cibernética estabelecidos no Plano de Gerenciamento da Qualidade. Simultaneamente, o principal stakeholder solicita uma alteração no escopo para incluir uma nova funcionalidade de telemetria. O Gerente de Projetos deve agir de forma integrada. Segundo o PMBOK 6ª Edição, qual deve ser a sequência correta de ações para lidar com essas situações?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Corrigir o módulo imediatamente, implementar a nova funcionalidade solicitada e depois atualizar o plano de projeto.",
+        "isCorrect": false,
+        "explanation": "Ignora o processo formal de controle de mudanças e a análise de impacto."
+      },
+      {
+        "letter": "B",
+        "text": "Solicitar uma reparação de defeito para o módulo de segurança e submeter a solicitação de mudança da telemetria ao processo de Controle Integrado de Mudanças.",
+        "isCorrect": true,
+        "explanation": "Separa a correção de qualidade (reparação de defeito) da mudança de escopo, tratando ambas via controle de mudanças."
+      },
+      {
+        "letter": "C",
+        "text": "Priorizar a nova funcionalidade de telemetria, pois vem de um stakeholder principal, e tratar a falha de segurança como uma lição aprendida ao final do projeto.",
+        "isCorrect": false,
+        "explanation": "Falhas de segurança críticas não podem ser adiadas e solicitações de stakeholders devem ser analisadas, não apenas aceitas."
+      },
+      {
+        "letter": "D",
+        "text": "Suspender o projeto até que o Plano de Gerenciamento da Qualidade seja revisado, descartando a solicitação de mudança para não comprometer o cronograma.",
+        "isCorrect": false,
+        "explanation": "A suspensão é uma medida extrema e o descarte sumário de mudanças sem análise fere o processo de controle integrado."
+      },
+      {
+        "letter": "E",
+        "text": "Realizar o processo de Garantia da Qualidade para validar o módulo e incluir a nova funcionalidade como um risco no Registro de Riscos.",
+        "isCorrect": false,
+        "explanation": "Garantia da qualidade foca em processos, não no produto (que é Controle). Uma mudança de escopo não é apenas um risco, é uma solicitação formal."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão exige conhecimento integrado de várias áreas: Qualidade, Escopo e Integração. No PMBOK 6ª Edição, qualquer alteração no que foi planejado (seja uma correção de algo errado ou uma adição de algo novo) deve passar pelo processo 'Realizar o Controle Integrado de Mudanças'. \n1) O problema de segurança é uma não conformidade. A ação necessária é uma 'Reparação de Defeito'. Embora seja uma correção, em projetos formais, isso gera uma solicitação de mudança para que os impactos em tempo e custo sejam avaliados e aprovados.\n2) A nova funcionalidade de telemetria é uma 'Solicitação de Mudança' de escopo. Ela deve ser documentada, ter seu impacto analisado em todas as áreas (custo, tempo, riscos, qualidade) e ser enviada para aprovação ou rejeição pelo Comitê de Controle de Mudanças (CCB) ou pelo gerente de projetos, conforme a autoridade definida.\nA alternativa B é a única que respeita o rigor metodológico: trata a falha técnica como reparação e a nova demanda como mudança formal. A alternativa E confunde Garantia da Qualidade (que audita processos) com Controle da Qualidade (que inspeciona o produto). As alternativas A e C falham por ignorar a governança do projeto e a análise de impacto necessária na gestão integrada.",
+    "technicalJustification": "Guia PMBOK 6ª Edição, Seção 4.6 (Realizar o Controle Integrado de Mudanças). O processo revisa todas as solicitações de mudança, aprova mudanças e gerencia mudanças nas entregas, ativos de processos organizacionais, documentos do projeto e plano de gerenciamento do projeto.",
+    "relatedConcepts": [
+      "Controle Integrado de Mudanças",
+      "Reparação de Defeito",
+      "Controle da Qualidade"
+    ],
+    "order": 5
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "ex_b3-iso31000_1",
+    "topicId": "b3-iso31000",
+    "blocoId": "bloco-3",
+    "question": "Segundo a ABNT NBR ISO 31000:2018, o risco é definido como:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A probabilidade de ocorrência de um evento danoso multiplicada pelo impacto financeiro estimado.",
+        "isCorrect": false,
+        "explanation": "Esta é uma definição tradicional de risco (probabilidade × impacto), mas NÃO é a definição da ISO 31000:2018. A norma adota uma definição mais ampla."
+      },
+      {
+        "letter": "B",
+        "text": "O efeito da incerteza nos objetivos, podendo ser positivo, negativo ou ambos.",
+        "isCorrect": true,
+        "explanation": "Esta é a definição literal da ISO 31000:2018. Risco é o 'efeito da incerteza nos objetivos', e um efeito pode ser um desvio positivo (oportunidade), negativo (ameaça) ou ambos em relação ao esperado."
+      },
+      {
+        "letter": "C",
+        "text": "A possibilidade de ocorrência de um evento que cause prejuízo material ou imaterial à organização.",
+        "isCorrect": false,
+        "explanation": "Esta definição limita o risco a eventos prejudiciais (negativos), enquanto a ISO 31000 inclui também efeitos positivos (oportunidades). Além disso, não menciona a relação com objetivos."
+      },
+      {
+        "letter": "D",
+        "text": "A combinação da frequência de eventos indesejados com a severidade de suas consequências para a segurança operacional.",
+        "isCorrect": false,
+        "explanation": "Esta definição é restrita a riscos de segurança operacional e a eventos indesejados. A ISO 31000 é genérica (qualquer tipo de risco) e inclui efeitos positivos."
+      },
+      {
+        "letter": "E",
+        "text": "A exposição a fatores externos e internos que possam comprometer a continuidade das operações da organização.",
+        "isCorrect": false,
+        "explanation": "Esta definição está mais alinhada a conceitos de continuidade de negócios (ISO 22301) e não corresponde à definição da ISO 31000, que é centrada no 'efeito da incerteza nos objetivos'."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A ISO 31000:2018 define risco como o 'efeito da incerteza nos objetivos'. Esta definição é fundamental e diferencia a norma de abordagens tradicionais. Três aspectos são essenciais: (1) risco é um 'efeito' — um desvio em relação ao esperado; (2) esse efeito decorre de 'incerteza' — deficiência de informação sobre eventos, consequências ou probabilidades; (3) está sempre relacionado a 'objetivos' da organização. Importante: o efeito pode ser positivo (oportunidade), negativo (ameaça) ou ambos simultaneamente. Essa visão bidirecional é característica marcante da ISO 31000.",
+    "technicalJustification": "Conforme a Cláusula 3.1 da ABNT NBR ISO 31000:2018 e o ISO Guide 73:2009, risco é definido como 'efeito da incerteza nos objetivos'. A nota 1 esclarece que um efeito é um desvio em relação ao esperado, podendo ser positivo, negativo ou ambos. A nota 3 explica que o risco é frequentemente expresso em termos de fontes de risco, eventos potenciais, suas consequências e suas probabilidades.",
+    "relatedConcepts": ["definição de risco", "incerteza", "objetivos organizacionais", "ameaças e oportunidades", "ISO Guide 73"],
+    "order": 1
+  },
+  {
+    "id": "ex_b3-iso31000_2",
+    "topicId": "b3-iso31000",
+    "blocoId": "bloco-3",
+    "question": "uma empresa do setor de óleo e gás está implementando a gestão de riscos conforme a ISO 31000:2018. O gerente de riscos propôs que a gestão de riscos fosse conduzida apenas pelo departamento de compliance, sem integração com as áreas operacionais e sem consultar as equipes de campo. Nesse cenário, quais princípios da ISO 31000 estão sendo violados?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Apenas o princípio 'Integrada', pois a gestão de riscos deve fazer parte de todas as atividades organizacionais.",
+        "isCorrect": false,
+        "explanation": "O princípio 'Integrada' realmente está sendo violado, mas não é o único. A falta de consulta às equipes de campo viola também o princípio 'Inclusiva'."
+      },
+      {
+        "letter": "B",
+        "text": "Os princípios 'Integrada' e 'Inclusiva', pois a gestão de riscos deve ser parte de todas as atividades e deve envolver as partes interessadas pertinentes.",
+        "isCorrect": true,
+        "explanation": "Correto. O princípio 'Integrada' exige que a gestão de riscos seja parte de todas as atividades organizacionais, não isolada em um departamento. O princípio 'Inclusiva' exige o envolvimento adequado das partes interessadas, incluindo equipes operacionais de campo."
+      },
+      {
+        "letter": "C",
+        "text": "Apenas o princípio 'Personalizada', pois a abordagem não está adaptada ao contexto da organização.",
+        "isCorrect": false,
+        "explanation": "O princípio 'Personalizada' se refere à adaptação do framework ao contexto organizacional. Embora possa estar indiretamente relacionado, os princípios diretamente violados são 'Integrada' (isolamento no compliance) e 'Inclusiva' (falta de envolvimento das equipes)."
+      },
+      {
+        "letter": "D",
+        "text": "Os princípios 'Dinâmica' e 'Melhoria contínua', pois a abordagem em um único departamento impede a adaptação a mudanças.",
+        "isCorrect": false,
+        "explanation": "'Dinâmica' refere-se à capacidade de responder a mudanças no contexto, e 'Melhoria contínua' ao aprendizado constante. Embora possam ser prejudicados, os princípios primariamente violados no cenário descrito são 'Integrada' e 'Inclusiva'."
+      },
+      {
+        "letter": "E",
+        "text": "Os princípios 'Estruturada e abrangente' e 'Melhor informação disponível', pois a abordagem carece de metodologia definida e de dados adequados.",
+        "isCorrect": false,
+        "explanation": "'Estruturada e abrangente' trata de usar metodologias definidas, e 'Melhor informação disponível' trata da qualidade dos dados. O cenário não descreve falha nesses princípios especificamente, mas sim na integração organizacional e no envolvimento de partes interessadas."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A ISO 31000:2018 estabelece 8 princípios para a gestão de riscos eficaz. No cenário descrito, dois princípios são claramente violados: (1) 'Integrada' (Cláusula 4.a): a gestão de riscos deve ser parte integrante de todas as atividades organizacionais, incluindo processos decisórios — isolá-la no departamento de compliance contradiz esse princípio; (2) 'Inclusiva' (Cláusula 4.d): o envolvimento adequado e oportuno das partes interessadas permite que seus conhecimentos e percepções sejam considerados — não consultar as equipes de campo nega essa participação essencial. Em uma empresa de óleo e gás como a Petrobras, as equipes de campo possuem conhecimento operacional crítico sobre riscos reais de HSE, e sua exclusão compromete seriamente a qualidade da gestão de riscos.",
+    "technicalJustification": "Conforme a Cláusula 4 da ISO 31000:2018, o princípio 'Integrada' estabelece que a gestão de riscos é parte integrante de todas as atividades organizacionais. O princípio 'Inclusiva' determina que o envolvimento adequado e oportuno das partes interessadas possibilita que seus conhecimentos, pontos de vista e percepções sejam considerados, resultando em maior conscientização e gestão de riscos fundamentada.",
+    "relatedConcepts": ["princípios da gestão de riscos", "integração organizacional", "partes interessadas", "gestão de riscos em óleo e gás", "compliance"],
+    "order": 2
+  },
+  {
+    "id": "ex_b3-iso31000_3",
+    "topicId": "b3-iso31000",
+    "blocoId": "bloco-3",
+    "question": "No contexto do processo de gestão de riscos da ISO 31000:2018, o 'processo de avaliação de riscos' (risk assessment) compreende, sequencialmente, as seguintes atividades:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Comunicação e consulta, identificação de riscos, análise de riscos e tratamento de riscos.",
+        "isCorrect": false,
+        "explanation": "Comunicação e consulta é uma atividade transversal a todo o processo, e tratamento de riscos é uma etapa separada posterior à avaliação de riscos. Nenhuma delas faz parte do 'processo de avaliação de riscos' (risk assessment)."
+      },
+      {
+        "letter": "B",
+        "text": "Estabelecimento do contexto, identificação de riscos, análise de riscos e avaliação de riscos.",
+        "isCorrect": false,
+        "explanation": "O estabelecimento do contexto (escopo, contexto e critérios) é uma etapa anterior e separada do processo de avaliação de riscos. Na ISO 31000:2018, o risk assessment contém apenas três subetapas."
+      },
+      {
+        "letter": "C",
+        "text": "Identificação de riscos, análise de riscos e avaliação de riscos.",
+        "isCorrect": true,
+        "explanation": "Correto. Conforme a Cláusula 6.4 da ISO 31000:2018, o processo de avaliação de riscos (risk assessment) compreende três subetapas: identificação de riscos (6.4.1), análise de riscos (6.4.2) e avaliação de riscos (6.4.3)."
+      },
+      {
+        "letter": "D",
+        "text": "Análise de riscos, avaliação de riscos e tratamento de riscos.",
+        "isCorrect": false,
+        "explanation": "O tratamento de riscos é uma etapa independente e posterior ao processo de avaliação de riscos, e a identificação de riscos está ausente desta sequência. O risk assessment inclui identificação, análise e avaliação."
+      },
+      {
+        "letter": "E",
+        "text": "Identificação de riscos, análise de riscos, avaliação de riscos e monitoramento de riscos.",
+        "isCorrect": false,
+        "explanation": "Monitoramento e análise crítica é uma atividade transversal a todo o processo de gestão de riscos, não uma subetapa do processo de avaliação de riscos (risk assessment)."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A ISO 31000:2018, na Cláusula 6.4, define o processo de avaliação de riscos (risk assessment) como composto por três subetapas sequenciais: (1) Identificação de riscos — encontrar, reconhecer e descrever riscos, incluindo fontes de risco, eventos, causas e consequências potenciais; (2) Análise de riscos — compreender a natureza do risco e suas características, incluindo a determinação do nível de risco; (3) Avaliação de riscos — comparar os resultados da análise com os critérios de risco estabelecidos para apoiar a tomada de decisão. É fundamental distinguir 'avaliação de riscos' (risk assessment, o processo completo) de 'avaliação' (risk evaluation, apenas a terceira subetapa). Comunicação/consulta e monitoramento/análise crítica são transversais, e tratamento é uma etapa posterior.",
+    "technicalJustification": "Conforme a Cláusula 6.4 da ABNT NBR ISO 31000:2018: 'O processo de avaliação de riscos é o processo global de identificação de riscos (6.4.1), análise de riscos (6.4.2) e avaliação de riscos (6.4.3).' Estas três subetapas compõem o risk assessment conforme definido na norma.",
+    "relatedConcepts": ["risk assessment", "identificação de riscos", "análise de riscos", "avaliação de riscos", "processo de gestão de riscos"],
+    "order": 3
+  },
+  {
+    "id": "ex_b3-iso31000_4",
+    "topicId": "b3-iso31000",
+    "blocoId": "bloco-3",
+    "question": "Durante a implementação do framework de gestão de riscos em uma empresa de energia, o comitê de riscos decidiu que a gestão de riscos deveria seguir um modelo padrão idêntico para todas as subsidiárias, independentemente do país de operação, da legislação local e do tipo de atividade (exploração, refino ou distribuição). Considerando os princípios e o framework da ISO 31000:2018, essa decisão é:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Adequada, pois o princípio 'Estruturada e abrangente' exige padronização total para garantir resultados consistentes e comparáveis.",
+        "isCorrect": false,
+        "explanation": "O princípio 'Estruturada e abrangente' pede uma abordagem sistemática, mas NÃO impõe padronização total. A consistência deve ser combinada com a personalização ao contexto de cada unidade."
+      },
+      {
+        "letter": "B",
+        "text": "Adequada, pois a alta direção tem autonomia total para definir o modelo de gestão de riscos e impô-lo a toda a organização, conforme a cláusula de liderança.",
+        "isCorrect": false,
+        "explanation": "A liderança e comprometimento da alta direção (Cláusula 5.2) envolvem customizar e implementar o framework, não impor um modelo rígido que ignora contextos locais. A alta direção deve assegurar que o framework seja personalizado."
+      },
+      {
+        "letter": "C",
+        "text": "Inadequada, pois viola o princípio 'Personalizada', que determina que o framework e o processo devem ser proporcionais e personalizados ao contexto externo e interno de cada organização.",
+        "isCorrect": true,
+        "explanation": "Correto. O princípio 'Personalizada' (Cláusula 4.c) determina que a gestão de riscos deve ser personalizada e proporcional ao contexto externo e interno da organização. Subsidiárias em diferentes países, com legislações distintas e atividades diferentes, exigem adaptações do framework."
+      },
+      {
+        "letter": "D",
+        "text": "Inadequada, pois viola exclusivamente o princípio 'Dinâmica', uma vez que um modelo único não consegue responder a mudanças nos diferentes contextos operacionais.",
+        "isCorrect": false,
+        "explanation": "O princípio 'Dinâmica' refere-se à capacidade de responder a mudanças ao longo do tempo. A questão em análise é sobre a falta de adequação ao contexto de cada subsidiária, o que viola primariamente o princípio 'Personalizada', não 'Dinâmica'."
+      },
+      {
+        "letter": "E",
+        "text": "Inadequada, pois a ISO 31000 proíbe expressamente que subsidiárias compartilhem o mesmo framework de gestão de riscos da empresa-mãe.",
+        "isCorrect": false,
+        "explanation": "A ISO 31000 NÃO proíbe o compartilhamento de framework entre subsidiárias. O que ela exige é que o framework seja personalizado ao contexto de cada situação. Subsidiárias podem compartilhar diretrizes gerais, desde que haja adaptação local."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "O princípio 'Personalizada' (Cláusula 4.c) da ISO 31000:2018 estabelece que o framework e o processo de gestão de riscos devem ser personalizados e proporcionais ao contexto externo e interno da organização, considerando seus objetivos. No cenário descrito, Petrobras opera em diferentes países (contextos regulatórios distintos), com diferentes tipos de atividade (exploração, refino, distribuição — perfis de risco radicalmente diferentes). Impor um modelo único ignora essas diferenças fundamentais. Uma refinaria no Brasil enfrenta riscos regulatórios (ANP), ambientais e operacionais completamente diferentes de uma operação de distribuição na Europa. O framework deve fornecer diretrizes gerais, mas permitir personalização local. Isso não significa que cada subsidiária precisa ter um framework totalmente independente — o ideal é uma estrutura corporativa com espaço para adaptação contextual.",
+    "technicalJustification": "A Cláusula 4.c da ABNT NBR ISO 31000:2018 estabelece o princípio 'Personalizada': 'O framework e o processo de gestão de riscos são personalizados e proporcionais ao contexto externo e interno da organização relacionados aos seus objetivos.' Adicionalmente, a Cláusula 5.4.1 sobre Concepção do Framework reforça que a organização deve entender seu contexto, incluindo 'ambiente social, cultural, político, legal, regulatório, financeiro, tecnológico, econômico e ambiental, seja internacional, nacional, regional ou local'.",
+    "relatedConcepts": ["princípio personalizada", "contexto externo e interno", "framework de gestão de riscos", "subsidiárias", "personalização vs. padronização"],
+    "order": 4
+  },
+  {
+    "id": "ex_b3-iso31000_5",
+    "topicId": "b3-iso31000",
+    "blocoId": "bloco-3",
+    "question": "Uma consultoria foi contratada para realizar a gestão de riscos de um projeto de transformação digital na Petrobras. Ao final do trabalho, a consultoria entregou um relatório identificando 45 riscos, classificados em uma matriz de probabilidade × consequência. Após a implementação das medidas de tratamento, o gerente de projetos declarou: \"Os riscos residuais foram todos eliminados, portanto não há necessidade de monitoramento contínuo.\" Com base na ISO 31000:2018, analise as afirmações:\n\nI. O monitoramento e análise crítica devem ocorrer em todas as etapas do processo de gestão de riscos, não apenas após o tratamento.\nII. O tratamento de riscos pode introduzir novos riscos ou modificar riscos existentes, razão pela qual o monitoramento contínuo é necessário.\nIII. O risco residual é o risco remanescente após o tratamento, e dificilmente é completamente eliminado.\nIV. A ISO 31000:2018 é uma norma certificável, e a eliminação total dos riscos residuais é um requisito para a certificação.\n\nEstão corretas as afirmações:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I e II, apenas.",
+        "isCorrect": false,
+        "explanation": "As afirmações I e II estão corretas, mas a afirmação III também está correta. O risco residual raramente é completamente eliminado."
+      },
+      {
+        "letter": "B",
+        "text": "I, II e III, apenas.",
+        "isCorrect": true,
+        "explanation": "Correto. As afirmações I, II e III estão corretas conforme a ISO 31000:2018. A afirmação IV é falsa porque a ISO 31000 NÃO é certificável e não exige eliminação total de riscos residuais."
+      },
+      {
+        "letter": "C",
+        "text": "II, III e IV, apenas.",
+        "isCorrect": false,
+        "explanation": "A afirmação IV é falsa — a ISO 31000 NÃO é certificável. Além disso, a afirmação I também está correta e não foi incluída nesta opção."
+      },
+      {
+        "letter": "D",
+        "text": "I, III e IV, apenas.",
+        "isCorrect": false,
+        "explanation": "A afirmação IV é falsa — a ISO 31000 NÃO é certificável. Além disso, a afirmação II está correta (tratamento pode gerar novos riscos) e não foi incluída."
+      },
+      {
+        "letter": "E",
+        "text": "I, II, III e IV.",
+        "isCorrect": false,
+        "explanation": "A afirmação IV é falsa. A ISO 31000:2018 é uma norma de diretrizes (guidance standard), não de requisitos, e portanto NÃO é certificável. Não existe auditoria de certificação ISO 31000."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Análise de cada afirmação:\n\n(I) CORRETA: Conforme a Cláusula 6.6 da ISO 31000:2018, o monitoramento e análise crítica devem ser planejados e executados em todas as etapas do processo de gestão de riscos. São atividades transversais, não pontuais.\n\n(II) CORRETA: A Cláusula 6.5 da norma destaca que o tratamento de riscos pode introduzir novos riscos (riscos secundários) ou modificar riscos existentes. O plano de tratamento deve considerar esses efeitos colaterais, o que justifica o monitoramento contínuo.\n\n(III) CORRETA: O conceito de risco residual (risco remanescente após tratamento) é fundamental na gestão de riscos. Na prática, é extremamente raro que o tratamento elimine completamente um risco. O que se busca é reduzir o risco a um nível aceitável conforme os critérios de risco da organização.\n\n(IV) FALSA: A ISO 31000:2018 é uma norma de diretrizes (guidance), não de requisitos (requirements). Ela NÃO é certificável, diferentemente de normas como ISO 27001 ou ISO 9001. Não existe procedimento de certificação ISO 31000.",
+    "technicalJustification": "Cláusula 6.6 (Monitoramento e análise crítica): devem ocorrer em todos os estágios do processo. Cláusula 6.5.2 (Tratamento de riscos): reconhece que o tratamento pode gerar novos riscos. A ISO 31000:2018 é declaradamente uma norma de diretrizes ('This document provides guidelines'), não uma norma de requisitos certificáveis. O conceito de risco residual está implícito na cláusula de tratamento, que exige avaliar se o risco remanescente é tolerável.",
+    "relatedConcepts": ["monitoramento e análise crítica", "risco residual", "tratamento de riscos", "riscos secundários", "certificação ISO", "norma de diretrizes"],
+    "order": 5
+  }
+]

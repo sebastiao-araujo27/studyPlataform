@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b1-bigdata_1",
+    "topicId": "b1-bigdata",
+    "front": "Quais são os 5 Vs tradicionais do Big Data?",
+    "back": "- Volume (quantidade de dados)\n- Velocidade (ritmo de geração/processamento)\n- Variedade (diferentes formatos: estruturados, semi e não estruturados)\n- Veracidade (confiabilidade/qualidade)\n- Valor (utilidade para o negócio)",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-bigdata_2",
+    "topicId": "b1-bigdata",
+    "front": "O que é o HDFS (Hadoop Distributed File System)?",
+    "back": "É o sistema de arquivos distribuído do Hadoop que armazena grandes volumes de dados em hardware comum, provendo alta tolerância a falhas através da replicação de blocos de dados entre diferentes nós.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-bigdata_3",
+    "topicId": "b1-bigdata",
+    "front": "Qual a principal diferença entre processamento Batch e Stream?",
+    "back": "- Batch: Processa grandes volumes de dados acumulados em intervalos (alta latência).\n- Stream: Processa dados continuamente conforme são gerados (baixa latência/tempo real).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-bigdata_4",
+    "topicId": "b1-bigdata",
+    "front": "No ecossistema Hadoop, qual a função básica do componente MapReduce?",
+    "back": "É o modelo de programação para processamento distribuído, dividindo o trabalho em duas fases: Map (filtra e distribui os dados) e Reduce (agrega e sumariza os resultados).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-bigdata_5",
+    "topicId": "b1-bigdata",
+    "front": "Por que o Apache Spark é considerado superior ao MapReduce em termos de performance?",
+    "back": "Devido ao processamento em memória (in-memory computing). Enquanto o MapReduce grava dados intermediários em disco, o Spark mantém os dados em RAM, sendo até 100x mais rápido em certas tarefas.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-bigdata_6",
+    "topicId": "b1-bigdata",
+    "front": "Quais são as três camadas (layers) que definem a Arquitetura Lambda?",
+    "back": "1. Batch Layer (processa o dado bruto histórico)\n2. Speed Layer (processa dados recentes em tempo real)\n3. Serving Layer (consolida as visões das duas camadas anteriores para consultas)",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-bigdata_7",
+    "topicId": "b1-bigdata",
+    "front": "No MapReduce, qual o objetivo da etapa intermediária de 'Shuffle and Sort'?",
+    "back": "Agrupar todas as saídas da fase Map que possuem a mesma chave (key) e ordená-las antes que sejam entregues aos respectivos Reducers.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-bigdata_8",
+    "topicId": "b1-bigdata",
+    "front": "Qual a diferença fundamental entre a Arquitetura Kappa e a Arquitetura Lambda?",
+    "back": "A Arquitetura Kappa elimina a Batch Layer, tratando todo o processamento (histórico e tempo real) como um fluxo contínuo (streaming), simplificando a base de código.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-bigdata_9",
+    "topicId": "b1-bigdata",
+    "front": "V ou F: O Apache Spark requer obrigatoriamente o HDFS para funcionar.",
+    "back": "Falso. O Spark é agnóstico quanto ao armazenamento; ele pode ler dados do S3, Cassandra, HBase, Azure Blob Storage ou até do sistema de arquivos local.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-bigdata_10",
+    "topicId": "b1-bigdata",
+    "front": "No Hadoop 2.x+, qual componente é responsável pelo gerenciamento de recursos do cluster, permitindo que outros frameworks (além do MapReduce) rodem no Hadoop?",
+    "back": "YARN (Yet Another Resource Negotiator). Ele separa as funções de gerenciamento de recursos e agendamento de tarefas da camada de processamento.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b2-ciclo-vida_1",
+    "topicId": "b2-ciclo-vida",
+    "front": "O que é o modelo Cascata no Ciclo de Vida de Software?",
+    "back": "Um modelo sequencial e linear onde cada fase (requisitos, design, implementação, teste, manutenção) deve ser completamente finalizada antes que a próxima se inicie. Não permite retornos a fases anteriores.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-ciclo-vida_2",
+    "topicId": "b2-ciclo-vida",
+    "front": "Qual a principal característica do modelo Incremental no Ciclo de Vida de Software?",
+    "back": "O software é desenvolvido em partes pequenas e funcionais (incrementos). Cada incremento adiciona novas funcionalidades ao software já existente, permitindo entregas parciais e feedback mais cedo.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-ciclo-vida_3",
+    "topicId": "b2-ciclo-vida",
+    "front": "Defina o modelo Espiral no Ciclo de Vida de Software.",
+    "back": "Um modelo híbrido que combina elementos do modelo Cascata com a prototipação iterativa, com forte ênfase na análise de riscos em cada iteração. Cada ciclo da espiral envolve planejamento, análise de risco, engenharia e avaliação.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-ciclo-vida_4",
+    "topicId": "b2-ciclo-vida",
+    "front": "Qual a principal diferença entre o modelo Cascata e o modelo Incremental?",
+    "back": "O Cascata é linear e sequencial, com entregas únicas ao final. O Incremental desenvolve o software em partes funcionais (incrementos), permitindo entregas parciais e feedback contínuo.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-ciclo-vida_5",
+    "topicId": "b2-ciclo-vida",
+    "front": "Em que cenário o modelo de Prototipação é mais vantajoso no Ciclo de Vida de Software?",
+    "back": "Quando os requisitos do cliente são incertos ou mal definidos. Permite criar uma versão preliminar (protótipo) para obter feedback e refinar os requisitos antes do desenvolvimento completo.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-ciclo-vida_6",
+    "topicId": "b2-ciclo-vida",
+    "front": "Qual o objetivo principal do DevOps no Ciclo de Vida de Software?",
+    "back": "Integrar as equipes de desenvolvimento (Dev) e operações (Ops) para automatizar e otimizar processos, melhorando a colaboração, a velocidade de entrega e a confiabilidade do software.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-ciclo-vida_7",
+    "topicId": "b2-ciclo-vida",
+    "front": "O que significa CI/CD no contexto de DevOps?",
+    "back": "CI (Continuous Integration - Integração Contínua): Desenvolvedores integram código frequentemente em um repositório compartilhado, onde testes automatizados são executados.\nCD (Continuous Delivery/Deployment - Entrega/Implantação Contínua): Práticas que garantem que o software possa ser lançado a qualquer momento, automatizando o processo de build, teste e deploy.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-ciclo-vida_8",
+    "topicId": "b2-ciclo-vida",
+    "front": "V ou F: O modelo Cascata é ideal para projetos com requisitos voláteis e que exigem feedback rápido do cliente.",
+    "back": "Falso. O modelo Cascata é rígido e sequencial, sendo inadequado para projetos com requisitos instáveis. Modelos ágeis ou prototipação são mais adequados nesses casos.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-ciclo-vida_9",
+    "topicId": "b2-ciclo-vida",
+    "front": "Qual a principal vantagem do modelo Ágil em comparação com modelos tradicionais como o Cascata?",
+    "back": "Flexibilidade e adaptabilidade a mudanças. Permite entregas frequentes de software funcional, feedback contínuo do cliente e melhor resposta a requisitos em evolução.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-ciclo-vida_10",
+    "topicId": "b2-ciclo-vida",
+    "front": "Qual a relação entre RUP (Rational Unified Process) e os modelos Ágeis?",
+    "back": "O RUP é um framework de processo iterativo e incremental que pode ser adaptado para ser mais ágil. Ele enfatiza a gestão de riscos e a arquitetura, mas pode ser configurado para incorporar práticas ágeis.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

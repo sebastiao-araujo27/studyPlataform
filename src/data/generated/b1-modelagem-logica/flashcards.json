@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b1-modelagem-logica_1",
+    "topicId": "b1-modelagem-logica",
+    "front": "O que caracteriza um **Modelo Relacional** de dados?",
+    "back": "Um Modelo Relacional é caracterizado por:\n*   Organização dos dados em **tabelas (relações)**, compostas por linhas (tuplas) e colunas (atributos).\n*   Relacionamentos entre tabelas estabelecidos por **chaves primárias e estrangeiras**.\n*   Baseado na teoria matemática de conjuntos e lógica de primeira ordem.\n*   Foco na **integridade** e **consistência** dos dados através de restrições.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-modelagem-logica_2",
+    "topicId": "b1-modelagem-logica",
+    "front": "Qual a função de um **Tablespace** em um banco de dados relacional?",
+    "back": "Um Tablespace é uma unidade de armazenamento lógico que agrupa segmentos de dados (tabelas, índices, etc.) e os mapeia para arquivos físicos no sistema operacional. Suas funções incluem:\n*   **Gerenciamento de armazenamento:** Permite alocar e controlar o espaço em disco para objetos de banco de dados.\n*   **Flexibilidade:** Possibilita o uso de diferentes configurações de armazenamento (ex: tipos de disco, performance) para diferentes grupos de dados.\n*   **Backup e Recuperação:** Facilita operações de backup e restore incrementais ou parciais.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-modelagem-logica_3",
+    "topicId": "b1-modelagem-logica",
+    "front": "O que é um **índice** em um banco de dados relacional?",
+    "back": "Um índice é uma estrutura de dados (semelhante a um índice de livro) que acelera a recuperação de linhas em uma tabela. Ele armazena um subconjunto ordenado de dados de uma ou mais colunas da tabela e um ponteiro para a localização das linhas completas, permitindo buscas mais rápidas sem varrer a tabela inteira.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-modelagem-logica_4",
+    "topicId": "b1-modelagem-logica",
+    "front": "Quais são os três principais componentes lógicos de um **Modelo Relacional**?",
+    "back": "Os três principais componentes lógicos são:\n1.  **Estrutura de dados:** Tabelas (relações), tuplas (linhas) e atributos (colunas).\n2.  **Restrições de integridade:** Regras para manter a consistência dos dados (ex: integridade de entidade, integridade referencial).\n3.  **Operações de manipulação:** Álgebra relacional (seleção, projeção, junção, etc.) para consultar e modificar dados.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-modelagem-logica_5",
+    "topicId": "b1-modelagem-logica",
+    "front": "Qual a principal diferença entre um **Modelo Lógico de Dados** e um **Modelo Físico de Dados**?",
+    "back": "A principal diferença é o nível de abstração e dependência de implementação:\n*   **Modelo Lógico:** Descreve os dados e seus relacionamentos de forma independente do SGBD específico, focando na estrutura do ponto de vista do negócio e dos usuários (ex: Modelo Relacional).\n*   **Modelo Físico:** Detalha como os dados serão implementados no SGBD real, incluindo tipos de dados específicos, índices, particionamento, tablespaces e outras otimizações de performance e armazenamento.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-modelagem-logica_6",
+    "topicId": "b1-modelagem-logica",
+    "front": "Como uma relação **N:M (muitos para muitos)** no Modelo Entidade-Relacionamento (MER) é mapeada para o **Modelo Relacional**?",
+    "back": "Uma relação N:M no MER é mapeada para uma **nova tabela (relação)** no Modelo Relacional. Esta nova tabela terá:\n*   Uma **chave primária composta** pelas chaves primárias das duas entidades envolvidas na relação N:M.\n*   As chaves primárias das entidades originais atuarão como **chaves estrangeiras** na nova tabela, referenciando suas respectivas tabelas.\n*   Pode conter atributos adicionais próprios da relação N:M.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-modelagem-logica_7",
+    "topicId": "b1-modelagem-logica",
+    "front": "Qual o objetivo principal do **particionamento de tabelas** em um banco de dados?",
+    "back": "O objetivo principal do particionamento de tabelas é melhorar a **gerenciabilidade** e o **desempenho** de grandes tabelas, dividindo-as em unidades menores e mais manejáveis (partições). Isso pode otimizar:\n*   **Desempenho de consultas:** Consultas que filtram por critérios de particionamento podem acessar apenas as partições relevantes (partition pruning).\n*   **Manutenção:** Permite realizar operações de manutenção (backup, restore, rebuild de índice) em subconjuntos menores dos dados.\n*   **Gerenciamento de armazenamento:** Possibilita alocar diferentes partições em diferentes mídias de armazenamento.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-modelagem-logica_8",
+    "topicId": "b1-modelagem-logica",
+    "front": "V ou F: \"Um índice sempre melhora o desempenho de consultas em um banco de dados relacional.\" Justifique.",
+    "back": "**Falso.**\n*   **Melhora:** Índices geralmente melhoram o desempenho de consultas que envolvem filtragem (cláusula WHERE), ordenação (ORDER BY) e junções (JOIN) em grandes volumes de dados.\n*   **Piora/Custo:** Índices consomem espaço em disco e, mais criticamente, adicionam overhead em operações de **INSERT, UPDATE e DELETE**, pois o índice precisa ser atualizado junto com os dados da tabela. Um excesso de índices ou índices mal planejados podem prejudicar o desempenho geral do banco de dados, especialmente em sistemas com alta carga de escrita.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-modelagem-logica_9",
+    "topicId": "b1-modelagem-logica",
+    "front": "Além da melhoria de desempenho e gerenciabilidade, quais outras vantagens o **particionamento de tabelas** pode oferecer em um ambiente de banco de dados?",
+    "back": "Além de desempenho e gerenciabilidade, o particionamento pode oferecer:\n*   **Disponibilidade:** Operações de manutenção (ex: rebuild de índice) podem ser realizadas em uma partição sem afetar a disponibilidade das demais.\n*   **Segurança:** Permite aplicar diferentes políticas de segurança e backup a diferentes conjuntos de dados (partições).\n*   **Armazenamento Hierárquico:** Possibilita o uso de diferentes mídias de armazenamento para diferentes partições (ex: dados históricos em armazenamento mais lento e barato, dados atuais em armazenamento de alta performance).\n*   **Recuperação de Desastres:** Facilita a recuperação de dados em caso de falha, permitindo restaurar apenas as partições afetadas.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-modelagem-logica_10",
+    "topicId": "b1-modelagem-logica",
+    "front": "No mapeamento MER para Relacional, como entidades fracas (weak entities) são representadas, e qual a regra para suas chaves primárias?",
+    "back": "No mapeamento MER para Relacional:\n*   **Representação:** Uma entidade fraca é mapeada para uma **nova tabela (relação)**, assim como uma entidade forte.\n*   **Chave Primária:** Sua chave primária é **composta** por:\n    1.  A chave primária da entidade forte (proprietária) da qual ela depende (que atuará como chave estrangeira na tabela da entidade fraca).\n    2.  Seu **discriminador** (ou atributo parcial), que a identifica unicamente dentro do contexto da entidade forte.\n    A chave primária da entidade forte também será uma chave estrangeira na tabela da entidade fraca, garantindo a integridade referencial.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

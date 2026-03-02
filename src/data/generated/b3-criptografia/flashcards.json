@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b3-criptografia_1",
+    "topicId": "b3-criptografia",
+    "front": "Qual a principal diferença entre AES (criptografia simétrica) e RSA (criptografia assimétrica)?",
+    "back": "AES usa uma ÚNICA chave compartilhada para cifrar e decifrar (rápido, ideal para grandes volumes de dados). RSA usa um PAR de chaves — pública e privada (lento, usado para troca de chaves e assinatura digital). AES-256 opera com chaves de 256 bits; RSA requer chaves de 2048-4096 bits para segurança equivalente. Na prática, sistemas usam criptografia HÍBRIDA: RSA/ECDHE troca a chave simétrica, AES cifra os dados.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-criptografia_2",
+    "topicId": "b3-criptografia",
+    "front": "Quais são as três propriedades fundamentais de uma função hash criptográfica?",
+    "back": "1. **Resistência à preimagem (one-way):** Dado um hash h, é inviável encontrar m tal que H(m) = h.\n2. **Resistência à segunda preimagem:** Dado m₁, é inviável encontrar m₂ ≠ m₁ com H(m₁) = H(m₂).\n3. **Resistência à colisão:** É inviável encontrar quaisquer m₁ ≠ m₂ com mesmo hash.\n\nAlgoritmos seguros: SHA-256, SHA-3. Inseguros: MD5 (128 bits), SHA-1 (160 bits).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-criptografia_3",
+    "topicId": "b3-criptografia",
+    "front": "Descreva o processo completo de assinatura digital (assinar e verificar).",
+    "back": "**Assinar:** (1) Calcular o hash (SHA-256) do documento → digest. (2) Cifrar o digest com a chave PRIVADA do remetente → assinatura digital.\n\n**Verificar:** (1) Decifrar a assinatura com a chave PÚBLICA do remetente → digest original. (2) Recalcular o hash do documento recebido. (3) Comparar os dois digests — se iguais, assinatura válida.\n\n**Garante:** autenticidade, integridade, não-repúdio. **NÃO garante:** confidencialidade. Cifra apenas o HASH, não o documento inteiro.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-criptografia_4",
+    "topicId": "b3-criptografia",
+    "front": "Quais são os principais campos de um certificado digital no padrão X.509?",
+    "back": "• **Subject:** identidade do titular (nome, CNPJ, domínio)\n• **Issuer:** AC que emitiu o certificado\n• **Validade:** datas de início e expiração\n• **Chave pública:** chave pública do titular\n• **Número serial:** identificador único\n• **Assinatura da CA:** assinatura digital da AC emissora\n• **Algoritmo de assinatura:** algoritmo usado pela CA\n• **Extensões:** uso da chave, nomes alternativos, CRL distribution points\n\nNa ICP-Brasil: A1 (software, 1 ano) vs A3 (hardware/token, 1-5 anos, mais seguro).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-criptografia_5",
+    "topicId": "b3-criptografia",
+    "front": "Como funciona a hierarquia da ICP-Brasil?",
+    "back": "**ICP-Brasil** (MP 2.200-2/2001) — PKI oficial do Brasil:\n\n1. **AC-Raiz (ITI):** Topo da hierarquia, certificado autoassinado. Emite certificados APENAS para ACs de 1º nível (NÃO para usuários).\n2. **ACs de 1º Nível:** Ex.: SERPRO, Certisign, SERASA. Subordinadas à AC-Raiz.\n3. **ACs de 2º Nível:** Subordinadas às ACs de 1º Nível.\n4. **ARs (Autoridades de Registro):** Interface com o usuário final, verificam identidade presencialmente.\n\nCadeia de confiança: cada certificado é assinado pela CA de nível superior, até a AC-Raiz.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-criptografia_6",
+    "topicId": "b3-criptografia",
+    "front": "Descreva o handshake TLS 1.2 simplificado e as melhorias do TLS 1.3.",
+    "back": "**TLS 1.2 (2-RTT):** ClientHello → ServerHello + Certificate + ServerKeyExchange → ClientKeyExchange → ChangeCipherSpec/Finished.\n\n**TLS 1.3 (1-RTT) — melhorias:**\n• Handshake reduzido para 1-RTT (0-RTT para reconexão)\n• PFS **obrigatório** (somente ECDHE/DHE)\n• RSA key transport **removido**\n• Apenas cifras AEAD: AES-GCM, ChaCha20-Poly1305\n• Removidos: RC4, DES, 3DES, CBC, MD5, SHA-1\n• 0-RTT é rápido mas vulnerável a replay attacks",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-criptografia_7",
+    "topicId": "b3-criptografia",
+    "front": "O que é o protocolo Diffie-Hellman e qual sua relação com Perfect Forward Secrecy?",
+    "back": "**Diffie-Hellman (DH):** Protocolo de TROCA DE CHAVES (não cifra mensagens nem gera assinaturas). Permite que duas partes estabeleçam uma chave secreta compartilhada sobre um canal inseguro, usando exponenciação modular (g^a mod p).\n\n**Perfect Forward Secrecy (PFS):** Garantia de que sessões passadas não podem ser decifradas mesmo se a chave privada do servidor for comprometida no futuro. Alcançado usando DH em modo EFÊMERO (DHE/ECDHE) — chaves temporárias geradas e descartadas a cada sessão.\n\nNo TLS 1.3, PFS é obrigatório (somente ECDHE/DHE).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-criptografia_8",
+    "topicId": "b3-criptografia",
+    "front": "O que é Perfect Forward Secrecy (PFS) e por que é importante?",
+    "back": "**PFS** garante que comprometer a chave privada de longo prazo do servidor NÃO permite decifrar sessões passadas.\n\n**Como funciona:** Cada sessão TLS gera chaves efêmeras (temporárias) via ECDHE ou DHE. Após a sessão, essas chaves são descartadas. Mesmo que um atacante capture todo o tráfego cifrado e depois obtenha a chave privada do servidor, ele não consegue derivar as chaves de sessão passadas.\n\n**Sem PFS (RSA key transport):** Cliente cifra pre-master secret com chave pública do servidor. Se a chave privada do servidor vazar, TODAS as sessões passadas podem ser decifradas.\n\n**TLS 1.3:** PFS é obrigatório por design.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-criptografia_9",
+    "topicId": "b3-criptografia",
+    "front": "Quais os modos de operação de cifras de bloco e qual é considerado inseguro?",
+    "back": "• **ECB (Electronic Codebook):** Cada bloco cifrado independentemente. **INSEGURO** — blocos iguais geram cifras iguais, revelando padrões (ex.: pinguim ECB).\n• **CBC (Cipher Block Chaining):** Cada bloco XOR com o bloco cifrado anterior + IV. Mais seguro que ECB, mas não paralelizável.\n• **CTR (Counter):** Usa contador, transforma cifra de bloco em cifra de fluxo. Paralelizável e permite acesso aleatório.\n• **GCM (Galois/Counter Mode):** CTR + autenticação (GMAC). Fornece confidencialidade + autenticidade (AEAD). Preferido no TLS 1.2/1.3.\n\n**Para prova:** ECB é sempre a resposta para \"modo inseguro\". GCM é o modo preferido.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-criptografia_10",
+    "topicId": "b3-criptografia",
+    "front": "Como a blockchain se relaciona com criptografia e hashing?",
+    "back": "**Blockchain** é uma cadeia de blocos ligados por hashes criptográficos:\n\n• Cada bloco contém: dados + **hash do bloco anterior** + nonce\n• O hash (geralmente SHA-256) encadeia os blocos, garantindo **imutabilidade** — alterar um bloco exige recalcular todos os hashes subsequentes\n• **Assinatura digital** (criptografia assimétrica) identifica e autentica os participantes das transações\n• Cada transação é assinada com a chave privada do remetente\n\n**Na Petrobras:** Pode ser usado para rastreabilidade de petróleo, certificação de origem, auditoria de processos logísticos. Combina hashing (integridade da cadeia) com criptografia assimétrica (identidade dos participantes).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b3-seguranca-iot_1",
+    "topicId": "b3-seguranca-iot",
+    "front": "Quais são as 3 primeiras vulnerabilidades do OWASP IoT Top 10 (2018)?",
+    "back": "I1 — Weak, Guessable, or Hardcoded Passwords (Senhas Fracas/Hardcoded): credenciais padrão, brute force. I2 — Insecure Network Services (Serviços de Rede Inseguros): portas abertas, protocolos sem criptografia. I3 — Insecure Ecosystem Interfaces (Interfaces de Ecossistema Inseguras): APIs e backends sem autenticação/autorização adequada. Exemplo clássico do I1: botnet Mirai explorou credenciais padrão em 600.000+ dispositivos IoT.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-iot_2",
+    "topicId": "b3-seguranca-iot",
+    "front": "Qual a diferença fundamental entre MQTT e CoAP em termos de protocolo de transporte e modelo de comunicação?",
+    "back": "MQTT: opera sobre TCP, modelo publish/subscribe com broker central, portas 1883 (sem TLS) e 8883 (com TLS). CoAP: opera sobre UDP, modelo request/response (REST-like com GET/PUT/POST/DELETE), portas 5683 (sem DTLS) e 5684 (com DTLS). MQTT é ideal para telemetria contínua; CoAP para comandos pontuais em dispositivos constrained. A segurança do CoAP usa DTLS (Datagram TLS) por operar sobre UDP.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-iot_3",
+    "topicId": "b3-seguranca-iot",
+    "front": "Como funcionou o botnet Mirai e qual foi seu impacto?",
+    "back": "O Mirai (2016) escaneava a internet procurando dispositivos IoT (câmeras IP, DVRs, roteadores) com porta Telnet aberta. Tentava autenticar-se usando 61 combinações de credenciais padrão de fábrica (admin/admin, root/root). Controlou 600.000+ dispositivos e lançou ataque DDoS de 1.2 Tbps contra o provedor DNS Dyn, derrubando Twitter, Netflix, Reddit e Spotify. Explorou a vulnerabilidade I1 do OWASP IoT Top 10 (senhas fracas/padrão).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-iot_4",
+    "topicId": "b3-seguranca-iot",
+    "front": "O que é Edge Computing e por que é importante para segurança IoT em ambientes industriais?",
+    "back": "Edge Computing é o processamento de dados próximo à fonte de geração (na 'borda' da rede), em vez de enviar tudo para a nuvem. Benefícios: reduz latência (decisões em tempo real), economiza largura de banda, permite operação offline, dados sensíveis ficam locais. Essencial para plataformas offshore (Petrobras) com conectividade limitada via satélite. Diferente de Fog Computing (processamento em nós intermediários da rede como roteadores — conceito Cisco). Edge é complementar à segurança em nuvem, não substituto.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-iot_5",
+    "topicId": "b3-seguranca-iot",
+    "front": "O que é Secure Boot e como se diferencia de Firmware Encryption?",
+    "back": "Secure Boot: processo de inicialização que verifica a INTEGRIDADE e AUTENTICIDADE do firmware usando assinatura digital e cadeia de confiança (chain of trust). Garante que firmware não foi alterado. Firmware Encryption: protege a CONFIDENCIALIDADE do firmware, impedindo engenharia reversa. São complementares, não equivalentes. Um dispositivo pode ter secure boot sem firmware criptografado (verifica assinatura mas firmware é legível) ou firmware criptografado sem secure boot. Hardware Root of Trust: TPM ou TEE.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-iot_6",
+    "topicId": "b3-seguranca-iot",
+    "front": "O que são sistemas SCADA/ICS e qual sua relevância para segurança IoT na Petrobras?",
+    "back": "ICS (Industrial Control Systems): sistemas que controlam processos industriais. SCADA (Supervisory Control and Data Acquisition): tipo de ICS que supervisiona e controla processos geograficamente distribuídos (dutos, plataformas). Componentes: PLCs (controladores lógicos programáveis), RTUs (unidades terminais remotas), HMI (interface humano-máquina). Relevância Petrobras: controlam processos em plataformas offshore, refinarias e dutos. Prioridade: Disponibilidade > Integridade > Confidencialidade. Padrão de segurança: ISA/IEC 62443.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-iot_7",
+    "topicId": "b3-seguranca-iot",
+    "front": "Descreva o Modelo Purdue e seus níveis principais.",
+    "back": "Modelo Purdue (PERA): arquitetura de referência para redes industriais (ISA/IEC 62443). Níveis: 0 (Processo) — sensores, atuadores; 1 (Controle) — PLCs, RTUs, DCS; 2 (Supervisão) — HMI, SCADA; 3 (Operações) — historiador, MES; 3.5 (DMZ Industrial) — firewall, data diode (separa TI de TO); 4 (Negócios) — planejamento de produção; 5 (Corporativo) — ERP, e-mail, internet. Regra fundamental: nenhum tráfego deve fluir diretamente entre TI (Níveis 4-5) e TO (Níveis 0-3) sem passar pela DMZ Industrial.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-iot_8",
+    "topicId": "b3-seguranca-iot",
+    "front": "O que é o padrão ISA/IEC 62443 e como se diferencia da ISO 27001?",
+    "back": "ISA/IEC 62443: série de padrões internacionais específica para segurança de Sistemas de Automação e Controle Industrial (IACS). Define zonas de segurança, níveis de segurança (SL 1-4), requisitos para componentes, sistemas e políticas em ambientes industriais/OT. ISO 27001: padrão genérico de segurança da informação para TI. Diferença principal: ISA/IEC 62443 é específico para ambientes industriais (OT) onde disponibilidade é prioridade; ISO 27001 é genérico para TI onde confidencialidade é prioridade. Para ambientes como Petrobras (plataformas, refinarias, SCADA), o ISA/IEC 62443 é o mais adequado.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-iot_9",
+    "topicId": "b3-seguranca-iot",
+    "front": "Qual a diferença entre TI (IT) e TO (OT) na priorização da tríade CIA?",
+    "back": "TI (Tecnologia da Informação): Confidencialidade > Integridade > Disponibilidade. Foco em proteção de dados, ciclo de vida 3-5 anos, patches regulares. Padrões: ISO 27001, LGPD, PCI-DSS. TO (Tecnologia Operacional): Disponibilidade > Integridade > Confidencialidade. Foco em continuidade operacional, ciclo de vida 10-20+ anos, patches raros (risco de parada). Padrão: ISA/IEC 62443. Consequência de falha em TO: risco à vida humana e ao meio ambiente. A convergência TI/TO é um dos maiores desafios de segurança modernos.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-iot_10",
+    "topicId": "b3-seguranca-iot",
+    "front": "Quais são os principais tipos de ataques específicos a dispositivos IoT?",
+    "back": "1) Botnets (ex: Mirai): recrutam dispositivos com credenciais padrão para DDoS. 2) Side-channel attacks: analisam consumo de energia ou emissão eletromagnética para extrair chaves (DPA). 3) Firmware extraction: extração via JTAG/UART para engenharia reversa (Binwalk). 4) Man-in-the-Middle: interceptação da comunicação dispositivo-nuvem. 5) Replay attacks: captura e reenvio de comandos legítimos. 6) Jamming: interferência proposital no sinal wireless (Zigbee, BLE). 7) Supply chain attack: comprometimento durante fabricação. Mitigações: secure boot, OTA com assinatura, certificados X.509, segmentação de rede, criptografia leve.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

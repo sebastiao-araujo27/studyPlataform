@@ -1,0 +1,262 @@
+[
+  {
+    "id": "ex_b2-design-thinking_1",
+    "topicId": "b2-design-thinking",
+    "blocoId": "bloco-2",
+    "question": "Em um contexto de inovação e desenvolvimento de novos produtos ou serviços, como o que ocorre frequentemente em grandes corporações como a Petrobras, o Design Thinking se destaca por sua abordagem centrada no ser humano. A primeira etapa fundamental nesse processo visa a uma compreensão profunda dos desafios e necessidades dos usuários, antes mesmo de se pensar em soluções. Qual é o conceito central que descreve essa etapa de imersão e entendimento do outro, buscando enxergar o mundo através de sua perspectiva?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Definição do Problema: Foca na delimitação clara e objetiva do escopo do desafio a ser resolvido, formulando um ponto de vista acionável.",
+        "isCorrect": false,
+        "explanation": "Esta alternativa descreve a fase de Definição, que ocorre após a fase de Empatia, onde os insights são sintetizados em um problema claro."
+      },
+      {
+        "letter": "B",
+        "text": "Validação de Hipóteses: Concentra-se na testagem de suposições iniciais sobre o mercado e os usuários para confirmar sua relevância.",
+        "isCorrect": false,
+        "explanation": "A validação de hipóteses é característica das fases de Prototipagem e Teste, que vêm muito depois da imersão inicial."
+      },
+      {
+        "letter": "C",
+        "text": "Geração de Ideias: Consiste na busca ativa por múltiplas soluções criativas para o problema identificado, sem julgamento inicial.",
+        "isCorrect": false,
+        "explanation": "Esta alternativa se refere à fase de Ideação, que é realizada após a compreensão e definição do problema."
+      },
+      {
+        "letter": "D",
+        "text": "Empatia: Caracteriza-se pela capacidade de se colocar no lugar do usuário, compreendendo suas dores, desejos, motivações e o contexto em que vive.",
+        "isCorrect": true,
+        "explanation": "A Empatia é a fase inicial do Design Thinking, focada em uma compreensão profunda e humana das necessidades dos usuários."
+      },
+      {
+        "letter": "E",
+        "text": "Análise de Dados Quantitativos: Prioriza a coleta e interpretação de métricas e estatísticas para fundamentar decisões de forma objetiva.",
+        "isCorrect": false,
+        "explanation": "Embora a análise de dados seja importante, a fase de Empatia foca predominantemente em métodos qualitativos e na experiência humana, não se limitando a dados quantitativos."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A fase de Empatia é a pedra angular do Design Thinking, sendo o ponto de partida para qualquer processo de inovação centrado no ser humano. Seu objetivo principal é mergulhar profundamente no universo dos usuários, buscando compreender suas experiências, necessidades não articuladas, dores, desejos e motivações. Isso é feito por meio de técnicas qualitativas como observação, entrevistas em profundidade, pesquisa etnográfica e imersão no contexto do usuário. Não se trata apenas de coletar dados, mas de desenvolver uma perspectiva genuína e emocional sobre a realidade do outro, fundamental para criar soluções verdadeiramente relevantes e desejáveis. As demais opções descrevem outras fases do Design Thinking: 'Definição do Problema' é a fase subsequente, onde o problema é claramente formulado a partir dos insights da empatia; 'Geração de Ideias' é a fase de ideação; 'Validação de Hipóteses' e 'Análise de Dados Quantitativos' são mais associadas às fases de prototipação e teste, embora dados quantitativos possam complementar a empatia, não a definem como fase principal. A empatia é essencial para garantir que as soluções desenvolvidas sejam realmente relevantes e desejáveis para quem as utilizará, fundamentando todo o processo de design.",
+    "technicalJustification": "Segundo Tim Brown, em 'Change by Design', a empatia é o ponto de partida do Design Thinking, fundamental para construir uma compreensão profunda dos usuários e suas necessidades. A IDEO também enfatiza a importância da empatia como base para o 'Human-Centered Design' (HCD), onde a observação e a imersão são cruciais para revelar insights e identificar problemas reais.",
+    "relatedConcepts": [
+      "Empatia",
+      "Design Thinking",
+      "Human-Centered Design (HCD)",
+      "Pesquisa Qualitativa",
+      "Usuário"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b2-design-thinking_2",
+    "topicId": "b2-design-thinking",
+    "blocoId": "bloco-2",
+    "question": "Uma equipe de desenvolvimento da Petrobras, encarregada de otimizar o processo de abastecimento de plataformas offshore, concluiu a fase de entendimento profundo das necessidades dos operadores e técnicos envolvidos, e já sintetizou os insights em um problema claro a ser resolvido. Agora, munida dessas informações, a equipe se reúne para uma sessão intensa de brainstorming, utilizando técnicas como mapas mentais e 'como poderíamos'. O objetivo é explorar o maior número possível de caminhos e soluções inovadoras, sem julgamento inicial, para resolver o desafio identificado. A que fase do Design Thinking essa atividade corresponde?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Definição: Fase de síntese dos insights para formular um ponto de vista claro e acionável sobre o problema, delimitando o escopo.",
+        "isCorrect": false,
+        "explanation": "A equipe já concluiu a fase de Definição, tendo sintetizado os insights e definido o problema. Agora, busca soluções."
+      },
+      {
+        "letter": "B",
+        "text": "Prototipação: Materialização das ideias em versões tangíveis e de baixo custo para testar conceitos e coletar feedback inicial.",
+        "isCorrect": false,
+        "explanation": "A prototipação é a fase de construção de artefatos físicos ou digitais, que ocorre após a geração das ideias. A equipe ainda está gerando as ideias."
+      },
+      {
+        "letter": "C",
+        "text": "Teste: Validação das soluções com usuários reais para coletar feedback e realizar iterações, garantindo a adequação do produto ou serviço.",
+        "isCorrect": false,
+        "explanation": "O teste é a fase final do ciclo iterativo, onde os protótipos são avaliados pelos usuários. A equipe ainda está na etapa de geração de ideias."
+      },
+      {
+        "letter": "D",
+        "text": "Empatia: Imersão no contexto do usuário para compreender suas dores, necessidades e motivações, sem focar em soluções.",
+        "isCorrect": false,
+        "explanation": "A equipe já concluiu a fase de Empatia e Definição, e agora está focada em gerar soluções para o problema compreendido."
+      },
+      {
+        "letter": "E",
+        "text": "Ideação: Etapa focada na geração de uma vasta gama de soluções criativas para o problema definido, sem restrições iniciais de viabilidade.",
+        "isCorrect": true,
+        "explanation": "A descrição da atividade – sessão de brainstorming para explorar o maior número possível de soluções inovadoras, sem julgamento – corresponde perfeitamente à fase de Ideação."
+      }
+    ],
+    "difficulty": "facil-medio",
+    "source": "autoral",
+    "detailedExplanation": "A fase de Ideação é o momento do Design Thinking em que a equipe, após ter compreendido profundamente o problema (Empatia) e o ter definido de forma clara (Definição), se dedica a gerar o maior número possível de soluções criativas. É uma etapa divergente, onde a quantidade de ideias é mais importante que a qualidade inicial, e o julgamento é suspenso para estimular a livre associação e o pensamento 'fora da caixa'. Técnicas como brainstorming, brainwriting, SCAMPER e 'como poderíamos' são comumente utilizadas para explorar uma vasta gama de possibilidades. A descrição da equipe realizando uma sessão intensa de brainstorming e explorando 'o maior número possível de caminhos e soluções inovadoras, sem julgamento inicial' se encaixa perfeitamente na descrição da fase de Ideação. As outras opções representam fases distintas do processo: 'Definição' é a fase anterior; 'Prototipação' e 'Teste' são fases posteriores, focadas na materialização e validação das ideias geradas; e 'Empatia' é a fase inicial de compreensão.",
+    "technicalJustification": "Conforme Tim Brown em 'Change by Design', a ideação é a fase em que os designers geram uma ampla gama de possibilidades, explorando soluções potenciais para os problemas identificados. É uma fase de pensamento divergente, onde a criatividade é incentivada para gerar o maior número de ideias, seguindo os princípios do Human-Centered Design da IDEO.",
+    "relatedConcepts": [
+      "Ideação",
+      "Design Thinking",
+      "Brainstorming",
+      "Pensamento Divergente",
+      "Solução de Problemas",
+      "Fases do Design Thinking"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b2-design-thinking_3",
+    "topicId": "b2-design-thinking",
+    "blocoId": "bloco-2",
+    "question": "A Petrobras está buscando desenvolver um novo serviço digital para otimizar a comunicação entre equipes de campo e a central de operações, visando a maior agilidade na tomada de decisões em situações críticas. Para isso, adotou a metodologia do Double Diamond, um modelo que representa o processo do Design Thinking através de duas fases principais de divergência e convergência. Nesse contexto, considere as seguintes afirmativas sobre a aplicação desse modelo: \n\nI. A primeira fase do Double Diamond, 'Descobrir' (Discover), foca na compreensão ampla do problema e do contexto do usuário, caracterizando um pensamento divergente, onde muitas informações são coletadas.\n\nII. A fase de 'Definir' (Define) consiste na síntese dos insights coletados, transformando uma grande quantidade de informações em um problema claro e acionável, sendo um momento de convergência.\n\nIII. As fases de 'Desenvolver' (Develop) e 'Entregar' (Deliver) são intrinsecamente lineares, sem espaço para iterações ou ajustes após a primeira prototipagem, garantindo a eficiência e rapidez do projeto.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I, apenas.",
+        "isCorrect": false,
+        "explanation": "A afirmativa I está correta, mas a afirmativa II também está correta, tornando esta opção incompleta."
+      },
+      {
+        "letter": "B",
+        "text": "III, apenas.",
+        "isCorrect": false,
+        "explanation": "A afirmativa III está incorreta, pois o Design Thinking e o Double Diamond são processos iterativos, não lineares."
+      },
+      {
+        "letter": "C",
+        "text": "I e II, apenas.",
+        "isCorrect": true,
+        "explanation": "As afirmativas I e II descrevem corretamente as fases do Double Diamond, enquanto a afirmativa III está equivocada quanto à natureza iterativa do processo."
+      },
+      {
+        "letter": "D",
+        "text": "II e III, apenas.",
+        "isCorrect": false,
+        "explanation": "A afirmativa II está correta, mas a afirmativa III está incorreta, invalidando esta opção."
+      },
+      {
+        "letter": "E",
+        "text": "I, II e III.",
+        "isCorrect": false,
+        "explanation": "A afirmativa III está incorreta, pois o processo é iterativo, não linear. Portanto, esta opção está errada."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "O modelo Double Diamond, desenvolvido pelo Design Council, é uma representação visual do processo de Design Thinking, dividindo-o em quatro fases (Descobrir, Definir, Desenvolver, Entregar) organizadas em dois 'diamantes' que alternam entre pensamento divergente (explorar amplamente) e convergente (refinar e focar). \n\n*   **I. Correta**: A fase 'Descobrir' (Discover) é a primeira etapa, focada na pesquisa e imersão para entender o problema e o contexto do usuário da forma mais ampla possível, gerando uma grande quantidade de informações. Isso é, de fato, um pensamento divergente, caracterizado pela exploração de múltiplas perspectivas e dados.\n\n*   **II. Correta**: A fase 'Definir' (Define) é a segunda etapa, onde os insights coletados na fase de 'Descobrir' são sintetizados para formular um problema claro e acionável. É um momento de convergência, onde o foco é estreitado para um desafio específico e bem formulado, a partir da vasta quantidade de informações coletadas.\n\n*   **III. Incorreta**: As fases de 'Desenvolver' (Develop) e 'Entregar' (Deliver) no Design Thinking, e no Double Diamond, não são lineares. O processo é inerentemente iterativo, o que significa que há um ciclo contínuo de prototipagem, teste e refinamento. Ajustes e novas iterações são esperados e incentivados, mesmo após a prototipagem inicial, para garantir que a solução final seja a mais adequada e desejável. A afirmação de que não há espaço para iterações após a primeira prototipagem contradiz a natureza flexível, adaptativa e de aprendizado contínuo do Design Thinking, que busca aprimoramento constante com base no feedback dos usuários. \n\nPortanto, apenas as afirmativas I e II estão corretas.",
+    "technicalJustification": "O Design Council descreve o Double Diamond como um processo com fases de divergência (Descobrir e Desenvolver) e convergência (Definir e Entregar). Tim Brown, em 'Change by Design', e a metodologia HCD da IDEO enfatizam a natureza iterativa do Design Thinking, onde prototipagem e teste são ciclos contínuos de aprendizado e refinamento, desmentindo a linearidade da afirmativa III.",
+    "relatedConcepts": [
+      "Double Diamond",
+      "Design Thinking",
+      "Pensamento Divergente",
+      "Pensamento Convergente",
+      "Iteração",
+      "Fases do Design Thinking"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b2-design-thinking_4",
+    "topicId": "b2-design-thinking",
+    "blocoId": "bloco-2",
+    "question": "Em um projeto de inovação na Petrobras para aprimorar a experiência de seus colaboradores com sistemas internos de gestão de projetos, a equipe de Design Thinking está prestes a entrar na fase de Prototipação. Esta fase é crucial para tangibilizar as ideias geradas e aprender rapidamente. No entanto, é fundamental diferenciar a Prototipação de outras fases, especialmente do Teste, que vem em seguida e possui um propósito distinto. Assinale a alternativa que **NÃO** descreve uma característica da fase de Prototipação.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Criação de versões simplificadas e de baixo custo de uma ideia ou solução para explorar diferentes conceitos.",
+        "isCorrect": false,
+        "explanation": "Esta é uma característica central da prototipagem: tornar ideias tangíveis de forma econômica para experimentação."
+      },
+      {
+        "letter": "B",
+        "text": "Foco em aprender e iterar rapidamente, aceitando que a primeira versão será imperfeita e servirá como base para melhorias.",
+        "isCorrect": false,
+        "explanation": "O objetivo da prototipagem é exatamente o aprendizado rápido e a iteração, falhando cedo e barato para refinar as ideias."
+      },
+      {
+        "letter": "C",
+        "text": "Materialização de conceitos abstratos em algo tangível (como um wireframe, maquete ou simulação) para facilitar a interação e o feedback.",
+        "isCorrect": false,
+        "explanation": "A prototipagem é o ato de dar forma física ou digital a ideias abstratas, permitindo que sejam vistas e tocadas."
+      },
+      {
+        "letter": "D",
+        "text": "Validação da solução final com usuários reais para ajustes pontuais e refinamento definitivo antes do lançamento em larga escala.",
+        "isCorrect": true,
+        "explanation": "Esta descrição se alinha mais à fase de Teste, onde a solução (ou protótipo mais refinado) é validada com usuários para feedback final e refinamento definitivo. A prototipagem se concentra na criação do artefato para aprender, enquanto o teste se concentra na interação com o usuário para validar."
+      },
+      {
+        "letter": "E",
+        "text": "Experimentação com diferentes abordagens para um mesmo problema, sem o compromisso de desenvolver a solução completa ou perfeita.",
+        "isCorrect": false,
+        "explanation": "A prototipagem permite a experimentação de múltiplas abordagens de forma rápida e com baixo risco, sem a necessidade de um desenvolvimento completo."
+      }
+    ],
+    "difficulty": "medio-dificil",
+    "source": "autoral",
+    "detailedExplanation": "A fase de Prototipação no Design Thinking visa transformar ideias abstratas em representações tangíveis e de baixo custo, permitindo que a equipe e os usuários interajam com elas. O principal objetivo é aprender rapidamente sobre a viabilidade, desejabilidade e funcionalidade das ideias, aceitando que os protótipos são rascunhos e não produtos finais.\n\n*   As alternativas A, B, C e E descrevem características essenciais da prototipação:\n    *   A: Prototipagem é sobre criar versões simplificadas e de baixo custo (wireframes, maquetes, simulações) para explorar conceitos, focando no 'fazer para pensar'.\n    *   B: O objetivo é aprender e iterar rapidamente, falhando cedo e barato, para que os aprendizados informem as próximas iterações.\n    *   C: Materializar ideias torna-as mais compreensíveis, tangíveis e facilita o feedback, pois as pessoas podem interagir com algo concreto.\n    *   E: Permite experimentar diferentes caminhos ou soluções para um problema, sem o alto custo e o tempo de desenvolver uma solução completa.\n\n*   A alternativa D, 'Validação da solução final com usuários reais para ajustes pontuais e refinamento definitivo antes do lançamento em larga escala', descreve mais precisamente a fase de **Teste**. Embora protótipos sejam testados, a validação *final* e o refinamento *definitivo* com usuários reais para garantir que a solução atende plenamente às necessidades e expectativas é a essência da fase de Teste. A prototipagem é a *criação* do artefato a ser testado, e o teste é a *interação* com usuários para coletar feedback e validar hipóteses. A distinção é sutil, mas importante: prototipar é fazer para pensar e aprender; testar é interagir com o protótipo para obter feedback e validar. A menção de 'solução final' e 'refinamento definitivo' indica uma etapa mais avançada de validação, típica do teste, não da criação inicial do protótipo.",
+    "technicalJustification": "Tim Brown, em 'Change by Design', enfatiza que a prototipagem é a ferramenta para 'tornar as ideias tangíveis' e 'aprender fazendo'. A fase de Teste, por sua vez, é onde esses protótipos são colocados nas mãos dos usuários para obter feedback e refinar a solução, como descrito na metodologia HCD da IDEO. A distinção entre prototipar (criar para aprender) e testar (validar com usuários) é fundamental para a compreensão do ciclo de Design Thinking.",
+    "relatedConcepts": [
+      "Prototipação",
+      "Teste",
+      "Design Thinking",
+      "Iteração",
+      "Feedback",
+      "Aprendizado Rápido",
+      "Fases do Design Thinking"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b2-design-thinking_5",
+    "topicId": "b2-design-thinking",
+    "blocoId": "bloco-2",
+    "question": "A Petrobras, buscando liderar a transição energética e desenvolver soluções mais sustentáveis, propôs um projeto ambicioso para criar um ecossistema digital de gestão de energia para grandes consumidores industriais. Este projeto exige não apenas a criação de uma plataforma tecnológica robusta, mas também a redefinição de múltiplos pontos de contato e interações de serviço, desde a prospecção do cliente até o suporte pós-venda. Para garantir o sucesso e a aceitação pelos usuários, a equipe de inovação decidiu aplicar uma abordagem integrada de Design Thinking. Qual das abordagens a seguir seria a mais completa e adequada para um projeto dessa complexidade, considerando os princípios do Design Thinking, HCD e Service Design?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Focar exclusivamente na fase de Ideação para gerar o máximo de funcionalidades possíveis, priorizando a quantidade de ideias sobre a viabilidade técnica e a aceitação do usuário, e depois escolher a mais promissora.",
+        "isCorrect": false,
+        "explanation": "Focar exclusivamente na ideação ignora as fases de empatia, definição, prototipação e teste, que são cruciais para a validação e o sucesso da solução no Design Thinking."
+      },
+      {
+        "letter": "B",
+        "text": "Adotar um ciclo linear de desenvolvimento, começando com a especificação técnica detalhada da plataforma, seguida pela codificação e, por fim, a entrega ao cliente, com ajustes mínimos pós-lançamento.",
+        "isCorrect": false,
+        "explanation": "Uma abordagem linear (waterfall) é contrária aos princípios iterativos e flexíveis do Design Thinking, que exige validação contínua e adaptação."
+      },
+      {
+        "letter": "C",
+        "text": "Iniciar com uma fase de pesquisa aprofundada (Empatia) para entender as necessidades dos usuários e stakeholders, seguida por ciclos rápidos de Definição, Ideação, Prototipagem e Teste (inspirados em Design Sprints), integrando a visão de Service Design para mapear e otimizar a jornada completa do serviço e todos os seus pontos de contato.",
+        "isCorrect": true,
+        "explanation": "Esta abordagem integra de forma completa os princípios do Design Thinking (empatia, iteração), HCD (foco no usuário) e Service Design (otimização da jornada de serviço), sendo a mais adequada para um projeto complexo de ecossistema digital."
+      },
+      {
+        "letter": "D",
+        "text": "Desenvolver o produto mínimo viável (MVP) com foco exclusivo na tecnologia de ponta, deixando a experiência do usuário e a otimização dos serviços para fases posteriores de evolução do produto, após o lançamento inicial.",
+        "isCorrect": false,
+        "explanation": "Priorizar exclusivamente a tecnologia e desconsiderar a experiência do usuário e o serviço desde o início contraria os princípios do HCD e do Service Design, levando a soluções menos desejáveis."
+      },
+      {
+        "letter": "E",
+        "text": "Priorizar a aquisição de softwares prontos no mercado, adaptando os processos internos da Petrobras a essas soluções, sem a necessidade de um design centrado no usuário ou prototipagem de novas interfaces.",
+        "isCorrect": false,
+        "explanation": "Esta opção descreve uma estratégia de aquisição e adaptação, não uma abordagem de Design Thinking que busca inovar e criar soluções personalizadas e centradas no usuário."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Para um projeto complexo como o descrito, que envolve não só tecnologia mas também a redefinição de múltiplos pontos de contato e interações de serviço em um ecossistema digital, uma abordagem integrada de Design Thinking é crucial. A alternativa C é a mais completa e alinhada aos princípios de inovação centrada no ser humano:\n\n*   **Pesquisa aprofundada (Empatia)**: Fundamental para entender as necessidades dos múltiplos usuários e stakeholders de um ecossistema complexo (princípio HCD), garantindo que a solução seja relevante e desejável.\n*   **Ciclos rápidos de Definição, Ideação, Prototipagem e Teste (inspirados em Design Sprints)**: Isso representa a natureza iterativa e ágil do Design Thinking, permitindo aprendizado contínuo, validação rápida de hipóteses e minimização de riscos. Design Sprints são um excelente exemplo de como acelerar essas fases, promovendo a experimentação e o feedback constantes.\n*   **Integração da visão de Service Design**: Essencial para projetos que envolvem 'redefinição de múltiplos pontos de contato e interações de serviço'. O Service Design foca na orquestração de pessoas, infraestrutura, comunicação e componentes materiais para melhorar a qualidade da experiência do cliente e do provedor de serviços. Mapear a jornada completa do serviço é uma de suas ferramentas-chave, garantindo uma experiência coesa e satisfatória em todos os pontos de contato.\n\nAs outras alternativas são inadequadas: A foca *exclusivamente* na ideação sem validação, o que é ineficaz; B propõe um ciclo linear (waterfall), oposto ao Design Thinking; D desprioriza o usuário e o serviço desde o início, contrariando o HCD e Service Design; e E não é uma abordagem de Design Thinking, mas sim de aquisição e adaptação, que pode não atender às necessidades específicas e inovadoras do projeto. A abordagem correta reconhece a interdependência entre a compreensão do usuário, a geração de soluções inovadoras, a validação rápida e a otimização da experiência de serviço como um todo.",
+    "technicalJustification": "Tim Brown, em 'Change by Design', defende uma abordagem holística e iterativa para a inovação. A metodologia HCD da IDEO coloca o usuário no centro de todas as etapas. O Service Design, como disciplina complementar ao Design Thinking, foca especificamente na experiência de serviços, mapeando jornadas e pontos de contato (Brown, 2009; IDEO, 2015). A ideia de Design Sprints (baseada em Google Ventures) é uma aplicação acelerada das fases do Design Thinking, consolidando a noção de ciclos rápidos de aprendizado e validação, combinando o melhor de várias abordagens para projetos complexos.",
+    "relatedConcepts": [
+      "Design Thinking",
+      "Human-Centered Design (HCD)",
+      "Service Design",
+      "Sprint de Design",
+      "Empatia",
+      "Ideação",
+      "Prototipagem",
+      "Teste",
+      "Iteração",
+      "Ecossistema Digital",
+      "Jornada do Cliente"
+    ],
+    "order": 5
+  }
+]

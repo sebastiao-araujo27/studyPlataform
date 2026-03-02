@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b3-bi_1",
+    "topicId": "b3-bi",
+    "front": "O que é Business Intelligence (BI)?",
+    "back": "É um conjunto de processos, arquiteturas e tecnologias que convertem dados brutos em informações significativas e acionáveis para impulsionar decisões de negócios estratégicas e táticas.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-bi_2",
+    "topicId": "b3-bi",
+    "front": "Qual o principal objetivo do Business Intelligence (BI)?",
+    "back": "Fornecer insights acionáveis e suporte à tomada de decisões estratégicas, táticas e operacionais, transformando dados em conhecimento útil para a organização.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-bi_3",
+    "topicId": "b3-bi",
+    "front": "O que significa a sigla KPI no contexto de Business Intelligence?",
+    "back": "KPI significa Key Performance Indicator (Indicador-Chave de Performance). São métricas quantificáveis usadas para medir e avaliar o sucesso de uma organização ou de uma atividade específica em relação a seus objetivos.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-bi_4",
+    "topicId": "b3-bi",
+    "front": "O que caracteriza o Self-Service BI?",
+    "back": "É uma abordagem que permite aos usuários de negócios, sem profundo conhecimento técnico em TI, acessar, analisar e criar relatórios e dashboards por conta própria, utilizando ferramentas intuitivas.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-bi_5",
+    "topicId": "b3-bi",
+    "front": "Quais são as principais fases do processo de Business Intelligence (BI)?",
+    "back": "As fases típicas do processo de BI incluem:\n*   **Coleta e Integração de Dados (ETL):** Extração, Transformação e Carga.\n*   **Armazenamento:** Data Warehouse (DW) e Data Marts.\n*   **Análise de Dados:** OLAP (Online Analytical Processing), Data Mining.\n*   **Apresentação de Informações:** Relatórios, Dashboards, Visualizações.\n*   **Tomada de Decisão:** Utilização dos insights para ações estratégicas.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-bi_6",
+    "topicId": "b3-bi",
+    "front": "Qual a diferença fundamental entre um Data Warehouse (DW) e o Business Intelligence (BI)?",
+    "back": "*   **Data Warehouse (DW):** É a infraestrutura de armazenamento de dados, um repositório centralizado, integrado, consistente e histórico, otimizado para consultas analíticas.\n*   **Business Intelligence (BI):** É o processo e o conjunto de ferramentas que utilizam os dados do DW (e de outras fontes) para análise, relatórios e suporte à decisão, transformando dados em insights acionáveis.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-bi_7",
+    "topicId": "b3-bi",
+    "front": "Cite 3 benefícios do Self-Service BI para uma organização.",
+    "back": "Três benefícios do Self-Service BI são:\n*   **Agilidade:** Maior rapidez na obtenção de insights, sem depender da equipe de TI.\n*   **Redução da Dependência de TI:** Libera a equipe de TI para projetos mais estratégicos, enquanto os usuários geram seus próprios relatórios.\n*   **Empoderamento do Usuário:** Aumenta a capacidade analítica e a autonomia dos usuários de negócio, que podem explorar dados de forma mais flexível.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-bi_8",
+    "topicId": "b3-bi",
+    "front": "Verdadeiro ou Falso: 'O Business Intelligence (BI) foca exclusivamente na análise de dados históricos para entender o passado.'",
+    "back": "**Falso.** Embora a análise de dados históricos seja uma parte crucial, o BI moderno também engloba a análise de dados atuais (em tempo real) e preditiva, visando projetar tendências futuras e apoiar decisões proativas e estratégicas.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-bi_9",
+    "topicId": "b3-bi",
+    "front": "Qual a principal diferença entre OLAP e OLTP?",
+    "back": "*   **OLAP (Online Analytical Processing):** Otimizado para consultas analíticas complexas e rápidas em grandes volumes de dados históricos, geralmente em Data Warehouses, para suporte à decisão. Foco em leitura e agregação.\n*   **OLTP (Online Transaction Processing):** Otimizado para processar um grande número de transações diárias (inserções, atualizações, exclusões) em sistemas operacionais, como bancos de dados de aplicações. Foco em escrita e consistência de transações.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-bi_10",
+    "topicId": "b3-bi",
+    "front": "Quais características um bom KPI (Key Performance Indicator) deve possuir, seguindo a metodologia SMART?",
+    "back": "Um bom KPI deve ser SMART:\n*   **S**pecific (Específico): Claro e bem definido.\n*   **M**easurable (Mensurável): Quantificável, permitindo acompanhamento.\n*   **A**chievable (Atingível): Realista e alcançável.\n*   **R**elevant (Relevante): Importante para os objetivos estratégicos da organização.\n*   **T**ime-bound (Com Prazo Definido): Possuir um período para ser alcançado ou avaliado.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

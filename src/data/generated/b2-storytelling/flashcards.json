@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b2-storytelling_1",
+    "topicId": "b2-storytelling",
+    "front": "O que é 'Storytelling com Dados'?",
+    "back": "É a prática de usar dados para contar uma história envolvente e compreensível, conectando fatos e métricas a uma narrativa que ressoa com o público e facilita a tomada de decisão.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-storytelling_2",
+    "topicId": "b2-storytelling",
+    "front": "Quais os 3 princípios fundamentais da visualização de dados segundo Edward Tufte?",
+    "back": "Os 3 princípios são:\n1. Maximizar a taxa de dados (data-ink ratio): A maior parte da tinta deve representar dados.\n2. Evitar distorções e manipulações:\n3. Promover a comparação de dados.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-storytelling_3",
+    "topicId": "b2-storytelling",
+    "front": "Qual a principal diferença entre um relatório tradicional e um dashboard narrativo?",
+    "back": "Um relatório tradicional apresenta dados de forma estática e detalhada. Um dashboard narrativo usa visualizações interativas e integradas para contar uma história sequencial, guiando o usuário através de insights e conclusões.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-storytelling_4",
+    "topicId": "b2-storytelling",
+    "front": "Cite duas técnicas de visualização eficazes para apresentar tendências ao longo do tempo.",
+    "back": "Duas técnicas eficazes são:\n1. Gráfico de Linha (Line Chart): Ideal para mostrar a evolução contínua de uma métrica.\n2. Gráfico de Área (Area Chart): Similar ao gráfico de linha, mas destaca o volume ou a magnitude.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-storytelling_5",
+    "topicId": "b2-storytelling",
+    "front": "Qual o principal objetivo da persuasão com dados no contexto de storytelling?",
+    "back": "O principal objetivo é influenciar a audiência a agir ou a mudar sua perspectiva com base em evidências concretas apresentadas de forma clara e convincente através da narrativa.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-storytelling_6",
+    "topicId": "b2-storytelling",
+    "front": "Verdadeiro ou Falso: Um dashboard narrativo deve apresentar todos os dados disponíveis para o usuário explorar livremente.",
+    "back": "Falso. Um dashboard narrativo é curado e guiado, focando em contar uma história específica e apresentar insights relevantes, em vez de oferecer exploração livre de todos os dados.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-storytelling_7",
+    "topicId": "b2-storytelling",
+    "front": "Qual a importância do contexto em uma narrativa com dados?",
+    "back": "O contexto é crucial para dar significado aos dados. Ele explica o 'porquê' por trás dos números, conecta os insights à realidade do público e torna a história compreensível e relevante.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-storytelling_8",
+    "topicId": "b2-storytelling",
+    "front": "Segundo Tufte, o que caracteriza um 'gráfico de alta densidade de dados'?",
+    "back": "Um gráfico de alta densidade de dados é aquele que apresenta uma grande quantidade de informação visualmente em um espaço pequeno, sem sacrificar a clareza ou a precisão, focando na representação dos dados.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-storytelling_9",
+    "topicId": "b2-storytelling",
+    "front": "Quais os 5 elementos essenciais para construir uma narrativa com dados eficaz?",
+    "back": "Os 5 elementos essenciais são:\n1. Público-alvo: Conhecer quem vai ouvir a história.\n2. Mensagem principal: O insight central a ser comunicado.\n3. Dados relevantes: Selecionar as métricas que suportam a mensagem.\n4. Visualizações claras: Gráficos e elementos visuais que ilustram os dados.\n5. Estrutura narrativa: Organizar os elementos em uma sequência lógica e envolvente.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-storytelling_10",
+    "topicId": "b2-storytelling",
+    "front": "Por que o uso excessivo de elementos decorativos (chartjunk) prejudica o storytelling com dados?",
+    "back": "O 'chartjunk' (excesso de elementos gráficos não informativos, como sombras 3D desnecessárias, grades pesadas ou cores vibrantes sem propósito) distrai o público, obscurece os dados e enfraquece a clareza e a credibilidade da mensagem.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

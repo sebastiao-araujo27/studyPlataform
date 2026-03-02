@@ -1,0 +1,242 @@
+[
+  {
+    "id": "ex_b1-safe_1",
+    "topicId": "b1-safe",
+    "blocoId": "bloco-1",
+    "question": "Uma grande organização do setor de energia está iniciando sua jornada de transformação digital e decide adotar o Scaled Agile Framework (SAFe) para alinhar suas múltiplas equipes de desenvolvimento de software. Ao estruturar o nível mais básico e fundamental do framework, a organização busca implementar uma construção que represente uma equipe de equipes ágeis, de vida longa e autorganizada, que planeja, executa e libera valor de forma conjunta. De acordo com o SAFe 6.0, essa estrutura organizacional básica, que opera em uma cadência comum e é sincronizada por um Programa de Incremento (PI), é denominada:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Solution Train",
+        "isCorrect": false,
+        "explanation": "O Solution Train é utilizado apenas na configuração Large Solution para coordenar múltiplos Agile Release Trains."
+      },
+      {
+        "letter": "B",
+        "text": "Agile Release Train (ART)",
+        "isCorrect": true,
+        "explanation": "O ART é a unidade funcional primária do SAFe, consistindo em uma equipe de equipes ágeis que entrega valor de forma contínua."
+      },
+      {
+        "letter": "C",
+        "text": "Value Stream Mapping",
+        "isCorrect": false,
+        "explanation": "Trata-se de uma ferramenta analítica para visualizar o fluxo de valor, não uma estrutura de equipe."
+      },
+      {
+        "letter": "D",
+        "text": "Portfolio Canvas",
+        "isCorrect": false,
+        "explanation": "O Portfolio Canvas é uma ferramenta de design estratégico para definir a visão do portfólio, não uma equipe de execução."
+      },
+      {
+        "letter": "E",
+        "text": "Strategic Theme",
+        "isCorrect": false,
+        "explanation": "Temas Estratégicos são objetivos de negócios de alto nível que conectam o portfólio à estratégia da empresa."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda o conceito fundamental do Scaled Agile Framework (SAFe). No nível Essential SAFe, que é o ponto de partida para qualquer implementação, a estrutura central é o Agile Release Train (ART). O enunciado descreve as características principais do ART: ele é uma equipe de equipes (geralmente de 50 a 125 pessoas), possui vida longa (long-lived), é autorganizado e focado na entrega contínua de valor. A alternativa B está correta pois identifica precisamente essa estrutura. As demais alternativas referem-se a outros conceitos: o Solution Train (A) é de um nível superior (Large Solution); Value Stream Mapping (C) é uma técnica de melhoria de processos; Portfolio Canvas (D) é um artefato de planejamento estratégico; e Strategic Themes (E) são direcionadores estratégicos. Para a banca Cesgranrio, é essencial distinguir as unidades de execução das ferramentas de gestão.",
+    "technicalJustification": "Conforme o SAFe 6.0, o Agile Release Train (ART) é definido como uma equipe de longa duração de equipes ágeis que, juntamente com outros stakeholders, desenvolve, entrega e, quando aplicável, opera uma ou mais soluções. É o coração do Essential SAFe.",
+    "relatedConcepts": [
+      "Essential SAFe",
+      "Agile Teams",
+      "Program Increment"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b1-safe_2",
+    "topicId": "b1-safe",
+    "blocoId": "bloco-1",
+    "question": "Em um cenário de desenvolvimento de sistemas críticos para o monitoramento de poços de petróleo, uma empresa utiliza o SAFe para coordenar o trabalho de dez equipes ágeis. Durante a execução do ciclo, surge a necessidade de um papel que atue como um líder servidor e coach para o Agile Release Train (ART), sendo responsável por facilitar os eventos do programa, gerenciar riscos, auxiliar na remoção de impedimentos e promover a melhoria contínua através do 'Inspect and Adapt'. Esse papel, que funciona essencialmente como um Scrum Master em nível de programa, é o:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Product Management",
+        "isCorrect": false,
+        "explanation": "O Product Management foca no 'o quê' será construído (Backlog do Programa) e não na facilitação do processo do ART."
+      },
+      {
+        "letter": "B",
+        "text": "System Architect",
+        "isCorrect": false,
+        "explanation": "O System Architect foca no design técnico e na arquitetura da solução, não na facilitação ágil das equipes."
+      },
+      {
+        "letter": "C",
+        "text": "Release Train Engineer (RTE)",
+        "isCorrect": true,
+        "explanation": "O RTE é o líder servidor do ART, responsável por facilitar os processos, eventos e a remoção de gargalos em nível de programa."
+      },
+      {
+        "letter": "D",
+        "text": "Business Owner",
+        "isCorrect": false,
+        "explanation": "Os Business Owners são stakeholders chave que detêm a responsabilidade final pelo valor de negócio entregue."
+      },
+      {
+        "letter": "E",
+        "text": "Epic Owner",
+        "isCorrect": false,
+        "explanation": "O Epic Owner coordena Epics específicas através do sistema Kanban do Portfólio, sem foco na facilitação diária do ART."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão foca nos papéis (roles) dentro do SAFe, especificamente no nível de Programa/Essential. O Release Train Engineer (RTE) é frequentemente descrito na literatura do SAFe como o 'Chief Scrum Master'. Sua função é vital para a orquestração do Agile Release Train (ART). O enunciado destaca responsabilidades típicas: liderança servidora, facilitação do PI Planning, gerenciamento de dependências e coaching das equipes. A alternativa C é a correta. É comum candidatos confundirem o RTE com o Product Management (A), que cuida do conteúdo, ou com o System Architect (B), que cuida da tecnologia. Os Business Owners (D) validam o valor, e o Epic Owner (E) opera em nível de portfólio. Para a Cesgranrio, entender a hierarquia de papéis (Scrum Master -> RTE -> Solution Train Engineer) é um padrão recorrente.",
+    "technicalJustification": "Segundo Leffingwell (SAFe Reference Guide), o Release Train Engineer (RTE) é um líder servidor e coach para o Agile Release Train. Suas principais responsabilidades incluem a facilitação dos eventos do ART e a assistência às equipes na entrega de valor.",
+    "relatedConcepts": [
+      "Servant Leadership",
+      "Inspect and Adapt",
+      "PI Planning facilitation"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b1-safe_3",
+    "topicId": "b1-safe",
+    "blocoId": "bloco-1",
+    "question": "A Petrobras, ao planejar a modernização de seus sistemas de logística integrada, utiliza o SAFe e convoca todas as equipes do Agile Release Train (ART) para um evento presencial de dois dias. O objetivo é criar um alinhamento total sobre a visão do produto, identificar dependências entre as equipes e estabelecer os objetivos de negócio para os próximos 8 a 12 semanas. Ao final deste evento, dois artefatos principais são esperados: os Objetivos do PI (PI Objectives) comprometidos e o Quadro do Programa (Program Board). Este evento central do SAFe é conhecido como:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sprint Planning",
+        "isCorrect": false,
+        "explanation": "O Sprint Planning ocorre no nível de equipe individual, não envolvendo todo o ART simultaneamente."
+      },
+      {
+        "letter": "B",
+        "text": "Portfolio Review",
+        "isCorrect": false,
+        "explanation": "A Portfolio Review foca na estratégia e orçamento do portfólio, não no planejamento tático das equipes."
+      },
+      {
+        "letter": "C",
+        "text": "Solution Demo",
+        "isCorrect": false,
+        "explanation": "A Solution Demo é um evento de revisão do que foi construído, não um evento de planejamento futuro."
+      },
+      {
+        "letter": "D",
+        "text": "PI Planning",
+        "isCorrect": true,
+        "explanation": "O PI Planning é o evento de cadência que alinha todas as equipes do ART em uma visão e plano comuns."
+      },
+      {
+        "letter": "E",
+        "text": "Backlog Refinement",
+        "isCorrect": false,
+        "explanation": "O refinamento é uma atividade contínua de preparação de itens, não um evento de planejamento sincronizado de dois dias."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "O enunciado descreve o 'pulso' do SAFe: o PI Planning (Program Increment Planning). Este é considerado o evento mais importante do framework. A Cesgranrio costuma contextualizar eventos ágeis em cenários de grandes empresas. As características citadas (dois dias, participação de todos os membros do ART, identificação de dependências e criação do Program Board) são exclusivas do PI Planning. O Program Board é um artefato visual crítico onde são mapeadas as 'features', as dependências entre equipes e os marcos (milestones). A alternativa D está correta. O erro comum é confundir com o Sprint Planning (A), que é do Scrum tradicional e ocorre em escala menor, ou com o Backlog Refinement (E), que não possui a estrutura de evento de sincronização de larga escala descrita.",
+    "technicalJustification": "O PI Planning é um evento de cadência fixa, face-a-face (ou virtualmente distribuído), que serve como o motor do ART, alinhando todas as equipes à visão e missão compartilhadas. Referência: scaledagileframework.com/pi-planning.",
+    "relatedConcepts": [
+      "Program Board",
+      "Confidence Vote",
+      "Dependency Management"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b1-safe_4",
+    "topicId": "b1-safe",
+    "blocoId": "bloco-1",
+    "question": "Considere que uma organização de grande porte está desenvolvendo um sistema de exploração submarina extremamente complexo, que exige a coordenação de três diferentes Agile Release Trains (ARTs) e o trabalho conjunto com fornecedores externos de hardware. O sistema não requer necessariamente uma gestão de portfólio completa com financiamento baseado em fluxos de valor, mas a complexidade técnica exige um nível adicional de coordenação para gerenciar a 'Solution' e os 'Enablers' de larga escala. De acordo com as configurações do SAFe 6.0, a configuração MAIS ADEQUADA para este cenário é a:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Essential SAFe",
+        "isCorrect": false,
+        "explanation": "O Essential SAFe suporta apenas um ART, sendo insuficiente para coordenar múltiplos trens e fornecedores complexos."
+      },
+      {
+        "letter": "B",
+        "text": "Large Solution SAFe",
+        "isCorrect": true,
+        "explanation": "Esta configuração é específica para soluções complexas que exigem múltiplos ARTs, mas não requerem a gestão de portfólio."
+      },
+      {
+        "letter": "C",
+        "text": "Portfolio SAFe",
+        "isCorrect": false,
+        "explanation": "O Portfolio SAFe foca na estratégia e investimento, mas o enunciado enfatiza a coordenação técnica de múltiplos ARTs sem necessidade de portfólio."
+      },
+      {
+        "letter": "D",
+        "text": "Full SAFe",
+        "isCorrect": false,
+        "explanation": "O Full SAFe inclui todos os níveis, incluindo o Portfólio, o que excede a necessidade simplificada descrita no enunciado."
+      },
+      {
+        "letter": "E",
+        "text": "Team SAFe",
+        "isCorrect": false,
+        "explanation": "Não existe uma configuração oficial chamada 'Team SAFe' no framework; o nível básico é o Essential."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão testa o conhecimento sobre as quatro configurações oficiais do SAFe 6.0: Essential, Large Solution, Portfolio e Full. O cenário descreve uma situação onde há múltiplos ARTs (o que exclui o Essential) e uma necessidade de coordenação de uma solução complexa com fornecedores, mas explicitamente menciona que a gestão de portfólio (estratégia de investimento e temas estratégicos) não é o foco principal. Isso aponta diretamente para a configuração Large Solution SAFe (Alternativa B). Nesta configuração, introduz-se o conceito de 'Solution Train' e os papéis de Solution Management e Solution Architect. O erro comum dos candidatos é marcar 'Full SAFe' sempre que o cenário parece complexo, mas o SAFe prega a economia de processos ('assume variability; preserve options'), sugerindo a menor configuração que resolva o problema. A alternativa E é um distrator comum usando nomenclatura inexistente.",
+    "technicalJustification": "A configuração Large Solution SAFe destina-se a organizações que constroem soluções grandes e complexas que exigem múltiplos ARTs e fornecedores, mas que não exigem as considerações de estratégia e investimento de um portfólio.",
+    "relatedConcepts": [
+      "Solution Train",
+      "Solution Intent",
+      "Supplier Integration"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b1-safe_5",
+    "topicId": "b1-safe",
+    "blocoId": "bloco-1",
+    "question": "No nível de Portfólio do SAFe, a governança ágil substitui o planejamento tradicional focado em projetos por uma abordagem baseada em 'Lean Budgets'. Para garantir que o financiamento seja alocado de forma eficiente e que as decisões descentralizadas não comprometam a estratégia global, o framework utiliza 'Guardrails'. Qual das seguintes opções descreve CORRETAMENTE um dos quatro 'Guardrails' de Lean Budgeting preconizados pelo SAFe?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Definição de limites rígidos de horas extras para equipes de desenvolvimento para evitar o 'burnout'.",
+        "isCorrect": false,
+        "explanation": "Embora o bem-estar seja importante, isso não é um Guardrail de Lean Budgeting do SAFe."
+      },
+      {
+        "letter": "B",
+        "text": "Alocação de capacidade (Capacity Allocation) para equilibrar o investimento entre novos recursos, manutenção e infraestrutura.",
+        "isCorrect": true,
+        "explanation": "Este Guardrail garante que o trem não negligencie a saúde do sistema em favor de apenas novas funcionalidades."
+      },
+      {
+        "letter": "C",
+        "text": "Aprovação obrigatória de todas as histórias de usuário pelo Portfolio Council antes do início da implementação.",
+        "isCorrect": false,
+        "explanation": "Isso descreve um processo centralizado e em cascata, o oposto da descentralização buscada pelo SAFe."
+      },
+      {
+        "letter": "D",
+        "text": "Garantia de que 100% do orçamento seja alocado exclusivamente para 'Business Epics' de alto retorno financeiro.",
+        "isCorrect": false,
+        "explanation": "O SAFe exige equilíbrio entre Enablers (tecnologia) e Business Epics; focar 100% em negócios gera dívida técnica."
+      },
+      {
+        "letter": "E",
+        "text": "Utilização do método 'First-Come, First-Served' para a priorização do Backlog do Portfólio.",
+        "isCorrect": false,
+        "explanation": "A priorização no SAFe é feita pelo método WSJF (Weighted Shortest Job First), não por ordem de chegada."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão aborda um dos tópicos mais avançados do SAFe: Lean Portfolio Management (LPM). O conceito de 'Guardrails' (trilhos de proteção) é fundamental para permitir a autonomia das equipes enquanto se mantém o controle financeiro. Existem quatro Guardrails principais: 1. Guiding investments by horizon (Investimentos por horizonte); 2. Applying capacity allocation (Alocação de capacidade); 3. Approving significant initiatives (Aprovação de iniciativas significativas); e 4. Continuous Business Owner engagement (Engajamento contínuo dos Business Owners). A alternativa B identifica corretamente a 'Alocação de Capacidade'. Este Guardrail é essencial para evitar que a pressão por novas funcionalidades (Business Features) destrua a sustentabilidade técnica do sistema (Enablers). As alternativas C e E descrevem práticas anti-ágeis ou métodos de priorização incorretos (o SAFe usa WSJF). A alternativa D ignora a necessidade de 'Enablers', que é um pilar do framework para evitar a obsolescência tecnológica.",
+    "technicalJustification": "Os Guardrails de Lean Budgeting no SAFe servem para descrever as políticas e práticas para o orçamento, gastos e governança para um portfólio específico. A Alocação de Capacidade (Capacity Allocation) ajuda a garantir que o trabalho de 'manter o negócio funcionando' e o 'evoluir a arquitetura' recebam atenção junto com as novas funcionalidades.",
+    "relatedConcepts": [
+      "Lean Portfolio Management",
+      "WSJF",
+      "Value Streams"
+    ],
+    "order": 5
+  }
+]

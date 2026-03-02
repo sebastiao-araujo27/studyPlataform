@@ -1,0 +1,222 @@
+[
+  {
+    "id": "ex_b3-seguranca-info_1",
+    "topicId": "b3-seguranca-info",
+    "blocoId": "bloco-3",
+    "question": "A equipe de segurança da informação da Petrobras está conduzindo uma análise de riscos nos sistemas corporativos de gestão de produção offshore. Durante a avaliação, o analista precisa garantir que os três pilares fundamentais da segurança da informação sejam preservados. Considerando a tríade CID (Confidencialidade, Integridade e Disponibilidade), qual das alternativas a seguir descreve corretamente uma ameaça à INTEGRIDADE dos dados de produção?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Um ataque DDoS que torna o sistema de monitoramento de produção inacessível durante 4 horas.",
+        "isCorrect": false,
+        "explanation": "Um ataque DDoS compromete a DISPONIBILIDADE, não a integridade, pois impede o acesso legítimo ao sistema sem necessariamente alterar os dados."
+      },
+      {
+        "letter": "B",
+        "text": "Um funcionário não autorizado que consegue visualizar relatórios confidenciais de reservas de petróleo.",
+        "isCorrect": false,
+        "explanation": "A visualização não autorizada de dados confidenciais compromete a CONFIDENCIALIDADE, não a integridade dos dados."
+      },
+      {
+        "letter": "C",
+        "text": "Um malware que altera silenciosamente os registros de volume de produção armazenados no banco de dados sem ser detectado.",
+        "isCorrect": true,
+        "explanation": "A modificação não autorizada de dados compromete diretamente a INTEGRIDADE, pois os dados deixam de refletir a realidade, podendo causar decisões operacionais incorretas."
+      },
+      {
+        "letter": "D",
+        "text": "A interceptação de comunicações criptografadas entre plataformas offshore e o centro de controle onshore.",
+        "isCorrect": false,
+        "explanation": "A interceptação de comunicações compromete a CONFIDENCIALIDADE dos dados em trânsito, não a integridade."
+      },
+      {
+        "letter": "E",
+        "text": "A falha no servidor de backup que impede a recuperação de dados históricos de produção.",
+        "isCorrect": false,
+        "explanation": "A impossibilidade de recuperar dados compromete a DISPONIBILIDADE, pois os dados existem mas não podem ser acessados quando necessário."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A tríade CID (ou CIA em inglês — Confidentiality, Integrity, Availability) é o modelo fundamental da segurança da informação, conforme descrito por Stallings em 'Criptografia e Segurança de Redes'. A Confidencialidade garante que a informação seja acessível apenas a quem tem autorização; a Integridade assegura que os dados não sejam alterados de forma não autorizada; e a Disponibilidade garante que os recursos estejam acessíveis quando necessários. No contexto da questão, a alteração silenciosa de registros de produção é um ataque direto à integridade, pois os dados são modificados sem autorização, comprometendo a confiabilidade das informações utilizadas para tomada de decisão operacional.",
+    "technicalJustification": "Conforme NIST SP 800-12 (An Introduction to Information Security), integridade refere-se à proteção contra modificação ou destruição imprópria de informações, incluindo a garantia de não-repúdio e autenticidade. A norma ISO 27001 também define integridade como a propriedade de salvaguardar a exatidão e completeza de ativos de informação.",
+    "relatedConcepts": ["Tríade CID/CIA", "Classificação de ameaças", "ISO 27001", "NIST SP 800-12", "Gestão de riscos"],
+    "order": 1
+  },
+  {
+    "id": "ex_b3-seguranca-info_2",
+    "topicId": "b3-seguranca-info",
+    "blocoId": "bloco-3",
+    "question": "O CENPES (Centro de Pesquisas da Petrobras) está implementando uma arquitetura de segurança em camadas para proteger sua rede corporativa. O arquiteto de segurança precisa posicionar corretamente os dispositivos de segurança de rede. Considerando as diferenças funcionais entre Firewall, IDS (Intrusion Detection System) e IPS (Intrusion Prevention System), assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "O IDS opera inline no tráfego de rede e bloqueia automaticamente pacotes maliciosos antes que atinjam o servidor de destino, enquanto o IPS apenas monitora e gera alertas.",
+        "isCorrect": false,
+        "explanation": "A descrição está invertida. O IPS é que opera inline e bloqueia tráfego malicioso, enquanto o IDS monitora passivamente e gera alertas."
+      },
+      {
+        "letter": "B",
+        "text": "O Firewall de próxima geração (NGFW) combina funcionalidades de filtragem de pacotes, inspeção stateful, e pode integrar capacidades de IPS, além de realizar inspeção profunda de pacotes (DPI) na camada de aplicação.",
+        "isCorrect": true,
+        "explanation": "NGFWs são dispositivos que integram múltiplas funcionalidades de segurança, incluindo filtragem stateful, IPS, controle de aplicações e DPI, conforme definido pelo Gartner e amplamente adotado em arquiteturas de segurança corporativas."
+      },
+      {
+        "letter": "C",
+        "text": "O IDS baseado em assinaturas é capaz de detectar ataques zero-day com alta precisão, sendo preferível ao IDS baseado em anomalias para ambientes de pesquisa como o CENPES.",
+        "isCorrect": false,
+        "explanation": "O IDS baseado em assinaturas só detecta ataques conhecidos (com assinaturas previamente catalogadas). Para ataques zero-day, o IDS baseado em anomalias é mais adequado, pois detecta desvios do comportamento normal."
+      },
+      {
+        "letter": "D",
+        "text": "Firewalls stateless são mais seguros que firewalls stateful, pois analisam cada pacote de forma independente, sem manter informações de estado das conexões que poderiam ser corrompidas.",
+        "isCorrect": false,
+        "explanation": "Firewalls stateful são mais seguros que stateless, pois mantêm uma tabela de estados das conexões, permitindo decisões mais inteligentes e contextualizadas sobre o tráfego permitido."
+      },
+      {
+        "letter": "E",
+        "text": "O IPS e o IDS utilizam exclusivamente a técnica de detecção por assinaturas, sendo incapazes de realizar análise comportamental ou heurística do tráfego de rede.",
+        "isCorrect": false,
+        "explanation": "Tanto IPS quanto IDS podem utilizar múltiplas técnicas de detecção: baseada em assinaturas, baseada em anomalias (comportamental) e análise heurística/estatística."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A arquitetura de segurança em camadas (defense in depth) utiliza diversos dispositivos complementares. O Firewall realiza filtragem de tráfego com base em regras predefinidas; o IDS (Sistema de Detecção de Intrusão) monitora o tráfego passivamente, gerando alertas quando detecta atividades suspeitas; e o IPS (Sistema de Prevenção de Intrusão) opera inline, podendo bloquear tráfego malicioso em tempo real. Os NGFWs (Next-Generation Firewalls) representam a evolução dos firewalls tradicionais, integrando funcionalidades de IPS, DPI (Deep Packet Inspection), controle de aplicações e até sandboxing, conforme descrito por Stallings em 'Network Security Essentials'.",
+    "technicalJustification": "Segundo o NIST SP 800-94 (Guide to Intrusion Detection and Prevention Systems), o IDS monitora e analisa eventos para identificar incidentes de segurança, enquanto o IPS possui todas as capacidades do IDS e adicionalmente pode tentar parar possíveis incidentes. O conceito de NGFW foi formalizado pelo Gartner em 2009, definindo-o como um firewall que integra inspeção profunda de pacotes, prevenção de intrusões e inteligência externa.",
+    "relatedConcepts": ["Firewall stateful vs stateless", "NGFW", "IDS baseado em assinaturas", "IDS baseado em anomalias", "IPS inline", "Deep Packet Inspection"],
+    "order": 2
+  },
+  {
+    "id": "ex_b3-seguranca-info_3",
+    "topicId": "b3-seguranca-info",
+    "blocoId": "bloco-3",
+    "question": "A equipe de desenvolvimento da Petrobras está implementando um portal web para gestão de contratos com fornecedores. Durante a revisão de segurança, foi identificada a necessidade de proteger a aplicação contra as principais vulnerabilidades web. O líder técnico solicita que a equipe aplique controles específicos contra ataques de Cross-Site Request Forgery (CSRF). Considerando as melhores práticas do OWASP, qual das alternativas descreve CORRETAMENTE uma medida eficaz de proteção contra CSRF?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Implementar validação de entrada com sanitização de caracteres especiais como < e > para impedir que scripts maliciosos sejam injetados nas páginas do portal.",
+        "isCorrect": false,
+        "explanation": "A sanitização de caracteres especiais é uma medida contra Cross-Site Scripting (XSS), não contra CSRF. São ataques distintos com vetores e mitigações diferentes."
+      },
+      {
+        "letter": "B",
+        "text": "Utilizar tokens anti-CSRF (Synchronizer Token Pattern) vinculados à sessão do usuário, incluídos em formulários e validados pelo servidor a cada requisição que altere estado.",
+        "isCorrect": true,
+        "explanation": "O Synchronizer Token Pattern é a principal defesa contra CSRF, conforme recomendado pelo OWASP. Um token único e imprevisível é gerado pelo servidor, incluído no formulário e validado em cada requisição, impedindo que sites externos forjem requisições válidas."
+      },
+      {
+        "letter": "C",
+        "text": "Configurar o Content Security Policy (CSP) com a diretiva 'script-src self' para impedir que o navegador execute scripts de origens não confiáveis.",
+        "isCorrect": false,
+        "explanation": "O CSP (Content Security Policy) é principalmente uma defesa contra XSS, controlando quais recursos o navegador pode carregar. Embora contribua para segurança geral, não é a medida específica contra CSRF."
+      },
+      {
+        "letter": "D",
+        "text": "Implementar prepared statements (consultas parametrizadas) em todas as interações com o banco de dados do portal de contratos.",
+        "isCorrect": false,
+        "explanation": "Prepared statements são a principal defesa contra SQL Injection, não contra CSRF. São técnicas de segurança voltadas para a camada de persistência de dados."
+      },
+      {
+        "letter": "E",
+        "text": "Utilizar criptografia TLS 1.3 em todas as comunicações entre o navegador do usuário e o servidor da aplicação para impedir a interceptação de requisições.",
+        "isCorrect": false,
+        "explanation": "TLS protege contra interceptação (man-in-the-middle), garantindo confidencialidade e integridade na comunicação, mas não previne CSRF, pois o ataque ocorre a partir do próprio navegador do usuário autenticado."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "O CSRF (Cross-Site Request Forgery) é um ataque no qual um site malicioso induz o navegador de um usuário autenticado a enviar requisições forjadas para uma aplicação legítima. Como o navegador inclui automaticamente cookies de sessão, a aplicação vulnerável não distingue a requisição legítima da forjada. O OWASP recomenda como defesa primária o Synchronizer Token Pattern: um token criptograficamente forte, único por sessão (ou por requisição), incluído como campo oculto em formulários e validado pelo servidor. Outras defesas complementares incluem o atributo SameSite nos cookies, verificação do header Origin/Referer e o padrão Double Submit Cookie. É fundamental não confundir CSRF com XSS ou SQL Injection, pois cada vulnerabilidade possui vetores de ataque e mitigações distintas.",
+    "technicalJustification": "Conforme OWASP CSRF Prevention Cheat Sheet e OWASP Top 10 (2021), o uso de tokens anti-CSRF é a principal recomendação. O NIST SP 800-95 também referencia a importância de tokens de sessão para prevenção de ataques de falsificação de requisições. A implementação deve garantir que tokens sejam gerados com entropia criptográfica suficiente (ex.: usando SecureRandom) e validados no lado do servidor.",
+    "relatedConcepts": ["CSRF", "XSS", "SQL Injection", "OWASP Top 10", "Synchronizer Token Pattern", "SameSite Cookie", "Content Security Policy"],
+    "order": 3
+  },
+  {
+    "id": "ex_b3-seguranca-info_4",
+    "topicId": "b3-seguranca-info",
+    "blocoId": "bloco-3",
+    "question": "A Petrobras está modernizando sua estratégia de controle de acesso para os sistemas de gestão de ativos de produção. Atualmente, Petrobras utiliza o modelo RBAC (Role-Based Access Control), mas enfrenta dificuldades quando funcionários precisam de acessos temporários ou contextuais (por exemplo, engenheiros que precisam de permissões especiais apenas durante operações de manutenção em plataformas específicas). O arquiteto de segurança propõe avaliar a migração para um modelo ABAC (Attribute-Based Access Control). Considerando os modelos RBAC e ABAC, bem como os conceitos de SSO (Single Sign-On) e MFA (Multi-Factor Authentication), analise as afirmativas a seguir:\n\nI. O ABAC permite decisões de acesso baseadas em atributos do sujeito (cargo, departamento), do recurso (classificação, localização), da ação e do contexto (horário, geolocalização), oferecendo granularidade superior ao RBAC.\nII. O SSO (Single Sign-On) elimina completamente a necessidade de MFA (Multi-Factor Authentication), pois a autenticação centralizada já garante nível de segurança suficiente.\nIII. O MFA combina dois ou mais fatores de autenticação de categorias distintas: algo que o usuário sabe (senha), algo que o usuário possui (token) e algo que o usuário é (biometria).\nIV. No modelo RBAC, a explosão de papéis (role explosion) é um problema comum em grandes organizações, pois a necessidade de criar papéis cada vez mais específicos torna a administração complexa.\n\nEstão CORRETAS apenas as afirmativas:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I e II.",
+        "isCorrect": false,
+        "explanation": "A afirmativa II é incorreta. SSO e MFA são mecanismos complementares, não substitutivos. SSO simplifica a experiência do usuário, enquanto MFA fortalece a autenticação."
+      },
+      {
+        "letter": "B",
+        "text": "I, III e IV.",
+        "isCorrect": true,
+        "explanation": "As afirmativas I, III e IV estão corretas. O ABAC oferece granularidade baseada em atributos; o MFA requer fatores de categorias distintas; e a role explosion é um problema reconhecido do RBAC em organizações de grande porte."
+      },
+      {
+        "letter": "C",
+        "text": "II, III e IV.",
+        "isCorrect": false,
+        "explanation": "A afirmativa II é incorreta, pois SSO não substitui MFA. Na prática, as melhores implementações de SSO incluem MFA como camada adicional de proteção."
+      },
+      {
+        "letter": "D",
+        "text": "I e IV.",
+        "isCorrect": false,
+        "explanation": "Embora I e IV estejam corretas, a afirmativa III também está correta, pois descreve precisamente os três fatores clássicos de autenticação utilizados em MFA."
+      },
+      {
+        "letter": "E",
+        "text": "I, II, III e IV.",
+        "isCorrect": false,
+        "explanation": "A afirmativa II é incorreta. SSO e MFA são tecnologias complementares. O SSO facilita a autenticação centralizada, enquanto o MFA adiciona camadas extras de verificação."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "O RBAC (Role-Based Access Control) é um modelo de controle de acesso onde permissões são atribuídas a papéis, e usuários são associados a papéis. Embora eficiente para muitas organizações, sofre do problema de 'role explosion' em ambientes complexos. O ABAC (Attribute-Based Access Control) resolve essa limitação ao permitir políticas baseadas em múltiplos atributos, proporcionando granularidade e flexibilidade superiores, conforme descrito no NIST SP 800-162. Quanto à autenticação, o SSO (Single Sign-On) centraliza a autenticação para múltiplos sistemas, melhorando a experiência do usuário, mas NÃO substitui o MFA. Na verdade, boas práticas de segurança recomendam implementar MFA junto com SSO, especialmente para acessos a sistemas críticos. O MFA, conforme definido pelo NIST SP 800-63B, requer combinação de fatores de categorias DISTINTAS: conhecimento (senhas, PINs), posse (tokens, smartphones) e inerência (biometria).",
+    "technicalJustification": "O NIST SP 800-162 (Guide to Attribute Based Access Control) define formalmente o ABAC e suas vantagens sobre RBAC em ambientes complexos. O NIST SP 800-63B (Digital Identity Guidelines - Authentication and Lifecycle Management) especifica os requisitos para MFA e classifica os fatores de autenticação. O conceito de role explosion no RBAC é documentado em diversas publicações acadêmicas sobre controle de acesso, incluindo trabalhos de Sandhu et al.",
+    "relatedConcepts": ["RBAC", "ABAC", "SSO", "MFA", "Role explosion", "NIST SP 800-162", "NIST SP 800-63B", "Controle de acesso", "Autenticação multifator"],
+    "order": 4
+  },
+  {
+    "id": "ex_b3-seguranca-info_5",
+    "topicId": "b3-seguranca-info",
+    "blocoId": "bloco-3",
+    "question": "A equipe de segurança ofensiva da Petrobras está realizando um teste de penetração (pentest) nos sistemas web corporativos, seguindo a metodologia OWASP Testing Guide. Paralelamente, a equipe de desenvolvimento utiliza ferramentas SAST e DAST para garantir a segurança do código durante o ciclo de desenvolvimento. Adicionalmente, a equipe de arquitetura de segurança aplica o modelo STRIDE para modelagem de ameaças. Considerando esses conceitos, analise o cenário: durante o pentest, o testador identifica que o sistema de compras permite que um atacante envie uma requisição contendo ' OR '1'='1'-- no campo de login, obtendo acesso ao painel administrativo. Utilizando o modelo STRIDE, em qual(is) categoria(s) essa vulnerabilidade se enquadra PRIMARIAMENTE, e qual ferramenta de análise teria maior probabilidade de detectá-la antes da produção?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Enquadra-se em Denial of Service (D do STRIDE), pois o ataque pode indisponibilizar o sistema, e seria detectada primariamente por uma ferramenta DAST.",
+        "isCorrect": false,
+        "explanation": "SQL Injection não se enquadra primariamente em Denial of Service. Embora possa causar indisponibilidade como efeito secundário, a categoria primária no STRIDE é outra."
+      },
+      {
+        "letter": "B",
+        "text": "Enquadra-se em Spoofing (S) e Elevation of Privilege (E) do STRIDE, pois o atacante falsifica sua identidade e obtém privilégios administrativos indevidos. Tanto SAST quanto DAST poderiam detectá-la, sendo o SAST mais eficaz para identificar a concatenação insegura de strings SQL no código-fonte.",
+        "isCorrect": true,
+        "explanation": "A SQL Injection descrita permite que o atacante se passe por um administrador (Spoofing) e obtenha privilégios elevados (Elevation of Privilege). O SAST analisa o código-fonte estaticamente e pode identificar padrões de concatenação de strings em consultas SQL, enquanto o DAST testa a aplicação em execução enviando payloads maliciosos."
+      },
+      {
+        "letter": "C",
+        "text": "Enquadra-se exclusivamente em Tampering (T do STRIDE), e seria detectada apenas por ferramentas DAST, pois SAST não consegue analisar vulnerabilidades de injeção.",
+        "isCorrect": false,
+        "explanation": "Embora Tampering possa ser uma categoria secundária (se o atacante modificar dados), as categorias primárias são Spoofing e Elevation of Privilege. Além disso, SAST é perfeitamente capaz de detectar padrões de SQL Injection no código-fonte."
+      },
+      {
+        "letter": "D",
+        "text": "Enquadra-se em Information Disclosure (I do STRIDE), e seria detectada exclusivamente por testes de penetração manuais, pois ferramentas automatizadas não conseguem identificar SQL Injection.",
+        "isCorrect": false,
+        "explanation": "Information Disclosure pode ser uma consequência do ataque, mas não é a categoria primária. Além disso, ferramentas automatizadas SAST e DAST são altamente eficazes na detecção de SQL Injection."
+      },
+      {
+        "letter": "E",
+        "text": "Enquadra-se em Repudiation (R do STRIDE), pois o atacante pode negar ter realizado o acesso, e seria detectada por ferramentas de análise de logs (SIEM).",
+        "isCorrect": false,
+        "explanation": "Repudiation refere-se à capacidade de negar uma ação. Embora a falta de logs adequados possa dificultar a rastreabilidade, a vulnerabilidade de SQL Injection se enquadra primariamente em Spoofing e Elevation of Privilege."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "O modelo STRIDE, criado pela Microsoft, classifica ameaças em seis categorias: Spoofing (falsificação de identidade), Tampering (adulteração de dados), Repudiation (negação de ações), Information Disclosure (divulgação de informações), Denial of Service (negação de serviço) e Elevation of Privilege (elevação de privilégios). No cenário descrito, a SQL Injection permite ao atacante contornar a autenticação (Spoofing — pois se passa por um administrador legítimo) e obter acesso ao painel administrativo (Elevation of Privilege — pois obtém permissões que não lhe são devidas). Quanto às ferramentas, SAST (Static Application Security Testing) analisa o código-fonte sem executá-lo, sendo eficaz para encontrar padrões inseguros como concatenação de strings em consultas SQL. DAST (Dynamic Application Security Testing) testa a aplicação em execução, enviando payloads maliciosos e analisando respostas. Ambas são complementares e fazem parte de um programa DevSecOps maduro.",
+    "technicalJustification": "O OWASP Testing Guide v4 documenta metodologias para teste de SQL Injection (OTG-INPVAL-005). O modelo STRIDE é descrito em 'Threat Modeling: Designing for Security' de Adam Shostack. Conforme NIST SP 800-95 e OWASP ASVS, SAST e DAST são ferramentas complementares: SAST detecta vulnerabilidades no código sem execução (ferramentas como SonarQube, Fortify), enquanto DAST testa a aplicação em runtime (ferramentas como OWASP ZAP, Burp Suite). A combinação de ambas, junto com testes de penetração, forma uma estratégia robusta de garantia de segurança.",
+    "relatedConcepts": ["STRIDE", "SQL Injection", "SAST", "DAST", "OWASP Testing Guide", "Pentest", "DevSecOps", "Spoofing", "Elevation of Privilege", "Modelagem de ameaças"],
+    "order": 5
+  }
+]

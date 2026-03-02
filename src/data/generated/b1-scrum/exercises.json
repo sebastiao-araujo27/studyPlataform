@@ -1,0 +1,243 @@
+[
+  {
+    "id": "ex_b1-scrum_1",
+    "topicId": "b1-scrum",
+    "blocoId": "bloco-1",
+    "question": "No framework Scrum, conforme definido no Guia Scrum 2020, as responsabilidades são claramente distribuídas entre os membros do Scrum Team. Considere uma situação em que uma equipe de analistas de processos da Petrobras está enfrentando dificuldades para remover impedimentos técnicos que bloqueiam o progresso da Sprint, além de notar que os processos organizacionais internos estão conflitando com a agilidade do framework. De acordo com o Guia Scrum, qual papel é especificamente responsável por liderar, treinar e orientar a organização na adoção do Scrum, bem como remover impedimentos que afetam o progresso dos Desenvolvedores?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Product Owner, pois é o responsável por maximizar o valor do produto e gerenciar as expectativas dos stakeholders.",
+        "isCorrect": false,
+        "explanation": "O Product Owner foca no valor do produto e no Product Backlog, não na remoção de impedimentos técnicos ou coaching organizacional do framework."
+      },
+      {
+        "letter": "B",
+        "text": "Scrum Master, que atua como um líder que serve ao Scrum Team e à organização, sendo responsável pela eficácia do time.",
+        "isCorrect": true,
+        "explanation": "O Scrum Master é responsável por remover impedimentos e ajudar a organização a entender e adotar a teoria e prática do Scrum."
+      },
+      {
+        "letter": "C",
+        "text": "Gerente de Projetos, que detém a autoridade hierárquica para realocar recursos e ajustar o cronograma da Sprint.",
+        "isCorrect": false,
+        "explanation": "O papel de 'Gerente de Projetos' não existe dentro do framework Scrum; suas responsabilidades são distribuídas entre os papéis existentes."
+      },
+      {
+        "letter": "D",
+        "text": "Desenvolvedores, que são autogerenciáveis e devem resolver todos os problemas técnicos e organizacionais sem auxílio externo.",
+        "isCorrect": false,
+        "explanation": "Embora autogerenciáveis para o 'como' fazer o trabalho, os Desenvolvedores contam com o Scrum Master para remover impedimentos externos e organizacionais."
+      },
+      {
+        "letter": "E",
+        "text": "Stakeholders, que devem intervir sempre que a equipe encontrar obstáculos que impeçam a entrega do incremento.",
+        "isCorrect": false,
+        "explanation": "Stakeholders colaboram na Sprint Review, mas não possuem papel operacional na remoção de impedimentos ou liderança do framework."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda a definição fundamental de papéis no Scrum Guide 2020. O Scrum Master é definido como um 'líder que serve ao Scrum Team e à organização em geral'. Suas responsabilidades são divididas em serviços ao Product Owner, aos Desenvolvedores e à Organização. No serviço aos Desenvolvedores, inclui-se explicitamente a 'remoção de impedimentos ao progresso do Scrum Team'. No serviço à organização, inclui-se 'liderar, treinar e orientar a organização na sua adoção do Scrum'. A alternativa B reflete exatamente essa definição. As demais alternativas falham ao atribuir essas funções ao Product Owner (focado em valor/negócio), a um papel inexistente no Scrum (Gerente de Projetos), ou ao sobrecarregar os Desenvolvedores com tarefas de mudança cultural organizacional que competem ao Scrum Master.",
+    "technicalJustification": "Conforme o Scrum Guide 2020 (Schwaber & Sutherland), o Scrum Master é responsável por estabelecer o Scrum e pela eficácia do Scrum Team. Ele serve à organização liderando e treinando a adoção do framework.",
+    "relatedConcepts": [
+      "Scrum Master Accountabilities",
+      "Servant Leadership",
+      "Impediment Removal"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b1-scrum_2",
+    "topicId": "b1-scrum",
+    "blocoId": "bloco-1",
+    "question": "Durante o planejamento de uma nova iteração (Sprint Planning) em um projeto de modernização de sistemas de refino, a equipe de desenvolvimento e o Product Owner debatem sobre a composição do Sprint Backlog. O Product Owner apresenta os itens prioritários, mas os Desenvolvedores questionam a viabilidade técnica de entregar todos os itens no período de duas semanas. Com base nas regras do Scrum, como deve ser definida a meta e o escopo da Sprint?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "O Product Owner define unilateralmente a Meta da Sprint e os itens do backlog que devem ser concluídos, cabendo aos Desenvolvedores aceitá-los.",
+        "isCorrect": false,
+        "explanation": "O planejamento é colaborativo; o PO não impõe o escopo da Sprint sozinho."
+      },
+      {
+        "letter": "B",
+        "text": "A Meta da Sprint é opcional, devendo a equipe focar apenas na conclusão do maior número possível de itens do Product Backlog.",
+        "isCorrect": false,
+        "explanation": "A Meta da Sprint é um compromisso obrigatório do Sprint Backlog no Guia 2020."
+      },
+      {
+        "letter": "C",
+        "text": "Os Desenvolvedores selecionam os itens do Product Backlog que serão incluídos na Sprint e, em colaboração com o Product Owner, definem a Meta da Sprint.",
+        "isCorrect": true,
+        "explanation": "O Scrum Team colabora para criar a Meta, mas os Desenvolvedores selecionam o que acreditam que podem entregar."
+      },
+      {
+        "letter": "D",
+        "text": "O Scrum Master decide o escopo final da Sprint em caso de divergência entre o Product Owner e os Desenvolvedores.",
+        "isCorrect": false,
+        "explanation": "O Scrum Master não decide escopo; ele facilita o processo e garante que o framework seja seguido."
+      },
+      {
+        "letter": "E",
+        "text": "O escopo da Sprint, uma vez definido no planejamento, não pode sofrer nenhum tipo de clarificação ou renegociação até o final da iteração.",
+        "isCorrect": false,
+        "explanation": "O escopo pode ser clarificado e renegociado entre o PO e os Desenvolvedores conforme mais é aprendido."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "No Sprint Planning, o trabalho a ser realizado na Sprint é planejado através do esforço colaborativo de todo o Scrum Team. O evento aborda três tópicos: 1. Por que esta Sprint é valiosa? (Meta da Sprint); 2. O que pode ser feito nesta Sprint? (Seleção de itens); 3. Como o trabalho escolhido será realizado? (Plano de execução). De acordo com o Guia 2020, através da colaboração com o Product Owner, os Desenvolvedores selecionam itens do Product Backlog para incluir na Sprint. O Scrum Team como um todo cria a Meta da Sprint. É um erro comum acreditar que o PO 'manda' no que entra na Sprint; na verdade, os Desenvolvedores têm a palavra final sobre o quanto podem realizar (capacidade), garantindo a sustentabilidade do trabalho.",
+    "technicalJustification": "Scrum Guide 2020, seção 'Sprint Planning': 'Os Desenvolvedores, em colaboração com o Product Owner, selecionam itens do Product Backlog para incluir na Sprint. O Scrum Team cria a Sprint Goal durante o Sprint Planning.'",
+    "relatedConcepts": [
+      "Sprint Planning",
+      "Sprint Goal",
+      "Self-management"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b1-scrum_3",
+    "topicId": "b1-scrum",
+    "blocoId": "bloco-1",
+    "question": "Uma equipe Scrum que atua na área de Logística e Transporte da Petrobras realiza sua Daily Scrum pontualmente às 09:00h. Durante a reunião, o Scrum Master observa que os membros estão apenas relatando o que fizeram no dia anterior para ele, como se fosse um relatório de status individual, e que a reunião frequentemente ultrapassa os 15 minutos devido a discussões técnicas profundas sobre a resolução de bugs. Considerando as diretrizes do Scrum, qual é a conduta correta para este evento?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A Daily Scrum deve ser focada no progresso em direção à Meta da Sprint e na adaptação do Sprint Backlog, sendo um evento exclusivo para os Desenvolvedores.",
+        "isCorrect": true,
+        "explanation": "A Daily é para os Desenvolvedores inspecionarem o progresso e adaptarem o plano; não é um relatório de status para o SM."
+      },
+      {
+        "letter": "B",
+        "text": "O Scrum Master deve atuar como facilitador obrigatório, questionando cada membro individualmente para garantir que todos trabalhem as 8 horas diárias.",
+        "isCorrect": false,
+        "explanation": "O SM não precisa estar presente e a reunião não serve para controle de horas ou microgerenciamento."
+      },
+      {
+        "letter": "C",
+        "text": "As discussões técnicas detalhadas devem ocorrer durante a Daily Scrum para garantir que todos os impedimentos sejam resolvidos imediatamente diante do time.",
+        "isCorrect": false,
+        "explanation": "Discussões detalhadas devem ocorrer após a Daily para manter o evento dentro do time-box de 15 minutos."
+      },
+      {
+        "letter": "D",
+        "text": "O Product Owner deve obrigatoriamente liderar a Daily Scrum para readequar as prioridades do dia conforme as demandas dos stakeholders.",
+        "isCorrect": false,
+        "explanation": "O PO não lidera a Daily; se participar, é como ouvinte ou se tiver itens de trabalho como desenvolvedor."
+      },
+      {
+        "letter": "E",
+        "text": "A Daily Scrum deve ser cancelada se não houver impedimentos a relatar, pois seu único objetivo é a identificação de bloqueios.",
+        "isCorrect": false,
+        "explanation": "A Daily é um evento de inspeção e adaptação do plano diário, essencial mesmo sem impedimentos críticos."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A Daily Scrum é frequentemente mal interpretada como uma reunião de status para o Scrum Master ou Product Owner. Segundo o Guia 2020, a Daily Scrum é um evento de 15 minutos para os Desenvolvedores do Scrum Team. Seu propósito é inspecionar o progresso em direção à Meta da Sprint e adaptar o Sprint Backlog conforme necessário, ajustando o próximo trabalho planejado. O erro do cenário descrito é duplo: 1. Focar no SM como receptor da informação (os Desenvolvedores devem falar entre si); 2. Permitir discussões técnicas profundas que estouram o time-box. Tais discussões devem ser agendadas para imediatamente após a Daily. O Scrum Master apenas garante que o evento ocorra e permaneça dentro do tempo, mas não é um participante necessário se os Desenvolvedores conseguirem conduzi-lo sozinhos.",
+    "technicalJustification": "Scrum Guide 2020: 'The purpose of the Daily Scrum is to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary... The Daily Scrum is a 15-minute event for the Developers of the Scrum Team.'",
+    "relatedConcepts": [
+      "Daily Scrum",
+      "Time-boxing",
+      "Inspection and Adaptation"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b1-scrum_4",
+    "topicId": "b1-scrum",
+    "blocoId": "bloco-1",
+    "question": "Ao final de uma Sprint desafiadora, o Scrum Team de um projeto de exploração offshore se reúne para os eventos de encerramento. Durante a Sprint Review, o Product Owner convida stakeholders das áreas de Engenharia e Geofísica. Um dos stakeholders percebe que uma funcionalidade entregue não atende plenamente aos requisitos regulatórios da ANP (Agência Nacional do Petróleo). Diante desse cenário e das definições do Scrum, qual é a ação correta a ser tomada?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "O incremento deve ser descartado e a Sprint deve ser considerada fracassada, impedindo a realização da Sprint Retrospective.",
+        "isCorrect": false,
+        "explanation": "Uma Sprint nunca é 'fracassada' por um feedback; o aprendizado é parte do empirismo e a Retrospective deve ocorrer."
+      },
+      {
+        "letter": "B",
+        "text": "O Product Owner deve atualizar o Product Backlog com novas informações e feedbacks recebidos para que sejam priorizados em Sprints futuras.",
+        "isCorrect": true,
+        "explanation": "A Review serve justamente para inspecionar o incremento e adaptar o Product Backlog com base no feedback."
+      },
+      {
+        "letter": "C",
+        "text": "Os Desenvolvedores devem trabalhar em horas extras imediatas para corrigir a funcionalidade antes que a reunião de Sprint Review termine.",
+        "isCorrect": false,
+        "explanation": "A Review é para inspeção, não para desenvolvimento imediato ou correção sob pressão durante o evento."
+      },
+      {
+        "letter": "D",
+        "text": "O Scrum Master deve proibir a manifestação de stakeholders que não participaram do planejamento da Sprint, protegendo a equipe de críticas.",
+        "isCorrect": false,
+        "explanation": "O SM deve encorajar a colaboração; o feedback dos stakeholders é o insumo vital da Sprint Review."
+      },
+      {
+        "letter": "E",
+        "text": "A definição de pronto (Definition of Done) deve ser alterada retroativamente para excluir os requisitos regulatórios que não foram atendidos.",
+        "isCorrect": false,
+        "explanation": "A DoD não pode ser alterada retroativamente para 'validar' um trabalho incompleto; isso compromete a transparência e a qualidade."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A Sprint Review é um evento de inspeção e adaptação. Seu objetivo é inspecionar o resultado da Sprint (o incremento) e determinar adaptações futuras. No cenário proposto, o feedback do stakeholder é um exemplo clássico de empirismo em ação: a equipe apresentou o que foi feito e descobriu-se uma lacuna. A resposta correta no Scrum não é a punição ou o descarte, mas sim a adaptação do Product Backlog. O Product Owner, como responsável pelo gerenciamento do backlog, deve registrar essa necessidade e decidir quando ela será abordada. Este evento é uma sessão de trabalho colaborativa, não apenas uma demonstração (demo). O erro comum de candidatos é confundir a Review com uma simples 'aprovação' formal, quando na verdade é um momento de coletar feedback para guiar o próximo planejamento.",
+    "technicalJustification": "Scrum Guide 2020: 'The Scrum Team presents the results of their work to key stakeholders and progress toward the Product Goal is discussed... The Product Backlog may also be adjusted to meet new opportunities.'",
+    "relatedConcepts": [
+      "Sprint Review",
+      "Stakeholder Collaboration",
+      "Product Backlog Refinement"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b1-scrum_5",
+    "topicId": "b1-scrum",
+    "blocoId": "bloco-1",
+    "question": "Uma organização de TI que atende a Petrobras decidiu padronizar a 'Definition of Done' (Definição de Pronto) para todos os seus times Scrum que trabalham em um mesmo ecossistema de dados. No entanto, um time específico acredita que sua DoD deve ser mais rigorosa devido a exigências críticas de segurança cibernética do seu módulo. Considerando a relação entre a Definition of Done, o Incremento e os compromissos do Scrum, assinale a afirmação correta:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Se a organização não possui uma DoD padrão, o Scrum Team deve criar sua própria definição; se a organização possui uma, o time deve segui-la como nível mínimo.",
+        "isCorrect": true,
+        "explanation": "A DoD organizacional é o padrão mínimo; times podem e devem torná-la mais rigorosa se necessário para o seu contexto."
+      },
+      {
+        "letter": "B",
+        "text": "A Definition of Done é um documento estático definido no início do projeto pelo Product Owner e não pode ser alterado pelos Desenvolvedores.",
+        "isCorrect": false,
+        "explanation": "A DoD é um compromisso que evolui; os Desenvolvedores devem segui-la e podem melhorá-la na Retrospective."
+      },
+      {
+        "letter": "C",
+        "text": "Um item do Product Backlog pode ser entregue e apresentado na Sprint Review mesmo que não atenda integralmente à Definition of Done, desde que o PO autorize.",
+        "isCorrect": false,
+        "explanation": "Se um item não atende à DoD, ele não pode ser considerado parte do incremento nem ser apresentado na Review."
+      },
+      {
+        "letter": "D",
+        "text": "A Definition of Done aplica-se exclusivamente ao processo de codificação, não abrangendo requisitos de documentação, testes ou conformidade de segurança.",
+        "isCorrect": false,
+        "explanation": "A DoD é abrangente e inclui tudo o que é necessário para que o incremento tenha qualidade e seja utilizável (testes, docs, etc.)."
+      },
+      {
+        "letter": "E",
+        "text": "Múltiplos Scrum Teams trabalhando no mesmo produto podem ter Definitions of Done completamente diferentes e conflitantes entre si.",
+        "isCorrect": false,
+        "explanation": "Se houver vários times no mesmo produto, eles devem definir e seguir mutuamente a mesma Definition of Done para garantir a integração."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "A Definition of Done (DoD) é descrita no Guia Scrum 2020 como o compromisso para o artefato Incremento. Ela cria transparência ao fornecer a todos uma compreensão comum de qual trabalho foi concluído como parte do incremento. No que tange à governança, o Guia estabelece uma hierarquia: se a organização possui um padrão de 'Pronto', o Scrum Team deve adotá-lo como base mínima. Se a organização não possui, o time deve criar a sua. No caso de múltiplos times trabalhando no mesmo produto (cenário comum em grandes empresas como a Petrobras), eles devem definir conjuntamente a DoD. A alternativa A está correta pois permite que o time seja mais rigoroso que a organização, mas nunca menos. É crucial notar que um item que não atende à DoD nunca deve ser considerado 'Pronto', nem deve ser demonstrado na Sprint Review; ele simplesmente retorna ao Product Backlog para consideração futura, mantendo a integridade e qualidade do que é liberado.",
+    "technicalJustification": "Scrum Guide 2020: 'If the Definition of Done for an increment is part of the standards of the organization, all Scrum Teams must follow it as a minimum. If it is not an organizational standard, the Scrum Team must create a Definition of Done appropriate for the product.'",
+    "relatedConcepts": [
+      "Definition of Done",
+      "Increment",
+      "Transparency",
+      "Organizational Standards"
+    ],
+    "order": 5
+  }
+]

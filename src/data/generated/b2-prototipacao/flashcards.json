@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b2-prototipacao_1",
+    "topicId": "b2-prototipacao",
+    "front": "O que é um protótipo de baixa fidelidade?",
+    "back": "Representação visual simplificada de um layout ou fluxo, focada na estrutura e navegação, sem detalhes visuais ou interatividade. Geralmente usa elementos básicos como caixas e linhas.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-prototipacao_2",
+    "topicId": "b2-prototipacao",
+    "front": "O que é um protótipo de alta fidelidade?",
+    "back": "Representação visual detalhada e interativa de um produto, simulando a aparência e o comportamento final. Inclui elementos visuais refinados, interações complexas e conteúdo realista.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-prototipacao_3",
+    "topicId": "b2-prototipacao",
+    "front": "Defina wireframe no contexto de prototipagem.",
+    "back": "Um wireframe é um esboço visual de baixa fidelidade que foca na estrutura, organização e layout de uma página ou tela, mostrando os elementos essenciais e sua disposição, mas sem design visual.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-prototipacao_4",
+    "topicId": "b2-prototipacao",
+    "front": "Defina mockup no contexto de prototipagem.",
+    "back": "Um mockup é uma representação visual estática de média a alta fidelidade que demonstra o design visual de um produto, incluindo cores, tipografia e elementos gráficos, mas geralmente sem interatividade.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-prototipacao_5",
+    "topicId": "b2-prototipacao",
+    "front": "Qual a principal diferença entre wireframe e mockup?",
+    "back": "Wireframe foca na estrutura e funcionalidade (esqueleto), usando elementos básicos. Mockup foca na aparência visual e estética (pele), com mais detalhes gráficos e cores.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-prototipacao_6",
+    "topicId": "b2-prototipacao",
+    "front": "Quando é mais apropriado usar um protótipo de baixa fidelidade?",
+    "back": "Em estágios iniciais do design para explorar ideias rapidamente, definir a arquitetura da informação e o fluxo de navegação, e obter feedback sobre a estrutura sem se prender a detalhes visuais.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-prototipacao_7",
+    "topicId": "b2-prototipacao",
+    "front": "Quando é mais apropriado usar um protótipo de alta fidelidade?",
+    "back": "Em estágios mais avançados para testar a usabilidade com usuários finais, apresentar o design a stakeholders, validar interações complexas e refinar a experiência do usuário antes do desenvolvimento.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-prototipacao_8",
+    "topicId": "b2-prototipacao",
+    "front": "Quais são os principais benefícios de testar um protótipo com usuários?",
+    "back": "Identificar problemas de usabilidade precocemente, validar o design com feedback real, reduzir custos de retrabalho, melhorar a experiência do usuário e aumentar a confiança no produto final.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-prototipacao_9",
+    "topicId": "b2-prototipacao",
+    "front": "V ou F: O Figma é uma ferramenta exclusiva para a criação de wireframes.",
+    "back": "Falso. O Figma é uma ferramenta versátil que permite a criação de protótipos de baixa, média e alta fidelidade, além de design de interfaces e colaboração em tempo real.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-prototipacao_10",
+    "topicId": "b2-prototipacao",
+    "front": "Qual a relação entre prototipagem e o método de repetição espaçada (Anki-style)?",
+    "back": "A prototipagem em si não tem relação direta com a repetição espaçada. No entanto, os conceitos e termos relacionados à prototipagem (wireframe, mockup, fidelidade, ferramentas) podem ser transformados em flashcards para estudo eficiente usando repetição espaçada, otimizando a memorização para concursos.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "ex_b2-storytelling_1",
+    "topicId": "b2-storytelling",
+    "blocoId": "bloco-2",
+    "question": "Uma analista de dados da Petrobras precisa apresentar à diretoria a evolução do custo operacional de cinco refinarias ao longo de 12 meses. O objetivo é mostrar tendências e permitir comparações entre as unidades. Segundo os princípios de storytelling com dados propostos por Cole Nussbaumer Knaflic, qual tipo de gráfico é o MAIS adequado para essa situação?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gráfico de pizza com fatias representando cada refinaria",
+        "isCorrect": false,
+        "explanation": "Gráficos de pizza são inadequados para séries temporais e para comparar mais de 2-3 categorias. Eles mostram proporções de um todo em um único momento, não tendências ao longo do tempo."
+      },
+      {
+        "letter": "B",
+        "text": "Gráfico de linhas com uma série para cada refinaria",
+        "isCorrect": true,
+        "explanation": "O gráfico de linhas é ideal para mostrar tendências temporais e permite comparar múltiplas séries simultaneamente. Knaflic recomenda linhas para dados contínuos ao longo do tempo."
+      },
+      {
+        "letter": "C",
+        "text": "Gráfico de barras empilhadas agrupadas por mês",
+        "isCorrect": false,
+        "explanation": "Barras empilhadas dificultam a comparação individual entre refinarias, pois apenas a base e o topo da pilha são fáceis de ler. São melhores para mostrar composição de um total."
+      },
+      {
+        "letter": "D",
+        "text": "Tabela com os valores numéricos de cada refinaria por mês",
+        "isCorrect": false,
+        "explanation": "Tabelas são úteis para consultar valores específicos, mas não permitem identificar tendências e padrões visuais rapidamente. Para apresentações à diretoria, visualizações gráficas são mais eficazes."
+      },
+      {
+        "letter": "E",
+        "text": "Gráfico de dispersão (scatter plot) com custo no eixo Y e mês no eixo X",
+        "isCorrect": false,
+        "explanation": "Gráficos de dispersão são usados para mostrar correlação entre duas variáveis numéricas, não para séries temporais com categorias. Usar linhas conectando pontos sequenciais é mais adequado."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda a escolha correta de visualização segundo os princípios de storytelling com dados. Cole Nussbaumer Knaflic, em 'Storytelling with Data', enfatiza que a escolha do gráfico deve ser guiada pelo tipo de dado e pela mensagem que se deseja transmitir. Para dados temporais com múltiplas séries que precisam ser comparadas, o gráfico de linhas é a escolha natural: o eixo X representa o tempo (contínuo), cada linha representa uma refinaria, e a inclinação revela tendências. Isso permite ao público identificar rapidamente qual refinaria teve aumento ou redução de custos, cruzamentos entre séries e padrões sazonais. Tufte também reforça que a 'excelência gráfica' consiste em comunicar ideias complexas com clareza e eficiência, o que o gráfico de linhas faz nesse cenário.",
+    "technicalJustification": "Segundo Knaflic (2015), gráficos de linhas são recomendados para dados contínuos ao longo do tempo, especialmente quando se deseja mostrar tendências. Tufte (2001) complementa que a integridade gráfica exige que a representação visual seja proporcional à variação numérica dos dados, o que gráficos de linhas fazem naturalmente através da inclinação.",
+    "relatedConcepts": ["Escolha de gráficos", "Storytelling com dados", "Visualização temporal", "Princípios de Tufte"],
+    "order": 1
+  },
+  {
+    "id": "ex_b2-storytelling_2",
+    "topicId": "b2-storytelling",
+    "blocoId": "bloco-2",
+    "question": "Edward Tufte, em 'The Visual Display of Quantitative Information', define o conceito de 'data-ink ratio' (razão dados-tinta). Um analista de BI está revisando um dashboard da Petrobras que contém gráficos com grades pesadas, bordas 3D, sombreamentos decorativos e legendas redundantes. Segundo o princípio do data-ink ratio de Tufte, qual ação é a MAIS correta para melhorar essa visualização?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Adicionar mais cores e elementos decorativos para tornar o dashboard mais atraente visualmente",
+        "isCorrect": false,
+        "explanation": "Isso vai na direção oposta ao princípio. Tufte critica o 'chartjunk' — elementos decorativos que não agregam informação e podem distrair ou confundir o leitor."
+      },
+      {
+        "letter": "B",
+        "text": "Remover a maior quantidade possível de tinta que não representa dados, eliminando grades desnecessárias, efeitos 3D e decorações",
+        "isCorrect": true,
+        "explanation": "O princípio do data-ink ratio preconiza maximizar a proporção de tinta usada para representar dados em relação ao total de tinta do gráfico. Remover elementos não-informacionais ('chartjunk') melhora essa razão."
+      },
+      {
+        "letter": "C",
+        "text": "Manter os elementos visuais e adicionar anotações textuais explicando cada dado",
+        "isCorrect": false,
+        "explanation": "Anotações podem ser úteis para contexto, mas manter elementos decorativos desnecessários viola o princípio. A prioridade é primeiro limpar, depois adicionar contexto quando necessário."
+      },
+      {
+        "letter": "D",
+        "text": "Substituir todos os gráficos por tabelas numéricas para maximizar a densidade informacional",
+        "isCorrect": false,
+        "explanation": "Tufte valoriza tanto gráficos quanto tabelas, dependendo do contexto. Substituir tudo por tabelas não é o que o data-ink ratio sugere — ele fala sobre otimizar gráficos, não eliminá-los."
+      },
+      {
+        "letter": "E",
+        "text": "Reduzir o tamanho dos gráficos para que caibam mais informações na mesma tela",
+        "isCorrect": false,
+        "explanation": "Reduzir tamanho pode prejudicar a legibilidade. O data-ink ratio trata da proporção entre tinta de dados e tinta total, não necessariamente do tamanho do gráfico."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "Edward Tufte introduziu o conceito de 'data-ink ratio' como uma métrica para avaliar a eficiência gráfica. A fórmula conceitual é: Data-Ink Ratio = (Tinta usada para representar dados) / (Total de tinta no gráfico). O objetivo é maximizar essa razão, o que significa eliminar todo 'chartjunk' — elementos visuais que não contribuem para transmitir informação: grades pesadas, efeitos 3D, sombreamentos, bordas decorativas, etc. No contexto da Petrobras, dashboards limpos e focados permitem que gestores tomem decisões mais rápidas e acertadas, sem serem distraídos por ruído visual. Tufte afirma: 'Acima de tudo, mostre os dados' (Above all else, show the data).",
+    "technicalJustification": "Tufte, E. (2001). The Visual Display of Quantitative Information. Graphics Press. O autor dedica capítulos inteiros ao conceito de data-ink ratio e à eliminação de chartjunk, demonstrando empiricamente que visualizações mais limpas são interpretadas mais rapidamente e com menor taxa de erro.",
+    "relatedConcepts": ["Data-ink ratio", "Chartjunk", "Tufte", "Eficiência gráfica", "Design de dashboards"],
+    "order": 2
+  },
+  {
+    "id": "ex_b2-storytelling_3",
+    "topicId": "b2-storytelling",
+    "blocoId": "bloco-2",
+    "question": "Na metodologia de storytelling com dados proposta por Knaflic, a estrutura narrativa segue três componentes fundamentais. Um analista da Petrobras precisa apresentar ao comitê executivo que houve um aumento de 30% nos incidentes de segurança cibernética no último trimestre e propor investimentos em novas ferramentas. Qual é a sequência CORRETA dos três componentes narrativos que ele deve seguir?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Solução → Problema → Contexto",
+        "isCorrect": false,
+        "explanation": "Apresentar a solução antes do problema não cria engajamento. O público precisa primeiro entender o contexto e o problema para valorizar a solução proposta."
+      },
+      {
+        "letter": "B",
+        "text": "Dados → Gráficos → Conclusão",
+        "isCorrect": false,
+        "explanation": "Essa sequência foca nos artefatos técnicos, não na estrutura narrativa. Storytelling vai além de apenas apresentar dados e gráficos — requer uma narrativa com arco dramático."
+      },
+      {
+        "letter": "C",
+        "text": "O quê (situação/contexto) → Por quê (tensão/conflito) → Como (resolução/chamada para ação)",
+        "isCorrect": true,
+        "explanation": "Knaflic recomenda a estrutura narrativa clássica adaptada para dados: estabelecer o contexto (situação atual), apresentar o conflito (o problema revelado pelos dados) e propor a resolução (recomendação/ação)."
+      },
+      {
+        "letter": "D",
+        "text": "Introdução → Metodologia → Resultados",
+        "isCorrect": false,
+        "explanation": "Essa é a estrutura de um artigo acadêmico, não de uma narrativa de dados. Para apresentações executivas, o storytelling com dados segue uma lógica de engajamento narrativo."
+      },
+      {
+        "letter": "E",
+        "text": "Hipótese → Análise → Validação",
+        "isCorrect": false,
+        "explanation": "Essa é uma estrutura de pesquisa científica. O storytelling com dados para audiências executivas precisa de uma narrativa que conecte emocionalmente e motive ação."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "Cole Nussbaumer Knaflic em 'Storytelling with Data' ensina que toda apresentação de dados eficaz segue uma estrutura narrativa de três atos, inspirada na narrativa clássica: (1) Contexto/Situação — estabelecer o que o público precisa saber sobre a situação atual; (2) Conflito/Tensão — apresentar o problema, a mudança ou desafio revelado pelos dados; (3) Resolução/Chamada para ação — propor o que deve ser feito. No exemplo da questão: (1) 'Nosso ambiente de TI monitora X ativos e temos Y ferramentas de segurança' — contexto; (2) 'Os dados mostram aumento de 30% nos incidentes, com estas tendências preocupantes' — conflito; (3) 'Propomos investir em EDR e SIEM para reduzir o tempo de resposta' — resolução. Essa estrutura mantém o público engajado e motivado a agir.",
+    "technicalJustification": "Knaflic, C.N. (2015). Storytelling with Data. Wiley. A autora dedica o capítulo 7 ('Lessons in Storytelling') à estrutura narrativa e explica como o arco situação-conflito-resolução funciona para dados, baseando-se em princípios de comunicação persuasiva.",
+    "relatedConcepts": ["Estrutura narrativa", "Storytelling", "Comunicação executiva", "Arco narrativo com dados"],
+    "order": 3
+  },
+  {
+    "id": "ex_b2-storytelling_4",
+    "topicId": "b2-storytelling",
+    "blocoId": "bloco-2",
+    "question": "Um dashboard da área de logística da Petrobras apresenta 15 KPIs (indicadores-chave de performance) na mesma tela, todos com a mesma formatação visual, sem destaque para nenhum indicador específico. Segundo os princípios de atenção pré-atentiva (preattentive attributes) descritos por Stephen Few e aplicados por Knaflic ao storytelling com dados, qual é o principal problema desse dashboard?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "O dashboard possui KPIs demais; o ideal é mostrar no máximo 3 indicadores por tela",
+        "isCorrect": false,
+        "explanation": "Não existe uma regra rígida de limite de KPIs. O problema não é a quantidade, mas a falta de hierarquia visual que guie a atenção do usuário."
+      },
+      {
+        "letter": "B",
+        "text": "Sem uso de atributos pré-atentivos (cor, tamanho, posição) para criar hierarquia, todos os KPIs competem igualmente pela atenção, impedindo que o usuário identifique rapidamente o que é mais importante",
+        "isCorrect": true,
+        "explanation": "Atributos pré-atentivos são processados pelo cérebro em milissegundos (antes da atenção consciente). Sem diferenciação visual, o olho não sabe para onde ir primeiro, criando sobrecarga cognitiva."
+      },
+      {
+        "letter": "C",
+        "text": "Dashboards devem usar exclusivamente gráficos, nunca KPIs numéricos isolados",
+        "isCorrect": false,
+        "explanation": "KPIs numéricos (big numbers) são perfeitamente válidos em dashboards. O problema é a falta de hierarquia visual, não o tipo de elemento."
+      },
+      {
+        "letter": "D",
+        "text": "O problema é que faltam filtros interativos para o usuário selecionar quais KPIs deseja ver",
+        "isCorrect": false,
+        "explanation": "Filtros são úteis para interatividade, mas o problema fundamental aqui é de design visual e comunicação, não de funcionalidade técnica."
+      },
+      {
+        "letter": "E",
+        "text": "KPIs devem sempre ser apresentados em formato de semáforo (verde/amarelo/vermelho), nunca de outra forma",
+        "isCorrect": false,
+        "explanation": "Semáforos são uma técnica possível de diferenciação, mas não são obrigatórios. O ponto central é usar ALGUM atributo pré-atentivo para criar hierarquia, seja cor, tamanho, posição ou outro."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "O conceito de atributos pré-atentivos (preattentive attributes) é fundamental no design de dashboards e no storytelling com dados. Stephen Few, em 'Information Dashboard Design', e Knaflic, em 'Storytelling with Data', explicam que o sistema visual humano processa certos atributos (cor, tamanho, orientação, forma, posição, comprimento, largura, intensidade) em menos de 500 milissegundos, ANTES da atenção consciente. Quando todos os elementos de uma tela têm a mesma aparência visual, nenhum se destaca — o cérebro não consegue priorizar e o usuário experimenta sobrecarga cognitiva (cognitive overload). A solução é usar atributos pré-atentivos estrategicamente: destacar KPIs críticos com cor mais intensa ou tamanho maior, posicionar os mais importantes no topo-esquerda (padrão de leitura em F), e usar cores de alerta apenas para indicadores fora da meta.",
+    "technicalJustification": "Few, S. (2006). Information Dashboard Design. Analytics Press. Knaflic, C.N. (2015). Storytelling with Data. Wiley. Ambos autores baseiam-se em pesquisas de percepção visual de Healey & Enns (2012) que demonstram que atributos pré-atentivos são processados em paralelo pelo sistema visual, ao contrário de atributos que requerem atenção serial.",
+    "relatedConcepts": ["Atributos pré-atentivos", "Hierarquia visual", "Sobrecarga cognitiva", "Design de dashboards", "Princípios de Few"],
+    "order": 4
+  },
+  {
+    "id": "ex_b2-storytelling_5",
+    "topicId": "b2-storytelling",
+    "blocoId": "bloco-2",
+    "question": "Ao construir uma apresentação de dados sobre a eficiência operacional das plataformas de petróleo, um analista utiliza um gráfico de barras onde o eixo Y começa em 85% (em vez de 0%) para mostrar variações entre plataformas que ficam entre 87% e 93%. Considerando os princípios de integridade gráfica de Tufte e de contexto adequado de Knaflic, qual afirmação sobre essa prática é CORRETA?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "É sempre uma prática errada, pois todo gráfico deve começar em zero para manter a integridade gráfica",
+        "isCorrect": false,
+        "explanation": "A regra de começar em zero aplica-se principalmente a gráficos de barras (onde o comprimento da barra codifica o valor). Para gráficos de linhas, truncar o eixo pode ser aceitável quando o objetivo é mostrar variação."
+      },
+      {
+        "letter": "B",
+        "text": "Em gráficos de barras, truncar o eixo Y distorce a percepção visual das proporções, pois o comprimento da barra é o atributo pré-atentivo que codifica o valor — podendo exagerar diferenças pequenas",
+        "isCorrect": true,
+        "explanation": "Em gráficos de barras, o olho humano interpreta o comprimento da barra como proporcional ao valor. Truncar o eixo faz com que uma diferença de 6 pontos percentuais pareça visualmente muito maior do que realmente é."
+      },
+      {
+        "letter": "C",
+        "text": "Truncar o eixo é sempre aceitável desde que haja uma nota de rodapé informando o ponto de início",
+        "isCorrect": false,
+        "explanation": "Uma nota de rodapé não resolve a distorção perceptual. O problema é que o cérebro processa o comprimento da barra automaticamente (pré-atentivamente), antes de ler qualquer nota."
+      },
+      {
+        "letter": "D",
+        "text": "A prática é irrelevante, pois o público executivo só se importa com os números, não com a forma do gráfico",
+        "isCorrect": false,
+        "explanation": "Pesquisas mostram que a percepção visual é fortemente influenciada pela forma do gráfico. Executivos, como qualquer público, estão sujeitos a vieses visuais."
+      },
+      {
+        "letter": "E",
+        "text": "A solução é usar um gráfico 3D para que a perspectiva compense a distorção do eixo truncado",
+        "isCorrect": false,
+        "explanation": "Gráficos 3D adicionam distorção extra (perspective distortion) e são considerados por Tufte como uma das piores práticas de visualização. Eles não compensam a truncagem do eixo."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão aborda um tema crucial de integridade gráfica. Tufte define o 'Lie Factor' como a razão entre o efeito visual e o efeito numérico: Lie Factor = (tamanho do efeito mostrado no gráfico) / (tamanho do efeito real nos dados). Quando truncamos o eixo Y de um gráfico de barras, o comprimento visual das barras não corresponde à proporção real dos valores. Por exemplo, se a plataforma A tem 88% e a plataforma B tem 92%, a diferença real é de ~4.5%, mas visualmente a barra de B pode parecer 4x maior que a de A se o eixo começa em 85%. Knaflic concorda e recomenda: para barras, sempre comece em zero; se a variação é pequena e importante, considere usar um gráfico de linhas (onde a inclinação codifica a mudança) ou de pontos (dot plot), que não dependem do comprimento para codificar valores.",
+    "technicalJustification": "Tufte, E. (2001). The Visual Display of Quantitative Information. O autor define formalmente o Lie Factor e demonstra como eixos truncados em gráficos de barras violam a integridade gráfica. Knaflic (2015) reforça que em gráficos de barras a baseline zero é essencial e sugere alternativas como dot plots quando a variação é pequena.",
+    "relatedConcepts": ["Lie Factor", "Integridade gráfica", "Truncagem de eixo", "Gráfico de barras vs linhas", "Tufte"],
+    "order": 5
+  }
+]

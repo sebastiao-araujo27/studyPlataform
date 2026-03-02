@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b3-mitre_1",
+    "topicId": "b3-mitre",
+    "front": "Quais são as 14 táticas da matriz MITRE ATT&CK Enterprise, na ordem?",
+    "back": "1. **Reconnaissance** (Reconhecimento)\n2. **Resource Development** (Desenvolvimento de Recursos)\n3. **Initial Access** (Acesso Inicial)\n4. **Execution** (Execução)\n5. **Persistence** (Persistência)\n6. **Privilege Escalation** (Escalação de Privilégios)\n7. **Defense Evasion** (Evasão de Defesas)\n8. **Credential Access** (Acesso a Credenciais)\n9. **Discovery** (Descoberta)\n10. **Lateral Movement** (Movimento Lateral)\n11. **Collection** (Coleta)\n12. **Command and Control — C2** (Comando e Controle)\n13. **Exfiltration** (Exfiltração)\n14. **Impact** (Impacto)\n\n⚠️ São **14 táticas** (não 12!). Reconnaissance e Resource Development foram adicionadas em 2020.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-mitre_2",
+    "topicId": "b3-mitre",
+    "front": "Qual a diferença entre TÁTICA, TÉCNICA e PROCEDIMENTO (TTPs) no MITRE ATT&CK?",
+    "back": "**Tática** = O **OBJETIVO** do adversário (o \"porquê\")\n→ Ex: Obter acesso inicial (Initial Access)\n\n**Técnica** = O **MÉTODO** utilizado (o \"como\")\n→ Ex: Phishing (T1566)\n\n**Sub-técnica** = Variação específica de uma técnica\n→ Ex: Spearphishing Attachment (T1566.001)\n\n**Procedimento** = A **IMPLEMENTAÇÃO REAL** por um grupo/malware (o \"quem fez\")\n→ Ex: APT33 envia Word com macros VBA contendo dropper TURNEDUP\n\n📐 Hierarquia: Tática → Técnica → Sub-técnica → Procedimento",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-mitre_3",
+    "topicId": "b3-mitre",
+    "front": "Quais são as 7 fases da Cyber Kill Chain (Lockheed Martin)?",
+    "back": "Mnemônico: **R-W-D-E-I-C-A**\n\n1. **R**econnaissance — Pesquisa sobre o alvo\n2. **W**eaponization — Criação do payload malicioso\n3. **D**elivery — Entrega do artefato ao alvo\n4. **E**xploitation — Execução do exploit\n5. **I**nstallation — Instalação de backdoor/persistência\n6. **C**ommand & Control (C2) — Canal de comunicação com atacante\n7. **A**ctions on Objectives — Objetivos finais (roubo, destruição)\n\n⚠️ É LINEAR e SEQUENCIAL (diferente do ATT&CK que é matricial).\n⚠️ Lateral Movement NÃO é fase da Kill Chain (é tática do ATT&CK!).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-mitre_4",
+    "topicId": "b3-mitre",
+    "front": "Quais são os 4 tipos de Threat Intelligence e seu público-alvo?",
+    "back": "Mnemônico: **E-T-O-T** (do mais alto ao mais detalhado)\n\n| Tipo | Público | Conteúdo |\n|------|---------|----------|\n| **Estratégica** | C-Level, diretoria | Tendências, motivações, riscos geopolíticos |\n| **Tática** | Gerentes de segurança | TTPs de grupos adversários |\n| **Operacional** | Analistas Sr./CSIRT | Campanhas ativas, infra de C2 |\n| **Técnica** | Analistas SOC | IoCs: hashes, IPs, domínios, assinaturas |\n\n📐 Regra: Quanto mais ALTO o nível hierárquico, mais ESTRATÉGICA a inteligência.\n⚠️ OSINT é uma FONTE, não um TIPO de inteligência.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-mitre_5",
+    "topicId": "b3-mitre",
+    "front": "O que é Threat Hunting? Quais suas 3 abordagens e qual é a mais matura?",
+    "back": "**Threat Hunting** = Busca **PROATIVA e ITERATIVA** por ameaças que ESCAPARAM das defesas automatizadas. O analista FORMULA HIPÓTESES e investiga ativamente.\n\n**3 Abordagens:**\n1. **IoC-based** (básica): Busca por indicadores conhecidos (hashes, IPs)\n2. **Anomaly-based** (intermediária): Busca por desvios do comportamento normal\n3. **TTP-based** (avançada/**MAIS MATURA**): Busca por comportamentos adversários mapeados no MITRE ATT&CK\n\n⚠️ Hunting NÃO substitui SIEM/EDR — é COMPLEMENTAR!\n⚠️ Hunting NÃO é resposta a alertas (isso é detecção REATIVA).\n⚠️ Hunting NÃO é pentest nem scan de vulnerabilidades.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-mitre_6",
+    "topicId": "b3-mitre",
+    "front": "O que é a Pyramid of Pain? Onde estão os TTPs e por que isso importa?",
+    "back": "**Pyramid of Pain** (David Bianco): classifica indicadores pela DIFICULDADE que causam ao adversário quando detectados.\n\n```\n    TTPs          ← TOPO (muito difícil mudar)\n    Tools\n    Artifacts\n    Domains\n    IPs\n    Hashes        ← BASE (trivial mudar)\n```\n\n**TTPs estão no TOPO:** O adversário teria que mudar completamente seu modo de operação.\n**Hashes estão na BASE:** Basta recompilar o malware.\n\n📐 O MITRE ATT&CK opera no TOPO da pirâmide → detecção mais resiliente.\n⚠️ Detecção baseada APENAS em IoCs (hashes/IPs) é facilmente evadida!",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-mitre_7",
+    "topicId": "b3-mitre",
+    "front": "Qual a diferença entre MITRE ATT&CK Enterprise e ATT&CK for ICS? Por que ICS é relevante para a Petrobras?",
+    "back": "**Enterprise:** 14 táticas, foco em TI corporativa (Windows, Linux, Cloud).\n**ICS:** 12 táticas, foco em sistemas de controle industrial (SCADA, PLCs, HMIs).\n\n**Táticas EXCLUSIVAS do ICS:**\n- **Impair Process Control** — manipular processo industrial\n- **Inhibit Response Function** — impedir sistemas de segurança\n\n**Relevância Petrobras:** Refinarias, plataformas offshore e gasodutos usam SCADA/ICS. Ataques reais como **TRITON** (SIS) e **Sandworm** (rede elétrica Ucrânia) mostram que comprometimento de ICS pode causar **danos físicos e risco à vida humana**.\n\nProtocolos ICS: Modbus, DNP3, OPC UA, IEC 61850.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-mitre_8",
+    "topicId": "b3-mitre",
+    "front": "Qual a diferença entre a Cyber Kill Chain e o MITRE ATT&CK?",
+    "back": "| Aspecto | Kill Chain | ATT&CK |\n|---------|-----------|--------|\n| **Estrutura** | 7 fases LINEARES | 14 táticas MATRICIAIS |\n| **Granularidade** | Macro (7 fases) | Alta (centenas de técnicas) |\n| **Sequência** | Obrigatoriamente sequencial | Táticas em qualquer ordem |\n| **Atualização** | Estático (2011) | Dinâmico (2-3x/ano) |\n| **Uso** | Comunicação executiva | Hunting, detecção, red teaming |\n| **Pré-compromisso** | Forte | Adicionado em 2020 |\n| **Pós-compromisso** | Fraco | Muito detalhado |\n\n📐 São COMPLEMENTARES, não substitutos!\n⚠️ Lateral Movement NÃO está na Kill Chain.\n⚠️ Weaponization NÃO está no ATT&CK (equivalente: Resource Development).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-mitre_9",
+    "topicId": "b3-mitre",
+    "front": "O que são STIX, TAXII e TLP no contexto de Threat Intelligence?",
+    "back": "**STIX** (Structured Threat Information Expression):\n= **eSTrutura/Formato** da inteligência de ameaças\n→ Como a informação é DESCRITA/ORGANIZADA (JSON)\n\n**TAXII** (Trusted Automated Exchange of Indicator Information):\n= **Transporte** da inteligência de ameaças\n→ Como a informação é TRANSMITIDA (protocolo HTTP/API)\n\n**TLP** (Traffic Light Protocol):\n= Classificação de COMPARTILHAMENTO\n→ **RED:** Apenas destinatários nomeados\n→ **AMBER:** Organização + parceiros diretos\n→ **GREEN:** Comunidade do setor\n→ **CLEAR:** Público geral\n\nMnemônico: **S**TIX = e**S**trutura | **T**AXII = **T**ransporte",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-mitre_10",
+    "topicId": "b3-mitre",
+    "front": "Quais são os principais GRUPOS de ameaça (APTs) relevantes para o setor de energia no MITRE ATT&CK?",
+    "back": "**APT33 (Elfin/Magnallium):**\n- 🇮🇷 Iraniano | Foco: aviação e **energia**\n- TTPs: spearphishing, PowerShell, **Shamoon** (wiper)\n\n**APT34 (OilRig/Helix Kitten):**\n- 🇮🇷 Iraniano | Foco: infraestrutura crítica\n- TTPs: DNS tunneling, webshells, credential harvesting\n\n**Sandworm (Voodoo Bear):**\n- 🇷🇺 Russo | Foco: **rede elétrica**, ICS\n- TTPs: BlackEnergy, **ataque à Ucrânia (2015-2016)**\n\n**TRITON/TRISIS:**\n- Malware que ataca **Safety Instrumented Systems (SIS)**\n- Alvo: controladores Triconex (Schneider Electric)\n- Risco: desabilitar SIS → **explosão/vazamento** sem shutdown de emergência\n\n⚠️ Todos documentados com TTPs completas no ATT&CK!",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

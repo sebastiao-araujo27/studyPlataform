@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b3-nist_1",
+    "topicId": "b3-nist",
+    "front": "Quais são as 4 fases do ciclo de vida de resposta a incidentes do NIST SP 800-61 Rev. 2?",
+    "back": "1. **Preparação** (Preparation)\n2. **Detecção e Análise** (Detection & Analysis)\n3. **Contenção, Erradicação e Recuperação** (Containment, Eradication & Recovery)\n4. **Atividade Pós-Incidente** (Post-Incident Activity)\n\nMnemônico: **P-DAC-P** (Prepare, Detecte, Aja, Corrija, Pondere)\n\n⚠️ São 4 fases (NIST), não 6 (SANS) nem 5 (ISO 27035). As fases são CÍCLICAS e ITERATIVAS, não lineares.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-nist_2",
+    "topicId": "b3-nist",
+    "front": "Qual a diferença entre EVENTO de segurança e INCIDENTE de segurança segundo o NIST SP 800-61?",
+    "back": "**Evento:** Qualquer ocorrência observável em um sistema ou rede. É NEUTRO — milhões acontecem diariamente (login, conexão, execução de processo).\n\n**Incidente:** Uma violação ou ameaça iminente de violação das políticas de segurança. É um SUBCONJUNTO de eventos.\n\n📐 Regra: Todo incidente é um evento, mas NEM TODO evento é um incidente.\n\nAnalogia: Carros passando na rua = eventos. Um carro atropelando alguém = incidente.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-nist_3",
+    "topicId": "b3-nist",
+    "front": "Quais são os 3 fatores de priorização de incidentes do NIST SP 800-61? Quais são os níveis de cada um?",
+    "back": "Mnemônico: **FIR**\n\n1. **F**uncional (Functional Impact): None → Low → Medium → High\n2. **I**nformacional (Information Impact): None → Privacy Breach → Proprietary Breach → Integrity Loss\n3. **R**ecuperabilidade (Recoverability): Regular → Suplementada → Estendida → Não-recuperável\n\n⚠️ Impacto financeiro NÃO é um fator explícito de priorização no NIST (pegadinha comum!).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-nist_4",
+    "topicId": "b3-nist",
+    "front": "Qual a diferença entre PRECURSOR e INDICADOR na detecção de incidentes (NIST SP 800-61)?",
+    "back": "**Precursor:** Sinal de que um incidente PODE ocorrer no FUTURO.\n- Ex: Scanner de vulnerabilidades nos logs, novo exploit publicado, ameaça direta de grupo hacker.\n- Análogo a nuvens escuras (pode chover).\n\n**Indicador:** Sinal de que um incidente ESTÁ ocorrendo ou JÁ OCORREU.\n- Ex: Alerta de IDS, hash de malware detectado, tráfego para C2, login anômalo.\n- Análogo a chuva caindo (está chovendo).\n\n⚠️ Precursores são MENOS COMUNS de serem observados que indicadores.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-nist_5",
+    "topicId": "b3-nist",
+    "front": "No NIST SP 800-61, qual a diferença entre Contenção de CURTO PRAZO e Contenção de LONGO PRAZO?",
+    "back": "**Curto prazo:** Ações IMEDIATAS para parar o sangramento.\n- Isolar sistema da rede, bloquear IP malicioso, desabilitar conta comprometida.\n- NÃO desligar o sistema (preservar evidências voláteis!).\n\n**Longo prazo:** Soluções PROVISÓRIAS enquanto a definitiva é preparada.\n- Aplicar patches emergenciais, redirecionar tráfego, isolar segmentos via VLAN.\n- Permite que sistemas voltem a operar parcialmente.\n\n⚠️ Contenção + Erradicação + Recuperação = UMA ÚNICA FASE no NIST (a 3ª).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-nist_6",
+    "topicId": "b3-nist",
+    "front": "Quais são as 3 abordagens de Threat Hunting e qual é considerada a mais matura?",
+    "back": "1. **Hypothesis-Driven** (Guiada por Hipótese): Analista formula teoria baseada em experiência/inteligência e busca evidências.\n\n2. **IOC-Based / Intelligence-Driven** (Baseada em IOC): Usa indicadores de feeds de threat intelligence para buscar proativamente na infraestrutura.\n\n3. **TTP-Based / Analytics-Driven** (Baseada em TTP): Usa MITRE ATT&CK e análise comportamental para buscar padrões de ataque.\n\n🏆 A mais madura: **TTP-Based** — está no topo da Pyramid of Pain (TTPs são o que o adversário tem mais dificuldade de mudar).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-nist_7",
+    "topicId": "b3-nist",
+    "front": "Quais são os 4 níveis de Threat Intelligence e qual tem MAIOR e MENOR tempo de validade?",
+    "back": "| Nível | Público | Validade |\n|-------|---------|----------|\n| **Estratégico** | Diretoria/C-Level | Meses a ANOS |\n| **Tático** | Gerentes de segurança | Semanas a meses |\n| **Operacional** | Analistas sênior SOC | Dias a semanas |\n| **Técnico** | Ferramentas/Analistas SOC | HORAS a dias |\n\n📈 MAIOR validade: Estratégico (tendências/geopolítica mudam lentamente)\n📉 MENOR validade: Técnico (IPs/domínios de C2 mudam rapidamente)\n\nRelação: Threat Intelligence ALIMENTA o Threat Hunting com contexto e IOCs.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-nist_8",
+    "topicId": "b3-nist",
+    "front": "Compare as fases de resposta a incidentes: NIST SP 800-61 vs. SANS vs. ISO 27035.",
+    "back": "**NIST SP 800-61 — 4 fases:**\n1. Preparação\n2. Detecção e Análise\n3. Contenção, Erradicação e Recuperação (JUNTAS)\n4. Atividade Pós-Incidente\n\n**SANS — 6 fases:**\n1. Preparação → 2. Identificação → 3. Contenção → 4. Erradicação → 5. Recuperação → 6. Lições Aprendidas\n\n**ISO 27035 — 5 fases:**\n1. Planejamento e Preparação → 2. Detecção e Reporte → 3. Avaliação e Decisão → 4. Resposta → 5. Lições Aprendidas\n\n⚠️ Diferença principal: NIST agrupa Contenção+Erradicação+Recuperação em 1 fase; SANS separa em 3.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-nist_9",
+    "topicId": "b3-nist",
+    "front": "Qual a ordem de volatilidade para coleta de evidências digitais e por que é importante?",
+    "back": "Coletar do MAIS volátil para o MENOS volátil:\n\n1. Registradores de CPU / Cache\n2. **Memória RAM** (processos, senhas, chaves de criptografia)\n3. Estado da rede (conexões ativas)\n4. Processos em execução\n5. **Disco rígido** (arquivos, logs persistentes)\n6. Mídias removíveis\n7. Logs remotos / Backups\n\n🔑 Por que importa: Ao desligar o sistema, itens 1-4 são PERDIDOS IRREVERSIVELMENTE.\n\n⚠️ Regra de ouro: NÃO DESLIGUE o sistema → Isole da rede → Colete voláteis → Depois o disco.\n📋 Cadeia de custódia: Documentar QUEM, QUANDO, COMO e POR QUÊ manipulou cada evidência.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-nist_10",
+    "topicId": "b3-nist",
+    "front": "Quais são os 3 modelos organizacionais de CSIRT segundo o NIST SP 800-61 e qual é o mais adequado para a Petrobras?",
+    "back": "1. **Centralizado:** UMA equipe para toda a organização. Ideal parempresas menores.\n\n2. **Distribuído:** MÚLTIPLAS equipes locais em diferentes unidades, com coordenação central.\n\n3. **Coordenado:** Equipe central ORIENTA e COORDENA, equipes locais EXECUTAM.\n\n🏢 Para a Petrobras: Modelo **Distribuído** ou **Coordenado** — devido à presença em múltiplas localidades (sede, refinarias, plataformas offshore) com necessidades específicas de cada unidade (IT vs. OT/SCADA).\n\n🇧🇷 CERT.br: CSIRT nacional brasileiro, ponto de contato para notificação de incidentes.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

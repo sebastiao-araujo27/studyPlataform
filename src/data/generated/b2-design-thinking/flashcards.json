@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b2-design-thinking_1",
+    "topicId": "b2-design-thinking",
+    "front": "O que é Design Thinking?",
+    "back": "Uma abordagem centrada no ser humano para inovação, que integra as necessidades das pessoas, as possibilidades tecnológicas e os requisitos para o sucesso dos negócios. Envolve uma mentalidade e um conjunto de processos para resolver problemas complexos de forma criativa.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-design-thinking_2",
+    "topicId": "b2-design-thinking",
+    "front": "Qual é a primeira fase do processo de Design Thinking, focada em compreender profundamente as necessidades e desafios dos usuários?",
+    "back": "Empatia. Esta fase busca aprofundar a compreensão sobre os usuários, seus contextos, necessidades e dores, utilizando métodos como observação, entrevistas e imersão para gerar insights.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-design-thinking_3",
+    "topicId": "b2-design-thinking",
+    "front": "No contexto do Design Thinking, o que significa a sigla HCD?",
+    "back": "HCD significa Human-Centered Design (Design Centrado no Ser Humano). É uma filosofia que coloca as pessoas no centro do processo de desenvolvimento de soluções, garantindo que elas atendam às suas necessidades, desejos e comportamentos.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-design-thinking_4",
+    "topicId": "b2-design-thinking",
+    "front": "Cite as cinco fases do processo de Design Thinking, conforme o modelo linear mais conhecido.",
+    "back": "As cinco fases são:\n*   Empatia (ou Imersão)\n*   Definição (do problema)\n*   Ideação (geração de ideias)\n*   Prototipação (criação de modelos)\n*   Teste (validação das soluções)",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-design-thinking_5",
+    "topicId": "b2-design-thinking",
+    "front": "Descreva as duas principais fases representadas pelos 'diamantes' do modelo Double Diamond.",
+    "back": "O modelo Double Diamond possui:\n*   **Primeiro Diamante (Espaço do Problema):** Focado em entender e definir o problema correto. Inicia com 'Descobrir' (divergir para explorar) e converge na fase de 'Definir' (sintetizar e focar).\n*   **Segundo Diamante (Espaço da Solução):** Focado em desenvolver e entregar a solução correta. Inicia com 'Desenvolver' (divergir para gerar soluções) e converge na fase de 'Entregar' (refinar e implementar).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-design-thinking_6",
+    "topicId": "b2-design-thinking",
+    "front": "Qual a principal diferença entre as fases de 'Ideação' e 'Prototipação' no Design Thinking?",
+    "back": "A principal diferença é:\n*   **Ideação:** Foco na geração de um grande volume e diversidade de ideias para solucionar o problema definido, incentivando a criatividade e a quantidade.\n*   **Prototipação:** Foco em transformar as ideias selecionadas em representações tangíveis e de baixo custo (protótipos) para testar sua viabilidade e eficácia com os usuários.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-design-thinking_7",
+    "topicId": "b2-design-thinking",
+    "front": "Em que contexto o 'Service Design' se diferencia ou complementa o Design Thinking?",
+    "back": "O Service Design é uma aplicação específica do Design Thinking que foca no planejamento e organização de pessoas, infraestrutura, comunicação e materiais para melhorar a qualidade de um serviço e a experiência do cliente. Ele complementa o DT ao aplicar seus princípios para criar, otimizar e entregar experiências de serviço holísticas e centradas no usuário.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-design-thinking_8",
+    "topicId": "b2-design-thinking",
+    "front": "V ou F: O Design Thinking é um processo estritamente linear, onde cada fase deve ser concluída antes de avançar para a próxima, sem possibilidade de retorno.",
+    "back": "Falso. O Design Thinking é um processo iterativo e não-linear. As equipes frequentemente revisitam fases anteriores (por exemplo, retornam à empatia após um teste de protótipo) para refinar a compreensão do problema, a definição ou a solução, aprendendo e adaptando-se continuamente.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-design-thinking_9",
+    "topicId": "b2-design-thinking",
+    "front": "Quais são as duas etapas que compõem o primeiro 'diamante' do modelo Double Diamond, focado na compreensão e definição do problema?",
+    "back": "As duas etapas são:\n*   **Descobrir (Discover):** Fase de divergência para explorar e compreender o problema em sua totalidade, coletando dados, observando e gerando insights.\n*   **Definir (Define):** Fase de convergência para sintetizar os insights coletados, identificar padrões, priorizar desafios e formular uma definição clara e acionável do problema a ser resolvido.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-design-thinking_10",
+    "topicId": "b2-design-thinking",
+    "front": "Como o conceito de 'Sprint de Design' se relaciona e se diferencia do Design Thinking tradicional?",
+    "back": "O Sprint de Design:\n*   **Relação:** É uma metodologia ágil que aplica os princípios do Design Thinking, condensando suas fases em um período curto e intensivo (geralmente 5 dias) para resolver um problema específico e validar uma solução com usuários reais.\n*   **Diferença:** Enquanto o Design Thinking é uma abordagem ampla e flexível, o Sprint de Design é um processo altamente estruturado e com tempo limitado, com foco em validação rápida de hipóteses e tomada de decisão em um prazo fixo.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

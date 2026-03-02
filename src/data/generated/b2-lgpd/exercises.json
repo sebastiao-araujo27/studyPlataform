@@ -1,0 +1,243 @@
+[
+  {
+    "id": "ex_b2-lgpd_1",
+    "topicId": "b2-lgpd",
+    "blocoId": "bloco-2",
+    "question": "No contexto da Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018), uma empresa do setor de energia está revisando seus processos internos para garantir a conformidade regulatória. Durante a auditoria, identificou-se a necessidade de distinguir claramente as figuras dos agentes de tratamento. De acordo com a referida Lei, a pessoa natural ou jurídica, de direito público ou privado, a quem competem as decisões referentes ao tratamento de dados pessoais é definida como:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Operador",
+        "isCorrect": false,
+        "explanation": "O operador é quem realiza o tratamento em nome do controlador, seguindo suas instruções, mas não detém o poder de decisão sobre a finalidade."
+      },
+      {
+        "letter": "B",
+        "text": "Controlador",
+        "isCorrect": true,
+        "explanation": "Conforme o Art. 5º, inciso VI, o controlador é o agente a quem competem as decisões sobre o tratamento dos dados pessoais."
+      },
+      {
+        "letter": "C",
+        "text": "Encarregado",
+        "isCorrect": false,
+        "explanation": "O encarregado (DPO) atua como canal de comunicação entre o controlador, os titulares e a ANPD, não sendo o decisor primário."
+      },
+      {
+        "letter": "D",
+        "text": "Autoridade Nacional",
+        "isCorrect": false,
+        "explanation": "A ANPD é o órgão da administração pública responsável por zelar, implementar e fiscalizar o cumprimento da lei."
+      },
+      {
+        "letter": "E",
+        "text": "Custodiante de Dados",
+        "isCorrect": false,
+        "explanation": "Este termo não é uma definição oficial da LGPD para agentes de tratamento, embora seja comum em governança de dados corporativa."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda uma das definições fundamentais da Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018). O Artigo 5º da lei estabelece o glossário de termos técnicos. O inciso VI define o 'Controlador' como a pessoa natural ou jurídica a quem competem as decisões referentes ao tratamento de dados pessoais. É importante notar que o controlador é a entidade que determina 'por que' e 'como' os dados serão tratados. Em contrapartida, o 'Operador' (inciso VII) é aquele que executa o tratamento 'em nome' do controlador. Em concursos da CESGRANRIO, a banca costuma explorar a confusão entre esses dois papéis. A alternativa 'C' (Encarregado) refere-se à figura que atua como ponte de comunicação (Art. 5º, VIII), enquanto a 'D' (Autoridade Nacional) refere-se ao ente fiscalizador. O termo 'Custodiante' na alternativa 'E' é um distrator comum para quem estuda frameworks como COBIT ou ITIL, mas não consta no texto legal da LGPD como agente de tratamento oficial.",
+    "technicalJustification": "Lei nº 13.709/2018 (LGPD), Art. 5º, inciso VI.",
+    "relatedConcepts": [
+      "Agentes de Tratamento",
+      "Controlador",
+      "Operador"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b2-lgpd_2",
+    "topicId": "b2-lgpd",
+    "blocoId": "bloco-2",
+    "question": "Um analista de sistemas da Petrobras está projetando um novo banco de dados para o sistema de gestão de benefícios de saúde dos funcionários. Ao definir os campos obrigatórios, ele se depara com o princípio da LGPD que estabelece que o tratamento de dados deve ser limitado ao mínimo necessário para a realização de suas finalidades, com abrangência dos dados pertinentes, proporcionais e não excessivos em relação às finalidades do tratamento de dados. Esse princípio é denominado:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Finalidade",
+        "isCorrect": false,
+        "explanation": "O princípio da finalidade exige propósitos legítimos e específicos, mas a limitação ao mínimo necessário refere-se à necessidade."
+      },
+      {
+        "letter": "B",
+        "text": "Adequação",
+        "isCorrect": false,
+        "explanation": "A adequação refere-se à compatibilidade do tratamento com as finalidades informadas ao titular."
+      },
+      {
+        "letter": "C",
+        "text": "Necessidade",
+        "isCorrect": true,
+        "explanation": "Conforme o Art. 6º, inciso III, a necessidade foca na minimização dos dados, utilizando apenas o estritamente necessário."
+      },
+      {
+        "letter": "D",
+        "text": "Livre Acesso",
+        "isCorrect": false,
+        "explanation": "O livre acesso garante ao titular a consulta facilitada e gratuita sobre a forma e duração do tratamento."
+      },
+      {
+        "letter": "E",
+        "text": "Transparência",
+        "isCorrect": false,
+        "explanation": "A transparência garante informações claras e precisas sobre o tratamento, não se confundindo com a minimização de dados."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão exige o conhecimento dos princípios que regem o tratamento de dados pessoais no Brasil, listados no Artigo 6º da LGPD. O princípio da 'Necessidade' (também conhecido na literatura internacional e no GDPR como 'Minimização de Dados') é fundamental para o design de sistemas (Privacy by Design). Ele determina que o controlador não deve coletar mais dados do que o estritamente necessário para atingir o objetivo proposto. No cenário descrito, se o sistema de saúde precisa apenas do CPF para identificação, coletar o título de eleitor ou a orientação religiosa seria uma violação deste princípio por ser um dado excessivo. A CESGRANRIO frequentemente testa a distinção entre 'Finalidade' (o objetivo), 'Adequação' (o meio compatível com o objetivo) e 'Necessidade' (a quantidade mínima de dados para o objetivo). As alternativas incorretas apresentam outros princípios válidos da lei, mas que não se referem à proporcionalidade e abrangência mínima dos dados tratados.",
+    "technicalJustification": "Lei nº 13.709/2018 (LGPD), Art. 6º, inciso III.",
+    "relatedConcepts": [
+      "Princípios da LGPD",
+      "Minimização de Dados",
+      "Privacy by Design"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b2-lgpd_3",
+    "topicId": "b2-lgpd",
+    "blocoId": "bloco-2",
+    "question": "Uma sociedade de economia mista que atua no setor de infraestrutura recebe uma solicitação de um ex-colaborador. Ele deseja ter acesso a todos os logs de acesso e dados pessoais que Petrobras ainda mantém em seus servidores após três anos do seu desligamento. Com base nos Direitos do Titular previstos na LGPD, Petrobras deve atender a essa solicitação, considerando que:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "O titular tem direito à confirmação da existência de tratamento e ao acesso aos dados, de forma facilitada e gratuita.",
+        "isCorrect": true,
+        "explanation": "O Art. 18 garante ao titular a confirmação de tratamento e o acesso aos dados a qualquer momento mediante requisição."
+      },
+      {
+        "letter": "B",
+        "text": "Petrobras pode cobrar uma taxa administrativa para fornecer cópias digitais de logs de acesso antigos.",
+        "isCorrect": false,
+        "explanation": "O acesso aos dados pelo titular deve ser gratuito, conforme expressamente previsto no Art. 6º, IV e Art. 18."
+      },
+      {
+        "letter": "C",
+        "text": "O direito de acesso não se aplica a ex-funcionários, apenas a clientes ativos e fornecedores com contrato vigente.",
+        "isCorrect": false,
+        "explanation": "A LGPD protege os dados de qualquer pessoa natural (titular), independentemente do vínculo atual ou passado."
+      },
+      {
+        "letter": "D",
+        "text": "A eliminação dos dados é obrigatória imediatamente após o desligamento, impossibilitando o acesso posterior.",
+        "isCorrect": false,
+        "explanation": "Dados podem ser conservados para cumprimento de obrigação legal (como prazos trabalhistas), mesmo após o fim do tratamento."
+      },
+      {
+        "letter": "E",
+        "text": "O acesso aos dados só pode ser concedido mediante ordem judicial expressa, dada a natureza da empresa.",
+        "isCorrect": false,
+        "explanation": "O direito de acesso é um direito direto do titular perante o controlador, dispensando intervenção judicial."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão aborda os Direitos do Titular (Art. 18 da LGPD) em um cenário de gestão de pessoas. O titular dos dados (neste caso, o ex-colaborador) possui o direito fundamental de obter do controlador, a qualquer momento e mediante requisição, a confirmação de que seus dados estão sendo tratados e o acesso a esses dados. A alternativa 'A' está correta pois reflete os incisos I e II do Art. 18. Um ponto crucial em provas da CESGRANRIO é a gratuidade: a lei veda a cobrança de taxas para o exercício desses direitos (tornando a 'B' incorreta). Além disso, a LGPD não distingue entre tipos de titulares (clientes vs. funcionários), aplicando-se a todos (invalidando a 'C'). A alternativa 'D' toca em um ponto importante: embora o tratamento deva cessar, o Art. 16 permite a conservação de dados para cumprimento de obrigação legal ou regulatória (como prazos de prescrição trabalhista de 5 anos), logo, os dados podem legalmente estar lá e o titular tem direito de acessá-los. A 'E' é um erro comum de interpretação jurídica; a lei visa justamente desburocratizar o acesso do cidadão aos seus próprios dados.",
+    "technicalJustification": "Lei nº 13.709/2018 (LGPD), Art. 18, incisos I e II.",
+    "relatedConcepts": [
+      "Direitos do Titular",
+      "Confirmação de Tratamento",
+      "Retenção de Dados"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b2-lgpd_4",
+    "topicId": "b2-lgpd",
+    "blocoId": "bloco-2",
+    "question": "A gerência de Marketing de uma grande corporação deseja realizar um estudo estatístico sobre o perfil de consumo de seus usuários para otimizar a oferta de produtos. Para isso, planeja utilizar a base de dados de compras dos últimos 10 anos. Segundo a LGPD, para que o tratamento de dados pessoais seja legítimo sem a necessidade de obtenção de um novo consentimento específico para essa finalidade, Petrobras poderia fundamentar-se no legítimo interesse do controlador, desde que:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Os dados tratados sejam exclusivamente dados sensíveis, como origem racial ou convicção religiosa.",
+        "isCorrect": false,
+        "explanation": "O legítimo interesse não pode ser utilizado como base legal para o tratamento de dados pessoais sensíveis (Art. 11)."
+      },
+      {
+        "letter": "B",
+        "text": "O tratamento atenda a finalidades legítimas, baseadas em situações concretas, e não prevaleçam direitos e liberdades fundamentais do titular.",
+        "isCorrect": true,
+        "explanation": "Esta é a condição do Art. 10 para o uso do legítimo interesse, exigindo um teste de proporcionalidade."
+      },
+      {
+        "letter": "C",
+        "text": "Haja a transferência internacional dos dados para uma matriz localizada em país sem lei de proteção de dados.",
+        "isCorrect": false,
+        "explanation": "A transferência internacional exige garantias específicas e não serve como justificativa para o legítimo interesse."
+      },
+      {
+        "letter": "D",
+        "text": "O titular tenha tornado os dados manifestamente públicos em suas redes sociais privadas.",
+        "isCorrect": false,
+        "explanation": "Dados tornados públicos têm regras específicas, mas isso não autoriza automaticamente o uso por legítimo interesse para qualquer fim."
+      },
+      {
+        "letter": "E",
+        "text": "O tratamento seja indispensável para o cumprimento de uma obrigação acessória tributária municipal.",
+        "isCorrect": false,
+        "explanation": "O cumprimento de obrigação legal é uma base legal distinta (Art. 7, II) e não se confunde com o legítimo interesse."
+      }
+    ],
+    "difficulty": "medio-dificil",
+    "source": "autoral",
+    "detailedExplanation": "A questão explora as bases legais para o tratamento de dados (Art. 7º), focando em uma das mais complexas: o Legítimo Interesse (Art. 10). Para utilizar o legítimo interesse, o controlador deve realizar o que a doutrina chama de 'Teste de Legítimo Interesse' (LIA - Legitimate Interest Assessment), verificando se a finalidade é legítima, se o tratamento é necessário e se há um equilíbrio (balanceamento) entre o interesse da empresa e os direitos do titular. A alternativa 'B' descreve exatamente os requisitos do Art. 10. A alternativa 'A' é um distrator clássico: o legítimo interesse NÃO se aplica a dados sensíveis (Art. 11). A 'C' mistura conceitos de transferência internacional. A 'D' tenta confundir o candidato com a exceção de dados manifestamente públicos (Art. 7º, § 4º), que dispensa o consentimento mas não se fundamenta necessariamente no legítimo interesse da forma descrita. A 'E' refere-se a outra base legal (Obrigação Legal). Em provas de nível analista, a CESGRANRIO exige que o candidato saiba que o legítimo interesse é residual e exige cautela e transparência.",
+    "technicalJustification": "Lei nº 13.709/2018 (LGPD), Art. 7º, inciso IX e Art. 10.",
+    "relatedConcepts": [
+      "Bases Legais",
+      "Legítimo Interesse",
+      "Dados Sensíveis"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b2-lgpd_5",
+    "topicId": "b2-lgpd",
+    "blocoId": "bloco-2",
+    "question": "Considere que uma subsidiária da Petrobras sofreu um incidente de segurança que resultou no acesso não autorizado a dados pessoais de milhares de clientes, incluindo nomes, CPFs e históricos de pagamentos. Diante desse cenário, e de acordo com as disposições da LGPD sobre segurança, boas práticas e sanções, analise as seguintes asserções:\n\nI. O controlador deverá comunicar à ANPD e ao titular a ocorrência de incidente de segurança que possa acarretar risco ou dano relevante aos titulares.\nII. O Encarregado (DPO) da companhia é o responsável direto por pagar as multas pecuniárias aplicadas pela ANPD em caso de negligência.\nIII. A autoridade nacional poderá determinar ao controlador a elaboração de um Relatório de Impacto à Proteção de Dados Pessoais (RIPD), inclusive para tratamentos já em curso.\nIV. Em caso de infração às normas da LGPD, a multa diária é a sanção mais grave prevista, podendo chegar a 5% do faturamento da empresa.\n\nEstão corretas APENAS as asserções:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I e II",
+        "isCorrect": false,
+        "explanation": "A asserção II está incorreta; a responsabilidade pelas multas é do agente de tratamento (empresa), não da pessoa física do DPO."
+      },
+      {
+        "letter": "B",
+        "text": "I e III",
+        "isCorrect": true,
+        "explanation": "A I está correta (Art. 48) e a III está correta (Art. 38), pois a ANPD pode solicitar o RIPD a qualquer tempo."
+      },
+      {
+        "letter": "C",
+        "text": "II e IV",
+        "isCorrect": false,
+        "explanation": "A II é falsa e a IV é falsa; a multa máxima é de 2% do faturamento, limitada a 50 milhões de reais por infração."
+      },
+      {
+        "letter": "D",
+        "text": "I, III e IV",
+        "isCorrect": false,
+        "explanation": "A IV está incorreta quanto ao percentual e ao valor da multa (o correto é 2% e não 5%)."
+      },
+      {
+        "letter": "E",
+        "text": "III e IV",
+        "isCorrect": false,
+        "explanation": "A IV está incorreta, invalidando a opção."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão de nível difícil exige a integração de múltiplos capítulos da LGPD: Segurança (Incidentes), Governança (DPO), Fiscalização (RIPD) e Sanções Administrativas. \nAnálise das asserções:\nI. CORRETA: O Art. 48 obriga a comunicação de incidentes que gerem risco ou dano relevante. \nII. INCORRETA: O Encarregado (DPO) aceita responsabilidades profissionais, mas as sanções pecuniárias da ANPD recaem sobre a pessoa jurídica (Controlador/Operador). \nIII. CORRETA: O Art. 38 prevê que a autoridade nacional poderá determinar ao controlador a elaboração do Relatório de Impacto à Proteção de Dados Pessoais (RIPD), inclusive para dados sensíveis ou com base no legítimo interesse. \nIV. INCORRETA: O Art. 52, inciso II, estabelece que a multa pode ser de até 2% (e não 5%) do faturamento, limitada a R$ 50.000.000,00 por infração. A sanção mais grave, em termos de continuidade do negócio, costuma ser considerada a proibição total do exercício de atividades relacionadas a tratamento de dados (Art. 52, XII). \nA CESGRANRIO frequentemente utiliza valores numéricos (percentuais de multas) e atribuições de cargos (DPO) para criar armadilhas em questões complexas. Portanto, apenas I e III resistem à análise técnica.",
+    "technicalJustification": "Lei nº 13.709/2018 (LGPD), Arts. 38, 48 e 52.",
+    "relatedConcepts": [
+      "Incidente de Segurança",
+      "Sanções Administrativas",
+      "RIPD",
+      "DPO"
+    ],
+    "order": 5
+  }
+]

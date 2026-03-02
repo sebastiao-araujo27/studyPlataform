@@ -1,0 +1,222 @@
+[
+  {
+    "id": "ex_b3-seguranca-nuvem_1",
+    "topicId": "b3-seguranca-nuvem",
+    "blocoId": "bloco-3",
+    "question": "A Petrobras migrou parte de sua infraestrutura para um ambiente de nuvem pública utilizando o modelo IaaS (Infrastructure as a Service). Um incidente de segurança foi identificado: uma máquina virtual utilizada para processamento de dados sísmicos foi comprometida por um ransomware que explorou uma vulnerabilidade no sistema operacional não corrigida. De acordo com o modelo de responsabilidade compartilhada em computação em nuvem, a responsabilidade pela aplicação do patch de segurança no sistema operacional da VM é:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Do provedor de nuvem, pois toda a infraestrutura subjacente é gerenciada por ele.",
+        "isCorrect": false,
+        "explanation": "No modelo IaaS, o provedor é responsável pela infraestrutura física (hardware, rede, virtualização), mas NÃO pelo sistema operacional da VM. O SO é responsabilidade do cliente."
+      },
+      {
+        "letter": "B",
+        "text": "Do cliente (Petrobras), pois no modelo IaaS o sistema operacional é gerenciado pelo consumidor do serviço.",
+        "isCorrect": true,
+        "explanation": "No modelo IaaS, conforme NIST SP 800-145 e o modelo de responsabilidade compartilhada, o cliente é responsável pelo sistema operacional, middleware, runtime, aplicações e dados. O provedor cuida apenas da infraestrutura física e da camada de virtualização."
+      },
+      {
+        "letter": "C",
+        "text": "Compartilhada igualmente entre provedor e cliente, pois o modelo de responsabilidade compartilhada divide todas as responsabilidades em partes iguais.",
+        "isCorrect": false,
+        "explanation": "O modelo de responsabilidade compartilhada NÃO divide todas as responsabilidades igualmente. Há uma divisão clara: cada camada tem um responsável definido. No IaaS, o SO é inequivocamente responsabilidade do cliente."
+      },
+      {
+        "letter": "D",
+        "text": "Da equipe de auditoria externa, responsável por identificar e corrigir vulnerabilidades em todos os ambientes.",
+        "isCorrect": false,
+        "explanation": "A equipe de auditoria externa não é responsável pela aplicação de patches. Ela pode identificar vulnerabilidades, mas a responsabilidade de correção (remediação) é do cliente no modelo IaaS."
+      },
+      {
+        "letter": "E",
+        "text": "Do fabricante do sistema operacional, que deve disponibilizar e aplicar patches automaticamente em ambientes cloud.",
+        "isCorrect": false,
+        "explanation": "O fabricante do SO disponibiliza patches, mas a responsabilidade de aplicá-los na VM é do cliente (Petrobras). Em cloud IaaS, não há aplicação automática de patches pelo fabricante nas VMs do cliente."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "O modelo de responsabilidade compartilhada é o conceito mais fundamental de segurança em nuvem. No IaaS, a divisão é clara: o provedor cuida de 'security OF the cloud' (infraestrutura física, rede, virtualização, data center) e o cliente cuida de 'security IN the cloud' (SO, aplicações, dados, configurações de rede lógica). Conforme o NIST SP 800-144 (Guidelines on Security and Privacy in Public Cloud Computing): 'Organizations are ultimately accountable for the security and privacy of data held by a cloud provider on their behalf.' Portanto, uma VM comprometida por falta de patch no SO é responsabilidade inequívoca do cliente. A mesma vulnerabilidade no modelo PaaS seria responsabilidade do provedor, pois no PaaS o provedor gerencia o SO.",
+    "technicalJustification": "Conforme NIST SP 800-145 e o Shared Responsibility Model adotado por AWS, Azure e GCP: em IaaS, o provedor gerencia a infraestrutura física (servidores, storage, rede, virtualização) e o cliente gerencia o sistema operacional convidado, middleware, runtime, aplicações e dados. A CSA Cloud Controls Matrix (CCM) reforça esta divisão nos domínios IVS (Infrastructure & Virtualization Security) e UEM (Universal Endpoint Management).",
+    "relatedConcepts": ["Modelo de responsabilidade compartilhada", "IaaS", "NIST SP 800-145", "NIST SP 800-144", "Gestão de patches"],
+    "order": 1
+  },
+  {
+    "id": "ex_b3-seguranca-nuvem_2",
+    "topicId": "b3-seguranca-nuvem",
+    "blocoId": "bloco-3",
+    "question": "A equipe de segurança da informação da Petrobras identificou que diversos funcionários estão utilizando serviços de armazenamento em nuvem pessoais (como Google Drive e Dropbox) para compartilhar documentos corporativos classificados como confidenciais, sem aprovação da TI. Para mitigar esse risco de Shadow IT e implementar políticas de segurança para uso de serviços cloud, a ferramenta MAIS adequada a ser implantada é:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "SIEM (Security Information and Event Management), que correlaciona eventos e detecta uso não autorizado de serviços de nuvem.",
+        "isCorrect": false,
+        "explanation": "O SIEM coleta e correlaciona logs de segurança, mas não é especializado em descobrir e controlar o uso de serviços cloud. Ele pode complementar um CASB, mas não substitui suas capacidades de visibilidade cloud, DLP e controle de acesso a serviços SaaS."
+      },
+      {
+        "letter": "B",
+        "text": "CASB (Cloud Access Security Broker), que oferece visibilidade sobre uso de cloud, conformidade com políticas, proteção de dados e proteção contra ameaças.",
+        "isCorrect": true,
+        "explanation": "O CASB é especificamente projetado para este cenário. Seus 4 pilares atendem diretamente: (1) Visibilidade — descobre Shadow IT e cataloga todos os serviços cloud usados; (2) Compliance — aplica políticas corporativas; (3) Segurança de dados — DLP impede upload de dados confidenciais; (4) Proteção contra ameaças — detecta comportamento anômalo."
+      },
+      {
+        "letter": "C",
+        "text": "CSPM (Cloud Security Posture Management), que monitora configurações de infraestrutura cloud e detecta misconfigurations.",
+        "isCorrect": false,
+        "explanation": "O CSPM é focado em monitorar configurações de infraestrutura cloud (IaaS/PaaS) própria da organização, como detectar S3 buckets públicos ou security groups abertos. Ele NÃO detecta Shadow IT nem controla o acesso de funcionários a serviços SaaS de terceiros."
+      },
+      {
+        "letter": "D",
+        "text": "WAF (Web Application Firewall), que filtra tráfego HTTP e impede o acesso a serviços de nuvem não autorizados.",
+        "isCorrect": false,
+        "explanation": "O WAF protege aplicações web contra ataques como SQL Injection e XSS. Ele não tem capacidade de descobrir Shadow IT, aplicar políticas de uso de cloud, nem implementar DLP para serviços SaaS de terceiros."
+      },
+      {
+        "letter": "E",
+        "text": "DLP (Data Loss Prevention) standalone, que monitora e bloqueia a transferência de dados sensíveis para qualquer destino externo.",
+        "isCorrect": false,
+        "explanation": "O DLP standalone pode detectar transferência de dados sensíveis, mas não oferece visibilidade sobre quais serviços cloud estão sendo usados, não impõe políticas de compliance específicas para cloud, nem protege contra ameaças cloud-specific. O CASB inclui DLP como um de seus pilares, mas vai muito além."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "O CASB (Cloud Access Security Broker) foi definido pelo Gartner como o ponto de imposição de política de segurança posicionado entre consumidores e provedores de serviços cloud. Neste cenário de Shadow IT, o CASB é a ferramenta ideal porque combina quatro capacidades essenciais (os 4 pilares): Visibilidade (descoberta de todos os serviços cloud usados, incluindo não autorizados), Compliance (verificação contra políticas corporativas), Segurança de dados (DLP integrado para impedir upload de dados confidenciais) e Proteção contra ameaças. O CASB pode operar em modo log-based (analisando logs do proxy/firewall para descobrir Shadow IT) e em modo forward proxy (interceptando e bloqueando acesso em tempo real). A CSA identifica 'Limited Cloud Usage Visibility' como uma das 12 maiores ameaças em nuvem (Treacherous Twelve), reforçando a necessidade do pilar de visibilidade do CASB.",
+    "technicalJustification": "O Gartner define CASB como 'on-premises or cloud-based security policy enforcement points, placed between cloud service consumers and cloud service providers to combine and interject enterprise security policies as the cloud-based resources are accessed.' Os 4 pilares foram formalizados pelo Gartner: Visibility, Compliance, Data Security, Threat Protection. Para Shadow IT especificamente, o CASB é reconhecido pela CSA e pelo NIST como a solução de referência, pois é a única categoria de ferramenta que combina descoberta de serviços cloud com imposição de políticas.",
+    "relatedConcepts": ["CASB", "Shadow IT", "DLP", "Cloud Security", "Gartner", "CSA Treacherous Twelve"],
+    "order": 2
+  },
+  {
+    "id": "ex_b3-seguranca-nuvem_3",
+    "topicId": "b3-seguranca-nuvem",
+    "blocoId": "bloco-3",
+    "question": "Em uma arquitetura de segurança em nuvem da Petrobras, diferentes protocolos e frameworks são utilizados para gestão de identidade e acesso. O arquiteto de segurança precisa implementar Single Sign-On (SSO) para os sistemas corporativos web e também permitir que aplicações móveis acessem APIs internas. Considerando as diferenças entre SAML 2.0, OAuth 2.0 e OpenID Connect (OIDC), assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "SAML 2.0 é um framework de autorização que utiliza tokens JSON e é ideal para aplicações móveis por ser leve e RESTful.",
+        "isCorrect": false,
+        "explanation": "SAML 2.0 utiliza XML (não JSON), é um padrão de autenticação e autorização (não apenas autorização), e NÃO é ideal para mobile por ser pesado e baseado em XML. OAuth 2.0 e OIDC são mais adequados para mobile."
+      },
+      {
+        "letter": "B",
+        "text": "OAuth 2.0 é um protocolo de autenticação que permite verificar a identidade do usuário e estabelecer sessões de SSO entre aplicações corporativas.",
+        "isCorrect": false,
+        "explanation": "OAuth 2.0 é um framework de AUTORIZAÇÃO, não de autenticação. Ele permite que uma aplicação acesse recursos em nome do usuário, mas NÃO verifica a identidade do usuário por si só. Quem adiciona a camada de autenticação sobre OAuth 2.0 é o OpenID Connect (OIDC)."
+      },
+      {
+        "letter": "C",
+        "text": "OpenID Connect (OIDC) é uma camada de identidade construída sobre o OAuth 2.0, utilizando tokens JWT, sendo adequado tanto para SSO web quanto para aplicações móveis.",
+        "isCorrect": true,
+        "explanation": "OIDC é efetivamente uma camada de identidade/autenticação construída sobre o framework de autorização OAuth 2.0. Utiliza tokens JWT (JSON Web Tokens) leves e é adequado para web e mobile. Combina autenticação (quem é o usuário — ID Token) com autorização (o que pode acessar — Access Token)."
+      },
+      {
+        "letter": "D",
+        "text": "SAML 2.0 e OAuth 2.0 são protocolos equivalentes e intercambiáveis, diferindo apenas no formato de dados utilizado (XML vs JSON).",
+        "isCorrect": false,
+        "explanation": "SAML 2.0 e OAuth 2.0 NÃO são equivalentes nem intercambiáveis. SAML é focado em autenticação (SSO empresarial web), enquanto OAuth 2.0 é focado em autorização delegada (acesso a recursos em nome do usuário). Eles têm propósitos e casos de uso distintos."
+      },
+      {
+        "letter": "E",
+        "text": "OAuth 2.0 opera exclusivamente na camada de transporte e utiliza certificados X.509 para autenticação mútua entre Identity Provider e Service Provider.",
+        "isCorrect": false,
+        "explanation": "OAuth 2.0 opera na camada de aplicação (HTTP/REST), não na camada de transporte. Certificados X.509 são mais associados ao SAML 2.0 (para assinatura de assertions XML) e a TLS/mTLS. OAuth 2.0 utiliza tokens Bearer e não depende de certificados X.509 para seu funcionamento básico."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A distinção entre SAML 2.0, OAuth 2.0 e OpenID Connect é fundamental para provas de segurança. SAML 2.0 é um padrão OASIS baseado em XML para troca de dados de autenticação e autorização entre um Identity Provider (IdP) e um Service Provider (SP), usado principalmente para SSO empresarial web. OAuth 2.0 (RFC 6749) é um framework de AUTORIZAÇÃO que permite a uma aplicação de terceiro obter acesso limitado a um serviço HTTP em nome do proprietário do recurso — ele NÃO é um protocolo de autenticação. OpenID Connect (OIDC) é uma camada de identidade construída SOBRE o OAuth 2.0, adicionando autenticação através do ID Token (JWT). OIDC combina o melhor dos dois mundos: a autenticação (quem é o usuário) com a autorização (o que pode acessar), usando formato JSON/JWT leve e adequado para web e mobile.",
+    "technicalJustification": "Conforme IETF RFC 6749 (OAuth 2.0): 'OAuth 2.0 is an authorization framework.' A especificação explicitamente NÃO define OAuth como protocolo de autenticação. O OpenID Connect 1.0 (openid.net) é definido como 'a simple identity layer on top of the OAuth 2.0 protocol.' O SAML 2.0 (OASIS) utiliza assertions XML assinadas digitalmente com certificados X.509. Para mobile, OIDC/OAuth com PKCE (Proof Key for Code Exchange — RFC 7636) é a recomendação atual, pois JSON/JWT são mais leves que XML/SAML.",
+    "relatedConcepts": ["SAML 2.0", "OAuth 2.0", "OpenID Connect", "JWT", "SSO", "Federação de identidade", "IAM"],
+    "order": 3
+  },
+  {
+    "id": "ex_b3-seguranca-nuvem_4",
+    "topicId": "b3-seguranca-nuvem",
+    "blocoId": "bloco-3",
+    "question": "A Petrobras está implementando uma estratégia de segurança em nuvem que utiliza múltiplas ferramentas cloud-native. O CISO precisa escolher a ferramenta adequada para cada necessidade. Considere o seguinte cenário: a equipe de segurança detectou que diversos serviços na AWS estão com configurações inseguras — buckets S3 com acesso público, security groups permitindo SSH aberto para a Internet (0.0.0.0/0), e logs do CloudTrail desabilitados em algumas contas. A categoria de ferramenta de segurança cloud-native MAIS adequada para monitorar continuamente essas configurações e automatizar sua correção é:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "CWPP (Cloud Workload Protection Platform), pois protege cargas de trabalho na nuvem contra vulnerabilidades e configurações incorretas.",
+        "isCorrect": false,
+        "explanation": "O CWPP é focado na proteção de WORKLOADS em execução (VMs, containers, serverless), oferecendo anti-malware, monitoramento de integridade e micro-segmentação baseada em host. Ele NÃO é projetado para monitorar configurações de infraestrutura cloud como S3 buckets ou security groups."
+      },
+      {
+        "letter": "B",
+        "text": "CASB (Cloud Access Security Broker), pois monitora o acesso a serviços cloud e detecta configurações incorretas automaticamente.",
+        "isCorrect": false,
+        "explanation": "O CASB é focado no controle de acesso entre USUÁRIOS e serviços cloud (especialmente SaaS), oferecendo visibilidade, compliance, DLP e proteção contra ameaças. Ele não monitora configurações de infraestrutura IaaS como security groups ou políticas de S3."
+      },
+      {
+        "letter": "C",
+        "text": "CSPM (Cloud Security Posture Management), pois monitora continuamente configurações de infraestrutura cloud e identifica desvios de boas práticas de segurança.",
+        "isCorrect": true,
+        "explanation": "O CSPM é a ferramenta especificamente projetada para este cenário. Ele monitora continuamente a configuração de serviços cloud (IaaS/PaaS) contra benchmarks e boas práticas, detectando misconfigurations como S3 público, security groups abertos e logging desabilitado. Pode automatizar a remediação. Exemplos: AWS Security Hub + Config, Azure Defender for Cloud, Wiz, Prisma Cloud."
+      },
+      {
+        "letter": "D",
+        "text": "SIEM (Security Information and Event Management), pois coleta logs de todos os serviços cloud e identifica configurações inseguras por correlação de eventos.",
+        "isCorrect": false,
+        "explanation": "O SIEM coleta e correlaciona EVENTOS e LOGS de segurança, sendo excelente para detecção de ameaças em tempo real. Porém, ele não é projetado para monitorar continuamente CONFIGURAÇÕES de infraestrutura cloud nem automatizar remediação de misconfigurations. O SIEM complementa o CSPM, mas não o substitui."
+      },
+      {
+        "letter": "E",
+        "text": "SSPM (SaaS Security Posture Management), pois gerencia a postura de segurança de todos os serviços cloud, incluindo IaaS e SaaS.",
+        "isCorrect": false,
+        "explanation": "O SSPM é focado exclusivamente na postura de segurança de aplicações SaaS (Microsoft 365, Salesforce, etc.), verificando permissões, configurações e integrações. Ele NÃO monitora configurações de infraestrutura IaaS como S3 buckets ou security groups. Para infraestrutura cloud, a ferramenta correta é o CSPM."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Misconfigurations em nuvem são a causa número 1 de violações de dados em ambientes cloud, segundo o Gartner e a CSA. O CSPM (Cloud Security Posture Management) foi criado especificamente para resolver este problema. Ele monitora continuamente a configuração de serviços cloud (IaaS e PaaS) contra benchmarks de segurança como CIS Benchmarks, boas práticas do provedor, e frameworks como CCM e NIST. No cenário descrito, o CSPM detectaria automaticamente: (1) S3 com acesso público — violação de policy de acesso; (2) Security groups com SSH aberto para 0.0.0.0/0 — violação de rede; (3) CloudTrail desabilitado — violação de logging/monitoramento. Além de detectar, CCSPMs modernos podem automatizar a remediação (auto-remediation), corrigindo as configurações automaticamente ou abrindo tickets para correção manual. A distinção entre CSPM (configuração), CWPP (workloads), CASB (acesso), e SSPM (SaaS) é fundamental e frequentemente cobrada.",
+    "technicalJustification": "O Gartner define CSPM como 'products that assess and manage cloud security posture. These offerings commonly provide functionality like security assessment, compliance monitoring, DevOps integration, incident response and risk identification/visualization.' O CSPM opera verificando APIs do provedor cloud para avaliar configurações contra policies. Por exemplo, na AWS: verifica S3 bucket policies, VPC security group rules, IAM policies, CloudTrail status. O Gartner prevê que até 2025, 99% das falhas de segurança em cloud serão culpa do cliente, principalmente por misconfigurations — reforçando a importância crítica do CSPM.",
+    "relatedConcepts": ["CSPM", "CWPP", "CASB", "SSPM", "Misconfiguration", "Cloud Security Posture", "CIS Benchmarks", "Gartner"],
+    "order": 4
+  },
+  {
+    "id": "ex_b3-seguranca-nuvem_5",
+    "topicId": "b3-seguranca-nuvem",
+    "blocoId": "bloco-3",
+    "question": "A Petrobras está adotando o modelo Zero Trust para sua arquitetura de segurança em nuvem híbrida, conforme as diretrizes do NIST SP 800-207. Durante a implementação, o arquiteto de segurança precisa decidir como proteger o acesso de engenheiros em plataformas offshore aos sistemas corporativos na nuvem. Considerando os princípios fundamentais do Zero Trust, qual das seguintes abordagens está INCORRETA em relação a este modelo?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Implementar micro-segmentação para isolar workloads, garantindo que cada recurso tenha políticas de acesso independentes baseadas em identidade e contexto.",
+        "isCorrect": false,
+        "explanation": "A micro-segmentação é um dos princípios fundamentais do Zero Trust. Cada recurso é protegido individualmente com políticas granulares, eliminando a movimentação lateral livre. Esta abordagem está CORRETA no modelo Zero Trust."
+      },
+      {
+        "letter": "B",
+        "text": "Aplicar o princípio do menor privilégio, concedendo a cada engenheiro apenas as permissões mínimas necessárias para suas funções específicas, com revisão periódica.",
+        "isCorrect": false,
+        "explanation": "O princípio do menor privilégio é um dos pilares do Zero Trust. Usuários e serviços recebem apenas as permissões estritamente necessárias, com revisão contínua. Esta abordagem está CORRETA."
+      },
+      {
+        "letter": "C",
+        "text": "Após autenticar o usuário na VPN corporativa, conceder acesso irrestrito a todos os recursos da rede interna, pois a autenticação VPN já estabelece confiança suficiente.",
+        "isCorrect": true,
+        "explanation": "Esta abordagem representa o modelo OPOSTO ao Zero Trust — é o modelo tradicional de 'castelo com fosso', onde a autenticação VPN garante acesso amplo à rede interna. No Zero Trust, a confiança NUNCA é presumida com base apenas na localização de rede ou na conexão VPN. Cada acesso a cada recurso deve ser verificado independentemente (never trust, always verify)."
+      },
+      {
+        "letter": "D",
+        "text": "Realizar verificação contínua do dispositivo do engenheiro (compliance check), avaliando se o SO está atualizado, se o EDR está ativo e se o disco está criptografado antes de permitir o acesso.",
+        "isCorrect": false,
+        "explanation": "A verificação contínua do dispositivo (device compliance check) é um componente essencial do Zero Trust. A decisão de acesso considera múltiplos fatores: identidade, dispositivo, localização e contexto. Esta abordagem está CORRETA."
+      },
+      {
+        "letter": "E",
+        "text": "Projetar a segurança assumindo que o atacante já pode estar presente na rede (assume breach), implementando monitoramento contínuo e detecção de comportamento anômalo.",
+        "isCorrect": false,
+        "explanation": "O princípio 'assume breach' é fundamental no Zero Trust. A segurança é projetada assumindo que violações podem ocorrer a qualquer momento, exigindo monitoramento contínuo, UEBA (User Entity Behavior Analytics) e resposta automatizada. Esta abordagem está CORRETA."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "O modelo Zero Trust, formalizado pelo NIST SP 800-207 (Zero Trust Architecture), fundamenta-se no princípio de que a confiança nunca deve ser presumida com base apenas na localização de rede (interna ou externa). No modelo tradicional de 'perímetro' (castle-and-moat), uma vez que o usuário se autentica na VPN e entra na rede interna, ele obtém amplo acesso aos recursos — criando um ambiente propício para movimentação lateral caso uma credencial seja comprometida. O Zero Trust elimina esse conceito: cada requisição de acesso a cada recurso é avaliada individualmente, considerando identidade do usuário (MFA), estado do dispositivo (compliance), contexto (localização, horário, comportamento) e o recurso solicitado. A micro-segmentação garante que mesmo dentro da rede, cada workload está isolado. O 'assume breach' garante que a segurança funciona mesmo quando um atacante já está dentro. Portanto, a alternativa C descreve exatamente o oposto do Zero Trust — é o modelo legado que o Zero Trust visa substituir.",
+    "technicalJustification": "O NIST SP 800-207 define Zero Trust Architecture como: 'Zero trust is a cybersecurity paradigm focused on resource protection and the premise that trust is never granted implicitly but must be continually evaluated.' O documento explicita que 'a network's location is no longer seen as the prime component to the security posture of the resource.' Os tenets incluem: (1) All data sources and computing services are considered resources; (2) All communication is secured regardless of network location; (3) Access to individual enterprise resources is granted on a per-session basis; (4) Access is determined by dynamic policy; (5) The enterprise monitors and measures the posture of all assets; (6) Authentication and authorization are dynamic and strictly enforced before access; (7) The enterprise assumes that the internal network is hostile (assume breach).",
+    "relatedConcepts": ["Zero Trust", "NIST SP 800-207", "Micro-segmentação", "Princípio do menor privilégio", "Assume breach", "Identity-centric security", "VPN vs Zero Trust"],
+    "order": 5
+  }
+]

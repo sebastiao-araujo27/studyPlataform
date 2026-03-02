@@ -1,0 +1,260 @@
+[
+  {
+    "id": "ex_b1-sgbd_1",
+    "topicId": "b1-sgbd",
+    "blocoId": "bloco-1",
+    "question": "Em um ambiente de banco de dados relacional, a organização e o controle do acesso aos dados são fundamentais para garantir a integridade e a segurança das informações. A arquitetura ANSI/SPARC, em sua concepção de três níveis, visa abstrair a complexidade física do armazenamento e da manipulação dos dados. Nesse contexto, qual nível da arquitetura ANSI/SPARC é responsável por descrever a estrutura geral do banco de dados, incluindo todas as entidades, atributos e relacionamentos, sem detalhar a forma como os dados são fisicamente armazenados?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Nível Externo (View Level)",
+        "isCorrect": false,
+        "explanation": "O nível externo descreve a parte do banco de dados que interessa a um usuário específico, não a estrutura geral."
+      },
+      {
+        "letter": "B",
+        "text": "Nível Interno (Physical Level)",
+        "isCorrect": false,
+        "explanation": "O nível interno descreve como os dados são fisicamente armazenados no disco, detalhando estruturas de armazenamento e caminhos de acesso."
+      },
+      {
+        "letter": "C",
+        "text": "Nível Conceitual (Conceptual Level)",
+        "isCorrect": true,
+        "explanation": "O nível conceitual descreve a estrutura lógica do banco de dados como um todo, abrangendo todas as entidades, atributos e relacionamentos, independentemente da implementação física."
+      },
+      {
+        "letter": "D",
+        "text": "Nível de Implementação (Implementation Level)",
+        "isCorrect": false,
+        "explanation": "Este termo não pertence à arquitetura padrão ANSI/SPARC de três níveis (Externo, Conceitual, Interno)."
+      },
+      {
+        "letter": "E",
+        "text": "Nível de Usuário (User Level)",
+        "isCorrect": false,
+        "explanation": "O nível de usuário é mais genérico e geralmente associado ao nível externo ou às interfaces de aplicação, não à definição global da estrutura do banco."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A arquitetura ANSI/SPARC, também conhecida como arquitetura de três níveis, propõe uma separação entre a visão do usuário, a estrutura lógica do banco de dados e a implementação física. O nível externo (ou de visualização) é o que cada usuário individual vê, focando em subconjuntos específicos do banco de dados. O nível interno (ou físico) detalha como os dados são efetivamente armazenados no meio de armazenamento, incluindo estruturas de dados, índices e mapeamentos. O nível conceitual (ou lógico) é o que descreve a estrutura global do banco de dados em termos de entidades, seus atributos e os relacionamentos entre elas. Ele representa a visão agregada de todos os usuários e é independente da forma como os dados são fisicamente armazenados. Portanto, a descrição da estrutura geral, incluindo todas as entidades, atributos e relacionamentos, sem detalhar o armazenamento físico, é a definição do nível conceitual.",
+    "technicalJustification": "A arquitetura de três níveis (externo, conceitual e interno) é um modelo fundamental em sistemas de banco de dados, proposto pelo ANSI/SPARC Study Group on Database Management Systems. O nível conceitual é responsável pela descrição da estrutura lógica e geral do banco de dados. (Referência: Elmasri, R., & Navathe, S. B. (2016). Fundamentals of Database Systems. Pearson.)",
+    "relatedConcepts": [
+      "Arquitetura ANSI/SPARC",
+      "Nível Conceitual",
+      "Nível Externo",
+      "Nível Interno",
+      "Abstração de Dados"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b1-sgbd_2",
+    "topicId": "b1-sgbd",
+    "blocoId": "bloco-1",
+    "question": "Uma equipe de engenharia de dados da Petrobras está trabalhando na modelagem de um novo sistema para gerenciar os dados de exploração e produção de petróleo em um campo offshore. Eles precisam definir as tabelas, colunas, tipos de dados e restrições que representarão as informações sobre poços, reservatórios e equipamentos. Qual linguagem é predominantemente utilizada para definir essa estrutura lógica e física do banco de dados, bem como para manipular os dados contidos nele?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Linguagem de Controle de Dados (DCL)",
+        "isCorrect": false,
+        "explanation": "A DCL é usada para gerenciar permissões e controle de acesso, não para definir a estrutura do banco ou manipular dados."
+      },
+      {
+        "letter": "B",
+        "text": "Linguagem de Controle de Transação (TCL)",
+        "isCorrect": false,
+        "explanation": "A TCL é usada para gerenciar transações (COMMIT, ROLLBACK), não para definir a estrutura ou manipular dados diretamente."
+      },
+      {
+        "letter": "C",
+        "text": "Linguagem de Manipulação de Dados (DML)",
+        "isCorrect": false,
+        "explanation": "A DML é usada para consultar e modificar os dados, mas não para definir a estrutura do banco."
+      },
+      {
+        "letter": "D",
+        "text": "Linguagem de Definição de Dados (DDL)",
+        "isCorrect": false,
+        "explanation": "A DDL é usada para definir a estrutura do banco (tabelas, colunas, etc.), mas não para manipular os dados em si."
+      },
+      {
+        "letter": "E",
+        "text": "Linguagem de Definição e Manipulação de Dados (SQL)",
+        "isCorrect": true,
+        "explanation": "O SQL (Structured Query Language) abrange tanto a definição da estrutura (DDL) quanto a manipulação dos dados (DML), sendo a linguagem padrão para bancos de dados relacionais."
+      }
+    ],
+    "difficulty": "facil-medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão descreve um cenário onde uma equipe de engenharia de dados precisa definir a estrutura (tabelas, colunas, tipos de dados, restrições) e manipular os dados de um sistema de banco de dados. A linguagem padrão e mais abrangente para bancos de dados relacionais é o SQL (Structured Query Language). O SQL é dividido em sublinguagens, incluindo a Linguagem de Definição de Dados (DDL), que é usada para criar, modificar e excluir objetos do banco de dados como tabelas, índices e visões (comandos como CREATE TABLE, ALTER TABLE, DROP TABLE). A Linguagem de Manipulação de Dados (DML) é usada para inserir, consultar, atualizar e excluir dados nas tabelas (comandos como INSERT, SELECT, UPDATE, DELETE). A Linguagem de Controle de Dados (DCL) gerencia permissões (GRANT, REVOKE), e a Linguagem de Controle de Transação (TCL) gerencia transações (COMMIT, ROLLBACK). Como o SQL engloba tanto a definição da estrutura quanto a manipulação dos dados, ele é a resposta correta para a necessidade descrita.",
+    "technicalJustification": "O SQL (Structured Query Language) é a linguagem padrão para a maioria dos sistemas de gerenciamento de banco de dados relacionais. Ela é composta por sublinguagens que incluem DDL (Data Definition Language) para definição da estrutura e DML (Data Manipulation Language) para manipulação dos dados. (Referência: Ramakrishnan, R., & Gehrke, J. (2015). Database Management Systems. McGraw-Hill Education.)",
+    "relatedConcepts": [
+      "SQL",
+      "DDL",
+      "DML",
+      "DCL",
+      "TCL",
+      "Bancos de Dados Relacionais"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b1-sgbd_3",
+    "topicId": "b1-sgbd",
+    "blocoId": "bloco-1",
+    "question": "Em uma refinaria, um sistema de gestão de produção utiliza um banco de dados para armazenar informações sobre lotes de produtos, variáveis de processo (temperatura, pressão) e resultados de análises químicas. Para otimizar o desempenho de consultas frequentes que buscam lotes com certas características e seus respectivos resultados de análise, o DBA decidiu analisar os planos de execução gerados pelo SGBD. Considere um cenário onde uma consulta busca informações de lotes e suas análises, e o SGBD considera duas opções principais de plano de execução: 1) Joins em ordem de tabelas A, B, C; 2) Joins em ordem de tabelas C, A, B. O otimizador de consultas, ao escolher o melhor plano, leva em conta fatores como o número de registros a serem lidos em cada tabela, a cardinalidade das junções e a presença de índices. Qual o principal objetivo do processo de otimização de consultas em um SGBD?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Garantir a integridade referencial entre as tabelas do banco de dados.",
+        "isCorrect": false,
+        "explanation": "A integridade referencial é garantida por restrições (chaves estrangeiras), não diretamente pelo otimizador de consultas."
+      },
+      {
+        "letter": "B",
+        "text": "Minimizar o tempo de execução da consulta e o uso de recursos do sistema.",
+        "isCorrect": true,
+        "explanation": "O principal objetivo é encontrar o plano de execução mais eficiente, que resulta em menor tempo de resposta e menor consumo de recursos computacionais."
+      },
+      {
+        "letter": "C",
+        "text": "Aumentar a segurança do banco de dados, restringindo o acesso a dados sensíveis.",
+        "isCorrect": false,
+        "explanation": "O controle de acesso e a segurança são funções da DCL e da administração do banco, não do otimizador de consultas."
+      },
+      {
+        "letter": "D",
+        "text": "Facilitar a escrita de consultas complexas pelos usuários finais.",
+        "isCorrect": false,
+        "explanation": "A otimização foca na execução eficiente da consulta, não na facilidade de escrita pelo usuário."
+      },
+      {
+        "letter": "E",
+        "text": "Normalizar as tabelas para reduzir a redundância de dados.",
+        "isCorrect": false,
+        "explanation": "A normalização é um processo de design do banco de dados, realizado antes da otimização de consultas."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "O cenário descreve a necessidade de otimizar consultas em um sistema de banco de dados, o que é uma tarefa crucial para garantir o bom desempenho, especialmente em aplicações críticas como as de uma refinaria. O otimizador de consultas é um componente do SGBD responsável por analisar uma consulta SQL e gerar um plano de execução eficiente. Este plano determina a ordem em que as tabelas serão acessadas, quais algoritmos de join serão utilizados, se índices serão empregados, entre outras decisões operacionais. O objetivo primordial desse processo é minimizar o tempo total de execução da consulta, o que, por consequência, também busca reduzir o consumo de recursos do sistema, como I/O (entrada/saída de disco) e CPU. Ao escolher entre diferentes planos de execução possíveis (como as ordens de join mencionadas), o otimizador estima os custos de cada um com base em estatísticas sobre os dados (como número de tuplas, distribuição de valores, presença de índices) e seleciona o plano com o menor custo estimado. As outras opções representam funcionalidades distintas do SGBD: integridade referencial (restrições), segurança (DCL), facilidade de escrita de consultas (sintaxe SQL) e normalização (design do esquema).",
+    "technicalJustification": "O otimizador de consultas em um SGBD tem como objetivo principal encontrar o plano de execução mais eficiente para uma dada consulta, minimizando o custo estimado (geralmente tempo de execução e uso de recursos). Ele avalia diferentes estratégias de acesso a dados e de combinação de tabelas (joins). (Referência: Ramakrishnan, R., & Gehrke, J. (2015). Database Management Systems. McGraw-Hill Education.)",
+    "relatedConcepts": [
+      "Otimização de Consultas",
+      "Plano de Execução",
+      "Custo de Consulta",
+      "Estatísticas do Banco de Dados",
+      "Índices",
+      "Algoritmos de Join"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b1-sgbd_4",
+    "topicId": "b1-sgbd",
+    "blocoId": "bloco-1",
+    "question": "A Petrobras utiliza um Sistema Gerenciador de Banco de Dados (SGBD) para consolidar informações de diversas plataformas de produção, permitindo análises de desempenho e planejamento estratégico. A administração do banco de dados envolve a gestão de diferentes 'níveis' de informação, desde a descrição física de como os dados são armazenados até a forma como são vistos pelos usuários finais. Considerando a arquitetura ANSI/SPARC e os conceitos de esquemas, assinale a alternativa que descreve corretamente a relação entre o Catálogo do SGBD, o Esquema Conceitual e o Esquema Externo.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "O Catálogo do SGBD armazena as definições do Esquema Externo, que por sua vez descreve a estrutura física de armazenamento dos dados.",
+        "isCorrect": false,
+        "explanation": "O catálogo armazena metadados de todos os esquemas. O Esquema Externo é a visão do usuário, e a estrutura física é descrita pelo Esquema Interno."
+      },
+      {
+        "letter": "B",
+        "text": "O Esquema Conceitual descreve o armazenamento físico, o Catálogo contém as definições do Esquema Conceitual, e o Esquema Externo é a visão global do banco.",
+        "isCorrect": false,
+        "explanation": "O Esquema Conceitual descreve a estrutura lógica global, não o armazenamento físico. O Esquema Externo é uma visão parcial para um usuário."
+      },
+      {
+        "letter": "C",
+        "text": "O Catálogo do SGBD (ou Dicionário de Dados) contém os metadados sobre o banco de dados, incluindo as definições do Esquema Conceitual e dos Esquemas Externos.",
+        "isCorrect": true,
+        "explanation": "O catálogo é o repositório central de metadados que descrevem a estrutura do banco de dados em todos os níveis (interno, conceitual, externo)."
+      },
+      {
+        "letter": "D",
+        "text": "O Esquema Externo é idêntico ao Esquema Conceitual, e ambos são armazenados no Catálogo do SGBD para otimização de consultas.",
+        "isCorrect": false,
+        "explanation": "O Esquema Externo é uma visão parcial e pode diferir do Esquema Conceitual (visão global)."
+      },
+      {
+        "letter": "E",
+        "text": "O Esquema Conceitual descreve a estrutura física de armazenamento, e o Catálogo do SGBD apenas gerencia as permissões de acesso definidas no Esquema Externo.",
+        "isCorrect": false,
+        "explanation": "O Esquema Conceitual é lógico, não físico. O catálogo gerencia todos os metadados, não apenas permissões."
+      }
+    ],
+    "difficulty": "medio-dificil",
+    "source": "autoral",
+    "detailedExplanation": "A arquitetura ANSI/SPARC define três níveis de esquemas: externo, conceitual e interno. O Esquema Externo (ou de Visualização) representa a visão de um grupo de usuários sobre o banco de dados, focando em partes específicas e podendo apresentar os dados de forma diferente da estrutura lógica global. O Esquema Conceitual (ou Lógico) descreve a estrutura lógica do banco de dados como um todo, incluindo todas as entidades, atributos, relacionamentos e restrições de integridade, sendo independente do armazenamento físico e das visões externas. O Esquema Interno (ou Físico) descreve como os dados são fisicamente armazenados no disco. O Catálogo do SGBD, também conhecido como Dicionário de Dados ou Metadados, é um componente central que armazena as definições de todos esses esquemas (externo, conceitual e interno), além de informações sobre índices, usuários, permissões e outras informações relevantes para a operação do SGBD. Portanto, a alternativa C, que afirma que o Catálogo contém os metadados do Esquema Conceitual e dos Esquemas Externos, é a correta. As demais alternativas apresentam concepções equivocadas sobre o papel de cada esquema e do catálogo.",
+    "technicalJustification": "O catálogo do sistema (ou dicionário de dados) armazena os metadados que descrevem a estrutura do banco de dados em todos os níveis: interno, conceitual e externo. Ele é consultado pelo SGBD durante a compilação e execução das consultas. (Referência: Elmasri, R., & Navathe, S. B. (2016). Fundamentals of Database Systems. Pearson.)",
+    "relatedConcepts": [
+      "Catálogo do SGBD",
+      "Dicionário de Dados",
+      "Esquema Conceitual",
+      "Esquema Externo",
+      "Esquema Interno",
+      "Arquitetura ANSI/SPARC",
+      "Metadados"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b1-sgbd_5",
+    "topicId": "b1-sgbd",
+    "blocoId": "bloco-1",
+    "question": "Uma equipe de desenvolvimento de sistemas da Petrobras está trabalhando em uma aplicação que gerencia informações sobre a logística de transporte de derivados de petróleo. A aplicação realiza consultas complexas que envolvem junções (joins) entre tabelas de rotas, veículos, cargas e postos de fiscalização. Para garantir que essas consultas sejam executadas de forma eficiente e com o menor tempo de resposta possível, o SGBD gera um plano de execução. Em relação aos planos de execução e às estratégias de otimização, considere as seguintes afirmativas:\n\nI. Um plano de execução descreve a sequência de operações que o SGBD executará para processar uma consulta SQL, como varreduras de tabela, seleções, projeções e joins.\nII. O otimizador de consultas utiliza um 'custo' estimado para cada plano de execução possível, baseado em estatísticas das tabelas e índices, e seleciona o plano com o menor custo estimado.\nIII. A escolha de algoritmos de join (como Nested Loop Join, Sort-Merge Join, Hash Join) é uma decisão tomada pelo DBA manualmente para cada consulta crítica, visando otimizar o desempenho.\nIV. A presença de índices adequados pode alterar significativamente o plano de execução gerado, permitindo que o SGBD evite varreduras completas de tabelas em favor de acessos mais direcionados.\n\nAnalisando as afirmativas, é correto o que se afirma em:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I e II, apenas.",
+        "isCorrect": false,
+        "explanation": "As afirmativas I, II e IV estão corretas. A afirmativa III está incorreta pois a escolha do algoritmo de join é feita pelo otimizador, não manualmente pelo DBA para cada consulta."
+      },
+      {
+        "letter": "B",
+        "text": "II e III, apenas.",
+        "isCorrect": false,
+        "explanation": "As afirmativas II e III estão incorretas. A afirmativa II está correta, mas a III está incorreta, e a afirmativa I e IV também estão corretas."
+      },
+      {
+        "letter": "C",
+        "text": "I, II e IV, apenas.",
+        "isCorrect": true,
+        "explanation": "As afirmativas I, II e IV descrevem corretamente conceitos relacionados a planos de execução e otimização de consultas."
+      },
+      {
+        "letter": "D",
+        "text": "III e IV, apenas.",
+        "isCorrect": false,
+        "explanation": "A afirmativa III está incorreta. As afirmativas I e II também estão corretas."
+      },
+      {
+        "letter": "E",
+        "text": "I, II, III e IV.",
+        "isCorrect": false,
+        "explanation": "A afirmativa III está incorreta. A escolha do algoritmo de join é automatizada pelo otimizador, não uma tarefa manual do DBA para cada consulta."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Vamos analisar cada afirmativa detalhadamente:\n\nI. Um plano de execução descreve a sequência de operações que o SGBD executará para processar uma consulta SQL, como varreduras de tabela, seleções, projeções e joins. Esta afirmativa está CORRETA. O plano de execução é o roteiro detalhado que o SGBD segue para obter os dados solicitados pela consulta. Ele especifica a ordem das operações, os métodos de acesso (como varredura de índice ou de tabela completa) e os algoritmos de combinação (joins).\n\nII. O otimizador de consultas utiliza um 'custo' estimado para cada plano de execução possível, baseado em estatísticas das tabelas e índices, e seleciona o plano com o menor custo estimado. Esta afirmativa está CORRETA. O otimizador explora um espaço de planos de execução potenciais e, para cada um, estima um custo (geralmente em termos de I/O e CPU). O plano com o menor custo estimado é então escolhido para ser executado.\n\nIII. A escolha de algoritmos de join (como Nested Loop Join, Sort-Merge Join, Hash Join) é uma decisão tomada pelo DBA manualmente para cada consulta crítica, visando otimizar o desempenho. Esta afirmativa está INCORRETA. Embora um DBA possa influenciar a escolha do otimizador através de dicas (hints) ou da criação/remoção de índices, a seleção do algoritmo de join para uma consulta específica é, na vasta maioria dos casos, uma decisão automática do otimizador de consultas do SGBD. O otimizador considera as estatísticas e o custo estimado para escolher o algoritmo mais apropriado para aquele contexto específico da consulta e dos dados.\n\nIV. A presença de índices adequados pode alterar significativamente o plano de execução gerado, permitindo que o SGBD evite varreduras completas de tabelas em favor de acessos mais direcionados. Esta afirmativa está CORRETA. Índices são estruturas de dados que permitem ao SGBD localizar linhas específicas em uma tabela de forma muito mais rápida do que uma varredura sequencial completa. A existência de um índice relevante para as cláusulas WHERE ou JOIN de uma consulta pode levar o otimizador a escolher um plano que utilize esse índice, resultando em uma melhoria drástica de desempenho.\n\nPortanto, as afirmativas I, II e IV estão corretas.",
+    "technicalJustification": "Planos de execução detalham as operações para satisfazer uma consulta. O otimizador de consultas estima o custo de diferentes planos e escolhe o de menor custo, frequentemente utilizando índices para otimizar acessos. A seleção de algoritmos de join é primariamente uma função automatizada do otimizador. (Referência: Ramakrishnan, R., & Gehrke, J. (2015). Database Management Systems. McGraw-Hill Education.)",
+    "relatedConcepts": [
+      "Plano de Execução",
+      "Otimização de Consultas",
+      "Custo de Consulta",
+      "Estatísticas do Banco de Dados",
+      "Índices",
+      "Algoritmos de Join",
+      "Nested Loop Join",
+      "Sort-Merge Join",
+      "Hash Join"
+    ],
+    "order": 5
+  }
+]

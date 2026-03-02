@@ -1,0 +1,254 @@
+[
+  {
+    "id": "ex_b3-dashboards_1",
+    "topicId": "b3-dashboards",
+    "blocoId": "bloco-3",
+    "question": "Em um cenário de monitoramento de performance de um parque de equipamentos na Petrobras, a equipe de engenharia precisa de uma ferramenta visual que permita acompanhar, de forma concisa e em tempo real, os indicadores-chave de desempenho (KPIs) de cada máquina, como tempo de atividade, taxa de falhas e consumo de energia. O objetivo principal é identificar rapidamente desvios e tomar decisões ágeis para otimizar a manutenção e a operação. De acordo com as melhores práticas em visualização de dados, qual tipo de ferramenta é mais adequado para atender a essa necessidade específica?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Um relatório estático em formato PDF, gerado semanalmente com tabelas detalhadas e gráficos complexos, para análise aprofundada.",
+        "isCorrect": false,
+        "explanation": "Relatórios estáticos e semanais não atendem à necessidade de acompanhamento em tempo real e agilidade na identificação de desvios."
+      },
+      {
+        "letter": "B",
+        "text": "Um sistema de Business Intelligence (BI) focado exclusivamente em extração, transformação e carga (ETL) de dados brutos.",
+        "isCorrect": false,
+        "explanation": "Sistemas de ETL são parte da infraestrutura de dados, mas não são a ferramenta visual para acompanhamento de KPIs em tempo real."
+      },
+      {
+        "letter": "C",
+        "text": "Um dashboard interativo, com visualizações claras e objetivas dos KPIs, permitindo filtros e drill-downs para análises rápidas.",
+        "isCorrect": true,
+        "explanation": "Dashboards são projetados para monitoramento conciso e em tempo real de KPIs, facilitando a identificação de desvios e a tomada de decisão ágil."
+      },
+      {
+        "letter": "D",
+        "text": "Uma planilha eletrônica complexa, com múltiplas abas e fórmulas avançadas, atualizada manualmente pelos operadores a cada turno.",
+        "isCorrect": false,
+        "explanation": "Planilhas manuais são propensas a erros, não oferecem visualização em tempo real e dificultam a análise rápida de grandes volumes de dados."
+      },
+      {
+        "letter": "E",
+        "text": "Um sistema de gestão de documentos (GED) para armazenar todos os manuais técnicos e procedimentos operacionais dos equipamentos.",
+        "isCorrect": false,
+        "explanation": "Um sistema GED é para gestão de documentos, não para visualização e monitoramento de desempenho de equipamentos."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda a necessidade de uma ferramenta para monitorar KPIs em tempo real, identificar desvios rapidamente e auxiliar na tomada de decisões ágeis em um contexto de engenharia na Petrobras. A alternativa correta, um dashboard interativo, é a que melhor se alinha com essa descrição. Dashboards são definidos como exibições visuais das informações mais importantes necessárias para atingir um ou mais objetivos, consolidadas e organizadas em uma única tela para que a informação possa ser monitorada rapidamente. Eles fornecem uma visão geral instantânea do desempenho, permitindo que os usuários identifiquem tendências, anomalias e áreas que requerem atenção imediata. A interatividade, com filtros e drill-downs, potencializa a capacidade de análise rápida sem sobrecarregar o usuário com detalhes desnecessários inicialmente. As demais opções são incorretas porque: (A) relatórios estáticos e semanais não oferecem a agilidade e o tempo real necessários; (B) sistemas de ETL são componentes de infraestrutura de dados e não a interface de visualização final para o usuário de negócio; (D) planilhas manuais são ineficientes, propensas a erros e não escaláveis para monitoramento em tempo real de múltiplos KPIs; e (E) sistemas GED são para gestão de documentos e não têm relação direta com a visualização e monitoramento de desempenho de dados operacionais.",
+    "technicalJustification": "Um dashboard é uma exibição visual das informações mais importantes necessárias para atingir um ou mais objetivos, consolidadas e organizadas em uma única tela para que a informação possa ser monitorada rapidamente. Sua principal função é fornecer uma visão rápida e concisa do estado atual e do desempenho dos KPIs, permitindo a identificação de exceções e a tomada de decisão ágil. (Few, Stephen. Information Dashboard Design: Displaying Data for At-a-Glance Monitoring. Analytics Press, 2013).",
+    "relatedConcepts": [
+      "Dashboard",
+      "KPI",
+      "Visualização de Dados",
+      "Tomada de Decisão",
+      "Business Intelligence"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b3-dashboards_2",
+    "topicId": "b3-dashboards",
+    "blocoId": "bloco-3",
+    "question": "Uma equipe de analistas de dados da Petrobras está desenvolvendo um dashboard para acompanhar a evolução do preço do barril de petróleo ao longo do último ano, comparando-o com as metas de receita estabelecidas. Para apresentar essa tendência histórica de forma clara e intuitiva, permitindo a fácil identificação de padrões e pontos de inflexão, qual tipo de visualização é considerado a melhor prática para este tipo de dado e objetivo, de acordo com os princípios de design de visualização de dados?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Um gráfico de pizza (pie chart), com cada fatia representando o preço médio mensal.",
+        "isCorrect": false,
+        "explanation": "Gráficos de pizza são inadequados para mostrar tendências ao longo do tempo e dificultam comparações precisas entre categorias."
+      },
+      {
+        "letter": "B",
+        "text": "Um gráfico de barras empilhadas, mostrando o preço diário e a meta de receita em cada barra.",
+        "isCorrect": false,
+        "explanation": "Gráficos de barras empilhadas são mais adequados para comparar partes de um todo ou categorias, não para tendências temporais contínuas."
+      },
+      {
+        "letter": "C",
+        "text": "Uma tabela simples com todos os valores diários do preço e da meta, ordenados por data.",
+        "isCorrect": false,
+        "explanation": "Tabelas são úteis para valores exatos, mas não oferecem uma visão rápida de tendências e padrões visuais como um gráfico."
+      },
+      {
+        "letter": "D",
+        "text": "Um gráfico de linhas (line chart), com o tempo no eixo X e o preço/meta no eixo Y.",
+        "isCorrect": true,
+        "explanation": "Gráficos de linhas são ideais para mostrar a evolução de dados contínuos ao longo do tempo, facilitando a identificação de tendências e padrões."
+      },
+      {
+        "letter": "E",
+        "text": "Um gráfico de dispersão (scatter plot), mostrando a correlação entre o preço do petróleo e o volume de produção.",
+        "isCorrect": false,
+        "explanation": "Gráficos de dispersão são usados para mostrar a relação entre duas variáveis numéricas, não a evolução de uma variável ao longo do tempo."
+      }
+    ],
+    "difficulty": "facil-medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão descreve a necessidade de visualizar a evolução de uma variável (preço do barril de petróleo) ao longo do tempo (último ano), comparando-a com uma meta. O objetivo é identificar tendências e pontos de inflexão. Para este tipo de análise temporal de dados contínuos, o gráfico de linhas é a visualização mais apropriada e eficaz. Ele conecta pontos de dados sequenciais, tornando a trajetória da variável facilmente perceptível, o que é essencial para observar tendências, sazonalidades e mudanças significativas ao longo do tempo. As outras opções são inadequadas para este cenário: (A) gráficos de pizza são para proporções de um todo em um ponto no tempo e não para tendências; (B) gráficos de barras empilhadas são melhores para comparar categorias ou a composição de um todo, não para séries temporais contínuas; (C) tabelas fornecem dados exatos, mas não a representação visual de tendências que um gráfico oferece; e (E) gráficos de dispersão são usados para mostrar a relação entre duas variáveis numéricas, não a evolução de uma única variável (ou duas paralelas) ao longo do tempo.",
+    "technicalJustification": "Gráficos de linha são as visualizações mais eficazes para exibir tendências de dados contínuos ao longo do tempo, pois permitem que o olho humano perceba facilmente a forma da linha, identificando padrões, picos, vales e mudanças de direção. (Knaflic, Cole Nussbaumer. Storytelling with Data: A Data Visualization Guide for Business Professionals. John Wiley & Sons, 2015).",
+    "relatedConcepts": [
+      "Gráfico de Linhas",
+      "Séries Temporais",
+      "Visualização de Dados",
+      "Boas Práticas Visuais",
+      "Tendências"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b3-dashboards_3",
+    "topicId": "b3-dashboards",
+    "blocoId": "bloco-3",
+    "question": "A área de Suprimentos da Petrobras está enfrentando desafios na gestão de contratos com fornecedores, com atrasos frequentes na entrega e desvios orçamentários. Um novo projeto de dashboard foi iniciado para monitorar a performance dos fornecedores e a saúde financeira dos contratos. O gerente do projeto, ciente da importância de um design eficaz, enfatiza que o dashboard deve ser 'at-a-glance', ou seja, permitir que os usuários captem a informação essencial de forma rápida, sem esforço excessivo. Para alcançar esse objetivo, qual princípio de design de dashboards deve ser priorizado na fase de prototipagem e desenvolvimento?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A inclusão do maior número possível de métricas e gráficos complexos para garantir uma análise exaustiva de todos os detalhes operacionais.",
+        "isCorrect": false,
+        "explanation": "Excesso de informações e complexidade visual sobrecarregam o usuário e impedem a compreensão 'at-a-glance'."
+      },
+      {
+        "letter": "B",
+        "text": "A utilização de cores vibrantes e gradientes para cada elemento visual, com o intuito de tornar o dashboard mais atraente e moderno.",
+        "isCorrect": false,
+        "explanation": "O uso excessivo ou inadequado de cores pode distrair e dificultar a leitura, indo contra a clareza e a funcionalidade."
+      },
+      {
+        "letter": "C",
+        "text": "A priorização da densidade de informação relevante e a minimização de 'ruído' visual, utilizando layout limpo e visualizações objetivas.",
+        "isCorrect": true,
+        "explanation": "O princípio 'at-a-glance' requer foco na informação essencial, clareza e eliminação de elementos desnecessários para uma rápida compreensão."
+      },
+      {
+        "letter": "D",
+        "text": "A padronização das fontes e tamanhos de texto para garantir a consistência, mesmo que isso resulte em letras muito pequenas para alguns gráficos.",
+        "isCorrect": false,
+        "explanation": "A legibilidade é crucial. Padronização não deve comprometer a clareza, especialmente em relação ao tamanho da fonte."
+      },
+      {
+        "letter": "E",
+        "text": "A criação de múltiplas abas e páginas para cada tipo de análise, exigindo que o usuário navegue entre elas para obter a visão completa.",
+        "isCorrect": false,
+        "explanation": "Fragmentar a informação em múltiplas abas dificulta a visão consolidada e rápida, indo contra o conceito de 'at-a-glance'."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão enfatiza a necessidade de um dashboard 'at-a-glance', que permita uma compreensão rápida e sem esforço excessivo das informações essenciais. Este é um princípio fundamental de design de dashboards, conforme preconizado por Stephen Few. Para alcançar isso, é crucial priorizar a densidade de informação relevante e minimizar o ruído visual. Isso significa focar nos dados que realmente importam para a tomada de decisão, apresentá-los de forma clara e concisa, e eliminar quaisquer elementos visuais desnecessários que possam distrair ou sobrecarregar o usuário. Um layout limpo, uso de visualizações objetivas e a escolha de cores com propósito (e não apenas por estética) são elementos chave para isso. As outras opções são incorretas porque: (A) incluir o maior número de métricas e gráficos complexos gera sobrecarga de informação, impedindo a compreensão rápida; (B) o uso excessivo ou inadequado de cores vibrantes pode ser prejudicial à clareza e à funcionalidade, tornando o dashboard visualmente confuso; (D) a padronização é importante, mas não deve comprometer a legibilidade, ou seja, o tamanho da fonte deve ser adequado para todos os elementos; e (E) a criação de múltiplas abas para a mesma visão dificulta a capacidade de ver tudo 'em um relance', exigindo navegação e memória do usuário.",
+    "technicalJustification": "Stephen Few, em 'Information Dashboard Design', argumenta que a principal característica de um dashboard eficaz é sua capacidade de permitir o monitoramento 'at-a-glance'. Isso é alcançado através da alta densidade de informação relevante apresentada de forma clara e concisa em uma única tela, com a eliminação de ruído visual e foco na percepção pré-atentiva. O objetivo é a máxima clareza e eficiência na comunicação da informação.",
+    "relatedConcepts": [
+      "Princípios de Design de Dashboards",
+      "Stephen Few",
+      "Clareza Visual",
+      "Ruído Visual",
+      "Densidade de Informação"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b3-dashboards_4",
+    "topicId": "b3-dashboards",
+    "blocoId": "bloco-3",
+    "question": "No contexto da Petrobras, a implementação de dashboards tem sido fundamental para diversas áreas, desde a exploração e produção até a refino e comercialização. Ao considerar as ferramentas de mercado para o desenvolvimento de dashboards e visualização de dados, como Power BI e Tableau, é importante entender suas características e aplicabilidades. Embora ambas sejam líderes de mercado e ofereçam recursos robustos, existem diferenças sutis em suas abordagens e ecossistemas. Nesse sentido, NÃO é uma característica geralmente associada ao Power BI quando comparado ao Tableau:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Maior integração nativa com o ecossistema Microsoft (Azure, Excel, SQL Server) e facilidade para usuários de Excel migrarem para a ferramenta.",
+        "isCorrect": false,
+        "explanation": "Esta é uma característica central do Power BI, que se integra profundamente com as tecnologias Microsoft."
+      },
+      {
+        "letter": "B",
+        "text": "Modelo de licenciamento que, muitas vezes, é percebido como mais acessível, especialmente para organizações que já utilizam a suíte Microsoft 365.",
+        "isCorrect": false,
+        "explanation": "O modelo de licenciamento do Power BI, incluindo a versão gratuita e a integração com o M365, é frequentemente visto como um diferencial de custo."
+      },
+      {
+        "letter": "C",
+        "text": "Forte foco na linguagem DAX (Data Analysis Expressions) para modelagem de dados e criação de medidas complexas.",
+        "isCorrect": false,
+        "explanation": "DAX é a linguagem fundamental do Power BI para manipulação e cálculo de dados, sendo um dos seus pilares."
+      },
+      {
+        "letter": "D",
+        "text": "Uma abordagem mais visual e 'drag-and-drop' para a preparação e modelagem de dados, com menor dependência de código para transformações complexas.",
+        "isCorrect": true,
+        "explanation": "Embora ambos sejam visuais, o Tableau é frequentemente elogiado por sua interface mais intuitiva e 'drag-and-drop' para exploração e preparação de dados, enquanto o Power BI pode exigir mais uso de DAX ou Power Query para modelagens complexas."
+      },
+      {
+        "letter": "E",
+        "text": "A capacidade de criar relatórios paginados (tipo SSRS) e incorporar recursos de inteligência artificial e machine learning via Azure.",
+        "isCorrect": false,
+        "explanation": "O Power BI Service permite relatórios paginados e possui forte integração com os serviços de IA/ML do Azure."
+      }
+    ],
+    "difficulty": "medio-dificil",
+    "source": "autoral",
+    "detailedExplanation": "A questão solicita a característica que *NÃO* é geralmente associada ao Power BI quando comparado ao Tableau. Isso exige um conhecimento comparativo das duas ferramentas. O Power BI é amplamente conhecido por sua profunda integração com o ecossistema Microsoft (A), seu modelo de licenciamento muitas vezes mais acessível para usuários Microsoft (B), seu uso extensivo da linguagem DAX para modelagem de dados (C) e sua capacidade de relatórios paginados e integração com Azure AI/ML (E). A alternativa (D), que descreve 'uma abordagem mais visual e 'drag-and-drop' para a preparação e modelagem de dados, com menor dependência de código para transformações complexas', é uma característica que, embora ambos possuam elementos visuais, é frequentemente mais associada ao Tableau. O Tableau é renomado por sua interface altamente intuitiva e fluida para exploração de dados e criação de visualizações através de 'drag-and-drop', minimizando a necessidade de programação explícita para muitas tarefas de transformação e análise. O Power BI, por sua vez, embora também visual, tende a exigir mais o uso de Power Query (M Language) para transformações de dados e DAX para a criação de medidas complexas, o que pode ser considerado uma 'dependência de código' maior em comparação com a simplicidade inicial do Tableau para certas operações.",
+    "technicalJustification": "Tanto Power BI quanto Tableau são líderes em Business Intelligence e visualização de dados, mas diferem em suas abordagens. O Power BI se destaca pela integração com o ecossistema Microsoft e sua linguagem DAX. O Tableau, por outro lado, é frequentemente elogiado por sua interface de usuário intuitiva e visual 'drag-and-drop' que permite uma exploração e preparação de dados mais fluida e menos dependente de código para muitas tarefas, sendo um ponto forte na comparação com a necessidade de DAX e Power Query no Power BI para modelagens e transformações mais complexas. (Fonte: Análises comparativas de Gartner Magic Quadrant para Analytics e Business Intelligence Platforms, e documentações oficiais das ferramentas).",
+    "relatedConcepts": [
+      "Power BI",
+      "Tableau",
+      "Ferramentas de BI",
+      "DAX",
+      "Modelagem de Dados",
+      "Ecossistema Microsoft"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b3-dashboards_5",
+    "topicId": "b3-dashboards",
+    "blocoId": "bloco-3",
+    "question": "A gerência de um projeto de exploração de petróleo e gás da Petrobras necessita de um dashboard estratégico que apresente a viabilidade econômica de novos poços, considerando variáveis como custo de perfuração, estimativa de produção, preço do barril e risco geológico. O desafio é que as informações são complexas, com incertezas inerentes, e o dashboard deve apoiar decisões de alto nível, muitas vezes com base em cenários hipotéticos. Para que este dashboard seja verdadeiramente eficaz e evite armadilhas comuns que levam a decisões equivocadas, qual abordagem de design e conteúdo deve ser priorizada, integrando os princípios de visualização de dados e storytelling?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Apresentar apenas os valores médios de cada variável em tabelas densas, assumindo que os tomadores de decisão farão o trabalho de inferência para identificar os riscos e oportunidades.",
+        "isCorrect": false,
+        "explanation": "Apenas médias e tabelas densas não comunicam incertezas nem facilitam a identificação de riscos, levando a inferências erradas."
+      },
+      {
+        "letter": "B",
+        "text": "Utilizar gráficos 3D e animações complexas para tornar o dashboard visualmente impressionante, mesmo que isso comprometa a clareza e a velocidade de leitura dos dados essenciais.",
+        "isCorrect": false,
+        "explanation": "Elementos visuais excessivos e complexos (3D, animações) geralmente adicionam ruído e dificultam a compreensão, não aprimoram a tomada de decisão."
+      },
+      {
+        "letter": "C",
+        "text": "Focar em métricas de vaidade (número total de poços perfurados) e indicadores de progresso de baixo impacto, sem conectar os dados diretamente aos objetivos estratégicos do negócio.",
+        "isCorrect": false,
+        "explanation": "Métricas de vaidade e indicadores de baixo impacto não apoiam decisões estratégicas e podem mascarar a real performance."
+      },
+      {
+        "letter": "D",
+        "text": "Incorporar visualizações que permitam explorar distribuições de probabilidade e intervalos de confiança para as variáveis-chave, com recursos de simulação de cenários (what-if analysis) e uma narrativa clara sobre as implicações de cada cenário.",
+        "isCorrect": true,
+        "explanation": "Para decisões estratégicas com incerteza, é crucial visualizar a variabilidade, permitir simulações e contextualizar os dados com uma narrativa para guiar a interpretação."
+      },
+      {
+        "letter": "E",
+        "text": "Limitar o dashboard a apenas um ou dois KPIs muito agregados, sem permitir qualquer tipo de detalhamento ou exploração, para manter a simplicidade extrema.",
+        "isCorrect": false,
+        "explanation": "KPIs excessivamente agregados sem contexto ou detalhe impedem uma análise estratégica profunda e a compreensão das nuances."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão apresenta um cenário complexo de tomada de decisão estratégica na Petrobras, envolvendo incertezas e a necessidade de cenários hipotéticos. Um dashboard eficaz neste contexto deve ir além da mera apresentação de números, integrando princípios de visualização de dados e storytelling. A alternativa correta (D) aborda a necessidade de visualizar não apenas os valores pontuais, mas também a incerteza associada a eles (distribuições de probabilidade, intervalos de confiança). Além disso, a capacidade de simular cenários (what-if analysis) é crucial para que os tomadores de decisão possam explorar as implicações de diferentes premissas. A 'narrativa clara sobre as implicações de cada cenário' reflete o princípio de storytelling com dados, onde o designer não apenas mostra os dados, mas também os contextualiza e guia a interpretação. As outras opções são incorretas porque: (A) tabelas densas e apenas médias não comunicam incerteza e sobrecarregam o usuário, dificultando a inferência correta; (B) gráficos 3D e animações complexas são frequentemente considerados ruído visual, prejudicando a clareza e a velocidade de leitura, e não são adequados para dashboards estratégicos de alta complexidade; (C) focar em métricas de vaidade ou de baixo impacto desvia o foco dos objetivos estratégicos e não apoia decisões de alto nível; e (E) limitar o dashboard a poucos KPIs muito agregados sem detalhamento impede a compreensão das nuances e a análise aprofundada necessária para decisões estratégicas complexas, que exigem tanto a visão geral quanto a capacidade de explorar os drivers principais.",
+    "technicalJustification": "Para dashboards estratégicos que envolvem incerteza e a necessidade de simulação de cenários, a visualização deve ir além de gráficos básicos. Stephen Few (Information Dashboard Design) enfatiza a importância de exibir a variabilidade e a incerteza quando presentes. Cole Knaflic (Storytelling with Data) reforça que a visualização de dados deve ser acompanhada por uma narrativa que ajude a interpretar os dados e guie o público através das implicações, especialmente em cenários complexos de tomada de decisão, onde a exploração de cenários hipotéticos (what-if) é fundamental para entender o impacto das variáveis.",
+    "relatedConcepts": [
+      "Dashboards Estratégicos",
+      "Storytelling com Dados",
+      "Incerteza em Dados",
+      "Simulação de Cenários",
+      "Visualização de Dados Complexos",
+      "Tomada de Decisão"
+    ],
+    "order": 5
+  }
+]

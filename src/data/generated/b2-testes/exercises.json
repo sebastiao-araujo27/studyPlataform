@@ -1,0 +1,256 @@
+[
+  {
+    "id": "ex_b2-testes_1",
+    "topicId": "b2-testes",
+    "blocoId": "bloco-2",
+    "question": "No contexto do desenvolvimento de software, a prática de testes é fundamental para garantir a qualidade e a confiabilidade do produto final. Dentre os diversos níveis de testes existentes, o teste que foca na verificação das menores partes testáveis de uma aplicação, como funções ou métodos, de forma isolada, é conhecido como teste:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "de integração",
+        "isCorrect": false,
+        "explanation": "O teste de integração verifica a interação entre módulos ou componentes, não a menor unidade isolada."
+      },
+      {
+        "letter": "B",
+        "text": "de sistema",
+        "isCorrect": false,
+        "explanation": "O teste de sistema avalia o sistema completo, em vez de unidades isoladas."
+      },
+      {
+        "letter": "C",
+        "text": "unitário",
+        "isCorrect": true,
+        "explanation": "O teste unitário foca na verificação das menores partes testáveis de uma aplicação, como funções ou métodos, de forma isolada."
+      },
+      {
+        "letter": "D",
+        "text": "de aceitação",
+        "isCorrect": false,
+        "explanation": "O teste de aceitação é realizado pelo usuário final ou cliente para verificar se o sistema atende aos requisitos de negócio."
+      },
+      {
+        "letter": "E",
+        "text": "de regressão",
+        "isCorrect": false,
+        "explanation": "O teste de regressão é executado para garantir que novas alterações não introduziram defeitos em funcionalidades existentes."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "O teste unitário é a base da pirâmide de testes e se concentra em verificar se cada unidade de código (função, método, classe) funciona conforme o esperado, de maneira isolada. O objetivo é garantir que os blocos de construção do software sejam corretos antes de integrá-los. Testes de integração focam nas interações entre unidades; testes de sistema avaliam o sistema como um todo; testes de aceitação validam os requisitos de negócio com os stakeholders; e testes de regressão asseguram que modificações recentes não quebraram funcionalidades pré-existentes. Portanto, a descrição se alinha perfeitamente com o conceito de teste unitário.",
+    "technicalJustification": "O teste unitário é definido como o teste de componentes individuais ou módulos de um programa. Geralmente, é realizado por desenvolvedores. (Myers, G. J., Badgett, T., & Thomas, C. D. (2012). The art of software testing. John Wiley & Sons.)",
+    "relatedConcepts": [
+      "teste unitário",
+      "níveis de teste",
+      "unidade de código",
+      "isolamento"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b2-testes_2",
+    "topicId": "b2-testes",
+    "blocoId": "bloco-2",
+    "question": "Uma equipe de desenvolvimento que trabalha em um sistema crítico de controle de plataformas de petróleo na Petrobras adota uma abordagem de desenvolvimento ágil. Para garantir que novas funcionalidades sejam implementadas corretamente e que não haja impactos negativos em partes já existentes do sistema, eles decidiram automatizar a maior parte de seus testes. Qual tipo de teste é mais adequado para ser executado frequentemente e de forma automatizada, garantindo que cada componente individual funcione corretamente antes de ser integrado?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Teste de aceitação do usuário (UAT)",
+        "isCorrect": false,
+        "explanation": "O UAT é geralmente manual e realizado no final do ciclo, focado nos requisitos do negócio."
+      },
+      {
+        "letter": "B",
+        "text": "Teste de sistema",
+        "isCorrect": false,
+        "explanation": "O teste de sistema ocorre após a integração e é mais abrangente, sendo menos frequente e mais custoso para automatizar em sua totalidade para verificação rápida."
+      },
+      {
+        "letter": "C",
+        "text": "Teste de caixa preta",
+        "isCorrect": false,
+        "explanation": "Embora a automação possa ser aplicada ao teste de caixa preta, o foco na verificação de componentes individuais antes da integração aponta para um tipo específico de teste."
+      },
+      {
+        "letter": "D",
+        "text": "Teste unitário",
+        "isCorrect": true,
+        "explanation": "Testes unitários são ideais para automação frequente, focando em componentes isolados e sendo executados pelos desenvolvedores."
+      },
+      {
+        "letter": "E",
+        "text": "Teste de performance",
+        "isCorrect": false,
+        "explanation": "Testes de performance avaliam a velocidade, escalabilidade e estabilidade do sistema, não a correção funcional de unidades isoladas."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão descreve a necessidade de verificar componentes individuais de forma isolada e automatizada, com execuções frequentes para garantir que não haja impactos negativos em funcionalidades existentes à medida que o desenvolvimento avança em um ambiente ágil. Testes unitários são projetados exatamente para esse propósito: testar as menores unidades de código (funções, métodos) de forma isolada e são altamente automatizáveis, permitindo que desenvolvedores os executem continuamente durante o ciclo de desenvolvimento. Testes de aceitação do usuário (UAT) são tipicamente manuais e ocorrem em fases posteriores. Testes de sistema e de performance são mais abrangentes e menos frequentes em ciclos de automação contínua de baixo nível. Testes de caixa preta, embora possam ser automatizados, não especificam o nível de granularidade (unidade isolada) que a pergunta enfatiza.",
+    "technicalJustification": "Testes unitários são a primeira linha de defesa contra defeitos. Eles são escritos e executados pelos desenvolvedores para garantir que uma pequena unidade de código (como uma função ou método) se comporte conforme o esperado. A automação é um componente chave dos testes unitários em metodologias ágeis. (ISTQB® Foundation Level Syllabus V2018, Seção 4.2.2)",
+    "relatedConcepts": [
+      "automação de testes",
+      "teste unitário",
+      "desenvolvimento ágil",
+      "integração contínua",
+      "caixa preta"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b2-testes_3",
+    "topicId": "b2-testes",
+    "blocoId": "bloco-2",
+    "question": "Uma equipe de desenvolvimento de software para um sistema de gestão de frota de navios de exploração petrolífera está enfrentando dificuldades em identificar a causa raiz de alguns defeitos reportados. Eles sabem que o defeito ocorre em determinada funcionalidade, mas não compreendem o caminho exato que o código percorre para chegar à falha. Para auxiliar os desenvolvedores a entenderem a lógica interna e os caminhos de execução do código, qual técnica de teste seria mais apropriada para planejar e projetar os casos de teste?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Teste de caixa preta",
+        "isCorrect": false,
+        "explanation": "O teste de caixa preta foca no comportamento externo do software, sem conhecimento da estrutura interna do código."
+      },
+      {
+        "letter": "B",
+        "text": "Teste de caixa branca",
+        "isCorrect": true,
+        "explanation": "O teste de caixa branca utiliza o conhecimento da estrutura interna do código para projetar casos de teste que cubram caminhos de execução e lógica."
+      },
+      {
+        "letter": "C",
+        "text": "Teste exploratório",
+        "isCorrect": false,
+        "explanation": "O teste exploratório é mais informal e baseado na experiência do testador, não em um conhecimento estruturado do código."
+      },
+      {
+        "letter": "D",
+        "text": "Teste de aceitação",
+        "isCorrect": false,
+        "explanation": "O teste de aceitação foca na validação dos requisitos de negócio pelo usuário final, sem a necessidade de conhecer a estrutura interna do código."
+      },
+      {
+        "letter": "E",
+        "text": "Teste de mutação",
+        "isCorrect": false,
+        "explanation": "O teste de mutação é uma técnica avançada para avaliar a qualidade dos testes existentes, modificando o código-fonte, e não para entender a lógica de execução para encontrar defeitos."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A situação descrita aponta para a necessidade de uma técnica de teste que utilize o conhecimento da estrutura interna do código-fonte para planejar os testes. O teste de caixa branca (ou teste de caixa de vidro, ou teste estrutural) é precisamente essa técnica. Ela permite que os testadores projetem casos de teste com base na análise do código, incluindo a cobertura de caminhos lógicos, condições, loops e ramificações. Isso é ideal quando os desenvolvedores precisam entender como o código está sendo executado para identificar a causa raiz de um defeito. Teste de caixa preta ignora a estrutura interna, focando apenas nas entradas e saídas. Teste exploratório é mais ad-hoc. Teste de aceitação valida requisitos de negócio. Teste de mutação é uma técnica de meta-teste.",
+    "technicalJustification": "Testes de caixa branca são projetados com base na análise da estrutura interna, design e código de um componente ou sistema. O objetivo é verificar fluxos de controle, caminhos de código e condições. (ISTQB® Foundation Level Syllabus V2018, Seção 4.3.1)",
+    "relatedConcepts": [
+      "teste de caixa branca",
+      "teste estrutural",
+      "causa raiz",
+      "caminhos de execução",
+      "teste de caixa preta"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b2-testes_4",
+    "topicId": "b2-testes",
+    "blocoId": "bloco-2",
+    "question": "Uma equipe de desenvolvimento de software para um sistema de análise de dados sísmicos, utilizado em projetos de exploração de petróleo, está debatendo a melhor abordagem para o desenvolvimento e teste de novas funcionalidades. Um membro da equipe sugere o TDD (Test-Driven Development), enquanto outro defende o BDD (Behavior-Driven Development). Considerando as características e objetivos de cada metodologia, qual das afirmativas a seguir descreve corretamente uma distinção fundamental entre TDD e BDD?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "O TDD foca na descrição do comportamento esperado do sistema a partir da perspectiva do usuário, utilizando linguagem natural, enquanto o BDD foca na implementação detalhada da lógica de negócio em testes unitários escritos por desenvolvedores.",
+        "isCorrect": false,
+        "explanation": "Esta alternativa inverte as características principais: BDD foca no comportamento em linguagem natural, e TDD foca na implementação unitária."
+      },
+      {
+        "letter": "B",
+        "text": "Ambas as metodologias visam melhorar a qualidade do código e a comunicação na equipe, mas o BDD enfatiza a colaboração entre desenvolvedores, testadores e analistas de negócio através de um vocabulário compartilhado, enquanto o TDD é primariamente uma prática de desenvolvimento para desenvolvedores.",
+        "isCorrect": true,
+        "explanation": "Esta alternativa descreve corretamente a ênfase colaborativa do BDD em linguagem natural e o foco do TDD na perspectiva do desenvolvedor para implementação unitária."
+      },
+      {
+        "letter": "C",
+        "text": "O BDD é uma técnica de teste de caixa preta que verifica a funcionalidade do sistema a partir da perspectiva do usuário, enquanto o TDD é uma técnica de teste de caixa branca que garante a cobertura completa dos caminhos de código.",
+        "isCorrect": false,
+        "explanation": "Embora BDD possa ser visto como mais próximo de caixa preta e TDD de caixa branca na prática, essa não é a distinção fundamental; a diferença reside na colaboração e no foco no comportamento vs. implementação."
+      },
+      {
+        "letter": "D",
+        "text": "O TDD requer que os testes sejam escritos APÓS a implementação do código para validar a funcionalidade, enquanto o BDD exige que o comportamento seja definido e validado ANTES da escrita do código de produção.",
+        "isCorrect": false,
+        "explanation": "O TDD exige que os testes sejam escritos ANTES da implementação do código de produção. O BDD também foca na definição ANTES da implementação."
+      },
+      {
+        "letter": "E",
+        "text": "A automação de testes é um requisito central e obrigatório para TDD, mas é opcional e secundária no BDD, que se concentra mais na documentação viva.",
+        "isCorrect": false,
+        "explanation": "Ambas as metodologias se beneficiam enormemente da automação. BDD utiliza a automação para transformar especificações em testes executáveis, servindo como documentação viva."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A distinção fundamental entre TDD e BDD reside em seu foco e escopo. O TDD (Test-Driven Development) é uma prática de desenvolvimento onde os testes (geralmente unitários) são escritos ANTES do código de produção. O ciclo é 'Red-Green-Refactor': escrever um teste que falha (Red), escrever o código mínimo para passar o teste (Green), e então refatorar o código e o teste. O foco é na implementação e na qualidade do código do ponto de vista do desenvolvedor. O BDD (Behavior-Driven Development) evoluiu do TDD e foca na colaboração e na comunicação entre todos os membros da equipe (desenvolvedores, QAs, analistas de negócio). Ele utiliza uma linguagem natural (como Gherkin) para descrever o comportamento esperado do sistema a partir da perspectiva do usuário ou do negócio. Esses cenários em linguagem natural são então automatizados como testes. Portanto, BDD promove um entendimento compartilhado do comportamento do sistema, enquanto TDD é mais focado na implementação técnica.",
+    "technicalJustification": "BDD é uma metodologia de desenvolvimento ágil que encoraja a colaboração entre desenvolvedores, testadores e stakeholders de negócios em um projeto de software. Ele visa melhorar a comunicação e a entrega de valor ao cliente. TDD é uma prática de desenvolvimento de software que se baseia na repetição de um ciclo curto de desenvolvimento: primeiro o desenvolvedor escreve um teste automático para uma funcionalidade desejada, e então implementa apenas o código necessário para que o teste passe. (Adaptado de Wikipedia e fontes sobre TDD/BDD).",
+    "relatedConcepts": [
+      "TDD",
+      "BDD",
+      "desenvolvimento ágil",
+      "linguagem natural",
+      "colaboração",
+      "teste unitário",
+      "especificação de comportamento"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b2-testes_5",
+    "topicId": "b2-testes",
+    "blocoId": "bloco-2",
+    "question": "Em um projeto de modernização de um sistema legado de gestão de suprimentos para uma refinaria, a equipe de QA está implementando uma estratégia de testes robusta. Eles planejam realizar testes de integração para verificar as interfaces entre os novos módulos de procurement e o sistema ERP existente, testes de sistema para validar o fluxo completo de ponta a ponta, e testes de aceitação para garantir que os requisitos de negócio dos gerentes de logística sejam atendidos. Para otimizar o ciclo de feedback e garantir que as alterações introduzidas durante o desenvolvimento não quebrem funcionalidades já validadas, qual das seguintes ações seria a mais estratégica e alinhada com as boas práticas de engenharia de software?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Executar todos os testes de sistema e aceitação manualmente ao final de cada sprint para validar as entregas.",
+        "isCorrect": false,
+        "explanation": "Executar testes de sistema e aceitação manualmente ao final de cada sprint pode ser muito demorado e ineficiente, além de atrasar o feedback sobre defeitos."
+      },
+      {
+        "letter": "B",
+        "text": "Priorizar a automação dos testes de aceitação, pois são os mais críticos para a validação final pelo cliente.",
+        "isCorrect": false,
+        "explanation": "Embora testes de aceitação sejam importantes, a automação dos testes unitários e de integração oferece um feedback mais rápido e frequente, sendo mais estratégica para a otimização do ciclo."
+      },
+      {
+        "letter": "C",
+        "text": "Focar exclusivamente em testes de caixa branca para garantir a cobertura máxima do código em todos os níveis de teste.",
+        "isCorrect": false,
+        "explanation": "Testes de caixa branca são importantes, mas focar exclusivamente neles ignora a perspectiva do usuário e do negócio, que são essenciais nos testes de sistema e aceitação."
+      },
+      {
+        "letter": "D",
+        "text": "Implementar uma suíte de testes automatizados para testes unitários e de integração, executando-a frequentemente (ex: em cada commit ou build), e complementar com testes de sistema e aceitação (manuais ou automatizados conforme viável).",
+        "isCorrect": true,
+        "explanation": "Esta abordagem, conhecida como automação em pirâmide, garante feedback rápido e contínuo dos componentes de nível mais baixo, otimizando o ciclo de desenvolvimento e detecção de defeitos."
+      },
+      {
+        "letter": "E",
+        "text": "Realizar testes de regressão apenas antes do lançamento final do sistema para evitar retrabalho durante o desenvolvimento.",
+        "isCorrect": false,
+        "explanation": "Testes de regressão devem ser executados frequentemente, idealmente de forma automatizada, para detectar defeitos introduzidos por novas alterações o mais cedo possível, não apenas antes do lançamento."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "A questão descreve um cenário onde a equipe de QA busca otimizar o ciclo de feedback em um projeto complexo. A alternativa D propõe uma estratégia que alinha os diferentes tipos de testes com o objetivo de feedback rápido e contínuo. A automação de testes unitários e de integração, com execuções frequentes (idealmente em pipelines de CI/CD), permite que defeitos em níveis mais baixos sejam detectados e corrigidos imediatamente, com baixo custo. Isso libera tempo para que os testes de sistema e aceitação, que são mais abrangentes e podem ser mais lentos ou complexos de automatizar, sejam executados de forma mais focada. A pirâmide de testes (com muitos testes unitários, menos testes de integração e ainda menos testes de sistema/aceitação) é um modelo que suporta essa estratégia. As outras alternativas apresentam abordagens subótimas: A atrasa o feedback; B foca em um nível de teste específico em detrimento de outros igualmente importantes para feedback rápido; C ignora a perspectiva externa e de negócio; E atrasa drasticamente a detecção de regressões.",
+    "technicalJustification": "A automação de testes unitários e de integração, executada frequentemente, é crucial para ciclos de desenvolvimento rápidos e para a detecção precoce de defeitos. Testes de sistema e de aceitação, embora importantes, devem complementar essa base automatizada. Essa estratégia é conhecida como a Pirâmide de Testes. (Ref. adaptada do conceito de Pirâmide de Testes, popularizada por Mike Cohn e outros autores de metodologias ágeis).",
+    "relatedConcepts": [
+      "automação de testes",
+      "teste de integração",
+      "teste de sistema",
+      "teste de aceitação",
+      "teste de regressão",
+      "pirâmide de testes",
+      "feedback rápido",
+      "CI/CD"
+    ],
+    "order": 5
+  }
+]

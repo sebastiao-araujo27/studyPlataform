@@ -1,0 +1,247 @@
+[
+  {
+    "id": "ex_b1-performance_1",
+    "topicId": "b1-performance",
+    "blocoId": "bloco-1",
+    "question": "Um Analista de Sistemas da Petrobras está trabalhando na otimização de um banco de dados relacional que armazena registros de sensores de exploração em tempo real. Durante a análise, percebeu-se que as consultas que buscam valores exatos de identificadores únicos (IDs) são extremamente frequentes, enquanto buscas por intervalos de valores são raras para essa tabela específica. De acordo com a teoria de estruturas de indexação descrita por Silberschatz, qual tipo de índice é mais indicado para otimizar buscas de igualdade pontual, minimizando o número de acessos ao disco para encontrar o registro desejado?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Índice B-tree, pois é a estrutura padrão que garante o melhor desempenho em qualquer tipo de busca, inclusive igualdades.",
+        "isCorrect": false,
+        "explanation": "Embora o B-tree seja versátil, para buscas de igualdade pura, o índice Hash pode ser teoricamente mais eficiente (O(1) vs O(log n))."
+      },
+      {
+        "letter": "B",
+        "text": "Índice Hash, visto que ele organiza as chaves em buckets através de uma função, sendo ideal para buscas de igualdade (point queries).",
+        "isCorrect": true,
+        "explanation": "Índices Hash são otimizados para encontrar valores exatos com um custo constante, embora não suportem buscas por intervalo."
+      },
+      {
+        "letter": "C",
+        "text": "Índice Bitmap, pois é a escolha ideal para colunas com alta cardinalidade, como identificadores únicos de sensores.",
+        "isCorrect": false,
+        "explanation": "Índices Bitmap são recomendados para colunas de baixa cardinalidade (ex: Gênero, UF) e não para IDs únicos."
+      },
+      {
+        "letter": "D",
+        "text": "Índice Invertido, que permite a localização rápida de registros baseada em fragmentos de texto contidos no ID.",
+        "isCorrect": false,
+        "explanation": "Índices invertidos são usados em busca textual (Full Text Search), não para buscas de igualdade em IDs numéricos ou alfanuméricos simples."
+      },
+      {
+        "letter": "E",
+        "text": "Índice Clusterizado, que obrigatoriamente deve ser do tipo Hash para garantir que os dados estejam fisicamente ordenados pela função de hash.",
+        "isCorrect": false,
+        "explanation": "Índices clusterizados geralmente usam a estrutura B-tree para manter a ordenação física dos dados, e não Hash."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda os conceitos fundamentais de estruturas de dados para indexação. Segundo Silberschatz et al. (Sistema de Banco de Dados), os índices são divididos principalmente em dois tipos: ordenados (B-tree) e hash. O índice Hash é baseado na aplicação de uma função de hash sobre a chave de busca para determinar o endereço do bucket onde o registro (ou ponteiro) está armazenado. Essa estrutura é extremamente eficiente para 'point queries' (consultas de igualdade como 'WHERE id = 100'), atingindo complexidade de tempo média de O(1). No entanto, sua principal desvantagem é a incapacidade de realizar 'range scans' (buscas por intervalo), pois a função de hash não preserva a ordem dos dados. Em contrapartida, o B-tree mantém os dados ordenados e é o padrão de mercado por ser eficiente tanto para igualdade quanto para intervalos, mas para o cenário específico de igualdade pura descrito no enunciado, o Hash é a resposta tecnicamente precisa.",
+    "technicalJustification": "Silberschatz, Korth & Sudarshan, 'Database System Concepts'. Capítulo sobre Indexação e Hash.",
+    "relatedConcepts": [
+      "B-tree",
+      "Hash Index",
+      "Point Query",
+      "Complexidade Algorítmica"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b1-performance_2",
+    "topicId": "b1-performance",
+    "blocoId": "bloco-1",
+    "question": "No contexto de administração e tuning de bancos de dados de grande porte (VLDB), uma técnica comum para melhorar a performance de tabelas com bilhões de linhas é o particionamento. Considere uma tabela de 'LOG_OPERACAO' na Petrobras que armazena o histórico de manutenções de sondas ao longo de 10 anos. A equipe de DBA decidiu implementar o particionamento por intervalo (Range Partitioning) baseado na coluna 'data_manutencao'. Qual é o principal benefício direto para a performance de consultas que filtram apenas o último mês de dados após essa implementação?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Redução automática da fragmentação lógica dos índices globais da tabela.",
+        "isCorrect": false,
+        "explanation": "O particionamento pode, na verdade, aumentar a complexidade da manutenção de índices globais."
+      },
+      {
+        "letter": "B",
+        "text": "Eliminação de partições (Partition Pruning), permitindo que o otimizador ignore os segmentos de dados que não contêm o intervalo filtrado.",
+        "isCorrect": true,
+        "explanation": "O Partition Pruning evita a leitura de partições irrelevantes, reduzindo drasticamente o I/O."
+      },
+      {
+        "letter": "C",
+        "text": "Conversão automática de todos os 'Full Table Scans' em 'Index Unique Scans' por conta da divisão física.",
+        "isCorrect": false,
+        "explanation": "O particionamento não altera o tipo de acesso de 'Full' para 'Unique Scan' por si só; ele apenas reduz o escopo do scan."
+      },
+      {
+        "letter": "D",
+        "text": "Aumento da redundância de dados, garantindo que cada partição tenha uma cópia de segurança em cache LRU.",
+        "isCorrect": false,
+        "explanation": "Particionamento é uma divisão lógica/física de dados, não um mecanismo de redundância ou cache."
+      },
+      {
+        "letter": "E",
+        "text": "Garantia de que as consultas de agregação (SUM, AVG) não precisarão realizar acessos ao disco rígido.",
+        "isCorrect": false,
+        "explanation": "Agregações ainda podem exigir I/O se os dados da partição não estiverem no buffer cache."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "O particionamento é uma técnica de 'dividir para conquistar'. No particionamento por intervalo (Range), o banco de dados distribui as linhas em diferentes segmentos físicos com base em limites de valores (ex: uma partição por mês). O benefício mais crítico para a performance é o 'Partition Pruning' (ou eliminação de partições). Quando uma consulta SQL inclui um predicado na cláusula WHERE que utiliza a chave de partição (ex: 'data_manutencao BETWEEN '2023-10-01' AND '2023-10-31''), o otimizador de consultas identifica que apenas a partição referente a outubro de 2023 precisa ser lida. Isso reduz o volume de dados processados (I/O) de 10 anos de história para apenas um mês, resultando em ganhos exponenciais de velocidade sem a necessidade de ler índices gigantescos ou realizar scans em toda a tabela.",
+    "technicalJustification": "Oracle Database VLDB and Partitioning Guide; Silberschatz et al., 'Database System Concepts'.",
+    "relatedConcepts": [
+      "Partition Pruning",
+      "Range Partitioning",
+      "I/O Reduction",
+      "VLDB"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b1-performance_3",
+    "topicId": "b1-performance",
+    "blocoId": "bloco-1",
+    "question": "Uma aplicação de monitoramento de dutos está apresentando lentidão excessiva em um relatório gerencial. Ao analisar a consulta SQL através da ferramenta EXPLAIN PLAN do SGDB, o Analista de Sistemas observa que o custo estimado é muito alto e que o plano de execução indica um 'TABLE ACCESS FULL' em uma tabela de 'LEITURAS_DIARIAS' que possui 500 milhões de registros, apesar de existir um índice na coluna 'id_duto' utilizada no filtro. Qual das seguintes situações é a causa mais provável para o otimizador ignorar o índice existente?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "As estatísticas do otimizador sobre a tabela e o índice estão desatualizadas, fazendo-o acreditar que a tabela é pequena.",
+        "isCorrect": true,
+        "explanation": "Estatísticas obsoletas levam o CBO (Cost-Based Optimizer) a tomar decisões erradas sobre o método de acesso."
+      },
+      {
+        "letter": "B",
+        "text": "O índice foi criado como B-tree, mas o otimizador exige obrigatoriamente um índice Hash para evitar Full Table Scans.",
+        "isCorrect": false,
+        "explanation": "Otimizadores não exigem Hash; B-trees são perfeitamente capazes de evitar Full Table Scans."
+      },
+      {
+        "letter": "C",
+        "text": "A cláusula SELECT da consulta solicita todas as colunas (SELECT *), o que desativa permanentemente o uso de qualquer índice.",
+        "isCorrect": false,
+        "explanation": "O SELECT * não desativa o índice, mas pode tornar o 'Index Range Scan' mais caro que o 'Full Scan' se muitas linhas forem retornadas."
+      },
+      {
+        "letter": "D",
+        "text": "O banco de dados está configurado com o parâmetro 'OPTIMIZER_MODE' definido como 'RULE', ignorando o custo e focando apenas na sintaxe.",
+        "isCorrect": false,
+        "explanation": "No modo RULE (RBO), o índice geralmente seria preferido sobre o Full Scan se disponível, ao contrário do CBO que avalia o custo."
+      },
+      {
+        "letter": "E",
+        "text": "O índice está em estado 'VALID', o que impede sua utilização em planos de execução que envolvam tabelas com mais de 1 milhão de linhas.",
+        "isCorrect": false,
+        "explanation": "O estado 'VALID' indica que o índice pode ser usado; o limite de linhas mencionado é arbitrário e falso."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "O Otimizador Baseado em Custo (CBO) utiliza estatísticas armazenadas no dicionário de dados (como número de linhas, blocos ocupados, cardinalidade de colunas) para calcular o caminho de execução mais barato. Se uma tabela cresce subitamente (como de 1.000 para 500 milhões de linhas) e o comando de coleta de estatísticas (ex: DBMS_STATS no Oracle ou ANALYZE no PostgreSQL) não for executado, o otimizador pode 'pensar' que a tabela ainda é pequena. Em tabelas pequenas, um Full Table Scan (leitura sequencial multi-bloco) costuma ser mais rápido que um Index Scan (leitura aleatória mono-bloco). Portanto, se as estatísticas dizem que a tabela tem 100 linhas, o CBO escolherá Full Scan, mesmo que na realidade existam 500 milhões, causando o gargalo de performance. Outras causas comuns incluem o uso de funções na coluna indexada (ex: WHERE TRUNC(data) = ...), mas entre as opções, a falta de estatísticas é a causa raiz clássica em arquiteturas modernas.",
+    "technicalJustification": "Oracle Performance Tuning Guide; Elmasri & Navathe, 'Fundamentals of Database Systems'.",
+    "relatedConcepts": [
+      "Cost-Based Optimizer (CBO)",
+      "Explain Plan",
+      "Optimizer Statistics",
+      "Full Table Scan"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b1-performance_4",
+    "topicId": "b1-performance",
+    "blocoId": "bloco-1",
+    "question": "No projeto de arquitetura de dados para um sistema global de logística da Petrobras, discute-se a utilização de Sharding (fragmentação horizontal) em vez de apenas Particionamento de Tabela tradicional. A principal diferença arquitetural que justifica a escolha pelo Sharding em cenários de escala extrema é que:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "O Sharding permite que os dados sejam distribuídos entre diferentes instâncias de banco de dados e servidores físicos distintos, escalando horizontalmente os recursos de CPU e memória.",
+        "isCorrect": true,
+        "explanation": "Ao contrário do particionamento (geralmente em uma instância), o sharding distribui a carga entre múltiplos nós independentes (shared-nothing)."
+      },
+      {
+        "letter": "B",
+        "text": "O Sharding é uma técnica exclusivamente aplicada na camada de aplicação, não exigindo suporte ou configuração no nível do banco de dados.",
+        "isCorrect": false,
+        "explanation": "Embora a aplicação precise conhecer o sharding, muitos SGBDs modernos oferecem suporte nativo a 'sharded databases'."
+      },
+      {
+        "letter": "C",
+        "text": "O particionamento tradicional divide a tabela em colunas (fragmentação vertical), enquanto o Sharding a divide em linhas (fragmentação horizontal).",
+        "isCorrect": false,
+        "explanation": "Ambos são tipicamente formas de fragmentação horizontal (divisão por linhas); o particionamento vertical é outra técnica distinta."
+      },
+      {
+        "letter": "D",
+        "text": "O Sharding elimina a necessidade de chaves primárias nas tabelas, facilitando a inserção de dados em alta velocidade.",
+        "isCorrect": false,
+        "explanation": "Sharding depende fortemente de uma 'sharding key', que frequentemente é parte da chave primária."
+      },
+      {
+        "letter": "E",
+        "text": "A implementação de Sharding garante que transações distribuídas (Cross-shard joins) tenham performance superior a consultas locais em uma única partição.",
+        "isCorrect": false,
+        "explanation": "Transações cross-shard são um dos maiores desafios do sharding e geralmente são mais lentas e complexas de gerenciar."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "Embora os termos 'Particionamento' e 'Sharding' descrevam a divisão de dados, eles operam em escalas diferentes. O particionamento (local) ocorre dentro de uma única instância de banco de dados, onde os dados são divididos em segmentos para facilitar a manutenção e o pruning, mas ainda compartilham o mesmo hardware (CPU, RAM, Disco). O Sharding é uma arquitetura 'shared-nothing'. Cada 'shard' é um banco de dados independente que reside em um servidor físico (ou nó) diferente. Isso permite a escalabilidade horizontal (scale-out): para dobrar a capacidade de processamento, basta adicionar mais servidores. A Petrobras, lidando com volumes globais, utilizaria sharding para evitar que um único servidor se tornasse um gargalo (Single Point of Contention), distribuindo a carga de I/O e processamento por todo o cluster. O custo disso é a complexidade em realizar joins entre shards e gerenciar a consistência distribuída.",
+    "technicalJustification": "Silberschatz et al., 'Database System Concepts' (capítulo sobre Bancos de Dados Distribuídos); Whitepapers de arquitetura NoSQL/NewSQL.",
+    "relatedConcepts": [
+      "Horizontal Scaling",
+      "Shared-Nothing Architecture",
+      "Sharding Key",
+      "Distributed Databases"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b1-performance_5",
+    "topicId": "b1-performance",
+    "blocoId": "bloco-1",
+    "question": "Considere um cenário de tuning onde uma consulta complexa realiza o JOIN entre duas tabelas: 'EQUIPAMENTOS' (pequena, 1.000 linhas) e 'SENSORES_HISTORICO' (gigante, 1 bilhão de linhas). O plano de execução atual mostra um 'HASH JOIN'. Sabendo que a tabela 'EQUIPAMENTOS' cabe inteiramente na memória (Buffer Cache) e a consulta filtra um único equipamento por vez, qual estratégia de otimização e qual método de join seriam mais adequados para minimizar o tempo de resposta (latency)?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Forçar um 'MERGE JOIN' através de hints, pois este método é o mais eficiente quando uma das tabelas é pequena, independentemente de índices.",
+        "isCorrect": false,
+        "explanation": "Merge Join exige ordenação de ambos os lados, o que seria desastroso para 1 bilhão de linhas sem índices adequados."
+      },
+      {
+        "letter": "B",
+        "text": "Garantir a existência de um índice na coluna de ligação da tabela 'SENSORES_HISTORICO' e utilizar 'NESTED LOOPS' para que o banco percorra o índice para cada linha da tabela pequena.",
+        "isCorrect": true,
+        "explanation": "Para uma tabela externa pequena e uma interna grande indexada, o Nested Loops é ideal para baixa latência."
+      },
+      {
+        "letter": "C",
+        "text": "Desativar o cache de leitura do banco de dados para evitar que a tabela 'EQUIPAMENTOS' polua o buffer cache, forçando a leitura direta do disco (Direct Path Read).",
+        "isCorrect": false,
+        "explanation": "O cache é benéfico; evitar o cache para uma tabela pequena que é lida repetidamente aumentaria a latência."
+      },
+      {
+        "letter": "D",
+        "text": "Utilizar o particionamento vertical na tabela 'SENSORES_HISTORICO' para separar as colunas de data das colunas de valor, eliminando a necessidade de índices B-tree.",
+        "isCorrect": false,
+        "explanation": "O particionamento vertical não substitui a necessidade de métodos de join eficientes para relacionar as tabelas."
+      },
+      {
+        "letter": "E",
+        "text": "Aumentar o tamanho do 'PGA_AGGREGATE_TARGET' para forçar o otimizador a sempre escolher 'HASH JOIN', que é superior ao 'NESTED LOOPS' para consultas OLTP.",
+        "isCorrect": false,
+        "explanation": "Hash Join é geralmente melhor para grandes volumes (OLAP/Batch), não necessariamente para baixa latência em consultas pontuais (OLTP)."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "A escolha do algoritmo de JOIN é crucial para a performance. Existem três principais: Nested Loops, Hash Join e Sort Merge Join. O 'Nested Loops' funciona como um loop aninhado: para cada linha da tabela externa (driving table), ele busca as correspondentes na tabela interna. Ele é extremamente eficiente quando a tabela externa é pequena e a tabela interna tem um índice na coluna do join, pois o custo será 'Linhas_Externa * Custo_Acesso_Indice'. No cenário descrito, com apenas 1.000 linhas na tabela pequena (ou apenas uma após o filtro), o Nested Loops acessará o índice da tabela gigante poucas vezes, resultando em resposta quase instantânea. O 'Hash Join' (plano atual) é melhor para grandes volumes onde não há índices úteis, pois ele constrói uma tabela hash na memória; contudo, para consultas pontuais de baixa latência, o overhead de criar a hash table e o scan na tabela interna (se não houver filtros seletivos) pode ser superior ao acesso direto via índice do Nested Loops.",
+    "technicalJustification": "Oracle Database SQL Tuning Guide; Silberschatz et al., 'Database System Concepts' (capítulo sobre Processamento de Consultas).",
+    "relatedConcepts": [
+      "Nested Loops Join",
+      "Hash Join",
+      "Buffer Cache",
+      "Index Access Paths"
+    ],
+    "order": 5
+  }
+]

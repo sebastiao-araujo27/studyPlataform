@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b2-ux_1",
+    "topicId": "b2-ux",
+    "front": "O que é UX (User Experience)?",
+    "back": "UX (User Experience) refere-se à experiência geral de um usuário ao interagir com um produto, sistema ou serviço. Abrange todas as percepções, emoções e satisfações do usuário antes, durante e após o uso.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-ux_2",
+    "topicId": "b2-ux",
+    "front": "Quais são as 10 heurísticas de usabilidade de Jakob Nielsen?",
+    "back": "As 10 heurísticas de Nielsen são:\n1. Visibilidade do estado do sistema\n2. Correspondência entre o sistema e o mundo real\n3. Controle e liberdade do usuário\n4. Consistência e padrões\n5. Prevenção de erros\n6. Reconhecimento em vez de memorização\n7. Flexibilidade e eficiência de uso\n8. Design estético e minimalista\n9. Ajuda para reconhecer, diagnosticar e recuperar de erros\n10. Ajuda e documentação",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-ux_3",
+    "topicId": "b2-ux",
+    "front": "O que é Usabilidade?",
+    "back": "Usabilidade é um atributo de qualidade que avalia o quão fácil é para um usuário aprender, usar e ficar satisfeito com um sistema para atingir objetivos específicos.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-ux_4",
+    "topicId": "b2-ux",
+    "front": "O que significa acessibilidade em UX?",
+    "back": "Acessibilidade em UX significa projetar produtos e serviços que possam ser usados por pessoas com diversas habilidades e deficiências, garantindo que todos tenham acesso e possam interagir sem barreiras.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-ux_5",
+    "topicId": "b2-ux",
+    "front": "Qual a diferença fundamental entre UX e UI (User Interface)?",
+    "back": "UX (User Experience) foca na experiência geral e na jornada do usuário, enquanto UI (User Interface) foca nos elementos visuais e interativos da interface (botões, menus, layouts) que o usuário vê e com os quais interage.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-ux_6",
+    "topicId": "b2-ux",
+    "front": "Explique o conceito de 'Jornada do Usuário' no contexto de UX.",
+    "back": "A Jornada do Usuário é a representação visual e narrativa das etapas que um usuário percorre para atingir um objetivo usando um produto ou serviço. Inclui pontos de contato, ações, pensamentos e emoções do usuário.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-ux_7",
+    "topicId": "b2-ux",
+    "front": "Quando é mais importante aplicar a heurística 'Visibilidade do estado do sistema' de Nielsen?",
+    "back": "É crucial aplicar a heurística 'Visibilidade do estado do sistema' em momentos de feedback imediato após uma ação do usuário, como uma confirmação de envio, o progresso de um download ou a indicação de que um formulário foi preenchido incorretamente.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-ux_8",
+    "topicId": "b2-ux",
+    "front": "V ou F: A pesquisa com usuário é uma etapa opcional e pode ser realizada apenas ao final do desenvolvimento de um produto para validação.",
+    "back": "Falso. A pesquisa com usuário é fundamental em todas as fases do desenvolvimento, desde a concepção para entender as necessidades e comportamentos, até o refinamento e validação, garantindo que o produto atenda às expectativas.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-ux_9",
+    "topicId": "b2-ux",
+    "front": "Qual heurística de Nielsen é violada se um sistema apresenta menus e botões com terminologia diferente para ações similares em diferentes partes do mesmo produto?",
+    "back": "A heurística 'Consistência e padrões' é violada. A falta de consistência confunde o usuário e aumenta a carga cognitiva, pois ele precisa aprender novas convenções em vez de aplicar o conhecimento prévio.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-ux_10",
+    "topicId": "b2-ux",
+    "front": "Cite duas técnicas comuns de pesquisa com usuário para entender suas necessidades.",
+    "back": "Duas técnicas comuns são:\n1. Entrevistas com usuários: Conversas aprofundadas para coletar informações qualitativas sobre suas experiências, necessidades e dores.\n2. Testes de usabilidade: Observação de usuários reais tentando realizar tarefas com o produto para identificar problemas e pontos de melhoria.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

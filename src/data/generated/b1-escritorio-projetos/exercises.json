@@ -1,0 +1,242 @@
+[
+  {
+    "id": "ex_b1-escritorio-projetos_1",
+    "topicId": "b1-escritorio-projetos",
+    "blocoId": "bloco-1",
+    "question": "Uma organização do setor de energia está em processo de estruturação de sua governança corporativa e decide implementar um Escritório de Projetos (PMO) para auxiliar as diversas unidades de negócio. A alta administração definiu que este escritório deve atuar primordialmente como um repositório de conhecimentos, fornecendo modelos, ferramentas e lições aprendidas, sem, contudo, exercer autoridade direta ou impor conformidade rígida sobre a execução dos projetos, que permanecem sob total autonomia dos gerentes departamentais. Segundo o Guia PMBOK 6ª Edição, esse tipo de PMO é classificado como:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Diretivo, pois centraliza a gestão e assume o controle direto dos projetos através do fornecimento de recursos.",
+        "isCorrect": false,
+        "explanation": "O PMO diretivo assume o controle dos projetos, o que contradiz a autonomia mencionada no enunciado."
+      },
+      {
+        "letter": "B",
+        "text": "De Controle, visto que exige a adoção de metodologias específicas e Auditorias frequentes para garantir a conformidade.",
+        "isCorrect": false,
+        "explanation": "O PMO de controle exige conformidade, enquanto o enunciado descreve um papel apenas consultivo."
+      },
+      {
+        "letter": "C",
+        "text": "De Suporte, caracterizado por um baixo nível de controle, atuando como um consultor que fornece modelos e melhores práticas.",
+        "isCorrect": true,
+        "explanation": "O PMO de suporte fornece modelos, treinamentos e lições aprendidas com um grau de controle baixo, exatamente como descrito."
+      },
+      {
+        "letter": "D",
+        "text": "Operacional, focado exclusivamente no cumprimento do cronograma e na alocação de mão de obra técnica para as frentes de trabalho.",
+        "isCorrect": false,
+        "explanation": "PMO 'Operacional' não é uma classificação padrão do PMBOK 6 para tipos de PMO baseados em controle."
+      },
+      {
+        "letter": "E",
+        "text": "Estratégico, pois sua função principal é a seleção de portfólio baseada em critérios de viabilidade econômica e retorno sobre investimento.",
+        "isCorrect": false,
+        "explanation": "Embora um PMO possa ser estratégico, a descrição foca no fornecimento de ferramentas e modelos (suporte), não na seleção de portfólio."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda a classificação fundamental de Escritórios de Projetos (PMO) conforme estabelecido no Guia PMBOK 6ª Edição. O Guia categoriza o PMO em três tipos, baseando-se no grau de controle e influência que exercem sobre os projetos da organização. O PMO de Suporte desempenha um papel consultivo, fornecendo modelos, melhores práticas, acesso a informações e lições aprendidas de outros projetos. O nível de controle exercido por este tipo de PMO é baixo, pois ele serve como um repositório de conhecimento e não impõe metodologias. O PMO de Controle fornece suporte, mas também exige que as ferramentas e metodologias sejam seguidas, exercendo um nível de controle moderado. Já o PMO Diretivo assume o controle total dos projetos, designando os gerentes de projeto que respondem diretamente ao escritório, resultando em um alto nível de controle. No cenário proposto, a ênfase na 'total autonomia dos gerentes' e na função de 'repositório de conhecimentos' aponta diretamente para a definição de PMO de Suporte. Conhecer essas distinções é essencial para provas da Cesgranrio, que frequentemente utiliza cenários organizacionais para testar conceitos teóricos.",
+    "technicalJustification": "Conforme o Guia PMBOK 6ª Edição (Seção 2.4.4.3), os PMOs são classificados em Suporte (baixo controle), Controle (controle moderado) e Diretivo (alto controle).",
+    "relatedConcepts": [
+      "Governança de Projetos",
+      "PMO de Suporte",
+      "Tipos de PMO"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b1-escritorio-projetos_2",
+    "topicId": "b1-escritorio-projetos",
+    "blocoId": "bloco-1",
+    "question": "No contexto da gestão de processos de negócio em uma grande estatal, o Analista de Sistemas observa que múltiplos projetos estão sendo executados simultaneamente. Alguns desses projetos são interdependentes e visam alcançar um objetivo comum de modernização da infraestrutura de TI, enquanto outros são independentes, mas competem pelos mesmos recursos financeiros e humanos da empresa. De acordo com os conceitos de gerenciamento de programas e portfólios, assinale a afirmativa correta:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "O gerenciamento de programas foca na seleção e priorização de projetos para garantir o alinhamento com os objetivos estratégicos.",
+        "isCorrect": false,
+        "explanation": "Esta é a definição de gerenciamento de portfólio, não de programas."
+      },
+      {
+        "letter": "B",
+        "text": "O portfólio é um agrupamento de projetos relacionados, gerenciados de forma coordenada para obter benefícios não disponíveis se geridos individualmente.",
+        "isCorrect": false,
+        "explanation": "Esta é a definição de programa. Portfólios podem conter componentes não relacionados."
+      },
+      {
+        "letter": "C",
+        "text": "O gerenciamento de programas visa coordenar projetos relacionados para otimizar o uso de recursos e gerenciar interdependências.",
+        "isCorrect": true,
+        "explanation": "Correto. Programas focam em benefícios coletivos e interdependências entre projetos relacionados."
+      },
+      {
+        "letter": "D",
+        "text": "Projetos dentro de um portfólio devem obrigatoriamente ser interdependentes ou possuir objetivos operacionais diretamente vinculados.",
+        "isCorrect": false,
+        "explanation": "Componentes de um portfólio não precisam ser relacionados ou interdependentes."
+      },
+      {
+        "letter": "E",
+        "text": "O PMO não tem autoridade para atuar no nível de portfólio, limitando-se apenas ao suporte técnico de projetos isolados.",
+        "isCorrect": false,
+        "explanation": "O PMO pode atuar em níveis estratégicos, incluindo a gestão de portfólio e programas."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão exige a distinção clara entre Projeto, Programa e Portfólio, pilares do gerenciamento organizacional de projetos (OPM). Segundo o PMBOK, um Projeto é um esforço temporário para criar um produto ou serviço único. Um Programa é um grupo de projetos relacionados, subprogramas e atividades que são gerenciados de forma coordenada para obter benefícios que não estariam disponíveis se fossem gerenciados individualmente. O foco do programa é a interdependência. Por outro lado, um Portfólio é um conjunto de projetos, programas, portfólios subsidiários e operações gerenciados como um grupo para alcançar objetivos estratégicos. Os componentes do portfólio não precisam ser necessariamente interdependentes ou diretamente relacionados; eles estão agrupados para facilitar a gestão eficaz, o financiamento e a priorização visando a estratégia organizacional. A Cesgranrio costuma trocar as definições de programa e portfólio para confundir o candidato. No cenário descrito, a modernização da infraestrutura com projetos interdependentes caracteriza um programa, enquanto a gestão global de recursos e priorização estratégica caracteriza o portfólio.",
+    "technicalJustification": "Guia PMBOK 6ª Edição, Seção 1.2.3. Diferenciação entre Gerenciamento de Projetos, Programas e Portfólios.",
+    "relatedConcepts": [
+      "Gerenciamento de Portfólio",
+      "Gerenciamento de Programas",
+      "Alinhamento Estratégico"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b1-escritorio-projetos_3",
+    "topicId": "b1-escritorio-projetos",
+    "blocoId": "bloco-1",
+    "question": "uma empresa de exploração de petróleo identificou que suas taxas de sucesso em projetos de TI são inconsistentes, com frequentes estouros de orçamento e atrasos. Para mitigar o problema, decidiu-se criar um PMO que terá a responsabilidade de auditar os projetos em andamento, verificar se os gerentes estão utilizando a metodologia oficial da companhia e exigir o preenchimento de relatórios de desempenho mensais. Caso as normas não sejam seguidas, o PMO tem autoridade para paralisar o projeto. Esse cenário descreve um PMO do tipo:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Consultivo, pois atua orientando os gerentes sobre como melhorar seus processos internos.",
+        "isCorrect": false,
+        "explanation": "O termo 'consultivo' não é a nomenclatura padrão e o poder de paralisar projetos indica controle, não apenas consulta."
+      },
+      {
+        "letter": "B",
+        "text": "De Controle, pois exige conformidade através de estruturas, metodologias e auditorias, possuindo um nível moderado a alto de influência.",
+        "isCorrect": true,
+        "explanation": "A exigência de conformidade, preenchimento de relatórios e auditorias define o PMO de controle."
+      },
+      {
+        "letter": "C",
+        "text": "De Suporte, dado que o principal objetivo é auxiliar Petrobras a atingir suas taxas de sucesso.",
+        "isCorrect": false,
+        "explanation": "O PMO de suporte não exige conformidade nem realiza auditorias punitivas ou impeditivas."
+      },
+      {
+        "letter": "D",
+        "text": "Autocrático, visto que a centralização de poder impede a criatividade das equipes de desenvolvimento.",
+        "isCorrect": false,
+        "explanation": "Termo inexistente na literatura técnica de gerenciamento de projetos (PMBOK/Kerzner)."
+      },
+      {
+        "letter": "E",
+        "text": "Estratégico-Operacional, pois combina o planejamento de longo prazo com a execução técnica das tarefas de campo.",
+        "isCorrect": false,
+        "explanation": "Termo híbrido que não reflete a classificação de controle do PMO descrita no cenário."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "Nesta questão, o foco está na aplicação prática das características de um PMO de Controle. Diferente do PMO de Suporte (que é convidativo) e do PMO Diretivo (que é o 'dono' do projeto), o PMO de Controle estabelece um framework de governança que deve ser seguido obrigatoriamente. No enunciado, as palavras-chave 'auditar', 'verificar conformidade', 'exigir relatórios' e a 'autoridade para paralisar' são indicativos claros de um nível de controle que vai além do simples suporte. A Cesgranrio frequentemente utiliza o termo 'conformidade' (compliance) para caracterizar o PMO de Controle. É importante notar que, embora o PMO de controle não forneça o gerente de projeto (função do Diretivo), ele dita as regras do jogo e monitora se elas estão sendo cumpridas. Se o gerente de projeto falha em seguir a metodologia, o PMO de controle intervém. Este modelo é muito comum em grandes empresas que buscam padronização sem necessariamente remover a responsabilidade do projeto das mãos das áreas funcionais.",
+    "technicalJustification": "Guia PMBOK 6ª Edição, Seção 2.4.4.3. O PMO de Controle fornece suporte e exige conformidade por meio de vários meios.",
+    "relatedConcepts": [
+      "Metodologia de Gerenciamento de Projetos",
+      "Auditoria de Projetos",
+      "Governança Corporativa"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b1-escritorio-projetos_4",
+    "topicId": "b1-escritorio-projetos",
+    "blocoId": "bloco-1",
+    "question": "Segundo Harold Kerzner, a maturidade em gerenciamento de projetos não é alcançada apenas pela adoção de ferramentas, mas sim pela evolução através de níveis específicos. Considere uma organização que já reconhece a importância do gerenciamento de projetos e entende a necessidade de treinamentos básicos, mas que ainda enfrenta dificuldades em aplicar processos consistentes em todos os departamentos, sofrendo com a resistência cultural à mudança. De acordo com o Modelo de Maturidade em Gerenciamento de Projetos (PMMM) de Kerzner, essa organização está tentando superar qual nível para atingir a maturidade plena?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Nível 1 – Linguagem Comum: onde a organização reconhece a importância do gerenciamento e busca terminologia básica.",
+        "isCorrect": true,
+        "explanation": "O enunciado descreve uma empresa que entende a importância e busca treinamento, características do Nível 1."
+      },
+      {
+        "letter": "B",
+        "text": "Nível 2 – Processos Comuns: onde a organização define processos repetíveis para garantir o sucesso em outros projetos.",
+        "isCorrect": false,
+        "explanation": "No Nível 2, os processos já são definidos e repetíveis, o que o enunciado diz que Petrobras ainda não alcançou consistentemente."
+      },
+      {
+        "letter": "C",
+        "text": "Nível 3 – Metodologia Singular: onde a organização integra todas as metodologias corporativas em uma única.",
+        "isCorrect": false,
+        "explanation": "O Nível 3 foca na cultura e integração total, um estágio bem mais avançado do que o descrito."
+      },
+      {
+        "letter": "D",
+        "text": "Nível 4 – Benchmarking: onde a organização compara seus processos com os de líderes de mercado para melhoria contínua.",
+        "isCorrect": false,
+        "explanation": "O benchmarking ocorre após a consolidação da metodologia interna (Nível 3)."
+      },
+      {
+        "letter": "E",
+        "text": "Nível 5 – Melhoria Contínua: onde a organização avalia as informações obtidas no benchmarking e implementa mudanças.",
+        "isCorrect": false,
+        "explanation": "Este é o nível máximo de maturidade, onde Petrobras já domina os processos e busca otimização constante."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "Harold Kerzner é uma referência fundamental para a Cesgranrio em temas de maturidade. O seu Modelo de Maturidade (PMMM - Project Management Maturity Model) é composto por 5 níveis: 1. Linguagem Comum (entendimento básico); 2. Processos Comuns (definição de processos repetíveis); 3. Metodologia Singular (cultura integrada e única); 4. Benchmarking (comparação externa); 5. Melhoria Contínua. O cenário descreve uma organização que 'reconhece a importância' e 'entende a necessidade de treinamentos básicos', o que caracteriza o Nível 1. A dificuldade em 'aplicar processos consistentes' indica que ela ainda não consolidou o Nível 2. Candidatos frequentemente confundem o Nível 1 com o Nível 2; a chave é que no Nível 1 a ênfase é no conhecimento e terminologia, enquanto no Nível 2 a ênfase é no desenvolvimento de processos que permitam a repetição do sucesso. A resistência cultural mencionada é o grande desafio para transitar do Nível 2 para o Nível 3.",
+    "technicalJustification": "Kerzner, H. (2017). Project Management: A Systems Approach to Planning, Scheduling, and Controlling. Modelo PMMM (Project Management Maturity Model).",
+    "relatedConcepts": [
+      "Maturidade em Gestão de Projetos",
+      "PMMM de Kerzner",
+      "Cultura Organizacional"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b1-escritorio-projetos_5",
+    "topicId": "b1-escritorio-projetos",
+    "blocoId": "bloco-1",
+    "question": "A implementação de um PMO Estratégico (E-PMO) em uma organização complexa visa integrar o gerenciamento de portfólio com o planejamento estratégico. Durante a análise do valor agregado pelo PMO, o gestor de processos de negócio deve avaliar como o escritório influencia a seleção de componentes do portfólio. Considerando as funções avançadas de um PMO e as diretrizes do PMBOK 6ª Edição, qual das seguintes atividades é uma atribuição típica de um PMO que opera no nível de Portfólio e Programas, visando a maximização do Valor de Negócio?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Responsabilizar-se exclusivamente pela execução técnica das atividades de caminho crítico em projetos individuais de baixa complexidade.",
+        "isCorrect": false,
+        "explanation": "Gestão de caminho crítico de projetos individuais é tarefa do Gerente de Projeto, não a função estratégica de um E-PMO."
+      },
+      {
+        "letter": "B",
+        "text": "Prover o gerenciamento direto dos recursos humanos alocados em cada tarefa operacional das unidades de negócio não ligadas a projetos.",
+        "isCorrect": false,
+        "explanation": "O PMO foca em projetos/programas/portfólio, não na gestão operacional de recursos fora desse escopo."
+      },
+      {
+        "letter": "C",
+        "text": "Monitorar o alinhamento estratégico, recomendando o cancelamento de projetos que não mais suportam os objetivos de negócio, mesmo que apresentem bom desempenho técnico.",
+        "isCorrect": true,
+        "explanation": "Esta é uma função chave do gerenciamento de portfólio e de um PMO estratégico: garantir que o dinheiro seja investido no que traz valor."
+      },
+      {
+        "letter": "D",
+        "text": "Substituir o Comitê Executivo na tomada de decisões sobre fusões e aquisições corporativas de grande porte.",
+        "isCorrect": false,
+        "explanation": "O PMO apoia a decisão estratégica, mas não substitui a alta governança executiva em decisões de M&A."
+      },
+      {
+        "letter": "E",
+        "text": "Eliminar a necessidade de Gerentes de Projeto individuais, centralizando todas as comunicações técnicas e operacionais em um único analista de sistemas.",
+        "isCorrect": false,
+        "explanation": "O PMO não elimina o papel do gerente de projeto; ele o suporta ou direciona."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão exige uma compreensão profunda do papel estratégico do PMO. Um PMO não serve apenas para 'ajudar a fazer projetos', mas para garantir que a organização está fazendo os 'projetos certos'. No nível de Portfólio, a função principal é o alinhamento estratégico. Isso envolve uma análise contínua onde o PMO atua como um braço da governança para monitorar se o ambiente externo ou as prioridades da empresa mudaram. Se um projeto, mesmo sendo executado com perfeição técnica (dentro do prazo e custo), deixa de fazer sentido para a estratégia da empresa (ex: uma mudança tecnológica ou de mercado), o PMO estratégico tem o dever de recomendar o seu encerramento. Isso maximiza o Valor de Negócio ao redirecionar recursos para iniciativas mais rentáveis ou críticas. As outras opções descrevem tarefas operacionais (A e B), exageros de autoridade (D) ou erros conceituais sobre a estrutura de gestão (E). A Cesgranrio valoriza essa visão de que o gerenciamento de projetos está subordinado aos objetivos de negócio da organização.",
+    "technicalJustification": "Guia PMBOK 6ª Edição, Seção 1.2.3.3 e Seção 2.4.4.3. O PMO pode ter autoridade para atuar como um stakeholder integral e um tomador de decisões chave durante o ciclo de vida do portfólio.",
+    "relatedConcepts": [
+      "Valor de Negócio",
+      "Alinhamento Estratégico de Portfólio",
+      "Tomada de Decisão Baseada em Valor"
+    ],
+    "order": 5
+  }
+]

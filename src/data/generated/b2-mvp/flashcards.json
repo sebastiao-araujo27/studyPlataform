@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b2-mvp_1",
+    "topicId": "b2-mvp",
+    "front": "O que é o conceito de MVP (Minimum Viable Product)?",
+    "back": "MVP é a versão de um novo produto que permite a uma equipe coletar a quantidade máxima de aprendizado validado sobre os clientes com o mínimo esforço e desenvolvimento. Seu objetivo é testar hipóteses de negócio com o menor investimento possível.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-mvp_2",
+    "topicId": "b2-mvp",
+    "front": "Qual o principal objetivo do MVP no contexto do Lean Startup?",
+    "back": "O principal objetivo do MVP é validar as hipóteses de negócio e aprender sobre o comportamento e as necessidades dos clientes, minimizando o desperdício de tempo e recursos no desenvolvimento de funcionalidades que não agregam valor.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-mvp_3",
+    "topicId": "b2-mvp",
+    "front": "Explique o ciclo 'Build-Measure-Learn' do Lean Startup.",
+    "back": "Ciclo Build-Measure-Learn é um processo iterativo onde: 1. **Build (Construir):** Cria-se um produto ou funcionalidade (MVP). 2. **Measure (Medir):** Coletam-se dados e feedback dos usuários. 3. **Learn (Aprender):** Analisam-se os dados para validar ou invalidar hipóteses e decidir os próximos passos.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-mvp_4",
+    "topicId": "b2-mvp",
+    "front": "O que significa 'pivotar' uma startup no contexto do MVP?",
+    "back": "Pivotar significa fazer uma mudança estrutural na estratégia do produto ou negócio, baseada no aprendizado obtido com o MVP, sem mudar a visão geral. É uma correção de curso para acelerar o aprendizado.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-mvp_5",
+    "topicId": "b2-mvp",
+    "front": "Qual a diferença entre um MVP e um produto final completo?",
+    "back": "Um MVP foca em funcionalidades essenciais para testar uma hipótese principal e coletar feedback, sendo mais rápido e barato de desenvolver. Um produto final completo é mais robusto, com todas as funcionalidades planejadas, e geralmente é construído após a validação do MVP.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-mvp_6",
+    "topicId": "b2-mvp",
+    "front": "Cite 3 métricas de validação importantes para um MVP.",
+    "back": "Três métricas de validação importantes são: 1. **Taxa de Adoção/Uso:** Quantos usuários estão usando o MVP e com que frequência. 2. **Taxa de Conversão:** Percentual de usuários que realizam uma ação desejada (ex: cadastro, compra). 3. **Feedback Qualitativo:** Comentários, entrevistas e pesquisas que revelam as percepções dos usuários.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-mvp_7",
+    "topicId": "b2-mvp",
+    "front": "Em que situações o conceito de MVP é mais aplicável?",
+    "back": "O MVP é mais aplicável em cenários de incerteza sobre o mercado ou sobre as necessidades dos clientes, especialmente no lançamento de novos produtos, serviços ou funcionalidades inovadoras, onde o objetivo principal é aprender e validar hipóteses antes de um investimento massivo.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-mvp_8",
+    "topicId": "b2-mvp",
+    "front": "V ou F: Um MVP deve conter todas as funcionalidades planejadas para o produto final, mas de forma simplificada.",
+    "back": "Falso. Um MVP deve conter APENAS as funcionalidades essenciais para testar a hipótese central do negócio com o menor esforço possível. Funcionalidades secundárias ou não essenciais devem ser deixadas para versões posteriores.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-mvp_9",
+    "topicId": "b2-mvp",
+    "front": "Qual o risco de um MVP ser lançado com qualidade insuficiente, a ponto de gerar feedback negativo apenas por falhas técnicas e não pela proposta de valor?",
+    "back": "O risco é que o feedback coletado seja enviesado, apontando problemas técnicos em vez de validar ou invalidar a hipótese de negócio principal. Isso pode levar a decisões erradas (pivotar ou perseverar) com base em dados irrelevantes sobre a proposta de valor.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-mvp_10",
+    "topicId": "b2-mvp",
+    "front": "Qual a relação entre o conceito de 'Lean Startup' e a metodologia ágil de desenvolvimento de software?",
+    "back": "Ambas compartilham a ênfase em iteração, feedback rápido e adaptação. O Lean Startup fornece a filosofia e o ciclo de aprendizado (Build-Measure-Learn), enquanto as metodologias ágeis (Scrum, Kanban) fornecem as práticas e ferramentas para implementar o 'Build' de forma eficiente e iterativa.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

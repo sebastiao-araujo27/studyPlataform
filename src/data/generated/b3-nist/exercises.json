@@ -1,0 +1,258 @@
+[
+  {
+    "id": "ex_b3-nist_1",
+    "topicId": "b3-nist",
+    "blocoId": "bloco-3",
+    "question": "O NIST SP 800-61 Rev. 2 (Computer Security Incident Handling Guide) define um ciclo de vida para o tratamento de incidentes de segurança computacional. Sobre as fases desse ciclo de vida, é correto afirmar que",
+    "options": [
+      {
+        "letter": "A",
+        "text": "o ciclo é composto por seis fases sequenciais: Preparação, Identificação, Contenção, Erradicação, Recuperação e Lições Aprendidas.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Esse modelo de 6 fases é do SANS Institute, não do NIST SP 800-61. O NIST define 4 fases."
+      },
+      {
+        "letter": "B",
+        "text": "o ciclo é composto por quatro fases: Preparação; Detecção e Análise; Contenção, Erradicação e Recuperação; e Atividade Pós-Incidente.",
+        "isCorrect": true,
+        "explanation": "Correto. O NIST SP 800-61 Rev. 2 define exatamente 4 fases cíclicas e iterativas: (1) Preparation, (2) Detection & Analysis, (3) Containment, Eradication & Recovery, e (4) Post-Incident Activity."
+      },
+      {
+        "letter": "C",
+        "text": "o ciclo possui cinco fases: Planejamento e Preparação, Detecção e Reporte, Avaliação e Decisão, Resposta e Lições Aprendidas.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Esse modelo de 5 fases corresponde à ISO/IEC 27035 (Gestão de Incidentes de Segurança da Informação), não ao NIST SP 800-61."
+      },
+      {
+        "letter": "D",
+        "text": "as fases são estritamente sequenciais e lineares, onde cada fase deve ser completamente finalizada antes do início da próxima.",
+        "isCorrect": false,
+        "explanation": "Incorreto. O NIST SP 800-61 enfatiza que as fases são cíclicas e iterativas. Durante a contenção, pode-se voltar à análise; as lições aprendidas retroalimentam a preparação. O processo NÃO é linear."
+      },
+      {
+        "letter": "E",
+        "text": "a fase de Contenção é tratada como uma fase independente, separada das atividades de Erradicação e Recuperação.",
+        "isCorrect": false,
+        "explanation": "Incorreto. No NIST SP 800-61, Contenção, Erradicação e Recuperação são agrupadas em UMA ÚNICA fase (a terceira). No modelo SANS, sim, são fases separadas."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "O NIST SP 800-61 Rev. 2 define um ciclo de vida de tratamento de incidentes composto por 4 fases: (1) Preparação (Preparation), (2) Detecção e Análise (Detection & Analysis), (3) Contenção, Erradicação e Recuperação (Containment, Eradication & Recovery), e (4) Atividade Pós-Incidente (Post-Incident Activity). As fases formam um ciclo contínuo e iterativo — não são lineares. É fundamental não confundir com o modelo SANS (6 fases) ou com a ISO 27035 (5 fases). A principal diferença entre NIST e SANS é que o NIST agrupa Contenção, Erradicação e Recuperação em uma única fase, enquanto o SANS as separa.",
+    "technicalJustification": "Conforme o NIST SP 800-61 Rev. 2, Seção 3 (Handling an Incident), Figura 3-1 (Incident Response Life Cycle): o ciclo de vida é composto pelas fases Preparation, Detection & Analysis, Containment/Eradication/Recovery e Post-Incident Activity, formando um ciclo onde a atividade pós-incidente retroalimenta a preparação.",
+    "relatedConcepts": [
+      "NIST SP 800-61",
+      "Ciclo de vida de resposta a incidentes",
+      "SANS Incident Response",
+      "ISO 27035",
+      "CSIRT"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b3-nist_2",
+    "topicId": "b3-nist",
+    "blocoId": "bloco-3",
+    "question": "Durante a fase de Detecção e Análise do NIST SP 800-61, a equipe de resposta a incidentes deve priorizar os incidentes identificados para alocar recursos de forma eficaz. Segundo o framework, quais são os três fatores utilizados para priorização de incidentes?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Probabilidade de ocorrência, impacto financeiro estimado e complexidade técnica do ataque.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Probabilidade de ocorrência é usada em análise de riscos (ISO 31000), não na priorização de incidentes do NIST SP 800-61. Impacto financeiro e complexidade técnica não são fatores de priorização explícitos do framework."
+      },
+      {
+        "letter": "B",
+        "text": "Impacto funcional na organização, impacto na informação e recuperabilidade do incidente.",
+        "isCorrect": true,
+        "explanation": "Correto. O NIST SP 800-61 define três fatores para priorização: (1) Functional Impact — impacto nas funções de negócio, (2) Information Impact — impacto na confidencialidade e integridade das informações, e (3) Recoverability — facilidade de recuperação após o incidente."
+      },
+      {
+        "letter": "C",
+        "text": "Severidade da vulnerabilidade (CVSS), número de sistemas afetados e tempo de exposição.",
+        "isCorrect": false,
+        "explanation": "Incorreto. O CVSS é usado para classificar vulnerabilidades, não para priorizar incidentes. O NIST SP 800-61 usa fatores mais amplos que consideram o impacto organizacional, não apenas aspectos técnicos."
+      },
+      {
+        "letter": "D",
+        "text": "Classificação da informação comprometida, nível de acesso do atacante e origem geográfica do ataque.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Embora a classificação da informação seja relevante, esses não são os três fatores de priorização do NIST SP 800-61. A origem geográfica do ataque pode ser desconhecida e não é um fator de priorização."
+      },
+      {
+        "letter": "E",
+        "text": "Tipo de ameaça (interna ou externa), vetor de ataque utilizado e quantidade de dados exfiltrados.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Embora essas informações sejam úteis na análise do incidente, não correspondem aos fatores de priorização definidos pelo NIST SP 800-61."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "O NIST SP 800-61 Rev. 2 define três fatores para priorização de incidentes, frequentemente lembrados pelo mnemônico FIR: (1) Functional Impact (Impacto Funcional) — mede o impacto nas funções de negócio da organização, com níveis None, Low, Medium e High; (2) Information Impact (Impacto na Informação) — mede o impacto na confidencialidade e integridade das informações, com categorias como violação de privacidade, proprietária e de integridade; (3) Recoverability (Recuperabilidade) — mede a facilidade de recuperação, com níveis Regular, Suplementada, Estendida e Não-recuperável. Esses fatores são combinados para determinar a prioridade geral do incidente.",
+    "technicalJustification": "Conforme NIST SP 800-61 Rev. 2, Seção 3.2.6 (Incident Prioritization): 'Incidents should not be handled on a first-come, first-served basis as a result of limited resources. Instead, handling of incidents should be prioritized based on the relevant factors', sendo esses fatores: Functional Impact of the Incident, Information Impact of the Incident e Recoverability from the Incident.",
+    "relatedConcepts": [
+      "NIST SP 800-61",
+      "Priorização de incidentes",
+      "Impacto funcional",
+      "Recuperabilidade",
+      "Triagem de incidentes"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b3-nist_3",
+    "topicId": "b3-nist",
+    "blocoId": "bloco-3",
+    "question": "uma empresa de infraestrutura crítica sofreu um ataque de ransomware e ativou sua equipe de resposta a incidentes (CSIRT). Durante a fase de Contenção, Erradicação e Recuperação conforme o NIST SP 800-61, a equipe precisa coletar evidências digitais dos sistemas comprometidos. Considerando as boas práticas de forense digital recomendadas pelo framework, qual é a abordagem CORRETA?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Desligar imediatamente todos os sistemas comprometidos para preservar o estado do disco rígido e evitar que o atacante cause mais danos.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Desligar o sistema destrói evidências voláteis extremamente valiosas (memória RAM, processos em execução, conexões de rede ativas). A recomendação é isolar o sistema da rede, mas NÃO desligá-lo antes de coletar as evidências voláteis."
+      },
+      {
+        "letter": "B",
+        "text": "Realizar a coleta de evidências seguindo a ordem de volatilidade, priorizando dados voláteis (memória RAM, conexões de rede) antes dos dados persistentes (disco rígido), mantendo cadeia de custódia documentada.",
+        "isCorrect": true,
+        "explanation": "Correto. A coleta de evidências deve seguir a ordem de volatilidade (mais volátil primeiro): registradores/cache → memória RAM → estado da rede → processos → disco → mídias removíveis. A cadeia de custódia deve ser mantida para garantir validade legal das evidências."
+      },
+      {
+        "letter": "C",
+        "text": "Focar exclusivamente na recuperação dos sistemas, restaurando backups imediatamente, pois a coleta de evidências é atividade da fase de Atividade Pós-Incidente.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A coleta de evidências ocorre durante a fase de Contenção (antes da erradicação e recuperação), não na fase pós-incidente. Restaurar backups sem coletar evidências pode destruir informações cruciais para investigação."
+      },
+      {
+        "letter": "D",
+        "text": "Utilizar os próprios sistemas comprometidos para executar as ferramentas de coleta de evidências, garantindo que nenhum software externo seja introduzido no ambiente.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Ferramentas nos sistemas comprometidos podem estar corrompidas pelo atacante. A recomendação é usar ferramentas de fontes confiáveis e conhecidas, preferencialmente de mídias read-only preparadas previamente (jump kit)."
+      },
+      {
+        "letter": "E",
+        "text": "Delegar a coleta de evidências integralmente ao fabricante do antivírus, pois a equipe interna deve focar na contenção e não na preservação de evidências.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A coleta de evidências é responsabilidade do CSIRT e deve ser realizada pela equipe de resposta a incidentes, podendo contar com apoio de especialistas forenses. Contenção e preservação de evidências ocorrem simultaneamente."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "O NIST SP 800-61 Rev. 2 enfatiza a importância da coleta de evidências durante a fase de contenção. A ordem de volatilidade determina a prioridade: evidências mais voláteis (memória RAM, estado da rede, processos ativos) devem ser coletadas primeiro, pois são perdidas quando o sistema é desligado. Evidências menos voláteis (disco rígido, mídias) podem ser coletadas depois. A cadeia de custódia documenta cada pessoa que manipulou a evidência, quando, como e por quê, sendo essencial para validade legal. Imagens forenses (bit-a-bit) devem ser feitas dos discos, e hashes SHA-256 devem ser gerados para validar a integridade. As ferramentas de coleta devem vir de fontes confiáveis (jump kit preparado na fase de Preparação).",
+    "technicalJustification": "Conforme NIST SP 800-61 Rev. 2, Seção 3.3.2 (Evidence Gathering and Handling): 'Evidence should be collected according to procedures that meet all applicable laws and regulations... and should be accounted for at all times; whenever evidence is transferred from person to person, chain of custody forms should detail the transfer'. A seção também referencia a RFC 3227 (Guidelines for Evidence Collection and Archiving), que define a ordem de volatilidade.",
+    "relatedConcepts": [
+      "NIST SP 800-61",
+      "Coleta de evidências",
+      "Ordem de volatilidade",
+      "Cadeia de custódia",
+      "Forense digital",
+      "Jump kit"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b3-nist_4",
+    "topicId": "b3-nist",
+    "blocoId": "bloco-3",
+    "question": "O SOC (Security Operations Center) de uma grande empresa do setor de energia identificou, por meio de alertas do SIEM, que múltiplos endpoints estão se comunicando com endereços IP associados a servidores de Comando e Controle (C2) de um grupo APT conhecido. A equipe de segurança decide iniciar uma atividade de Threat Hunting para investigar a extensão do comprometimento. Sobre as abordagens de Threat Hunting e sua relação com o tratamento de incidentes do NIST SP 800-61, analise as afirmativas:\n\nI. Threat Hunting é uma abordagem proativa que busca identificar ameaças que escaparam dos mecanismos de detecção automatizados, diferenciando-se da detecção reativa tradicional.\nII. A abordagem de Threat Hunting baseada em TTPs (Tactics, Techniques and Procedures), utilizando o framework MITRE ATT&CK, é considerada a mais madura e eficaz contra ameaças sofisticadas.\nIII. Threat Hunting e Penetration Testing são termos sinônimos, pois ambos buscam identificar vulnerabilidades e ameaças na infraestrutura da organização.\nIV. Os resultados do Threat Hunting podem retroalimentar a fase de Preparação do NIST SP 800-61, contribuindo para a criação de novas regras de detecção e atualização de playbooks.\n\nEstão corretas APENAS as afirmativas",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I e III.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A afirmativa III é falsa. Threat Hunting e Penetration Testing são atividades distintas: Hunting busca ameaças REAIS já presentes na rede (perspectiva defensiva), enquanto Pentest simula ataques para testar defesas (perspectiva ofensiva)."
+      },
+      {
+        "letter": "B",
+        "text": "I, II e IV.",
+        "isCorrect": true,
+        "explanation": "Correto. As afirmativas I, II e IV estão corretas. (I) Threat hunting é proativo, diferente da detecção reativa. (II) A abordagem baseada em TTPs com MITRE ATT&CK é considerada a mais madura (topo da Pyramid of Pain). (IV) Os achados do hunting retroalimentam a preparação, melhorando regras de detecção e procedimentos."
+      },
+      {
+        "letter": "C",
+        "text": "II e III.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A afirmativa III é falsa. Threat Hunting e Penetration Testing têm objetivos, perspectivas e metodologias completamente diferentes."
+      },
+      {
+        "letter": "D",
+        "text": "I, III e IV.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A afirmativa III é falsa. Embora I e IV estejam corretas, a inclusão da III invalida esta alternativa."
+      },
+      {
+        "letter": "E",
+        "text": "I, II, III e IV.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Todas as afirmativas não estão corretas. A afirmativa III é falsa, pois Threat Hunting (defensivo, busca ameaças reais) e Penetration Testing (ofensivo, simula ataques) são atividades fundamentalmente distintas."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Threat Hunting é uma atividade proativa e iterativa de busca por ameaças que escaparam das defesas automatizadas. Diferencia-se fundamentalmente do Penetration Testing: (1) Hunting é defensivo (Blue Team) e busca ameaças REAIS; Pentest é ofensivo (Red Team) e SIMULA ataques. (2) Hunting é contínuo/periódico; Pentest é pontual. (3) Hunting busca adversários ativos na rede; Pentest busca vulnerabilidades exploráveis. As três abordagens de hunting são: guiada por hipótese (analista formula teoria), baseada em IOC/inteligência (usa indicadores de feeds), e baseada em TTP/análise (usa MITRE ATT&CK — considerada mais madura). Os resultados do hunting retroalimentam todo o ciclo do NIST SP 800-61, especialmente a Preparação (novas regras de detecção, playbooks atualizados) e a Detecção (novos indicadores para monitoramento).",
+    "technicalJustification": "O conceito de Threat Hunting é complementar ao NIST SP 800-61, sendo referenciado na literatura de segurança como uma evolução da postura de detecção. O MITRE ATT&CK (https://attack.mitre.org/) é o framework padrão para mapeamento de TTPs, e a Pyramid of Pain (David Bianco, 2013) demonstra que a detecção baseada em TTPs é a mais eficaz e mais difícil de ser evadida pelo adversário. O NIST SP 800-61 Rev. 2 reconhece a importância do a natureza cíclica do processo, onde descobertas em qualquer fase retroalimentam as demais.",
+    "relatedConcepts": [
+      "Threat Hunting",
+      "MITRE ATT&CK",
+      "Penetration Testing",
+      "Pyramid of Pain",
+      "NIST SP 800-61",
+      "Blue Team",
+      "Red Team",
+      "TTPs"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b3-nist_5",
+    "topicId": "b3-nist",
+    "blocoId": "bloco-3",
+    "question": "Uma organização que opera infraestrutura crítica no setor de energia está revisando seus processos de resposta a incidentes conforme o NIST SP 800-61 Rev. 2. Durante uma reunião de lições aprendidas (post-incident activity) referente a um incidente grave de ransomware que afetou sistemas SCADA, foram discutidos os seguintes pontos:\n\nI. A reunião de lições aprendidas é recomendada pelo NIST apenas para incidentes classificados como de alta severidade, sendo dispensável para incidentes de menor impacto.\nII. Durante a contenção inicial do incidente, a equipe optou por desligar imediatamente o servidor SCADA comprometido para evitar propagação, o que é considerado uma boa prática segundo o NIST.\nIII. A equipe utilizou os quatro níveis de Threat Intelligence (estratégico, tático, operacional e técnico) para contextualizar o incidente e melhorar a detecção futura.\nIV. Os fatores de priorização do incidente segundo o NIST incluem Impacto Funcional, Impacto na Informação e Recuperabilidade.\n\nEstão corretas APENAS as afirmativas",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I e II.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Ambas as afirmativas são falsas. (I) A reunião de lições aprendidas deve ocorrer para todos os incidentes maiores, não apenas os de alta severidade. (II) Desligar um servidor SCADA comprometido sem avaliação de impacto operacional pode causar danos físicos graves em ambientes industriais."
+      },
+      {
+        "letter": "B",
+        "text": "II e III.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A afirmativa II é falsa. Desligar sistemas SCADA sem avaliação pode causar consequências catastróficas em ambientes industriais. A contenção em ambientes OT deve ser cuidadosamente planejada."
+      },
+      {
+        "letter": "C",
+        "text": "III e IV.",
+        "isCorrect": true,
+        "explanation": "Correto. (III) Os 4 níveis de Threat Intelligence (estratégico, tático, operacional, técnico) são amplamente reconhecidos e utilizados para contextualizar incidentes. (IV) Os três fatores de priorização do NIST SP 800-61 são exatamente: Impacto Funcional, Impacto na Informação e Recuperabilidade (FIR)."
+      },
+      {
+        "letter": "D",
+        "text": "I e IV.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A afirmativa I é falsa. O NIST recomenda reuniões de lições aprendidas para todos os incidentes maiores e periodicamente para incidentes menores, não apenas para alta severidade."
+      },
+      {
+        "letter": "E",
+        "text": "I, III e IV.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A afirmativa I é falsa. Embora III e IV estejam corretas, a inclusão da I invalida esta alternativa."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão combina múltiplos conceitos do NIST SP 800-61 com contexto Petrobras (infraestrutura crítica/SCADA). Análise de cada afirmativa: (I) FALSA — O NIST SP 800-61 recomenda reuniões de lições aprendidas para TODOS os incidentes maiores, e de forma agregada para incidentes menores, independentemente de classificação de severidade. (II) FALSA — Em ambientes de infraestrutura crítica com sistemas SCADA/ICS, desligar um servidor sem avaliação de impacto operacional pode causar consequências físicas graves (parada de equipamentos, riscos ambientais, riscos à vida humana). A contenção em ambientes OT deve considerar o impacto na segurança física e operacional, priorizando a segurança das pessoas. (III) VERDADEIRA — Os 4 níveis de Threat Intelligence (estratégico, tático, operacional, técnico) são amplamente utilizados para contextualizar incidentes em diferentes níveis organizacionais. (IV) VERDADEIRA — Os fatores de priorização do NIST SP 800-61 Rev. 2 são: Functional Impact, Information Impact e Recoverability.",
+    "technicalJustification": "Conforme NIST SP 800-61 Rev. 2: Seção 3.4.1 (Lessons Learned) — 'A lessons learned meeting should be held after a major incident'; Seção 3.3.1 (Choosing a Containment Strategy) — a estratégia de contenção deve considerar o impacto na disponibilidade de serviços críticos; Seção 3.2.6 (Incident Prioritization) — priorização baseada em Functional Impact, Information Impact e Recoverability. Para ambientes ICS/SCADA, o NIST SP 800-82 (Guide to ICS Security) complementa o 800-61 com orientações específicas.",
+    "relatedConcepts": [
+      "NIST SP 800-61",
+      "Lições aprendidas",
+      "SCADA/ICS",
+      "Threat Intelligence",
+      "Priorização de incidentes",
+      "Infraestrutura crítica",
+      "Contenção em ambientes OT"
+    ],
+    "order": 5
+  }
+]

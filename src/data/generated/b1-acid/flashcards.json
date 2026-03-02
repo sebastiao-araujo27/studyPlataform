@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b1-acid_1",
+    "topicId": "b1-acid",
+    "front": "O que significa a propriedade 'Atomicidade' (Atomicity) em uma transação de banco de dados?",
+    "back": "Atomicidade garante que todos os comandos de uma transação sejam executados completamente ou nenhum deles seja executado. Ou tudo acontece, ou nada acontece.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-acid_2",
+    "topicId": "b1-acid",
+    "front": "Explique a propriedade 'Consistência' (Consistency) em transações ACID.",
+    "back": "Consistência garante que uma transação leve o banco de dados de um estado válido para outro estado válido, preservando as regras de integridade de dados definidas (constraints).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-acid_3",
+    "topicId": "b1-acid",
+    "front": "O que a propriedade 'Durabilidade' (Durability) assegura em transações ACID?",
+    "back": "Durabilidade garante que, uma vez que uma transação seja confirmada (commit), suas alterações são permanentes e sobreviverão a falhas subsequentes do sistema (como quedas de energia ou travamentos).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-acid_4",
+    "topicId": "b1-acid",
+    "front": "Qual é a principal finalidade do controle de concorrência em sistemas de banco de dados?",
+    "back": "Controlar o acesso simultâneo de múltiplos usuários ou processos aos dados, garantindo a integridade e a consistência das transações, evitando conflitos e anomalias.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-acid_5",
+    "topicId": "b1-acid",
+    "front": "Qual a diferença fundamental entre 'locks' pessimistas e otimistas no controle de concorrência?",
+    "back": "Locks pessimistas bloqueiam os recursos antes da modificação (assumindo conflito). Locks otimistas verificam conflitos apenas no momento da escrita (assumindo poucos conflitos).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-acid_6",
+    "topicId": "b1-acid",
+    "front": "Explique o conceito de 'Deadlock' em transações e como ele pode ocorrer.",
+    "back": "Deadlock é uma situação onde duas ou mais transações ficam bloqueadas indefinidamente, cada uma esperando por um recurso que a outra detém. Ocorre tipicamente quando há um ciclo de dependência de locks.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-acid_7",
+    "topicId": "b1-acid",
+    "front": "Cite os quatro níveis de isolamento de transações mais comuns e suas características gerais.",
+    "back": "1. Read Uncommitted: Permite leituras não confirmadas (dirty reads).<br>2. Read Committed: Permite leituras confirmadas, mas não leituras repetíveis.<br>3. Repeatable Read: Permite leituras confirmadas e leituras repetíveis, mas pode sofrer phantom reads.<br>4. Serializable: Garante que as transações executadas concorrentemente produzam o mesmo resultado que se fossem executadas serialmente (sem anomalias).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-acid_8",
+    "topicId": "b1-acid",
+    "front": "V ou F: O nível de isolamento 'Read Committed' previne a anomalia 'phantom read'.",
+    "back": "Falso. 'Read Committed' previne 'dirty reads' e 'non-repeatable reads', mas não 'phantom reads'. 'Phantom reads' são evitados a partir do nível 'Repeatable Read' (em algumas implementações) e garantidos em 'Serializable'.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-acid_9",
+    "topicId": "b1-acid",
+    "front": "Em um cenário de alta concorrência, qual estratégia de controle de acesso é mais adequada para minimizar o tempo de bloqueio e maximizar a vazão: locks pessimistas ou otimistas? Justifique.",
+    "back": "Locks otimistas, pois assumem poucos conflitos. Eles verificam a necessidade de bloqueio apenas no momento da escrita, permitindo que múltiplos usuários leiam os mesmos dados simultaneamente sem bloqueio, aumentando a vazão em ambientes com baixa probabilidade de conflitos de escrita.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-acid_10",
+    "topicId": "b1-acid",
+    "front": "Qual a relação entre a propriedade 'Isolamento' (Isolation) das transações ACID e os 'níveis de isolamento' definidos em bancos de dados?",
+    "back": "O isolamento garante que a execução concorrente de transações produza um resultado consistente, como se fossem executadas serialmente. Os níveis de isolamento (Read Uncommitted, Read Committed, Repeatable Read, Serializable) definem o grau em que uma transação deve ser protegida das modificações feitas por outras transações concorrentes, variando o trade-off entre consistência e performance.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

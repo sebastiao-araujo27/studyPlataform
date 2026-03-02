@@ -1,0 +1,261 @@
+[
+  {
+    "id": "ex_b1-modelagem-conceitual_1",
+    "topicId": "b1-modelagem-conceitual",
+    "blocoId": "bloco-1",
+    "question": "Uma equipe de analistas de sistemas da Petrobras está discutindo a modelagem conceitual de um novo sistema para gestão de contratos. Ao representar a relação entre as entidades \"Contrato\" e \"Fornecedor\", surge a necessidade de definir as restrições de participação de cada entidade no relacionamento. Especificamente, a cardinalidade mínima e a cardinalidade máxima são elementos cruciais para expressar essas restrições, pois elas detalham a quantidade de ocorrências de uma entidade que podem (ou devem) se associar a ocorrências da outra entidade em um relacionamento binário. Considerando o Modelo Entidade-Relacionamento (MER), qual das alternativas descreve corretamente a função da cardinalidade máxima em um relacionamento?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A cardinalidade máxima indica o número mínimo de ocorrências de uma entidade que devem participar de um relacionamento para que ele seja válido.",
+        "isCorrect": false,
+        "explanation": "Esta alternativa descreve a cardinalidade mínima, não a máxima."
+      },
+      {
+        "letter": "B",
+        "text": "A cardinalidade máxima define o grau de um relacionamento, ou seja, o número de tipos de entidades participantes.",
+        "isCorrect": false,
+        "explanation": "O grau de um relacionamento refere-se ao número de entidades que participam dele (binário, ternário, etc.), não à cardinalidade máxima."
+      },
+      {
+        "letter": "C",
+        "text": "A cardinalidade máxima de uma entidade em um relacionamento indica o número máximo de ocorrências daquela entidade que podem se associar a uma única ocorrência da outra entidade no relacionamento.",
+        "isCorrect": true,
+        "explanation": "A cardinalidade máxima estabelece o limite superior de participações de uma ocorrência de entidade em um relacionamento com ocorrências da outra entidade."
+      },
+      {
+        "letter": "D",
+        "text": "A cardinalidade máxima especifica o número total de ocorrências de uma entidade que existem no banco de dados, independentemente dos relacionamentos.",
+        "isCorrect": false,
+        "explanation": "A cardinalidade máxima não se refere ao número total de ocorrências no banco de dados, mas sim às restrições de participação em um relacionamento específico."
+      },
+      {
+        "letter": "E",
+        "text": "A cardinalidade máxima é utilizada para determinar se um relacionamento é identificador ou não identificador para uma entidade fraca.",
+        "isCorrect": false,
+        "explanation": "A cardinalidade máxima é uma restrição de participação, não um critério para identificar relacionamentos identificadores, que estão ligados à dependência existencial de entidades fracas."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda um conceito fundamental na modelagem conceitual de dados: a cardinalidade em relacionamentos. No Modelo Entidade-Relacionamento (MER), a cardinalidade é expressa por um par de valores (mínimo, máximo) para cada entidade participante de um relacionamento, indicando quantas ocorrências de uma entidade podem ou devem estar associadas a ocorrências da outra entidade em um relacionamento binário. A alternativa correta (C) define precisamente a cardinalidade máxima: ela indica o número máximo de ocorrências de uma entidade que pode se relacionar com uma única ocorrência da outra entidade no relacionamento. Por exemplo, em um relacionamento 'EMPREGA' entre 'DEPARTAMENTO' e 'FUNCIONÁRIO', se um departamento pode empregar muitos funcionários, a cardinalidade máxima do lado do funcionário seria 'N' ou '*'.\n\nAs alternativas incorretas apresentam distinções importantes. A alternativa (A) descreve a cardinalidade mínima, que indica o número obrigatório de participações. A alternativa (B) confunde cardinalidade com o grau de um relacionamento; o grau refere-se ao número de tipos de entidades envolvidos (binário, ternário, etc.), enquanto a cardinalidade se refere à quantidade de ocorrências. A alternativa (D) erra ao associar a cardinalidade máxima ao número total de ocorrências de uma entidade no banco de dados; a cardinalidade é uma restrição de design, não uma contagem de dados. Por fim, a alternativa (E) tenta relacionar a cardinalidade máxima com relacionamentos identificadores para entidades fracas. Embora entidades fracas e seus relacionamentos identificadores tenham restrições de participação específicas (geralmente (1,1) no lado da entidade forte para a entidade fraca), a cardinalidade máxima, por si só, não 'determina' se um relacionamento é identificador, mas sim é uma das propriedades que o relacionamento identificador exibe.",
+    "technicalJustification": "Conforme Navathe & Elmasri (Sistemas de Banco de Dados, 7ª ed., p. 117), 'A cardinalidade (máxima) de um tipo de relacionamento R é o número máximo de instâncias de entidade que podem estar associadas a uma instância de entidade de um tipo de entidade E através de R'. Date (Introdução a Sistemas de Bancos de Dados, 8ª ed., p. 288) complementa que 'a cardinalidade de um relacionamento indica o número de instâncias de uma entidade que podem estar associadas a uma instância de outra entidade'.",
+    "relatedConcepts": [
+      "Cardinalidade",
+      "Modelo Entidade-Relacionamento (MER)",
+      "Relacionamento",
+      "Entidade",
+      "Cardinalidade Mínima"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b1-modelagem-conceitual_2",
+    "topicId": "b1-modelagem-conceitual",
+    "blocoId": "bloco-1",
+    "question": "No processo de modelagem de dados para o sistema de recursos humanos da Petrobras, que gerencia informações de seus colaboradores, foi identificado que um colaborador pode ter múltiplos números de telefone (residencial, comercial, celular) e que seu endereço é composto por rua, número, bairro, cidade, estado e CEP. Para representar essas características de forma adequada no Modelo Entidade-Relacionamento (MER), os analistas de sistemas precisam classificar corretamente os atributos. Qual a classificação mais apropriada para os atributos 'Telefone' e 'Endereço', respectivamente, de acordo com as convenções do MER?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Telefone como atributo simples; Endereço como atributo multivalorado.",
+        "isCorrect": false,
+        "explanation": "Telefone é multivalorado, pois um colaborador pode ter vários. Endereço é composto, não multivalorado, pois agrupa informações relacionadas."
+      },
+      {
+        "letter": "B",
+        "text": "Telefone como atributo derivado; Endereço como atributo simples.",
+        "isCorrect": false,
+        "explanation": "Telefone não é derivado (calculado de outros dados). Endereço não é simples, pois possui componentes internos."
+      },
+      {
+        "letter": "C",
+        "text": "Telefone como atributo multivalorado; Endereço como atributo composto.",
+        "isCorrect": true,
+        "explanation": "Um atributo multivalorado pode ter múltiplos valores para uma única ocorrência de entidade (telefones). Um atributo composto é formado por sub-atributos (endereço)."
+      },
+      {
+        "letter": "D",
+        "text": "Telefone como atributo composto; Endereço como atributo derivado.",
+        "isCorrect": false,
+        "explanation": "Telefone não é composto, pois cada valor é atômico. Endereço não é derivado."
+      },
+      {
+        "letter": "E",
+        "text": "Telefone como atributo identificador; Endereço como atributo chave primária.",
+        "isCorrect": false,
+        "explanation": "Atributos identificadores (chaves primárias) são para identificar entidades, não para descrever múltiplas ocorrências ou componentes de um dado."
+      }
+    ],
+    "difficulty": "facil-medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão testa o conhecimento sobre os diferentes tipos de atributos em um Modelo Entidade-Relacionamento (MER). A correta classificação dos atributos é crucial para uma modelagem precisa e para a subsequente conversão para o modelo relacional. No cenário apresentado, um colaborador pode ter 'múltiplos números de telefone'. Isso caracteriza um atributo multivalorado, pois uma única ocorrência da entidade 'Colaborador' pode ter mais de um valor para o atributo 'Telefone'. Gráficamente, atributos multivalorados são representados por ovais duplos.\n\nPor outro lado, o 'endereço é composto por rua, número, bairro, cidade, estado e CEP'. Isso indica que o atributo 'Endereço' não é atômico; ele pode ser decomposto em sub-atributos menores e mais básicos. Essa característica define um atributo composto. Gráficamente, atributos compostos são representados por um oval principal com linhas conectando-o a outros ovais que representam seus componentes.\n\nA alternativa (C) está correta porque alinha perfeitamente essas definições com o cenário. As demais alternativas apresentam classificações incorretas: (A) inverte a classificação ou erra uma delas; (B) e (D) confundem com atributos derivados (que são calculados a partir de outros atributos, como 'idade' a partir de 'data de nascimento') ou simples (que não podem ser decompostos, como 'nome'); e (E) confunde com o conceito de atributo identificador ou chave primária, que serve para identificar unicamente uma ocorrência de entidade, e não para descrever sua estrutura interna ou multiplicidade de valores.",
+    "technicalJustification": "Segundo Navathe & Elmasri (Sistemas de Banco de Dados, 7ª ed., p. 94-95): 'Um atributo multivalorado pode ter um conjunto de valores para cada entidade. Por exemplo, uma pessoa pode ter mais de um número de telefone. Um atributo composto pode ser dividido em componentes menores com significados próprios. Por exemplo, o endereço pode ser composto por número, rua, cidade, estado e CEP.' Date (Introdução a Sistemas de Bancos de Dados, 8ª ed., p. 285) também aborda esses conceitos.",
+    "relatedConcepts": [
+      "Atributo",
+      "Atributo Multivalorado",
+      "Atributo Composto",
+      "Modelo Entidade-Relacionamento (MER)",
+      "Atributo Simples",
+      "Atributo Derivado"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b1-modelagem-conceitual_3",
+    "topicId": "b1-modelagem-conceitual",
+    "blocoId": "bloco-1",
+    "question": "A Petrobras opera diversas plataformas de petróleo, e cada plataforma possui múltiplos equipamentos que exigem manutenção periódica. Para otimizar a gestão da manutenção, um novo sistema está sendo projetado. Nesse sistema, cada registro de 'Manutenção' é efetuado para um 'Equipamento' específico e só faz sentido existir se estiver associado a um 'Equipamento'. Além disso, a identificação única de uma 'Manutenção' dentro do sistema depende intrinsecamente do 'Equipamento' ao qual ela se refere, não possuindo uma chave primária própria que seja independente do 'Equipamento', necessitando da chave do 'Equipamento' para formar sua própria chave. Diante desse cenário, como as entidades 'Equipamento' e 'Manutenção' devem ser modeladas no Modelo Entidade-Relacionamento (MER)?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ambas 'Equipamento' e 'Manutenção' devem ser modeladas como entidades fortes, com um relacionamento um para muitos (1:N) entre elas.",
+        "isCorrect": false,
+        "explanation": "A entidade 'Manutenção' não pode ser forte, pois sua existência e identificação dependem de 'Equipamento'."
+      },
+      {
+        "letter": "B",
+        "text": "A entidade 'Manutenção' deve ser modelada como uma entidade fraca, dependente da entidade 'Equipamento' através de um relacionamento identificador.",
+        "isCorrect": true,
+        "explanation": "A 'Manutenção' é uma entidade fraca porque sua existência e sua chave primária são derivadas da entidade 'Equipamento', conectada por um relacionamento identificador."
+      },
+      {
+        "letter": "C",
+        "text": "A entidade 'Equipamento' deve ser modelada como uma entidade fraca, dependente da entidade 'Manutenção' através de um relacionamento não identificador.",
+        "isCorrect": false,
+        "explanation": "A dependência é inversa: 'Manutenção' depende de 'Equipamento'. 'Equipamento' é uma entidade forte neste contexto."
+      },
+      {
+        "letter": "D",
+        "text": "Ambas 'Equipamento' e 'Manutenção' devem ser modeladas como subtipos de uma entidade 'Ativo', utilizando generalização e especialização.",
+        "isCorrect": false,
+        "explanation": "Generalização/especialização lida com hierarquias 'É UM' (is-a), não com dependência existencial e de identificação entre entidades distintas como neste cenário."
+      },
+      {
+        "letter": "E",
+        "text": "A entidade 'Manutenção' deve ter um atributo multivalorado 'Equipamentos_Associados' para armazenar a ligação com 'Equipamento'.",
+        "isCorrect": false,
+        "explanation": "Um relacionamento entre entidades é a forma correta de associá-las, não um atributo multivalorado, que seria uma representação inadequada e de difícil integridade."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão explora o conceito de entidades fortes e fracas, bem como os relacionamentos identificadores, que são cruciais para modelar dependências existenciais e de identificação entre entidades. No cenário descrito, a entidade 'Manutenção' possui duas características chave:\n\n1.  **Dependência Existencial:** 'só faz sentido existir se estiver associado a um 'Equipamento''. Isso significa que uma ocorrência de 'Manutenção' não pode existir sem uma ocorrência correspondente de 'Equipamento'.\n2.  **Dependência de Identificação:** 'a identificação única de uma 'Manutenção' dentro do sistema depende intrinsecamente do 'Equipamento' ao qual ela se refere, não possuindo uma chave primária própria que seja independente do 'Equipamento', necessitando da chave do 'Equipamento' para formar sua própria chave'. Isso indica que a chave primária da entidade 'Manutenção' é composta, em parte, pela chave primária da entidade 'Equipamento'.\n\nEssas duas condições são as definições clássicas de uma entidade fraca. Uma entidade fraca sempre depende de uma entidade forte (neste caso, 'Equipamento') para sua existência e para a formação de sua chave primária. O relacionamento que conecta uma entidade fraca à sua entidade forte é chamado de relacionamento identificador, e é tipicamente representado por um losango duplo no diagrama MER. A alternativa (B) descreve essa situação perfeitamente.\n\nAs alternativas incorretas falham em reconhecer essa dependência. (A) e (C) erram ao classificar as entidades ou inverter a dependência. (D) sugere generalização/especialização, que é usada para hierarquias 'É UM' (e.g., 'Carro É UM Veículo'), não para dependência de existência e identificação entre entidades distintas. (E) propõe o uso de um atributo multivalorado, o que é uma forma incorreta e inadequada de modelar um relacionamento entre duas entidades, pois violaria princípios de normalização e dificultaria a gestão da integridade referencial.",
+    "technicalJustification": "Navathe & Elmasri (Sistemas de Banco de Dados, 7ª ed., p. 106) afirmam que 'Um tipo de entidade fraca é um tipo de entidade que não possui atributos de chave próprios. Em vez disso, sua identificação depende de sua associação a outro tipo de entidade (o tipo de entidade proprietário)'. O relacionamento que conecta a entidade fraca ao seu proprietário é chamado de relacionamento identificador. Date (Introdução a Sistemas de Bancos de Dados, 8ª ed., p. 297) também discute a dependência de identificação para entidades fracas.",
+    "relatedConcepts": [
+      "Entidade Forte",
+      "Entidade Fraca",
+      "Relacionamento Identificador",
+      "Dependência Existencial",
+      "Chave Primária",
+      "Modelo Entidade-Relacionamento (MER)"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b1-modelagem-conceitual_4",
+    "topicId": "b1-modelagem-conceitual",
+    "blocoId": "bloco-1",
+    "question": "Durante a fase de projeto conceitual de um sistema de gestão de ativos, analistas de dados discutem as diferentes abordagens para representar complexidades do mundo real no Modelo Entidade-Relacionamento (MER). As técnicas de generalização, especialização e agregação são frequentemente utilizadas para estruturar o modelo de forma mais organizada e expressiva, mas suas aplicações e características distintivas podem gerar confusão. Considerando essas técnicas, analise as afirmativas a seguir sobre generalização, especialização e agregação no contexto do MER.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A especialização é um processo bottom-up que combina atributos comuns de entidades de nível inferior em uma entidade de nível superior, enquanto a agregação representa um relacionamento 'É UM'.",
+        "isCorrect": false,
+        "explanation": "A especialização é top-down. A generalização é bottom-up. A agregação não representa um relacionamento 'É UM', mas sim um relacionamento como uma entidade."
+      },
+      {
+        "letter": "B",
+        "text": "A generalização é um processo bottom-up de combinação de tipos de entidades que compartilham características comuns em um tipo de entidade de nível superior, enquanto a agregação é usada para representar um relacionamento entre entidades como uma entidade de nível superior para participação em outros relacionamentos.",
+        "isCorrect": true,
+        "explanation": "Esta alternativa define corretamente a generalização como bottom-up e a agregação como a visão de um relacionamento como uma entidade para outros relacionamentos."
+      },
+      {
+        "letter": "C",
+        "text": "A agregação é uma forma de expressar a herança de atributos e relacionamentos entre uma superclasse e suas subclasses, similar à especialização, mas com foco na composição de objetos.",
+        "isCorrect": false,
+        "explanation": "A agregação não expressa herança. Herança é característica de generalização/especialização. Agregação é sobre tratar um relacionamento como uma entidade."
+      },
+      {
+        "letter": "D",
+        "text": "Tanto a generalização quanto a especialização são processos top-down, nos quais uma entidade de nível superior é dividida em entidades de nível inferior, herdando atributos e relacionamentos.",
+        "isCorrect": false,
+        "explanation": "A generalização é um processo bottom-up (de baixo para cima), enquanto a especialização é top-down (de cima para baixo). Embora resultem na mesma estrutura, os processos são distintos."
+      },
+      {
+        "letter": "E",
+        "text": "A especialização permite que uma entidade de nível inferior herde atributos da entidade de nível superior, e a agregação é um caso especial de relacionamento N:M (muitos para muitos) com atributos próprios.",
+        "isCorrect": false,
+        "explanation": "Enquanto a especialização permite herança, a agregação não é um caso especial de relacionamento N:M, mas sim uma técnica para tratar um relacionamento como uma entidade para outros relacionamentos."
+      }
+    ],
+    "difficulty": "medio-dificil",
+    "source": "autoral",
+    "detailedExplanation": "A questão exige a compreensão das distinções entre generalização, especialização e agregação no contexto da modelagem conceitual de dados. Esses conceitos são fundamentais para criar modelos flexíveis e representativos, mas frequentemente confundidos.\n\n1.  **Generalização:** É um processo 'bottom-up' (de baixo para cima), onde se identificam tipos de entidades de nível inferior (subtipos) que compartilham características comuns e se criam um tipo de entidade de nível superior (supertipo) para agrupar essas características. Por exemplo, 'Carro' e 'Caminhão' podem ser generalizados em 'Veículo'.\n2.  **Especialização:** É o processo inverso, 'top-down' (de cima para baixo), onde um tipo de entidade de nível superior é dividido em vários tipos de entidades de nível inferior. Os subtipos herdam atributos e relacionamentos do supertipo e podem ter atributos e relacionamentos próprios. Por exemplo, 'Veículo' pode ser especializado em 'Carro' e 'Caminhão'. Embora generalização e especialização resultem na mesma estrutura hierárquica, a diferença está na direção do raciocínio durante a modelagem.\n3.  **Agregação:** É uma técnica utilizada para tratar um relacionamento entre entidades como uma entidade de nível superior para que essa 'entidade-relacionamento' possa participar de outros relacionamentos. Ela é usada para modelar situações onde um relacionamento em si precisa se relacionar com outra entidade. Por exemplo, um relacionamento 'TRABALHA_EM' entre 'FUNCIONÁRIO' e 'PROJETO' pode ser agregado para se relacionar com a entidade 'SUPERVISOR', indicando que um supervisor supervisiona a alocação de um funcionário a um projeto.\n\nA alternativa (B) é a correta, pois descreve com precisão tanto a generalização (processo bottom-up de combinação de entidades com características comuns) quanto a agregação (tratamento de um relacionamento como uma entidade para participação em outros relacionamentos). As outras alternativas contêm imprecisões: (A) inverte a direção da especialização e erra a definição de agregação; (C) confunde agregação com herança e composição; (D) erra a direção do processo de generalização; e (E) descreve corretamente a herança na especialização, mas erra fundamentalmente a definição de agregação, que não é um caso especial de relacionamento N:M, mas sim uma forma de reificar um relacionamento.",
+    "technicalJustification": "Navathe & Elmasri (Sistemas de Banco de Dados, 7ª ed., p. 128-132) detalham generalização e especialização como processos que resultam em hierarquias de tipo/subtipo, permitindo a herança. Eles afirmam que a generalização é um processo 'bottom-up' e a especialização é 'top-down'. Sobre agregação, eles afirmam (p. 136) que 'a agregação é usada quando precisamos expressar um relacionamento entre relacionamentos, ou quando um tipo de relacionamento precisa ser tratado como um tipo de entidade'. Date (Introdução a Sistemas de Bancos de Dados, 8ª ed., p. 306-308) também aborda esses conceitos, destacando a agregação como uma técnica para construir entidades de nível superior a partir de relacionamentos.",
+    "relatedConcepts": [
+      "Generalização",
+      "Especialização",
+      "Agregação",
+      "Modelo Entidade-Relacionamento (MER)",
+      "Supertype",
+      "Subtype",
+      "Herança"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b1-modelagem-conceitual_5",
+    "topicId": "b1-modelagem-conceitual",
+    "blocoId": "bloco-1",
+    "question": "A Petrobras possui uma vasta frota de veículos e embarcações para suas operações, que inclui carros de passeio, caminhões-tanque, navios petroleiros e barcos de apoio. Todos esses ativos são 'Veículos' em um sentido amplo, mas possuem características específicas: carros e caminhões têm 'Placa' e 'Número de Eixos', enquanto navios e barcos têm 'Número IMO' e 'Calado'. Além disso, cada veículo é alocado a um 'Departamento' e pode ser conduzido por múltiplos 'Motoristas' ao longo do tempo. Um motorista pode conduzir diferentes veículos. Para modelar eficientemente essa estrutura complexa no Modelo Entidade-Relacionamento (MER), garantindo a reutilização de atributos comuns e a representação correta das particularidades, qual a abordagem conceitual mais adequada?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Criar entidades separadas para Carro, Caminhão, Navio e Barco, cada uma com seus atributos específicos e sem um supertipo comum, e um relacionamento 1:N entre cada tipo de veículo e Motorista.",
+        "isCorrect": false,
+        "explanation": "Esta abordagem ignora a característica comum de 'Veículo' e não permite a herança. O relacionamento com Motorista é N:M, não 1:N."
+      },
+      {
+        "letter": "B",
+        "text": "Modelar uma entidade única 'Veículo' com todos os atributos de Carro, Caminhão, Navio e Barco, permitindo valores nulos para atributos não aplicáveis, e um relacionamento N:M entre 'Veículo' e 'Motorista'.",
+        "isCorrect": false,
+        "explanation": "Uma entidade única com muitos nulos para atributos específicos dos subtipos é uma má prática de modelagem, levando a problemas de integridade e clareza. A cardinalidade N:M está correta, mas a estrutura da entidade está errada."
+      },
+      {
+        "letter": "C",
+        "text": "A melhor abordagem conceitual inclui uma entidade 'Veículo' como supertipo, com 'Carro', 'Caminhão', 'Navio' e 'Barco' como subtipos, utilizando especialização disjunta e total. A relação entre 'Veículo' e 'Motorista' seria N:M (muitos para muitos), e 'Veículo' teria um atributo 'ID_Veiculo' como chave primária.",
+        "isCorrect": true,
+        "explanation": "Esta alternativa utiliza corretamente a especialização (super/subtipos) para herança e particularidades, define a cardinalidade N:M para Motorista e estabelece a chave primária do supertipo."
+      },
+      {
+        "letter": "D",
+        "text": "Utilizar agregação, tratando o relacionamento entre 'Veículo' e 'Departamento' como uma entidade que se relaciona com 'Motorista', e modelar 'Carro', 'Caminhão', 'Navio' e 'Barco' como atributos multivalorados da entidade 'Frota'.",
+        "isCorrect": false,
+        "explanation": "A agregação não se aplica para herança, e modelar tipos de veículos como atributos multivalorados da frota é conceitualmente incorreto e inviável para gerenciar dados específicos de cada tipo."
+      },
+      {
+        "letter": "E",
+        "text": "Criar uma entidade 'Ativo' como supertipo, com 'Veículo' como um subtipo, e dentro de 'Veículo', usar especialização sobreposta e parcial para 'Carro', 'Caminhão', 'Navio' e 'Barco'. O relacionamento entre 'Veículo' e 'Motorista' seria 1:N.",
+        "isCorrect": false,
+        "explanation": "A especialização sobreposta e parcial não se encaixa aqui, pois um veículo não pode ser de mais de um tipo e todos os veículos são de um desses tipos (total e disjunta). O relacionamento com Motorista é N:M, não 1:N."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão exige a integração de múltiplos conceitos de modelagem conceitual para resolver um cenário complexo, típico de provas de alto nível da CESGRANRIO. O cenário descreve uma hierarquia de entidades ('Veículo' como um conceito geral e tipos específicos como 'Carro', 'Caminhão', 'Navio', 'Barco') com atributos comuns e específicos, além de relacionamentos com outras entidades ('Departamento' e 'Motorista').\n\nA melhor abordagem, conforme a alternativa (C), é empregar a **especialização/generalização**.\n\n1.  **Entidade 'Veículo' como supertipo:** Isso permite que atributos comuns a todos os veículos (e.g., 'ID_Veiculo', 'Fabricante', 'AnoFabricacao') sejam definidos uma única vez. 'ID_Veiculo' é uma chave primária lógica para identificar qualquer veículo na frota.\n2.  **'Carro', 'Caminhão', 'Navio', 'Barco' como subtipos:** Cada subtipo herda os atributos do supertipo 'Veículo' e possui seus atributos específicos ('Placa', 'Número de Eixos' para carros/caminhões; 'Número IMO', 'Calado' para navios/barcos). Essa é a forma correta de modelar particularidades mantendo a estrutura geral.\n3.  **Especialização disjunta e total:**\n    *   **Disjunta:** Um veículo não pode ser, ao mesmo tempo, um Carro e um Caminhão (ou qualquer outra combinação). Ou seja, as categorias são mutuamente exclusivas.\n    *   **Total:** Todo veículo na frota da Petrobras precisa ser um desses tipos específicos (Carro, Caminhão, Navio, Barco). Não há veículos que não se encaixem em nenhuma dessas categorias. Isso garante que a modelagem cobre todos os casos existentes.\n4.  **Relacionamento entre 'Veículo' e 'Motorista' N:M:** O enunciado indica que 'cada veículo [...] pode ser conduzido por múltiplos 'Motoristas' ao longo do tempo' e 'Um motorista pode conduzir diferentes veículos'. Essa é a definição clássica de um relacionamento muitos para muitos (N:M). Para representar isso em um modelo relacional, seria criada uma tabela associativa.\n\nAs alternativas incorretas apresentam falhas significativas:\n*   (A) Ignora a generalização, levando à redundância e inconsistência. O relacionamento com Motorista é N:M, não 1:N.\n*   (B) Usar uma única entidade com muitos atributos nulos é uma má prática (problema de sparse data/atributos esparsos), dificultando a manutenção, consultas e violando princípios de normalização.\n*   (D) Agregação não é para herança, e modelar tipos de veículos como atributos multivalorados é um erro conceitual grave, pois eles são entidades distintas com seus próprios atributos e comportamentos.\n*   (E) A especialização sobreposta e parcial é inadequada. Sobreposta permitiria um veículo ser de múltiplos tipos (o que não é o caso), e parcial significaria que haveria veículos que não se encaixam em nenhum subtipo (o que também não é o caso, já que todos são de um desses tipos). O relacionamento com Motorista está incorreto (1:N em vez de N:M).",
+    "technicalJustification": "Conforme Navathe & Elmasri (Sistemas de Banco de Dados, 7ª ed., p. 128-132), a generalização e especialização são usadas para modelar hierarquias supertipo/subtipo, permitindo herança. Eles descrevem a especialização disjunta (d) e total (T) como 'um tipo de entidade pode ser uma instância de, no máximo, um dos subtipos' e 'toda instância do supertipo deve ser também uma instância de pelo menos um dos subtipos', respectivamente. Date (Introdução a Sistemas de Bancos de Dados, 8ª ed., p. 301-303) também aborda essas construções, enfatizando a importância da escolha correta das restrições de completude (total/parcial) e disjunção (disjunta/sobreposta). A cardinalidade N:M é padrão para relacionamentos onde múltiplas ocorrências de ambas as entidades podem se associar.",
+    "relatedConcepts": [
+      "Generalização",
+      "Especialização",
+      "Supertype",
+      "Subtype",
+      "Especialização Disjunta",
+      "Especialização Total",
+      "Cardinalidade N:M",
+      "Atributo",
+      "Chave Primária",
+      "Modelo Entidade-Relacionamento (MER)"
+    ],
+    "order": 5
+  }
+]

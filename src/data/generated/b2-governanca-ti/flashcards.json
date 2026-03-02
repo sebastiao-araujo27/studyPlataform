@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b2-governanca-ti_1",
+    "topicId": "b2-governanca-ti",
+    "front": "No COBIT 2019, qual a principal diferença conceitual entre Governança e Gestão?",
+    "back": "Governança: Avalia, Direciona e Monitora (EDM) para atingir objetivos organizacionais. Gestão: Planeja, Constrói, Executa e Monitora (PBRM) as atividades para alcançar as diretrizes da governança.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-governanca-ti_2",
+    "topicId": "b2-governanca-ti",
+    "front": "Quais são as 4 dimensões do Gerenciamento de Serviço no ITIL 4?",
+    "back": "1. Organizações e pessoas; 2. Informação e tecnologia; 3. Parceiros e fornecedores; 4. Fluxos de valor e processos.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-governanca-ti_3",
+    "topicId": "b2-governanca-ti",
+    "front": "Qual o foco principal do COBIT em comparação ao ITIL?",
+    "back": "COBIT: Foca em Governança e Controle (o que deve ser feito). ITIL: Foca no Gerenciamento de Serviços e Melhores Práticas (como fazer).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-governanca-ti_4",
+    "topicId": "b2-governanca-ti",
+    "front": "Qual o objetivo central do Alinhamento Estratégico de TI?",
+    "back": "Garantir que a estratégia de TI suporte e impulsione os objetivos de negócio, harmonizando as decisões de tecnologia com as prioridades da organização.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-governanca-ti_5",
+    "topicId": "b2-governanca-ti",
+    "front": "Quais são os 5 componentes do Sistema de Valor de Serviço (SVS) do ITIL 4?",
+    "back": "1. Princípios orientadores; 2. Governança; 3. Cadeia de valor de serviço; 4. Práticas; 5. Melhoria contínua.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-governanca-ti_6",
+    "topicId": "b2-governanca-ti",
+    "front": "O que são os \"Fatores de Design\" no COBIT 2019?",
+    "back": "São fatores que influenciam o projeto do sistema de governança de uma organização, como estratégiPetrobrasrial, metas de negócio, perfil de risco e cenário de ameaças.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-governanca-ti_7",
+    "topicId": "b2-governanca-ti",
+    "front": "Quais são as 6 atividades da Cadeia de Valor de Serviço (SVC) do ITIL 4?",
+    "back": "1. Planejar; 2. Melhorar; 3. Engajar; 4. Desenho e transição; 5. Obter/construir; 6. Entrega e suporte.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-governanca-ti_8",
+    "topicId": "b2-governanca-ti",
+    "front": "V ou F: Segundo a ISO 38500 e o COBIT, a responsabilidade pela Governança de TI cabe ao nível gerencial/operacional da organização.",
+    "back": "Falso. A Governança é de responsabilidade do Órgão Diretivo (Conselho de Administração/Diretoria), enquanto a Gestão cabe aos gerentes executivos.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-governanca-ti_9",
+    "topicId": "b2-governanca-ti",
+    "front": "No COBIT 2019, qual a diferença entre os princípios de um \"Sistema de Governança\" e de um \"Framework de Governança\"?",
+    "back": "Sistema: Foca nos requisitos do sistema (ex: visão holística, dinâmico). Framework: Foca na estrutura do modelo (ex: baseado em modelo conceitual, aberto e flexível, alinhado a padrões).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-governanca-ti_10",
+    "topicId": "b2-governanca-ti",
+    "front": "Explique a diferença entre \"Processo\" (ITIL v3) e \"Prática\" (ITIL 4).",
+    "back": "Processo: Conjunto de atividades que transformam entradas em saídas. Prática: Conjunto de recursos organizacionais (incluindo processos, pessoas, ferramentas e cultura) projetados para realizar um trabalho.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

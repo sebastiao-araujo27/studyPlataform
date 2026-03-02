@@ -1,0 +1,253 @@
+[
+  {
+    "id": "ex_b2-ux_1",
+    "topicId": "b2-ux",
+    "blocoId": "bloco-2",
+    "question": "Uma equipe de desenvolvimento de software, ao projetar um novo sistema de gestão de produção para uma refinaria, busca garantir que a interface do usuário seja intuitiva, eficiente e agradável. O foco principal é a experiência do usuário final, considerando suas tarefas, necessidades e limitações. Dentro do escopo de User Experience (UX), qual dos seguintes conceitos se refere à facilidade com que os usuários podem aprender e utilizar um sistema para atingir seus objetivos de forma eficaz e satisfatória?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Acessibilidade",
+        "isCorrect": false,
+        "explanation": "Acessibilidade foca em garantir que pessoas com diferentes habilidades possam usar o produto, o que é um aspecto importante da UX, mas não define a facilidade de uso geral."
+      },
+      {
+        "letter": "B",
+        "text": "Usabilidade",
+        "isCorrect": true,
+        "explanation": "Usabilidade é o pilar central da UX, medindo a eficácia, eficiência e satisfação com que usuários atingem objetivos específicos em um determinado contexto de uso."
+      },
+      {
+        "letter": "C",
+        "text": "Arquitetura da Informação",
+        "isCorrect": false,
+        "explanation": "Arquitetura da Informação trata da organização e estruturação do conteúdo, sendo um componente da UX, mas não define diretamente a facilidade de aprendizado e uso."
+      },
+      {
+        "letter": "D",
+        "text": "Design de Interação",
+        "isCorrect": false,
+        "explanation": "Design de Interação foca na criação de sistemas que envolvam os usuários, definindo o diálogo entre o usuário e o produto, mas a usabilidade engloba essa e outras métricas."
+      },
+      {
+        "letter": "E",
+        "text": "Pesquisa de Usuário",
+        "isCorrect": false,
+        "explanation": "Pesquisa de Usuário é um método para coletar informações sobre os usuários, fundamental para a UX, mas não é o conceito que descreve a facilidade de uso em si."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda o conceito fundamental de User Experience (UX) e solicita a identificação do termo que descreve a facilidade com que os usuários aprendem e utilizam um sistema. A alternativa correta é a Usabilidade. Usabilidade, conforme definido por Jakob Nielsen e outros pioneiros da área, refere-se à qualidade que mede a facilidade de uso de uma interface, a eficiência com que os usuários podem realizar tarefas, a satisfação que sentem ao usar o sistema e a taxa de erros cometidos. É um dos pilares mais importantes da UX, pois um sistema pode ter um design visualmente atraente e funcionalidades inovadoras, mas se não for fácil de usar, a experiência geral do usuário será prejudicada. Acessibilidade, por outro lado, foca em garantir que o sistema possa ser usado por pessoas com diversas deficiências. Arquitetura da Informação trata da organização e rotulagem de conteúdo. Design de Interação foca na comunicação entre o usuário e o produto. Pesquisa de Usuário é o método para entender as necessidades dos usuários. Portanto, a Usabilidade é o conceito que melhor se alinha com a descrição fornecida no enunciado.",
+    "technicalJustification": "O conceito de usabilidade é central na área de Interação Humano-Computador e Experiência do Usuário. De acordo com a norma ISO 9241-11, usabilidade é definida como 'a extensão pela qual um produto pode ser usado por usuários especificados para alcançar objetivos especificados com eficácia, eficiência e satisfação em um contexto de uso especificado'. Jakob Nielsen, em sua obra 'Usability Engineering', detalha as cinco métricas de usabilidade: aprendizado, eficiência, memorização, erros e satisfação. A questão descreve precisamente essa métrica.",
+    "relatedConcepts": [
+      "UX",
+      "Usabilidade",
+      "ISO 9241-11",
+      "Nielsen's Usability"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b2-ux_2",
+    "topicId": "b2-ux",
+    "blocoId": "bloco-2",
+    "question": "uma empresa do setor de óleo e gás está desenvolvendo um aplicativo móvel para que seus técnicos de campo possam registrar inspeções de equipamentos em plataformas remotas. Durante a fase de prototipagem, a equipe se deparou com um cenário onde os botões de ação principal eram muito pequenos e próximos uns dos outros, dificultando a seleção correta em telas sensíveis ao toque, especialmente em condições de vibração e com luvas. Ao aplicar os princípios de design centrado no usuário, qual das heurísticas de usabilidade de Jakob Nielsen é mais diretamente violada neste caso específico?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Visibilidade do estado do sistema",
+        "isCorrect": false,
+        "explanation": "Visibilidade do estado do sistema refere-se a manter o usuário informado sobre o que está acontecendo. O problema descrito não está relacionado à falta de informação sobre o estado do sistema."
+      },
+      {
+        "letter": "B",
+        "text": "Correspondência entre o sistema e o mundo real",
+        "isCorrect": false,
+        "explanation": "Esta heurística trata de usar linguagem e conceitos familiares ao usuário. O tamanho e a proximidade dos botões não se enquadram diretamente nesta heurística."
+      },
+      {
+        "letter": "C",
+        "text": "Controle e liberdade do usuário",
+        "isCorrect": false,
+        "explanation": "Controle e liberdade do usuário se refere a permitir que o usuário desfaça ações ou saia de estados indesejados. O problema é a dificuldade de interagir, não de reverter ações."
+      },
+      {
+        "letter": "D",
+        "text": "Prevenção de erros",
+        "isCorrect": true,
+        "explanation": "O design de botões pequenos e próximos aumenta a probabilidade de o usuário cometer um erro ao selecionar o botão errado, violando o princípio de prevenir erros."
+      },
+      {
+        "letter": "E",
+        "text": "Reconhecimento em vez de memorização",
+        "isCorrect": false,
+        "explanation": "Esta heurística foca em tornar os objetos, ações e opções visíveis. O problema não é a dificuldade de reconhecer opções, mas sim de interagir fisicamente com elas."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão descreve um problema de design de interface onde botões são pequenos e próximos, dificultando a interação tátil, especialmente em um ambiente desafiador como o de um técnico de campo. A heurística de Jakob Nielsen mais diretamente violada é a 'Prevenção de erros'. Esta heurística sugere que é melhor projetar o sistema de forma a prevenir a ocorrência de erros do que oferecer boas mensagens de erro após o erro ter ocorrido. Botões pequenos e aglomerados aumentam significativamente a probabilidade de o usuário tocar no botão errado, levando a uma ação indesejada ou à falha em realizar a ação pretendida. A dificuldade de seleção física em um dispositivo móvel, exacerbada por condições de uso como luvas ou vibração, é um exemplo clássico de um design que não previne erros de entrada. As outras heurísticas, embora importantes para a UX geral, não são o foco principal do problema apresentado: 'Visibilidade do estado do sistema' trata de feedback; 'Correspondência com o mundo real' trata da linguagem; 'Controle e liberdade do usuário' trata de permitir o desfazimento de ações; e 'Reconhecimento em vez de memorização' trata da clareza das opções disponíveis. Portanto, a prevenção de erros é o princípio mais diretamente impactado.",
+    "technicalJustification": "A heurística 'Prevenção de erros' de Jakob Nielsen é violada quando o design de uma interface aumenta a probabilidade de o usuário cometer um erro. No cenário apresentado, o tamanho reduzido e a proximidade dos botões de ação em uma interface móvel, especialmente em um contexto de uso com luvas e vibração, criam uma situação propícia a toques incorretos. Isso leva a erros de seleção, que poderiam ser evitados com botões maiores e com espaçamento adequado. As 10 Heurísticas de Usabilidade de Nielsen são um guia amplamente aceito para a avaliação de interfaces, e a prevenção de erros é um de seus princípios fundamentais.",
+    "relatedConcepts": [
+      "Heurísticas de Nielsen",
+      "Prevenção de Erros",
+      "UX Design",
+      "Design de Interface Móvel",
+      "Usabilidade"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b2-ux_3",
+    "topicId": "b2-ux",
+    "blocoId": "bloco-2",
+    "question": "Uma equipe de UX está conduzindo uma pesquisa para entender como os usuários interagem com o portal de clientes de uma grande companhia de energia. Eles aplicaram uma metodologia que envolveu a observação direta de usuários executando tarefas específicas, a coleta de feedback qualitativo através de entrevistas pós-tarefa e a análise de logs de navegação para identificar pontos de atrito. Ao final da pesquisa, a equipe construiu um mapa visual que detalha as etapas, ações, pensamentos e emoções de um usuário típico desde o momento em que percebe a necessidade de acessar o portal até a conclusão de sua tarefa (por exemplo, consultar um histórico de consumo). Considerando os princípios de UX e pesquisa de usuário, qual ferramenta ou técnica está sendo descrita?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Teste de Usabilidade",
+        "isCorrect": false,
+        "explanation": "O teste de usabilidade é um componente da metodologia descrita, mas o enunciado descreve uma ferramenta específica de visualização que vai além do teste em si."
+      },
+      {
+        "letter": "B",
+        "text": "Persona",
+        "isCorrect": false,
+        "explanation": "Persona é um arquétipo de usuário, uma representação semi-fictícia. Embora útil na UX, não é a ferramenta visual que mapeia a jornada completa."
+      },
+      {
+        "letter": "C",
+        "text": "Jornada do Usuário (User Journey Map)",
+        "isCorrect": true,
+        "explanation": "A descrição corresponde exatamente a uma Jornada do Usuário, que visualiza as experiências do usuário em diferentes pontos de contato, incluindo ações, pensamentos e emoções."
+      },
+      {
+        "letter": "D",
+        "text": "Mapa de Empatia",
+        "isCorrect": false,
+        "explanation": "Mapa de Empatia foca em entender o que o usuário pensa, sente, vê e ouve, sendo um precursor ou complemento da Jornada do Usuário, mas não a mapeia em termos de etapas e interações."
+      },
+      {
+        "letter": "E",
+        "text": "Análise SWOT",
+        "isCorrect": false,
+        "explanation": "Análise SWOT (Forças, Fraquezas, Oportunidades, Ameaças) é uma ferramenta de planejamento estratégico, não diretamente aplicada à visualização da experiência do usuário em um portal."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão descreve um processo de pesquisa de UX que culmina na criação de um mapa visual detalhando a experiência do usuário ao longo de um processo específico. A descrição de 'etapas, ações, pensamentos e emoções de um usuário típico' desde a percepção de uma necessidade até a conclusão de uma tarefa é a definição clássica de uma Jornada do Usuário (User Journey Map). Esta ferramenta é amplamente utilizada em UX para visualizar e compreender a experiência completa do usuário, identificando pontos de dor, oportunidades de melhoria e momentos de satisfação. Os métodos de pesquisa mencionados (observação, entrevistas, análise de logs) são técnicas comuns para coletar os dados necessários para construir tal mapa. Um Teste de Usabilidade foca na avaliação da usabilidade de um produto específico. Uma Persona representa um grupo de usuários. Um Mapa de Empatia foca nos sentimentos e pensamentos do usuário, mas não necessariamente na sequência temporal de uma interação. A Análise SWOT é uma ferramenta de negócios geral. Portanto, a Jornada do Usuário é a técnica que melhor se encaixa na descrição.",
+    "technicalJustification": "A Jornada do Usuário (User Journey Map) é uma representação visual das etapas, ações, pensamentos e emoções que um usuário vivencia ao interagir com um produto, serviço ou sistema para atingir um objetivo específico. Ela é construída com base em pesquisa de usuário, como observação, entrevistas e análise de dados. Autores como Jeff Gothelf (em 'Lean UX') e Alan Cooper ('The Inmates Are Running the Asylum') discutem a importância de entender a experiência do usuário em profundidade, e a Jornada do Usuário é uma ferramenta consolidada para isso, permitindo que equipes identifiquem oportunidades de design e melhoria focadas no usuário.",
+    "relatedConcepts": [
+      "Jornada do Usuário",
+      "UX Research",
+      "User-Centered Design",
+      "Customer Experience",
+      "Service Design"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b2-ux_4",
+    "topicId": "b2-ux",
+    "blocoId": "bloco-2",
+    "question": "Considere as seguintes afirmativas sobre os princípios de UX e acessibilidade em sistemas digitais: \n\nI. A heurística de 'Consistência e padrões' de Nielsen sugere que os elementos de design e a linguagem devem ser os mesmos em todas as partes do sistema e seguir convenções estabelecidas, garantindo que os usuários não precisem reaprender o que já sabem.\nII. A acessibilidade, conforme definida por diretrizes como as WCAG (Web Content Accessibility Guidelines), foca exclusivamente em garantir que usuários com deficiência visual possam navegar e interagir com o conteúdo.\nIII. A Lei de Hick sugere que o tempo necessário para tomar uma decisão aumenta com o número e a complexidade das opções disponíveis, implicando que interfaces com menos opções ou com opções bem organizadas tendem a ser mais eficientes.\nIV. Um design é considerado acessível se ele permite que pessoas com diferentes tipos de deficiência (visual, auditiva, motora, cognitiva) possam perceber, entender, navegar e interagir com o conteúdo.\n\nAnalisando as afirmativas, está(ão) CORRETA(S) apenas:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I e II.",
+        "isCorrect": false,
+        "explanation": "A afirmativa II está incorreta pois a acessibilidade abrange mais do que apenas usuários com deficiência visual e também não se limita apenas às WCAG, mas a princípios mais amplos."
+      },
+      {
+        "letter": "B",
+        "text": "I e III.",
+        "isCorrect": false,
+        "explanation": "A afirmativa III está correta, mas a afirmativa II está incorreta, tornando esta opção incompleta."
+      },
+      {
+        "letter": "C",
+        "text": "II e IV.",
+        "isCorrect": false,
+        "explanation": "A afirmativa II está incorreta. A afirmativa IV está correta."
+      },
+      {
+        "letter": "D",
+        "text": "I, III e IV.",
+        "isCorrect": true,
+        "explanation": "As afirmativas I, III e IV descrevem corretamente princípios de UX e acessibilidade."
+      },
+      {
+        "letter": "E",
+        "text": "III e IV.",
+        "isCorrect": false,
+        "explanation": "A afirmativa III e IV estão corretas, mas a afirmativa I também está correta, tornando esta opção incompleta."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão avalia a compreensão de princípios fundamentais de UX e acessibilidade, apresentando quatro afirmativas para análise. Vamos detalhar cada uma: \n\nI. 'Consistência e padrões': Esta afirmativa está CORRETA. A heurística de Nielsen sobre consistência e padrões é um dos pilares para criar interfaces previsíveis e fáceis de aprender. Manter um design e linguagem consistentes (consistência interna) e seguir convenções de plataforma e da web (consistência externa) reduz a carga cognitiva do usuário, pois ele pode aplicar o conhecimento adquirido em uma parte do sistema ou em outros sistemas para interagir com o atual.\n\nII. 'Acessibilidade... foca exclusivamente em garantir que usuários com deficiência visual...': Esta afirmativa está INCORRETA. A acessibilidade digital, conforme as WCAG e outras diretrizes, visa garantir que pessoas com uma ampla gama de deficiências (não apenas visual, mas também auditiva, motora e cognitiva) possam acessar e interagir com o conteúdo. Além disso, a acessibilidade não se limita a um único conjunto de diretrizes, embora as WCAG sejam as mais proeminentes.\n\nIII. 'Lei de Hick... tempo necessário para tomar uma decisão aumenta...': Esta afirmativa está CORRETA. A Lei de Hick é um princípio da psicologia cognitiva que descreve a relação entre o número de estímulos (opções) e o tempo de reação para escolher um deles. Em design de interface, isso significa que apresentar muitas opções de uma vez pode sobrecarregar o usuário e retardar a tomada de decisão, sugerindo a importância de simplificar interfaces e agrupar opções logicamente.\n\nIV. 'Um design é considerado acessível se ele permite que pessoas com diferentes tipos de deficiência...': Esta afirmativa está CORRETA. Esta é uma definição abrangente e precisa do que constitui acessibilidade digital, cobrindo as principais categorias de deficiência e os objetivos de permitir percepção, compreensão, navegação e interação.\n\nCom base nesta análise, as afirmativas I, III e IV estão corretas. Portanto, a alternativa D é a correta.",
+    "technicalJustification": "As afirmativas I e IV referem-se diretamente a princípios de UX e acessibilidade amplamente documentados. A afirmativa I descreve a heurística de 'Consistência e padrões' de Jakob Nielsen, essencial para a usabilidade. A afirmativa IV define acessibilidade digital, um conceito fundamental no desenvolvimento inclusivo, alinhado com as Web Content Accessibility Guidelines (WCAG). A afirmativa III cita a Lei de Hick, um princípio psicológico que tem implicações diretas no design de interfaces, guiando a organização de informações e opções para otimizar a tomada de decisão do usuário. A afirmativa II erra ao limitar o escopo da acessibilidade e ao sugerir exclusividade, o que contraria os princípios de design inclusivo.",
+    "relatedConcepts": [
+      "Heurísticas de Nielsen",
+      "Consistência e Padrões",
+      "Acessibilidade Digital",
+      "WCAG",
+      "Lei de Hick",
+      "UX Principles"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b2-ux_5",
+    "topicId": "b2-ux",
+    "blocoId": "bloco-2",
+    "question": "Uma grande empresa de logística, buscando otimizar a experiência de seus motoristas de entrega, decidiu redesenhar o sistema de roteirização e acompanhamento de pedidos utilizado em seus dispositivos móveis. A equipe de UX, após realizar entrevistas em profundidade com motoristas, observar suas rotinas de trabalho e analisar dados de uso de sistemas anteriores, identificou que o principal ponto de fricção era a dificuldade em registrar comprovantes de entrega (fotos e assinaturas) em condições de pouca luz e com tela molhada pela chuva, além da complexidade em atualizar o status de cada entrega de forma rápida e precisa. Para abordar esses desafios de forma integrada, qual abordagem de design e pesquisa seria a mais eficaz, combinando a necessidade de inovações funcionais com a garantia de usabilidade e acessibilidade em cenários reais?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Implementar apenas um novo algoritmo de roteirização mais eficiente, pois a usabilidade da captura de comprovantes é secundária.",
+        "isCorrect": false,
+        "explanation": "Ignorar a usabilidade e a acessibilidade em um componente crítico como a captura de comprovantes seria um erro grave, prejudicando a experiência geral do motorista e a eficiência do processo."
+      },
+      {
+        "letter": "B",
+        "text": "Focar exclusivamente em testes A/B com diferentes layouts de botões, sem antes aprofundar a pesquisa sobre as condições ambientais de uso.",
+        "isCorrect": false,
+        "explanation": "Testes A/B são úteis para otimizar, mas não substituem a pesquisa exploratória e qualitativa para entender problemas fundamentais e contexto de uso."
+      },
+      {
+        "letter": "C",
+        "text": "Desenvolver protótipos de alta fidelidade com foco em design visual e, posteriormente, realizar testes de usabilidade isolados para a funcionalidade de captura de comprovantes.",
+        "isCorrect": false,
+        "explanation": "A abordagem descrita não integra a pesquisa inicial de forma contínua e não considera a experiência completa e os desafios ambientais desde o início do processo."
+      },
+      {
+        "letter": "D",
+        "text": "Adotar um processo iterativo de Design Centrado no Usuário (DCU), utilizando pesquisa etnográfica para entender o contexto real, prototipagem evolutiva (de baixa a alta fidelidade) para testar soluções para captura de comprovantes e atualização de status, e validação contínua com os motoristas.",
+        "isCorrect": true,
+        "explanation": "Esta abordagem integra pesquisa contextual, prototipagem e validação iterativa, abordando diretamente os problemas de usabilidade e acessibilidade em cenários reais."
+      },
+      {
+        "letter": "E",
+        "text": "Priorizar a implementação de reconhecimento de voz para atualização de status, pois isso resolverá a maioria dos problemas de interação em campo, sem necessidade de investigar mais a fundo a captura de fotos e assinaturas.",
+        "isCorrect": false,
+        "explanation": "Apesar de o reconhecimento de voz ser uma solução potencial, focar nele exclusivamente e ignorar outros problemas críticos (captura de comprovantes em condições adversas) não garante uma solução completa e integrada."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "A questão apresenta um cenário complexo onde uma empresa de logística busca melhorar a experiência de seus motoristas de entrega, enfrentando desafios específicos relacionados ao ambiente de trabalho (pouca luz, chuva, tela molhada) e à eficiência das tarefas (registro de comprovantes, atualização de status). A alternativa D propõe uma abordagem de Design Centrado no Usuário (DCU) iterativa, que é a mais adequada para lidar com essa complexidade. Vamos analisar por quê:\n\nO DCU enfatiza a compreensão profunda do usuário e seu contexto. A 'pesquisa etnográfica' (observar usuários em seu ambiente natural) é crucial para entender os desafios reais enfrentados pelos motoristas, como a dificuldade de usar telas sensíveis ao toque sob chuva ou em pouca luz. Isso vai além das entrevistas iniciais e permite identificar problemas que os usuários podem nem mesmo verbalizar.\n\nA 'prototipagem evolutiva' (começando com protótipos de baixa fidelidade para testar conceitos e progredindo para alta fidelidade para refinar detalhes) permite que a equipe explore e valide diferentes soluções para a captura de comprovantes e atualização de status de forma eficiente e resiliente às condições ambientais. Testar com protótipos permite identificar e corrigir problemas de usabilidade e acessibilidade precocemente, antes de um investimento significativo em desenvolvimento.\n\nA 'validação contínua com os motoristas' garante que as soluções desenvolvidas realmente atendam às suas necessidades e sejam práticas em seu dia a dia. Isso inclui não apenas testes de usabilidade formais, mas também feedback contínuo durante o processo de design.\n\nAs outras alternativas falham em abordar a complexidade de forma integrada:\n\nA ignora um problema crítico de usabilidade e acessibilidade. B foca em otimização sem pesquisa exploratória. C separa o design visual da validação contextual e não garante integração. E simplifica demais o problema, focando em uma única solução sem considerar os outros desafios mencionados.\n\nPortanto, a abordagem iterativa de DCU, com pesquisa etnográfica, prototipagem evolutiva e validação contínua, é a mais eficaz para resolver os múltiplos problemas de UX apresentados no cenário.",
+    "technicalJustification": "O cenário descrito exige uma abordagem holística que combine pesquisa contextual, design iterativo e validação com o usuário, características centrais do Design Centrado no Usuário (DCU). A pesquisa etnográfica (observação participante) é fundamental para capturar a complexidade do ambiente de trabalho dos motoristas, identificando restrições não óbvias. A prototipagem evolutiva (low-fidelity para high-fidelity) permite a exploração e teste de soluções para desafios específicos como a interação tátil em condições adversas e a eficiência na atualização de status. A validação contínua, através de testes de usabilidade e feedback direto dos usuários, assegura que as soluções sejam eficazes, eficientes e satisfatórias. Esta abordagem é suportada por autores como Donald Norman ('The Design of Everyday Things') e Alan Cooper, que defendem a imersão no contexto do usuário e a iteração no processo de design.",
+    "relatedConcepts": [
+      "Design Centrado no Usuário (DCU)",
+      "Pesquisa Etnográfica",
+      "Prototipagem Evolutiva",
+      "Testes de Usabilidade",
+      "Iteração de Design",
+      "UX Contextual"
+    ],
+    "order": 5
+  }
+]

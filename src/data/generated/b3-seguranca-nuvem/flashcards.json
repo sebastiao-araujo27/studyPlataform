@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b3-seguranca-nuvem_1",
+    "topicId": "b3-seguranca-nuvem",
+    "front": "Quais são os três modelos de serviço em nuvem definidos pelo NIST SP 800-145 e qual a principal diferença entre eles em termos de responsabilidade de segurança?",
+    "back": "IaaS (Infrastructure as a Service): Cliente gerencia SO, middleware, runtime, apps e dados. Provedor gerencia hardware, virtualização, rede física. Ex: AWS EC2, Azure VMs. PaaS (Platform as a Service): Cliente gerencia apenas apps e dados. Provedor gerencia SO, middleware, runtime e infraestrutura. Ex: Azure App Service, AWS Elastic Beanstalk. SaaS (Software as a Service): Cliente gerencia apenas dados, configurações e usuários. Provedor gerencia toda a aplicação e infraestrutura. Ex: Microsoft 365, Salesforce. Regra: quanto mais 'as a Service', mais responsabilidade migra para o provedor. Dados são SEMPRE do cliente.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-nuvem_2",
+    "topicId": "b3-seguranca-nuvem",
+    "front": "O que é o Modelo de Responsabilidade Compartilhada em nuvem e qual a frase-chave para memorizá-lo?",
+    "back": "Modelo que define a divisão de responsabilidades de segurança entre o provedor de nuvem e o cliente. Frase-chave: 'Security OF the cloud = Provedor' (infraestrutura física, rede, virtualização, data center) e 'Security IN the cloud = Cliente' (dados, identidades, aplicações, configurações). IMPORTANTE: Os DADOS são SEMPRE responsabilidade do cliente, independente do modelo (IaaS, PaaS, SaaS). Conforme NIST SP 800-144: 'Organizations are ultimately accountable for the security and privacy of data held by a cloud provider on their behalf.'",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-nuvem_3",
+    "topicId": "b3-seguranca-nuvem",
+    "front": "O que é um CASB (Cloud Access Security Broker) e quais são seus 4 pilares?",
+    "back": "CASB é um ponto de imposição de política de segurança posicionado entre consumidores e provedores de serviços cloud (definição Gartner). Os 4 pilares (mnemônico VCSP — 'VoCê Sempre Protege'): (1) Visibilidade — descobre Shadow IT, cataloga serviços cloud usados; (2) Compliance — garante conformidade com políticas e regulamentações; (3) Segurança de Dados — DLP, criptografia, tokenização em cloud; (4) Proteção contra Ameaças — detecta malware, account hijacking, anomalias. Modos de implantação: API-based (out-of-band), Forward Proxy, Reverse Proxy, Log-based. CASBs modernos são multi-mode.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-nuvem_4",
+    "topicId": "b3-seguranca-nuvem",
+    "front": "Quais são os princípios fundamentais do Zero Trust em nuvem conforme o NIST SP 800-207?",
+    "back": "Princípios: (1) 'Never trust, always verify' — nenhuma confiança implícita baseada em localização de rede; (2) Verificação contínua — autenticação/autorização em cada acesso, não apenas no login; (3) Princípio do menor privilégio — permissões mínimas necessárias; (4) Micro-segmentação — cada recurso isolado com políticas individuais; (5) Assume breach — projeta segurança assumindo invasor já presente; (6) Identity-centric — identidade (não rede) é o novo perímetro. Componentes: Identity Provider (IdP), Policy Engine, Policy Enforcement Point (PEP), CDM (Continuous Diagnostics). Diferença do modelo tradicional: VPN = 'castelo com fosso'; Zero Trust = 'cada sala tem sua fechadura'.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-nuvem_5",
+    "topicId": "b3-seguranca-nuvem",
+    "front": "Como diferenciar CSPM, CWPP, CNAPP e SSPM em segurança cloud?",
+    "back": "CSPM (Cloud Security Posture Management): Monitora CONFIGURAÇÕES de infraestrutura cloud (IaaS/PaaS). Detecta misconfigurations (S3 público, SG aberto). Preventivo. Ex: AWS Security Hub, Wiz. CWPP (Cloud Workload Protection Platform): Protege WORKLOADS em execução (VMs, containers, serverless). Anti-malware, integridade, micro-segmentação. Runtime. Ex: CrowdStrike Falcon. CNAPP (Cloud-Native Application Protection Platform): UNIFICA CSPM + CWPP + CI/CD security + IaC security. Ciclo completo. Ex: Prisma Cloud, Wiz. SSPM (SaaS Security Posture Management): Monitora configurações de apps SaaS (M365, Salesforce). Permissões, MFA, compartilhamento. Ex: Adaptive Shield. Mnemônico: CSPM=Configuração, CWPP=Workload, CNAPP=Completo, SSPM=SaaS.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-nuvem_6",
+    "topicId": "b3-seguranca-nuvem",
+    "front": "Qual a diferença entre BYOK (Bring Your Own Key) e HYOK (Hold Your Own Key) na criptografia em nuvem?",
+    "back": "BYOK (Bring Your Own Key): Cliente GERA a chave criptográfica e a IMPORTA para o provedor de nuvem. O provedor armazena a chave no seu KMS (Key Management Service) e a utiliza para operações de criptografia/descriptografia. O provedor tem acesso à chave. Controle: Médio. HYOK (Hold Your Own Key): Cliente GERA e RETÉM a chave — ela NUNCA é transmitida ao provedor. A criptografia/descriptografia ocorre no lado do cliente (client-side encryption). O provedor NUNCA tem acesso à chave. Controle: Total. Uso: BYOK para dados sensíveis (dados de exploração); HYOK para dados ultra-sensíveis (reservas estratégicas). Ambos usam HSM (Hardware Security Module) para proteção das chaves.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-nuvem_7",
+    "topicId": "b3-seguranca-nuvem",
+    "front": "Quais são as principais preocupações de segurança em containers (Docker/Kubernetes)?",
+    "back": "Docker Security: (1) Image scanning — escanear imagens para vulnerabilidades antes do deploy (Trivy, Snyk); (2) Trusted base images — usar imagens mínimas (distroless, Alpine); (3) Non-root — NUNCA rodar containers como root; (4) Read-only filesystem — --read-only flag; (5) Seccomp/AppArmor — restringir syscalls. Kubernetes Security: (1) Pod Security Standards (Restricted, Baseline, Privileged); (2) Network Policies — micro-segmentação entre pods; (3) RBAC — permissões granulares por namespace; (4) Secrets — NÃO são criptografados por padrão (apenas base64!), usar External Secrets + KMS; (5) Admission Controllers — OPA/Gatekeeper para policy enforcement; (6) Runtime protection via CWPP.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-nuvem_8",
+    "topicId": "b3-seguranca-nuvem",
+    "front": "Qual a diferença entre SAML 2.0, OAuth 2.0 e OpenID Connect (OIDC)?",
+    "back": "SAML 2.0: Padrão de AUTENTICAÇÃO + autorização para SSO empresarial web. Formato XML. Usa SAML Assertions assinadas com certificados X.509. Transporte HTTP POST/Redirect. Pesado, NÃO mobile-friendly. Ex: Login no portal corporativo. OAuth 2.0: Framework de AUTORIZAÇÃO delegada. Formato JSON. Permite que app acesse recursos em nome do usuário SEM compartilhar credenciais. NÃO é protocolo de autenticação! Ex: App acessando Google Drive do usuário. OpenID Connect (OIDC): Camada de IDENTIDADE/AUTENTICAÇÃO construída SOBRE OAuth 2.0. Usa JWT (JSON Web Token). ID Token identifica o usuário + Access Token autoriza. Leve, mobile-friendly. Ex: 'Login com Google/Microsoft'. Resumo: SAML = autenticação (XML) | OAuth = autorização (JSON) | OIDC = identidade sobre OAuth (JWT).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-nuvem_9",
+    "topicId": "b3-seguranca-nuvem",
+    "front": "O que é a CSA (Cloud Security Alliance) e quais são seus principais frameworks/programas?",
+    "back": "CSA é uma organização sem fins lucrativos que define boas práticas de segurança para computação em nuvem. Principais contribuições: (1) CCM (Cloud Controls Matrix) v4 — 197 controles em 17 domínios para cloud security, mapeado para ISO 27001, NIST, PCI DSS, COBIT, LGPD; (2) CSA STAR — programa de certificação com 3 níveis: Level 1 (Self-Assessment com CAIQ), Level 2 (Third-party Audit baseado em CCM), Level 3 (Continuous Monitoring); (3) Treacherous Twelve — 12 maiores ameaças cloud (data breaches, misconfigurations, insecure APIs, account hijacking, insider threats, etc.); (4) CAIQ (Consensus Assessments Initiative Questionnaire) — questionário padronizado de avaliação de provedores cloud. Referência obrigatória para questões de cloud security em concursos.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-nuvem_10",
+    "topicId": "b3-seguranca-nuvem",
+    "front": "Quais são os três tipos de criptografia em nuvem (at rest, in transit, in use) e como cada uma é implementada?",
+    "back": "At Rest (dados armazenados): Protege dados em disco, banco de dados, object storage. Implementação: AES-256, gerenciamento via KMS do provedor, BYOK ou HYOK. Ex: S3 SSE-KMS, Azure Storage Encryption, Cloud Storage CMEK. In Transit (dados em movimento): Protege dados trafegando pela rede. Implementação: TLS 1.2/1.3 (HTTPS), VPN IPSec, mTLS (mutual TLS para autenticação bidirecional). Ex: HTTPS entre browser e app cloud, VPN site-to-site. In Use (dados em processamento): Protege dados na memória durante processamento. Implementação: Confidential Computing com enclaves seguros — Intel SGX, AMD SEV, ARM TrustZone. Ex: Azure Confidential Computing, AWS Nitro Enclaves. É a mais emergente e complexa. IMPORTANTE: Cada tipo protege contra ameaças DIFERENTES. TLS NÃO protege dados at rest. AES no disco NÃO protege dados in transit.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

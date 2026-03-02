@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b1-modelagem-conceitual_1",
+    "topicId": "b1-modelagem-conceitual",
+    "front": "O que é o Modelo Entidade-Relacionamento (MER) e qual seu principal objetivo na modelagem de dados?",
+    "back": "O MER é uma técnica de modelagem conceitual de alto nível que descreve a estrutura de um banco de dados. Seu objetivo é representar as entidades do mundo real, seus atributos e os relacionamentos entre elas, de forma independente da implementação física.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-modelagem-conceitual_2",
+    "topicId": "b1-modelagem-conceitual",
+    "front": "No contexto do MER, o que representa uma Entidade?",
+    "back": "Uma Entidade representa um objeto ou conceito do mundo real, sobre o qual se deseja armazenar informações. Pode ser uma pessoa, um lugar, um evento, um objeto físico ou um conceito abstrato.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-modelagem-conceitual_3",
+    "topicId": "b1-modelagem-conceitual",
+    "front": "O que são Atributos em um Modelo Entidade-Relacionamento?",
+    "back": "Atributos são as características ou propriedades que descrevem uma Entidade ou um Relacionamento. Eles contêm os dados específicos que se deseja armazenar sobre o objeto ou conceito representado.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-modelagem-conceitual_4",
+    "topicId": "b1-modelagem-conceitual",
+    "front": "No MER, o que a cardinalidade de um relacionamento expressa?",
+    "back": "A cardinalidade de um relacionamento especifica o número mínimo e máximo de ocorrências de uma entidade que podem estar associadas a ocorrências da outra entidade no relacionamento.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-modelagem-conceitual_5",
+    "topicId": "b1-modelagem-conceitual",
+    "front": "Qual a principal diferença entre uma Entidade Forte e uma Entidade Fraca no MER?",
+    "back": "- **Entidade Forte:** Possui uma chave primária própria que a identifica de forma única. Existe independentemente de outras entidades.\n- **Entidade Fraca:** Não possui uma chave primária própria. Sua identificação única depende da chave primária de uma Entidade Forte (entidade identificadora) com a qual está relacionada. É representada por um retângulo duplo.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-modelagem-conceitual_6",
+    "topicId": "b1-modelagem-conceitual",
+    "front": "Quando é apropriado modelar um atributo como Composto em vez de Simples no MER? Dê um exemplo.",
+    "back": "Um atributo é modelado como **Composto** quando ele pode ser dividido em subcomponentes com significado próprio, que precisam ser acessados individualmente. Um atributo **Simples** não pode ser dividido em partes menores com significado independente.\n**Exemplo:** Um atributo 'Endereço' (composto) pode ser dividido em 'Rua', 'Número', 'Bairro', 'Cidade', 'Estado', 'CEP' (simples).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-modelagem-conceitual_7",
+    "topicId": "b1-modelagem-conceitual",
+    "front": "Qual a relação entre os conceitos de Generalização e Especialização no MER?",
+    "back": "Generalização e Especialização são conceitos inversos usados para modelar hierarquias de entidades:\n- **Generalização:** Processo bottom-up (de baixo para cima) de combinar entidades de tipos similares em um tipo de entidade mais genérico (super-tipo).\n- **Especialização:** Processo top-down (de cima para baixo) de criar subtipos (sub-tipos) de uma entidade genérica, que herdam seus atributos e podem ter atributos e/ou relacionamentos específicos.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-modelagem-conceitual_8",
+    "topicId": "b1-modelagem-conceitual",
+    "front": "V ou F: Um atributo derivado deve ser armazenado fisicamente no banco de dados para garantir sua disponibilidade.",
+    "back": "**Falso.** Um atributo derivado não precisa ser armazenado fisicamente. Seu valor pode ser calculado a partir de outros atributos armazenados (ex: 'Idade' derivada de 'DataNascimento'). Armazená-lo pode causar redundância e inconsistência se os atributos de origem forem alterados.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-modelagem-conceitual_9",
+    "topicId": "b1-modelagem-conceitual",
+    "front": "No MER, qual a cardinalidade e o tipo de relacionamento que uma Entidade Fraca SEMPRE exige com sua Entidade Forte identificadora?",
+    "back": "Uma Entidade Fraca sempre exige um **relacionamento identificador** (representado por um losango e linha duplos) com sua Entidade Forte. A participação da Entidade Fraca neste relacionamento é **total (obrigatória)**, indicando que ela não pode existir sem a Entidade Forte identificadora.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-modelagem-conceitual_10",
+    "topicId": "b1-modelagem-conceitual",
+    "front": "Quais são os dois critérios principais para classificar a Especialização (ou Generalização) no MER e o que cada um significa?",
+    "back": "Os dois critérios são:\n1.  **Completude (ou Totalidade):**\n    -   **Total:** Cada ocorrência da super-tipo DEVE pertencer a pelo menos um dos sub-tipos. (Representado por linha dupla).\n    -   **Parcial:** Uma ocorrência da super-tipo PODE não pertencer a nenhum dos sub-tipos. (Representado por linha simples).\n2.  **Disjunção (ou Sobreposição):**\n    -   **Disjunta:** Uma ocorrência da super-tipo PODE pertencer a NO MÁXIMO um dos sub-tipos. (Representado por 'd' no triângulo).\n    -   **Sobreposta:** Uma ocorrência da super-tipo PODE pertencer a MÚLTIPLOS sub-tipos simultaneamente. (Representado por 'o' no triângulo).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

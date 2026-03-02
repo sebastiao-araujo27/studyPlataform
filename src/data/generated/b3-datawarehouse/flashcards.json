@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b3-datawarehouse_1",
+    "topicId": "b3-datawarehouse",
+    "front": "O que é um Data Warehouse (DW)?",
+    "back": "Um sistema de armazenamento de dados otimizado para consultas e análises, que integra informações de diversas fontes operacionais para apoiar a tomada de decisões estratégicas. Suas características são: orientado a assunto, não volátil, integrado e variante no tempo.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-datawarehouse_2",
+    "topicId": "b3-datawarehouse",
+    "front": "Qual o principal propósito de um Data Mart?",
+    "back": "Fornecer uma visão departamental ou específica de negócio dos dados do Data Warehouse, focando em um conjunto limitado de assuntos para atender às necessidades de um grupo de usuários específico com maior agilidade e performance.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-datawarehouse_3",
+    "topicId": "b3-datawarehouse",
+    "front": "Qual a função da Staging Area (Área de Preparação) na arquitetura de um Data Warehouse?",
+    "back": "É uma área temporária para armazenar dados extraídos das fontes operacionais antes de serem limpos, transformados e carregados no Data Warehouse. Permite isolar o processo ETL das fontes originais, facilitando a manipulação e validação dos dados.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-datawarehouse_4",
+    "topicId": "b3-datawarehouse",
+    "front": "O que são metadados no contexto de um Data Warehouse?",
+    "back": "São 'dados sobre os dados'. Descrevem a estrutura (esquemas, tabelas, colunas), origem, transformações, regras de negócio, e o significado dos dados armazenados no DW. São cruciais para a governança, o entendimento e a utilização eficaz dos dados.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-datawarehouse_5",
+    "topicId": "b3-datawarehouse",
+    "front": "Qual a principal diferença entre a abordagem de Ralph Kimball e a de Bill Inmon para a arquitetura de Data Warehouses?",
+    "back": "<ul><li><b>Kimball (Bottom-up/Dimensional):</b> Foca em Data Marts dimensionais (Star Schema) como base, que são então integrados via um \"Data Mart Bus Architecture\". Prioriza a facilidade de uso, performance para consultas e entrega incremental.</li><li><b>Inmon (Top-down/Corporativo):</b> Propõe um Data Warehouse corporativo centralizado (normalizado) como a primeira etapa, a partir do qual os Data Marts são criados. Prioriza a integridade dos dados, eliminação de redundâncias e uma única fonte da verdade.</li></ul>",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-datawarehouse_6",
+    "topicId": "b3-datawarehouse",
+    "front": "Em um Data Warehouse, quando e por que se devem usar Surrogate Keys (chaves substitutas) nas tabelas de dimensão?",
+    "back": "<ul><li><b>Quando:</b> Sempre que houver necessidade de gerenciar Slowly Changing Dimensions (SCDs), quando a chave natural for composta ou não for um bom identificador único, ou para isolar o DW de mudanças nas chaves dos sistemas fonte.</li><li><b>Por que:</b><ul><li>Permitem rastrear o histórico de mudanças em atributos de dimensão (SCD Tipo 2).</li><li>Melhoram o desempenho das junções (JOINs), pois são geralmente inteiros simples.</li><li>Garantem a unicidade e a integridade referencial dentro do DW, independentemente das chaves dos sistemas fonte.</li></ul></li></ul>",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-datawarehouse_7",
+    "topicId": "b3-datawarehouse",
+    "front": "Explique a diferença entre Slowly Changing Dimension (SCD) Tipo 1 e Tipo 2.",
+    "back": "<ul><li><b>SCD Tipo 1 (Sobreescrita):</b> O valor antigo do atributo é sobrescrito pelo novo. Não há registro do histórico das mudanças, ou seja, a dimensão reflete sempre o estado mais recente.</li><li><b>SCD Tipo 2 (Histórico Completo):</b> Uma nova linha é criada na tabela de dimensão para cada mudança no atributo, mantendo o histórico completo dos valores ao longo do tempo. Geralmente envolve colunas como data de início/fim de validade e um flag de registro atual.</li></ul>",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-datawarehouse_8",
+    "topicId": "b3-datawarehouse",
+    "front": "Verdadeiro ou Falso: No modelo Inmon (top-down), os Data Marts são construídos diretamente a partir dos sistemas operacionais para atender a necessidades departamentais específicas.",
+    "back": "FALSO. No modelo Inmon, os Data Marts são construídos a partir do Data Warehouse Corporativo (que é normalizado e centralizado), e NÃO diretamente dos sistemas operacionais. A construção a partir dos sistemas operacionais é mais característica de uma arquitetura \"Data Mart Bus\" (Kimball) sem um DW central previamente estabelecido.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-datawarehouse_9",
+    "topicId": "b3-datawarehouse",
+    "front": "Qual a principal desvantagem de não se utilizar Surrogate Keys (chaves substitutas) em tabelas de dimensão em um Data Warehouse que gerencia histórico de alterações (SCD Tipo 2)?",
+    "back": "A principal desvantagem é a **impossibilidade de implementar eficientemente o SCD Tipo 2**. Sem Surrogate Keys, que permitem a criação de novas linhas para representar diferentes versões de um mesmo registro de dimensão ao longo do tempo, seria inviável manter o histórico completo das alterações de atributos na dimensão sem comprometer a integridade referencial com a tabela fato.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-datawarehouse_10",
+    "topicId": "b3-datawarehouse",
+    "front": "Além dos Tipos 1 e 2, qual outro tipo comum de Slowly Changing Dimension (SCD) existe e qual sua principal característica?",
+    "back": "SCD Tipo 3 (Histórico Parcial/Coluna de Histórico).\n\nSua principal característica é que ele mantém apenas um número limitado de versões anteriores de um atributo (geralmente a versão atual e a anterior) em colunas separadas dentro da mesma linha da dimensão. É útil quando o histórico detalhado não é crucial, mas a comparação entre o estado atual e o anterior é importante.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

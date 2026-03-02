@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b1-datalake_1",
+    "topicId": "b1-datalake",
+    "front": "O que é um Data Lake?",
+    "back": "É um repositório centralizado que permite armazenar grandes volumes de dados em seu formato nativo (estruturados, semiestruturados ou não estruturados), utilizando a abordagem 'schema-on-read'.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-datalake_2",
+    "topicId": "b1-datalake",
+    "front": "Quais são as três zonas típicas de arquitetura em um Data Lake?",
+    "back": "1. Raw (ou Bronze): Dados brutos e originais.\n2. Trusted (ou Silver): Dados limpos, validados e integrados.\n3. Refined (ou Gold): Dados agregados e prontos para consumo por áreas de negócio/BI.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-datalake_3",
+    "topicId": "b1-datalake",
+    "front": "O que caracteriza o conceito de Data Lakehouse?",
+    "back": "É uma arquitetura que combina a flexibilidade e o baixo custo de armazenamento do Data Lake com as capacidades de gerenciamento, desempenho e transações ACID típicas de um Data Warehouse.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-datalake_4",
+    "topicId": "b1-datalake",
+    "front": "Qual a principal diferença de 'esquema' entre Data Warehouse e Data Lake?",
+    "back": "O Data Warehouse utiliza 'Schema-on-write' (esquema definido antes da carga). O Data Lake utiliza 'Schema-on-read' (esquema definido apenas no momento da leitura).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-datalake_5",
+    "topicId": "b1-datalake",
+    "front": "Qual a função do Delta Lake em uma arquitetura de Data Lakehouse?",
+    "back": "É uma camada de armazenamento de código aberto que traz confiabilidade aos Data Lakes, provendo transações ACID, versionamento de dados (Time Travel) e tratamento escalável de metadados.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-datalake_6",
+    "topicId": "b1-datalake",
+    "front": "O que define um 'Data Swamp' (Pântano de Dados)?",
+    "back": "É um Data Lake que se tornou deteriorado e inutilizável devido à falta de governança, metadados adequados e controle de qualidade, tornando impossível localizar ou confiar nos dados.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-datalake_7",
+    "topicId": "b1-datalake",
+    "front": "Quais são os pilares fundamentais da Governança em um Data Lake?",
+    "back": "• Catálogo de Dados (Metadados)\n• Linhagem de Dados (Data Lineage)\n• Segurança e Controle de Acesso\n• Qualidade e Ciclo de Vida dos Dados",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-datalake_8",
+    "topicId": "b1-datalake",
+    "front": "Na arquitetura de medalhão (Delta Lake), qual o objetivo específico da zona Silver?",
+    "back": "Realizar a limpeza, filtragem e padronização dos dados vindos da zona Raw, servindo como uma 'fonte da verdade' confiável para análises e transformações posteriores.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-datalake_9",
+    "topicId": "b1-datalake",
+    "front": "Como o Data Lakehouse resolve o problema de integridade em escritas simultâneas?",
+    "back": "Através da implementação de transações ACID, geralmente utilizando um log de transações (Transaction Log) que coordena o isolamento e a atomicidade das operações sobre os arquivos (ex: Parquet).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-datalake_10",
+    "topicId": "b1-datalake",
+    "front": "V ou F: O Data Lakehouse elimina a necessidade de camadas de processamento batch, operando exclusivamente em tempo real (streaming).",
+    "back": "Falso. O Data Lakehouse unifica o processamento batch e streaming em uma única plataforma, permitindo que ambos coexistam sobre a mesma estrutura de dados.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

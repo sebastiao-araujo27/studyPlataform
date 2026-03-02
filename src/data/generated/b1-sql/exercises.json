@@ -1,0 +1,275 @@
+[
+  {
+    "id": "ex_b1-sql_1",
+    "topicId": "b1-sql",
+    "blocoId": "bloco-1",
+    "question": "Em um ambiente de banco de dados relacional, a manipulação de dados e a definição da estrutura do banco de dados são realizadas por diferentes conjuntos de comandos SQL. A respeito dessas categorias de comandos, assinale a alternativa que apresenta corretamente um exemplo de comando DDL (Data Definition Language).",
+    "options": [
+      {
+        "letter": "A",
+        "text": "INSERT INTO Clientes (Nome, Email) VALUES ('João Silva', 'joao.silva@email.com');",
+        "isCorrect": false,
+        "explanation": "Este comando é um exemplo de DML (Data Manipulation Language), utilizado para inserir dados em uma tabela."
+      },
+      {
+        "letter": "B",
+        "text": "SELECT Nome, Email FROM Clientes WHERE Cidade = 'Rio de Janeiro';",
+        "isCorrect": false,
+        "explanation": "Este comando é um exemplo de DML (Data Manipulation Language), utilizado para consultar dados em uma tabela."
+      },
+      {
+        "letter": "C",
+        "text": "CREATE TABLE Produtos (ID INT PRIMARY KEY, Nome VARCHAR(100) NOT NULL, Preco DECIMAL(10, 2));",
+        "isCorrect": true,
+        "explanation": "O comando CREATE TABLE é utilizado para definir a estrutura de uma nova tabela, sendo, portanto, um comando DDL."
+      },
+      {
+        "letter": "D",
+        "text": "UPDATE Pedidos SET Status = 'Enviado' WHERE ID_Pedido = 12345;",
+        "isCorrect": false,
+        "explanation": "Este comando é um exemplo de DML (Data Manipulation Language), utilizado para modificar dados existentes em uma tabela."
+      },
+      {
+        "letter": "E",
+        "text": "DELETE FROM Estoque WHERE Quantidade < 10;",
+        "isCorrect": false,
+        "explanation": "Este comando é um exemplo de DML (Data Manipulation Language), utilizado para remover dados de uma tabela."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda a distinção fundamental entre DDL (Data Definition Language) e DML (Data Manipulation Language) no SQL. Comandos DDL são responsáveis pela definição e modificação da estrutura do banco de dados, como a criação, alteração e exclusão de tabelas, índices, views e outros objetos. Exemplos clássicos incluem CREATE, ALTER e DROP. Por outro lado, comandos DML são utilizados para gerenciar os dados dentro dessas estruturas, englobando operações como inserção (INSERT), consulta (SELECT), atualização (UPDATE) e exclusão (DELETE) de registros. A alternativa C, com o comando CREATE TABLE, é a única que exemplifica corretamente um comando DDL, pois sua finalidade é criar a estrutura de uma tabela. As demais alternativas (A, B, D, E) apresentam comandos DML, que operam sobre os dados, e não sobre a estrutura do banco de dados.",
+    "technicalJustification": "DDL (Data Definition Language) statements define, modify, and remove data objects such as tables, indexes, and views. Examples include CREATE, ALTER, and DROP. DML (Data Manipulation Language) statements manage data within schema objects. Examples include INSERT, UPDATE, DELETE, and SELECT. (Referência: Oracle SQL Reference)",
+    "relatedConcepts": [
+      "DDL",
+      "DML",
+      "SQL",
+      "CREATE TABLE",
+      "INSERT",
+      "SELECT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b1-sql_2",
+    "topicId": "b1-sql",
+    "blocoId": "bloco-1",
+    "question": "Uma equipe de desenvolvimento está trabalhando na otimização de consultas em um sistema de gestão de frota de veículos. Eles precisam recuperar o nome de todos os veículos que tiveram pelo menos uma manutenção registrada no último ano, juntamente com a data da última manutenção realizada em cada um deles. Para isso, eles dispõem de duas tabelas: `Veiculos` (com colunas `ID_Veiculo`, `Placa`, `Modelo`) e `Manutencoes` (com colunas `ID_Manutencao`, `ID_Veiculo`, `Data_Manutencao`, `Descricao_Servico`). Considerando que a data atual é 31/12/2023, qual instrução SQL é a mais adequada para obter essa informação de forma eficiente?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "SELECT v.Modelo, MAX(m.Data_Manutencao) FROM Veiculos v JOIN Manutencoes m ON v.ID_Veiculo = m.ID_Veiculo WHERE m.Data_Manutencao BETWEEN '2023-01-01' AND '2023-12-31' GROUP BY v.Modelo;",
+        "isCorrect": false,
+        "explanation": "Esta consulta agrupa por Modelo, o que pode retornar múltiplos registros para o mesmo veículo se houver vários modelos iguais, e não garante a exibição do nome/placa do veículo."
+      },
+      {
+        "letter": "B",
+        "text": "SELECT v.Placa, MAX(m.Data_Manutencao) FROM Veiculos v INNER JOIN Manutencoes m ON v.ID_Veiculo = m.ID_Veiculo WHERE m.Data_Manutencao >= DATE('now', '-1 year') GROUP BY v.ID_Veiculo, v.Placa;",
+        "isCorrect": true,
+        "explanation": "Esta consulta une as tabelas, filtra manutenções do último ano, agrupa pelo ID e Placa do veículo para encontrar a data da última manutenção e retorna a placa e essa data."
+      },
+      {
+        "letter": "C",
+        "text": "SELECT v.Placa, m.Data_Manutencao FROM Veiculos v LEFT JOIN Manutencoes m ON v.ID_Veiculo = m.ID_Veiculo WHERE m.Data_Manutencao >= DATE('now', '-1 year');",
+        "isCorrect": false,
+        "explanation": "O LEFT JOIN pode incluir veículos sem manutenção no período, e a ausência de agregação não retorna a data da *última* manutenção, mas sim todas as manutenções do período."
+      },
+      {
+        "letter": "D",
+        "text": "SELECT v.Placa, m.Data_Manutencao FROM Veiculos v JOIN Manutencoes m ON v.ID_Veiculo = m.ID_Veiculo WHERE STRFTIME('%Y', m.Data_Manutencao) = STRFTIME('%Y', DATE('now')) GROUP BY v.Placa;",
+        "isCorrect": false,
+        "explanation": "Esta consulta filtra apenas pelo ano corrente, não considerando o último ano completo, e a agregação com GROUP BY sem MAX() ou outra função não retorna a data da última manutenção."
+      },
+      {
+        "letter": "E",
+        "text": "SELECT DISTINCT v.Placa FROM Veiculos v JOIN Manutencoes m ON v.ID_Veiculo = m.ID_Veiculo WHERE m.Data_Manutencao BETWEEN DATE('2023-01-01') AND DATE('2023-12-31');",
+        "isCorrect": false,
+        "explanation": "Esta consulta retorna apenas as placas dos veículos com manutenção no período, mas não retorna a data da última manutenção realizada."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão exige a recuperação de informações específicas (placa do veículo e data da última manutenção) para veículos que tiveram alguma manutenção no último ano. Para isso, é necessário combinar dados das tabelas `Veiculos` e `Manutencoes`, filtrar os registros de manutenção pelo período desejado e, em seguida, identificar a data máxima de manutenção para cada veículo. A alternativa B utiliza `INNER JOIN` para garantir que apenas veículos com manutenções registradas sejam considerados. A cláusula `WHERE m.Data_Manutencao >= DATE('now', '-1 year')` filtra corretamente as manutenções ocorridas no último ano (considerando a data atual como 31/12/2023, isso abrange de 01/01/2023 a 31/12/2023). A função de agregação `MAX(m.Data_Manutencao)` encontra a data mais recente de manutenção para cada grupo. O `GROUP BY v.ID_Veiculo, v.Placa` garante que a agregação seja feita por veículo individualmente, retornando a placa e a data da última manutenção. As demais alternativas falham em algum requisito: A agrupa incorretamente por modelo; C usa LEFT JOIN desnecessariamente e não agrega para obter a data máxima; D filtra incorretamente pelo ano e não obtém a data máxima; E omite a data da última manutenção. O uso de `DATE('now', '-1 year')` é uma forma genérica e comum em muitos SGBDs para obter a data do último ano.",
+    "technicalJustification": "This query uses an INNER JOIN to combine records from Veiculos and Manutencoes based on ID_Veiculo. It filters maintenance records to include only those within the last year using a date comparison. The MAX aggregate function finds the latest maintenance date for each vehicle, and GROUP BY ensures this is calculated per vehicle. (Reference: Ben Forta - SQL in 10 Minutes, Chapter 7 on Aggregation and Chapter 9 on Joins)",
+    "relatedConcepts": [
+      "SQL",
+      "SELECT",
+      "JOIN",
+      "INNER JOIN",
+      "WHERE",
+      "GROUP BY",
+      "MAX",
+      "DATES"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b1-sql_3",
+    "topicId": "b1-sql",
+    "blocoId": "bloco-1",
+    "question": "Uma refinaria de petróleo necessita de um relatório consolidado que exiba o volume total de petróleo processado por cada unidade de processamento (UP) no último trimestre fiscal. Os dados de processamento estão armazenados em uma tabela chamada `Processamento` com as colunas `ID_Processamento`, `ID_UP`, `Data_Processamento`, `Volume_Litros`. A tabela `UnidadesProcessamento` contém as colunas `ID_UP` e `Nome_UP`. O último trimestre fiscal encerrou em 30/09/2023. O analista de sistemas precisa criar uma `VIEW` que facilite a consulta recorrente desses dados. Qual das opções abaixo representa a instrução `CREATE VIEW` mais adequada para atender a essa necessidade?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "CREATE VIEW RelatorioTrimestral AS SELECT Nome_UP, SUM(Volume_Litros) AS VolumeTotal FROM UnidadesProcessamento up JOIN Processamento p ON up.ID_UP = p.ID_UP WHERE p.Data_Processamento BETWEEN '2023-07-01' AND '2023-09-30' GROUP BY Nome_UP;",
+        "isCorrect": true,
+        "explanation": "Esta view une as tabelas, filtra pelo período correto, agrega o volume por unidade e nomeia as colunas resultantes de forma clara."
+      },
+      {
+        "letter": "B",
+        "text": "CREATE VIEW RelatorioTrimestral AS SELECT p.ID_UP, SUM(p.Volume_Litros) FROM Processamento p WHERE p.Data_Processamento BETWEEN '2023-07-01' AND '2023-09-30' GROUP BY p.ID_UP;",
+        "isCorrect": false,
+        "explanation": "Esta view não inclui o nome da unidade de processamento, apenas o ID, o que dificulta a leitura do relatório."
+      },
+      {
+        "letter": "C",
+        "text": "CREATE VIEW RelatorioTrimestral AS SELECT up.Nome_UP, AVG(p.Volume_Litros) AS VolumeMedio FROM UnidadesProcessamento up JOIN Processamento p ON up.ID_UP = p.ID_UP WHERE p.Data_Processamento BETWEEN '2023-07-01' AND '2023-09-30' GROUP BY up.Nome_UP;",
+        "isCorrect": false,
+        "explanation": "Esta view calcula o volume médio, e não o volume total, o que não atende ao requisito da questão."
+      },
+      {
+        "letter": "D",
+        "text": "CREATE VIEW RelatorioTrimestral AS SELECT up.Nome_UP, SUM(p.Volume_Litros) FROM UnidadesProcessamento up JOIN Processamento p ON up.ID_UP = p.ID_UP WHERE p.Data_Processamento < '2023-07-01' GROUP BY up.Nome_UP;",
+        "isCorrect": false,
+        "explanation": "O filtro de data está incorreto, pois seleciona dados anteriores ao trimestre fiscal solicitado."
+      },
+      {
+        "letter": "E",
+        "text": "CREATE VIEW RelatorioTrimestral AS SELECT up.Nome_UP, SUM(p.Volume_Litros) AS VolumeTotal FROM UnidadesProcessamento up, Processamento p WHERE up.ID_UP = p.ID_UP AND p.Data_Processamento BETWEEN '2023-07-01' AND '2023-09-30' GROUP BY up.Nome_UP, p.Volume_Litros;",
+        "isCorrect": false,
+        "explanation": "O agrupamento por 'p.Volume_Litros' impede a agregação correta do volume total por unidade de processamento."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão pede a criação de uma `VIEW` SQL que consolide o volume total de petróleo processado por unidade de processamento durante um trimestre fiscal específico. Uma `VIEW` é uma tabela virtual baseada no resultado de uma consulta SQL, útil para simplificar consultas complexas e reutilizá-las. A instrução `CREATE VIEW` é o comando DDL para sua criação. A alternativa A atende a todos os requisitos: utiliza `CREATE VIEW` para definir a view chamada `RelatorioTrimestral`; faz um `JOIN` entre `UnidadesProcessamento` e `Processamento` para relacionar os volumes com os nomes das unidades; aplica um filtro `WHERE` com o intervalo de datas correto ('2023-07-01' a '2023-09-30') para selecionar apenas os dados do último trimestre fiscal; utiliza a função de agregação `SUM(p.Volume_Litros)` para calcular o volume total; e agrupa os resultados por `Nome_UP` para obter o total para cada unidade. As demais alternativas apresentam erros: B omite o nome da UP; C calcula a média em vez do total; D usa um filtro de data incorreto; E agrupa indevidamente pelo volume individual, impedindo a soma correta. A sintaxe `AS VolumeTotal` e `AS VolumeMedio` são exemplos de aliases para as colunas agregadas, tornando a view mais descritiva.",
+    "technicalJustification": "The `CREATE VIEW` statement is used to define a virtual table based on the result set of a SQL statement. The query joins `UnidadesProcessamento` and `Processamento` tables, filters records for the specified fiscal quarter (July 1st to September 30th, 2023), aggregates `Volume_Litros` using `SUM`, and groups the results by `Nome_UP`. (Reference: Oracle SQL Reference - CREATE VIEW)",
+    "relatedConcepts": [
+      "SQL",
+      "VIEW",
+      "CREATE VIEW",
+      "DDL",
+      "JOIN",
+      "INNER JOIN",
+      "WHERE",
+      "GROUP BY",
+      "SUM",
+      "Aggregate Functions"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b1-sql_4",
+    "topicId": "b1-sql",
+    "blocoId": "bloco-1",
+    "question": "Em um sistema de controle de produção de uma indústria química, existem duas tabelas principais: `LotesProducao` (contendo `ID_Lote`, `ID_Produto`, `Data_Inicio`, `Data_Fim`, `Quantidade_Produzida`) e `Produtos` (contendo `ID_Produto`, `Nome_Produto`, `Descricao`, `Custo_Unitario`). O gestor deseja obter uma lista de todos os produtos que tiveram uma produção total superior a 50.000 unidades em qualquer data, mas ele quer que a consulta retorne o nome do produto e o volume total produzido, e que essa consulta seja encapsulada em uma Stored Procedure que aceite como parâmetro o volume mínimo desejado. Qual das opções abaixo representa a estrutura mais adequada para essa Stored Procedure, considerando uma sintaxe similar a T-SQL ou PL/SQL?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "CREATE PROCEDURE GetProdutosPorVolume (IN min_volume INT) SELECT p.Nome_Produto, SUM(lp.Quantidade_Produzida) AS TotalProduzido FROM Produtos p JOIN LotesProducao lp ON p.ID_Produto = lp.ID_Produto WHERE lp.Quantidade_Produzida > min_volume GROUP BY p.Nome_Produto HAVING SUM(lp.Quantidade_Produzida) > 50000;",
+        "isCorrect": false,
+        "explanation": "A condição 'lp.Quantidade_Produzida > min_volume' filtra lotes individuais, não o total agregado. Além disso, a cláusula HAVING está fixa em 50000, ignorando o parâmetro."
+      },
+      {
+        "letter": "B",
+        "text": "CREATE PROCEDURE GetProdutosPorVolume (IN min_volume INT) SELECT p.Nome_Produto, SUM(lp.Quantidade_Produzida) AS TotalProduzido FROM Produtos p JOIN LotesProducao lp ON p.ID_Produto = lp.ID_Produto GROUP BY p.Nome_Produto HAVING SUM(lp.Quantidade_Produzida) > min_volume;",
+        "isCorrect": true,
+        "explanation": "Esta procedure une as tabelas, agrupa por nome de produto e utiliza HAVING com o parâmetro para filtrar os produtos cujo total produzido excede o volume mínimo especificado."
+      },
+      {
+        "letter": "C",
+        "text": "CREATE PROCEDURE GetProdutosPorVolume (IN min_volume INT) SELECT p.Nome_Produto, lp.Quantidade_Produzida FROM Produtos p JOIN LotesProducao lp ON p.ID_Produto = lp.ID_Produto WHERE lp.Quantidade_Produzida > 50000 ORDER BY p.Nome_Produto;",
+        "isCorrect": false,
+        "explanation": "Esta consulta retorna quantidades de lotes individuais que excedem 50000, não o total agregado por produto, e ignora o parâmetro 'min_volume'."
+      },
+      {
+        "letter": "D",
+        "text": "CREATE PROCEDURE GetProdutosPorVolume (OUT total_produzido INT) SELECT SUM(lp.Quantidade_Produzida) FROM LotesProducao lp WHERE lp.Quantidade_Produzida > 50000 INTO total_produzido;",
+        "isCorrect": false,
+        "explanation": "Esta procedure não utiliza o parâmetro de entrada, não junta com a tabela Produtos para obter o nome e agrupa incorretamente."
+      },
+      {
+        "letter": "E",
+        "text": "CREATE PROCEDURE GetProdutosPorVolume (IN min_volume DECIMAL) SELECT p.Nome_Produto, SUM(lp.Quantidade_Produzida) AS TotalProduzido FROM Produtos p, LotesProducao lp WHERE p.ID_Produto = lp.ID_Produto AND lp.Quantidade_Produzida > min_volume GROUP BY p.ID_Produto HAVING SUM(lp.Quantidade_Produzida) > 50000;",
+        "isCorrect": false,
+        "explanation": "A condição 'lp.Quantidade_Produzida > min_volume' filtra lotes individuais. Além disso, a cláusula HAVING está fixa em 50000 e o agrupamento está incorreto (deveria ser por Nome_Produto ou ID_Produto)."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão solicita a criação de uma Stored Procedure que retorne o nome do produto e seu volume total de produção, filtrando pelos produtos cujo volume total exceda um valor mínimo especificado como parâmetro. A alternativa B é a mais adequada. Ela define corretamente uma Stored Procedure chamada `GetProdutosPorVolume` que aceita um parâmetro de entrada `min_volume`. Dentro da procedure, ela realiza um `JOIN` entre `Produtos` e `LotesProducao` para associar os produtos às suas respectivas produções. A cláusula `GROUP BY p.Nome_Produto` agrupa os resultados para que possamos calcular o total produzido por cada produto. A cláusula `HAVING SUM(lp.Quantidade_Produzida) > min_volume` é crucial aqui: ela filtra os grupos (produtos) cujo somatório total de `Quantidade_Produzida` (o volume total) seja maior que o valor passado no parâmetro `min_volume`. As outras alternativas falham em aspectos importantes: A e E aplicam a condição de volume no nível do lote (`lp.Quantidade_Produzida > min_volume`) em vez do total agregado, e também fixam o limite em 50000 na cláusula HAVING. C não agrega o volume total e ignora o parâmetro. D não utiliza o parâmetro de entrada, não retorna o nome do produto e tem uma lógica de agregação falha.",
+    "technicalJustification": "Stored Procedures allow encapsulating SQL logic. This procedure uses `CREATE PROCEDURE` with an `IN` parameter. It joins `Produtos` and `LotesProducao`, groups by product name, and uses the `HAVING` clause to filter groups based on the aggregated sum of `Quantidade_Produzida` exceeding the provided `min_volume`. (Reference: Oracle PL/SQL User's Guide and Reference)",
+    "relatedConcepts": [
+      "SQL",
+      "Stored Procedure",
+      "DDL",
+      "DML",
+      "JOIN",
+      "GROUP BY",
+      "HAVING",
+      "Aggregate Functions",
+      "Parameters"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b1-sql_5",
+    "topicId": "b1-sql",
+    "blocoId": "bloco-1",
+    "question": "uma empresa de logística, operando em escala global, possui um banco de dados complexo para gerenciar suas operações. Considere as tabelas `Entregas` (`ID_Entrega`, `ID_Transportadora`, `Origem`, `Destino`, `Data_Coleta`, `Data_Entrega_Prevista`, `Data_Entrega_Realizada`, `Valor_Frete`) e `Transportadoras` (`ID_Transportadora`, `Nome_Transportadora`, `Pais_Origem`, `Avaliacao_Cliente`). O departamento de operações deseja identificar as transportadoras que, no último ano, tiveram uma média de atraso nas entregas superior a 2 dias e que realizaram mais de 100 entregas nesse mesmo período. Além disso, para essas transportadoras, eles querem saber o valor total pago em fretes. A análise deve considerar apenas as entregas com `Data_Entrega_Realizada` preenchida (ou seja, entregas concluídas). Qual das opções a seguir representa a consulta SQL mais completa e correta para atender a essa requisição?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "SELECT t.Nome_Transportadora, AVG(JULIANDAY(e.Data_Entrega_Realizada) - JULIANDAY(e.Data_Entrega_Prevista)) AS AtrasoMedio, SUM(e.Valor_Frete) AS ValorTotalFrete FROM Transportadoras t JOIN Entregas e ON t.ID_Transportadora = e.ID_Transportadora WHERE e.Data_Entrega_Realizada IS NOT NULL AND (JULIANDAY(e.Data_Entrega_Realizada) - JULIANDAY(e.Data_Entrega_Prevista)) > 2 AND COUNT(e.ID_Entrega) > 100 AND e.Data_Coleta BETWEEN DATE('now', '-1 year') AND DATE('now') GROUP BY t.Nome_Transportadora HAVING AtrasoMedio > 2 AND COUNT(e.ID_Entrega) > 100;",
+        "isCorrect": false,
+        "explanation": "A cláusula WHERE não pode conter funções de agregação como COUNT() ou comparações com resultados de agregação. As condições de contagem e atraso médio devem estar no HAVING."
+      },
+      {
+        "letter": "B",
+        "text": "SELECT t.Nome_Transportadora, AVG(JULIANDAY(e.Data_Entrega_Realizada) - JULIANDAY(e.Data_Entrega_Prevista)) AS AtrasoMedio, SUM(e.Valor_Frete) AS ValorTotalFrete FROM Transportadoras t JOIN Entregas e ON t.ID_Transportadora = e.ID_Transportadora WHERE e.Data_Entrega_Realizada IS NOT NULL AND e.Data_Coleta BETWEEN DATE('now', '-1 year') AND DATE('now') GROUP BY t.ID_Transportadora, t.Nome_Transportadora, t.Pais_Origem, t.Avaliacao_Cliente HAVING AVG(JULIANDAY(e.Data_Entrega_Realizada) - JULIANDAY(e.Data_Entrega_Prevista)) > 2 AND COUNT(e.ID_Entrega) > 100;",
+        "isCorrect": true,
+        "explanation": "Esta consulta une as tabelas, filtra entregas concluídas no último ano, calcula o atraso médio e o total de fretes, agrupando por transportadora e aplicando as condições de filtro no HAVING."
+      },
+      {
+        "letter": "C",
+        "text": "SELECT t.Nome_Transportadora, AVG(e.Data_Entrega_Realizada - e.Data_Entrega_Prevista) AS AtrasoMedio, SUM(e.Valor_Frete) FROM Transportadoras t JOIN Entregas e ON t.ID_Transportadora = e.ID_Transportadora WHERE e.Data_Entrega_Realizada IS NOT NULL AND e.Data_Coleta >= DATE('now', '-1 year') GROUP BY t.Nome_Transportadora HAVING COUNT(e.ID_Entrega) > 100 AND AtrasoMedio > 2;",
+        "isCorrect": false,
+        "explanation": "A subtração direta de datas pode não funcionar corretamente em todos os SGBDs para obter a diferença em dias. A função JULIANDAY ou similar é mais robusta. O agrupamento também deveria incluir o ID da transportadora para garantir unicidade caso nomes se repitam."
+      },
+      {
+        "letter": "D",
+        "text": "SELECT t.Nome_Transportadora, SUM(e.Valor_Frete) FROM Transportadoras t JOIN Entregas e ON t.ID_Transportadora = e.ID_Transportadora WHERE e.Data_Entrega_Realizada IS NOT NULL AND e.Data_Coleta BETWEEN DATE('now', '-1 year') AND DATE('now') AND (JULIANDAY(e.Data_Entrega_Realizada) - JULIANDAY(e.Data_Entrega_Prevista)) > 2 GROUP BY t.Nome_Transportadora HAVING COUNT(e.ID_Entrega) > 100;",
+        "isCorrect": false,
+        "explanation": "Esta consulta filtra o atraso médio no WHERE, o que é incorreto, e não retorna o atraso médio como solicitado, apenas o valor total do frete."
+      },
+      {
+        "letter": "E",
+        "text": "SELECT t.Nome_Transportadora, AVG(JULIANDAY(e.Data_Entrega_Realizada) - JULIANDAY(e.Data_Entrega_Prevista)) AS AtrasoMedio, COUNT(e.ID_Entrega) AS TotalEntregas FROM Transportadoras t JOIN Entregas e ON t.ID_Transportadora = e.ID_Transportadora WHERE e.Data_Entrega_Realizada IS NOT NULL AND e.Data_Coleta BETWEEN DATE('now', '-1 year') AND DATE('now') AND COUNT(e.ID_Entrega) > 100 GROUP BY t.Nome_Transportadora HAVING AtrasoMedio > 2;",
+        "isCorrect": false,
+        "explanation": "A condição 'COUNT(e.ID_Entrega) > 100' está no WHERE, onde funções de agregação não são permitidas. Além disso, o valor total do frete não é retornado."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão é classificada como difícil por exigir a integração de múltiplos conceitos SQL em um cenário complexo, incluindo joins, funções de agregação com cláusulas WHERE e HAVING, cálculo de diferenças de datas e filtragem temporal. A alternativa B é a correta. Ela inicia com um `JOIN` entre `Transportadoras` e `Entregas`, garantindo que apenas transportadoras com entregas sejam consideradas. A cláusula `WHERE e.Data_Entrega_Realizada IS NOT NULL` filtra apenas as entregas concluídas. O filtro `e.Data_Coleta BETWEEN DATE('now', '-1 year') AND DATE('now')` restringe a análise ao último ano de operação (considerando a data de coleta como referência para o período). A função `JULIANDAY(e.Data_Entrega_Realizada) - JULIANDAY(e.Data_Entrega_Prevista)` é uma maneira robusta (comum em SQLite, e adaptável a outras funções como `DATEDIFF` em outros SGBDs) de calcular a diferença em dias entre as datas de entrega. O `GROUP BY t.ID_Transportadora, t.Nome_Transportadora, t.Pais_Origem, t.Avaliacao_Cliente` agrupa os resultados por transportadora (incluindo colunas não agregadas para garantir a conformidade com o SQL padrão). A cláusula `HAVING` é usada corretamente para aplicar as condições sobre os resultados agrupados: `AVG(...) > 2` verifica se o atraso médio é superior a 2 dias, e `COUNT(e.ID_Entrega) > 100` verifica se o número de entregas realizadas pela transportadora no período é superior a 100. Finalmente, ela retorna o nome da transportadora, o atraso médio calculado e o `SUM(e.Valor_Frete)`. As demais alternativas falham por: A e E colocarem condições de agregação (COUNT) no WHERE; D não retornar o atraso médio e também colocar uma condição de atraso no WHERE; C usar uma subtração de datas potencialmente imprecisa e não agrupar todas as colunas não agregadas.",
+    "technicalJustification": "This query requires joining `Transportadoras` and `Entregas`, filtering for completed deliveries within the last year using `WHERE`. It calculates the average delay in days (using a date difference function like `JULIANDAY` or `DATEDIFF`) and sums the freight costs. Crucially, the conditions on average delay (`> 2`) and number of deliveries (`> 100`) are applied using the `HAVING` clause, as they operate on aggregated results. The `GROUP BY` clause includes all non-aggregated columns from the `SELECT` list. (Reference: Ben Forta - SQL in 10 Minutes, Chapters 7 & 9; Oracle SQL Reference)",
+    "relatedConcepts": [
+      "SQL",
+      "SELECT",
+      "JOIN",
+      "INNER JOIN",
+      "WHERE",
+      "HAVING",
+      "GROUP BY",
+      "Aggregate Functions",
+      "AVG",
+      "SUM",
+      "COUNT",
+      "Date Functions",
+      "Subqueries (implied by complex filtering)"
+    ],
+    "order": 5
+  }
+]

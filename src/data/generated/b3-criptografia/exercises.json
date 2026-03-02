@@ -1,0 +1,222 @@
+[
+  {
+    "id": "ex_b3-criptografia_1",
+    "topicId": "b3-criptografia",
+    "blocoId": "bloco-3",
+    "question": "Sobre a criptografia simétrica e assimétrica, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A criptografia assimétrica é sempre mais segura que a criptografia simétrica, independentemente do tamanho da chave utilizada.",
+        "isCorrect": false,
+        "explanation": "Incorreta. A segurança depende do tamanho da chave e da implementação, não do tipo de criptografia. AES-256 (simétrica) é considerado extremamente seguro."
+      },
+      {
+        "letter": "B",
+        "text": "Na criptografia simétrica, é possível garantir o não-repúdio, uma vez que apenas o emissor conhece a chave secreta compartilhada.",
+        "isCorrect": false,
+        "explanation": "Incorreta. Na criptografia simétrica, ambas as partes (emissor e receptor) compartilham a mesma chave, de modo que qualquer uma delas poderia ter gerado a mensagem. Portanto, não há como garantir não-repúdio."
+      },
+      {
+        "letter": "C",
+        "text": "O algoritmo Diffie-Hellman é utilizado para troca de chaves entre duas partes sobre um canal inseguro, mas não serve para cifrar mensagens diretamente.",
+        "isCorrect": true,
+        "explanation": "Correta. O Diffie-Hellman é um protocolo de acordo de chaves (key agreement) que permite que duas partes estabeleçam uma chave secreta compartilhada, mas não é utilizado para cifragem de dados nem para assinatura digital."
+      },
+      {
+        "letter": "D",
+        "text": "O AES opera com blocos e chaves de tamanho fixo de 256 bits, sendo o único tamanho de chave suportado pelo padrão.",
+        "isCorrect": false,
+        "explanation": "Incorreta. O AES opera com blocos fixos de 128 bits e suporta chaves de três tamanhos: 128, 192 ou 256 bits."
+      },
+      {
+        "letter": "E",
+        "text": "O algoritmo RSA baseia-se na dificuldade do problema do logaritmo discreto em curvas elípticas para garantir sua segurança.",
+        "isCorrect": false,
+        "explanation": "Incorreta. O RSA baseia-se na dificuldade de fatorar números inteiros grandes (produto de dois primos). O problema do logaritmo discreto em curvas elípticas é a base da ECC (Elliptic Curve Cryptography)."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "O Diffie-Hellman (DH) é um dos algoritmos mais importantes da criptografia assimétrica, mas sua função é específica: permitir a troca segura de chaves. Duas partes, mesmo comunicando-se por um canal público e inseguro, conseguem combinar uma chave secreta compartilhada sem nunca transmiti-la diretamente. Essa chave resultante pode então ser usada com um algoritmo simétrico (como AES) para cifrar a comunicação. O DH é a base do conceito de Perfect Forward Secrecy (PFS) quando usado em modo efêmero (DHE/ECDHE) no protocolo TLS.",
+    "technicalJustification": "Conforme Stallings (Criptografia e Segurança de Redes), o protocolo Diffie-Hellman resolve o problema de distribuição de chaves utilizando exponenciação modular em aritmética de números grandes. Cada parte gera um valor secreto, calcula um valor público (g^a mod p e g^b mod p) e troca esses valores. Ambos chegam ao mesmo segredo compartilhado (g^(ab) mod p) sem que um observador consiga determiná-lo (problema do logaritmo discreto).",
+    "relatedConcepts": ["Criptografia simétrica", "Criptografia assimétrica", "Diffie-Hellman", "AES", "RSA", "Perfect Forward Secrecy"],
+    "order": 1
+  },
+  {
+    "id": "ex_b3-criptografia_2",
+    "topicId": "b3-criptografia",
+    "blocoId": "bloco-3",
+    "question": "Considerando o processo de assinatura digital e a infraestrutura de chaves públicas (ICP-Brasil), assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A assinatura digital garante confidencialidade, autenticidade, integridade e não-repúdio do documento assinado.",
+        "isCorrect": false,
+        "explanation": "Incorreta. A assinatura digital NÃO garante confidencialidade. Ela garante apenas autenticidade, integridade e não-repúdio. O documento assinado pode ser lido por qualquer pessoa. Para confidencialidade, é necessário cifrar o documento separadamente."
+      },
+      {
+        "letter": "B",
+        "text": "No processo de assinatura digital, o remetente calcula o hash da mensagem e o cifra com sua chave privada; o destinatário verifica decifrandoo hash com a chave pública do remetente e comparando com o hash recalculado.",
+        "isCorrect": true,
+        "explanation": "Correta. Este é o processo correto de assinatura digital: (1) o remetente gera o hash do documento, (2) cifra o hash com sua chave privada, (3) o destinatário decifra com a chave pública do remetente e (4) compara com o hash que ele mesmo calcula do documento recebido."
+      },
+      {
+        "letter": "C",
+        "text": "A AC-Raiz da ICP-Brasil (ITI) é responsável por emitir certificados digitais diretamente para pessoas físicas e jurídicas.",
+        "isCorrect": false,
+        "explanation": "Incorreta. A AC-Raiz (ITI) emite certificados exclusivamente para Autoridades Certificadoras (ACs) de 1º nível subordinadas. Ela NÃO emite certificados para usuários finais (pessoas físicas ou jurídicas)."
+      },
+      {
+        "letter": "D",
+        "text": "Na assinatura digital, o documento inteiro é cifrado com a chave privada do remetente para garantir autenticidade.",
+        "isCorrect": false,
+        "explanation": "Incorreta. A assinatura digital cifra apenas o hash (digest) do documento, não o documento inteiro. Cifrar o documento inteiro com criptografia assimétrica seria extremamente lento e impraticável."
+      },
+      {
+        "letter": "E",
+        "text": "O certificado digital tipo A1 é armazenado em token criptográfico de hardware, com validade de 1 a 5 anos.",
+        "isCorrect": false,
+        "explanation": "Incorreta. As características descritas são do certificado A3. O certificado A1 é armazenado em software (arquivo .pfx/.p12), com validade de 1 ano. O A3 é que é armazenado em hardware (token/smart card) com validade de 1 a 5 anos."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "O processo de assinatura digital é um dos temas mais cobrados em provas de concurso sobre segurança da informação. O fluxo correto envolve duas etapas: assinatura e verificação. Na assinatura, o remetente aplica uma função hash (como SHA-256) ao documento, gerando um digest de tamanho fixo. Em seguida, esse digest é cifrado com a chave privada do remetente, produzindo a assinatura digital. Na verificação, o destinatário usa a chave pública do remetente (obtida do certificado digital) para decifrar a assinatura, recuperando o digest original. Paralelamente, calcula o hash do documento recebido. Se os dois digests forem idênticos, a assinatura é válida, garantindo autenticidade (veio do remetente), integridade (não foi alterado) e não-repúdio (o remetente não pode negar).",
+    "technicalJustification": "Conforme o padrão PKCS#1 e as definições de Stallings, a assinatura digital RSA consiste em: S = M^d mod n, onde M é o hash da mensagem (com padding PKCS#1 v1.5 ou PSS), d é o expoente privado e n é o módulo RSA. A verificação consiste em: M' = S^e mod n, comparando M' com o hash recalculado, onde e é o expoente público.",
+    "relatedConcepts": ["Assinatura digital", "ICP-Brasil", "Certificado digital A1 e A3", "Hash SHA-256", "Chave pública e privada", "Não-repúdio"],
+    "order": 2
+  },
+  {
+    "id": "ex_b3-criptografia_3",
+    "topicId": "b3-criptografia",
+    "blocoId": "bloco-3",
+    "question": "Sobre funções hash criptográficas e suas propriedades, analise as afirmativas abaixo:\n\nI. A resistência à colisão significa que, dado um hash h, é computacionalmente inviável encontrar uma mensagem m tal que H(m) = h.\nII. O algoritmo MD5 produz um digest de 128 bits e é considerado inseguro para aplicações criptográficas desde que colisões práticas foram demonstradas.\nIII. O SHA-3 foi desenvolvido como uma correção de vulnerabilidades encontradas no SHA-2, utilizando a mesma construção Merkle-Damgård.\nIV. O HMAC combina uma função hash com uma chave secreta, proporcionando autenticidade e integridade da mensagem.\n\nEstão CORRETAS apenas as afirmativas:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I e III.",
+        "isCorrect": false,
+        "explanation": "Incorreta. A afirmativa I descreve resistência à preimagem (não à colisão), e a afirmativa III está errada pois SHA-3 usa Keccak (não Merkle-Damgård) e não é correção do SHA-2."
+      },
+      {
+        "letter": "B",
+        "text": "II e IV.",
+        "isCorrect": true,
+        "explanation": "Correta. MD5 de fato produz digest de 128 bits e é inseguro (colisões demonstradas por Wang et al. em 2004). O HMAC realmente combina hash com chave secreta para garantir autenticidade e integridade."
+      },
+      {
+        "letter": "C",
+        "text": "I, II e IV.",
+        "isCorrect": false,
+        "explanation": "Incorreta. A afirmativa I está errada. Resistência à colisão significa que é inviável encontrar quaisquer duas mensagens m₁ ≠ m₂ com o mesmo hash. O que a afirmativa I descreve é resistência à preimagem."
+      },
+      {
+        "letter": "D",
+        "text": "II, III e IV.",
+        "isCorrect": false,
+        "explanation": "Incorreta. A afirmativa III está errada. SHA-3 é baseado na construção Keccak (sponge construction), diferente da Merkle-Damgård usada pelo SHA-2, e não foi desenvolvido para corrigir falhas do SHA-2, mas sim como alternativa independente."
+      },
+      {
+        "letter": "E",
+        "text": "I, II, III e IV.",
+        "isCorrect": false,
+        "explanation": "Incorreta. As afirmativas I e III estão erradas conforme explicado."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão aborda três conceitos frequentemente confundidos em provas: (1) As três propriedades de funções hash — resistência à preimagem (dado h, encontrar m é inviável), resistência à segunda preimagem (dado m₁, encontrar m₂ com mesmo hash é inviável) e resistência à colisão (encontrar quaisquer m₁ ≠ m₂ com mesmo hash é inviável). A afirmativa I descreve a resistência à preimagem, não à colisão. (2) O status dos algoritmos hash — MD5 está comprovadamente inseguro, mas SHA-256 continua seguro. (3) A relação entre SHA-2 e SHA-3 — o SHA-3 foi desenvolvido como alternativa de reserva, não como correção, e usa uma construção matemática fundamentalmente diferente (sponge construction baseada em Keccak).",
+    "technicalJustification": "Conforme Stallings e a documentação do NIST (FIPS PUB 202), o SHA-3 foi resultado de uma competição pública iniciada em 2007, onde o algoritmo Keccak foi selecionado em 2012. A motivação não foi a descoberta de falhas no SHA-2, mas a necessidade de ter uma alternativa baseada em princípios matemáticos distintos. Enquanto SHA-2 usa a construção Merkle-Damgård (processamento sequencial de blocos com compressão), SHA-3 usa a sponge construction, que absorve dados em blocos e depois os \"espreme\" para produzir o hash.",
+    "relatedConcepts": ["Funções hash", "SHA-256", "SHA-3", "MD5", "HMAC", "Resistência à colisão", "Resistência à preimagem"],
+    "order": 3
+  },
+  {
+    "id": "ex_b3-criptografia_4",
+    "topicId": "b3-criptografia",
+    "blocoId": "bloco-3",
+    "question": "Em relação ao protocolo TLS (Transport Layer Security) e ao conceito de Perfect Forward Secrecy (PFS), assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "No TLS 1.3, o RSA key transport continua sendo o método padrão de troca de chaves, mas foi adicionado suporte opcional a ECDHE para maior segurança.",
+        "isCorrect": false,
+        "explanation": "Incorreta. No TLS 1.3, o RSA key transport foi completamente removido. Apenas ECDHE e DHE são aceitos para troca de chaves, tornando o PFS obrigatório."
+      },
+      {
+        "letter": "B",
+        "text": "O Perfect Forward Secrecy garante que, mesmo que a chave privada do servidor seja comprometida no futuro, as sessões passadas permanecem protegidas, pois chaves efêmeras são usadas e descartadas após cada sessão.",
+        "isCorrect": true,
+        "explanation": "Correta. O PFS utiliza chaves temporárias (efêmeras) geradas para cada sessão via DHE ou ECDHE. Após o término da sessão, essas chaves são descartadas. Assim, comprometer a chave privada de longo prazo do servidor não permite decifrar tráfego capturado anteriormente."
+      },
+      {
+        "letter": "C",
+        "text": "O TLS 1.3 mantém suporte a cifras baseadas em CBC (Cipher Block Chaining) e RC4 para retrocompatibilidade com sistemas legados.",
+        "isCorrect": false,
+        "explanation": "Incorreta. O TLS 1.3 removeu completamente o suporte a CBC, RC4, DES, 3DES, MD5 e SHA-1. Apenas cifras AEAD (Authenticated Encryption with Associated Data) são permitidas: AES-GCM e ChaCha20-Poly1305."
+      },
+      {
+        "letter": "D",
+        "text": "O handshake TLS 1.2 é mais eficiente que o TLS 1.3, pois completa a negociação em apenas 1-RTT (uma ida e volta de rede).",
+        "isCorrect": false,
+        "explanation": "Incorreta. É o contrário. O TLS 1.3 é mais eficiente, com handshake de 1-RTT (e até 0-RTT para reconexões). O TLS 1.2 requer 2-RTT para completar o handshake."
+      },
+      {
+        "letter": "E",
+        "text": "No TLS 1.3, o modo 0-RTT (zero round trip) é perfeitamente seguro e recomendado para todas as conexões, pois combina velocidade com proteção total contra quaisquer ataques.",
+        "isCorrect": false,
+        "explanation": "Incorreta. O modo 0-RTT do TLS 1.3, embora mais rápido, é vulnerável a ataques de replay (repetição). Dados enviados em 0-RTT não têm garantia de proteção contra repetição por um atacante, sendo recomendado apenas para operações idempotentes."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "O Perfect Forward Secrecy (PFS) é um dos conceitos mais importantes em segurança de comunicações modernas. Sem PFS, se um atacante captura todo o tráfego cifrado e posteriormente obtém a chave privada do servidor (por comprometimento, ordem judicial, etc.), ele pode decifrar todas as sessões passadas. Com PFS, isso é impossível porque cada sessão usa chaves efêmeras únicas derivadas de uma troca Diffie-Hellman efêmera (DHE ou ECDHE). Essas chaves são geradas durante o handshake e descartadas ao final da sessão, sem nunca serem armazenadas. No TLS 1.3, o PFS é obrigatório — todas as trocas de chave devem usar ECDHE ou DHE, e o RSA key transport (que não fornece PFS) foi removido.",
+    "technicalJustification": "Conforme a RFC 8446 (TLS 1.3), Section 1.2: 'The basic full TLS handshake uses an ephemeral Diffie-Hellman exchange to establish a shared secret.' E Section 1.3: 'All handshake messages after the ServerHello are now encrypted.' O TLS 1.3 suporta apenas os modos de troca de chaves (EC)DHE, eliminando o static RSA e o static DH, garantindo PFS por design. No TLS 1.2, cipher suites como TLS_RSA_WITH_AES_256_CBC_SHA não forneciam PFS, enquanto TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 sim.",
+    "relatedConcepts": ["TLS 1.2", "TLS 1.3", "Perfect Forward Secrecy", "ECDHE", "DHE", "Cipher suites", "AEAD", "0-RTT"],
+    "order": 4
+  },
+  {
+    "id": "ex_b3-criptografia_5",
+    "topicId": "b3-criptografia",
+    "blocoId": "bloco-3",
+    "question": "A Petrobras utiliza certificados digitais ICP-Brasil para emissão de Notas Fiscais Eletrônicas (NF-e). Considere o seguinte cenário: um atacante intercepta uma NF-e assinada digitalmente durante a transmissão e altera o valor total da nota. Sobre este cenário, analise as afirmativas:\n\nI. A alteração será detectada na verificação da assinatura digital, pois o hash recalculado do documento modificado não corresponderá ao hash original contido na assinatura.\nII. O atacante poderia gerar uma nova assinatura válida para o documento alterado se possuir a chave pública da Petrobras.\nIII. A utilização de TLS na comunicação entre o emissor e a SEFAZ protege contra a interceptação do conteúdo durante o trânsito, mas não substitui a assinatura digital para garantir a autenticidade do documento.\nIV. Se o certificado utilizado for do tipo A3, a chave privada armazenada no token criptográfico nunca é exposta em memória do computador durante o processo de assinatura, pois a operação criptográfica ocorre dentro do próprio hardware.\n\nEstão CORRETAS:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Apenas I e III.",
+        "isCorrect": false,
+        "explanation": "Incorreta. Embora I e III estejam corretas, a afirmativa IV também está correta, pois no certificado A3 a assinatura é realizada dentro do hardware criptográfico."
+      },
+      {
+        "letter": "B",
+        "text": "Apenas I, II e III.",
+        "isCorrect": false,
+        "explanation": "Incorreta. A afirmativa II está errada. Com a chave pública não é possível gerar assinaturas — apenas verificá-las. Para assinar, é necessária a chave privada."
+      },
+      {
+        "letter": "C",
+        "text": "Apenas I, III e IV.",
+        "isCorrect": true,
+        "explanation": "Correta. (I) A alteração é detectada porque o hash muda. (III) TLS protege o canal, mas a assinatura digital é necessária para a autenticidade do documento em si. (IV) No token A3, a chave privada não sai do dispositivo — a operação de assinatura é executada pelo processador criptográfico interno do token."
+      },
+      {
+        "letter": "D",
+        "text": "Apenas II e IV.",
+        "isCorrect": false,
+        "explanation": "Incorreta. A afirmativa II está errada (chave pública não assina, apenas verifica), e faltam I e III que estão corretas."
+      },
+      {
+        "letter": "E",
+        "text": "I, II, III e IV.",
+        "isCorrect": false,
+        "explanation": "Incorreta. A afirmativa II está errada. A chave pública serve apenas para verificar assinaturas, não para gerá-las. Gerar uma assinatura válida requer a chave privada correspondente, que está protegida no token A3 da Petrobras."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão integra múltiplos conceitos de criptografia aplicados ao cenário real de emissão de NF-e pela Petrobras. A assinatura digital protege a integridade do documento: qualquer alteração, mesmo de um único bit, resulta em um hash completamente diferente (efeito avalanche), tornando a assinatura inválida. O TLS protege os dados em trânsito (confidencialidade e integridade do canal), mas é a assinatura digital que vincula a identidade do emissor ao conteúdo do documento. No certificado A3, o token criptográfico (como um smart card ou token USB) possui um processador dedicado que realiza as operações criptográficas internamente — a chave privada é gerada dentro do dispositivo e nunca o deixa, oferecendo proteção mesmo se o computador estiver comprometido por malware.",
+    "technicalJustification": "O padrão X.509 e os requisitos da ICP-Brasil (DOC-ICP-04) especificam que certificados A3 devem utilizar dispositivos criptográficos certificados (FIPS 140-2 Level 2 ou superior), onde a chave privada é gerada e armazenada no hardware seguro. O processo de assinatura envia o hash ao dispositivo, que realiza a operação RSA/ECDSA internamente e retorna apenas a assinatura resultante. A chave pública, por definição matemática (RSA: e é o expoente público, d é o privado), não permite calcular d a partir de e sem fatorar n, tornando impossível forjar assinaturas com apenas a chave pública.",
+    "relatedConcepts": ["NF-e", "ICP-Brasil", "Certificado A3", "Token criptográfico", "Assinatura digital", "TLS", "Integridade", "Efeito avalanche"],
+    "order": 5
+  }
+]

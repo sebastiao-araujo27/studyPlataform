@@ -1,0 +1,243 @@
+[
+  {
+    "id": "ex_b1-kanban_1",
+    "topicId": "b1-kanban",
+    "blocoId": "bloco-1",
+    "question": "No contexto da gestão de processos de negócio e desenvolvimento de software, o método Kanban, conforme proposto por David Anderson, baseia-se em princípios fundamentais de gestão de mudança e entrega de serviços. Ao implementar o Kanban em uma unidade de processamento de dados da Petrobras que já possui processos estabelecidos, um analista deve seguir o princípio de gestão de mudança que orienta a organização a:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Interromper imediatamente os processos atuais para instaurar uma nova estrutura de papéis e responsabilidades baseada estritamente no fluxo contínuo.",
+        "isCorrect": false,
+        "explanation": "O Kanban preza pela mudança evolucionária, não revolucionária; ele não recomenda a interrupção abrupta dos processos vigentes."
+      },
+      {
+        "letter": "B",
+        "text": "Começar com o que você faz agora, respeitando os processos, papéis, responsabilidades e títulos atuais.",
+        "isCorrect": true,
+        "explanation": "Este é um dos princípios fundamentais do Kanban: iniciar com o processo atual para reduzir a resistência e permitir mudanças evolucionárias."
+      },
+      {
+        "letter": "C",
+        "text": "Definir limites de WIP (Work in Progress) globais antes de visualizar o fluxo de trabalho para garantir a conformidade imediata.",
+        "isCorrect": false,
+        "explanation": "A visualização do fluxo de trabalho geralmente precede ou ocorre simultaneamente à definição de limites de WIP, e os limites devem ser específicos por etapa, não globais e arbitrários."
+      },
+      {
+        "letter": "D",
+        "text": "Substituir a liderança atual por agentes de mudança externos que não possuam vícios nos processos de negócio da companhia.",
+        "isCorrect": false,
+        "explanation": "O Kanban incentiva atos de liderança em todos os níveis, em vez de substituição de pessoal ou imposição externa de liderança."
+      },
+      {
+        "letter": "E",
+        "text": "Eliminar todas as métricas de produtividade individual em favor de métricas exclusivas de satisfação do cliente externo.",
+        "isCorrect": false,
+        "explanation": "Embora o foco seja no fluxo e no valor, o Kanban não exige a eliminação sumária de métricas, mas sim a gestão do fluxo através de métricas como Lead Time e Throughput."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda os princípios fundamentais de gestão de mudança do método Kanban, conforme estabelecido por David J. Anderson. O Kanban é frequentemente descrito como um método 'evolucionário', e não 'revolucionário'. O primeiro princípio de gestão de mudança é 'Começar com o que você faz agora' (Start with what you do now). Isso significa que o Kanban não exige uma reorganização estrutural imediata, ao contrário de outros frameworks como o Scrum, que define papéis específicos (Product Owner, Scrum Master). No Kanban, respeitam-se os processos, papéis e títulos existentes para minimizar a resistência cultural inicial. A partir dessa base, a equipe busca melhorias incrementais e colaborativas. As demais alternativas apresentam abordagens disruptivas ou tecnicamente incorretas sobre a implementação inicial. A alternativa A sugere uma ruptura total, o que fere a natureza evolucionária. A C inverte a ordem lógica de visualização e limitação. A D ignora o incentivo à liderança interna, e a E foca em um aspecto de métricas que não é o cerne do princípio de mudança.",
+    "technicalJustification": "Conforme David Anderson em 'Kanban: Successful Evolutionary Change for Your Technology Business', os princípios de gestão de mudanças são: 1. Começar com o que você faz agora; 2. Concordar em buscar melhoria incremental e evolucionária; 3. Incentivar atos de liderança em todos os níveis.",
+    "relatedConcepts": [
+      "Mudança Evolucionária",
+      "Princípios do Kanban",
+      "Gestão de Mudanças"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b1-kanban_2",
+    "topicId": "b1-kanban",
+    "blocoId": "bloco-1",
+    "question": "Uma equipe de analistas de sistemas da Petrobras observou que, apesar de trabalharem intensamente, o tempo de entrega das solicitações de manutenção de software tem aumentado progressivamente. Ao analisarem o quadro Kanban, notaram que há um acúmulo excessivo de tarefas na coluna 'Em Teste'. Para otimizar o fluxo contínuo e reduzir o tempo de entrega, a ação mais adequada, de acordo com as práticas do Kanban, é:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Aumentar o limite de WIP da coluna 'Desenvolvimento' para garantir que os desenvolvedores nunca fiquem ociosos.",
+        "isCorrect": false,
+        "explanation": "Aumentar o WIP em etapas anteriores ao gargalo apenas piora o congestionamento e aumenta o tempo de ciclo."
+      },
+      {
+        "letter": "B",
+        "text": "Remover os limites de WIP da coluna 'Em Teste' para permitir que todas as tarefas concluídas no desenvolvimento entrem imediatamente em teste.",
+        "isCorrect": false,
+        "explanation": "Remover limites de WIP mascara gargalos e impede a gestão eficaz do fluxo, transformando o sistema em um modelo 'push' (empurrado)."
+      },
+      {
+        "letter": "C",
+        "text": "Estabelecer ou reduzir o limite de WIP na etapa de 'Em Teste' e redirecionar a capacidade excedente para resolver o gargalo nesta etapa.",
+        "isCorrect": true,
+        "explanation": "Limitar o trabalho em progresso força a equipe a focar na conclusão das tarefas (Stop starting, start finishing) e a lidar com o gargalo."
+      },
+      {
+        "letter": "D",
+        "text": "Ignorar o acúmulo em 'Em Teste' e focar na métrica de Throughput individual dos analistas de requisitos.",
+        "isCorrect": false,
+        "explanation": "O Kanban foca na otimização do sistema como um todo (fluxo de valor), não na produtividade isolada de partes do processo."
+      },
+      {
+        "letter": "E",
+        "text": "Implementar um sistema de empurrar (push system) para garantir que a fila de testes esteja sempre cheia.",
+        "isCorrect": false,
+        "explanation": "O Kanban é um sistema 'pull' (puxado); sistemas 'push' são a causa raiz de acúmulos de estoque e aumento do Lead Time."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão explora a aplicação prática dos limites de WIP (Work in Progress) e a gestão de gargalos em um fluxo contínuo. No Kanban, o objetivo é criar um sistema 'pull' (puxado), onde o trabalho só entra em uma etapa se houver capacidade disponível. Quando uma coluna como 'Em Teste' apresenta acúmulo, ela se torna um gargalo. Aumentar o trabalho nas etapas anteriores (como sugere a A) apenas aumentará o estoque parado e o Lead Time, conforme a Lei de Little. A solução correta (C) envolve respeitar ou ajustar os limites de WIP para que a equipe pare de iniciar novas tarefas e concentre esforços em finalizar o que já está em andamento. Isso melhora a fluidez do sistema. A alternativa B é incorreta pois a ausência de limites descaracteriza o Kanban. A D erra ao focar em métricas locais, e a E propõe o sistema 'push', que é o oposto do que o Kanban defende para eficiência de fluxo.",
+    "technicalJustification": "A prática 'Limitar o WIP' é essencial para transformar um sistema 'push' em um sistema 'pull'. Segundo a Lei de Little, em um sistema estável, o Lead Time médio é igual ao WIP médio dividido pelo Throughput médio. Portanto, controlar o WIP é a forma mais direta de controlar o tempo de entrega.",
+    "relatedConcepts": [
+      "WIP Limits",
+      "Gargalos",
+      "Sistema Pull",
+      "Lei de Little"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b1-kanban_3",
+    "topicId": "b1-kanban",
+    "blocoId": "bloco-1",
+    "question": "Considere o fluxo de trabalho de uma equipe de suporte a sistemas de exploração de petróleo. Uma nova demanda foi registrada no sistema em 01/10 (Data de Solicitação). A equipe analisou e aprovou a demanda, movendo-a para a coluna 'Selecionada' (Backlog Ativo) em 05/10. O trabalho técnico efetivo começou em 07/10. Após o desenvolvimento e testes, a funcionalidade foi entregue ao usuário final em 20/10. Com base nas métricas padrão do Kanban, o Lead Time e o Cycle Time desse item foram, respectivamente:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "19 dias e 13 dias.",
+        "isCorrect": true,
+        "explanation": "Lead Time: de 01/10 a 20/10 (19 dias). Cycle Time: de 07/10 a 20/10 (13 dias)."
+      },
+      {
+        "letter": "B",
+        "text": "15 dias e 13 dias.",
+        "isCorrect": false,
+        "explanation": "O cálculo de 15 dias para Lead Time consideraria erroneamente apenas a partir da seleção (05/10), ignorando o tempo de espera no backlog desde a solicitação."
+      },
+      {
+        "letter": "C",
+        "text": "19 dias e 15 dias.",
+        "isCorrect": false,
+        "explanation": "O Cycle Time de 15 dias estaria contando a partir de 05/10, mas o trabalho técnico só começou em 07/10."
+      },
+      {
+        "letter": "D",
+        "text": "20 dias e 14 dias.",
+        "isCorrect": false,
+        "explanation": "Erros comuns de contagem inclusiva/exclusiva de datas, mas os intervalos padrão são 19 e 13."
+      },
+      {
+        "letter": "E",
+        "text": "13 dias e 6 dias.",
+        "isCorrect": false,
+        "explanation": "Valores que não correspondem aos marcos de tempo definidos no enunciado para Lead Time e Cycle Time."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão exige a distinção clara entre duas métricas fundamentais do Kanban: Lead Time e Cycle Time. O Lead Time é o tempo total decorrido desde o momento em que um pedido é feito pelo cliente (ou registrado no sistema) até que ele seja entregue. No cenário, de 01/10 a 20/10, totalizando 19 dias. O Cycle Time, por outro lado, mede o tempo em que a equipe está trabalhando ativamente no item, ou seja, desde o momento em que o trabalho começa ('puxado' para execução) até sua conclusão. No cenário, o trabalho começou em 07/10 e terminou em 20/10, totalizando 13 dias. É importante notar que, em algumas literaturas, o Lead Time pode ser chamado de 'Customer Lead Time' e o Cycle Time de 'System Lead Time', mas a Cesgranrio costuma adotar a distinção onde o Lead Time é a visão do cliente (ponta a ponta) e o Cycle Time é a visão do processo interno. A precisão no cálculo dos intervalos é crucial para acertar a questão.",
+    "technicalJustification": "Conforme definições do Kanban University e Anderson, Lead Time é o tempo entre a criação da tarefa e sua conclusão. Cycle Time é o tempo entre o início do trabalho efetivo e sua conclusão.",
+    "relatedConcepts": [
+      "Lead Time",
+      "Cycle Time",
+      "Métricas de Fluxo"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b1-kanban_4",
+    "topicId": "b1-kanban",
+    "blocoId": "bloco-1",
+    "question": "Em uma reunião de revisão de métricas, um gestor de TI da Petrobras analisa o Cumulative Flow Diagram (CFD) de um projeto de integração de dados. Ele observa que a distância vertical entre a linha de 'Trabalho Iniciado' e a linha de 'Trabalho Concluído' está aumentando significativamente ao longo das últimas semanas, enquanto a inclinação da linha de conclusão permanece constante. Esta observação indica, matematicamente, que:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "O Throughput do sistema está aumentando, o que é um indicador positivo de produtividade da equipe.",
+        "isCorrect": false,
+        "explanation": "Se a inclinação da linha de conclusão (Throughput) é constante, ele não está aumentando."
+      },
+      {
+        "letter": "B",
+        "text": "O WIP (Work in Progress) está crescendo e, consequentemente, o Lead Time médio está aumentando.",
+        "isCorrect": true,
+        "explanation": "No CFD, a distância vertical representa o WIP. Se ela aumenta com throughput constante, o Lead Time (distância horizontal) obrigatoriamente aumenta pela Lei de Little."
+      },
+      {
+        "letter": "C",
+        "text": "O Cycle Time está diminuindo, pois a equipe está conseguindo iniciar mais tarefas simultaneamente.",
+        "isCorrect": false,
+        "explanation": "Iniciar mais tarefas simultaneamente aumenta o WIP, o que geralmente aumenta (piora) o Cycle Time, não o diminui."
+      },
+      {
+        "letter": "D",
+        "text": "O sistema atingiu um estado de fluxo perfeito (steady state), onde a entrada de trabalho é igual à saída.",
+        "isCorrect": false,
+        "explanation": "Em um estado de fluxo perfeito, as linhas seriam paralelas e a distância vertical (WIP) seria constante, não crescente."
+      },
+      {
+        "letter": "E",
+        "text": "A eficiência do fluxo está em 100%, pois não há tempo de espera entre as etapas de desenvolvimento.",
+        "isCorrect": false,
+        "explanation": "O aumento da distância vertical sugere justamente o acúmulo de trabalho e prováveis esperas, indicando baixa eficiência de fluxo."
+      }
+    ],
+    "difficulty": "medio-dificil",
+    "source": "autoral",
+    "detailedExplanation": "A questão integra o conhecimento visual do Cumulative Flow Diagram (CFD) com a fundamentação matemática da Lei de Little. No CFD, o eixo Y representa a quantidade acumulada de itens e o eixo X o tempo. A distância vertical entre duas áreas (ex: 'Fazendo' e 'Feito') representa o Work in Progress (WIP) naquele momento. A distância horizontal entre essas mesmas linhas representa o Lead Time aproximado. Se a distância vertical está aumentando, significa que estamos 'injetando' mais trabalho no sistema do que estamos conseguindo finalizar. Como a inclinação da linha de saída (que representa o Throughput) é constante, a taxa de entrega não mudou. Pela Lei de Little (Lead Time = WIP / Throughput), se o WIP (numerador) aumenta e o Throughput (denominador) permanece constante, o Lead Time (resultado) necessariamente aumenta. Este é um cenário clássico de instabilidade de fluxo que o Kanban visa identificar e corrigir.",
+    "technicalJustification": "O Cumulative Flow Diagram (CFD) é uma ferramenta essencial no Kanban para visualizar as três métricas da Lei de Little. A distância vertical é o WIP, a inclinação da linha de saída é o Throughput e a distância horizontal é o Lead Time.",
+    "relatedConcepts": [
+      "Cumulative Flow Diagram (CFD)",
+      "Lei de Little",
+      "Estabilidade de Fluxo"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b1-kanban_5",
+    "topicId": "b1-kanban",
+    "blocoId": "bloco-1",
+    "question": "A implementação do método Kanban em grandes organizações como a Petrobras exige a compreensão de que o Kanban não é apenas um quadro visual, mas um sistema de gestão de fluxo. De acordo com a literatura de David Anderson, ao buscar a 'Gestão do Fluxo' (Manage Flow), a organização deve focar em:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Maximizar a utilização de cada recurso individual para garantir que nenhum analista ou engenheiro esteja ocioso em nenhum momento do dia.",
+        "isCorrect": false,
+        "explanation": "O Kanban foca na fluidez do trabalho (flow of value), não na ocupação total dos recursos; alta utilização de recursos costuma gerar filas e lentidão."
+      },
+      {
+        "letter": "B",
+        "text": "Monitorar a velocidade da equipe em termos de Story Points por Sprint para garantir a previsibilidade das entregas trimestrais.",
+        "isCorrect": false,
+        "explanation": "Story Points e Sprints são conceitos do Scrum/Agile genérico; o Kanban foca em métricas de tempo (Lead Time) e vazão (Throughput) de itens reais."
+      },
+      {
+        "letter": "C",
+        "text": "Identificar e gerenciar as causas de atraso e bloqueios, observando como o trabalho flui através do sistema em vez de gerenciar as pessoas.",
+        "isCorrect": true,
+        "explanation": "Gerenciar o fluxo significa focar no movimento do trabalho pelo sistema, identificando impedimentos e otimizando a passagem do valor."
+      },
+      {
+        "letter": "D",
+        "text": "Implementar uma cadência rígida de reuniões de planejamento (Planning) e retrospectivas semanais para forçar a adaptação do fluxo.",
+        "isCorrect": false,
+        "explanation": "Embora o Kanban possua cadências (como a Kanban Meeting), elas não são 'forçadas' ou 'rígidas' da mesma forma que em outros frameworks, e o foco é no fluxo, não na cerimônia em si."
+      },
+      {
+        "letter": "E",
+        "text": "Priorizar tarefas com base exclusivamente no custo de atraso (Cost of Delay), ignorando a capacidade atual do sistema (WIP).",
+        "isCorrect": false,
+        "explanation": "O Cost of Delay é uma técnica de priorização útil, mas o Kanban exige que se respeite a capacidade (WIP) acima de tudo para manter o fluxo saudável."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão de nível difícil testa a compreensão profunda da filosofia 'Manage Flow' (Gerenciar o Fluxo), que é uma das seis práticas essenciais do Kanban. Existe uma armadilha comum em gestão (especialmente em grandes empresas tradicionais) de tentar maximizar a utilização de recursos (Alternativa A). No entanto, o Kanban ensina que sistemas com 100% de ocupação de recursos têm Lead Times infinitos (Teoria das Filas). O foco deve estar no trabalho ('Watch the baton, not the runner' - observe a batuta, não o corredor). Gerenciar o fluxo (Alternativa C) significa observar como as demandas atravessam as etapas, onde elas param (bloqueios) e por que demoram (atrasos). Isso requer uma mudança de mentalidade: de gerenciar pessoas para gerenciar o trabalho. As alternativas B e D tentam confundir o candidato com conceitos de Scrum. A alternativa E, embora mencione 'Cost of Delay' (um conceito avançado e compatível com Kanban), está incorreta ao dizer que se deve ignorar o WIP, que é a base do sistema puxado.",
+    "technicalJustification": "David Anderson define 'Manage Flow' como a prática de monitorar a fluidez do trabalho, identificando gargalos e desperdícios (muda), e agindo sobre o sistema para melhorar a entrega de valor de forma sustentável e previsível.",
+    "relatedConcepts": [
+      "Gerenciar o Fluxo",
+      "Teoria das Filas",
+      "Eficiência de Fluxo vs. Eficiência de Recurso"
+    ],
+    "order": 5
+  }
+]

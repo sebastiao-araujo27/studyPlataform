@@ -1,0 +1,257 @@
+[
+  {
+    "id": "ex_b3-mitre_1",
+    "topicId": "b3-mitre",
+    "blocoId": "bloco-3",
+    "question": "O framework MITRE ATT&CK organiza o conhecimento sobre comportamento adversário em uma estrutura hierárquica de Táticas, Técnicas e Procedimentos (TTPs). Sobre essa estrutura, é correto afirmar que",
+    "options": [
+      {
+        "letter": "A",
+        "text": "as táticas representam os métodos técnicos específicos utilizados pelos adversários para executar ações maliciosas em um sistema comprometido.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Os métodos técnicos específicos correspondem às TÉCNICAS, não às táticas. Táticas representam os OBJETIVOS de alto nível do adversário (o \"porquê\")."
+      },
+      {
+        "letter": "B",
+        "text": "os procedimentos descrevem implementações específicas de técnicas realizadas por grupos ou malware reais, documentando como adversários concretos executam determinada técnica.",
+        "isCorrect": true,
+        "explanation": "Correto. Procedimentos são implementações concretas e documentadas de técnicas. Exemplo: o grupo APT33 usa spearphishing com documentos Word contendo macros VBA para Initial Access (T1566.001)."
+      },
+      {
+        "letter": "C",
+        "text": "as técnicas são organizadas em 7 colunas na matriz Enterprise, cada uma representando uma fase sequencial do ataque cibernético.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A matriz Enterprise possui 14 táticas (não 7), e as táticas NÃO são necessariamente sequenciais. O modelo de 7 fases sequenciais corresponde à Cyber Kill Chain da Lockheed Martin."
+      },
+      {
+        "letter": "D",
+        "text": "as sub-técnicas são sinônimos de procedimentos, representando variações mais específicas das táticas adversárias.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Sub-técnicas são variações mais específicas de TÉCNICAS (não de táticas), e NÃO são sinônimos de procedimentos. Sub-técnicas descrevem métodos mais específicos (ex: T1566.001 — Spearphishing Attachment), enquanto procedimentos descrevem como grupos reais implementaram uma técnica."
+      },
+      {
+        "letter": "E",
+        "text": "as táticas do MITRE ATT&CK devem obrigatoriamente ocorrer em sequência fixa durante um ataque, da primeira (Reconnaissance) até a última (Impact).",
+        "isCorrect": false,
+        "explanation": "Incorreto. No MITRE ATT&CK, as táticas NÃO precisam ocorrer em sequência fixa. Um adversário pode pular táticas, repeti-las ou executá-las simultaneamente. O modelo sequencial é a Kill Chain."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "No MITRE ATT&CK, a hierarquia TTP é: Táticas (objetivos do adversário — o \"porquê\"), Técnicas (métodos usados — o \"como\"), Sub-técnicas (variações específicas de técnicas) e Procedimentos (implementações concretas por grupos ou software reais — o \"quem fez o quê\"). A matriz Enterprise possui 14 táticas que NÃO são sequenciais. A alternativa B está correta ao descrever procedimentos como implementações específicas de técnicas realizadas por grupos ou malware reais.",
+    "technicalJustification": "Conforme a documentação oficial do MITRE ATT&CK (attack.mitre.org/docs/ATTACK_Design_and_Philosophy_March_2020.pdf), procedimentos descrevem 'the specific implementation the adversary uses for a technique or sub-technique', ou seja, como adversários reais documentados executaram uma técnica. Isso diferencia procedimentos de técnicas (métodos genéricos) e sub-técnicas (variações mais específicas de técnicas).",
+    "relatedConcepts": [
+      "MITRE ATT&CK",
+      "TTPs",
+      "Matriz Enterprise",
+      "Técnicas e Sub-técnicas",
+      "Grupos e Software no ATT&CK"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b3-mitre_2",
+    "topicId": "b3-mitre",
+    "blocoId": "bloco-3",
+    "question": "A Cyber Kill Chain, desenvolvida pela Lockheed Martin, é um modelo amplamente utilizado para descrever as fases de um ataque cibernético. Sobre esse modelo e sua relação com o MITRE ATT&CK, analise as afirmativas:\n\nI. A Kill Chain é composta por 7 fases sequenciais: Reconnaissance, Weaponization, Delivery, Exploitation, Installation, Command and Control e Actions on Objectives.\nII. A fase de Weaponization corresponde à criação do artefato malicioso, enquanto Delivery corresponde à entrega desse artefato ao alvo.\nIII. O MITRE ATT&CK e a Kill Chain são frameworks idênticos que podem ser usados de forma intercambiável para os mesmos propósitos.\n\nEstão corretas as afirmativas:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I e II, apenas.",
+        "isCorrect": true,
+        "explanation": "Correto. A afirmativa I descreve corretamente as 7 fases da Kill Chain na ordem certa. A afirmativa II distingue corretamente Weaponization (criação) de Delivery (entrega). A afirmativa III está incorreta porque ATT&CK e Kill Chain são frameworks distintos e complementares, não idênticos."
+      },
+      {
+        "letter": "B",
+        "text": "I e III, apenas.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A afirmativa III é falsa: ATT&CK e Kill Chain são frameworks DISTINTOS e COMPLEMENTARES. A Kill Chain é linear com 7 fases macro; o ATT&CK é matricial com 14 táticas e centenas de técnicas."
+      },
+      {
+        "letter": "C",
+        "text": "II e III, apenas.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A afirmativa III é falsa (frameworks distintos, não idênticos), e a afirmativa I está correta (7 fases na ordem certa)."
+      },
+      {
+        "letter": "D",
+        "text": "I, II e III.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A afirmativa III é falsa: os frameworks são complementares, não idênticos. A Kill Chain é macro/linear; o ATT&CK é detalhado/matricial."
+      },
+      {
+        "letter": "E",
+        "text": "III, apenas.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A afirmativa III é a única falsa. As afirmativas I e II estão corretas."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A Cyber Kill Chain da Lockheed Martin (2011) possui 7 fases sequenciais: Reconnaissance → Weaponization → Delivery → Exploitation → Installation → Command and Control → Actions on Objectives. A distinção entre Weaponization (criação do payload — ex: embalar exploit + backdoor em um documento) e Delivery (envio do artefato ao alvo — ex: email de phishing, USB) é fundamental e frequentemente cobrada. O ATT&CK e a Kill Chain são complementares: a Kill Chain fornece visão macro do ciclo de ataque, enquanto o ATT&CK detalha o comportamento adversário com granularidade de técnicas e sub-técnicas.",
+    "technicalJustification": "A Kill Chain foi publicada por Hutchins, Cloppert e Amin (Lockheed Martin, 2011) no paper 'Intelligence-Driven Computer Network Defense'. O MITRE ATT&CK (2013/2015) complementa a Kill Chain com granularidade técnica superior, especialmente nas fases pós-comprometimento. São frameworks com propósitos e níveis de detalhe diferentes.",
+    "relatedConcepts": [
+      "Cyber Kill Chain",
+      "Lockheed Martin",
+      "MITRE ATT&CK",
+      "Weaponization vs Delivery",
+      "Frameworks de modelagem de ameaças"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b3-mitre_3",
+    "topicId": "b3-mitre",
+    "blocoId": "bloco-3",
+    "question": "No contexto de Threat Intelligence (Inteligência de Ameaças Cibernéticas), existem diferentes tipos de inteligência classificados conforme seu público-alvo e nível de detalhe. Considere o seguinte cenário: o CISO da Petrobras solicita um relatório sobre as tendências de ataques cibernéticos ao setor de óleo e gás nos últimos 12 meses, incluindo motivações dos adversários e riscos geopolíticos que podem afetar Petrobras. Esse relatório corresponde a qual tipo de inteligência de ameaças?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Inteligência técnica, pois fornece indicadores de comprometimento (IoCs) específicos como hashes de malware e endereços IP maliciosos.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Inteligência técnica trata de IoCs específicos (hashes, IPs, domínios). O cenário descreve tendências e riscos geopolíticos, que são inteligência ESTRATÉGICA."
+      },
+      {
+        "letter": "B",
+        "text": "Inteligência operacional, pois detalha campanhas específicas em andamento contra Petrobras, incluindo infraestrutura de comando e controle utilizada.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Inteligência operacional trata de campanhas específicas em andamento (detalhes de uma campanha de phishing ativa, por exemplo). O cenário descreve tendências gerais e motivações, não campanhas específicas."
+      },
+      {
+        "letter": "C",
+        "text": "Inteligência estratégica, pois trata de tendências de ameaças, motivações de adversários e riscos geopolíticos, sendo destinada a tomadores de decisão de alto nível.",
+        "isCorrect": true,
+        "explanation": "Correto. Inteligência estratégica é destinada à alta direção (C-Level, CISO), trata de tendências macro, motivações de adversários e riscos geopolíticos, apresentada em formato de relatórios e briefings de alto nível."
+      },
+      {
+        "letter": "D",
+        "text": "Inteligência tática, pois descreve as TTPs (Táticas, Técnicas e Procedimentos) dos grupos adversários que atacam o setor de energia.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Embora o cenário mencione o setor de energia, o foco é em tendências e riscos geopolíticos (estratégico), não em TTPs detalhadas (tático). Inteligência tática é destinada a gerentes de segurança e detalha TTPs específicas."
+      },
+      {
+        "letter": "E",
+        "text": "Inteligência de fontes abertas (OSINT), pois as informações sobre tendências do setor estão disponíveis publicamente na internet.",
+        "isCorrect": false,
+        "explanation": "Incorreto. OSINT (Open Source Intelligence) é uma FONTE de inteligência, não um TIPO/NÍVEL. A inteligência estratégica pode usar OSINT como fonte, mas o tipo é definido pelo conteúdo e público-alvo, não pela fonte."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "Os 4 tipos de Threat Intelligence são: (1) Estratégica — tendências, motivações, riscos geopolíticos, para C-Level/diretoria; (2) Tática — TTPs de grupos adversários, para gerentes de segurança; (3) Operacional — detalhes de campanhas específicas, para analistas seniores de SOC/CSIRT; (4) Técnica — IoCs específicos (hashes, IPs, domínios), para analistas de SOC. O cenário descreve claramente inteligência estratégica: relatório de tendências setoriais, motivações e riscos geopolíticos para o CISO. É importante não confundir OSINT (que é uma FONTE) com os tipos de inteligência (que são classificados por conteúdo/público).",
+    "technicalJustification": "Conforme taxonomia de Threat Intelligence amplamente adotada (SANS, CERT/CC, ENISA), a inteligência estratégica é definida como informação de alto nível sobre tendências de ameaças, motivações de adversários, e riscos emergentes, destinada a apoiar decisões de gestão e investimento em segurança. O público-alvo são executivos e tomadores de decisão (C-Suite, Board of Directors, CISO).",
+    "relatedConcepts": [
+      "Threat Intelligence",
+      "Inteligência Estratégica",
+      "Inteligência Tática",
+      "Inteligência Operacional",
+      "Inteligência Técnica",
+      "OSINT"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b3-mitre_4",
+    "topicId": "b3-mitre",
+    "blocoId": "bloco-3",
+    "question": "Uma equipe de segurança da Petrobras está implementando um programa de Threat Hunting utilizando o MITRE ATT&CK como referência. O analista formula a seguinte hipótese: \"Adversários podem estar utilizando DNS tunneling (T1048.003) para exfiltrar dados de nossos servidores comprometidos\". Sobre Threat Hunting e o uso do MITRE ATT&CK nesse contexto, é INCORRETO afirmar que",
+    "options": [
+      {
+        "letter": "A",
+        "text": "o Threat Hunting é uma atividade proativa e iterativa que busca identificar ameaças que escaparam das defesas automatizadas como SIEM e EDR.",
+        "isCorrect": false,
+        "explanation": "Afirmativa CORRETA. Threat Hunting é de fato proativo (o analista busca ativamente), iterativo (ciclo contínuo de hipótese → investigação → refinamento) e busca ameaças que passaram despercebidas pelas ferramentas automatizadas."
+      },
+      {
+        "letter": "B",
+        "text": "a abordagem baseada em TTPs, utilizando o MITRE ATT&CK como referência, é considerada a mais matura dentre as abordagens de Threat Hunting.",
+        "isCorrect": false,
+        "explanation": "Afirmativa CORRETA. Hunting baseado em TTPs (usando ATT&CK) é a abordagem mais matura, pois foca em comportamentos difíceis de mudar pelo adversário (topo da Pyramid of Pain), superando abordagens baseadas em IoCs ou anomalias."
+      },
+      {
+        "letter": "C",
+        "text": "o MITRE ATT&CK permite identificar as fontes de dados (Data Sources) necessárias para detectar a técnica T1048.003, como Network Traffic Flow e Network Traffic Content.",
+        "isCorrect": false,
+        "explanation": "Afirmativa CORRETA. Cada técnica no ATT&CK inclui Data Sources que indicam quais tipos de telemetria são necessários para detecção. Para T1048.003 (Exfiltration Over Unencrypted Non-C2 Protocol), as fontes incluem Network Traffic Flow e Network Traffic Content."
+      },
+      {
+        "letter": "D",
+        "text": "o Threat Hunting substitui completamente a necessidade de ferramentas automatizadas de detecção como SIEM e EDR, sendo suficiente como única camada de defesa.",
+        "isCorrect": true,
+        "explanation": "Afirmativa INCORRETA (gabarito). Threat Hunting NÃO substitui ferramentas automatizadas — é COMPLEMENTAR a elas. O SIEM, EDR e outras ferramentas são necessários tanto para detecção contínua automatizada quanto como fontes de dados para as atividades de hunting."
+      },
+      {
+        "letter": "E",
+        "text": "na Pyramid of Pain, as TTPs estão no topo da pirâmide, representando os indicadores mais difíceis para o adversário alterar, o que torna a detecção baseada em TTPs mais resiliente.",
+        "isCorrect": false,
+        "explanation": "Afirmativa CORRETA. Na Pyramid of Pain de David Bianco, TTPs (Tactics, Techniques and Procedures) estão no topo, indicando que são extremamente difíceis para o adversário mudar, tornando detecções baseadas em TTPs mais duradouras e eficazes."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Threat Hunting é uma atividade PROATIVA de busca por ameaças que NÃO substitui, mas COMPLEMENTA as ferramentas automatizadas de detecção (SIEM, EDR, IDS/IPS). As ferramentas automatizadas fornecem detecção contínua 24x7 e geram a telemetria/dados que os threat hunters utilizam em suas investigações. Sem SIEM/EDR, o hunter não teria dados para analisar. A abordagem mais matura de hunting é baseada em TTPs (usando MITRE ATT&CK), pois foca no topo da Pyramid of Pain — comportamentos difíceis de alterar pelo adversário.",
+    "technicalJustification": "Conforme o SANS Institute (Whitepaper 'A Practical Model for Conducting Cyber Threat Hunting'), Threat Hunting é definido como 'the proactive and iterative search through environments to detect and isolate advanced threats that evade existing automated security solutions'. A palavra 'evade existing automated security solutions' indica claramente que o hunting opera SOBRE as ferramentas existentes, não as substitui.",
+    "relatedConcepts": [
+      "Threat Hunting",
+      "MITRE ATT&CK",
+      "Pyramid of Pain",
+      "TTPs",
+      "SIEM",
+      "EDR",
+      "Data Sources"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b3-mitre_5",
+    "topicId": "b3-mitre",
+    "blocoId": "bloco-3",
+    "question": "Considere o seguinte cenário de ataque mapeado utilizando o MITRE ATT&CK:\n\n1. O adversário enviou emails com documentos Word contendo macros maliciosas para funcionários da empresa (T1566.001).\n2. Após a vítima abrir o documento, o código executou PowerShell para baixar um payload adicional (T1059.001).\n3. O adversário criou uma tarefa agendada para manter acesso persistente ao sistema (T1053.005).\n4. Utilizou Mimikatz para extrair credenciais da memória LSASS (T1003.001).\n5. Moveu-se lateralmente usando credenciais roubadas via SMB (T1021.002).\n6. Coletou dados sensíveis e os exfiltrou via HTTPS para um servidor C2 (T1041).\n\nSobre o mapeamento correto das técnicas às táticas do MITRE ATT&CK Enterprise nesse cenário, é correto afirmar que",
+    "options": [
+      {
+        "letter": "A",
+        "text": "T1566.001 (Spearphishing Attachment) corresponde à tática Execution, pois o código malicioso da macro é executado no sistema da vítima.",
+        "isCorrect": false,
+        "explanation": "Incorreto. T1566.001 (Spearphishing Attachment) corresponde à tática INITIAL ACCESS, não Execution. O phishing é o vetor de entrada, não a execução do código. A execução (Execution) ocorre no passo seguinte com PowerShell (T1059.001)."
+      },
+      {
+        "letter": "B",
+        "text": "T1053.005 (Scheduled Task) corresponde à tática Persistence, pois a tarefa agendada garante que o acesso ao sistema seja mantido mesmo após reinicializações.",
+        "isCorrect": true,
+        "explanation": "Correto. T1053.005 (Scheduled Task/Job: Scheduled Task) é classificada sob a tática PERSISTENCE no ATT&CK, pois tarefas agendadas permitem que o adversário mantenha acesso persistente ao sistema, executando seu código automaticamente mesmo após reinicializações."
+      },
+      {
+        "letter": "C",
+        "text": "T1003.001 (LSASS Memory) corresponde à tática Discovery, pois o adversário está descobrindo informações sobre o sistema ao acessar a memória do processo LSASS.",
+        "isCorrect": false,
+        "explanation": "Incorreto. T1003.001 (OS Credential Dumping: LSASS Memory) corresponde à tática CREDENTIAL ACCESS, não Discovery. O objetivo é ROUBAR CREDENCIAIS armazenadas na memória do LSASS, não mapear/descobrir informações sobre o ambiente."
+      },
+      {
+        "letter": "D",
+        "text": "T1021.002 (SMB/Windows Admin Shares) corresponde à tática Defense Evasion, pois o uso de SMB legítimo permite ao adversário evadir detecção.",
+        "isCorrect": false,
+        "explanation": "Incorreto. T1021.002 (Remote Services: SMB/Windows Admin Shares) corresponde à tática LATERAL MOVEMENT, não Defense Evasion. O objetivo é MOVER-SE para outros sistemas na rede usando compartilhamentos administrativos do Windows."
+      },
+      {
+        "letter": "E",
+        "text": "T1041 (Exfiltration Over C2 Channel) corresponde à tática Command and Control, pois os dados são transmitidos via canal C2 já estabelecido.",
+        "isCorrect": false,
+        "explanation": "Incorreto. T1041 (Exfiltration Over C2 Channel) corresponde à tática EXFILTRATION, não Command and Control. Embora USE o canal C2, o OBJETIVO é EXFILTRAR dados, não estabelecer ou manter comunicação C2. No ATT&CK, a classificação segue o objetivo, não o meio."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Este cenário testa o mapeamento correto de técnicas às suas respectivas táticas no MITRE ATT&CK. O mapeamento correto é: T1566.001 → Initial Access (phishing como vetor de entrada); T1059.001 → Execution (PowerShell executando código); T1053.005 → Persistence (tarefa agendada mantendo acesso); T1003.001 → Credential Access (dumping de credenciais do LSASS); T1021.002 → Lateral Movement (movimentação via SMB); T1041 → Exfiltration (roubo de dados via C2). A chave é entender que a tática é definida pelo OBJETIVO da ação, não pelo meio técnico utilizado.",
+    "technicalJustification": "Conforme a classificação oficial do MITRE ATT&CK (attack.mitre.org), T1053.005 (Scheduled Task/Job: Scheduled Task) está mapeada sob as táticas Execution, Persistence e Privilege Escalation. No contexto do cenário descrito, onde o adversário cria a tarefa para MANTER ACESSO, a tática primária é Persistence. A alternativa B está correta ao identificar esse mapeamento.",
+    "relatedConcepts": [
+      "MITRE ATT&CK",
+      "Mapeamento de técnicas a táticas",
+      "Initial Access",
+      "Persistence",
+      "Credential Access",
+      "Lateral Movement",
+      "Exfiltration"
+    ],
+    "order": 5
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b3-seguranca-info_1",
+    "topicId": "b3-seguranca-info",
+    "front": "Quais são os três pilares da Tríade CID (CIA) na Segurança da Informação e o que cada um garante?",
+    "back": "Confidencialidade: garante que a informação seja acessível apenas a pessoas autorizadas. Integridade: assegura que os dados não sejam alterados de forma não autorizada, mantendo sua exatidão e completeza. Disponibilidade: garante que os recursos e informações estejam acessíveis sempre que necessário por usuários autorizados. Referência: NIST SP 800-12, ISO 27001.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-info_2",
+    "topicId": "b3-seguranca-info",
+    "front": "Qual a diferença entre Firewall, IDS (Intrusion Detection System) e IPS (Intrusion Prevention System)?",
+    "back": "Firewall: filtra tráfego de rede com base em regras predefinidas (IP, porta, protocolo). Pode ser stateless ou stateful. IDS: monitora o tráfego PASSIVAMENTE, analisando e gerando alertas quando detecta atividades suspeitas, mas NÃO bloqueia o tráfego. IPS: opera INLINE no fluxo de rede, detecta E bloqueia tráfego malicioso em tempo real. Ambos (IDS/IPS) podem usar detecção por assinaturas ou por anomalias. NGFWs integram firewall + IPS + DPI em um único dispositivo.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-info_3",
+    "topicId": "b3-seguranca-info",
+    "front": "O que é Ransomware e quais são suas principais variantes?",
+    "back": "Ransomware é um tipo de malware que criptografa os dados da vítima e exige pagamento de resgate (geralmente em criptomoedas) para fornecer a chave de descriptografia. Variantes: Crypto-ransomware (criptografa arquivos), Locker-ransomware (bloqueia o acesso ao sistema), Double extortion (criptografa + exfiltra dados e ameaça divulgá-los), RaaS (Ransomware-as-a-Service — modelo de negócio criminoso). Prevenção: backups regulares, patches atualizados, segmentação de rede, conscientização de usuários.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-info_4",
+    "topicId": "b3-seguranca-info",
+    "front": "O que é SQL Injection e como se prevenir?",
+    "back": "SQL Injection é um ataque em que o invasor insere comandos SQL maliciosos em campos de entrada de uma aplicação web, manipulando consultas ao banco de dados. Exemplo: inserir ' OR '1'='1'-- num campo de login. Consequências: acesso não autorizado, vazamento de dados, alteração/exclusão de registros. Prevenção: usar Prepared Statements (consultas parametrizadas), Stored Procedures, validação de entrada, princípio do menor privilégio no banco de dados, WAF (Web Application Firewall). Referência: OWASP Top 10 — A03:2021 Injection.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-info_5",
+    "topicId": "b3-seguranca-info",
+    "front": "O que é Cross-Site Scripting (XSS) e quais são seus tipos?",
+    "back": "XSS é um ataque onde o invasor injeta scripts maliciosos (geralmente JavaScript) em páginas web visualizadas por outros usuários. Tipos: Stored XSS (script armazenado no servidor, ex.: em comentários), Reflected XSS (script refletido via URL ou parâmetro, executado imediatamente), DOM-based XSS (manipulação do DOM no lado do cliente). Prevenção: sanitização/encoding de saída, Content Security Policy (CSP), validação de entrada, uso de frameworks que escapam conteúdo automaticamente. Referência: OWASP A07:2021.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-info_6",
+    "topicId": "b3-seguranca-info",
+    "front": "O que é CSRF (Cross-Site Request Forgery) e como se defender?",
+    "back": "CSRF é um ataque que forja requisições HTTP legítimas usando a sessão autenticada da vítima. O atacante induz o navegador do usuário autenticado a enviar uma requisição maliciosa para a aplicação-alvo. O navegador inclui cookies de sessão automaticamente, tornando a requisição aparentemente legítima. Defesas: Token anti-CSRF (Synchronizer Token Pattern), atributo SameSite nos cookies, verificação dos headers Origin/Referer, Double Submit Cookie, re-autenticação para ações críticas. Referência: OWASP CSRF Prevention Cheat Sheet.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-info_7",
+    "topicId": "b3-seguranca-info",
+    "front": "Qual a diferença entre SAST (Static Application Security Testing) e DAST (Dynamic Application Security Testing)?",
+    "back": "SAST: analisa o código-fonte SEM executá-lo, identificando vulnerabilidades no código (white-box). Detecta problemas como concatenação de SQL, hardcoded secrets, buffer overflows. Ferramentas: SonarQube, Fortify, Checkmarx. DAST: testa a aplicação EM EXECUÇÃO, enviando requisições maliciosas e analisando respostas (black-box). Detecta vulnerabilidades em runtime como XSS, SQLi, CSRF. Ferramentas: OWASP ZAP, Burp Suite. São COMPLEMENTARES — SAST é usado no desenvolvimento (shift-left), DAST em ambientes de staging/produção. IAST combina ambas as abordagens.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-info_8",
+    "topicId": "b3-seguranca-info",
+    "front": "O que é MFA (Multi-Factor Authentication) e quais são as categorias de fatores?",
+    "back": "MFA (Autenticação Multifator) exige dois ou mais fatores de categorias DISTINTAS para autenticação. Categorias: 1) Algo que você SABE (senha, PIN, pergunta secreta), 2) Algo que você TEM (token, smartphone, smart card), 3) Algo que você É (biometria: digital, facial, íris). Usar dois fatores da MESMA categoria (ex.: senha + PIN) NÃO é MFA. MFA é complementar ao SSO (Single Sign-On) — SSO centraliza a autenticação, enquanto MFA a fortalece. Referência: NIST SP 800-63B.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-info_9",
+    "topicId": "b3-seguranca-info",
+    "front": "Qual a diferença entre RBAC (Role-Based Access Control) e ABAC (Attribute-Based Access Control)?",
+    "back": "RBAC: permissões são atribuídas a PAPÉIS (roles), e usuários são associados a papéis. Simples de administrar, mas sofre de 'role explosion' em grandes organizações quando são necessários papéis muito específicos. ABAC: decisões de acesso baseadas em múltiplos ATRIBUTOS: do sujeito (cargo, departamento, clearance), do recurso (classificação, tipo), da ação (ler, escrever) e do contexto (horário, localização, dispositivo). Oferece granularidade e flexibilidade superiores, ideal para cenários complexos e dinâmicos. Referência: NIST SP 800-162.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-seguranca-info_10",
+    "topicId": "b3-seguranca-info",
+    "front": "O que é o modelo STRIDE e quais são suas seis categorias de ameaças?",
+    "back": "STRIDE é um modelo de modelagem de ameaças criado pela Microsoft para identificar e classificar ameaças de segurança. Categorias: S — Spoofing (falsificação de identidade): atacante se passa por outro usuário/sistema. T — Tampering (adulteração): modificação não autorizada de dados. R — Repudiation (não-repúdio): negação de ter realizado uma ação. I — Information Disclosure (divulgação): exposição de dados a não autorizados. D — Denial of Service (negação de serviço): tornar recursos indisponíveis. E — Elevation of Privilege (elevação de privilégios): obter permissões indevidas. Cada categoria mapeia para uma propriedade de segurança violada (ex.: S viola Autenticação, T viola Integridade).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

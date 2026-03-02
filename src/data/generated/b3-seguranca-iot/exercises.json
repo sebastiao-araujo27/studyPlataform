@@ -1,0 +1,222 @@
+[
+  {
+    "id": "ex_b3-seguranca-iot_1",
+    "topicId": "b3-seguranca-iot",
+    "blocoId": "bloco-3",
+    "question": "O botnet Mirai, responsável por um dos maiores ataques DDoS da história em 2016, comprometeu centenas de milhares de dispositivos IoT explorando principalmente qual vulnerabilidade catalogada pelo OWASP IoT Top 10?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I7 — Insecure Data Transfer and Storage (Transferência e Armazenamento Inseguros de Dados)",
+        "isCorrect": false,
+        "explanation": "Embora a transferência insegura de dados seja uma vulnerabilidade real em IoT, o Mirai não explorou esse tipo de falha. Ele se concentrou em credenciais padrão."
+      },
+      {
+        "letter": "B",
+        "text": "I1 — Weak, Guessable, or Hardcoded Passwords (Senhas Fracas, Adivinháveis ou Hardcoded)",
+        "isCorrect": true,
+        "explanation": "Correto! O Mirai usava uma lista de 61 combinações de credenciais padrão (como admin/admin, root/root) para comprometer dispositivos IoT via Telnet, explorando diretamente a vulnerabilidade I1 do OWASP IoT Top 10."
+      },
+      {
+        "letter": "C",
+        "text": "I5 — Use of Insecure or Outdated Components (Uso de Componentes Inseguros ou Desatualizados)",
+        "isCorrect": false,
+        "explanation": "Componentes desatualizados são um problema sério, mas o vetor principal do Mirai foram as credenciais padrão, não exploits em componentes vulneráveis."
+      },
+      {
+        "letter": "D",
+        "text": "I3 — Insecure Ecosystem Interfaces (Interfaces de Ecossistema Inseguras)",
+        "isCorrect": false,
+        "explanation": "Interfaces inseguras referem-se a APIs e backends vulneráveis. O Mirai atacava diretamente os dispositivos via Telnet usando credenciais padrão."
+      },
+      {
+        "letter": "E",
+        "text": "I4 — Lack of Secure Update Mechanism (Falta de Mecanismo de Atualização Segura)",
+        "isCorrect": false,
+        "explanation": "A falta de atualização segura dificultou a correção dos dispositivos após a infecção, mas não foi a vulnerabilidade explorada para comprometê-los inicialmente."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "O botnet Mirai (2016) é o caso mais emblemático de ataque em massa a dispositivos IoT. Ele escaneava a internet procurando dispositivos com porta Telnet aberta e tentava autenticar-se usando uma lista pré-definida de 61 combinações de credenciais padrão de fábrica (como admin/admin, root/root, user/user). Em seu pico, controlou mais de 600.000 dispositivos e gerou ataques DDoS de até 1.2 Tbps contra o provedor DNS Dyn, derrubando sites como Twitter, Netflix e Reddit. A vulnerabilidade explorada é claramente a I1 do OWASP IoT Top 10: Weak, Guessable, or Hardcoded Passwords.",
+    "technicalJustification": "O OWASP IoT Top 10 (2018) classifica como I1 o uso de senhas fracas, facilmente adivinháveis ou embutidas no código (hardcoded). O Mirai explorava exatamente esse vetor: fabricantes entregavam dispositivos com credenciais padrão que nunca eram alteradas pelos usuários. A simplicidade do ataque (brute force com lista de credenciais conhecidas) demonstra como vulnerabilidades básicas podem ter impacto catastrófico em escala IoT.",
+    "relatedConcepts": ["OWASP IoT Top 10", "Mirai Botnet", "DDoS", "Credenciais padrão", "Telnet"],
+    "order": 1
+  },
+  {
+    "id": "ex_b3-seguranca-iot_2",
+    "topicId": "b3-seguranca-iot",
+    "blocoId": "bloco-3",
+    "question": "Em relação aos protocolos de comunicação utilizados em IoT, é correto afirmar que:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "O MQTT opera sobre UDP e utiliza o modelo request/response, similar ao HTTP, sendo ideal para dispositivos com recursos extremamente limitados.",
+        "isCorrect": false,
+        "explanation": "Incorreto. O MQTT opera sobre TCP (não UDP) e utiliza o modelo publish/subscribe (não request/response). O protocolo que opera sobre UDP com modelo REST-like é o CoAP."
+      },
+      {
+        "letter": "B",
+        "text": "O CoAP opera sobre TCP e utiliza DTLS para proteger a comunicação, sendo mais pesado que o MQTT mas oferecendo maior confiabilidade.",
+        "isCorrect": false,
+        "explanation": "Incorreto. O CoAP opera sobre UDP (não TCP). É justamente por operar sobre UDP que ele utiliza DTLS (versão do TLS para datagramas) e não TLS convencional."
+      },
+      {
+        "letter": "C",
+        "text": "O MQTT utiliza o modelo publish/subscribe sobre TCP, enquanto o CoAP utiliza o modelo request/response sobre UDP, sendo que o CoAP emprega DTLS para segurança.",
+        "isCorrect": true,
+        "explanation": "Correto! MQTT: publish/subscribe sobre TCP (portas 1883/8883). CoAP: request/response (REST-like) sobre UDP (portas 5683/5684), usando DTLS para segurança."
+      },
+      {
+        "letter": "D",
+        "text": "O LoRaWAN é um protocolo de curto alcance (até 100 metros) e alta velocidade, ideal para streaming de dados de sensores em plataformas industriais.",
+        "isCorrect": false,
+        "explanation": "Incorreto. LoRaWAN é um protocolo de longo alcance (até 15 km em áreas rurais) com baixa velocidade (0.3 a 50 kbps). Não é adequado para streaming de dados."
+      },
+      {
+        "letter": "E",
+        "text": "O Zigbee utiliza criptografia AES-256 por padrão e opera exclusivamente na frequência de 5 GHz, sendo incompatível com redes mesh.",
+        "isCorrect": false,
+        "explanation": "Incorreto em todos os aspectos. Zigbee utiliza AES-128 (não AES-256), opera em 2.4 GHz, 915 MHz e 868 MHz (não 5 GHz), e suporta topologia mesh."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A comparação entre MQTT e CoAP é um dos pontos mais cobrados em provas sobre IoT. MQTT (Message Queuing Telemetry Transport): opera sobre TCP, utiliza modelo publish/subscribe com broker central, portas padrão 1883 (sem TLS) e 8883 (com TLS), suporta três níveis de QoS. CoAP (Constrained Application Protocol): opera sobre UDP, utiliza modelo request/response similar ao REST (GET, PUT, POST, DELETE), portas padrão 5683 (sem DTLS) e 5684 (com DTLS), suporta multicast e observe pattern. LoRaWAN tem alcance longo (até 15 km) mas velocidade muito baixa. Zigbee usa AES-128 e suporta mesh.",
+    "technicalJustification": "MQTT (RFC não oficial, padrão OASIS) é um protocolo publish/subscribe que roda sobre TCP/IP. Seu overhead mínimo é de 2 bytes. CoAP (RFC 7252) é projetado para dispositivos constrained e segue o modelo REST sobre UDP, com overhead de 4 bytes fixos. A escolha entre MQTT e CoAP depende do caso de uso: MQTT para telemetria contínua com garantia de entrega; CoAP para interações pontuais tipo comando-resposta com máxima eficiência.",
+    "relatedConcepts": ["MQTT", "CoAP", "LoRaWAN", "Zigbee", "DTLS", "TLS", "Publish/Subscribe"],
+    "order": 2
+  },
+  {
+    "id": "ex_b3-seguranca-iot_3",
+    "topicId": "b3-seguranca-iot",
+    "blocoId": "bloco-3",
+    "question": "uma empresa do setor de óleo e gás está implementando um sistema de monitoramento IoT em uma plataforma offshore. Para garantir a segurança da comunicação entre os sensores de campo e o gateway, a equipe de segurança deve considerar que, em ambientes de Tecnologia Operacional (TO), diferentemente de ambientes de Tecnologia da Informação (TI) tradicionais:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A confidencialidade é a prioridade máxima na tríade CIA, seguida por disponibilidade e integridade.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Esta é a priorização típica de ambientes de TI, não de TO. Em TO/ambientes industriais, a disponibilidade é a prioridade máxima."
+      },
+      {
+        "letter": "B",
+        "text": "A disponibilidade é a prioridade máxima, pois a interrupção de sistemas pode causar riscos à segurança física e ambiental, e o padrão ISA/IEC 62443 é a referência de segurança mais adequada.",
+        "isCorrect": true,
+        "explanation": "Correto! Em TO, a prioridade é D > I > C (Disponibilidade > Integridade > Confidencialidade). Uma parada em sistemas SCADA de uma plataforma pode causar acidentes graves. O ISA/IEC 62443 é o padrão específico para segurança de sistemas de automação e controle industrial (IACS)."
+      },
+      {
+        "letter": "C",
+        "text": "Os ciclos de atualização (patching) são idênticos aos de TI, com patches aplicados semanalmente para manter os dispositivos protegidos contra vulnerabilidades conhecidas.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Em TO, os patches são aplicados raramente (semanas a meses), pois requerem janelas de manutenção planejadas. A aplicação de patches pode causar paradas indesejadas em processos críticos."
+      },
+      {
+        "letter": "D",
+        "text": "O ciclo de vida dos equipamentos é similar ao de TI (3-5 anos), permitindo substituições frequentes por versões mais seguras dos dispositivos.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Equipamentos de TO têm ciclos de vida muito longos, de 10 a 20+ anos, o que dificulta a atualização e substituição de dispositivos com vulnerabilidades conhecidas."
+      },
+      {
+        "letter": "E",
+        "text": "A ISO 27001 é o padrão mais adequado para proteger sistemas SCADA e PLCs, substituindo completamente a necessidade de padrões específicos para automação industrial.",
+        "isCorrect": false,
+        "explanation": "Incorreto. Embora a ISO 27001 seja importante, ela é um padrão genérico de segurança da informação. Para sistemas de automação e controle industrial, o padrão específico e mais adequado é o ISA/IEC 62443."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A convergência entre TI e TO é um tema central em segurança IoT industrial, particularmente relevante para a Petrobras. A principal diferença conceitual é a inversão da tríade CIA: em TI, a confidencialidade é tipicamente a prioridade; em TO, a disponibilidade é prioridade máxima, pois a interrupção de processos industriais pode causar acidentes, danos ambientais e riscos à vida humana. O ISA/IEC 62443 (anteriormente ISA-99) é a série de padrões internacionais específica para segurança de sistemas de automação e controle industrial (Industrial Automation and Control Systems — IACS). Equipamentos de TO operam por 10-20+ anos e os patches são aplicados com muito menos frequência que em TI.",
+    "technicalJustification": "O ISA/IEC 62443 define zonas de segurança, níveis de segurança (SL), e requisitos para componentes, sistemas e políticas em ambientes industriais. O Modelo Purdue (referenciado pelo ISA/IEC 62443) organiza a rede industrial em níveis 0-5, desde o nível de processo (sensores/atuadores) até a rede corporativa, com uma DMZ industrial separando TI de TO. A priorização D > I > C em TO é fundamental porque em uma plataforma offshore, por exemplo, a perda de monitoramento de pressão em um duto pode resultar em vazamentos catastróficos.",
+    "relatedConcepts": ["TI vs TO", "Tríade CIA", "ISA/IEC 62443", "SCADA", "Modelo Purdue", "Convergência TI/TO"],
+    "order": 3
+  },
+  {
+    "id": "ex_b3-seguranca-iot_4",
+    "topicId": "b3-seguranca-iot",
+    "blocoId": "bloco-3",
+    "question": "O Modelo Purdue, referenciado pelo padrão ISA/IEC 62443, define uma arquitetura de referência para redes industriais organizada em níveis hierárquicos. Em relação a esse modelo, analise as afirmativas e assinale a alternativa correta:\n\nI. O Nível 0 corresponde ao processo físico, incluindo sensores e atuadores.\nII. O Nível 2 corresponde à camada de supervisão, incluindo sistemas HMI e SCADA.\nIII. O Nível 3.5 (DMZ Industrial) separa a rede de TI da rede de TO, funcionando como zona de buffer.\nIV. O Nível 5 corresponde à rede corporativa, incluindo sistemas ERP e e-mail.\nV. O Nível 1 corresponde à rede corporativa com acesso direto à internet.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Apenas I, II e IV estão corretas.",
+        "isCorrect": false,
+        "explanation": "Incompleto. A afirmativa III também está correta — a DMZ Industrial (Nível 3.5) é um conceito fundamental do Modelo Purdue."
+      },
+      {
+        "letter": "B",
+        "text": "Apenas I, II, III e IV estão corretas.",
+        "isCorrect": true,
+        "explanation": "Correto! As afirmativas I (Nível 0 = processo), II (Nível 2 = supervisão/HMI/SCADA), III (Nível 3.5 = DMZ Industrial) e IV (Nível 5 = rede corporativa) estão todas corretas. A afirmativa V está incorreta pois o Nível 1 corresponde a controladores (PLCs, RTUs), não à rede corporativa."
+      },
+      {
+        "letter": "C",
+        "text": "Todas as afirmativas estão corretas.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A afirmativa V está errada — o Nível 1 do Modelo Purdue corresponde à camada de controle (PLCs, RTUs, DCS), não à rede corporativa."
+      },
+      {
+        "letter": "D",
+        "text": "Apenas I e IV estão corretas.",
+        "isCorrect": false,
+        "explanation": "Incompleto. As afirmativas II e III também estão corretas. Nível 2 é supervisão (HMI/SCADA) e Nível 3.5 é a DMZ Industrial."
+      },
+      {
+        "letter": "E",
+        "text": "Apenas II, III e V estão corretas.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A afirmativa V está errada (Nível 1 = controle, não rede corporativa). As afirmativas I e IV, que estão corretas, não foram incluídas."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "O Modelo Purdue (Purdue Enterprise Reference Architecture — PERA) é a arquitetura de referência para redes industriais, adotada pelo ISA/IEC 62443. Seus níveis são: Nível 0 (Processo) — sensores, atuadores, instrumentação; Nível 1 (Controle Básico) — PLCs, RTUs, DCS; Nível 2 (Supervisão) — HMI, SCADA, estações de engenharia; Nível 3 (Operações de Site) — historiador, gerenciamento de operações, MES; Nível 3.5 (DMZ Industrial) — firewall, data diode, zona de buffer entre TI e TO; Nível 4 (Negócios) — planejamento de produção, scheduling; Nível 5 (Corporativo) — ERP, e-mail, internet. A DMZ Industrial é crucial para a segurança, pois nenhum tráfego deve fluir diretamente entre as redes de TI (Nível 4-5) e TO (Nível 0-3).",
+    "technicalJustification": "O Modelo Purdue estabelece que a comunicação entre níveis deve seguir regras estritas: dados fluem verticalmente entre níveis adjacentes, nunca pulando níveis. A DMZ Industrial (Nível 3.5) é o ponto de separação entre o mundo TI e TO, onde ficam servidores de replicação de dados, jump servers e firewalls industriais. Essa segregação é essencial em ambientes como os da Petrobras, onde a rede corporativa (com acesso à internet) nunca deve ter conexão direta com os controladores de processo.",
+    "relatedConcepts": ["Modelo Purdue", "ISA/IEC 62443", "DMZ Industrial", "SCADA", "PLC", "Convergência TI/TO"],
+    "order": 4
+  },
+  {
+    "id": "ex_b3-seguranca-iot_5",
+    "topicId": "b3-seguranca-iot",
+    "blocoId": "bloco-3",
+    "question": "Uma equipe de segurança está realizando uma avaliação de um ecossistema IoT industrial e identificou as seguintes situações:\n\n(1) O broker MQTT opera na porta 1883 sem TLS e sem autenticação.\n(2) Os dispositivos possuem portas JTAG acessíveis sem proteção.\n(3) O firmware dos dispositivos é atualizado via OTA com verificação de assinatura digital, canal TLS e mecanismo anti-rollback.\n(4) Cada dispositivo possui certificado X.509 único armazenado em módulo TPM.\n\nConsiderando o OWASP IoT Top 10 (2018), quais situações representam vulnerabilidades?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Apenas (1) e (3) representam vulnerabilidades.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A situação (3) descreve uma implementação correta de OTA update (com assinatura, TLS e anti-rollback) — não é uma vulnerabilidade."
+      },
+      {
+        "letter": "B",
+        "text": "Apenas (1), (2) e (4) representam vulnerabilidades.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A situação (4) descreve uma boa prática de segurança — cada dispositivo com certificado X.509 único em TPM é a abordagem recomendada para identidade de dispositivos."
+      },
+      {
+        "letter": "C",
+        "text": "Apenas (1) e (2) representam vulnerabilidades.",
+        "isCorrect": true,
+        "explanation": "Correto! (1) MQTT sem TLS e sem autenticação viola I7 (transferência insegura) e I1/I2 (sem autenticação em serviço de rede). (2) Portas JTAG expostas viola I10 (falta de hardening físico). As situações (3) e (4) representam boas práticas de segurança."
+      },
+      {
+        "letter": "D",
+        "text": "Todas as situações representam vulnerabilidades.",
+        "isCorrect": false,
+        "explanation": "Incorreto. As situações (3) — OTA com assinatura, TLS e anti-rollback — e (4) — certificados X.509 em TPM — são implementações corretas de segurança, não vulnerabilidades."
+      },
+      {
+        "letter": "E",
+        "text": "Apenas (2) representa vulnerabilidade; as demais são práticas aceitáveis.",
+        "isCorrect": false,
+        "explanation": "Incorreto. A situação (1) — MQTT sem TLS e sem autenticação — também é uma vulnerabilidade grave, violando múltiplos itens do OWASP IoT Top 10."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão exige análise prática de cenários à luz do OWASP IoT Top 10. Situação (1): MQTT na porta 1883 sem TLS transmite dados em texto claro (viola I7 — transferência insegura de dados) e sem autenticação qualquer cliente pode se conectar ao broker e publicar/subscrever em qualquer tópico (viola I2 — serviços de rede inseguros). Situação (2): Portas JTAG acessíveis permitem que um atacante com acesso físico extraia firmware, leia memória e injete código malicioso (viola I10 — falta de hardening físico). Situação (3): OTA update com assinatura digital (garante autenticidade), canal TLS (garante confidencialidade em trânsito) e anti-rollback (impede downgrade para versões vulneráveis) atende plenamente aos requisitos do I4. Situação (4): Certificados X.509 únicos em módulo TPM é a melhor prática para identidade de dispositivos IoT, garantindo autenticação forte e proteção das chaves criptográficas em hardware seguro.",
+    "technicalJustification": "O OWASP IoT Top 10 I7 especifica que dados sensíveis não devem transitar sem criptografia. MQTT na porta 1883 opera sem TLS, expondo todos os dados (incluindo credenciais quando autenticação básica é usada) em texto claro. O I10 especifica que dispositivos devem ter hardening físico — portas de debug como JTAG e UART devem ser desabilitadas em produção, protegidas por autenticação ou fisicamente inacessíveis. A implementação de OTA descrita na situação (3) segue as recomendações do NIST e OWASP para I4, e a identidade de dispositivo via X.509/TPM na situação (4) é considerada estado da arte em segurança IoT.",
+    "relatedConcepts": ["OWASP IoT Top 10", "MQTT", "TLS", "JTAG", "OTA Updates", "X.509", "TPM", "Hardening físico"],
+    "order": 5
+  }
+]

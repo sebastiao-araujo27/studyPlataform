@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b1-kanban_1",
+    "topicId": "b1-kanban",
+    "front": "O que é o Kanban no contexto de gestão de fluxo?",
+    "back": "É um sistema visual de gestão de trabalho que foca na entrega contínua, limitando o trabalho em progresso (WIP) para otimizar o fluxo e reduzir desperdícios.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-kanban_2",
+    "topicId": "b1-kanban",
+    "front": "O que representa o limite de WIP (Work In Progress)?",
+    "back": "É a restrição deliberada da quantidade máxima de itens permitidos em cada etapa do fluxo. Serve para evitar sobrecarga e evidenciar gargalos.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-kanban_3",
+    "topicId": "b1-kanban",
+    "front": "Qual a definição de Lead Time?",
+    "back": "É o tempo total decorrido desde o pedido do cliente (entrada no backlog) até a entrega final do produto ou serviço.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-kanban_4",
+    "topicId": "b1-kanban",
+    "front": "Qual a definição de Cycle Time?",
+    "back": "É o tempo que um item leva para ser concluído a partir do momento em que o trabalho efetivo sobre ele é iniciado até sua finalização.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-kanban_5",
+    "topicId": "b1-kanban",
+    "front": "Qual a principal diferença entre o Lead Time e o Cycle Time?",
+    "back": "O Lead Time engloba todo o processo (da solicitação à entrega), enquanto o Cycle Time mede apenas o tempo de execução técnica (do início ao fim da tarefa).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-kanban_6",
+    "topicId": "b1-kanban",
+    "front": "Por que o Kanban é classificado como um 'sistema puxado' (pull system)?",
+    "back": "Porque novas tarefas só são iniciadas quando há capacidade disponível (vaga no limite de WIP), em vez de serem empurradas para a equipe conforme surgem.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-kanban_7",
+    "topicId": "b1-kanban",
+    "front": "O que o Throughput mede em um quadro Kanban?",
+    "back": "Mede a vazão do sistema, ou seja, a quantidade de itens de trabalho que são entregues (concluídos) em um determinado intervalo de tempo.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-kanban_8",
+    "topicId": "b1-kanban",
+    "front": "Com base na Lei de Little, qual a relação matemática entre Lead Time, WIP e Throughput?",
+    "back": "Lead Time = WIP / Throughput. Isso significa que, para uma vazão constante, quanto maior o WIP, maior será o tempo de entrega.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-kanban_9",
+    "topicId": "b1-kanban",
+    "front": "V ou F: O método Kanban exige a substituição imediata dos cargos e responsabilidades atuais da organização por novos papéis ágeis.",
+    "back": "Falso. Um dos princípios fundamentais do Kanban é 'respeitar os processos, papéis, responsabilidades e títulos atuais', focando em mudanças evolucionárias.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-kanban_10",
+    "topicId": "b1-kanban",
+    "front": "Quais são as 6 práticas gerais do Método Kanban (David J. Anderson)?",
+    "back": "1. Visualizar o fluxo de trabalho;\n2. Limitar o WIP (Work In Progress);\n3. Gerenciar o fluxo;\n4. Tornar as políticas do processo explícitas;\n5. Implementar ciclos de feedback (cadências);\n6. Melhorar colaborativamente, evoluir experimentalmente.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

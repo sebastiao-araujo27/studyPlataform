@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b1-nosql_1",
+    "topicId": "b1-nosql",
+    "front": "O que significa o acrônimo CAP no Teorema de Brewer?",
+    "back": "• C: Consistência (Consistency)\n• A: Disponibilidade (Availability)\n• P: Tolerância a Partição (Partition Tolerance)",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-nosql_2",
+    "topicId": "b1-nosql",
+    "front": "Cite o modelo de dados utilizado pelo MongoDB e o seu formato de armazenamento principal.",
+    "back": "• Modelo: Orientado a Documentos\n• Formato: BSON (Binary JSON)",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-nosql_3",
+    "topicId": "b1-nosql",
+    "front": "Qual o principal caso de uso para bancos de dados do tipo Chave-Valor, como o Redis?",
+    "back": "Armazenamento de cache, gerenciamento de sessões de usuário e aplicações que exigem altíssima performance com baixa latência.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-nosql_4",
+    "topicId": "b1-nosql",
+    "front": "V ou F: Bancos de Dados NoSQL são obrigatoriamente não-relacionais e nunca permitem consultas via linguagem SQL.",
+    "back": "Falso. Embora sejam não-relacionais por natureza, muitos bancos NoSQL modernos oferecem linguagens de consulta similares ao SQL (ex: CQL no Cassandra, N1QL no Couchbase).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-nosql_5",
+    "topicId": "b1-nosql",
+    "front": "O que representa o acrônimo BASE, modelo de consistência comum em sistemas NoSQL?",
+    "back": "• BA: Basically Available (Basicamente Disponível)\n• S: Soft-state (Estado Suave/Flexível)\n• E: Eventual Consistency (Consistência Eventual)",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-nosql_6",
+    "topicId": "b1-nosql",
+    "front": "Para qual tipo de cenário o banco de dados Neo4j é mais indicado?",
+    "back": "Cenários com dados altamente interconectados, onde o foco está nos relacionamentos (modelagem em grafos), como redes sociais, motores de recomendação e detecção de fraudes.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-nosql_7",
+    "topicId": "b1-nosql",
+    "front": "Qual a principal diferença entre Escabilidade Vertical e Escabilidade Horizontal?",
+    "back": "• Vertical (Scale-up): Aumentar recursos (CPU, RAM) de um único servidor.\n• Horizontal (Scale-out): Adicionar mais máquinas/nós ao cluster (característica nativa do NoSQL).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-nosql_8",
+    "topicId": "b1-nosql",
+    "front": "Segundo o Teorema CAP, o que ocorre com um sistema distribuído na ocorrência inevitável de uma partição de rede (P)?",
+    "back": "O sistema deve obrigatoriamente escolher entre:\n1. Consistência (C): Bloqueia a operação para evitar dados divergentes, sacrificando a disponibilidade.\n2. Disponibilidade (A): Conclui a operação para manter o sistema online, sacrificando a consistência imediata.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-nosql_9",
+    "topicId": "b1-nosql",
+    "front": "Diferencie 'Schema-on-write' de 'Schema-on-read' no contexto de Bancos de Dados.",
+    "back": "• Schema-on-write (Relacional): O esquema é definido rigidamente antes da inserção dos dados.\n• Schema-on-read (NoSQL): Os dados são gravados sem estrutura prévia (schemaless); a estrutura é aplicada apenas no momento da leitura pela aplicação.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-nosql_10",
+    "topicId": "b1-nosql",
+    "front": "No Apache Cassandra (família de colunas), qual a função da Partition Key e da Clustering Column?",
+    "back": "• Partition Key: Define em qual nó do cluster os dados serão armazenados (distribuição).\n• Clustering Column: Define a ordenação dos dados dentro de uma partição específica.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

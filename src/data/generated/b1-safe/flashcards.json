@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b1-safe_1",
+    "topicId": "b1-safe",
+    "front": "O que é o Agile Release Train (ART) no contexto do SAFe?",
+    "back": "É uma equipe de equipes ágeis (long-lived) que planeja, executa e entrega soluções de valor de forma sincronizada, geralmente composta por 50 a 125 pessoas.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-safe_2",
+    "topicId": "b1-safe",
+    "front": "Qual é a função do Release Train Engineer (RTE)?",
+    "back": "Atuar como o 'Scrum Master' do Agile Release Train, facilitando os processos do ART, a execução do PI Planning e removendo impedimentos em nível de programa.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-safe_3",
+    "topicId": "b1-safe",
+    "front": "O que é o PI (Program Increment) Planning?",
+    "back": "É um evento de planejamento rítmico que serve como o 'batimento cardíaco' do ART, onde todas as equipes alinham a visão, objetivos e dependências para o próximo incremento (geralmente de 8 a 12 semanas).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-safe_4",
+    "topicId": "b1-safe",
+    "front": "Qual é a configuração mais básica do SAFe, que contém os elementos mínimos necessários para o sucesso do Agile em escala?",
+    "back": "Essential SAFe.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-safe_5",
+    "topicId": "b1-safe",
+    "front": "Qual a principal diferença entre o 'Essential SAFe' e o 'Large Solution SAFe'?",
+    "back": "O Essential foca em um único ART (Agile Release Train). O Large Solution é destinado a soluções complexas que exigem múltiplos ARTs e fornecedores (Suppliers), mas sem a necessidade de gestão de portfólio.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-safe_6",
+    "topicId": "b1-safe",
+    "front": "Quais são os 4 Valores Centrais (Core Values) do SAFe 6.0?",
+    "back": "1. Alinhamento (Alignment);\n2. Transparência (Transparency);\n3. Respeito pelas Pessoas (Respect for People);\n4. Melhoria Implacável (Relentless Improvement).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-safe_7",
+    "topicId": "b1-safe",
+    "front": "No SAFe, qual a distinção de autoridade entre o Product Management e o Product Owner (PO)?",
+    "back": "O Product Management define 'o que' o ART constrói (autoridade sobre Features e Program Backlog). O Product Owner define 'o que' a equipe constrói (autoridade sobre Stories e Team Backlog).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-safe_8",
+    "topicId": "b1-safe",
+    "front": "V ou F: O nível de Portfólio no SAFe foca na execução técnica das Sprints e na remoção de bugs diários das equipes.",
+    "back": "Falso. O nível de Portfólio foca na estratégia, financiamento (Lean Budgeting), governança e gestão de investimentos através de Value Streams e Epics.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-safe_9",
+    "topicId": "b1-safe",
+    "front": "Qual a finalidade da Iteração de Inovação e Planejamento (IP Iteration) que ocorre ao final de cada PI?",
+    "back": "Prover tempo protegido para:\n- Inovação e exploração;\n- Educação continuada;\n- Finalização de trabalho técnico;\n- Realização do PI Planning e do evento de Inspeção e Adaptação (I&A).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-safe_10",
+    "topicId": "b1-safe",
+    "front": "O que caracteriza a 'Economic Framework' dentro do primeiro princípio do SAFe (Take an economic view)?",
+    "back": "Um conjunto de diretrizes de decisão que inclui: considerações sobre o custo do atraso (Cost of Delay), orçamentos Lean, guardrails de financiamento e critérios de trade-off econômico.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b3-iso22301_1",
+    "topicId": "b3-iso22301",
+    "front": "O que é o BIA (Business Impact Analysis) no contexto da ISO 22301?",
+    "back": "O BIA é o processo de análise das atividades operacionais e do efeito que uma interrupção pode ter sobre elas. Identifica atividades críticas, avalia impactos (financeiro, operacional, reputacional, legal, segurança) e define os tempos de recuperação: MTPD, RTO e RPO. É o primeiro passo essencial para implementar o SGCN.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso22301_2",
+    "topicId": "b3-iso22301",
+    "front": "Defina RTO (Recovery Time Objective) e sua relação com o MTPD.",
+    "back": "RTO é o tempo-alvo dentro do qual uma atividade deve ser retomada ou um recurso recuperado após uma interrupção. O RTO deve ser SEMPRE menor que o MTPD (Maximum Tolerable Period of Disruption), que é o tempo máximo que a organização pode tolerar a interrupção. Fórmula: RTO < MTPD. Exemplo: se MTPD = 8h, RTO pode ser 4h.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso22301_3",
+    "topicId": "b3-iso22301",
+    "front": "O que é RPO (Recovery Point Objective) e como se relaciona com a estratégia de backup?",
+    "back": "RPO é o ponto no tempo para o qual os dados devem ser recuperados após uma interrupção — define a perda máxima aceitável de dados. Se RPO = 0, é necessária replicação síncrona (sem perda). Se RPO = 1h, backups devem ser feitos a cada 1h no máximo. Se RPO = 24h, backups diários são suficientes. O RPO olha para o PASSADO (quanto dado posso perder).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso22301_4",
+    "topicId": "b3-iso22301",
+    "front": "Qual é o MTPD (Maximum Tolerable Period of Disruption) e por que também é chamado de MAO?",
+    "back": "MTPD é o tempo máximo que uma organização pode tolerar a indisponibilidade de uma atividade, produto ou serviço antes que os impactos se tornem inaceitáveis. Também chamado de MAO (Maximum Acceptable Outage). É definido no BIA e serve como limite superior para o RTO. Após ultrapassar o MTPD, a organização sofre danos irreversíveis ou inaceitáveis.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso22301_5",
+    "topicId": "b3-iso22301",
+    "front": "Compare Hot Site, Warm Site e Cold Site como estratégias de continuidade.",
+    "back": "Hot Site: totalmente equipado, dados replicados em tempo real, ativação em minutos/horas, custo muito alto. Warm Site: hardware parcialmente configurado, precisa restaurar dados e software, ativação em horas/dias, custo médio. Cold Site: espaço com infraestrutura básica (energia/rede), sem equipamentos de TI, ativação em dias/semanas, custo baixo. A escolha depende do RTO: curto → Hot, médio → Warm, longo → Cold.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso22301_6",
+    "topicId": "b3-iso22301",
+    "front": "Qual a diferença entre BCP (Business Continuity Plan) e DRP (Disaster Recovery Plan)?",
+    "back": "BCP (Plano de Continuidade de Negócios): abrange toda a organização — processos de negócio, pessoas, instalações, TI, fornecedores. Objetivo: manter operações em nível aceitável. DRP (Plano de Recuperação de Desastres): é um SUBCONJUNTO do BCP, focado especificamente na recuperação da infraestrutura de TI (servidores, redes, bancos de dados, aplicações). Relação: BCP ⊃ DRP.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso22301_7",
+    "topicId": "b3-iso22301",
+    "front": "Liste os tipos de testes de continuidade em ordem crescente de complexidade.",
+    "back": "1) Checklist Review — revisão documental dos planos. 2) Tabletop Exercise — discussão de cenário em sala, sem ação real. 3) Walkthrough — equipe percorre passos do plano sem execução. 4) Simulação — ações reais em ambiente controlado. 5) Teste Paralelo — site alternativo ativado, primário continua operando. 6) Full-Interruption — primário desligado, operação migra totalmente. O mais completo e arriscado é o Full-Interruption.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso22301_8",
+    "topicId": "b3-iso22301",
+    "front": "O que determina a Seção 302 da Lei Sarbanes-Oxley (SOX)?",
+    "back": "A Seção 302 exige que o CEO e o CFO CERTIFIQUEM PESSOALMENTE que: (1) os relatórios financeiros são precisos e completos; (2) não contêm declarações falsas nem omitem fatos materiais; (3) os controles internos são adequados. Eles assumem RESPONSABILIDADE PESSOAL pela veracidade das informações. Mnemônico: 302 = Certificação do CEO/CFO.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso22301_9",
+    "topicId": "b3-iso22301",
+    "front": "O que determina a Seção 404 da Lei Sarbanes-Oxley (SOX)?",
+    "back": "A Seção 404 possui duas partes: 404(a) — a ADMINISTRAÇÃO da empresa deve avaliar e reportar anualmente a efetividade dos controles internos sobre relatórios financeiros (ICFR). 404(b) — a AUDITORIA EXTERNA independente deve atestar (confirmar ou rejeitar) a avaliação feita pela administração. É responsabilidade compartilhada. Framework de referência: COSO. Mnemônico: 404 = Controles internos (avaliados + atestados).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b3-iso22301_10",
+    "topicId": "b3-iso22301",
+    "front": "O que é o PCAOB e por que foi criado pela SOX?",
+    "back": "PCAOB (Public Company Accounting Oversight Board) é o órgão criado pela Seção 101 da SOX para SUPERVISIONAR as auditorias de empresas de capital aberto nos EUA. Foi criado porque, antes da SOX, as firmas de auditoria se AUTORREGULAVAM, o que gerou conflitos de interesse (caso Arthur Andersen/Enron). O PCAOB registra e inspeciona firmas de auditoria, estabelece padrões de auditoria e investiga violações. NÃO aplica penalidades criminais (isso é do DOJ/SEC).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

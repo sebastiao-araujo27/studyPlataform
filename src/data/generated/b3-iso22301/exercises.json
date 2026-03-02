@@ -1,0 +1,262 @@
+[
+  {
+    "id": "ex_b3-iso22301_1",
+    "topicId": "b3-iso22301",
+    "blocoId": "bloco-3",
+    "question": "uma empresa de energia, com operações críticas em plataformas offshore e refinarias, está implementando um Sistema de Gestão de Continuidade de Negócios (SGCN) conforme a ABNT NBR ISO 22301:2020. Durante o processo de Business Impact Analysis (BIA), a equipe identificou que o sistema de controle industrial de uma refinaria possui um MTPD (Maximum Tolerable Period of Disruption) de 2 horas. Considerando as boas práticas da norma, qual deve ser a relação entre o RTO (Recovery Time Objective) desse sistema e o MTPD identificado?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "O RTO deve ser igual ao MTPD, ou seja, 2 horas, para otimizar os custos de continuidade.",
+        "isCorrect": false,
+        "explanation": "Se RTO = MTPD, qualquer atraso na recuperação ultrapassará o tempo máximo tolerável, causando danos irreversíveis. Não há margem de segurança."
+      },
+      {
+        "letter": "B",
+        "text": "O RTO deve ser menor que o MTPD, garantindo uma margem de segurança para a recuperação do sistema.",
+        "isCorrect": true,
+        "explanation": "O RTO deve sempre ser definido como um valor inferior ao MTPD, proporcionando margem para imprevistos durante a recuperação e evitando que a interrupção ultrapasse o limite tolerável."
+      },
+      {
+        "letter": "C",
+        "text": "O RTO deve ser maior que o MTPD, pois inclui o tempo de testes pós-recuperação que não está contemplado no MTPD.",
+        "isCorrect": false,
+        "explanation": "Se o RTO for maior que o MTPD, a organização já terá sofrido impactos inaceitáveis antes da recuperação ser concluída. O MTPD é o limite máximo absoluto."
+      },
+      {
+        "letter": "D",
+        "text": "O RTO e o MTPD são métricas independentes que não possuem relação hierárquica entre si.",
+        "isCorrect": false,
+        "explanation": "Embora sejam métricas distintas, elas possuem uma relação hierárquica obrigatória: RTO < MTPD. A definição do RTO depende diretamente do MTPD identificado no BIA."
+      },
+      {
+        "letter": "E",
+        "text": "O RTO substitui o MTPD após a fase de planejamento, pois ambos medem o mesmo conceito de tempo de interrupção.",
+        "isCorrect": false,
+        "explanation": "MTPD e RTO são conceitos distintos. O MTPD é o limite máximo tolerável (definido pelo negócio), enquanto o RTO é o objetivo de recuperação (definido pela TI/continuidade). Um não substitui o outro."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda a relação fundamental entre MTPD e RTO no contexto da ISO 22301. O MTPD (Maximum Tolerable Period of Disruption) representa o tempo máximo que a organização pode tolerar a indisponibilidade de uma atividade antes que os impactos se tornem inaceitáveis. O RTO (Recovery Time Objective) é o tempo-alvo dentro do qual a atividade deve ser retomada. A relação obrigatória é: RTO < MTPD. Isso garante que a recuperação seja concluída antes que os impactos ultrapassem o limiar aceitável. Se o MTPD é 2 horas, o RTO poderia ser definido como 1 hora, por exemplo, dando 1 hora de margem para imprevistos. Definir RTO = MTPD é arriscado porque não há margem para atrasos. Definir RTO > MTPD é inaceitável porque a organização já estará sofrendo danos irreversíveis.",
+    "technicalJustification": "Conforme a ABNT NBR ISO 22301:2020, cláusula 8.2.2, a análise de impacto nos negócios (BIA) deve determinar os períodos máximos toleráveis de interrupção e os tempos de recuperação priorizados. A norma ISO 22317 (BIA guidance) estabelece explicitamente que o RTO deve ser definido dentro do MTPD, garantindo que a recuperação ocorra antes que os impactos se tornem inaceitáveis. A relação RTO < MTPD é um princípio fundamental da gestão de continuidade de negócios reconhecido por todas as principais referências da área (BCI Good Practice Guidelines, DRII Professional Practices).",
+    "relatedConcepts": [
+      "MTPD",
+      "RTO",
+      "RPO",
+      "BIA",
+      "ISO 22301",
+      "SGCN"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b3-iso22301_2",
+    "topicId": "b3-iso22301",
+    "blocoId": "bloco-3",
+    "question": "No contexto da gestão de continuidade de negócios, uma organização está definindo suas estratégias de recuperação para diferentes sistemas. O BIA identificou que o sistema ERP financeiro possui um RPO (Recovery Point Objective) de 1 hora e um RTO de 4 horas, enquanto o sistema de e-mail corporativo possui um RPO de 24 horas e um RTO de 48 horas. Considerando essas métricas e os conceitos de sites alternativos, qual combinação de estratégias é mais adequada e custo-efetiva?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hot Site para ambos os sistemas, garantindo máxima disponibilidade.",
+        "isCorrect": false,
+        "explanation": "Embora funcional, usar Hot Site para o sistema de e-mail (RPO 24h, RTO 48h) é um desperdício de recursos. Um Cold Site ou Warm Site seria suficiente e muito mais econômico para esse sistema."
+      },
+      {
+        "letter": "B",
+        "text": "Cold Site para ambos os sistemas, minimizando os custos de continuidade.",
+        "isCorrect": false,
+        "explanation": "O Cold Site demora dias a semanas para ser ativado, o que não atende ao RTO de 4 horas do sistema ERP. A economia nos custos seria anulada pelos danos de uma interrupção prolongada do sistema financeiro."
+      },
+      {
+        "letter": "C",
+        "text": "Hot Site ou Warm Site para o ERP financeiro e Cold Site ou Warm Site para o e-mail corporativo.",
+        "isCorrect": true,
+        "explanation": "Esta é a abordagem custo-efetiva. O ERP financeiro, com RPO de 1h e RTO de 4h, necessita de uma estratégia com ativação rápida (Hot ou Warm Site com replicação frequente). O e-mail, com RPO 24h e RTO 48h, pode usar uma estratégia mais econômica (Cold ou Warm Site com backups diários)."
+      },
+      {
+        "letter": "D",
+        "text": "Acordo recíproco para o ERP e Hot Site para o e-mail corporativo.",
+        "isCorrect": false,
+        "explanation": "Inversão das prioridades. O sistema mais crítico (ERP) recebe uma estratégia menos confiável (acordo recíproco), enquanto o menos crítico (e-mail) recebe a estratégia mais cara. Além disso, acordo recíproco é considerado pouco confiável para sistemas críticos."
+      },
+      {
+        "letter": "E",
+        "text": "A estratégia de site alternativo é definida pela ISO 22301 com base no tipo de sistema, independentemente dos resultados do BIA.",
+        "isCorrect": false,
+        "explanation": "A ISO 22301 não prescreve estratégias específicas. As estratégias devem ser escolhidas com base nos resultados do BIA (MTPD, RTO, RPO) e na avaliação de riscos, considerando custo-benefício."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão avalia a capacidade de aplicar os conceitos de RPO, RTO e estratégias de continuidade a cenários práticos. A chave é entender que as estratégias devem ser proporcionais à criticidade do sistema. O ERP financeiro é mais crítico (RPO 1h, RTO 4h), exigindo replicação frequente e ativação rápida — compatível com Hot Site (ativação em minutos/horas) ou Warm Site bem provisionado. O e-mail é menos crítico (RPO 24h, RTO 48h), permitindo uso de backups diários e um Cold Site (ativação em dias) ou Warm Site. A abordagem custo-efetiva alinha o investimento em continuidade com a criticidade real de cada sistema, conforme estabelecido no BIA. A ISO 22301 enfatiza que as estratégias devem ser baseadas nos resultados do BIA, não em regras fixas.",
+    "technicalJustification": "A ABNT NBR ISO 22301:2020, cláusula 8.3, estabelece que a organização deve determinar e selecionar estratégias de continuidade de negócios adequadas com base nos resultados do BIA e da avaliação de riscos. O princípio de proporcionalidade é fundamental: a estratégia deve ser compatível com o nível de criticidade e o apetite de risco da organização. O BCI Good Practice Guidelines (GPG) 2018 reforça que a seleção de estratégias deve considerar o custo-benefício, alinhando o investimento em continuidade com os impactos potenciais identificados no BIA.",
+    "relatedConcepts": [
+      "RPO",
+      "RTO",
+      "Hot Site",
+      "Warm Site",
+      "Cold Site",
+      "BIA",
+      "Estratégias de Continuidade"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b3-iso22301_3",
+    "topicId": "b3-iso22301",
+    "blocoId": "bloco-3",
+    "question": "A Lei Sarbanes-Oxley (SOX), promulgada em 2002 nos Estados Unidos, impõe requisitos rigorosos sobre empresas com ações negociadas em bolsas de valores americanas, incluindo empresas estrangeiras como a Petrobras. Sobre as disposições da SOX e seus impactos, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A Seção 302 da SOX determina que a firma de auditoria externa deve certificar a efetividade dos controles internos sobre relatórios financeiros da empresa.",
+        "isCorrect": false,
+        "explanation": "A Seção 302 trata da certificação pelos executivos (CEO e CFO), não pela auditoria externa. É a Seção 404(b) que envolve a atestação pela auditoria externa sobre os controles internos."
+      },
+      {
+        "letter": "B",
+        "text": "A SOX criou o PCAOB (Public Company Accounting Oversight Board) para substituir a SEC como órgão regulador do mercado de capitais americano.",
+        "isCorrect": false,
+        "explanation": "O PCAOB não substituiu a SEC. O PCAOB foi criado especificamente para supervisionar as auditorias de empresas de capital aberto, enquanto a SEC continua como o principal órgão regulador do mercado de capitais dos EUA."
+      },
+      {
+        "letter": "C",
+        "text": "A Seção 404 da SOX exige que a administração da empresa avalie a efetividade dos controles internos sobre relatórios financeiros e que a auditoria externa ateste essa avaliação.",
+        "isCorrect": true,
+        "explanation": "A Seção 404 possui duas partes: 404(a) exige que a administração avalie e reporte sobre os controles internos, e 404(b) exige que a auditoria externa independente ateste (confirme ou rejeite) essa avaliação. É uma responsabilidade compartilhada."
+      },
+      {
+        "letter": "D",
+        "text": "A SOX se aplica exclusivamente empresas constituídas nos Estados Unidos, não tendo efeito sobre empresas estrangeiras com ações listadas em bolsas americanas.",
+        "isCorrect": false,
+        "explanation": "A SOX se aplica a TODAS as empresas com ações negociadas nas bolsas dos EUA, independentemente de sua nacionalidade. Empresas brasileiras como Petrobras, Vale e outras com ADRs na NYSE devem cumprir integralmente a SOX."
+      },
+      {
+        "letter": "E",
+        "text": "A SOX não possui implicações para a área de Tecnologia da Informação, pois seus requisitos são exclusivamente contábeis e financeiros.",
+        "isCorrect": false,
+        "explanation": "Embora a SOX seja uma lei financeira, ela tem implicações significativas para a TI. Os controles internos sobre relatórios financeiros dependem dos sistemas de TI que processam e armazenam dados financeiros. Controles de acesso, gestão de mudanças, trilhas de auditoria e backup são exemplos de controles de TI exigidos pela SOX."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão avalia o conhecimento sobre a Lei Sarbanes-Oxley, tema agrupado com a ISO 22301 no item 3.16 do edital da Petrobras. A Seção 404 é uma das mais importantes da SOX e possui duas partes distintas: a 404(a), que exige que a própria administração da empresa avalie e reporte anualmente a efetividade dos controles internos sobre relatórios financeiros (ICFR — Internal Controls over Financial Reporting); e a 404(b), que exige que a firma de auditoria externa independente emita uma opinião (atestação) sobre a avaliação realizada pela administração. Esta é uma responsabilidade compartilhada e bidirecional. A Seção 302, por sua vez, exige que CEO e CFO certifiquem pessoalmente a precisão dos relatórios financeiros, assumindo responsabilidade pessoal. O PCAOB foi criado para supervisionar auditorias, não para substituir a SEC. E a SOX se aplica a todas as empresas listadas nas bolsas americanas, incluindo estrangeiras como a Petrobras.",
+    "technicalJustification": "A Lei Sarbanes-Oxley de 2002 (Public Law 107-204), Seção 404 — Management Assessment of Internal Controls, estabelece: (a) a administração deve incluir em seus relatórios anuais uma avaliação da efetividade dos controles internos sobre relatórios financeiros, e (b) a firma de auditoria que prepara o relatório de auditoria deve atestar e reportar sobre a avaliação feita pela administração. O PCAOB, criado pela Seção 101 da SOX, tem como missão supervisionar as auditorias de empresas públicas para proteger os interesses dos investidores. A aplicabilidade extraterritorial da SOX é estabelecida pela definição de 'issuer' na Seção 2, que inclui qualquer entidade cujos valores mobiliários sejam registrados sob a Seção 12 do Securities Exchange Act de 1934.",
+    "relatedConcepts": [
+      "SOX",
+      "Seção 302",
+      "Seção 404",
+      "PCAOB",
+      "Controles Internos",
+      "ICFR",
+      "Auditoria"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b3-iso22301_4",
+    "topicId": "b3-iso22301",
+    "blocoId": "bloco-3",
+    "question": "uma empresa do setor de energia realiza diferentes tipos de exercícios para validar seu Plano de Continuidade de Negócios. Em um dos exercícios, a equipe de continuidade reuniu gestores de diversas áreas em uma sala de reuniões e apresentou o seguinte cenário: 'Um terremoto de magnitude 6.5 atingiu a região onde está localizado nosso data center principal às 14h de uma terça-feira. Os sistemas de climatização foram danificados e prevê-se que os servidores começarão a desligar por superaquecimento em 2 horas. O que cada área faria nessa situação?' Os participantes discutiram as ações previstas no plano, identificaram lacunas e sugeriram melhorias, porém nenhum sistema foi efetivamente ativado ou desligado durante o exercício. Qual tipo de exercício de continuidade foi realizado?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Full-Interruption Test, pois envolveu um cenário de desastre catastrófico.",
+        "isCorrect": false,
+        "explanation": "O Full-Interruption Test envolve a interrupção real do site primário e a ativação efetiva do site alternativo. No cenário descrito, nenhum sistema foi ativado ou desligado — foi apenas uma discussão."
+      },
+      {
+        "letter": "B",
+        "text": "Teste Paralelo, pois os gestores simularam ações paralelas em suas áreas.",
+        "isCorrect": false,
+        "explanation": "No Teste Paralelo, os sistemas são efetivamente ativados no site alternativo, operando em paralelo com o site principal. No cenário descrito, não houve ativação real de nenhum sistema."
+      },
+      {
+        "letter": "C",
+        "text": "Tabletop Exercise (Exercício de Mesa), pois foi uma discussão estruturada de cenário sem execução real de procedimentos técnicos.",
+        "isCorrect": true,
+        "explanation": "O Tabletop Exercise é exatamente isso: uma reunião onde os participantes discutem suas respostas a um cenário hipotético, analisando o plano de continuidade em um ambiente controlado, sem ativação real de sistemas ou interrupção de operações."
+      },
+      {
+        "letter": "D",
+        "text": "Teste de Simulação, pois foi simulado um cenário de terremoto.",
+        "isCorrect": false,
+        "explanation": "O Teste de Simulação envolve ações reais em ambiente controlado (por exemplo, efetivamente ativar sistemas no site alternativo, mover equipes). No cenário descrito, tudo ficou no nível de discussão, sem ação real."
+      },
+      {
+        "letter": "E",
+        "text": "Walkthrough Test, pois os gestores 'caminharam' pelos passos do plano mentalmente.",
+        "isCorrect": false,
+        "explanation": "Embora o Walkthrough envolva percorrer os passos do plano, ele é tipicamente mais estruturado e detalhado, com verificação passo a passo dos procedimentos. O cenário descrito é mais compatível com um Tabletop, que foca na discussão de alto nível do cenário e das respostas. Na prática, há sobreposição, mas o termo técnico mais preciso para reunião de discussão de cenário é Tabletop Exercise."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão avalia a capacidade de identificar tipos de exercícios de continuidade a partir de um cenário descrito. Os tipos de exercícios formam uma progressão de complexidade: Checklist Review (revisão documental), Tabletop Exercise (discussão de cenário em mesa), Walkthrough (percorrer passos do plano), Simulação (ações reais em ambiente controlado), Teste Paralelo (ativação real do site alternativo com primário operando), e Full-Interruption (desligamento do primário e migração total). O cenário descrito apresenta as características clássicas de um Tabletop Exercise: reunião presencial, apresentação de cenário hipotético, discussão das respostas, identificação de lacunas, e ausência de execução técnica real. A armadilha principal está entre Tabletop e Walkthrough — mas o Walkthrough é mais processual (passo a passo detalhado), enquanto o Tabletop é mais estratégico (discussão de decisões). A menção explícita de que 'nenhum sistema foi efetivamente ativado' elimina Simulação, Paralelo e Full-Interruption.",
+    "technicalJustification": "Conforme o BCI Good Practice Guidelines (GPG) e a ISO 22398 (Guidelines for exercises), o Tabletop Exercise é definido como um exercício baseado em discussão onde os participantes analisam suas funções e respostas a um cenário, sem mobilização real de recursos ou ativação de sistemas. O NIST SP 800-84 (Guide to Test, Training, and Exercise Programs for IT Plans and Capabilities) define Tabletop Exercise como 'a discussion-based exercise where personnel meet in a classroom setting or in breakout groups to discuss their roles during an emergency and their responses to a particular emergency situation'. A distinção entre tipos de exercícios é um tópico clássico em provas de segurança e continuidade.",
+    "relatedConcepts": [
+      "Tabletop Exercise",
+      "Full-Interruption Test",
+      "Teste Paralelo",
+      "Walkthrough",
+      "Simulação",
+      "BCP",
+      "Exercícios de Continuidade"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b3-iso22301_5",
+    "topicId": "b3-iso22301",
+    "blocoId": "bloco-3",
+    "question": "uma empresa do setor de petróleo e gás, listada na bolsa de valores de Nova York (NYSE), está sendo auditada para conformidade com a Lei Sarbanes-Oxley (SOX). Durante a auditoria, os auditores identificaram que o sistema ERP utilizado para geração de relatórios financeiros não possui segregação adequada de funções — o mesmo usuário que registra as transações financeiras tem permissão para aprovar essas transações e gerar os demonstrativos contábeis. Além disso, não há logs de auditoria para rastrear alterações nos dados financeiros. Considerando os requisitos da SOX e os frameworks de controles internos, analise as afirmações abaixo:\n\nI. A ausência de segregação de funções pode ser classificada como uma Deficiência Material (Material Weakness) nos controles internos, conforme o framework COSO.\nII. A falta de trilhas de auditoria nos sistemas financeiros compromete exclusivamente a Seção 302 da SOX, não tendo relação com a Seção 404.\nIII. O PCAOB é o órgão responsável por aplicar penalidades criminais diretamente aos executivos da empresa neste caso.\nIV. O framework COSO, utilizado como referência para avaliação de controles internos sob a SOX, possui cinco componentes integrados, incluindo Atividades de Controle e Monitoramento.\n\nEstão CORRETAS apenas as afirmações:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I e II.",
+        "isCorrect": false,
+        "explanation": "A afirmação II é incorreta. A falta de trilhas de auditoria compromete diretamente a Seção 404 (controles internos sobre relatórios financeiros), não apenas a Seção 302."
+      },
+      {
+        "letter": "B",
+        "text": "I e IV.",
+        "isCorrect": true,
+        "explanation": "A afirmação I é correta: a ausência de segregação de funções em um sistema financeiro é tipicamente classificada como Material Weakness, pois há probabilidade razoável de que distorções materiais nos demonstrativos não sejam prevenidas ou detectadas. A afirmação IV é correta: o COSO possui cinco componentes — Ambiente de Controle, Avaliação de Riscos, Atividades de Controle, Informação e Comunicação, e Monitoramento."
+      },
+      {
+        "letter": "C",
+        "text": "II e III.",
+        "isCorrect": false,
+        "explanation": "Ambas são incorretas. A afirmação II erra ao limitar o impacto à Seção 302 (a Seção 404 é a mais diretamente afetada). A afirmação III erra quanto à função do PCAOB — ele supervisiona auditorias, não aplica penalidades criminais (isso cabe ao DOJ/SEC)."
+      },
+      {
+        "letter": "D",
+        "text": "I, III e IV.",
+        "isCorrect": false,
+        "explanation": "A afirmação III é incorreta. O PCAOB supervisiona as firmas de auditoria e estabelece padrões de auditoria, mas não aplica penalidades criminais a executivos. Penalidades criminais são competência do Departamento de Justiça dos EUA (DOJ) e da SEC."
+      },
+      {
+        "letter": "E",
+        "text": "II, III e IV.",
+        "isCorrect": false,
+        "explanation": "As afirmações II e III são incorretas, conforme explicado nas alternativas anteriores."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão integra múltiplos conceitos da SOX e dos frameworks de controles internos, exigindo análise cuidadosa de cada afirmação. Afirmação I (CORRETA): A segregação de funções (Separation of Duties — SoD) é um princípio fundamental de controles internos. Quando o mesmo usuário pode registrar, aprovar e reportar transações financeiras, há um risco elevado de fraude ou erro não detectado. Isso configura uma Material Weakness (Deficiência Material) — uma deficiência nos controles internos tão grave que há probabilidade razoável de que uma distorção material nos demonstrativos financeiros não seja prevenida ou detectada. Afirmação II (INCORRETA): A falta de trilhas de auditoria compromete primordialmente a Seção 404 da SOX, que trata especificamente da efetividade dos controles internos. Embora a Seção 302 também seja afetada (pois o CEO/CFO certificam que os controles são adequados), a Seção 404 é a mais diretamente impactada. Afirmação III (INCORRETA): O PCAOB supervisiona as firmas de auditoria e estabelece padrões de auditoria, mas NÃO aplica penalidades criminais a executivos. Penalidades criminais são competência do Departamento de Justiça dos EUA (DOJ) e ações civis são da SEC. Afirmação IV (CORRETA): O framework COSO (Internal Control — Integrated Framework) de fato possui cinco componentes: Ambiente de Controle, Avaliação de Riscos, Atividades de Controle, Informação e Comunicação, e Monitoramento.",
+    "technicalJustification": "A classificação de Material Weakness é definida pelo PCAOB (Auditing Standard No. 5) como 'a deficiency, or a combination of deficiencies, in internal control over financial reporting, such that there is a reasonable possibility that a material misstatement of the company's annual or interim financial statements will not be prevented or detected on a timely basis'. A ausência de segregação de funções em sistemas financeiros críticos é consistentemente citada como exemplo de Material Weakness pelo PCAOB. O framework COSO (2013 — Internal Control Integrated Framework) possui cinco componentes e 17 princípios, sendo a referência padrão para avaliação de ICFR sob a SOX. O papel do PCAOB está definido na Seção 101 da SOX: supervisionar auditorias de empresas públicas, registrar firmas de auditoria, e estabelecer padrões — sem competência penal direta.",
+    "relatedConcepts": [
+      "SOX",
+      "Material Weakness",
+      "COSO",
+      "Segregação de Funções",
+      "PCAOB",
+      "Seção 404",
+      "Controles Internos",
+      "Trilha de Auditoria"
+    ],
+    "order": 5
+  }
+]

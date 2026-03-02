@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b2-lgpd_1",
+    "topicId": "b2-lgpd",
+    "front": "Segundo a LGPD, o que define um 'dado pessoal'?",
+    "back": "Informação relacionada a pessoa natural identificada ou identificável.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-lgpd_2",
+    "topicId": "b2-lgpd",
+    "front": "Na LGPD, qual a diferença fundamental entre o Controlador e o Operador?",
+    "back": "O Controlador toma as decisões sobre o tratamento; o Operador realiza o tratamento em nome do controlador.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-lgpd_3",
+    "topicId": "b2-lgpd",
+    "front": "O que estabelece o princípio da 'Finalidade' na LGPD?",
+    "back": "Realização do tratamento para propósitos legítimos, específicos, explícitos e informados ao titular, sem possibilidade de tratamento posterior incompatível.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-lgpd_4",
+    "topicId": "b2-lgpd",
+    "front": "Quem é o Encarregado (DPO) na estrutura da LGPD?",
+    "back": "Pessoa indicada pelo controlador e operador para atuar como canal de comunicação entre o controlador, os titulares dos dados e a ANPD.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-lgpd_5",
+    "topicId": "b2-lgpd",
+    "front": "O 'consentimento' é a única base legal para o tratamento de dados pessoais na LGPD?",
+    "back": "Não. Existem 10 bases legais, incluindo: cumprimento de obrigação legal, execução de contrato, exercício regular de direitos e legítimo interesse.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-lgpd_6",
+    "topicId": "b2-lgpd",
+    "front": "Cite 3 direitos fundamentais do titular dos dados previstos na LGPD.",
+    "back": "1. Confirmação da existência de tratamento;\n2. Acesso aos dados;\n3. Correção de dados incompletos, inexatos ou desatualizados;\n4. Portabilidade;\n5. Eliminação dos dados.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-lgpd_7",
+    "topicId": "b2-lgpd",
+    "front": "O que é o Relatório de Impacto à Proteção de Dados Pessoais (RIPD)?",
+    "back": "Documentação do controlador que descreve os processos de tratamento que podem gerar riscos às liberdades civis e direitos fundamentais, bem como medidas de mitigação.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-lgpd_8",
+    "topicId": "b2-lgpd",
+    "front": "V ou F: O 'Legítimo Interesse' pode ser utilizado como base legal para o tratamento de dados pessoais SENSÍVEIS.",
+    "back": "Falso. O legítimo interesse NÃO é uma base legal válida para o tratamento de dados sensíveis (conforme Art. 11 da LGPD).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-lgpd_9",
+    "topicId": "b2-lgpd",
+    "front": "Qual o limite máximo da multa administrativa simples que a ANPD pode aplicar por infração?",
+    "back": "Até 2% do faturamento da empresa (limite de R$ 50 milhões por infração).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b2-lgpd_10",
+    "topicId": "b2-lgpd",
+    "front": "Em quais condições a transferência internacional de dados é permitida quando o país de destino não possui nível adequado de proteção?",
+    "back": "Quando o controlador oferecer garantias de conformidade via: cláusulas contratuais específicas/padrão, normas corporativas globais ou selos/certificados/códigos de conduta emitidos pela ANPD.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

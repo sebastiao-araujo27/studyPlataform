@@ -1,0 +1,244 @@
+[
+  {
+    "id": "ex_b1-datalake_1",
+    "topicId": "b1-datalake",
+    "blocoId": "bloco-1",
+    "question": "Uma grande empresa do setor de energia está modernizando sua infraestrutura de dados para suportar análises avançadas e aprendizado de máquina. Durante o planejamento, a equipe de arquitetura decidiu implementar um Data Lake para consolidar dados provenientes de sensores de plataformas, logs de sistemas de ERP e planilhas de geofísica. De acordo com os conceitos fundamentais de arquitetura de dados, qual é a principal característica que diferencia um Data Lake de um Data Warehouse tradicional no que diz respeito ao tratamento inicial dos dados?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "O Data Lake exige a definição rigorosa do esquema dos dados no momento da carga (schema-on-write), garantindo que apenas dados limpos sejam armazenados.",
+        "isCorrect": false,
+        "explanation": "Incorreta. O Data Lake utiliza schema-on-read, permitindo o armazenamento de dados brutos sem esquema pré-definido."
+      },
+      {
+        "letter": "B",
+        "text": "O Data Lake permite o armazenamento de dados em seu formato nativo, sejam eles estruturados, semiestruturados ou não estruturados, postergando a definição do esquema para o momento do consumo (schema-on-read).",
+        "isCorrect": true,
+        "explanation": "Correta. Esta é a definição fundamental de um Data Lake, permitindo flexibilidade e baixo custo de ingestão inicial."
+      },
+      {
+        "letter": "C",
+        "text": "O Data Lake armazena exclusivamente dados estruturados em tabelas relacionais, visando otimizar a performance de consultas SQL complexas e relatórios de BI.",
+        "isCorrect": false,
+        "explanation": "Incorreta. Data Lakes são projetados para lidar com diversos formatos, não apenas dados estruturados."
+      },
+      {
+        "letter": "D",
+        "text": "O Data Lake elimina a necessidade de processos de governança de dados, uma vez que a sua arquitetura impede nativamente a criação de silos de informação.",
+        "isCorrect": false,
+        "explanation": "Incorreta. A falta de governança em um Data Lake leva à criação de um Data Swamp (pântano de dados)."
+      },
+      {
+        "letter": "E",
+        "text": "O Data Lake utiliza obrigatoriamente discos de estado sólido (SSD) de alto desempenho para garantir que o processamento em lote seja mais rápido que em um Data Warehouse.",
+        "isCorrect": false,
+        "explanation": "Incorreta. Data Lakes costumam utilizar armazenamento de baixo custo (object storage), como S3 ou HDFS, e não dependem exclusivamente de SSDs."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda a diferença fundamental entre Data Lakes e Data Warehouses, um tema recorrente na CESGRANRIO. O conceito chave aqui é o momento da aplicação do esquema ('Schema'). No Data Warehouse tradicional, impera o 'Schema-on-write', onde os dados devem ser transformados e validados antes de serem inseridos em tabelas relacionais rígidas. Já o Data Lake foi concebido para resolver o problema do volume e da variedade, permitindo o 'Schema-on-read'. Isso significa que os dados (fotos, logs, CSVs, JSONs) são gravados em seu estado bruto (Raw). A estrutura e a lógica de negócio só são aplicadas quando um analista ou cientista de dados lê o arquivo para processamento. As alternativas incorretas tentam confundir o candidato atribuindo características de DW ao Lake (como a rigidez de tabelas) ou sugerindo que a tecnologia elimina problemas de gestão (como a governança), o que é falso, pois sem governança o Data Lake torna-se um Data Swamp.",
+    "technicalJustification": "Conforme a documentação da AWS e de James Dixon (quem cunhou o termo), o Data Lake é um repositório centralizado que permite armazenar dados estruturados e não estruturados em qualquer escala, utilizando a abordagem de schema-on-read.",
+    "relatedConcepts": [
+      "Schema-on-read",
+      "Big Data",
+      "Object Storage"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b1-datalake_2",
+    "topicId": "b1-datalake",
+    "blocoId": "bloco-1",
+    "question": "No contexto da organização de um Data Lake corporativo, é comum a adoção de uma arquitetura de medalhão ou zonas para garantir a qualidade e a rastreabilidade dos dados. Uma equipe de engenharia de dados da Petrobras está processando dados brutos de telemetria que acabaram de chegar dos sensores de produção. Esses dados foram armazenados exatamente como foram capturados, sem qualquer limpeza ou transformação. Segundo as boas práticas de arquitetura de Data Lake, em qual zona esses dados devem ser mantidos inicialmente?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Zona Refined (ou Gold), que é destinada ao armazenamento de dados brutos para garantir que os cientistas de dados tenham acesso à fonte original.",
+        "isCorrect": false,
+        "explanation": "Incorreta. A zona Gold contém dados altamente agregados e prontos para o consumo de negócio, não dados brutos."
+      },
+      {
+        "letter": "B",
+        "text": "Zona Trusted (ou Silver), onde os dados são ingeridos diretamente dos sistemas de origem sem sofrer alterações de formato ou conteúdo.",
+        "isCorrect": false,
+        "explanation": "Incorreta. A zona Silver já possui dados validados e limpos, servindo como uma camada intermediária."
+      },
+      {
+        "letter": "C",
+        "text": "Zona Raw (ou Bronze), que serve como a camada de pouso (landing zone) para os dados em seu estado original, mantendo a fidelidade à origem.",
+        "isCorrect": true,
+        "explanation": "Correta. A zona Raw/Bronze armazena os dados 'as-is', permitindo o reprocessamento histórico se necessário."
+      },
+      {
+        "letter": "D",
+        "text": "Zona Sandbox, que é o local definitivo para armazenamento de dados de produção que serão consumidos por dashboards de BI.",
+        "isCorrect": false,
+        "explanation": "Incorreta. A Sandbox é uma área de experimentação temporária, não a camada de pouso oficial de produção."
+      },
+      {
+        "letter": "E",
+        "text": "Zona Transient, que apaga automaticamente os dados após 24 horas para economizar custos de armazenamento em nuvem.",
+        "isCorrect": false,
+        "explanation": "Incorreta. Embora exista a camada transient para ingestão, a persistência dos dados brutos é fundamental para a linhagem no Data Lake."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A arquitetura de zonas (ou Medalhão: Bronze, Silver, Gold) é o padrão de mercado para organizar Data Lakes. A questão foca na camada inicial. A Zona Raw (Bronze) é a 'fonte da verdade' dentro do Lake. Nela, os dados são armazenados sem modificações. Isso é crucial por dois motivos: 1) Auditoria: se houver dúvida sobre um cálculo futuro, pode-se voltar ao dado original; 2) Reprocessamento: se a lógica de negócio mudar, é possível reprocessar tudo a partir do zero. A alternativa A inverte os conceitos de Gold e Raw. A alternativa B pula uma etapa, pois a Silver já exige algum nível de limpeza (remoção de duplicatas, tratamento de nulos). A alternativa D descreve uma área de teste (Sandbox). A alternativa E sugere uma limpeza automática que fere o princípio de persistência do Data Lake.",
+    "technicalJustification": "A arquitetura de Medalhão (Medallion Architecture), popularizada pela Databricks, define a camada Bronze como o repositório para dados brutos vindos dos sistemas de origem.",
+    "relatedConcepts": [
+      "Medallion Architecture",
+      "Data Pipeline",
+      "Data Lineage"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b1-datalake_3",
+    "topicId": "b1-datalake",
+    "blocoId": "bloco-1",
+    "question": "A evolução das arquiteturas de dados levou ao surgimento do Data Lakehouse, que busca mitigar as limitações das arquiteturas que mantêm Data Lakes e Data Warehouses de forma separada. Ao implementar uma solução de Data Lakehouse utilizando tecnologias como o Delta Lake, uma organização busca obter benefícios específicos. Qual das seguintes funcionalidades é uma característica central que o Data Lakehouse traz para o ambiente de Data Lake, aproximando-o das capacidades de um Data Warehouse?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Suporte a transações ACID (Atomicidade, Consistência, Isolamento e Durabilidade), permitindo leituras e escritas simultâneas com integridade.",
+        "isCorrect": true,
+        "explanation": "Correta. O suporte a ACID é o que permite ao Lakehouse gerenciar dados com a confiabilidade de um banco de dados tradicional sobre um storage de arquivos."
+      },
+      {
+        "letter": "B",
+        "text": "Eliminação total da camada de armazenamento de arquivos (como Parquet ou Avro), substituindo-a por um sistema de arquivos proprietário e binário.",
+        "isCorrect": false,
+        "explanation": "Incorreta. O Lakehouse continua utilizando formatos abertos como Parquet; ele apenas adiciona uma camada de metadados sobre eles."
+      },
+      {
+        "letter": "C",
+        "text": "Obrigatoriedade do uso de processamento exclusivamente em tempo real (streaming), invalidando o uso de processamento em lote (batch).",
+        "isCorrect": false,
+        "explanation": "Incorreta. Uma das vantagens do Lakehouse é justamente a unificação de batch e streaming."
+      },
+      {
+        "letter": "D",
+        "text": "Redução da escalabilidade horizontal para garantir que a consistência dos dados seja mantida através de um único servidor central.",
+        "isCorrect": false,
+        "explanation": "Incorreta. O Lakehouse mantém a escalabilidade horizontal distribuída típica de sistemas de Big Data."
+      },
+      {
+        "letter": "E",
+        "text": "Fim da necessidade de metadados, uma vez que o Lakehouse identifica automaticamente o conteúdo dos arquivos através de inteligência artificial.",
+        "isCorrect": false,
+        "explanation": "Incorreta. O Lakehouse depende fortemente de uma camada de metadados (como o Delta Log) para gerenciar transações e versões."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "O Data Lakehouse é uma arquitetura moderna que combina a flexibilidade e o baixo custo do Data Lake com a performance e a governança do Data Warehouse. Historicamente, Data Lakes sofriam com a falta de transações: se um processo de escrita falhasse no meio, os dados ficavam corrompidos. O Delta Lake (ou Apache Iceberg/Hudi) resolve isso introduzindo uma camada de log de transações. Isso permite propriedades ACID. A alternativa A identifica corretamente essa evolução. A alternativa B está errada porque o Lakehouse preza por formatos abertos (open formats) para evitar lock-in. A alternativa C está incorreta pois o modelo é híbrido (batch/streaming). A alternativa D contradiz o princípio de Big Data. A alternativa E é absurda, pois metadados são o 'cérebro' do Lakehouse, permitindo funcionalidades como 'Time Travel' (viagem no tempo) para consultar versões anteriores dos dados.",
+    "technicalJustification": "O termo Data Lakehouse, conforme definido pela Databricks, refere-se a uma arquitetura que implementa estruturas de dados e funções de gerenciamento de dados similares às de um DW diretamente sobre o armazenamento de baixo custo de um Data Lake, suportando transações ACID.",
+    "relatedConcepts": [
+      "ACID",
+      "Delta Lake",
+      "Time Travel",
+      "Data Management"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b1-datalake_4",
+    "topicId": "b1-datalake",
+    "blocoId": "bloco-1",
+    "question": "Um Engenheiro de Dados está trabalhando em um projeto de conformidade com a LGPD (Lei Geral de Proteção de Dados) em um Data Lakehouse. Ele precisa garantir que, ao receber uma solicitação de exclusão de dados de um cliente, essa exclusão seja refletida em todas as versões históricas e que não ocorram inconsistências durante a leitura dos dados por outros processos paralelos. Qual recurso técnico do Delta Lake é fundamental para resolver esse cenário de exclusão de registros específicos (DELETE) sem a necessidade de recriar todo o Data Lake?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Schema Enforcement, que impede a inserção de dados que não estejam em conformidade com o esquema de proteção de dados.",
+        "isCorrect": false,
+        "explanation": "Incorreta. O Schema Enforcement garante a estrutura das colunas, mas não gerencia a exclusão de registros ou concorrência."
+      },
+      {
+        "letter": "B",
+        "text": "Z-Ordering, que organiza os dados fisicamente para otimizar a exclusão de registros baseada em chaves primárias.",
+        "isCorrect": false,
+        "explanation": "Incorreta. Z-Ordering é uma técnica de otimização de layout de arquivos para acelerar consultas (data skipping), não para gerenciar transações de delete."
+      },
+      {
+        "letter": "C",
+        "text": "Protocolo de 'Compaction' automático, que remove arquivos pequenos transformando-os em arquivos grandes, deletando os registros no processo.",
+        "isCorrect": false,
+        "explanation": "Incorreta. A compactação melhora a performance de leitura, mas a lógica de exclusão transacional é provida pelo log de transações."
+      },
+      {
+        "letter": "D",
+        "text": "Snapshot Isolation e o Transaction Log, que permitem que as operações de DELETE sejam atômicas e que leitores vejam uma visão consistente dos dados.",
+        "isCorrect": true,
+        "explanation": "Correta. O log de transações registra a exclusão e o Snapshot Isolation garante que leitores ativos não sejam afetados até que a transação seja concluída."
+      },
+      {
+        "letter": "E",
+        "text": "Data Skipping, que identifica quais arquivos contêm os dados do cliente e os oculta das consultas de BI sem removê-los fisicamente.",
+        "isCorrect": false,
+        "explanation": "Incorreta. Para conformidade com a LGPD, o dado deve ser efetivamente removido (ou anonimizado), e não apenas ocultado por metadados de skipping."
+      }
+    ],
+    "difficulty": "medio-dificil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão exige conhecimento técnico sobre o funcionamento interno do Delta Lake no contexto de um Lakehouse. Em um Data Lake tradicional (apenas arquivos Parquet no S3), apagar um único registro é uma tarefa hercúlea: você precisa ler o arquivo inteiro, filtrar o registro e regravar o arquivo. Se alguém tentar ler o arquivo enquanto você o regrava, o processo falha. O Delta Lake introduz o 'Transaction Log' (Delta Log). Quando um DELETE é executado, o Delta Lake marca os arquivos antigos como 'removidos' e cria novos arquivos sem aquele registro, tudo dentro de uma transação atômica. O 'Snapshot Isolation' garante que quem está lendo os dados veja a versão consistente 'antes' ou 'depois' da deleção, nunca um estado intermediário corrompido. As outras alternativas citam termos reais (Z-Ordering, Schema Enforcement), mas que servem para performance ou estrutura, não para a atomicidade da exclusão exigida pela LGPD.",
+    "technicalJustification": "O Delta Lake provê isolamento de snapshot através de um log de transações centralizado, permitindo operações DML (Data Manipulation Language) como UPDATE e DELETE em armazenamentos de objetos.",
+    "relatedConcepts": [
+      "LGPD",
+      "DML em Data Lakes",
+      "Snapshot Isolation"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b1-datalake_5",
+    "topicId": "b1-datalake",
+    "blocoId": "bloco-1",
+    "question": "A Petrobras lida com um volume massivo de dados provenientes de sensores de IoT em poços de petróleo (Upstream). Sem uma estratégia de governança robusta, o Data Lake da companhia corre o risco de se transformar em um 'Data Swamp' (Pântano de Dados). Considere as seguintes ações de governança:\n\nI. Implementação de um catálogo de dados para registro de metadados técnicos e de negócio.\nII. Definição de linhagem de dados (data lineage) para rastrear a origem e as transformações sofridas pelos dados.\nIII. Aplicação de políticas de controle de acesso granular (RBAC/ABAC) nas diferentes zonas do Lakehouse.\nIV. Armazenamento de todos os dados sem metadados para maximizar a velocidade de ingestão e reduzir a latência.\n\nPara evitar a degradação do Data Lake e garantir que ele seja uma ferramenta útil para os processos de negócio, estão corretas as ações:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I e II, apenas.",
+        "isCorrect": false,
+        "explanation": "Incorreta. Embora I e II sejam fundamentais, a ação III também é essencial para a governança e segurança."
+      },
+      {
+        "letter": "B",
+        "text": "I, II e III, apenas.",
+        "isCorrect": true,
+        "explanation": "Correta. Catálogo, linhagem e controle de acesso são os pilares para evitar que um Data Lake se torne um pântano inutilizável."
+      },
+      {
+        "letter": "C",
+        "text": "I, III e IV, apenas.",
+        "isCorrect": false,
+        "explanation": "Incorreta. A ação IV é justamente o que causa o Data Swamp; a falta de metadados torna o dado impossível de ser encontrado e entendido."
+      },
+      {
+        "letter": "D",
+        "text": "II, III e IV, apenas.",
+        "isCorrect": false,
+        "explanation": "Incorreta. A ação IV invalida a alternativa, pois metadados são essenciais para a utilidade do dado."
+      },
+      {
+        "letter": "E",
+        "text": "I, II, III e IV.",
+        "isCorrect": false,
+        "explanation": "Incorreta. A ação IV é uma prática negativa no contexto de governança de dados."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda o conceito de 'Data Swamp' (Pântano de Dados) e como a governança é a única forma de evitá-lo. Um Data Lake sem governança é apenas um repositório de arquivos onde ninguém sabe o que existe, de onde veio ou se a informação é confiável. \n- Ação I (Catálogo): Essencial para a descoberta de dados. Ferramentas como AWS Glue ou Unity Catalog permitem que o usuário saiba quais tabelas existem.\n- Ação II (Linhagem): Fundamental para auditoria e confiança. Se um KPI está estranho, a linhagem permite ver qual transformação causou o erro.\n- Ação III (Controle de Acesso): Governança também é segurança. No setor de óleo e gás, há dados sensíveis e estratégicos que não podem ser acessados por todos.\n- Ação IV (Omissão de Metadados): Esta é a 'pegadinha'. Embora pareça que remover metadados acelera a ingestão, isso destrói a usabilidade a longo prazo. Um dado sem contexto (metadado) é lixo digital. Portanto, a alternativa B é a única que reúne as práticas positivas de governança.",
+    "technicalJustification": "A governança de dados em Data Lakes envolve a gestão de metadados, qualidade de dados, segurança e linhagem para garantir que o repositório permaneça organizado e confiável (Referência: DAMA-DMBOK).",
+    "relatedConcepts": [
+      "Data Swamp",
+      "Data Catalog",
+      "Data Lineage",
+      "RBAC"
+    ],
+    "order": 5
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b1-etl_1",
+    "topicId": "b1-etl",
+    "front": "Qual o objetivo principal do processo de ETL em um ambiente de Data Warehouse?",
+    "back": "Extrair dados de fontes diversas (sistemas transacionais), transformá-los para atender aos requisitos de negócio e carregá-los em um repositório central (Data Warehouse).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-etl_2",
+    "topicId": "b1-etl",
+    "front": "O que é a Staging Area em um processo de ETL?",
+    "back": "É uma área de armazenamento temporário onde os dados são depositados logo após a extração, permitindo que as transformações ocorram sem impactar o desempenho dos sistemas de origem.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-etl_3",
+    "topicId": "b1-etl",
+    "front": "Quais são os dois tipos principais de extração de dados no ETL?",
+    "back": "- Extração Total (Full Extraction): Todos os dados da fonte são extraídos.\n- Extração Incremental (Incremental Extraction): Apenas os dados alterados ou criados desde a última carga são extraídos.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-etl_4",
+    "topicId": "b1-etl",
+    "front": "No contexto de ETL, o que compreende a etapa de Data Quality (Qualidade de Dados)?",
+    "back": "Processos de limpeza (cleansing), padronização, desduplicação e validação para garantir que os dados estejam corretos, consistentes e íntegros.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-etl_5",
+    "topicId": "b1-etl",
+    "front": "Qual a principal diferença entre os processos ETL e ELT?",
+    "back": "A ordem e o local da transformação:\n- ETL: A transformação ocorre em um servidor intermediário ANTES da carga no destino.\n- ELT: Os dados são carregados no destino e a transformação ocorre utilizando o poder de processamento do próprio banco de destino (ex: Data Lake ou Cloud DW).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-etl_6",
+    "topicId": "b1-etl",
+    "front": "Em quais cenários o modelo ELT é geralmente preferível ao ETL tradicional?",
+    "back": "Cenários de Big Data e Cloud Data Warehousing, onde o volume de dados é massivo e o destino possui alta capacidade de processamento paralelo para realizar transformações escaláveis.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-etl_7",
+    "topicId": "b1-etl",
+    "front": "Qual a importância dos metadados em um pipeline de ETL?",
+    "back": "Eles documentam a linhagem dos dados (data lineage), descrevendo a origem, as regras de transformação aplicadas e o destino final, facilitando a governança, auditoria e manutenção.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-etl_8",
+    "topicId": "b1-etl",
+    "front": "O que é CDC (Change Data Capture) e qual sua vantagem para o processo de extração?",
+    "back": "Técnica que identifica e captura apenas as alterações (INSERT, UPDATE, DELETE) nos dados da fonte. Vantagem: Reduz drasticamente a carga sobre os sistemas de origem e o tráfego de rede.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-etl_9",
+    "topicId": "b1-etl",
+    "front": "Por que é recomendável a criação de Surrogate Keys (Chaves Substitutas) durante a carga no Data Warehouse?",
+    "back": "Para desvincular o DW das chaves primárias dos sistemas de origem (que podem mudar ou colidir), garantindo a integridade histórica e melhorando a performance de joins.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-etl_10",
+    "topicId": "b1-etl",
+    "front": "V ou F: No processo de Transformação, a 'Pivotagem' (Pivot) consiste em transformar colunas em linhas para normalizar os dados.",
+    "back": "Falso. A 'Pivotagem' transforma valores de linhas em colunas (agregação). O processo de transformar colunas em linhas é chamado de 'Unpivot'.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

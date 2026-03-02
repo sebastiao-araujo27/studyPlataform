@@ -1,0 +1,242 @@
+[
+  {
+    "id": "ex_b2-engenharia-software_1",
+    "topicId": "b2-engenharia-software",
+    "blocoId": "bloco-2",
+    "question": "No contexto do desenvolvimento de sistemas para grandes corporações como a Petrobras, a escolha do modelo de processo de software é determinante para o sucesso do projeto. Considere uma situação em que uma equipe técnica precisa desenvolver um módulo de controle de sensores de pressão para poços de petróleo submarinos, onde os requisitos de segurança e integridade são extremamente rígidos, bem compreendidos e dificilmente sofrerão alterações significativas após o início do desenvolvimento. De acordo com Sommerville (2011), qual modelo de processo de software é o mais indicado para este cenário específico, em que as fases de especificação e desenvolvimento são claramente separadas?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Desenvolvimento Ágil utilizando o framework Scrum.",
+        "isCorrect": false,
+        "explanation": "O Scrum foca em requisitos voláteis e entregas incrementais, o que não é o ideal para sistemas de missão crítica com requisitos estáveis e rígidos."
+      },
+      {
+        "letter": "B",
+        "text": "Modelo em Cascata (Waterfall).",
+        "isCorrect": true,
+        "explanation": "O modelo em cascata é adequado para projetos com requisitos bem definidos, estáveis e onde a segurança exige documentação rigorosa em cada fase estanque."
+      },
+      {
+        "letter": "C",
+        "text": "Programação Extrema (XP).",
+        "isCorrect": false,
+        "explanation": "O XP prioriza a mudança e a codificação rápida, sendo inadequado para cenários onde a especificação deve ser congelada por questões de segurança."
+      },
+      {
+        "letter": "D",
+        "text": "Desenvolvimento Baseado em Componentes.",
+        "isCorrect": false,
+        "explanation": "Embora útil, este modelo foca na integração de componentes existentes, não sendo a definição primária para a organização das fases do ciclo de vida descritas."
+      },
+      {
+        "letter": "E",
+        "text": "Prototipação Evolucionária.",
+        "isCorrect": false,
+        "explanation": "A prototipação é usada quando os requisitos não são claros, o oposto do cenário proposto onde os requisitos são bem compreendidos."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda a aplicação clássica dos modelos de ciclo de vida de software. Segundo Ian Sommerville, o Modelo em Cascata (Waterfall) é um modelo de processo em que as atividades de desenvolvimento são organizadas em fases sequenciais: especificação de requisitos, projeto de software, implementação, teste e manutenção. Este modelo é particularmente adequado para sistemas de engenharia complexos onde os requisitos são bem compreendidos e mudanças são improváveis ou muito custosas após o início da implementação. No cenário da Petrobras descrito, o controle de sensores submarinos exige um rigor documental e uma previsibilidade que o modelo em cascata oferece. As metodologias ágeis (Opções A e C) são voltadas para a flexibilidade e mudanças constantes, o que conflita com a natureza de 'requisitos rígidos e bem compreendidos'. A prototipação (Opção E) é recomendada justamente quando o cliente não sabe o que quer, o que não é o caso. Portanto, a estrutura linear e disciplinada da cascata é a resposta tecnicamente correta para o contexto de estabilidade e criticidade apresentado.",
+    "technicalJustification": "Sommerville, I. (2011). Engenharia de Software. 9ª Edição. Capítulo 2: Processos de Software. O autor define que o modelo em cascata é apropriado quando os requisitos são bem entendidos e as mudanças serão limitadas durante o processo de projeto.",
+    "relatedConcepts": [
+      "Ciclo de Vida de Software",
+      "Modelo em Cascata",
+      "Engenharia de Requisitos"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b2-engenharia-software_2",
+    "topicId": "b2-engenharia-software",
+    "blocoId": "bloco-2",
+    "question": "Durante a fase de levantamento de requisitos para um novo sistema de gestão de logística de transporte de combustíveis, um Analista de Sistemas da Petrobras identifica a seguinte necessidade: 'O sistema deve ser capaz de processar 1.000 requisições de agendamento de carga por segundo, mantendo um tempo de resposta inferior a 200 milissegundos'. Com base na classificação clássica de requisitos proposta por Pressman e Sommerville, essa declaração é classificada como um requisito de:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Domínio.",
+        "isCorrect": false,
+        "explanation": "Requisitos de domínio derivam da área de aplicação do sistema, como regras de cálculo de pressão, não de desempenho técnico."
+      },
+      {
+        "letter": "B",
+        "text": "Negócio.",
+        "isCorrect": false,
+        "explanation": "Requisitos de negócio descrevem objetivos de alto nível da organização, não métricas técnicas de performance."
+      },
+      {
+        "letter": "C",
+        "text": "Funcional.",
+        "isCorrect": false,
+        "explanation": "Requisitos funcionais descrevem o que o sistema deve fazer (serviços), enquanto este descreve como o sistema deve se comportar (restrição)."
+      },
+      {
+        "letter": "D",
+        "text": "Não funcional de desempenho.",
+        "isCorrect": true,
+        "explanation": "Requisitos não funcionais impõem restrições aos serviços ou funções oferecidos, incluindo métricas de tempo e capacidade."
+      },
+      {
+        "letter": "E",
+        "text": "Interface de usuário.",
+        "isCorrect": false,
+        "explanation": "Refere-se à interação entre o humano e a máquina, não à capacidade de processamento do backend."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A distinção entre requisitos funcionais e não funcionais é fundamental na Engenharia de Software. Requisitos funcionais descrevem as funcionalidades ou serviços que o software deve fornecer (ex: 'O sistema deve permitir o cadastro de motoristas'). Já os requisitos não funcionais (RNF) não estão diretamente relacionados aos serviços específicos fornecidos pelo sistema, mas sim a propriedades emergentes do sistema, como confiabilidade, tempo de resposta, ocupação de memória e segurança. No caso apresentado, a métrica de '1.000 requisições por segundo' e 'tempo de resposta inferior a 200ms' refere-se claramente ao desempenho (performance) do sistema sob carga. Segundo Pressman, esses requisitos definem restrições sob as quais o sistema deve operar. A CESGRANRIO frequentemente cobra essa distinção, utilizando cenários onde o candidato deve identificar se a frase descreve uma ação do sistema (funcional) ou uma característica de qualidade/restrição (não funcional).",
+    "technicalJustification": "Pressman, R. S. (2011). Engenharia de Software: Uma Abordagem Profissional. 7ª Edição. Capítulo 5: Engenharia de Requisitos. Sommerville, I. (2011). Capítulo 4: Requisitos de Software.",
+    "relatedConcepts": [
+      "Requisitos Não Funcionais",
+      "Desempenho",
+      "Engenharia de Requisitos"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b2-engenharia-software_3",
+    "topicId": "b2-engenharia-software",
+    "blocoId": "bloco-2",
+    "question": "Uma organização do setor de energia busca elevar seu nível de maturidade em processos de software utilizando o modelo CMMI-DEV (Capability Maturity Model Integration) na sua representação por estágios. Atualmente, Petrobras já realiza o planejamento e monitoramento de projetos, gerencia requisitos e garante que os produtos de trabalho sejam revisados. No entanto, ela carece de uma padronização organizacional, onde os processos são customizados de forma ad hoc para cada projeto. Para atingir o Nível de Maturidade 3 (Definido), qual deve ser o foco principal da organização?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Institucionalizar a gestão quantitativa do desempenho dos processos.",
+        "isCorrect": false,
+        "explanation": "A gestão quantitativa é característica do Nível 4 (Gerenciado Quantitativamente)."
+      },
+      {
+        "letter": "B",
+        "text": "Estabelecer um conjunto de processos padrões em nível organizacional para garantir a consistência entre os projetos.",
+        "isCorrect": true,
+        "explanation": "O Nível 3 foca na padronização dos processos em toda a organização, saindo do foco apenas no projeto (Nível 2)."
+      },
+      {
+        "letter": "C",
+        "text": "Implementar a melhoria contínua dos processos com base na compreensão das causas comuns de variação.",
+        "isCorrect": false,
+        "explanation": "A melhoria contínua e foco em inovação são características do Nível 5 (Otimização)."
+      },
+      {
+        "letter": "D",
+        "text": "Garantir que os projetos sejam executados e geridos de acordo com planos documentados.",
+        "isCorrect": false,
+        "explanation": "Isso descreve o Nível 2 (Gerenciado), onde o foco é a gestão do projeto individual."
+      },
+      {
+        "letter": "E",
+        "text": "Eliminar o retrabalho através da automação total dos testes de regressão.",
+        "isCorrect": false,
+        "explanation": "Embora desejável, a automação de testes não define por si só um nível de maturidade do CMMI."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "O CMMI-DEV na representação por estágios define cinco níveis de maturidade. No Nível 1 (Inicial), os processos são caóticos. No Nível 2 (Gerenciado), os projetos da organização garantem que os processos sejam planejados e executados de acordo com a política; aqui o foco é o projeto individual. A grande transição para o Nível 3 (Definido) ocorre quando a organização deixa de olhar apenas para projetos isolados e passa a estabelecer um conjunto de processos padrões para toda a organização (Standard Process Set). No Nível 3, os processos são bem caracterizados e compreendidos, sendo descritos em padrões, procedimentos, ferramentas e métodos. A diferença crucial entre o Nível 2 e o Nível 3 é o escopo dos padrões: no Nível 2, os padrões podem diferir significativamente entre os projetos; no Nível 3, os padrões de projeto são instâncias adaptadas (tailoring) dos padrões da organização. Portanto, para atingir o nível 3, o foco deve ser a padronização organizacional.",
+    "technicalJustification": "CMMI Institute. CMMI for Development, Version 1.3. A representação por estágios define o Nível 3 como 'Defined', onde os processos são padronizados em toda a organização.",
+    "relatedConcepts": [
+      "CMMI-DEV",
+      "Qualidade de Software",
+      "Maturidade de Processos"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b2-engenharia-software_4",
+    "topicId": "b2-engenharia-software",
+    "blocoId": "bloco-2",
+    "question": "Ao projetar a arquitetura de um sistema corporativo de monitoramento de dutos de óleo em tempo real, um arquiteto de software deve decidir entre diferentes padrões arquiteturais. O sistema precisa processar fluxos contínuos de dados vindos de sensores, transformá-los através de vários filtros de integridade e, finalmente, armazenar os resultados em um banco de dados e disparar alertas. Considerando a natureza sequencial de transformação de dados desse sistema, qual padrão arquitetural é o mais indicado?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Arquitetura em Camadas (Layered Architecture).",
+        "isCorrect": false,
+        "explanation": "Foca na separação de preocupações (UI, Negócio, Dados), não em fluxos de transformação de dados sequenciais."
+      },
+      {
+        "letter": "B",
+        "text": "Arquitetura de Microserviços.",
+        "isCorrect": false,
+        "explanation": "É um estilo de implantação e escalabilidade, mas não descreve especificamente o padrão de processamento de fluxo de dados."
+      },
+      {
+        "letter": "C",
+        "text": "Arquitetura de Tubos e Filtros (Pipes and Filters).",
+        "isCorrect": true,
+        "explanation": "Ideal para sistemas que processam fluxos de dados onde cada componente (filtro) transforma os dados e os passa adiante via tubos."
+      },
+      {
+        "letter": "D",
+        "text": "Arquitetura Baseada em Repositório (Blackboard).",
+        "isCorrect": false,
+        "explanation": "Indicada quando diversos componentes independentes operam sobre uma base de dados central sem ordem fixa de execução."
+      },
+      {
+        "letter": "E",
+        "text": "Modelo-Visão-Controlador (MVC).",
+        "isCorrect": false,
+        "explanation": "Padrão de interface de usuário para separar a lógica de apresentação da lógica de negócio."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A arquitetura de software define a estrutura organizacional do sistema. Segundo Sommerville e Pressman, o padrão 'Pipes and Filters' (Tubos e Filtros) é especificamente projetado para sistemas que realizam processamento de dados em estágios. Cada estágio de processamento é encapsulado em um componente chamado 'filtro'. Os dados fluem entre os filtros através de 'tubos'. Este modelo é altamente eficiente para sistemas de processamento de sinais e fluxos de dados (como os sensores de dutos mencionados), pois permite que os filtros sejam reutilizados e reorganizados facilmente. A arquitetura em camadas (Opção A) é mais genérica e foca na decomposição funcional para facilitar a manutenção, mas não é otimizada para o fluxo de dados transformacional. O padrão Blackboard (Opção D) seria usado se os sensores colocassem dados em uma área comum e vários processos tentassem resolver um problema complexo de forma assíncrona, o que não é o foco de uma transformação sequencial clara.",
+    "technicalJustification": "Sommerville, I. (2011). Engenharia de Software. Capítulo 6: Projeto Arquitetural. O autor descreve o padrão 'Pipe and Filter' como adequado para aplicações de processamento de dados.",
+    "relatedConcepts": [
+      "Arquitetura de Software",
+      "Pipes and Filters",
+      "Padrões de Projeto"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b2-engenharia-software_5",
+    "topicId": "b2-engenharia-software",
+    "blocoId": "bloco-2",
+    "question": "A manutenção de software é uma atividade crítica que consome a maior parte do orçamento de TI em grandes empresas. Considere que um sistema de faturamento da Petrobras precise ser alterado para se adequar a uma nova regulamentação tributária aprovada pelo governo, sem que haja mudança nas funcionalidades de negócio principais ou correção de erros existentes. De acordo com a classificação das atividades de manutenção e as Leis de Evolução de Software de Lehman, essa atividade é classificada como manutenção:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Corretiva, pois visa corrigir o comportamento do sistema perante a lei.",
+        "isCorrect": false,
+        "explanation": "A manutenção corretiva foca em erros (bugs) onde o software não atende ao seu requisito original."
+      },
+      {
+        "letter": "B",
+        "text": "Adaptativa, pois o software está sendo modificado para operar em um ambiente externo alterado.",
+        "isCorrect": true,
+        "explanation": "Manutenção adaptativa ocorre quando o ambiente externo (leis, SO, hardware) muda e o software precisa se ajustar."
+      },
+      {
+        "letter": "C",
+        "text": "Perfectiva, pois melhora a qualidade do código para o futuro.",
+        "isCorrect": false,
+        "explanation": "A perfectiva foca em melhorias de desempenho, manutenibilidade ou novas funcionalidades desejadas pelos usuários."
+      },
+      {
+        "letter": "D",
+        "text": "Preventiva, pois evita que o sistema pare de funcionar no futuro.",
+        "isCorrect": false,
+        "explanation": "A preventiva visa encontrar e corrigir erros latentes antes que se tornem falhas operacionais."
+      },
+      {
+        "letter": "E",
+        "text": "Evolutiva de Crescimento Contínuo, conforme a primeira lei de Lehman.",
+        "isCorrect": false,
+        "explanation": "Embora seja uma evolução, a primeira lei de Lehman (Mudança Contínua) afirma que o software deve mudar ou se tornar progressivamente menos útil, mas não é o nome do tipo de manutenção."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "A questão exige o conhecimento preciso da taxonomia de manutenção de software. A manutenção adaptativa é definida como a modificação de um produto de software executada após a entrega para manter o produto de software utilizável em um ambiente alterado ou em mudança. O ambiente aqui não é apenas o hardware ou sistema operacional, mas também o ambiente legal e de negócios (regras tributárias, normas da ANP, etc.). Muitos candidatos confundem com 'corretiva' achando que o sistema estaria 'errado' se não mudar, mas tecnicamente o sistema funciona conforme foi especificado; o que mudou foi o mundo exterior. A manutenção perfectiva refere-se a melhorias solicitadas pelos usuários ou para melhorar o desempenho. A preventiva foca em reduzir a entropia do software (refatoração). As Leis de Lehman (especialmente a lei da Mudança Contínua) corroboram que sistemas do tipo E (Evolucionários) em uso no mundo real devem passar por essas mudanças adaptativas constantes ou perderão sua utilidade para a organização.",
+    "technicalJustification": "Pressman, R. S. (2011). Engenharia de Software. Capítulo 25: Manutenção e Evolução. Sommerville, I. (2011). Capítulo 9: Evolução de Software.",
+    "relatedConcepts": [
+      "Manutenção de Software",
+      "Leis de Lehman",
+      "Evolução de Software"
+    ],
+    "order": 5
+  }
+]

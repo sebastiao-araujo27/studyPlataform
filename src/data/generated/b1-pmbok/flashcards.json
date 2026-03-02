@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b1-pmbok_1",
+    "topicId": "b1-pmbok",
+    "front": "O que é o grupo de processos de iniciação no PMBOK 6ª Edição?",
+    "back": "Define e autoriza o projeto ou uma fase do projeto. Inclui os processos: Desenvolver o Termo de Abertura do Projeto e Realizar a Definição do Escopo Preliminar.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-pmbok_2",
+    "topicId": "b1-pmbok",
+    "front": "Qual a principal diferença entre a Estrutura Analítica do Projeto (EAP) e o Cronograma do Projeto?",
+    "back": "A EAP decompõe o escopo do projeto em entregas menores e gerenciáveis, enquanto o Cronograma sequencia as atividades e define durações, dependências e marcos.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-pmbok_3",
+    "topicId": "b1-pmbok",
+    "front": "Segundo o PMBOK 6ª Edição, quais são as três principais categorias de responsabilidade de um stakeholder?",
+    "back": "As três categorias são: 1. Gerenciar as expectativas dos stakeholders. 2. Engajar os stakeholders de forma apropriada. 3. Identificar os stakeholders.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-pmbok_4",
+    "topicId": "b1-pmbok",
+    "front": "Em relação ao gerenciamento de riscos, o que significa um risco 'aceito'?",
+    "back": "Um risco aceito é aquele que a equipe do projeto decidiu não tomar nenhuma ação para responder, seja porque o custo da resposta é maior que o benefício, ou porque o risco é baixo.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-pmbok_5",
+    "topicId": "b1-pmbok",
+    "front": "Qual a relação entre o gerenciamento de Custos e o gerenciamento de Riscos no PMBOK 6ª Edição?",
+    "back": "Os custos estimados incluem uma reserva de contingência para riscos conhecidos (identificados), e uma reserva de gerenciamento para riscos desconhecidos (não identificados).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-pmbok_6",
+    "topicId": "b1-pmbok",
+    "front": "No contexto do PMBOK 6ª Edição, cite duas técnicas para coletar requisitos.",
+    "back": "Duas técnicas são: Brainstorming e Entrevistas.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-pmbok_7",
+    "topicId": "b1-pmbok",
+    "front": "V ou F: A Estrutura Analítica do Projeto (EAP) é um entregável que deve ser detalhado até o nível de pacote de trabalho e não deve incluir atividades de projeto.",
+    "back": "Falso. A EAP decompõe o escopo em pacotes de trabalho que podem ser detalhados em atividades. Os pacotes de trabalho são a base para o planejamento de custos, cronograma e recursos.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-pmbok_8",
+    "topicId": "b1-pmbok",
+    "front": "Qual a principal ferramenta utilizada para decompor o escopo total do projeto em entregas menores e mais gerenciáveis no PMBOK 6ª Edição?",
+    "back": "A Estrutura Analítica do Projeto (EAP) - Work Breakdown Structure (WBS).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-pmbok_9",
+    "topicId": "b1-pmbok",
+    "front": "No gerenciamento de riscos, qual a diferença entre uma 'ameaça' e uma 'oportunidade'?",
+    "back": "Ameaça é um risco com impacto negativo no projeto, enquanto oportunidade é um risco com impacto positivo.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-pmbok_10",
+    "topicId": "b1-pmbok",
+    "front": "V ou F: No PMBOK 6ª Edição, o plano de gerenciamento de comunicações é um documento que descreve como as informações do projeto serão planejadas, estruturadas, monitoradas, controladas e comunicadas.",
+    "back": "Verdadeiro. Ele define as necessidades de informação dos stakeholders e como as comunicações serão realizadas para atender a essas necessidades.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

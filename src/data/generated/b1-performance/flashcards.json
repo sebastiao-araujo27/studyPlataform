@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b1-performance_1",
+    "topicId": "b1-performance",
+    "front": "Qual é a principal característica e uso do índice B-tree em bancos de dados relacionais?",
+    "back": "É um índice balanceado que suporta buscas de igualdade e, principalmente, buscas de intervalo (range scans). É o tipo de índice padrão na maioria dos SGBDs.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-performance_2",
+    "topicId": "b1-performance",
+    "front": "O que é Sharding no contexto de bancos de dados?",
+    "back": "É uma técnica de particionamento horizontal onde os dados são distribuídos entre múltiplos servidores (nós) independentes para garantir escalabilidade horizontal (scale-out).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-performance_3",
+    "topicId": "b1-performance",
+    "front": "Para que serve o comando EXPLAIN (ou EXPLAIN PLAN) em uma consulta SQL?",
+    "back": "Para exibir o plano de execução gerado pelo otimizador, detalhando como o SGBD acessará as tabelas (ex: scans, joins, índices) e o custo estimado da operação.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-performance_4",
+    "topicId": "b1-performance",
+    "front": "Qual a função das 'Estatísticas' (Statistics) para o Otimizador de Consultas?",
+    "back": "Fornecer metadados sobre a distribuição dos dados (ex: número de linhas, histogramas de valores) para que o otimizador escolha o caminho de execução mais eficiente.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-performance_5",
+    "topicId": "b1-performance",
+    "front": "Diferença principal: Quando utilizar um índice Hash em vez de um índice B-tree?",
+    "back": "Índices Hash são ideais para buscas de igualdade estrita (=). Diferente do B-tree, eles NÃO suportam buscas de intervalo (range) ou ordenação de dados.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-performance_6",
+    "topicId": "b1-performance",
+    "front": "Qual a diferença entre Particionamento Horizontal e Particionamento Vertical?",
+    "back": "- Horizontal: Divide a tabela em subconjuntos de linhas (rows), geralmente baseada em uma chave.\n- Vertical: Divide a tabela em subconjuntos de colunas (columns), separando colunas pouco usadas ou muito grandes.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-performance_7",
+    "topicId": "b1-performance",
+    "front": "O que define a 'Seletividade' de um índice e qual seu impacto na performance?",
+    "back": "É a razão entre o número de valores distintos e o total de registros. Alta seletividade (ex: CPF) torna o índice mais eficiente; baixa seletividade (ex: Sexo) muitas vezes faz o otimizador ignorar o índice.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-performance_8",
+    "topicId": "b1-performance",
+    "front": "O que é um 'Índice de Cobertura' (Covering Index) e qual sua principal vantagem?",
+    "back": "É um índice que contém todas as colunas solicitadas por uma consulta específica. Vantagem: Permite o 'Index Only Scan', onde o SGBD recupera os dados sem precisar acessar o bloco de dados da tabela (Heap).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-performance_9",
+    "topicId": "b1-performance",
+    "front": "V ou F: A criação de múltiplos índices em uma tabela melhora o desempenho global de operações de INSERT, UPDATE e DELETE.",
+    "back": "Falso. Embora melhorem o SELECT, índices degradam a performance de escrita (DML), pois o SGBD precisa atualizar as estruturas de índice a cada alteração nos dados.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-performance_10",
+    "topicId": "b1-performance",
+    "front": "Por que o otimizador pode optar por um 'Full Table Scan' mesmo havendo um índice disponível na coluna filtrada?",
+    "back": "Ocorre quando a seletividade é baixa (o filtro retorna grande parte da tabela). O custo de ler o índice + acessos aleatórios à tabela (I/O) torna-se superior à leitura sequencial de toda a tabela.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

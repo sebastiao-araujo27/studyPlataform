@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b1-normalizacao_1",
+    "topicId": "b1-normalizacao",
+    "front": "O que é uma Dependência Funcional (DF)?",
+    "back": "Uma relação entre dois conjuntos de atributos X e Y em uma tabela, onde o valor de X determina unicamente o valor de Y. Representada como X → Y. Ex: 'Matrícula' → 'Nome do Aluno'.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-normalizacao_2",
+    "topicId": "b1-normalizacao",
+    "front": "Qual o principal objetivo da Normalização de Dados?",
+    "back": "Minimizar a redundância de dados e evitar anomalias de inserção, atualização e exclusão, garantindo a integridade e consistência dos dados.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-normalizacao_3",
+    "topicId": "b1-normalizacao",
+    "front": "O que caracteriza a Primeira Forma Normal (1FN)?",
+    "back": "Cada atributo da tabela deve conter valores atômicos (indivisíveis) e não deve haver grupos repetitivos de colunas.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-normalizacao_4",
+    "topicId": "b1-normalizacao",
+    "front": "O que caracteriza a Segunda Forma Normal (2FN)?",
+    "back": "A tabela deve estar em 1FN e todos os atributos não chave devem depender funcionalmente da chave primária COMPLETA, eliminando dependências parciais.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-normalizacao_5",
+    "topicId": "b1-normalizacao",
+    "front": "Qual a diferença entre 2FN e 3FN?",
+    "back": "2FN elimina dependências parciais (atributos não chave dependendo de parte da chave primária). 3FN vai além, eliminando dependências transitivas (atributos não chave dependendo de outros atributos não chave).",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-normalizacao_6",
+    "topicId": "b1-normalizacao",
+    "front": "Em que situação uma anomalia de inserção ocorre?",
+    "back": "Quando é impossível adicionar um dado sobre um assunto sem adicionar dados sobre outro assunto relacionado, devido à redundância. Ex: Não se pode cadastrar um novo curso sem que haja pelo menos um aluno matriculado nele.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-normalizacao_7",
+    "topicId": "b1-normalizacao",
+    "front": "Qual a principal diferença entre 3FN e BCNF?",
+    "back": "3FN exige que todos os atributos não chave dependam funcionalmente da chave primária. BCNF (Forma Normal de Boyce-Codd) é mais rigorosa: para cada DF X → Y, X deve ser uma superchave. BCNF lida com dependências onde o determinante não é uma superchave.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-normalizacao_8",
+    "topicId": "b1-normalizacao",
+    "front": "V ou F: Uma tabela em 3FN está automaticamente em BCNF.",
+    "back": "Falso. Uma tabela em 3FN pode não estar em BCNF se existir uma DF X → Y onde X é um superconjunto de uma chave candidata, mas não uma chave candidata em si, e Y não for um atributo chave.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-normalizacao_9",
+    "topicId": "b1-normalizacao",
+    "front": "O que são dependências multivaloradas e como a 4FN as trata?",
+    "back": "Dependências multivaloradas (MVDs) ocorrem quando um atributo pode ter múltiplos valores para um único valor de outro atributo, independentemente de outros atributos. A 4FN decompõe a tabela para eliminar MVDs que não são DF, garantindo que cada atributo dependa apenas da chave primária.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-normalizacao_10",
+    "topicId": "b1-normalizacao",
+    "front": "Qual a relação entre normalização e desempenho em consultas?",
+    "back": "A normalização, ao reduzir redundância, pode exigir mais junções (JOINs) para recuperar dados relacionados, o que pode impactar o desempenho de consultas complexas. Desnormalização é frequentemente usada em Data Warehouses para otimizar consultas analíticas, mas com o risco de anomalias.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "id": "ex_b2-mvp_1",
+    "topicId": "b2-mvp",
+    "blocoId": "bloco-2",
+    "question": "No contexto do desenvolvimento ágil de produtos, o conceito de Minimum Viable Product (MVP) tornou-se fundamental para a aplicação de metodologias como o Lean Startup. Eric Ries, em sua obra \"The Lean Startup\", define o MVP não como um produto com funcionalidades mínimas, mas sim como uma versão do produto que permite à equipe de desenvolvimento coletar o máximo de aprendizado validado sobre os clientes com o mínimo esforço. Diante disso, qual das alternativas abaixo melhor descreve o principal objetivo de um MVP?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Lançar rapidamente um produto com todas as funcionalidades planejadas, mas com qualidade inferior, para testar a aceitação do mercado.",
+        "isCorrect": false,
+        "explanation": "Um MVP não foca em lançar todas as funcionalidades, mas sim as essenciais para aprendizado. Qualidade mínima é esperada, mas não é o foco principal em detrimento de funcionalidades."
+      },
+      {
+        "letter": "B",
+        "text": "Desenvolver um protótipo de baixa fidelidade que simula a experiência do usuário, sem qualquer funcionalidade real, para coletar feedback inicial.",
+        "isCorrect": false,
+        "explanation": "Embora protótipos sejam úteis, um MVP geralmente possui funcionalidades reais, ainda que limitadas, para testar hipóteses de valor de negócio e não apenas a experiência do usuário."
+      },
+      {
+        "letter": "C",
+        "text": "Criar a versão mais simplificada de um produto que pode ser lançada no mercado para validar hipóteses de negócio e aprender sobre o comportamento do cliente.",
+        "isCorrect": true,
+        "explanation": "Esta alternativa descreve corretamente o propósito do MVP: validar hipóteses com o mínimo de esforço e recursos, focando no aprendizado validado."
+      },
+      {
+        "letter": "D",
+        "text": "Entregar um produto completo e robusto para a base de clientes iniciais, visando obter feedback detalhado sobre cada aspecto da sua operação.",
+        "isCorrect": false,
+        "explanation": "Um MVP é intencionalmente simplificado e não um produto completo. O objetivo é aprender rapidamente, não obter feedback detalhado sobre um produto maduro."
+      },
+      {
+        "letter": "E",
+        "text": "Utilizar um produto existente para introduzir novas funcionalidades gradualmente, medindo o impacto de cada adição isoladamente.",
+        "isCorrect": false,
+        "explanation": "O MVP é focado no lançamento de uma nova hipótese ou produto, não na adição gradual de funcionalidades a um produto já existente com o objetivo principal de validação inicial."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão aborda o conceito fundamental de Minimum Viable Product (MVP) dentro do framework do Lean Startup. O MVP, conforme popularizado por Eric Ries, não se trata de lançar um produto incompleto ou de baixa qualidade, mas sim de uma versão do produto que permite a uma equipe coletar o máximo de aprendizado validado sobre seus clientes com o mínimo de esforço. O objetivo principal é testar hipóteses críticas sobre o negócio, o mercado ou o produto antes de investir recursos significativos em um desenvolvimento completo. A alternativa C capta essa essência ao afirmar que o MVP é a versão mais simplificada que pode ser lançada para validar hipóteses e aprender com os clientes. As demais alternativas apresentam equívocos comuns: A confunde MVP com lançamento rápido de baixa qualidade, B foca excessivamente em protótipos de baixa fidelidade sem funcionalidade real, D descreve um produto completo em vez de uma versão mínima, e E sugere um processo de iteração contínua em um produto existente, o que difere do propósito inicial de validação de uma nova ideia ou hipótese com um MVP.",
+    "technicalJustification": "O conceito de MVP é central na metodologia Lean Startup, promovendo o ciclo de aprendizado validado. Ref. Ries, E. (2011). The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses. Crown Business.",
+    "relatedConcepts": [
+      "MVP",
+      "Lean Startup",
+      "Aprendizado Validado",
+      "Validação de Hipóteses"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b2-mvp_2",
+    "topicId": "b2-mvp",
+    "blocoId": "bloco-2",
+    "question": "Uma equipe de desenvolvimento de software, trabalhando em uma nova plataforma de gestão de riscos para uma grande petroquímica, decide adotar os princípios do Lean Startup para acelerar a entrega de valor e minimizar desperdícios. Eles estão na fase inicial de concepção do produto e precisam definir qual seria a abordagem mais adequada para um MVP, considerando a necessidade de validar se a funcionalidade central de 'previsão de falhas em equipamentos críticos' realmente atende às expectativas dos engenheiros de manutenção. Qual das seguintes opções representa um MVP adequado para essa situação?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Desenvolver um sistema completo de gestão de riscos, integrando módulos de previsão de falhas, análise de impacto, planos de contingência e relatórios detalhados, para ser lançado após testes exaustivos.",
+        "isCorrect": false,
+        "explanation": "Esta alternativa descreve um produto completo e complexo, o oposto de um MVP, que deve ser mínimo e focado na validação de uma hipótese principal."
+      },
+      {
+        "letter": "B",
+        "text": "Criar um serviço manual onde um especialista analisa dados históricos e em tempo real dos equipamentos e gera relatórios de previsão de falhas personalizados para um grupo piloto de engenheiros.",
+        "isCorrect": true,
+        "explanation": "Esta opção representa um MVP 'concierge' ou 'wizard', onde a funcionalidade principal é entregue manualmente para validar a demanda e o valor antes de automatizar, minimizando o esforço inicial de desenvolvimento."
+      },
+      {
+        "letter": "C",
+        "text": "Desenvolver um aplicativo mobile simples apenas com a interface de visualização de dados históricos, sem qualquer capacidade preditiva, para coletar feedback sobre a usabilidade da interface.",
+        "isCorrect": false,
+        "explanation": "Este MVP foca apenas na interface e omite a funcionalidade central de previsão, que é a hipótese a ser validada. O aprendizado seria limitado."
+      },
+      {
+        "letter": "D",
+        "text": "Construir um algoritmo de machine learning complexo para prever falhas com alta acurácia, mas sem uma interface de usuário amigável, entregando os resultados brutos em planilhas.",
+        "isCorrect": false,
+        "explanation": "Embora contenha a funcionalidade preditiva, a falta de usabilidade e a entrega em formato bruto podem dificultar a validação do valor real para o usuário final, além de representar um esforço de desenvolvimento considerável."
+      },
+      {
+        "letter": "E",
+        "text": "Realizar extensas pesquisas de mercado e entrevistas com todos os engenheiros de manutenção para mapear todas as suas necessidades antes de iniciar qualquer desenvolvimento de software.",
+        "isCorrect": false,
+        "explanation": "Pesquisas são importantes, mas um MVP envolve lançar algo funcional (mesmo que mínimo) para aprendizado validado, não apenas coletar requisitos de forma passiva."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão apresenta um cenário prático de aplicação do conceito de MVP em uma empresa do setor de óleo e gás. O objetivo é validar a hipótese de que a funcionalidade de 'previsão de falhas em equipamentos críticos' agrega valor. A alternativa B propõe um MVP do tipo 'concierge' ou 'wizard', onde a funcionalidade principal é realizada manualmente para um grupo piloto. Essa abordagem é extremamente eficaz para validar a demanda e o valor percebido pelo cliente antes de investir pesadamente em automação e desenvolvimento complexo. Por exemplo, um especialista poderia analisar os dados e enviar previsões por e-mail ou relatório. Isso permite à equipe aprender se os engenheiros de manutenção realmente usariam e se beneficiariam de tais previsões, além de coletar feedback valioso sobre o tipo de informação e o formato ideal. As alternativas A e D descrevem produtos muito complexos ou com foco excessivo na tecnologia subjacente, em vez de no aprendizado validado. A alternativa C foca na interface, mas ignora a funcionalidade central a ser validada. A alternativa E descreve uma fase de pesquisa de requisitos, que é importante, mas não constitui um MVP, que exige um produto mínimo lançável para aprendizado.",
+    "technicalJustification": "Existem diferentes tipos de MVPs, incluindo 'concierge MVP' e 'wizard MVP', que focam em entregar valor manualmente para validar hipóteses. Ref. Chen, V. H., & Lee, J. (2018). The Lean Product Playbook: How to Innovate Faster, Learn Faster, and Build Products Customers Love. John Wiley & Sons.",
+    "relatedConcepts": [
+      "MVP",
+      "Lean Startup",
+      "Concierge MVP",
+      "Wizard MVP",
+      "Validação de Hipóteses",
+      "Ciclo Build-Measure-Learn"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b2-mvp_3",
+    "topicId": "b2-mvp",
+    "blocoId": "bloco-2",
+    "question": "Uma startup que desenvolve uma solução de otimização logística baseada em IA parempresas de transporte de cargas está enfrentando um dilema. Após o lançamento de seu MVP inicial, que focava em otimizar rotas de entrega de curta distância, os dados de uso e o feedback qualitativo indicam que os clientes valorizam a solução, mas a maior demanda está concentrada em otimizações para rotas de longa distância, um segmento que não foi o foco principal do MVP. A equipe agora precisa decidir como proceder. Considere as seguintes afirmativas sobre as opções disponíveis para a startup:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ignorar o feedback sobre rotas de longa distância, pois o MVP foi projetado para rotas curtas e qualquer desvio comprometeria a estratégia original.",
+        "isCorrect": false,
+        "explanation": "Ignorar feedback valioso e dados de uso é contra os princípios do Lean Startup e do ciclo de aprendizado validado, podendo levar ao fracasso do produto."
+      },
+      {
+        "letter": "B",
+        "text": "Completar imediatamente o desenvolvimento das funcionalidades para rotas de longa distância, lançando uma nova versão completa do produto com ambos os tipos de otimização.",
+        "isCorrect": false,
+        "explanation": "Lançar uma nova versão completa sem validação prévia do segmento de longa distância seria um desperdício de recursos, indo contra a filosofia de aprendizado incremental do Lean Startup."
+      },
+      {
+        "letter": "C",
+        "text": "Realizar um novo ciclo de 'build-measure-learn', possivelmente desenvolvendo um novo MVP ou iterando sobre o atual para validar especificamente a hipótese de valor para rotas de longa distância, antes de investir em desenvolvimento em larga escala.",
+        "isCorrect": true,
+        "explanation": "Esta alternativa reflete a abordagem correta do Lean Startup: usar os aprendizados para guiar os próximos passos, validando novas hipóteses com experimentos mínimos antes de comprometer grandes recursos."
+      },
+      {
+        "letter": "D",
+        "text": "Manter o MVP atual e focar em marketing agressivo para o segmento de curta distância, tentando forçar a adoção apesar da preferência demonstrada pelo mercado.",
+        "isCorrect": false,
+        "explanation": "Forçar a adoção de um produto que não atende à principal necessidade do mercado é uma estratégia falha e insustentável a longo prazo."
+      },
+      {
+        "letter": "E",
+        "text": "Abandonar o produto e pivotar para um mercado completamente diferente, já que a validação inicial falhou em identificar a demanda principal.",
+        "isCorrect": false,
+        "explanation": "O feedback indica uma demanda em outra área, o que sugere um pivô estratégico de produto, não necessariamente um abandono total da empresa ou do mercado. A alternativa C propõe uma validação antes de um pivô completo."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão descreve uma situação comum no desenvolvimento de produtos: o feedback e os dados de uso revelam uma oportunidade ou necessidade diferente daquela que foi inicialmente priorizada. No contexto do Lean Startup, a resposta a essa situação não é ignorar o feedback, nem construir imediatamente a nova funcionalidade em larga escala, nem forçar a adoção do que já existe. A abordagem correta é continuar o ciclo de 'build-measure-learn'. A alternativa C descreve precisamente isso: usar os aprendizados obtidos com o MVP inicial para formular novas hipóteses (neste caso, sobre o valor da otimização de rotas de longa distância) e testá-las com um novo experimento mínimo (que pode ser um novo MVP focado nesse segmento ou uma adição controlada ao MVP existente). Se essa nova hipótese for validada, a equipe pode então decidir investir mais recursos. Essa abordagem é conhecida como 'pivô estratégico', onde a direção geral do produto é ajustada com base em aprendizado validado. As outras alternativas representam caminhos que levam ao desperdício de recursos ou ao fracasso do produto por não se adaptarem às reais necessidades do mercado.",
+    "technicalJustification": "O ciclo 'Build-Measure-Learn' é o núcleo do Lean Startup. O feedback do cliente em um MVP pode levar a um 'pivô' (mudança estratégica) ou a uma 'perseverança' (continuação na estratégia atual). Ref. Ries, E. (2011). The Lean Startup.",
+    "relatedConcepts": [
+      "MVP",
+      "Lean Startup",
+      "Build-Measure-Learn",
+      "Pivô",
+      "Validação de Hipóteses",
+      "Feedback do Cliente"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b2-mvp_4",
+    "topicId": "b2-mvp",
+    "blocoId": "bloco-2",
+    "question": "Em uma grande corporação do setor de energia, uma equipe de inovação está explorando a aplicação de metodologias ágeis para o desenvolvimento de um novo sistema de monitoramento ambiental em tempo real. Eles implementaram um MVP que permitia a coleta e visualização básica de dados de sensores de qualidade do ar. Após o lançamento para um grupo restrito de usuários, a equipe observou que, embora a funcionalidade básica fosse utilizada, os usuários demonstravam grande interesse em análises preditivas e alertas automatizados, que não faziam parte do escopo inicial do MVP. Considerando a filosofia do Lean Startup e o ciclo de aprendizado validado, qual das seguintes sequências de ações representa a melhor abordagem para a equipe neste momento?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Construir imediatamente um módulo completo de análise preditiva e sistema de alertas, integrando-o ao MVP existente, e lançar para todos os usuários.",
+        "isCorrect": false,
+        "explanation": "Construir um módulo completo sem validação prévia do valor e da exequibilidade é um risco alto e contrário à filosofia de aprendizado incremental e validação mínima."
+      },
+      {
+        "letter": "B",
+        "text": "Realizar um novo MVP focado especificamente em demonstrar a funcionalidade de análise preditiva básica ou alertas automatizados para um subconjunto de usuários interessados, medindo o engajamento e coletando feedback detalhado.",
+        "isCorrect": true,
+        "explanation": "Esta opção segue o ciclo Build-Measure-Learn, propondo um novo experimento mínimo (MVP) para validar a hipótese de valor das novas funcionalidades antes de um desenvolvimento em larga escala."
+      },
+      {
+        "letter": "C",
+        "text": "Aumentar o número de sensores e a granularidade dos dados coletados pelo MVP atual, pois a demanda por análise preditiva é um indicativo de que mais dados são necessários.",
+        "isCorrect": false,
+        "explanation": "Embora mais dados possam ser úteis, o foco principal deve ser validar a hipótese sobre o valor das *novas funcionalidades* (predição/alertas), não apenas coletar mais dados do que já existe."
+      },
+      {
+        "letter": "D",
+        "text": "Documentar a demanda por análises preditivas e alertas, e aguardar a próxima fase de planejamento do roadmap do produto, focando em estabilizar o MVP atual.",
+        "isCorrect": false,
+        "explanation": "Adiar a validação de uma demanda de mercado identificada pode levar à perda de oportunidade e ao desenvolvimento de um produto que não atende às expectativas."
+      },
+      {
+        "letter": "E",
+        "text": "Promover o MVP atual para novos usuários, argumentando que a funcionalidade básica é robusta e que as funcionalidades avançadas serão desenvolvidas no futuro.",
+        "isCorrect": false,
+        "explanation": "Focar em aquisição de usuários sem abordar uma demanda clara e validada por funcionalidades adicionais pode levar a uma base de usuários insatisfeita e a um crescimento insustentável."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão apresenta um cenário onde o feedback do MVP inicial aponta para uma nova direção de valor percebido pelos usuários: análises preditivas e alertas. A filosofia do Lean Startup, centrada no ciclo 'Build-Measure-Learn', dita que a equipe deve responder a esse aprendizado de forma iterativa e validada. A alternativa B propõe exatamente isso: criar um novo experimento mínimo (um MVP focado nas novas funcionalidades de predição e alerta) para testar essas hipóteses específicas com um grupo de usuários. Ao medir o engajamento e coletar feedback sobre essa nova versão mínima, a equipe poderá validar se o investimento em desenvolver essas funcionalidades em larga escala é justificado. Se validado, eles podem prosseguir; caso contrário, podem pivotar ou ajustar a estratégia. As outras alternativas representam abordagens menos eficientes: A envolve um grande investimento sem validação; C foca em mais dados em vez de validar as novas funcionalidades; D adia a validação de uma oportunidade clara; e E foca em aquisição sem atender à demanda principal. Portanto, a alternativa B é a mais alinhada com os princípios de aprendizado validado e desenvolvimento iterativo do Lean Startup.",
+    "technicalJustification": "O ciclo Build-Measure-Learn incentiva a experimentação contínua. Um MVP pode ser usado para testar hipóteses específicas, levando a iterações ou pivôs. Ref. Ries, E. (2011). The Lean Startup.",
+    "relatedConcepts": [
+      "MVP",
+      "Lean Startup",
+      "Build-Measure-Learn",
+      "Validação de Hipóteses",
+      "Iteração de Produto",
+      "Análise Preditiva"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b2-mvp_5",
+    "topicId": "b2-mvp",
+    "blocoId": "bloco-2",
+    "question": "uma empresa de tecnologia que desenvolve soluções de software para o setor de exploração e produção de petróleo está avaliando o sucesso de seu mais recente lançamento de MVP. O objetivo principal do MVP era validar se um novo algoritmo de otimização de perfuração, baseado em machine learning, poderia reduzir o tempo de perfuração em pelo menos 15%. Após o lançamento para um grupo piloto de geólogos e engenheiros de perfuração, a equipe coletou dados sobre o tempo de perfuração real versus o tempo estimado pelo algoritmo, além de feedback qualitativo sobre a usabilidade e a confiabilidade percebida. Analisando os resultados, eles observaram que o tempo médio de perfuração foi reduzido em 10%, e o feedback qualitativo indicou que, embora a redução seja bem-vinda, a confiabilidade do algoritmo em cenários geológicos complexos ainda é uma preocupação significativa para os usuários. Diante desse cenário, qual das seguintes conclusões e ações é mais coerente com os princípios do Lean Startup e a gestão de métricas de validação?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "O MVP falhou em atingir a meta de 15% de redução, portanto, o algoritmo deve ser descartado e a equipe deve buscar uma nova abordagem completamente diferente.",
+        "isCorrect": false,
+        "explanation": "Uma redução de 10% é um aprendizado valioso, e o feedback sobre confiabilidade indica uma área para melhoria, não necessariamente um fracasso total que exija o descarte completo da ideia."
+      },
+      {
+        "letter": "B",
+        "text": "A meta de 15% não foi atingida, mas a redução de 10% e o feedback sobre confiabilidade indicam que o algoritmo tem potencial. A equipe deve pivotar para focar exclusivamente em melhorar a confiabilidade em cenários complexos.",
+        "isCorrect": true,
+        "explanation": "Esta opção reconhece o aprendizado obtido (redução parcial e preocupação com confiabilidade) e propõe uma ação direcionada (foco na melhoria da confiabilidade), que pode ser um pivô ou uma iteração significativa."
+      },
+      {
+        "letter": "C",
+        "text": "Como a meta principal não foi atingida, o MVP deve ser considerado um fracasso. A equipe deve parar o desenvolvimento e focar em funcionalidades mais seguras e testadas, como relatórios estáticos.",
+        "isCorrect": false,
+        "explanation": "Ignorar o aprendizado sobre a redução de 10% e a demanda por confiabilidade seria um desperdício. O Lean Startup incentiva a adaptação com base em dados, não o retorno a abordagens menos inovadoras sem justificativa."
+      },
+      {
+        "letter": "D",
+        "text": "O MVP atingiu o objetivo de aprendizado ao demonstrar que a redução de 10% é possível, e o feedback sobre confiabilidade é secundário. A equipe deve lançar o algoritmo para todos os clientes, focando em marketing para gerenciar expectativas.",
+        "isCorrect": false,
+        "explanation": "Ignorar ou minimizar preocupações significativas de confiabilidade pode levar à insatisfação do cliente e prejudicar a reputação, mesmo que uma redução parcial tenha sido alcançada."
+      },
+      {
+        "letter": "E",
+        "text": "A equipe deve refinar o MVP para incluir mais funcionalidades além da otimização de perfuração, como análise geológica detalhada e simulação de reservatórios, para agregar mais valor e justificar o investimento.",
+        "isCorrect": false,
+        "explanation": "Adicionar mais funcionalidades sem resolver a preocupação central de confiabilidade e sem validação prévia pode levar a um produto complexo e ineficaz, contrariando o princípio de focar no aprendizado validado."
+      }
+    ],
+    "difficulty": "dificil",
+    "source": "autoral",
+    "detailedExplanation": "Esta questão avalia a capacidade de interpretar dados de um MVP e tomar decisões estratégicas alinhadas com o Lean Startup. O MVP não é apenas sobre atingir uma meta quantitativa específica (redução de 15%), mas principalmente sobre o aprendizado validado. Neste caso, o aprendizado é duplo: 1) o algoritmo *tem* potencial, pois gerou uma redução de 10%, o que é um resultado concreto, embora abaixo da meta; 2) existe uma barreira significativa à adoção plena: a confiabilidade em cenários complexos. A alternativa B interpreta corretamente esses aprendizados. Reconhece que o resultado não é um fracasso total, mas sim um indicador de que a hipótese principal precisa de ajuste. A proposta de 'pivotar para focar em melhorar a confiabilidade' é uma resposta estratégica baseada nos dados coletados. Isso pode envolver refinar o algoritmo, adicionar validações específicas para cenários complexos ou até mesmo ajustar o escopo do produto para focar em casos onde a confiabilidade atual é suficiente. As outras alternativas falham em diversos aspectos: A descarta prematuramente uma solução com potencial; C ignora o aprendizado positivo e o potencial de melhoria; D minimiza uma preocupação crítica de confiabilidade; e E propõe adicionar complexidade sem resolver o problema central. A gestão de métricas de validação (tempo de perfuração, feedback qualitativo sobre confiabilidade) é crucial aqui para guiar a decisão.",
+    "technicalJustification": "O conceito de 'aprendizado validado' é central no Lean Startup. Métricas de vaidade devem ser evitadas em favor de métricas de inovação e validação. A decisão de 'pivotar' ou 'perseverar' é baseada nesses aprendizados. Ref. Ries, E. (2011). The Lean Startup.",
+    "relatedConcepts": [
+      "MVP",
+      "Lean Startup",
+      "Métricas de Validação",
+      "Aprendizado Validado",
+      "Pivô",
+      "Machine Learning",
+      "Otimização",
+      "Feedback Qualitativo"
+    ],
+    "order": 5
+  }
+]

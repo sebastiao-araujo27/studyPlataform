@@ -1,0 +1,255 @@
+[
+  {
+    "id": "ex_b2-ciclo-vida_1",
+    "topicId": "b2-ciclo-vida",
+    "blocoId": "bloco-2",
+    "question": "uma empresa do setor de exploração de petróleo está planejando o desenvolvimento de um novo sistema para otimizar a alocação de recursos em plataformas offshore. Dada a natureza crítica e os requisitos rigorosos de segurança e confiabilidade do projeto, a equipe de desenvolvimento precisa selecionar um modelo de ciclo de vida de software que enfatize a análise de riscos e permita a iteração em fases de planejamento. Qual modelo é mais adequado para gerenciar os riscos inerentes a projetos complexos e de grande escala como este?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Modelo Cascata (Waterfall Model)",
+        "isCorrect": false,
+        "explanation": "O Modelo Cascata é sequencial e não possui mecanismos explícitos para gerenciar riscos de forma iterativa."
+      },
+      {
+        "letter": "B",
+        "text": "Modelo Incremental",
+        "isCorrect": false,
+        "explanation": "Embora entregue funcionalidades gradualmente, o Modelo Incremental não foca primariamente na análise e mitigação de riscos como um pilar central do seu processo."
+      },
+      {
+        "letter": "C",
+        "text": "Modelo Espiral (Spiral Model)",
+        "isCorrect": true,
+        "explanation": "O Modelo Espiral integra o desenvolvimento com a análise de riscos em cada ciclo, sendo ideal para projetos complexos e de alto risco como o descrito."
+      },
+      {
+        "letter": "D",
+        "text": "Modelo de Prototipação",
+        "isCorrect": false,
+        "explanation": "O Modelo de Prototipação foca na validação de requisitos com o usuário através de protótipos, mas não possui um foco intrínseco na gestão de riscos em larga escala."
+      },
+      {
+        "letter": "E",
+        "text": "Metodologia Ágil (Scrum)",
+        "isCorrect": false,
+        "explanation": "Metodologias Ágeis são adaptativas e iterativas, mas o foco principal não é a análise de riscos como em modelos específicos para isso, embora a inspeção e adaptação ajudem na gestão de riscos."
+      }
+    ],
+    "difficulty": "facil",
+    "source": "autoral",
+    "detailedExplanation": "A questão apresenta um cenário de projeto complexo e de alto risco no setor de petróleo, exigindo um modelo de ciclo de vida que lide explicitamente com a gestão de riscos. O Modelo Cascata é sequencial e não lida bem com mudanças ou riscos. O Modelo Incremental entrega o software em partes, mas não foca na análise de riscos a cada iteração. A Prototipação é voltada para a validação de requisitos. Metodologias Ágeis, como o Scrum, são iterativas e adaptativas, o que ajuda a mitigar riscos, mas o Modelo Espiral foi projetado especificamente com a análise e mitigação de riscos como um componente central em cada iteração. O Modelo Espiral combina elementos do modelo cascata e da prototipação, com ênfase na análise de riscos. Cada ciclo do modelo espiral envolve planejamento, análise de riscos, engenharia e avaliação pelo cliente. Portanto, para um projeto com os requisitos descritos, o Modelo Espiral é a escolha mais adequada.",
+    "technicalJustification": "O Modelo Espiral, proposto por Barry Boehm, é caracterizado pela sua ênfase na análise de riscos em cada fase do desenvolvimento. Ele combina elementos de abordagens iterativas e sequenciais, adicionando um foco explícito na avaliação e mitigação de riscos. (Referência: Boehm, B. W. (1988). A Spiral Model of Software Development and Engineering. IEEE Computer, 21(5), 61-72.)",
+    "relatedConcepts": [
+      "Modelo Espiral",
+      "Gestão de Riscos",
+      "Ciclo de Vida de Software",
+      "Engenharia de Software"
+    ],
+    "order": 1
+  },
+  {
+    "id": "ex_b2-ciclo-vida_2",
+    "topicId": "b2-ciclo-vida",
+    "blocoId": "bloco-2",
+    "question": "Em um grande projeto de modernização de sistemas legados em uma refinaria, a equipe de desenvolvimento optou por um modelo de desenvolvimento que permite a entrega contínua de novas funcionalidades, ao mesmo tempo que busca automatizar o máximo possível o processo de integração e deploy. A cultura da equipe valoriza a colaboração estreita entre desenvolvimento e operações, visando reduzir o tempo entre a concepção de uma ideia e sua disponibilização em produção, além de minimizar falhas. Qual conjunto de práticas e filosofias melhor descreve essa abordagem?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Modelo Cascata e Testes Manuais",
+        "isCorrect": false,
+        "explanation": "O Modelo Cascata é sequencial e não se alinha com a entrega contínua. Testes manuais são demorados e menos eficientes para a automação desejada."
+      },
+      {
+        "letter": "B",
+        "text": "RUP (Rational Unified Process) e Integração Contínua",
+        "isCorrect": false,
+        "explanation": "RUP é um framework mais formal e iterativo, mas a descrição foca na colaboração Dev-Ops e automação, que são centrais no DevOps e CI/CD, e não necessariamente o foco principal do RUP."
+      },
+      {
+        "letter": "C",
+        "text": "DevOps e CI/CD (Continuous Integration/Continuous Delivery)",
+        "isCorrect": true,
+        "explanation": "DevOps promove a colaboração entre equipes de desenvolvimento e operações, e CI/CD foca na automação da integração e entrega/deploy, alinhando-se perfeitamente com a descrição."
+      },
+      {
+        "letter": "D",
+        "text": "Modelo Incremental e Testes de Aceitação do Usuário (UAT)",
+        "isCorrect": false,
+        "explanation": "O Modelo Incremental foca em entregas parciais, mas a descrição enfatiza a automação e a colaboração Dev-Ops, que são mais centrais no DevOps e CI/CD."
+      },
+      {
+        "letter": "E",
+        "text": "Modelo de Prototipação e Revisões de Código",
+        "isCorrect": false,
+        "explanation": "A Prototipação foca na validação de requisitos com o usuário, e revisões de código são uma prática, mas não definem a filosofia de automação e colaboração Dev-Ops descrita."
+      }
+    ],
+    "difficulty": "facil-medio",
+    "source": "autoral",
+    "detailedExplanation": "A questão descreve uma abordagem que enfatiza a entrega contínua, automação de processos de integração e deploy, e a colaboração entre desenvolvimento e operações. O Modelo Cascata é inadequado devido à sua natureza sequencial. O RUP é um framework de processo mais formal e não foca primariamente na cultura Dev-Ops. O Modelo Incremental entrega em partes, mas não detalha a automação e a colaboração Dev-Ops. A Prototipação foca na validação de requisitos. A combinação de DevOps e CI/CD (Continuous Integration/Continuous Delivery) é exatamente o que a descrição aponta: DevOps é uma cultura e um conjunto de práticas que unem desenvolvimento e operações para melhorar a colaboração e a automação, enquanto CI/CD são práticas técnicas essenciais para habilitar a entrega contínua e automatizada. Portanto, a alternativa C é a que melhor representa o cenário descrito.",
+    "technicalJustification": "DevOps é uma extensão da cultura e prática que visa automatizar e integrar os processos entre as equipes de desenvolvimento de software e de operações de TI. CI/CD são práticas associadas ao DevOps que automatizam a integração de código (CI) e a entrega ou deploy de software (CD), permitindo entregas mais rápidas e confiáveis. (Referência: Humble, J., & Farley, D. (2010). Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation. Addison-Wesley Professional.)",
+    "relatedConcepts": [
+      "DevOps",
+      "CI/CD",
+      "Entrega Contínua",
+      "Integração Contínua",
+      "Automação de Software"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ex_b2-ciclo-vida_3",
+    "topicId": "b2-ciclo-vida",
+    "blocoId": "bloco-2",
+    "question": "Uma equipe de desenvolvimento de software, responsável por um sistema de gestão de produção de uma fábrica de fertilizantes, está enfrentando desafios com a gestão de requisitos em constante mudança e a necessidade de entregar valor ao negócio de forma rápida e adaptável. O modelo de ciclo de vida utilizado anteriormente, o Modelo Cascata, mostrou-se rígido e pouco responsivo às novas demandas do mercado. A equipe está considerando migrar para um modelo que permita entregas frequentes de incrementos funcionais, com feedback contínuo dos stakeholders e alta adaptabilidade a mudanças. No entanto, eles também precisam garantir que a qualidade do software não seja comprometida e que a arquitetura do sistema seja sustentável a longo prazo. Considerando essas necessidades, qual das seguintes abordagens seria a mais indicada para a equipe?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Adotar o Modelo Cascata, mas com cerimônias de revisão de requisitos mais frequentes.",
+        "isCorrect": false,
+        "explanation": "O Modelo Cascata é intrinsecamente sequencial e rígido; simplesmente aumentar a frequência de revisões não altera sua natureza fundamentalmente inadequada para requisitos mutáveis."
+      },
+      {
+        "letter": "B",
+        "text": "Implementar o Modelo Espiral, focando intensamente na análise de riscos a cada ciclo para garantir estabilidade.",
+        "isCorrect": false,
+        "explanation": "Embora o Modelo Espiral lide com riscos, seu foco na análise de riscos em cada ciclo pode torná-lo mais lento e menos adaptável para entregas rápidas e frequentes de incrementos funcionais, comparado a modelos ágeis."
+      },
+      {
+        "letter": "C",
+        "text": "Migrar para um Modelo Incremental, priorizando a entrega de funcionalidades críticas e realizando testes de aceitação rigorosos ao final de cada incremento.",
+        "isCorrect": false,
+        "explanation": "O Modelo Incremental foca em entregas parciais, o que é bom, mas a descrição enfatiza a adaptabilidade a mudanças e feedback contínuo, características mais fortes em modelos ágeis."
+      },
+      {
+        "letter": "D",
+        "text": "Adotar um framework Ágil como Scrum ou Kanban, que promovem entregas iterativas e incrementais, feedback contínuo e adaptabilidade a mudanças, com práticas de qualidade integradas.",
+        "isCorrect": true,
+        "explanation": "Frameworks Ágeis são projetados para lidar com requisitos mutáveis, entregar valor de forma iterativa e incremental, e manter a qualidade através de feedback contínuo e práticas de desenvolvimento ágil."
+      },
+      {
+        "letter": "E",
+        "text": "Utilizar o RUP (Rational Unified Process) em sua disciplina de 'Evolucionário', focando em iterações curtas para estabilizar a arquitetura antes de adicionar novas funcionalidades.",
+        "isCorrect": false,
+        "explanation": "Embora o RUP possa ser iterativo, a descrição das necessidades (adaptabilidade, entregas rápidas, feedback contínuo) se alinha mais diretamente com a filosofia e as práticas dos modelos Ágeis como Scrum ou Kanban."
+      }
+    ],
+    "difficulty": "medio",
+    "source": "autoral",
+    "detailedExplanation": "A situação descrita apresenta um claro conflito entre um modelo de desenvolvimento rígido (Cascata) e a necessidade de adaptabilidade, entregas frequentes e feedback contínuo. O Modelo Cascata é explicitamente inadequado para gerenciar requisitos mutáveis e entregar valor rapidamente. O Modelo Espiral, embora mais flexível que o Cascata, foca fortemente na análise de riscos, o que pode torná-lo menos ágil para entregas frequentes. O Modelo Incremental oferece entregas parciais, mas a ênfase em 'feedback contínuo' e 'alta adaptabilidade a mudanças' aponta mais fortemente para as metodologias Ágeis. O RUP, em sua versão evolutiva, pode ser iterativo, mas os frameworks Ágeis como Scrum e Kanban são explicitamente projetados para cenários de alta incerteza e mudança, com ciclos curtos de desenvolvimento (sprints no Scrum) que permitem entregas frequentes e feedback constante dos stakeholders. A integração de práticas de qualidade é um pilar das metodologias Ágeis. Portanto, a adoção de um framework Ágil é a solução mais adequada.",
+    "technicalJustification": "Metodologias Ágeis, como Scrum e Kanban, são projetadas para gerenciar a complexidade e a incerteza em projetos de software, permitindo entregas iterativas e incrementais, adaptabilidade a mudanças e feedback contínuo dos stakeholders. Elas priorizam a colaboração, a entrega de software funcional e a melhoria contínua. (Referência: Beck, K., et al. (2001). Manifesto para o Desenvolvimento Ágil de Software. Disponível em agilemanifesto.org.)",
+    "relatedConcepts": [
+      "Metodologias Ágeis",
+      "Scrum",
+      "Kanban",
+      "Ciclo de Vida de Software",
+      "Gestão de Requisitos",
+      "Entrega Contínua"
+    ],
+    "order": 3
+  },
+  {
+    "id": "ex_b2-ciclo-vida_4",
+    "topicId": "b2-ciclo-vida",
+    "blocoId": "bloco-2",
+    "question": "Uma grande empresa de energia, operando múltiplas plataformas de exploração e refinarias, decidiu implementar uma estratégia de desenvolvimento e operação de software que visa acelerar a entrega de novas funcionalidades e melhorias para seus sistemas de monitoramento e controle, ao mesmo tempo que aumenta a confiabilidade e a segurança. A estratégia envolve a adoção de práticas que promovem a automação de testes, a integração contínua de código e a entrega/deploy automatizado em ambientes de produção. Além disso, busca-se uma cultura de maior colaboração e responsabilidade compartilhada entre as equipes de desenvolvimento e as equipes de infraestrutura e operações. Considerando o contexto e os objetivos, analise as seguintes afirmativas sobre as práticas e filosofias envolvidas:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "I. O Modelo Cascata é ideal para esta estratégia, pois sua natureza sequencial garante a previsibilidade e a qualidade em cada fase.",
+        "isCorrect": false,
+        "explanation": "O Modelo Cascata é sequencial e rígido, sendo inadequado para a aceleração da entrega e a adaptabilidade necessárias para as práticas de CI/CD e DevOps."
+      },
+      {
+        "letter": "B",
+        "text": "II. CI/CD (Continuous Integration/Continuous Delivery) foca na automação do pipeline de build, testes e deploy, permitindo entregas mais rápidas e frequentes.",
+        "isCorrect": true,
+        "explanation": "Esta afirmativa descreve corretamente o propósito e o foco das práticas de CI/CD."
+      },
+      {
+        "letter": "C",
+        "text": "III. DevOps é uma filosofia que separa rigidamente as responsabilidades entre desenvolvimento e operações, visando minimizar a comunicação entre elas para evitar conflitos.",
+        "isCorrect": false,
+        "explanation": "DevOps visa justamente o oposto: promover a colaboração e a responsabilidade compartilhada, quebrando os silos entre desenvolvimento e operações."
+      },
+      {
+        "letter": "D",
+        "text": "IV. A integração contínua (CI) permite que múltiplos desenvolvedores integrem seu trabalho em um repositório compartilhado várias vezes ao dia, com testes automatizados sendo executados a cada integração.",
+        "isCorrect": true,
+        "explanation": "Esta afirmativa descreve precisamente o conceito de Integração Contínua."
+      },
+      {
+        "letter": "E",
+        "text": "V. A entrega contínua (CD) garante que qualquer build que passe pelos testes automatizados seja automaticamente implantado em produção, sem qualquer intervenção humana ou validação adicional.",
+        "isCorrect": false,
+        "explanation": "A Entrega Contínua (CD) garante que o software esteja sempre em estado de deploy, mas o deploy em produção pode exigir aprovação manual ou ser automatizado até o estágio de pré-produção (Continuous Delivery), enquanto a implantação automática em produção é o foco da Implantação Contínua (Continuous Deployment)."
+      }
+    ],
+    "difficulty": "medio-difícil",
+    "source": "autoral",
+    "detailedExplanation": "A questão descreve um cenário onde uma empresa de energia busca acelerar entregas e aumentar a confiabilidade através de automação e colaboração entre Dev e Ops. Vamos analisar cada afirmativa: \n\nA. O Modelo Cascata é sequencial e não suporta a agilidade e a automação necessárias para CI/CD e DevOps. Portanto, a afirmativa I está incorreta. \nB. A afirmativa II descreve corretamente o propósito central do CI/CD: automatizar o pipeline para entregas mais rápidas e frequentes. Está correta. \nC. A afirmativa III descreve o oposto do que é DevOps. DevOps busca quebrar silos e promover colaboração, não separação rígida. Portanto, está incorreta. \nD. A afirmativa IV descreve precisamente o conceito e a prática da Integração Contínua (CI), um pilar fundamental para o cenário proposto. Está correta. \nE. A afirmativa V confunde Entrega Contínua (CD) com Implantação Contínua. A Entrega Contínua garante que o software esteja pronto para ser implantado, mas o deploy em produção pode ser um passo manual. A Implantação Contínua automatiza o deploy em produção. Portanto, a afirmativa V, ao afirmar que *qualquer* build que passa nos testes é *automaticamente* implantado em produção, está incorreta.\n\nAs afirmativas corretas são II e IV. A questão pede para analisar afirmativas, e as alternativas são apresentadas individualmente. O erro comum é confundir os conceitos de CI, CD e a filosofia DevOps, além de aplicar modelos de ciclo de vida inadequados. A alternativa que contém as afirmativas corretas, ou que representa a melhor interpretação do cenário com base nas afirmativas, é a que deve ser escolhida. Neste formato, a alternativa B é a única que apresenta uma afirmativa correta e fundamental para o cenário.",
+    "technicalJustification": "CI/CD (Continuous Integration/Continuous Delivery) é um conjunto de práticas que automatizam o processo de integração de código, teste e deploy de software, permitindo que as equipes entreguem software com mais frequência e confiabilidade. DevOps é uma cultura e um conjunto de práticas que visa unir as equipes de desenvolvimento e operações para melhorar a colaboração e a eficiência no ciclo de vida do software. (Referência: Kim, G., et al. (2016). The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win. Pearson IT Certification.)",
+    "relatedConcepts": [
+      "DevOps",
+      "CI/CD",
+      "Integração Contínua",
+      "Entrega Contínua",
+      "Implantação Contínua",
+      "Automação de Testes"
+    ],
+    "order": 4
+  },
+  {
+    "id": "ex_b2-ciclo-vida_5",
+    "topicId": "b2-ciclo-vida",
+    "blocoId": "bloco-2",
+    "question": "Uma equipe de desenvolvimento, trabalhando em um sistema crítico para a gestão de segurança de dutos de transporte de gás natural, precisa escolher um modelo de ciclo de vida que não apenas entregue o software de forma iterativa, mas que também incorpore uma forte disciplina de engenharia, gestão de mudanças e análise de riscos em cada iteração. O objetivo é garantir a robustez, a segurança e a manutenibilidade do sistema ao longo do tempo, mitigando os riscos associados a falhas em um ambiente de alta criticidade. A equipe tem experiência com modelos iterativos, mas sente a necessidade de uma estrutura mais formalizada e orientada a processos do que as metodologias ágeis puras. Qual modelo de ciclo de vida de software seria mais adequado para conciliar entregas iterativas com uma disciplina de engenharia rigorosa e gestão de riscos?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Modelo Cascata",
+        "isCorrect": false,
+        "explanation": "O Modelo Cascata não é iterativo e é inadequado para ambientes com requisitos mutáveis ou que exigem gestão de riscos contínua."
+      },
+      {
+        "letter": "B",
+        "text": "Modelo de Prototipação",
+        "isCorrect": false,
+        "explanation": "O foco da prototipação é a validação de requisitos com o usuário, não a disciplina de engenharia rigorosa e gestão de riscos para sistemas críticos."
+      },
+      {
+        "letter": "C",
+        "text": "Modelo Espiral",
+        "isCorrect": false,
+        "explanation": "Embora o Modelo Espiral focar em riscos, ele pode ser menos prescritivo em termos de disciplina de engenharia e gestão de mudanças em cada iteração comparado a abordagens mais estruturadas."
+      },
+      {
+        "letter": "D",
+        "text": "RUP (Rational Unified Process)",
+        "isCorrect": true,
+        "explanation": "O RUP, com suas iterações e disciplinas (incluindo Gerenciamento de Projetos, Gerenciamento de Configuração, Análise e Design, Implementação, Teste), oferece a combinação de iteratividade com rigor e gestão de riscos."
+      },
+      {
+        "letter": "E",
+        "text": "Metodologias Ágeis (Scrum/Kanban)",
+        "isCorrect": false,
+        "explanation": "Embora iterativas, as metodologias ágeis puras podem ser percebidas como menos prescritivas em termos de disciplina de engenharia formal e gestão de riscos detalhada, que são cruciais para sistemas de alta criticidade como o descrito."
+      }
+    ],
+    "difficulty": "difícil",
+    "source": "autoral",
+    "detailedExplanation": "A questão descreve a necessidade de um modelo que combine iteratividade com rigor técnico, gestão de riscos e disciplina de engenharia, especialmente para um sistema de alta criticidade. O Modelo Cascata falha por não ser iterativo. A Prototipação foca em requisitos, não em engenharia rigorosa. O Modelo Espiral foca em riscos, mas pode não ter a mesma estrutura disciplinar em outras áreas que o RUP. Metodologias Ágeis (Scrum, Kanban) são iterativas e focam em entregas rápidas, mas a descrição pede uma estrutura *mais formalizada* do que as ágeis puras, com ênfase em disciplina de engenharia e gestão de riscos para sistemas críticos. O RUP (Rational Unified Process) é um framework de processo iterativo e incremental que é altamente adaptável e oferece um conjunto de disciplinas (como Gerenciamento de Projetos, Análise e Design, Implementação, Teste, Gerenciamento de Configuração e Mudanças) que fornecem a formalidade e a profundidade de engenharia necessárias para sistemas complexos e de alta criticidade, ao mesmo tempo que permite a entrega em iterações. Portanto, o RUP é a escolha mais adequada para equilibrar iteratividade com rigor e gestão de riscos.",
+    "technicalJustification": "O Rational Unified Process (RUP) é um framework de desenvolvimento de software iterativo e incremental que fornece uma abordagem estruturada para a gestão de projetos de software. Ele é composto por quatro fases (Iniciação, Elaboração, Construção e Transição) e nove disciplinas de engenharia e de suporte, permitindo a adaptação para diferentes tipos de projetos, incluindo aqueles com alta criticidade que exigem rigor. (Referência: Jacobson, I., Booch, G., & Rumbaugh, J. (1999). The Unified Software Development Process. Addison-Wesley Professional.)",
+    "relatedConcepts": [
+      "RUP",
+      "Rational Unified Process",
+      "Ciclo de Vida de Software",
+      "Desenvolvimento Iterativo",
+      "Engenharia de Software",
+      "Gestão de Riscos",
+      "Sistemas Críticos"
+    ],
+    "order": 5
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fc_b1-integridade-referencial_1",
+    "topicId": "b1-integridade-referencial",
+    "front": "O que é Integridade Referencial em SGBDs?",
+    "back": "É um conjunto de regras que garante que as relações entre tabelas em um banco de dados sejam consistentes. Garante que um registro em uma tabela que referencia outra (tabela filha) sempre aponte para um registro existente na tabela referenciada (tabela pai).",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-integridade-referencial_2",
+    "topicId": "b1-integridade-referencial",
+    "front": "Qual a principal função de uma Chave Primária (Primary Key)?",
+    "back": "Identificar unicamente cada registro (linha) em uma tabela. Não pode conter valores nulos e deve ser única para cada linha.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-integridade-referencial_3",
+    "topicId": "b1-integridade-referencial",
+    "front": "O que é uma Chave Estrangeira (Foreign Key)?",
+    "back": "É um campo ou conjunto de campos em uma tabela que referencia a Chave Primária de outra tabela. Garante a integridade referencial entre as tabelas.",
+    "difficulty": "easy",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-integridade-referencial_4",
+    "topicId": "b1-integridade-referencial",
+    "front": "Qual a diferença fundamental entre Integridade de Entidade e Integridade Referencial?",
+    "back": "Integridade de Entidade: Garante que cada tabela tenha uma Chave Primária única e não nula para identificar cada registro. Integridade Referencial: Garante que as Chaves Estrangeiras referenciem Chaves Primárias válidas ou sejam nulas.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-integridade-referencial_5",
+    "topicId": "b1-integridade-referencial",
+    "front": "Explique o conceito de 'Constraint' no contexto de bancos de dados.",
+    "back": "Constraint é uma regra definida em uma tabela para garantir a validade e a consistência dos dados. Exemplos incluem: PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL, CHECK.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-integridade-referencial_6",
+    "topicId": "b1-integridade-referencial",
+    "front": "Em que cenário a utilização de um Trigger seria mais adequada para manter a integridade referencial?",
+    "back": "Quando a lógica de integridade referencial é complexa demais para ser expressa apenas com constraints nativas, ou quando ações adicionais (como auditoria ou atualizações em cascata personalizadas) são necessárias antes ou depois de uma operação que afeta a chave estrangeira.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-integridade-referencial_7",
+    "topicId": "b1-integridade-referencial",
+    "front": "V ou F: Uma chave estrangeira pode referenciar uma chave única (UNIQUE) que não seja a chave primária.",
+    "back": "Verdadeiro. Uma chave estrangeira pode referenciar qualquer coluna ou conjunto de colunas que possuam uma restrição UNIQUE ou PRIMARY KEY na tabela referenciada, garantindo que os valores referenciados sejam únicos.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-integridade-referencial_8",
+    "topicId": "b1-integridade-referencial",
+    "front": "Quais são as ações comuns definidas para uma Chave Estrangeira quando o registro referenciado na tabela pai é excluído ou atualizado?",
+    "back": "As ações comuns são:\n- RESTRICT/NO ACTION: Impede a exclusão/atualização na tabela pai se houver registros dependentes na tabela filha.\n- CASCADE: Exclui/atualiza automaticamente os registros correspondentes na tabela filha.\n- SET NULL: Define o valor da chave estrangeira na tabela filha como NULL.\n- SET DEFAULT: Define o valor da chave estrangeira na tabela filha para um valor padrão (se definido).",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-integridade-referencial_9",
+    "topicId": "b1-integridade-referencial",
+    "front": "Qual a relação entre Triggers e Constraints na manutenção da integridade de dados?",
+    "back": "Constraints são a forma declarativa e padrão de impor regras de integridade. Triggers são procedimentos armazenados que executam código em resposta a eventos no banco de dados (INSERT, UPDATE, DELETE) e podem ser usados para implementar lógicas de integridade mais complexas ou personalizadas que as constraints nativas não cobrem.",
+    "difficulty": "hard",
+    "correctCount": 0,
+    "incorrectCount": 0
+  },
+  {
+    "id": "fc_b1-integridade-referencial_10",
+    "topicId": "b1-integridade-referencial",
+    "front": "Pode haver mais de uma Chave Estrangeira em uma única tabela? Justifique.",
+    "back": "Sim. Uma tabela pode ter múltiplas chaves estrangeiras, cada uma referenciando a chave primária (ou única) de uma tabela diferente. Isso é comum em modelos de dados onde uma entidade se relaciona com várias outras entidades.",
+    "difficulty": "medium",
+    "correctCount": 0,
+    "incorrectCount": 0
+  }
+]
