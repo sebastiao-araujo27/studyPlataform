@@ -12,6 +12,8 @@ import { useProgressStore, useUIStore } from '@/lib/store';
 import { cn, getDifficultyColor, getDifficultyLabel } from '@/lib/utils';
 import { v4 as uuidv4 } from 'uuid';
 import { allExercises } from '@/data/content-index';
+import StudyBuddy from '@/components/fun/StudyBuddy';
+import AnswerFeedback from '@/components/fun/AnswerFeedback';
 
 interface ExerciseModuleProps {
   topic: Topic;
@@ -27,6 +29,8 @@ export default function ExerciseModule({ topic }: ExerciseModuleProps) {
   const [startTime, setStartTime] = useState(Date.now());
   const [sessionCorrect, setSessionCorrect] = useState(0);
   const [sessionTotal, setSessionTotal] = useState(0);
+  const [feedbackVisible, setFeedbackVisible] = useState(false);
+  const [feedbackIsCorrect, setFeedbackIsCorrect] = useState(false);
 
   const { recordExerciseAttempt } = useProgressStore();
   const { setIsGenerating } = useUIStore();
@@ -81,6 +85,10 @@ export default function ExerciseModule({ topic }: ExerciseModuleProps) {
 
     const isCorrect = currentExercise.options.find(o => o.letter === letter)?.isCorrect || false;
     const timeSpent = Math.floor((Date.now() - startTime) / 1000);
+
+    // Show GIF feedback
+    setFeedbackIsCorrect(isCorrect);
+    setFeedbackVisible(true);
 
     if (isCorrect) setSessionCorrect(prev => prev + 1);
     setSessionTotal(prev => prev + 1);
@@ -168,6 +176,16 @@ export default function ExerciseModule({ topic }: ExerciseModuleProps) {
 
   return (
     <div className="space-y-4">
+      {/* Study Buddy */}
+      <StudyBuddy context="exercises" />
+
+      {/* Answer Feedback Overlay */}
+      <AnswerFeedback
+        isCorrect={feedbackIsCorrect}
+        visible={feedbackVisible}
+        onDismiss={() => setFeedbackVisible(false)}
+      />
+
       {/* Progress Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">

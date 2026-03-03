@@ -7,6 +7,7 @@ import { Topic, Flashcard } from '@/types';
 import { generateFlashcards, isApiKeyConfigured } from '@/lib/gemini';
 import { cn, getDifficultyColor, getDifficultyLabel } from '@/lib/utils';
 import { allFlashcards } from '@/data/content-index';
+import StudyBuddy from '@/components/fun/StudyBuddy';
 
 interface FlashcardModuleProps {
   topic: Topic;
@@ -98,6 +99,9 @@ export default function FlashcardModule({ topic }: FlashcardModuleProps) {
 
   return (
     <div className="space-y-6">
+      {/* Study Buddy */}
+      <StudyBuddy context="flashcards" />
+
       {/* Progress */}
       <div className="flex items-center justify-between text-xs">
         <span className="text-[var(--text-tertiary)]">

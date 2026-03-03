@@ -11,6 +11,7 @@ import { generateTheory, regenerateContent, isApiKeyConfigured } from '@/lib/gem
 import { useProgressStore, useUIStore } from '@/lib/store';
 import { cn } from '@/lib/utils';
 import { allTheory } from '@/data/content-index';
+import StudyBuddy from '@/components/fun/StudyBuddy';
 
 interface TheoryViewerProps {
   topic: Topic;
@@ -210,6 +211,9 @@ export default function TheoryViewer({ topic }: TheoryViewerProps) {
         <Clock size={12} />
         <span>Tempo estimado de leitura: ~{topic.estimatedHours * 6} min</span>
       </div>
+
+      {/* Study Buddy */}
+      <StudyBuddy context="theory" />
 
       {/* Sections */}
       <div className="space-y-2">
