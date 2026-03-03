@@ -1,4 +1,4 @@
-import { supabase } from '@/lib/supabase';
+import { getSupabase } from '@/lib/supabase';
 
 // Debounce timer reference
 let saveTimer: ReturnType<typeof setTimeout> | null = null;
@@ -8,7 +8,7 @@ let saveTimer: ReturnType<typeof setTimeout> | null = null;
  */
 export async function loadProgressFromCloud(userId: string): Promise<Record<string, unknown> | null> {
   try {
-    const { data, error } = await supabase
+    const { data, error } = await getSupabase()
       .from('user_progress')
       .select('progress_data')
       .eq('user_id', userId)
@@ -37,7 +37,7 @@ export function saveProgressToCloud(userId: string, progressData: Record<string,
 
   saveTimer = setTimeout(async () => {
     try {
-      const { error } = await supabase
+      const { error } = await getSupabase()
         .from('user_progress')
         .upsert(
           {
